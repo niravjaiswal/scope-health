@@ -1,0 +1,7 @@
+{
+  "version": "0.1.0",
+  "images": {
+    "cli": "arena-public/cli:0.1.0"
+  },
+  "imageArchive": "images/arena-public-0.1.0.tar.gz"
+}

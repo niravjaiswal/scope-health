@@ -1,0 +1,80 @@
+#!/bin/bash
+# The arena command line. It runs in a container of the image arena-public/cli:0.1.0,
+# so it needs Docker and nothing else. It works on macOS and on Linux.
+#
+#   ./arena login --server <url> --token <token>
+#   ./arena push <image>
+#   ./arena --help          every command
+#
+# What the container gets:
+#   - The network, for every command but --help. A judge server on this machine is reached
+#     as http://host.docker.internal:<port>, not as localhost.
+#   - The directory of the stored sign-in, at its own path: $XDG_CONFIG_HOME/arena, or
+#     ~/.config/arena. `arena login` writes credentials.json there, and the later commands
+#     read it.
+#   - The Docker socket of this machine, only for a command that reads a local image:
+#     `arena push`, and `--agent` of `arena test` and `arena submit`.
+#   - ARENA_SERVER_URL, ARENA_TOKEN, ARENA_PASSWORD, when they are set.
+#
+# Settings, from the environment:
+#   ARENA_CLI_IMAGE       the image to run. Default: arena-public/cli:0.1.0
+#   ARENA_DOCKER_SOCKET   the Docker socket. Default: the socket DOCKER_HOST names when it is
+#                         a unix socket, else /var/run/docker.sock
+set -euo pipefail
+kit="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd -P)"
+image="${ARENA_CLI_IMAGE:-arena-public/cli:0.1.0}"
+socket="${ARENA_DOCKER_SOCKET:-}"
+if [ -z "$socket" ]; then
+  case "${DOCKER_HOST:-}" in
+    unix://*) socket="${DOCKER_HOST#unix://}" ;;
+    *) socket=/var/run/docker.sock ;;
+  esac
+fi
+
+if ! docker image inspect "$image" >/dev/null 2>&1; then
+  echo "image $image was not found. Run $kit/load-images.sh first." >&2
+  exit 1
+fi
+
+# Only the help needs no network. A local image is read by `push` and by `--agent`.
+online=1
+local_image=0
+if [ $# -eq 0 ]; then
+  online=0
+fi
+for argument in "$@"; do
+  case "$argument" in
+    --help|-h) online=0 ;;
+    push|--agent|--agent=*) local_image=1 ;;
+  esac
+done
+
+flags=(--rm --init --interactive)
+if [ -t 0 ] && [ -t 1 ]; then
+  flags+=(--tty)
+fi
+linux_user=0
+if [ "$(uname -s)" = "Linux" ] && [ "$(id -u)" != "0" ]; then
+  # The stored sign-in belongs to the user who signed in.
+  linux_user=1
+  flags+=(--user "$(id -u):$(id -g)" -e HOME=/tmp)
+else
+  flags+=(--user 0:0)
+fi
+if [ "$online" = 1 ]; then
+  config_home="${XDG_CONFIG_HOME:-$HOME/.config}"
+  mkdir -p "$config_home/arena"
+  chmod 700 "$config_home/arena"
+  flags+=(--add-host host.docker.internal:host-gateway)
+  flags+=(-v "$config_home/arena:$config_home/arena" -e "XDG_CONFIG_HOME=$config_home")
+  if [ "$local_image" = 1 ]; then
+    flags+=(-v "$socket:/var/run/docker.sock")
+    if [ "$linux_user" = 1 ]; then
+      # The group of the socket lets the user's id use it.
+      flags+=(--group-add "$(stat -c %g "$socket")")
+    fi
+  fi
+else
+  flags+=(--network none)
+fi
+exec docker run "${flags[@]}" -e ARENA_SERVER_URL -e ARENA_TOKEN -e ARENA_PASSWORD -e ARENA_PROGRAM=./arena "$image" "$@"

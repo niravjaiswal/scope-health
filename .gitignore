@@ -1,0 +1,14 @@
+# secrets
+.env
+.env.*
+
+# python
+.venv/
+__pycache__/
+*.pyc
+
+# large vendor docker image (re-load via speedrun-kit/load-images.sh source)
+speedrun-kit/images/*.tar.gz
+
+# os
+.DS_Store
