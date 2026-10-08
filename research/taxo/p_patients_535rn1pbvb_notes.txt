@@ -1,0 +1,128 @@
+URL https://practice.speedrun.scopehealth.com/patients/535rn1pbvb/notes
+
+== FRAME https://practice.speedrun.scopehealth.com/v/1d42rcj6k3hfdnn024k32f2dlj/ ==
+Gray, Anna
+MRN
+HG8916636
+Date of birth
+11/21/1963 (62 years)
+Sex
+Female
+Billing
+Invoices
+Demographics
+Insurance
+Problems
+Notes
+Documents
+Appointments
+Activity
+Written from
+Written to
+Apply
+Clear
+Chart note
+Dr. Ruiz
+Oct 13, 2026, 1:26 PM
+CDT
+
+Annual review completed with Dr. Sorensen. Screening up to date. Patient mentions a dry cough at night. Follow up in 2 weeks.
+
+Chart note
+Dr. Meyer
+Oct 3, 2026, 5:17 PM
+CDT
+
+Follow-up visit. Patient reports occasional heartburn after meals. Vitals stable. Plan: continue metformin 500 mg twice daily and recheck in 4 weeks.
+
+Message
+Jack Simpson
+Sep 16, 2026, 4:43 PM
+CDT
+
+Reminder sent for the visit near 2026-09-22. Patient confirmed and asked about lab results.
+
+Phone call
+Gregory Patterson
+Jun 26, 2026, 10:15 AM
+CDT
+
+Spoke with a family member about rescheduling the next visit. They will pass the message to Anna.
+
+Message
+Andres Mendez
+Jun 19, 2026, 4:45 PM
+CDT
+
+Reminder sent for the visit near 2026-07-09. Patient confirmed and asked about rescheduling the next visit.
+
+Message
+Teresa Warren
+Apr 25, 2026, 9:51 AM
+CDT
+
+Reminder sent for the visit near 2026-05-09. Patient confirmed and asked about prior authorization for imaging.
+
+Phone call
+Lawrence Jones
+Feb 20, 2026, 1:07 PM
+CST
+
+Patient called twice about directions to the clinic. Returned the call and resolved the question.
+
+Chart note
+Kenneth Sullivan, NP
+Oct 11, 2025, 1:22 PM
+CDT
+
+Patient here with a family member. Concerned about less knee pain when walking. Reassured, handout given. Next visit on or about 2025-11-13.
+
+Message
+Aisha Wilson
+May 25, 2025, 1:32 PM
+CDT
+
+Portal message from Anna asking about a form for an employer. Replied with instructions and asked them to call if anything is unclear.
+
+Chart note
+Richard Harrison, NP
+Mar 13, 2025, 12:59 PM
+CDT
+
+Annual review completed with Dr. Sorensen. Screening up to date. Patient mentions better energy since the last visit. Follow up in 6 weeks.
+
+Chart note
+Dr. Lee
+Mar 8, 2025, 11:42 AM
+CST
+
+Follow-up visit. Patient reports stiffness in the lower back in the morning. Vitals stable. Plan: continue atorvastatin 20 mg nightly and recheck in 2 weeks.
+
+Message
+Michelle Martinez
+Feb 12, 2025, 9:16 AM
+CST
+
+Anna asks whether atorvastatin 20 mg nightly can be taken with food. Answered yes per Dr. Sorensen.
+
+Chart note
+Anna Mejia
+Jan 7, 2025, 2:30 PM
+CST
+
+Anna seen for routine review. Reports no new complaints. Medication list reconciled. No changes today.
+
+13 notes
+== FRAME INTERACTIVE ==
+A[] Invoices href=/billing/accounts/535rn1pbvb
+A[] Demographics href=/patients/535rn1pbvb
+A[] Insurance href=/patients/535rn1pbvb/insurance
+A[] Problems href=/patients/535rn1pbvb/problems
+A[] Notes href=/patients/535rn1pbvb/notes
+A[] Documents href=/patients/535rn1pbvb/documents
+A[] Appointments href=/patients/535rn1pbvb/appointments
+A[] Activity href=/patients/535rn1pbvb/activity
+INPUT[date] 
+INPUT[date] 
+BUTTON[submit] Apply
+BUTTON[button] Clear

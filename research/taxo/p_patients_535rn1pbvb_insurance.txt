@@ -1,0 +1,35 @@
+URL https://practice.speedrun.scopehealth.com/patients/535rn1pbvb/insurance
+
+== FRAME https://practice.speedrun.scopehealth.com/v/d4x0gm7lq6hslf4186wc38l0c3/ ==
+Gray, Anna
+MRN
+HG8916636
+Date of birth
+11/21/1963 (62 years)
+Sex
+Female
+Billing
+Invoices
+Demographics
+Insurance
+Problems
+Notes
+Documents
+Appointments
+Activity
+Primary insurance
+Payer
+Meridian Mutual Health
+Plan
+HMO Select
+Member ID
+LJA470505471
+== FRAME INTERACTIVE ==
+A[] Invoices href=/billing/accounts/535rn1pbvb
+A[] Demographics href=/patients/535rn1pbvb
+A[] Insurance href=/patients/535rn1pbvb/insurance
+A[] Problems href=/patients/535rn1pbvb/problems
+A[] Notes href=/patients/535rn1pbvb/notes
+A[] Documents href=/patients/535rn1pbvb/documents
+A[] Appointments href=/patients/535rn1pbvb/appointments
+A[] Activity href=/patients/535rn1pbvb/activity

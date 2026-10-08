@@ -1,0 +1,202 @@
+URL: https://practice.speedrun.scopehealth.com/patients?lastName=Driscoll
+TITLE: Patients · Wrenfield
+
+Patients
+
+Find a patient by last name or date of birth.
+
+Last name
+or
+Date of birth
+Search
+
+Enter a last name or a full date of birth.
+
+Results
+Patients found
+Patient	MRN	Date of birth	Sex	
+Flags
+
+Driscoll, Aisha	HG6206090	06/20/2013 (13 y)	Female	
+Driscoll, Alexis	HG6252261	03/28/1963 (63 y)	Female	
+Driscoll, Andrea	HG2781654	06/29/1940 (86 y)	Female	
+Driscoll, Angela	HG9531007	12/18/1984 (41 y)	Female	
+Driscoll, Anna	HG6935684	12/26/1947 (78 y)	Female	
+Driscoll, Ashley	HG6887293	02/25/1988 (38 y)	Female	
+Driscoll, Bradley	HG6057038	05/29/1987 (39 y)	Male	
+Driscoll, Brandon	HG6749684	09/08/1953 (73 y)	Male	
+Driscoll, Brittany	HG8884761	07/30/1985 (41 y)	Female	
+Driscoll, Brradley	HG6743057	05/29/1987 (39 y)	Male	
+Merged
+Driscoll, Chistopher	HG6413589	02/27/1972 (54 y)	Male	
+Merged
+Driscoll, Chris	HG2301332	02/27/1972 (54 y)	Male	
+Merged
+Driscoll, Christopher	HG3028894	02/27/1972 (54 y)	Male	
+Driscoll, Christopher	HG2764117	06/01/1959 (67 y)	Male	
+Driscoll, David	HG7443032	01/08/1995 (31 y)	Male	Deleted
+Driscoll, David	HG9648080	11/24/1952 (73 y)	Male	
+Driscoll, David	HG4960465	12/19/1938 (87 y)	Male	
+Driscoll, Dennis	HG9354332	06/02/1969 (57 y)	Male	
+Driscoll, Diana	HG2727942	02/03/1981 (45 y)	Female	
+Driscoll, Dorothy	HG2606564	08/13/1972 (54 y)	Female	
+Driscoll, Douglas	HG9617336	04/28/1993 (33 y)	Male	
+Driscoll, Edward	HG3291160	04/28/1989 (37 y)	Male	
+Driscoll, Edward	HG7642031	03/13/1987 (39 y)	Male	
+Driscoll, Eric	HG5535679	03/27/1956 (70 y)	Male	
+Driscoll, Gabriel	HG1152838	10/27/2001 (24 y)	Male	
+Driscoll, Helen	HG7925121	04/08/1965 (61 y)	Female	
+Driscoll, Hiroshi	HG9004858	08/06/1964 (62 y)	Male	
+Driscoll, Jeffrey	HG3037500	09/12/1947 (79 y)	Male	
+Driscoll, Jennifer	HG5806470	01/08/1968 (58 y)	Female	
+Driscoll, Jennifer	HG8640635	10/09/1985 (41 y)	Female	
+Driscoll, Jennifer	HG8843505	12/27/1964 (61 y)	Female	
+Restricted
+Driscoll, Jeremy	HG2760060	02/26/1976 (50 y)	Male	
+Restricted
+Driscoll, Jessica	HG3734869	02/13/1965 (61 y)	Female	
+Driscoll, John	HG6681651	05/30/1967 (59 y)	Male	
+Driscoll, Juan	HG6968003	09/06/2019 (7 y)	Male	
+Driscoll, Judy	HG4366641	08/28/2014 (12 y)	Female	
+Driscoll, Karen	HG6617673	10/29/1979 (46 y)	Female	
+Driscoll, Kimberly	HG6840712	08/23/1943 (83 y)	Female	
+Driscoll, Kimberly	HG7354060	08/05/1985 (41 y)	Female	
+Driscoll, Kyle	HG5224989	12/28/2014 (11 y)	Male	
+Driscoll, Laura	HG1348840	09/17/1972 (54 y)	Female	
+Driscoll, Linda	HG1039091	03/24/1943 (83 y)	Female	
+Driscoll, Linda	HG7057413	04/28/1985 (41 y)	Female	
+Driscoll, Lucas	HG1185229	02/18/2010 (16 y)	Male	
+Driscoll, Madison	HG6549003	01/10/2015 (11 y)	Female	
+Driscoll, Margaret	HG1764746	12/19/1949 (76 y)	Female	
+Driscoll, Margaret	HG8784558	11/20/1991 (34 y)	Female	
+Driscoll, Maria	HG3398635	10/30/2013 (12 y)	Female	
+Driscoll, Mary	HG1865663	04/30/2017 (9 y)	Female	
+Driscoll, Mary	HG9015579	07/21/1988 (38 y)	Female	
+Driscoll, Mary	HG6345086	04/18/1997 (29 y)	Female	
+Driscoll, Mary	HG9101543	05/16/2014 (12 y)	Female	
+Driscoll, Mary	HG2324109	04/24/2022 (4 y)	Female	
+Driscoll, Mason	HG6253085	07/07/1979 (47 y)	Male	
+Driscoll, Michael	HG5270948	03/06/2017 (9 y)	Male	
+Driscoll, Nancy	HG5788397	02/01/1955 (71 y)	Female	
+Driscoll, Nathan	HG2298243	04/30/2017 (9 y)	Male	
+Driscoll, Priya	HG1815285	08/07/1990 (36 y)	Female	
+Driscoll, Rachel	HG3869880	12/19/1951 (74 y)	Female	
+Driscoll, Rachel	HG7299098	08/31/1937 (89 y)	Female	
+Driscoll, Raymond	HG4990937	04/13/2016 (10 y)	Male	
+Driscoll, Richard	HG1857453	05/26/1968 (58 y)	Male	
+Driscoll, Robert	HG5985902	06/11/1957 (69 y)	Male	
+Driscoll, Ruth	HG5223085	01/06/1981 (45 y)	Female	
+Driscoll, Sandra	HG1431997	09/06/2001 (25 y)	Female	
+Driscoll, Sarah	HG2379337	04/19/1952 (74 y)	Female	
+Driscoll, Sarah	HG4891493	08/03/2021 (5 y)	Female	
+Driscoll, Sharon	HG9346309	03/23/1977 (49 y)	Female	
+Driscoll, Shirley	HG7590949	12/08/1950 (75 y)	Female	
+Driscoll, Shirley	HG4695065	10/30/1980 (45 y)	Female	
+Driscoll, Sophia	HG5117289	05/31/1964 (62 y)	Female	
+Driscoll, Sophia	HG9606271	02/10/2026 (0 y)	Female	
+Driscoll, Thomas	HG3113848	09/22/1977 (49 y)	Male	
+Driscoll, Thomas	HG5623533	05/24/2023 (3 y)	Male	
+Driscoll, Valentina	HG3477007	04/19/1981 (45 y)	Female	
+Driscoll, Willie	HG8591471	10/15/1996 (29 y)	Male	
+
+76 patients
+
+Rows per page
+25 per page
+50 per page
+100 per page
+Restricted chart requests
+Your requests to open restricted charts
+Patient	Reason	Status
+Ramirez, David	Providing care to this patient	Approved
+Ramirez, David	Providing care to this patient	Ended
+Porter, Catherine	Billing or insurance question	Ended
+Porter, Catherine	Billing or insurance question	Ended
+
+4 requests
+
+---- INTERACTIVE ----
+[INPUT] 'Driscoll'  lastName 
+[INPUT] ''  dob 
+[BUTTON] 'Search'   
+[A] 'Driscoll, Aisha' /patients/0rt05p7r1f  
+[A] 'Driscoll, Alexis' /patients/43lq1dht6j  
+[A] 'Driscoll, Andrea' /patients/285z4h2fbj  
+[A] 'Driscoll, Angela' /patients/70jz8x8ktr  
+[A] 'Driscoll, Anna' /patients/5nhcs5vhw5  
+[A] 'Driscoll, Ashley' /patients/4vw16twmt5  
+[A] 'Driscoll, Bradley' /patients/0wcn8nz22j  
+[A] 'Driscoll, Brandon' /patients/0gng5cn41h  
+[A] 'Driscoll, Brittany' /patients/2x4mtq5vg0  
+[A] 'Driscoll, Brradley' /patients/60xjhrkcp8  
+[A] 'Driscoll, Chistopher' /patients/08l02f0nh4  
+[A] 'Driscoll, Chris' /patients/4mnpvl1nfp  
+[A] 'Driscoll, Christopher' /patients/21vnfcj01d  
+[A] 'Driscoll, Christopher' /patients/1399l5ps2s  
+[A] 'Driscoll, David' /patients/1zf1855ln4  
+[A] 'Driscoll, David' /patients/34x00nbr9b  
+[A] 'Driscoll, David' /patients/4jl9g5rcn8  
+[A] 'Driscoll, Dennis' /patients/6k7hvrplj4  
+[A] 'Driscoll, Diana' /patients/2kw9h7t7f1  
+[A] 'Driscoll, Dorothy' /patients/6xtd9lt6n3  
+[A] 'Driscoll, Douglas' /patients/16dp8ngrql  
+[A] 'Driscoll, Edward' /patients/42217jszpj  
+[A] 'Driscoll, Edward' /patients/5zqvsbll0s  
+[A] 'Driscoll, Eric' /patients/2wpfmq5jmw  
+[A] 'Driscoll, Gabriel' /patients/58z9vnq9zg  
+[A] 'Driscoll, Helen' /patients/5r7b033c54  
+[A] 'Driscoll, Hiroshi' /patients/3ljgrjp4b3  
+[A] 'Driscoll, Jeffrey' /patients/5ghfgwcg5k  
+[A] 'Driscoll, Jennifer' /patients/438lprgzgs  
+[A] 'Driscoll, Jennifer' /patients/0s9tgvkjb4  
+[A] 'Driscoll, Jennifer' /patients/1nrj9njsfj  
+[A] 'Driscoll, Jeremy' /patients/68z8wvd4pg  
+[A] 'Driscoll, Jessica' /patients/1zl525nwgm  
+[A] 'Driscoll, John' /patients/04qfmm6l8w  
+[A] 'Driscoll, Juan' /patients/3dqsbw57bp  
+[A] 'Driscoll, Judy' /patients/5wbhw4bk9z  
+[A] 'Driscoll, Karen' /patients/1z6q1k2nnw  
+[A] 'Driscoll, Kimberly' /patients/2bnk0q51nc  
+[A] 'Driscoll, Kimberly' /patients/148750f52x  
+[A] 'Driscoll, Kyle' /patients/19c7l183jb  
+[A] 'Driscoll, Laura' /patients/2b9hwxz6jw  
+[A] 'Driscoll, Linda' /patients/513xksrqcd  
+[A] 'Driscoll, Linda' /patients/6vkckjt50v  
+[A] 'Driscoll, Lucas' /patients/2jr9798zjx  
+[A] 'Driscoll, Madison' /patients/73014pk66m  
+[A] 'Driscoll, Margaret' /patients/5135lzvc79  
+[A] 'Driscoll, Margaret' /patients/0cb8m20dwf  
+[A] 'Driscoll, Maria' /patients/4tl81n467x  
+[A] 'Driscoll, Mary' /patients/5t204h5tnh  
+[A] 'Driscoll, Mary' /patients/6bn1bkxffq  
+[A] 'Driscoll, Mary' /patients/4t2lpdxdrq  
+[A] 'Driscoll, Mary' /patients/61m6dvnwm8  
+[A] 'Driscoll, Mary' /patients/2wzgt52swc  
+[A] 'Driscoll, Mason' /patients/6cr1hvqz66  
+[A] 'Driscoll, Michael' /patients/2fg3wqhq6w  
+[A] 'Driscoll, Nancy' /patients/2h7wgqwln2  
+[A] 'Driscoll, Nathan' /patients/215g7fqdw2  
+[A] 'Driscoll, Priya' /patients/0pssv6r8cx  
+[A] 'Driscoll, Rachel' /patients/6tsd29t26n  
+[A] 'Driscoll, Rachel' /patients/4mpb6jwbld  
+[A] 'Driscoll, Raymond' /patients/3c7gb852gj  
+[A] 'Driscoll, Richard' /patients/5qrt0l8v1z  
+[A] 'Driscoll, Robert' /patients/5swd3dgx34  
+[A] 'Driscoll, Ruth' /patients/29hw1nrbrz  
+[A] 'Driscoll, Sandra' /patients/1sbhscz34r  
+[A] 'Driscoll, Sarah' /patients/21lhd934c2  
+[A] 'Driscoll, Sarah' /patients/662l5g2kzs  
+[A] 'Driscoll, Sharon' /patients/5shnp22k82  
+[A] 'Driscoll, Shirley' /patients/1x9fn9nlv6  
+[A] 'Driscoll, Shirley' /patients/706x7fk4z0  
+[A] 'Driscoll, Sophia' /patients/1130jmpxx3  
+[A] 'Driscoll, Sophia' /patients/4q9w5kd1n9  
+[A] 'Driscoll, Thomas' /patients/6dm84lqx96  
+[A] 'Driscoll, Thomas' /patients/2pqf02pk97  
+[A] 'Driscoll, Valentina' /patients/2b12t5vhnd  
+[A] 'Driscoll, Willie' /patients/1n1n6n2mcc  
+[SELECT] '25 per page\n50 per page\n100 per page'  size 
+[A] 'Ramirez, David' /patients/3pdsxpwzr5  
+[A] 'Ramirez, David' /patients/28xpx631v1  
+[A] 'Porter, Catherine' /patients/2q123zlg2m  
+[A] 'Porter, Catherine' /patients/2q123zlg2m  

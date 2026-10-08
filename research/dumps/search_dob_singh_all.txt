@@ -1,0 +1,42 @@
+URL: https://practice.speedrun.scopehealth.com/patients?dob=1939-12-04
+TITLE: Patients · Wrenfield
+
+Patients
+
+Find a patient by last name or date of birth.
+
+Last name
+or
+Date of birth
+Search
+
+Enter a last name or a full date of birth.
+
+Results
+Patients found
+Patient	MRN	Date of birth	Sex	
+Flags
+
+Garcia, Joseph	HG2564455	12/04/1939 (86 y)	Male	
+
+1 patient
+
+Restricted chart requests
+Your requests to open restricted charts
+Patient	Reason	Status
+Ramirez, David	Providing care to this patient	Approved
+Ramirez, David	Providing care to this patient	Ended
+Porter, Catherine	Billing or insurance question	Ended
+Porter, Catherine	Billing or insurance question	Ended
+
+4 requests
+
+---- INTERACTIVE ----
+[INPUT] 'For example, Okafor'  lastName 
+[INPUT] '1939-12-04'  dob 
+[BUTTON] 'Search'   
+[A] 'Garcia, Joseph' /patients/22cqns64dw  
+[A] 'Ramirez, David' /patients/3pdsxpwzr5  
+[A] 'Ramirez, David' /patients/28xpx631v1  
+[A] 'Porter, Catherine' /patients/2q123zlg2m  
+[A] 'Porter, Catherine' /patients/2q123zlg2m  

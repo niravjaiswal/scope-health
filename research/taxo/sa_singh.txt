@@ -1,0 +1,104 @@
+URL https://practice.speedrun.scopehealth.com/patients?lastName=Singh
+
+== FRAME https://practice.speedrun.scopehealth.com/v/6428ctbm6v8nhfm91s6hnhcb5h/ ==
+Patients
+
+Find a patient by last name or date of birth.
+
+Last name
+or
+Date of birth
+Search
+
+Enter a last name or a full date of birth.
+
+Results
+Patients found
+Patient	MRN	Date of birth	Sex	
+Flags
+
+Singh, Adam	HG9624821	05/03/1961 (65 y)	Male	
+Singh, Alexander	HG3570903	06/04/1979 (47 y)	Male	
+Singh, Alice	HG1195499	04/21/2000 (26 y)	Female	
+Singh, Amber	HG7204582	04/28/1981 (45 y)	Female	
+Singh, Amy	HG1518129	02/03/1980 (46 y)	Female	
+Singh, Andrea	HG9166090	10/13/1977 (49 y)	Female	
+Singh, Andrea	HG4270486	05/10/2005 (21 y)	Female	
+Singh, Arthur	HG4299795	11/22/1995 (30 y)	Male	
+Singh, Arthur	HG6352594	10/24/1952 (73 y)	Male	
+Singh, Ashley	HG7125163	11/08/2006 (19 y)	Female	
+Singh, Astrid	HG3165813	03/26/1949 (77 y)	Female	
+Singh, Ava	HG6549023	01/29/1976 (50 y)	Female	
+Singh, Barbara	HG8306132	03/25/1943 (83 y)	Female	
+Singh, Barbara	HG1656163	09/15/2026 (0 y)	Female	
+Singh, Betty	HG9224314	09/09/2016 (10 y)	Female	
+Singh, Bobby	HG5730366	07/01/2013 (13 y)	Male	
+Singh, Bradley	HG3839780	07/10/1951 (75 y)	Male	
+Singh, Carlos	HG4628843	12/30/2004 (21 y)	Male	
+Singh, Carol	HG1606023	09/20/2011 (15 y)	Female	Test record
+Singh, Christopher	HG5583009	03/26/1948 (78 y)	Male	
+Singh, Christopher	HG8818616	01/12/2020 (6 y)	Male	
+Singh, Christopher	HG6495217	07/21/1999 (27 y)	Male	
+Singh, Cynthia	HG9986693	08/19/1954 (72 y)	Female	
+Singh, David	HG8814860	08/16/1963 (63 y)	Male	
+Singh, Deborah	HG5041735	01/25/1986 (40 y)	Female	
+
+Showing 1 to 25 of 82 patients
+
+Rows per page
+25 per page
+50 per page
+100 per page
+Previous
+1
+2
+3
+Next
+Restricted chart requests
+Your requests to open restricted charts
+Patient	Reason	Status
+Ramirez, David	Providing care to this patient	Ended
+Ramirez, David	Providing care to this patient	Ended
+Porter, Catherine	Billing or insurance question	Ended
+Porter, Catherine	Billing or insurance question	Ended
+
+4 requests
+== FRAME INTERACTIVE ==
+INPUT Singh
+INPUT 
+BUTTON Search
+A Singh, Adam href=/patients/3x2jx62c11
+A Singh, Alexander href=/patients/0cdzc2zwfq
+A Singh, Alice href=/patients/1hbst76lsr
+A Singh, Amber href=/patients/03tjhx584s
+A Singh, Amy href=/patients/13kbh155r4
+A Singh, Andrea href=/patients/3k8cxb95rt
+A Singh, Andrea href=/patients/03fnl51sck
+A Singh, Arthur href=/patients/0zt636730r
+A Singh, Arthur href=/patients/5nc6jj7g2q
+A Singh, Ashley href=/patients/22zl33nprv
+A Singh, Astrid href=/patients/08rr0s5bhd
+A Singh, Ava href=/patients/6dxjmdxzj6
+A Singh, Barbara href=/patients/15h7fk90mz
+A Singh, Barbara href=/patients/20f75df46k
+A Singh, Betty href=/patients/57pt5zfk3v
+A Singh, Bobby href=/patients/4ncd70sh7b
+A Singh, Bradley href=/patients/5g5vr3368n
+A Singh, Carlos href=/patients/2hrt6sb969
+A Singh, Carol href=/patients/610g063wl6
+A Singh, Christopher href=/patients/6d9hlmp6f9
+A Singh, Christopher href=/patients/48rmmc0pw4
+A Singh, Christopher href=/patients/2zx24m3f6x
+A Singh, Cynthia href=/patients/682q15p6kv
+A Singh, David href=/patients/5ktd6hw9lc
+A Singh, Deborah href=/patients/108mvv2tjc
+SELECT 25 per page / 50 per page / 100 per page
+BUTTON Previous
+BUTTON 1
+BUTTON 2
+BUTTON 3
+BUTTON Next
+A Ramirez, David href=/patients/3pdsxpwzr5
+A Ramirez, David href=/patients/28xpx631v1
+A Porter, Catherine href=/patients/2q123zlg2m
+A Porter, Catherine href=/patients/2q123zlg2m

@@ -1,0 +1,81 @@
+URL: https://practice.speedrun.scopehealth.com/patients/2g52fpbwf6/appointments/50nhqbxwlh
+TITLE: Jackson, Judith · Wrenfield
+
+Jackson, Judith
+MRN
+HG4904582
+Date of birth
+11/12/2004 (21 years)
+Sex
+Female
+Billing
+Invoices
+Demographics
+Insurance
+Problems
+Notes
+Documents
+Appointments
+Activity
+Appointment on Oct 22, 2026
+Close
+Visit
+Date
+Oct 22, 2026
+Time
+8:20 AM to 8:40 AM MDT
+Length
+20 minutes
+Type
+Post-operative check
+Status
+Scheduled
+People and place
+Provider
+William Kelly, NP
+Location
+Highline
+Record
+Reference
+60671060
+Booked
+Sep 30, 2026, 6:15 AM MDT
+Last changed
+Sep 30, 2026, 6:15 AM MDT
+History
+History of this appointment
+When	User	Change
+Sep 30, 2026, 6:15 AM MDT	vherrera	Booked
+
+1 entry
+
+Appointments, newest first
+Date and time	Type	Provider	Location	Status
+Oct 22, 2026, 8:20 AM MDT	Post-operative check	William Kelly, NP	Highline	
+Scheduled
+Dec 24, 2025, 11:00 AM MST	Allergy injection	William Kelly, NP	Cedar Hollow	
+Completed
+Nov 3, 2025, 8:30 AM CST	Prenatal visit	Mark Sorensen, MD	Northgate	
+Completed
+Jul 21, 2025, 8:00 AM MDT	Follow-up visit	William Kelly, NP	Highline	
+Completed
+May 1, 2025, 11:20 AM MDT	Sick visit	William Kelly, NP	Highline	
+Completed
+
+5 appointments
+
+---- INTERACTIVE ----
+[A] 'Invoices' /billing/accounts/2g52fpbwf6  
+[A] 'Demographics' /patients/2g52fpbwf6  
+[A] 'Insurance' /patients/2g52fpbwf6/insurance  
+[A] 'Problems' /patients/2g52fpbwf6/problems  
+[A] 'Notes' /patients/2g52fpbwf6/notes  
+[A] 'Documents' /patients/2g52fpbwf6/documents  
+[A] 'Appointments' /patients/2g52fpbwf6/appointments  page
+[A] 'Activity' /patients/2g52fpbwf6/activity  
+[BUTTON] 'Close'   
+[A] 'Oct 22, 2026, 8:20 AM' /patients/2g52fpbwf6/appointments/50nhqbxwlh  
+[A] 'Dec 24, 2025, 11:00 AM' /patients/2g52fpbwf6/appointments/46zr4cvz9h  
+[A] 'Nov 3, 2025, 8:30 AM' /patients/2g52fpbwf6/appointments/3sb5sbzhkp  
+[A] 'Jul 21, 2025, 8:00 AM' /patients/2g52fpbwf6/appointments/4n8cb154t8  
+[A] 'May 1, 2025, 11:20 AM' /patients/2g52fpbwf6/appointments/0nrpgksqzn  

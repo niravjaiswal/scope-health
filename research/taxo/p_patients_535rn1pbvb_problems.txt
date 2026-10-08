@@ -1,0 +1,34 @@
+URL https://practice.speedrun.scopehealth.com/patients/535rn1pbvb/problems
+
+== FRAME https://practice.speedrun.scopehealth.com/v/sl9j4w137dck5460pjnw745z8t/ ==
+Gray, Anna
+MRN
+HG8916636
+Date of birth
+11/21/1963 (62 years)
+Sex
+Female
+Billing
+Invoices
+Demographics
+Insurance
+Problems
+Notes
+Documents
+Appointments
+Activity
+Conditions on the problem list
+Code	Condition	Onset
+M54.50	Low back pain	Feb 9, 2016
+I10	Essential hypertension	Oct 2, 2025
+
+2 conditions
+== FRAME INTERACTIVE ==
+A[] Invoices href=/billing/accounts/535rn1pbvb
+A[] Demographics href=/patients/535rn1pbvb
+A[] Insurance href=/patients/535rn1pbvb/insurance
+A[] Problems href=/patients/535rn1pbvb/problems
+A[] Notes href=/patients/535rn1pbvb/notes
+A[] Documents href=/patients/535rn1pbvb/documents
+A[] Appointments href=/patients/535rn1pbvb/appointments
+A[] Activity href=/patients/535rn1pbvb/activity

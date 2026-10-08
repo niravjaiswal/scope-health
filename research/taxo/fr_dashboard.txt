@@ -1,0 +1,139 @@
+URL https://practice.speedrun.scopehealth.com/
+
+== FRAME https://practice.speedrun.scopehealth.com/v/fv646d62z6k2wrvbgj7q2szlvh/ ==
+Dashboard
+Oct 14, 2026
+
+Updated 9:00 AM MDT
+
+Appointments today
+
+107
+
+Scheduled
+85
+Completed
+13
+Cancelled
+7
+Late cancel
+2
+No-show
+0
+Open the list
+Patients seen today
+
+13
+
+Patients with a completed appointment
+Completed appointments
+Open slots today
+
+29
+
+Slots in working hours with nothing booked
+Open the day view
+New patients this month
+
+7
+
+Records created since Oct 1, 2026
+Activity
+Documents received this week
+
+20
+
+Oct 12, 2026 to Oct 18, 2026
+Documents
+Invoices issued this week
+
+208
+
+Oct 12, 2026 to Oct 18, 2026
+Billing
+Today's schedule
+Day view
+The rest of today's appointments, in time order
+Time	Patient	Provider	Visit type	Status
+9:20 AM to 10:05 AM	Vazquez, Steven	Colleen Grant, PA	Nutrition counseling	
+Scheduled
+9:20 AM to 10:20 AM	Gómez, Laura	James Tillman, DO	Behavioral health session	
+Scheduled
+9:40 AM to 10:10 AM	Hamilton, Samuel	Joyce Nelson, NP	Ultrasound	
+Scheduled
+10:00 AM to 10:15 AM	Diaz, Shirley	Harold Larsen, PA	Anticoagulation check	
+Scheduled
+10:00 AM to 10:20 AM	Williams, Betty	Austin Gibson, NP	Follow-up visit	
+Scheduled
+10:00 AM to 10:20 AM	Martinez, Sandra	Walter Guzman, PA	Sick visit	
+Scheduled
+10:00 AM to 10:20 AM	Hill, Camila	Frances Maldonado, DO	Post-operative check	
+Scheduled
+10:20 AM to 10:35 AM	Young, Robert	James Tillman, DO	Lab draw	
+Scheduled
+
+Showing 8 of 83 appointments
+
+Show more
+Recent activity
+All activity
+Latest activity, newest first
+When	User	What	Record
+Oct 14, 2026, 9:52 AM MDT	frontdesk	Opened the restricted chart. Reason: Providing care to this patient	Chart Ramirez, David
+Oct 14, 2026, 9:49 AM MDT	frontdesk	Opened the restricted chart. Reason: Providing care to this patient	Chart Ramirez, David
+Oct 14, 2026, 9:46 AM MDT	frontdesk	Opened the restricted chart. Reason: Billing or insurance question	Chart Porter, Catherine
+Oct 14, 2026, 9:41 AM MDT	frontdesk	Opened the restricted chart. Reason: Billing or insurance question	Chart Porter, Catherine
+Oct 14, 2026, 9:29 AM MDT	frontdesk	Opened the restricted chart. Reason: Billing or insurance question	Chart Porter, Catherine
+Oct 14, 2026, 9:00 AM MDT	tmoore	Changed the invoice status from Open to Paid	Invoice 82593504 Soto, James
+Oct 14, 2026, 9:00 AM MDT	tmoore	Issued the invoice	Invoice 82593504 Soto, James
+Oct 14, 2026, 9:00 AM MDT	tmedina	Issued the invoice	Invoice 21617829 Matthews, Astrid
+Oct 14, 2026, 9:00 AM MDT	jjacobsen	Changed the invoice status from Partly paid to Partly paid	Invoice 03483827 Carter, Ryan
+Oct 14, 2026, 9:00 AM MDT	lmartinez	Changed the invoice status from Open to Partly paid	Invoice 03483827 Carter, Ryan
+
+Showing 1 to 10 of 100+ entries
+
+Previous
+Next
+== FRAME INTERACTIVE ==
+A Scheduled / 85 href=/schedule/appointments?from=2026-10-14&to=2026-10-14&location=4qsqd44qnv&status=1
+A Completed / 13 href=/schedule/appointments?from=2026-10-14&to=2026-10-14&location=4qsqd44qnv&status=2
+A Cancelled / 7 href=/schedule/appointments?from=2026-10-14&to=2026-10-14&location=4qsqd44qnv&status=3
+A Late cancel / 2 href=/schedule/appointments?from=2026-10-14&to=2026-10-14&location=4qsqd44qnv&status=4
+A No-show / 0 href=/schedule/appointments?from=2026-10-14&to=2026-10-14&location=4qsqd44qnv&status=5
+A Open the list href=/schedule/appointments?from=2026-10-14&to=2026-10-14&location=4qsqd44qnv
+A Completed appointments href=/schedule/appointments?from=2026-10-14&to=2026-10-14&location=4qsqd44qnv&status=2
+A Open the day view href=/schedule?date=2026-10-14&location=4qsqd44qnv
+A Activity href=/activity
+A Documents href=/documents
+A Billing href=/billing
+A Day view href=/schedule?location=4qsqd44qnv
+A 9:20 AM to 10:05 AM href=/patients/5t9w6jcwpl/recurring/0qcb8lpfmh
+A Vazquez, Steven href=/patients/5t9w6jcwpl
+A 9:20 AM to 10:20 AM href=/patients/41hjqnm3b7/recurring/6rw2qrwcbf
+A Gómez, Laura href=/patients/41hjqnm3b7
+A 9:40 AM to 10:10 AM href=/patients/18x9sqb3hb/appointments/0t5pt4bx36
+A Hamilton, Samuel href=/patients/18x9sqb3hb
+A 10:00 AM to 10:15 AM href=/patients/5kq0bwzwj5/recurring/210cb3pgfk
+A Diaz, Shirley href=/patients/5kq0bwzwj5
+A 10:00 AM to 10:20 AM href=/patients/2mfcg86074/appointments/5bdt4sl757
+A Williams, Betty href=/patients/2mfcg86074
+A 10:00 AM to 10:20 AM href=/patients/3x8x8lw9t3/appointments/54jl2z93hc
+A Martinez, Sandra href=/patients/3x8x8lw9t3
+A 10:00 AM to 10:20 AM href=/patients/13z0x344l0/appointments/2dr3rxd1jc
+A Hill, Camila href=/patients/13z0x344l0
+A 10:20 AM to 10:35 AM href=/patients/2pr3l4gppd/appointments/1n825cth4b
+A Young, Robert href=/patients/2pr3l4gppd
+BUTTON Show more
+A All activity href=/activity
+A Ramirez, David href=/patients/3pdsxpwzr5/activity
+A Ramirez, David href=/patients/28xpx631v1/activity
+A Porter, Catherine href=/patients/2q123zlg2m/activity
+A Porter, Catherine href=/patients/2q123zlg2m/activity
+A Porter, Catherine href=/patients/2q123zlg2m/activity
+A Soto, James href=/billing/invoices/6b7q92km6g
+A Soto, James href=/billing/invoices/6b7q92km6g
+A Matthews, Astrid href=/billing/invoices/2cw2d6krzf
+A Carter, Ryan href=/billing/invoices/5h618fxx1w
+A Carter, Ryan href=/billing/invoices/5h618fxx1w
+BUTTON Previous
+BUTTON Next

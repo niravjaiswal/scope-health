@@ -1,0 +1,37 @@
+URL https://practice.speedrun.scopehealth.com/patients?dob=1963-11-21
+
+== FRAME https://practice.speedrun.scopehealth.com/v/q5djclfj2g84qkjmqwv7nz765k/ ==
+Patients
+
+Find a patient by last name or date of birth.
+
+Last name
+or
+Date of birth
+Search
+
+Enter a last name or a full date of birth.
+
+Results
+
+No patients match
+
+Check the spelling, or search by date of birth instead.
+
+Restricted chart requests
+Your requests to open restricted charts
+Patient	Reason	Status
+Ramirez, David	Providing care to this patient	Ended
+Ramirez, David	Providing care to this patient	Ended
+Porter, Catherine	Billing or insurance question	Ended
+Porter, Catherine	Billing or insurance question	Ended
+
+4 requests
+== FRAME INTERACTIVE ==
+INPUT 
+INPUT 1963-11-21
+BUTTON Search
+A Ramirez, David href=/patients/3pdsxpwzr5
+A Ramirez, David href=/patients/28xpx631v1
+A Porter, Catherine href=/patients/2q123zlg2m
+A Porter, Catherine href=/patients/2q123zlg2m

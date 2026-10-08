@@ -1,0 +1,75 @@
+URL https://practice.speedrun.scopehealth.com/billing/accounts/535rn1pbvb
+
+== FRAME https://practice.speedrun.scopehealth.com/v/vmj9k00twfvqk5glk44c7d7hlh/ ==
+Invoices
+Account of Gray, Anna
+Gray, Anna
+MRN
+HG8916636
+Date of birth
+11/21/1963
+Open chart
+Invoices
+Invoices of this patient, newest service first
+Invoice	Service date	Location	Issued	Total	Status	
+Filed under
+
+66476130	Oct 7, 2026	Northgate	Oct 7, 2026	$25.00	
+Open	
+10871299	Sep 25, 2026	Northgate	Oct 3, 2026	$152.00	
+Void	
+28823838	Sep 23, 2026	Northgate	Sep 27, 2026	$53.32	
+Open	
+78937102	Sep 16, 2026	Northgate	Sep 22, 2026	$50.00	
+Open	
+45313177	Sep 9, 2026	Northgate	Sep 14, 2026	$269.00	
+Paid	
+89347716	Sep 2, 2026	Northgate	Sep 11, 2026	$251.00	
+Partly paid	
+22690649	Aug 26, 2026	Northgate	Aug 26, 2026	$93.00	
+Paid	
+52275336	Aug 12, 2026	Northgate	Aug 21, 2026	$178.00	
+Paid	
+60077496	Jul 27, 2026	Northgate	Aug 5, 2026	$48.00	
+Paid	
+49063059	Jul 15, 2026	Northgate	Jul 20, 2026	$119.00	
+Paid	
+58320052	Jun 24, 2026	Northgate	Jun 29, 2026	$315.00	
+Paid	
+47898067	Jun 12, 2026	Northgate	Jun 16, 2026	$130.16	
+Partly paid	
+11872307	May 11, 2026	Northgate	May 17, 2026	$1,988.00	
+Paid	
+34042650	Mar 20, 2026	Northgate	Mar 21, 2026	$50.51	
+Partly paid	
+20461372	Dec 31, 2025	Northgate	Jan 5, 2026	$53.00	
+Open	
+29163534	Sep 17, 2025	Northgate	Sep 21, 2025	$72.89	
+Paid	
+78849854	May 28, 2025	Northgate	Jun 1, 2025	$132.73	
+Void	
+09256930	Mar 5, 2025	Northgate	Mar 10, 2025	$198.00	
+Paid	
+
+18 invoices
+== FRAME INTERACTIVE ==
+A[] Invoices href=/billing
+A[] Open chart href=/patients/535rn1pbvb
+A[] 66476130 href=/billing/invoices/43twpp2hhj
+A[] 10871299 href=/billing/invoices/1n3n481df2
+A[] 28823838 href=/billing/invoices/5qbc4rhnlb
+A[] 78937102 href=/billing/invoices/508zdbcgt6
+A[] 45313177 href=/billing/invoices/3jpbsrrqbb
+A[] 89347716 href=/billing/invoices/0gr53xn1ms
+A[] 22690649 href=/billing/invoices/5w5h61dvzj
+A[] 52275336 href=/billing/invoices/56nbf2clv9
+A[] 60077496 href=/billing/invoices/3f34cjvxkm
+A[] 49063059 href=/billing/invoices/0r8fhqz9ls
+A[] 58320052 href=/billing/invoices/04xkpfs1xp
+A[] 47898067 href=/billing/invoices/15dtdpnvtk
+A[] 11872307 href=/billing/invoices/2966rwm8zl
+A[] 34042650 href=/billing/invoices/6pwz8thwzp
+A[] 20461372 href=/billing/invoices/0c0710bs11
+A[] 29163534 href=/billing/invoices/3zb5z8b7ng
+A[] 78849854 href=/billing/invoices/1mgjnjj8p3
+A[] 09256930 href=/billing/invoices/3wks6tt233

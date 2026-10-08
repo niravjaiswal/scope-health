@@ -1,0 +1,23 @@
+URL: https://practice.speedrun.scopehealth.com/patients/0xz2pw8x8t/documents/72mss0v1fj
+VIEWER: Lab report, received Mar 8, 2025 · 1 page · 18 KB
+FILE: Lab-report-Complete-blood-count-2025-03-08.pdf
+
+--- PDF TEXT LAYER ---
+Harbor Glen Medical Group  LABORATORY REPORT
+Clinical Laboratory, Eastside  Report status: Final
+88 Eastside Dr, Harbor Glen, KS 66741
+Patient  Ana Corbett  Ordering provider  Denise Lee, DO
+Date of birth  2000-11-13  Collected  2025-03-05
+Sex  F  Received  2025-03-08
+Record number  HG5860146  Report number  LR-007926
+Complete blood count
+Test  Result  Units  Reference range  Flag
+White blood cell count  3.9  10^3/uL  4.0 - 11.0  low
+Hemoglobin  11.8  g/dL  12.0 - 17.0  low
+Hematocrit  45.2  %  36.0 - 50.0  normal
+Platelet count  404  10^3/uL  150 - 400  high
+Tests reported:   4
+A result outside its reference range is flagged high or low. Reference ranges apply to adults and may differ by age and sex.
+Results should be read together with the clinical picture.
+End of report
+Harbor Glen Medical Group Clinical Laboratory. Confidential patient information.  Page 1 of 1

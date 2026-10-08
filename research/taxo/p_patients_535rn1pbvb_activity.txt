@@ -1,0 +1,44 @@
+URL https://practice.speedrun.scopehealth.com/patients/535rn1pbvb/activity
+
+== FRAME https://practice.speedrun.scopehealth.com/v/2mgq70d8klmjz4lvjgk0vq76ff/ ==
+Gray, Anna
+MRN
+HG8916636
+Date of birth
+11/21/1963 (62 years)
+Sex
+Female
+Billing
+Invoices
+Demographics
+Insurance
+Problems
+Notes
+Documents
+Appointments
+Activity
+Activity
+Show
+All activity
+Changes
+Chart views
+Activity on this record, newest first
+When	User	What
+Jun 22, 2026, 8:13 AM CDT	jcook	Opened the chart
+Feb 1, 2025, 11:31 AM CST	rharrison	Opened the chart
+Jan 25, 2025, 4:23 AM CST	danderson	Opened the chart
+Aug 13, 2024, 6:46 PM CDT	jnielsen	Opened the chart
+May 10, 2024, 7:46 AM CDT	hramos	Opened the chart
+Jan 5, 2024, 8:11 AM CST	vherrera	Created the record
+
+6 entries
+== FRAME INTERACTIVE ==
+A[] Invoices href=/billing/accounts/535rn1pbvb
+A[] Demographics href=/patients/535rn1pbvb
+A[] Insurance href=/patients/535rn1pbvb/insurance
+A[] Problems href=/patients/535rn1pbvb/problems
+A[] Notes href=/patients/535rn1pbvb/notes
+A[] Documents href=/patients/535rn1pbvb/documents
+A[] Appointments href=/patients/535rn1pbvb/appointments
+A[] Activity href=/patients/535rn1pbvb/activity
+SELECT[select-one] All activity / Changes / Chart views OPTIONS=All activity|Changes|Chart views

@@ -1,0 +1,7765 @@
+{
+ "/": {
+  "title": "Dashboard \u00b7 Wrenfield",
+  "h1": [
+   "Dashboard"
+  ],
+  "h2": [
+   "Oct 14, 2026",
+   "Appointments today",
+   "Patients seen today",
+   "Open slots today",
+   "New patients this month",
+   "Documents received this week",
+   "Invoices issued this week",
+   "Today's schedule Day view",
+   "Recent activity All activity"
+  ],
+  "links": [
+   {
+    "href": "/schedule/appointments?from=2026-10-14&to=2026-10-14&location=2mgdl287kq&status=1",
+    "text": "Scheduled 52",
+    "hidden": false
+   },
+   {
+    "href": "/schedule/appointments?from=2026-10-14&to=2026-10-14&location=2mgdl287kq&status=2",
+    "text": "Completed 9",
+    "hidden": false
+   },
+   {
+    "href": "/schedule/appointments?from=2026-10-14&to=2026-10-14&location=2mgdl287kq&status=3",
+    "text": "Cancelled 9",
+    "hidden": false
+   },
+   {
+    "href": "/schedule/appointments?from=2026-10-14&to=2026-10-14&location=2mgdl287kq&status=4",
+    "text": "Late cancel 3",
+    "hidden": false
+   },
+   {
+    "href": "/schedule/appointments?from=2026-10-14&to=2026-10-14&location=2mgdl287kq&status=5",
+    "text": "No-show 1",
+    "hidden": false
+   },
+   {
+    "href": "/schedule/appointments?from=2026-10-14&to=2026-10-14&location=2mgdl287kq",
+    "text": "Open the list",
+    "hidden": false
+   },
+   {
+    "href": "/schedule/appointments?from=2026-10-14&to=2026-10-14&location=2mgdl287kq&status=2",
+    "text": "Completed appointments",
+    "hidden": false
+   },
+   {
+    "href": "/schedule?date=2026-10-14&location=2mgdl287kq",
+    "text": "Open the day view",
+    "hidden": false
+   },
+   {
+    "href": "/activity",
+    "text": "Activity",
+    "hidden": false
+   },
+   {
+    "href": "/documents",
+    "text": "Documents",
+    "hidden": false
+   },
+   {
+    "href": "/billing",
+    "text": "Billing",
+    "hidden": false
+   },
+   {
+    "href": "/schedule?location=2mgdl287kq",
+    "text": "Day view",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/appointments/6x505m94xc",
+    "text": "10:40 AM to 11:00 AM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd",
+    "text": "Murphy, Valentina",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6sqtnhdpq1/appointments/5qmf7g4kj1",
+    "text": "11:00 AM to 11:15 AM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6sqtnhdpq1",
+    "text": "Rodr\u00edguez, Hannah",
+    "hidden": false
+   },
+   {
+    "href": "/patients/1j01x82b8s/appointments/41g8x6rppt",
+    "text": "11:00 AM to 11:20 AM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/1j01x82b8s",
+    "text": "Williams, Mary",
+    "hidden": false
+   },
+   {
+    "href": "/patients/728375g94r/appointments/1w6v4vf2w5",
+    "text": "11:00 AM to 11:30 AM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/728375g94r",
+    "text": "Russell, Natalie",
+    "hidden": false
+   },
+   {
+    "href": "/patients/25nh4hczgf/appointments/2cflmj9pqh",
+    "text": "11:00 AM to 11:40 AM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/25nh4hczgf",
+    "text": "Evans, David",
+    "hidden": false
+   },
+   {
+    "href": "/patients/535rn1pbvb/recurring/4wmqk4lx5r",
+    "text": "11:15 AM to 11:30 AM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/535rn1pbvb",
+    "text": "Gray, Anna",
+    "hidden": false
+   },
+   {
+    "href": "/patients/5lv61qbn3p/appointments/61wh27r5jw",
+    "text": "11:20 AM to 11:40 AM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/5lv61qbn3p",
+    "text": "Montgomery, Jeffrey",
+    "hidden": false
+   },
+   {
+    "href": "/patients/07ngwp7x0s/appointments/1gdlz8xnz7",
+    "text": "11:20 AM to 11:40 AM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/07ngwp7x0s",
+    "text": "Wright, Debra",
+    "hidden": false
+   },
+   {
+    "href": "/activity",
+    "text": "All activity",
+    "hidden": false
+   },
+   {
+    "href": "/patients/3pdsxpwzr5/activity",
+    "text": "Ramirez, David",
+    "hidden": false
+   },
+   {
+    "href": "/patients/28xpx631v1/activity",
+    "text": "Ramirez, David",
+    "hidden": false
+   },
+   {
+    "href": "/patients/2q123zlg2m/activity",
+    "text": "Porter, Catherine",
+    "hidden": false
+   },
+   {
+    "href": "/patients/2q123zlg2m/activity",
+    "text": "Porter, Catherine",
+    "hidden": false
+   },
+   {
+    "href": "/patients/2q123zlg2m/activity",
+    "text": "Porter, Catherine",
+    "hidden": false
+   },
+   {
+    "href": "/billing/invoices/6b7q92km6g",
+    "text": "Soto, James",
+    "hidden": false
+   },
+   {
+    "href": "/billing/invoices/6b7q92km6g",
+    "text": "Soto, James",
+    "hidden": false
+   },
+   {
+    "href": "/billing/invoices/2cw2d6krzf",
+    "text": "Matthews, Astrid",
+    "hidden": false
+   },
+   {
+    "href": "/billing/invoices/5h618fxx1w",
+    "text": "Carter, Ryan",
+    "hidden": false
+   },
+   {
+    "href": "/billing/invoices/5h618fxx1w",
+    "text": "Carter, Ryan",
+    "hidden": false
+   }
+  ],
+  "buttons": [
+   "Show more",
+   "Previous",
+   "Next"
+  ],
+  "forms": [],
+  "tables": [
+   {
+    "caption": "The rest of today's appointments, in time order",
+    "hdr": [
+     "Time",
+     "Patient",
+     "Provider",
+     "Visit type",
+     "Status"
+    ],
+    "rows": 9
+   },
+   {
+    "caption": "Latest activity, newest first",
+    "hdr": [
+     "When",
+     "User",
+     "What",
+     "Record"
+    ],
+    "rows": 11
+   }
+  ],
+  "nonicon_svgs": [
+   [
+    null,
+    null,
+    null,
+    444
+   ],
+   [
+    null,
+    null,
+    null,
+    205
+   ],
+   [
+    null,
+    null,
+    null,
+    333
+   ],
+   [
+    null,
+    null,
+    null,
+    205
+   ],
+   [
+    null,
+    null,
+    null,
+    217
+   ],
+   [
+    null,
+    null,
+    null,
+    205
+   ],
+   [
+    null,
+    null,
+    null,
+    301
+   ],
+   [
+    null,
+    null,
+    null,
+    205
+   ],
+   [
+    null,
+    null,
+    null,
+    342
+   ],
+   [
+    null,
+    null,
+    null,
+    205
+   ]
+  ],
+  "imgs": [],
+  "canvas": 0,
+  "iframes": [],
+  "dl": [],
+  "details": [],
+  "text_len": 2545,
+  "shell_url": "https://practice.speedrun.scopehealth.com/",
+  "load_s": 0.488
+ },
+ "/patients": {
+  "title": "Wrenfield",
+  "h1": [
+   "Patients"
+  ],
+  "h2": [
+   "Restricted chart requests"
+  ],
+  "links": [
+   {
+    "href": "/patients/3pdsxpwzr5",
+    "text": "Ramirez, David",
+    "hidden": false
+   },
+   {
+    "href": "/patients/28xpx631v1",
+    "text": "Ramirez, David",
+    "hidden": false
+   },
+   {
+    "href": "/patients/2q123zlg2m",
+    "text": "Porter, Catherine",
+    "hidden": false
+   },
+   {
+    "href": "/patients/2q123zlg2m",
+    "text": "Porter, Catherine",
+    "hidden": false
+   }
+  ],
+  "buttons": [
+   "Search"
+  ],
+  "forms": [
+   [
+    {
+     "tag": "input",
+     "name": "lastName",
+     "type": null,
+     "value": ""
+    },
+    {
+     "tag": "input",
+     "name": "dob",
+     "type": "date",
+     "value": ""
+    }
+   ]
+  ],
+  "tables": [
+   {
+    "caption": "Your requests to open restricted charts",
+    "hdr": [
+     "Patient",
+     "Reason",
+     "Status"
+    ],
+    "rows": 5
+   }
+  ],
+  "nonicon_svgs": [
+   [
+    null,
+    null,
+    null,
+    221
+   ],
+   [
+    null,
+    null,
+    null,
+    301
+   ]
+  ],
+  "imgs": [],
+  "canvas": 0,
+  "iframes": [],
+  "dl": [],
+  "details": [],
+  "text_len": 562,
+  "shell_url": "https://practice.speedrun.scopehealth.com/patients",
+  "load_s": 0.324
+ },
+ "/schedule": {
+  "title": "Schedule \u00b7 Wrenfield",
+  "h1": [
+   "Schedule"
+  ],
+  "h2": [
+   "Wednesday, October 14, 2026",
+   "Diana Anderson, PA",
+   "Desmond Fields, PA",
+   "Donald Silva, MD",
+   "Mark Sorensen, MD",
+   "Aaron Wagner, MD",
+   "Brenda West, MD"
+  ],
+  "links": [
+   {
+    "href": "/schedule?date=2026-10-14",
+    "text": "Day",
+    "hidden": false
+   },
+   {
+    "href": "/schedule/providers/4vqb93p4g9?date=2026-10-14",
+    "text": "Provider",
+    "hidden": false
+   },
+   {
+    "href": "/schedule/appointments?from=2026-10-14&to=2026-10-20",
+    "text": "Appointment list",
+    "hidden": false
+   },
+   {
+    "href": "/schedule/providers/1x0jb5xxv1?date=2026-10-14",
+    "text": "Diana Anderson, PA",
+    "hidden": false
+   },
+   {
+    "href": "/patients/1z51c6nt6k/appointments/000gz3ss24",
+    "text": "8:00 AM to 8:20 AM Turner, Shirley Completed \u00b7 Office visit",
+    "hidden": false
+   },
+   {
+    "href": "/patients/2z02hsrvb9/appointments/6vhg2s7cz3",
+    "text": "8:00 AM to 9:00 AM Wilson, George Cancelled \u00b7 Infusion thera",
+    "hidden": false
+   },
+   {
+    "href": "/patients/1lzxvj88zd/appointments/00fl88nb8t",
+    "text": "9:00 AM to 9:20 AM Lee, Jonathan Completed \u00b7 Follow-up visit",
+    "hidden": false
+   },
+   {
+    "href": "/patients/5vzzjptxlw/appointments/1l46g5fq5s",
+    "text": "9:20 AM to 9:40 AM Vasquez, Jean Completed \u00b7 Sports physical",
+    "hidden": false
+   },
+   {
+    "href": "/patients/1xb41ths62/appointments/615thbfj3x",
+    "text": "9:40 AM to 10:00 AM Ortega, Robert Completed \u00b7 Follow-up vis",
+    "hidden": false
+   },
+   {
+    "href": "/patients/5d7xfdthjt/appointments/3npvpr2qbt",
+    "text": "10:00 AM to 10:15 AM \u00b7 Late cancel Matthews, Omar Late cance",
+    "hidden": false
+   },
+   {
+    "href": "/patients/3hdhbsfbq2/appointments/39bjx66468",
+    "text": "10:00 AM to 10:40 AM Hudson, Aisha Scheduled \u00b7 Annual physic",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/appointments/6x505m94xc",
+    "text": "10:40 AM to 11:00 AM Murphy, Valentina Scheduled \u00b7 Sick visi",
+    "hidden": false
+   },
+   {
+    "href": "/patients/728375g94r/appointments/1w6v4vf2w5",
+    "text": "11:00 AM to 11:30 AM Russell, Natalie Scheduled \u00b7 Skin biops",
+    "hidden": false
+   },
+   {
+    "href": "/patients/07ngwp7x0s/appointments/1gdlz8xnz7",
+    "text": "11:20 AM to 11:40 AM Wright, Debra Cancelled \u00b7 Office visit",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6s5wtkp362/appointments/42rhfbvx87",
+    "text": "1:00 PM to 1:20 PM Khan, Garrett Scheduled \u00b7 Telehealth visi",
+    "hidden": false
+   },
+   {
+    "href": "/patients/51pplkkcs1/recurring/313bv2hbx1",
+    "text": "3:20 PM to 4:05 PM Nelson, Thomas Scheduled \u00b7 Nutrition coun",
+    "hidden": false
+   },
+   {
+    "href": "/patients/2wwmkfhxhp/appointments/0nm8pctdll",
+    "text": "4:20 PM to 4:40 PM Dixon, Ashley Scheduled \u00b7 Sick visit",
+    "hidden": false
+   },
+   {
+    "href": "/patients/07bq5915p6/appointments/3gl206z4f6",
+    "text": "4:40 PM to 5:00 PM Hern\u00e1ndez, Diana Scheduled \u00b7 Follow-up vi",
+    "hidden": false
+   },
+   {
+    "href": "/schedule/providers/042xngpx1b?date=2026-10-14",
+    "text": "Desmond Fields, PA",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6szfd4wn3d/recurring/31zc3fzlbf",
+    "text": "8:00 AM to 8:30 AM Tran, Robert Completed \u00b7 Smoking cessatio",
+    "hidden": false
+   },
+   {
+    "href": "/patients/2pdn6rb53m/appointments/2g9f15xwwb",
+    "text": "8:30 AM to 8:50 AM Davis, Virginia Completed \u00b7 Follow-up vis",
+    "hidden": false
+   },
+   {
+    "href": "/patients/4n066v5brb/recurring/0ffvkkq7nr",
+    "text": "9:30 AM to 10:15 AM Green, Kathleen Scheduled \u00b7 Physical the",
+    "hidden": false
+   },
+   {
+    "href": "/patients/25nh4hczgf/appointments/2cflmj9pqh",
+    "text": "11:00 AM to 11:40 AM Evans, David Scheduled \u00b7 Specialist con",
+    "hidden": false
+   },
+   {
+    "href": "/patients/231j9bqh96/appointments/3tm38lbp48",
+    "text": "1:00 PM to 1:20 PM Kennedy, Samuel Scheduled \u00b7 Office visit",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6l07jlmzvr/appointments/5psxmtprzp",
+    "text": "1:00 PM to 1:45 PM Dixon, Susan Late cancel \u00b7 Echocardiogram",
+    "hidden": false
+   },
+   {
+    "href": "/patients/183mf68mh1/appointments/1rtz7hscks",
+    "text": "1:30 PM to 2:30 PM Riley, Katherine Scheduled \u00b7 Stress test",
+    "hidden": false
+   },
+   {
+    "href": "/patients/1vk89wlvpt/appointments/5wf7wx2crv",
+    "text": "2:30 PM to 2:50 PM Willis, Joshua Scheduled \u00b7 Office visit",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6zbzghmvlp/appointments/5j9mlkndwr",
+    "text": "3:00 PM to 3:20 PM Allen, Daniel Scheduled \u00b7 Sick visit",
+    "hidden": false
+   },
+   {
+    "href": "/patients/3mnqc0n88z/appointments/4p27lzpp7l",
+    "text": "3:30 PM to 3:50 PM Hayes, Lawrence Scheduled \u00b7 Office visit",
+    "hidden": false
+   },
+   {
+    "href": "/patients/16hhh9dmz9/appointments/521hklxbpz",
+    "text": "4:00 PM to 4:20 PM Cook, John Scheduled \u00b7 Sick visit",
+    "hidden": false
+   },
+   {
+    "href": "/patients/1w2xx2mxq8/appointments/2qng8w34f0",
+    "text": "4:30 PM to 4:50 PM Reyes, Lauren Scheduled \u00b7 Follow-up visit",
+    "hidden": false
+   },
+   {
+    "href": "/schedule/providers/57dkc53brc?date=2026-10-14",
+    "text": "Donald Silva, MD",
+    "hidden": false
+   },
+   {
+    "href": "/patients/2w1zn1chdn/recurring/5mpkmh353n",
+    "text": "1:20 PM to 1:50 PM Owens, Linda Cancelled \u00b7 Smoking cessatio",
+    "hidden": false
+   },
+   {
+    "href": "/patients/0g979fz42p/recurring/6mk3lg1t28",
+    "text": "4:00 PM to 4:15 PM \u00b7 Cancelled Flores, Lisa Cancelled \u00b7 Anti",
+    "hidden": false
+   },
+   {
+    "href": "/patients/1jhgv608lb/recurring/423wx2pwkl",
+    "text": "6:40 PM to 7:40 PM Johnson, John Cancelled \u00b7 Infusion therap",
+    "hidden": false
+   },
+   {
+    "href": "/schedule/providers/4zxht0glk9?date=2026-10-14",
+    "text": "Mark Sorensen, MD",
+    "hidden": false
+   },
+   {
+    "href": "/patients/21p6zv34d3/recurring/49kzhht3ct",
+    "text": "8:00 AM to 8:30 AM Wilson, Wayne Completed \u00b7 Wound care",
+    "hidden": false
+   },
+   {
+    "href": "/patients/3b6b750nt0/appointments/50j3qxxr61",
+    "text": "8:30 AM to 8:50 AM Garcia, David No-show \u00b7 Office visit",
+    "hidden": false
+   },
+   {
+    "href": "/patients/3fd2gk8r5n/recurring/0wm1b0mw23",
+    "text": "9:00 AM to 9:20 AM Miller, Elizabeth Completed \u00b7 Prenatal vi",
+    "hidden": false
+   },
+   {
+    "href": "/patients/1dvgjvhz7d/appointments/50w68q70xf",
+    "text": "9:15 AM to 9:55 AM Perry, Christine Cancelled \u00b7 Annual physi",
+    "hidden": false
+   },
+   {
+    "href": "/patients/4xqp60q94x/appointments/4sml828ltr",
+    "text": "9:45 AM to 10:00 AM \u00b7 Late cancel Harris, Michael Late cance",
+    "hidden": false
+   },
+   {
+    "href": "/patients/4qzq3f7zl5/appointments/0t3q0qxp3z",
+    "text": "9:45 AM to 10:25 AM Perez, Abigail Scheduled \u00b7 New patient v",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6hpq2qsfkb/appointments/71cj1n19xk",
+    "text": "10:00 AM to 10:20 AM Mitchell, Ashley Cancelled \u00b7 Follow-up ",
+    "hidden": false
+   },
+   {
+    "href": "/patients/5fljr2js6t/appointments/5rn5gw5n9g",
+    "text": "10:30 AM to 10:50 AM Schaefer, Jessica Scheduled \u00b7 Telehealt",
+    "hidden": false
+   },
+   {
+    "href": "/patients/535rn1pbvb/recurring/4wmqk4lx5r",
+    "text": "11:15 AM to 11:30 AM \u00b7 Scheduled Gray, Anna Scheduled \u00b7 Anti",
+    "hidden": false
+   },
+   {
+    "href": "/patients/5lws4nxrsr/recurring/4cl1j5sq5v",
+    "text": "1:30 PM to 2:30 PM Anderson, Patricia Scheduled \u00b7 Infusion t",
+    "hidden": false
+   },
+   {
+    "href": "/patients/1zlqksddm2/appointments/4l04d2lrtw",
+    "text": "2:45 PM to 3:00 PM \u00b7 Scheduled Turner, Mary Scheduled \u00b7 Lab ",
+    "hidden": false
+   },
+   {
+    "href": "/patients/00t29dq131/appointments/092v8mblvg",
+    "text": "3:00 PM to 3:15 PM \u00b7 Scheduled Rice, Megan Scheduled \u00b7 Antic",
+    "hidden": false
+   },
+   {
+    "href": "/patients/0qjcn0vsr2/appointments/191j5t47mr",
+    "text": "3:30 PM to 3:50 PM Jacobsen, Betty Scheduled \u00b7 Office visit",
+    "hidden": false
+   },
+   {
+    "href": "/patients/476338vz9r/recurring/4359nxlv3z",
+    "text": "3:45 PM to 4:15 PM Moore, Hannah Deleted Cancelled \u00b7 Smoking",
+    "hidden": false
+   },
+   {
+    "href": "/patients/06jj56sm1l/appointments/0bnmwzktvl",
+    "text": "4:15 PM to 5:00 PM Hern\u00e1ndez, Judith Cancelled \u00b7 Physical th",
+    "hidden": false
+   },
+   {
+    "href": "/schedule/providers/45h1bjsgfw?date=2026-10-14",
+    "text": "Aaron Wagner, MD",
+    "hidden": false
+   },
+   {
+    "href": "/patients/1j01x82b8s/appointments/41g8x6rppt",
+    "text": "11:00 AM to 11:20 AM Williams, Mary Scheduled \u00b7 Follow-up vi",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6xr9jl170v/appointments/3wdpd807cg",
+    "text": "11:20 AM to 11:40 AM Nguyen, Donna Scheduled \u00b7 Follow-up vis",
+    "hidden": false
+   },
+   {
+    "href": "/patients/539cl6rp94/recurring/46s33fz2jc",
+    "text": "11:40 AM to 11:55 AM \u00b7 Scheduled Moore, Jesse Scheduled \u00b7 Al",
+    "hidden": false
+   },
+   {
+    "href": "/patients/3tq61r51x2/appointments/3s727rbq9b",
+    "text": "12:20 PM to 12:40 PM Vargas, Richard Scheduled \u00b7 Follow-up v",
+    "hidden": false
+   },
+   {
+    "href": "/patients/06h771clr3/recurring/2zdrfjqkvk",
+    "text": "1:00 PM to 1:20 PM Sandoval, Garrett Scheduled \u00b7 Prenatal vi",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6jl312547c/appointments/0kpb6rs2d7",
+    "text": "1:20 PM to 2:00 PM Wagner, Judith Scheduled \u00b7 New patient vi",
+    "hidden": false
+   },
+   {
+    "href": "/patients/054pt5h3lc/appointments/3rr9zzgh6n",
+    "text": "2:00 PM to 2:20 PM Hall, Mei Scheduled \u00b7 Prenatal visit",
+    "hidden": false
+   },
+   {
+    "href": "/patients/160t4d8hd3/appointments/1wgssrqf95",
+    "text": "2:20 PM to 2:50 PM Young, Robert Scheduled \u00b7 Diabetes manage",
+    "hidden": false
+   },
+   {
+    "href": "/patients/2f5nz6s7xh/recurring/2kkspx1xk4",
+    "text": "4:00 PM to 4:15 PM \u00b7 Scheduled Morris, Patricia Scheduled \u00b7 ",
+    "hidden": false
+   },
+   {
+    "href": "/patients/3b66t633xt/recurring/465htpjjzd",
+    "text": "4:20 PM to 4:50 PM Anderson, Michael Scheduled \u00b7 Smoking ces",
+    "hidden": false
+   },
+   {
+    "href": "/patients/0lkjvxb7w7/appointments/4rcnst2gtf",
+    "text": "5:00 PM to 5:15 PM \u00b7 Scheduled Mitchell, Jose Scheduled \u00b7 Me",
+    "hidden": false
+   },
+   {
+    "href": "/patients/00t29dq131/appointments/0tvn0lvb8v",
+    "text": "5:00 PM to 5:20 PM Rice, Megan Cancelled \u00b7 Office visit",
+    "hidden": false
+   },
+   {
+    "href": "/patients/3qg21db89v/appointments/2mm5nckb2d",
+    "text": "5:40 PM to 6:00 PM Jones, Donald Scheduled \u00b7 Follow-up visit",
+    "hidden": false
+   },
+   {
+    "href": "/patients/3b66t633xt/appointments/1wdldmpl3b",
+    "text": "6:20 PM to 6:40 PM Anderson, Michael Scheduled \u00b7 Office visi",
+    "hidden": false
+   },
+   {
+    "href": "/patients/3nv20sg2kl/appointments/62qwnjmhhk",
+    "text": "7:00 PM to 7:20 PM Graham, Astrid Scheduled \u00b7 Office visit",
+    "hidden": false
+   },
+   {
+    "href": "/patients/5cpncfr02k/recurring/3t053hztn5",
+    "text": "7:20 PM to 7:40 PM Taylor, Michael Scheduled \u00b7 Follow-up vis",
+    "hidden": false
+   },
+   {
+    "href": "/schedule/providers/3xn04x0076?date=2026-10-14",
+    "text": "Brenda West, MD",
+    "hidden": false
+   },
+   {
+    "href": "/patients/3f800709v2/appointments/0l8b6vqmhs",
+    "text": "8:20 AM to 9:20 AM Smith, Joyce Completed \u00b7 Minor procedure",
+    "hidden": false
+   },
+   {
+    "href": "/patients/5xjqv6d7mf/appointments/1zn5vqpvns",
+    "text": "9:40 AM to 10:10 AM Ford, John Scheduled \u00b7 Wound care",
+    "hidden": false
+   },
+   {
+    "href": "/patients/3n3cj2whx1/appointments/2bfld4h9ks",
+    "text": "10:20 AM to 10:50 AM Luna, Ronald Scheduled \u00b7 Wound care",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6sqtnhdpq1/appointments/5qmf7g4kj1",
+    "text": "11:00 AM to 11:15 AM \u00b7 Scheduled Rodr\u00edguez, Hannah Scheduled",
+    "hidden": false
+   },
+   {
+    "href": "/patients/5lv61qbn3p/appointments/61wh27r5jw",
+    "text": "11:20 AM to 11:40 AM Montgomery, Jeffrey Scheduled \u00b7 Sick vi",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6jxgqvx1fk/appointments/4z6vh5rfl4",
+    "text": "11:40 AM to 11:55 AM \u00b7 Scheduled Williams, Ashley Scheduled ",
+    "hidden": false
+   },
+   {
+    "href": "/patients/0njj3wftzj/appointments/5hrxm70vlg",
+    "text": "1:00 PM to 1:20 PM Martinez, Chlo\u00e9 Scheduled \u00b7 Follow-up vis",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6fm9mh5fnd/appointments/2vz6kqvv6q",
+    "text": "1:20 PM to 1:40 PM Lopez, Betty Scheduled \u00b7 Telehealth visit",
+    "hidden": false
+   },
+   {
+    "href": "/patients/612m3gf23m/appointments/3slb0jq2xz",
+    "text": "1:40 PM to 1:55 PM \u00b7 Scheduled Watson, Alexander Scheduled \u00b7",
+    "hidden": false
+   },
+   {
+    "href": "/patients/394h02g1h3/appointments/1hg6qcr4nn",
+    "text": "2:00 PM to 2:15 PM \u00b7 Scheduled Guzman, Bruce Scheduled \u00b7 Ele",
+    "hidden": false
+   },
+   {
+    "href": "/patients/21ffzk38k5/appointments/12xwc6dv40",
+    "text": "2:40 PM to 3:00 PM Baker, Mark Scheduled \u00b7 Telehealth visit",
+    "hidden": false
+   },
+   {
+    "href": "/patients/293hmb4pwf/recurring/024hlc96rt",
+    "text": "3:20 PM to 3:50 PM Ward, Brenda Scheduled \u00b7 Smoking cessatio",
+    "hidden": false
+   },
+   {
+    "href": "/patients/42v2j23f6x/appointments/4x9swt0c72",
+    "text": "4:00 PM to 4:20 PM Campbell, Hannah Scheduled \u00b7 Post-operati",
+    "hidden": false
+   },
+   {
+    "href": "/patients/34vjdk1w3l/appointments/0zzqzwlv7l",
+    "text": "4:20 PM to 4:40 PM Salazar, Sharon Scheduled \u00b7 Follow-up vis",
+    "hidden": false
+   },
+   {
+    "href": "/patients/609sr4nznb/recurring/3r1z6j0fft",
+    "text": "4:40 PM to 4:55 PM \u00b7 Scheduled Wilson, Kathryn Scheduled \u00b7 A",
+    "hidden": false
+   }
+  ],
+  "buttons": [
+   " [Previous day]",
+   "Today",
+   " [Next day]"
+  ],
+  "forms": [],
+  "tables": [],
+  "nonicon_svgs": [
+   [
+    null,
+    null,
+    null,
+    180
+   ],
+   [
+    null,
+    null,
+    null,
+    179
+   ],
+   [
+    null,
+    null,
+    null,
+    253
+   ],
+   [
+    null,
+    null,
+    null,
+    253
+   ],
+   [
+    null,
+    null,
+    null,
+    253
+   ],
+   [
+    null,
+    null,
+    null,
+    253
+   ]
+  ],
+  "imgs": [],
+  "canvas": 0,
+  "iframes": [],
+  "dl": [],
+  "details": [],
+  "text_len": 6139,
+  "shell_url": "https://practice.speedrun.scopehealth.com/schedule?date=2026-10-14",
+  "load_s": 0.396
+ },
+ "/billing": {
+  "title": "Wrenfield",
+  "h1": [
+   "Billing"
+  ],
+  "h2": [
+   "Invoices"
+  ],
+  "links": [
+   {
+    "href": "/billing/invoices/0h9svwws1g",
+    "text": "20724781",
+    "hidden": false
+   },
+   {
+    "href": "/billing/invoices/2343qgct07",
+    "text": "64569788",
+    "hidden": false
+   },
+   {
+    "href": "/billing/invoices/2hdcz7nbzh",
+    "text": "25452487",
+    "hidden": false
+   },
+   {
+    "href": "/billing/invoices/66v5xrf1jz",
+    "text": "27894852",
+    "hidden": false
+   },
+   {
+    "href": "/billing/invoices/70btlc90n9",
+    "text": "04762827",
+    "hidden": false
+   },
+   {
+    "href": "/billing/invoices/1dzjlmwwq3",
+    "text": "92136248",
+    "hidden": false
+   },
+   {
+    "href": "/billing/invoices/44g83dhwsf",
+    "text": "89272701",
+    "hidden": false
+   },
+   {
+    "href": "/billing/invoices/46p5z5n3x7",
+    "text": "08682849",
+    "hidden": false
+   },
+   {
+    "href": "/billing/invoices/3wp0z2dsh4",
+    "text": "20139044",
+    "hidden": false
+   },
+   {
+    "href": "/billing/invoices/5lfqfmphs5",
+    "text": "81154086",
+    "hidden": false
+   },
+   {
+    "href": "/billing/invoices/2prxxg21xf",
+    "text": "56492558",
+    "hidden": false
+   },
+   {
+    "href": "/billing/invoices/228p9xltfs",
+    "text": "97323943",
+    "hidden": false
+   },
+   {
+    "href": "/billing/invoices/0wf1tjrc84",
+    "text": "69255068",
+    "hidden": false
+   },
+   {
+    "href": "/billing/invoices/5sl2kld5l3",
+    "text": "08146123",
+    "hidden": false
+   },
+   {
+    "href": "/billing/invoices/2zmq5thb1g",
+    "text": "79715283",
+    "hidden": false
+   },
+   {
+    "href": "/billing/invoices/4h1685d43d",
+    "text": "90470226",
+    "hidden": false
+   },
+   {
+    "href": "/billing/invoices/73sm1zk6g8",
+    "text": "94654407",
+    "hidden": false
+   },
+   {
+    "href": "/billing/invoices/3zcrz6z4h7",
+    "text": "53497519",
+    "hidden": false
+   },
+   {
+    "href": "/billing/invoices/0x0v4c8t8t",
+    "text": "26853083",
+    "hidden": false
+   },
+   {
+    "href": "/billing/invoices/1v03qznd78",
+    "text": "80610954",
+    "hidden": false
+   },
+   {
+    "href": "/billing/invoices/1bzwjq37b1",
+    "text": "69988378",
+    "hidden": false
+   },
+   {
+    "href": "/billing/invoices/5d8j63bfc9",
+    "text": "29570522",
+    "hidden": false
+   },
+   {
+    "href": "/billing/invoices/3mhg1cb0t1",
+    "text": "64536140",
+    "hidden": false
+   },
+   {
+    "href": "/billing/invoices/1z1rcbwhx8",
+    "text": "27824250",
+    "hidden": false
+   },
+   {
+    "href": "/billing/invoices/12vbvsr489",
+    "text": "88880035",
+    "hidden": false
+   }
+  ],
+  "buttons": [
+   "Open",
+   "Find patient",
+   "Apply filters",
+   "Clear filters",
+   "Invoice",
+   "Patient",
+   "Location",
+   "Service date",
+   "Issued",
+   "Total",
+   "Status",
+   "Previous",
+   "1",
+   "2",
+   "3",
+   "Next"
+  ],
+  "forms": [
+   [
+    {
+     "tag": "input",
+     "name": "number",
+     "type": null,
+     "value": ""
+    }
+   ],
+   [
+    {
+     "tag": "input",
+     "name": "patient",
+     "type": null,
+     "value": ""
+    }
+   ],
+   [
+    {
+     "tag": "select",
+     "name": "location",
+     "type": null,
+     "value": null,
+     "options": [
+      [
+       "",
+       "All locations",
+       false
+      ],
+      [
+       "1",
+       "Northgate",
+       false
+      ],
+      [
+       "2",
+       "Front Range",
+       false
+      ],
+      [
+       "3",
+       "Eastside",
+       false
+      ],
+      [
+       "4",
+       "Stonebrook",
+       false
+      ],
+      [
+       "5",
+       "Lakeside",
+       false
+      ],
+      [
+       "6",
+       "Riverbend",
+       false
+      ],
+      [
+       "7",
+       "Highline",
+       false
+      ],
+      [
+       "8",
+       "Prairie View",
+       false
+      ],
+      [
+       "9",
+       "Cedar Hollow",
+       false
+      ],
+      [
+       "10",
+       "Willow Creek",
+       false
+      ]
+     ]
+    },
+    {
+     "tag": "select",
+     "name": "status",
+     "type": null,
+     "value": null,
+     "options": [
+      [
+       "",
+       "All statuses",
+       false
+      ],
+      [
+       "open",
+       "Open",
+       false
+      ],
+      [
+       "partial",
+       "Partly paid",
+       false
+      ],
+      [
+       "paid",
+       "Paid",
+       false
+      ],
+      [
+       "void",
+       "Void",
+       false
+      ]
+     ]
+    },
+    {
+     "tag": "input",
+     "name": "serviceFrom",
+     "type": "date",
+     "value": ""
+    },
+    {
+     "tag": "input",
+     "name": "serviceTo",
+     "type": "date",
+     "value": ""
+    },
+    {
+     "tag": "input",
+     "name": "issuedFrom",
+     "type": "date",
+     "value": ""
+    },
+    {
+     "tag": "input",
+     "name": "issuedTo",
+     "type": "date",
+     "value": ""
+    },
+    {
+     "tag": "input",
+     "name": "owedAtLeast",
+     "type": null,
+     "value": ""
+    },
+    {
+     "tag": "input",
+     "name": "owedAtMost",
+     "type": null,
+     "value": ""
+    }
+   ]
+  ],
+  "tables": [
+   {
+    "caption": "Invoices matching the filters",
+    "hdr": [
+     "Invoice",
+     "Patient",
+     "Location",
+     "Service date",
+     "Issued",
+     "Total",
+     "Status"
+    ],
+    "rows": 26
+   }
+  ],
+  "nonicon_svgs": [
+   [
+    null,
+    null,
+    null,
+    301
+   ],
+   [
+    null,
+    null,
+    null,
+    221
+   ],
+   [
+    null,
+    null,
+    null,
+    209
+   ],
+   [
+    null,
+    null,
+    null,
+    209
+   ],
+   [
+    null,
+    null,
+    null,
+    209
+   ],
+   [
+    null,
+    null,
+    null,
+    209
+   ],
+   [
+    null,
+    null,
+    null,
+    178
+   ],
+   [
+    null,
+    null,
+    null,
+    209
+   ],
+   [
+    null,
+    null,
+    null,
+    209
+   ]
+  ],
+  "imgs": [],
+  "canvas": 0,
+  "iframes": [],
+  "dl": [],
+  "details": [],
+  "text_len": 2628,
+  "shell_url": "https://practice.speedrun.scopehealth.com/billing",
+  "load_s": 0.397
+ },
+ "/documents": {
+  "title": "Documents \u00b7 Wrenfield",
+  "h1": [
+   "Documents"
+  ],
+  "h2": [],
+  "links": [
+   {
+    "href": "/patients/5kkrr64r0l",
+    "text": "Smith, Jessica",
+    "hidden": false
+   },
+   {
+    "href": "/documents/34vz41brm2",
+    "text": "View",
+    "hidden": false
+   },
+   {
+    "href": "/patients/0qd3n67j0p",
+    "text": "Patterson, Evelyn",
+    "hidden": false
+   },
+   {
+    "href": "/documents/6m7c9qtdq0",
+    "text": "View",
+    "hidden": false
+   },
+   {
+    "href": "/patients/091n46gqmk",
+    "text": "Moreno, Rosa",
+    "hidden": false
+   },
+   {
+    "href": "/documents/08824xj7zj",
+    "text": "View",
+    "hidden": false
+   },
+   {
+    "href": "/patients/3pt7sxrzwn",
+    "text": "Fernandez, William",
+    "hidden": false
+   },
+   {
+    "href": "/documents/5zl98snqmq",
+    "text": "View",
+    "hidden": false
+   },
+   {
+    "href": "/patients/7374ss0kgs",
+    "text": "Barnes, Betty",
+    "hidden": false
+   },
+   {
+    "href": "/documents/3bhxtfkcbs",
+    "text": "View",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6nm1jsxqr7",
+    "text": "Griffin, Christine",
+    "hidden": false
+   },
+   {
+    "href": "/documents/2v8gfcj1j7",
+    "text": "View",
+    "hidden": false
+   },
+   {
+    "href": "/patients/2r239dnrcb",
+    "text": "Mitchell, Miguel",
+    "hidden": false
+   },
+   {
+    "href": "/documents/4fx16s9lfj",
+    "text": "View",
+    "hidden": false
+   },
+   {
+    "href": "/patients/3xpp0phpqh",
+    "text": "Williams, Matthew",
+    "hidden": false
+   },
+   {
+    "href": "/documents/08hjq4m8dc",
+    "text": "View",
+    "hidden": false
+   },
+   {
+    "href": "/patients/47f6bfng97",
+    "text": "Sanders, Kimberly",
+    "hidden": false
+   },
+   {
+    "href": "/documents/0jxv72v48c",
+    "text": "View",
+    "hidden": false
+   },
+   {
+    "href": "/patients/3qg4krxj49",
+    "text": "Perez, Alexis",
+    "hidden": false
+   },
+   {
+    "href": "/documents/0k6lzw3wql",
+    "text": "View",
+    "hidden": false
+   },
+   {
+    "href": "/patients/079jk4z11r",
+    "text": "Martinez, Henry",
+    "hidden": false
+   },
+   {
+    "href": "/documents/737z2h84x8",
+    "text": "View",
+    "hidden": false
+   },
+   {
+    "href": "/patients/634xlphvxq",
+    "text": "Smith, Stephanie",
+    "hidden": false
+   },
+   {
+    "href": "/documents/6nrfp5jqmq",
+    "text": "View",
+    "hidden": false
+   },
+   {
+    "href": "/patients/41jnsfdhvn",
+    "text": "Phillips, Amanda",
+    "hidden": false
+   },
+   {
+    "href": "/documents/0psh41qld9",
+    "text": "View",
+    "hidden": false
+   },
+   {
+    "href": "/patients/114jtj0j80",
+    "text": "Anderson, Bjorn",
+    "hidden": false
+   },
+   {
+    "href": "/documents/3bfl691mss",
+    "text": "View",
+    "hidden": false
+   },
+   {
+    "href": "/patients/30qnqh7jwz",
+    "text": "Garcia, Thomas",
+    "hidden": false
+   },
+   {
+    "href": "/documents/64451k48w4",
+    "text": "View",
+    "hidden": false
+   },
+   {
+    "href": "/patients/3fl4ch2909",
+    "text": "Lee, Charles",
+    "hidden": false
+   },
+   {
+    "href": "/documents/73zh74bp2d",
+    "text": "View",
+    "hidden": false
+   },
+   {
+    "href": "/patients/19t68rln8z",
+    "text": "Maldonado, Logan",
+    "hidden": false
+   },
+   {
+    "href": "/documents/0cn0fp9r1q",
+    "text": "View",
+    "hidden": false
+   },
+   {
+    "href": "/patients/341zbrxkh3",
+    "text": "Roberts, Amanda",
+    "hidden": false
+   },
+   {
+    "href": "/documents/1j2gjc6zc3",
+    "text": "View",
+    "hidden": false
+   },
+   {
+    "href": "/patients/1hc15sjcrn",
+    "text": "Duncan, Rachel",
+    "hidden": false
+   },
+   {
+    "href": "/documents/1bp5kwtzzd",
+    "text": "View",
+    "hidden": false
+   },
+   {
+    "href": "/patients/1cfqgttthq",
+    "text": "Hanson, Elliott",
+    "hidden": false
+   },
+   {
+    "href": "/documents/6xcbfz95bs",
+    "text": "View",
+    "hidden": false
+   },
+   {
+    "href": "/patients/39gzfzms4t",
+    "text": "Ali, Carolyn",
+    "hidden": false
+   },
+   {
+    "href": "/documents/3wx3hx3gtr",
+    "text": "View",
+    "hidden": false
+   },
+   {
+    "href": "/patients/1grhp4v2wt",
+    "text": "Johnson, Sarah",
+    "hidden": false
+   },
+   {
+    "href": "/documents/4z61d89tnb",
+    "text": "View",
+    "hidden": false
+   },
+   {
+    "href": "/patients/0qvk7gk961",
+    "text": "Wilson, Melissa",
+    "hidden": false
+   },
+   {
+    "href": "/documents/2lqzjjkxhh",
+    "text": "View",
+    "hidden": false
+   },
+   {
+    "href": "/patients/4wnxjfspmk",
+    "text": "Kelly, Nancy",
+    "hidden": false
+   },
+   {
+    "href": "/documents/5b58d12sx6",
+    "text": "View",
+    "hidden": false
+   },
+   {
+    "href": "/patients/71fzwkbklk",
+    "text": "Moreno, Eric",
+    "hidden": false
+   },
+   {
+    "href": "/documents/4j35jfk3rd",
+    "text": "View",
+    "hidden": false
+   }
+  ],
+  "buttons": [
+   "Apply",
+   "Clear filters",
+   "Find",
+   "Received , newest first. Change the order",
+   "Previous",
+   "1",
+   "2",
+   "3",
+   "Next"
+  ],
+  "forms": [
+   [
+    {
+     "tag": "select",
+     "name": "kind",
+     "type": null,
+     "value": null,
+     "options": [
+      [
+       "",
+       "All types",
+       false
+      ],
+      [
+       "referral_letter",
+       "Referral letter",
+       false
+      ],
+      [
+       "lab_report",
+       "Lab report",
+       false
+      ],
+      [
+       "statement",
+       "Statement",
+       false
+      ]
+     ]
+    },
+    {
+     "tag": "input",
+     "name": "from",
+     "type": "date",
+     "value": ""
+    },
+    {
+     "tag": "input",
+     "name": "to",
+     "type": "date",
+     "value": ""
+    }
+   ],
+   [
+    {
+     "tag": "input",
+     "name": "patient",
+     "type": null,
+     "value": ""
+    }
+   ]
+  ],
+  "tables": [
+   {
+    "caption": "Documents received, newest first",
+    "hdr": [
+     "Received , newest first. Change the order",
+     "Type",
+     "Title",
+     "Patient",
+     "Actions"
+    ],
+    "rows": 26
+   }
+  ],
+  "nonicon_svgs": [
+   [
+    null,
+    null,
+    null,
+    221
+   ],
+   [
+    null,
+    null,
+    null,
+    206
+   ],
+   [
+    null,
+    null,
+    null,
+    253
+   ],
+   [
+    null,
+    null,
+    null,
+    253
+   ]
+  ],
+  "imgs": [],
+  "canvas": 0,
+  "iframes": [],
+  "dl": [],
+  "details": [],
+  "text_len": 2239,
+  "shell_url": "https://practice.speedrun.scopehealth.com/documents",
+  "load_s": 0.34
+ },
+ "/activity": {
+  "title": "Activity \u00b7 Wrenfield",
+  "h1": [
+   "Activity"
+  ],
+  "h2": [],
+  "links": [
+   {
+    "href": "/patients/3pdsxpwzr5",
+    "text": "Ramirez, David",
+    "hidden": false
+   },
+   {
+    "href": "/patients/28xpx631v1",
+    "text": "Ramirez, David",
+    "hidden": false
+   },
+   {
+    "href": "/patients/2q123zlg2m",
+    "text": "Porter, Catherine",
+    "hidden": false
+   },
+   {
+    "href": "/patients/2q123zlg2m",
+    "text": "Porter, Catherine",
+    "hidden": false
+   },
+   {
+    "href": "/patients/2q123zlg2m",
+    "text": "Porter, Catherine",
+    "hidden": false
+   },
+   {
+    "href": "/billing/invoices/6b7q92km6g",
+    "text": "Invoice 82593504",
+    "hidden": false
+   },
+   {
+    "href": "/billing/invoices/6b7q92km6g",
+    "text": "Invoice 82593504",
+    "hidden": false
+   },
+   {
+    "href": "/billing/invoices/2cw2d6krzf",
+    "text": "Invoice 21617829",
+    "hidden": false
+   },
+   {
+    "href": "/billing/invoices/5h618fxx1w",
+    "text": "Invoice 03483827",
+    "hidden": false
+   },
+   {
+    "href": "/billing/invoices/5h618fxx1w",
+    "text": "Invoice 03483827",
+    "hidden": false
+   },
+   {
+    "href": "/billing/invoices/5h618fxx1w",
+    "text": "Invoice 03483827",
+    "hidden": false
+   },
+   {
+    "href": "/billing/invoices/0h9svwws1g",
+    "text": "Invoice 20724781",
+    "hidden": false
+   },
+   {
+    "href": "/billing/invoices/0h9svwws1g",
+    "text": "Invoice 20724781",
+    "hidden": false
+   },
+   {
+    "href": "/billing/invoices/2dm5dwxwwn",
+    "text": "Invoice 33536159",
+    "hidden": false
+   },
+   {
+    "href": "/billing/invoices/72vkfclnck",
+    "text": "Invoice 71924090",
+    "hidden": false
+   },
+   {
+    "href": "/billing/invoices/1njk73zn9k",
+    "text": "Invoice 39960657",
+    "hidden": false
+   },
+   {
+    "href": "/billing/invoices/4l6c4vkcx5",
+    "text": "Invoice 65227689",
+    "hidden": false
+   },
+   {
+    "href": "/billing/invoices/4l6c4vkcx5",
+    "text": "Invoice 65227689",
+    "hidden": false
+   },
+   {
+    "href": "/billing/invoices/4l6c4vkcx5",
+    "text": "Invoice 65227689",
+    "hidden": false
+   },
+   {
+    "href": "/billing/invoices/5nkzrqwvbl",
+    "text": "Invoice 04931186",
+    "hidden": false
+   },
+   {
+    "href": "/billing/invoices/01mzwxsv5k",
+    "text": "Invoice 43228220",
+    "hidden": false
+   },
+   {
+    "href": "/billing/invoices/37cb9w7xbp",
+    "text": "Invoice 31386638",
+    "hidden": false
+   },
+   {
+    "href": "/billing/invoices/37cb9w7xbp",
+    "text": "Invoice 31386638",
+    "hidden": false
+   },
+   {
+    "href": "/billing/invoices/2343qgct07",
+    "text": "Invoice 64569788",
+    "hidden": false
+   },
+   {
+    "href": "/billing/invoices/6zqkx9b148",
+    "text": "Invoice 04985749",
+    "hidden": false
+   }
+  ],
+  "buttons": [
+   "Apply",
+   "Clear filters",
+   "Find",
+   "Previous",
+   "Next"
+  ],
+  "forms": [
+   [
+    {
+     "tag": "select",
+     "name": "user",
+     "type": null,
+     "value": null,
+     "options": [
+      [
+       "",
+       "All users",
+       false
+      ],
+      [
+       "awilson",
+       "Aisha Wilson (awilson)",
+       false
+      ],
+      [
+       "anunez",
+       "Alexander Nunez (anunez)",
+       false
+      ],
+      [
+       "ahill",
+       "Andrea Hill (ahill)",
+       false
+      ],
+      [
+       "amendez",
+       "Andres Mendez (amendez)",
+       false
+      ],
+      [
+       "aali",
+       "Angel Ali, NP (aali)",
+       false
+      ],
+      [
+       "amejia",
+       "Anna Mejia (amejia)",
+       false
+      ],
+      [
+       "agibson",
+       "Austin Gibson, NP (agibson)",
+       false
+      ],
+      [
+       "bwilson",
+       "Barbara Wilson (bwilson)",
+       false
+      ],
+      [
+       "bbaker",
+       "Betty Baker (bbaker)",
+       false
+      ],
+      [
+       "bhowell",
+       "Brandon Howell, NP (bhowell)",
+       false
+      ],
+      [
+       "breed",
+       "Brian Reed, NP (breed)",
+       false
+      ],
+      [
+       "bpalmer",
+       "Bryan Palmer, NP (bpalmer)",
+       false
+      ],
+      [
+       "cprice",
+       "Caleb Price (cprice)",
+       false
+      ],
+      [
+       "cbarnes",
+       "Carlos Barnes (cbarnes)",
+       false
+      ],
+      [
+       "cwalker",
+       "Christian Walker (cwalker)",
+       false
+      ],
+      [
+       "cgrant",
+       "Colleen Grant, PA (cgrant)",
+       false
+      ],
+      [
+       "dhamilton",
+       "David Hamilton (dhamilton)",
+       false
+      ],
+      [
+       "dstevens",
+       "Debra Stevens (dstevens)",
+       false
+      ],
+      [
+       "dfields",
+       "Desmond Fields, PA (dfields)",
+       false
+      ],
+      [
+       "danderson",
+       "Diana Anderson, PA (danderson)",
+       false
+      ],
+      [
+       "dfisher",
+       "Diane Fisher (dfisher)",
+       false
+      ],
+      [
+       "dmason",
+       "Dorothy Mason, PA (dmason)",
+       false
+      ],
+      [
+       "dscott",
+       "Dorothy Scott, NP (dscott)",
+       false
+      ],
+      [
+       "lbennett",
+       "Dr. Bennett (lbennett)",
+       false
+      ],
+      [
+       "mbutler",
+       "Dr. Butler (mbutler)",
+       false
+      ],
+      [
+       "vcarroll",
+       "Dr. Carroll (vcarroll)",
+       false
+      ],
+      [
+       "rchen",
+       "Dr. Chen (rchen)",
+       false
+      ],
+      [
+       "jcrawford",
+       "Dr. Crawford (jcrawford)",
+       false
+      ],
+      [
+       "dcunningham",
+       "Dr. Cunningham (dcunningham)",
+       false
+      ],
+      [
+       "cdavis",
+       "Dr. Davis (cdavis)",
+       false
+      ],
+      [
+       "afoster",
+       "Dr. Foster (afoster)",
+       false
+      ],
+      [
+       "dfowler",
+       "Dr. Fowler (dfowler)",
+       false
+      ],
+      [
+       "jgarcia",
+       "Dr. Garcia (jgarcia)",
+       false
+      ],
+      [
+       "kgarrison",
+       "Dr. Garrison (kgarrison)",
+       false
+      ],
+      [
+       "dgonzalez",
+       "Dr. Gonzalez (dgonzalez)",
+       false
+      ],
+      [
+       "rgreen",
+       "Dr. Green (rgreen)",
+       false
+      ],
+      [
+       "sherrera",
+       "Dr. Herrera (sherrera)",
+       false
+      ],
+      [
+       "dhughes",
+       "Dr. Hughes (dhughes)",
+       false
+      ],
+      [
+       "cjackson",
+       "Dr. Jackson (cjackson)",
+       false
+      ]
+     ]
+    },
+    {
+     "tag": "select",
+     "name": "action",
+     "type": null,
+     "value": null,
+     "options": [
+      [
+       "",
+       "All actions",
+       false
+      ],
+      [
+       "create",
+       "Created",
+       false
+      ],
+      [
+       "update",
+       "Changed",
+       false
+      ],
+      [
+       "delete",
+       "Deleted",
+       false
+      ],
+      [
+       "merge",
+       "Merged",
+       false
+      ],
+      [
+       "view",
+       "Opened",
+       false
+      ],
+      [
+       "login",
+       "Logged in",
+       false
+      ]
+     ]
+    },
+    {
+     "tag": "select",
+     "name": "record",
+     "type": null,
+     "value": null,
+     "options": [
+      [
+       "",
+       "All records",
+       false
+      ],
+      [
+       "patient",
+       "Patient",
+       false
+      ],
+      [
+       "appointment",
+       "Appointment",
+       false
+      ],
+      [
+       "series",
+       "Recurring appointment",
+       false
+      ],
+      [
+       "invoice",
+       "Invoice",
+       false
+      ],
+      [
+       "document",
+       "Document",
+       false
+      ],
+      [
+       "user",
+       "User account",
+       false
+      ]
+     ]
+    },
+    {
+     "tag": "input",
+     "name": "from",
+     "type": "date",
+     "value": ""
+    },
+    {
+     "tag": "input",
+     "name": "to",
+     "type": "date",
+     "value": ""
+    }
+   ],
+   [
+    {
+     "tag": "input",
+     "name": "patient",
+     "type": null,
+     "value": ""
+    }
+   ]
+  ],
+  "tables": [
+   {
+    "caption": "Activity, newest first",
+    "hdr": [
+     "Time",
+     "User",
+     "Action",
+     "Record",
+     "What changed"
+    ],
+    "rows": 26
+   }
+  ],
+  "nonicon_svgs": [
+   [
+    null,
+    null,
+    null,
+    221
+   ],
+   [
+    null,
+    null,
+    null,
+    253
+   ],
+   [
+    null,
+    null,
+    null,
+    253
+   ],
+   [
+    null,
+    null,
+    null,
+    253
+   ],
+   [
+    null,
+    null,
+    null,
+    253
+   ],
+   [
+    null,
+    null,
+    null,
+    253
+   ]
+  ],
+  "imgs": [],
+  "canvas": 0,
+  "iframes": [],
+  "dl": [],
+  "details": [],
+  "text_len": 6172,
+  "shell_url": "https://practice.speedrun.scopehealth.com/activity",
+  "load_s": 0.34
+ },
+ "/about/notices": {
+  "title": "Wrenfield",
+  "h1": [
+   "Third-party notices"
+  ],
+  "h2": [
+   "Typefaces",
+   "Icons"
+  ],
+  "links": [],
+  "buttons": [],
+  "forms": [],
+  "tables": [],
+  "nonicon_svgs": [],
+  "imgs": [],
+  "canvas": 0,
+  "iframes": [],
+  "dl": [],
+  "details": [],
+  "text_len": 6959,
+  "shell_url": "https://practice.speedrun.scopehealth.com/about/notices",
+  "load_s": 0.314
+ },
+ "/patients/3pdsxpwzr5": {
+  "title": "Wrenfield",
+  "h1": [
+   "This chart is restricted"
+  ],
+  "h2": [],
+  "links": [],
+  "buttons": [
+   "Request access"
+  ],
+  "forms": [
+   [
+    {
+     "tag": "select",
+     "name": "reason",
+     "type": null,
+     "value": null,
+     "options": [
+      [
+       "",
+       "Choose a reason",
+       false
+      ],
+      [
+       "treatment",
+       "Providing care to this patient",
+       false
+      ],
+      [
+       "scheduling",
+       "Scheduling an appointment",
+       false
+      ],
+      [
+       "billing",
+       "Billing or insurance question",
+       false
+      ],
+      [
+       "patient_request",
+       "Request from the patient",
+       false
+      ],
+      [
+       "other",
+       "Other reason",
+       false
+      ]
+     ]
+    },
+    {
+     "tag": "textarea",
+     "name": "details",
+     "type": null,
+     "value": null
+    }
+   ]
+  ],
+  "tables": [],
+  "nonicon_svgs": [
+   [
+    null,
+    null,
+    null,
+    253
+   ]
+  ],
+  "imgs": [],
+  "canvas": 0,
+  "iframes": [],
+  "dl": [],
+  "details": [],
+  "text_len": 406,
+  "shell_url": "https://practice.speedrun.scopehealth.com/patients/3pdsxpwzr5",
+  "load_s": 0.326
+ },
+ "/schedule/appointments?from=2026-10-14&to=2026-10-14&location=2mgdl287kq&status=1": {
+  "title": "Schedule \u00b7 Wrenfield",
+  "h1": [
+   "Schedule"
+  ],
+  "h2": [],
+  "links": [
+   {
+    "href": "/schedule?date=2026-10-14",
+    "text": "Day",
+    "hidden": false
+   },
+   {
+    "href": "/schedule/providers/4vqb93p4g9?date=2026-10-14",
+    "text": "Provider",
+    "hidden": false
+   },
+   {
+    "href": "/schedule/appointments?from=2026-10-14&to=2026-10-14&location=2mgdl287kq&status=1",
+    "text": "Appointment list",
+    "hidden": false
+   }
+  ],
+  "buttons": [],
+  "forms": [],
+  "tables": [],
+  "nonicon_svgs": [],
+  "imgs": [],
+  "canvas": 0,
+  "iframes": [
+   "/v/4l55czwmbdcd6t7w2x8d589hjf/"
+  ],
+  "dl": [],
+  "details": [],
+  "text_len": 106,
+  "shell_url": "https://practice.speedrun.scopehealth.com/schedule/appointments?from=2026-10-14&to=2026-10-14&location=2mgdl287kq&status=1",
+  "load_s": 0.342
+ },
+ "/schedule/appointments?from=2026-10-14&to=2026-10-14&location=2mgdl287kq&status=2": {
+  "title": "Schedule \u00b7 Wrenfield",
+  "h1": [
+   "Schedule"
+  ],
+  "h2": [],
+  "links": [
+   {
+    "href": "/schedule?date=2026-10-14",
+    "text": "Day",
+    "hidden": false
+   },
+   {
+    "href": "/schedule/providers/4vqb93p4g9?date=2026-10-14",
+    "text": "Provider",
+    "hidden": false
+   },
+   {
+    "href": "/schedule/appointments?from=2026-10-14&to=2026-10-14&location=2mgdl287kq&status=2",
+    "text": "Appointment list",
+    "hidden": false
+   }
+  ],
+  "buttons": [],
+  "forms": [],
+  "tables": [],
+  "nonicon_svgs": [],
+  "imgs": [],
+  "canvas": 0,
+  "iframes": [
+   "/v/fmvrs5cwdd0wbmb8fdqdx34gnc/"
+  ],
+  "dl": [],
+  "details": [],
+  "text_len": 106,
+  "shell_url": "https://practice.speedrun.scopehealth.com/schedule/appointments?from=2026-10-14&to=2026-10-14&location=2mgdl287kq&status=2",
+  "load_s": 0.352
+ },
+ "/schedule/appointments?from=2026-10-14&to=2026-10-14&location=2mgdl287kq&status=3": {
+  "title": "Schedule \u00b7 Wrenfield",
+  "h1": [
+   "Schedule"
+  ],
+  "h2": [],
+  "links": [
+   {
+    "href": "/schedule?date=2026-10-14",
+    "text": "Day",
+    "hidden": false
+   },
+   {
+    "href": "/schedule/providers/4vqb93p4g9?date=2026-10-14",
+    "text": "Provider",
+    "hidden": false
+   },
+   {
+    "href": "/schedule/appointments?from=2026-10-14&to=2026-10-14&location=2mgdl287kq&status=3",
+    "text": "Appointment list",
+    "hidden": false
+   }
+  ],
+  "buttons": [],
+  "forms": [],
+  "tables": [],
+  "nonicon_svgs": [],
+  "imgs": [],
+  "canvas": 0,
+  "iframes": [
+   "/v/d62v3s5t00szcxbn595r6bdtwr/"
+  ],
+  "dl": [],
+  "details": [],
+  "text_len": 106,
+  "shell_url": "https://practice.speedrun.scopehealth.com/schedule/appointments?from=2026-10-14&to=2026-10-14&location=2mgdl287kq&status=3",
+  "load_s": 0.339
+ },
+ "/schedule/appointments?from=2026-10-14&to=2026-10-14&location=2mgdl287kq&status=4": {
+  "title": "Schedule \u00b7 Wrenfield",
+  "h1": [
+   "Schedule"
+  ],
+  "h2": [],
+  "links": [
+   {
+    "href": "/schedule?date=2026-10-14",
+    "text": "Day",
+    "hidden": false
+   },
+   {
+    "href": "/schedule/providers/4vqb93p4g9?date=2026-10-14",
+    "text": "Provider",
+    "hidden": false
+   },
+   {
+    "href": "/schedule/appointments?from=2026-10-14&to=2026-10-14&location=2mgdl287kq&status=4",
+    "text": "Appointment list",
+    "hidden": false
+   }
+  ],
+  "buttons": [],
+  "forms": [],
+  "tables": [],
+  "nonicon_svgs": [],
+  "imgs": [],
+  "canvas": 0,
+  "iframes": [
+   "/v/50svb64cvkdkh7htc9kz4lrggm/"
+  ],
+  "dl": [],
+  "details": [],
+  "text_len": 106,
+  "shell_url": "https://practice.speedrun.scopehealth.com/schedule/appointments?from=2026-10-14&to=2026-10-14&location=2mgdl287kq&status=4",
+  "load_s": 0.34
+ },
+ "/schedule/appointments?from=2026-10-14&to=2026-10-14&location=2mgdl287kq&status=5": {
+  "title": "Schedule \u00b7 Wrenfield",
+  "h1": [
+   "Schedule"
+  ],
+  "h2": [],
+  "links": [
+   {
+    "href": "/schedule?date=2026-10-14",
+    "text": "Day",
+    "hidden": false
+   },
+   {
+    "href": "/schedule/providers/4vqb93p4g9?date=2026-10-14",
+    "text": "Provider",
+    "hidden": false
+   },
+   {
+    "href": "/schedule/appointments?from=2026-10-14&to=2026-10-14&location=2mgdl287kq&status=5",
+    "text": "Appointment list",
+    "hidden": false
+   }
+  ],
+  "buttons": [],
+  "forms": [],
+  "tables": [],
+  "nonicon_svgs": [],
+  "imgs": [],
+  "canvas": 0,
+  "iframes": [
+   "/v/0v00rhh7czwbmrmh3vwx546p17/"
+  ],
+  "dl": [],
+  "details": [],
+  "text_len": 106,
+  "shell_url": "https://practice.speedrun.scopehealth.com/schedule/appointments?from=2026-10-14&to=2026-10-14&location=2mgdl287kq&status=5",
+  "load_s": 0.355
+ },
+ "/schedule/appointments?from=2026-10-14&to=2026-10-14&location=2mgdl287kq": {
+  "title": "Schedule \u00b7 Wrenfield",
+  "h1": [
+   "Schedule"
+  ],
+  "h2": [],
+  "links": [
+   {
+    "href": "/schedule?date=2026-10-14",
+    "text": "Day",
+    "hidden": false
+   },
+   {
+    "href": "/schedule/providers/4vqb93p4g9?date=2026-10-14",
+    "text": "Provider",
+    "hidden": false
+   },
+   {
+    "href": "/schedule/appointments?from=2026-10-14&to=2026-10-14&location=2mgdl287kq",
+    "text": "Appointment list",
+    "hidden": false
+   }
+  ],
+  "buttons": [],
+  "forms": [],
+  "tables": [],
+  "nonicon_svgs": [],
+  "imgs": [],
+  "canvas": 0,
+  "iframes": [
+   "/v/3ftc36dqtk13n98p5m8vrhgqjh/"
+  ],
+  "dl": [],
+  "details": [],
+  "text_len": 106,
+  "shell_url": "https://practice.speedrun.scopehealth.com/schedule/appointments?from=2026-10-14&to=2026-10-14&location=2mgdl287kq",
+  "load_s": 0.338
+ },
+ "/schedule?date=2026-10-14&location=2mgdl287kq": {
+  "title": "Schedule \u00b7 Wrenfield",
+  "h1": [
+   "Schedule"
+  ],
+  "h2": [
+   "Wednesday, October 14, 2026",
+   "Diana Anderson, PA",
+   "Desmond Fields, PA",
+   "Donald Silva, MD",
+   "Mark Sorensen, MD",
+   "Aaron Wagner, MD",
+   "Brenda West, MD"
+  ],
+  "links": [
+   {
+    "href": "/schedule?date=2026-10-14",
+    "text": "Day",
+    "hidden": false
+   },
+   {
+    "href": "/schedule/providers/4vqb93p4g9?date=2026-10-14",
+    "text": "Provider",
+    "hidden": false
+   },
+   {
+    "href": "/schedule/appointments?from=2026-10-14&to=2026-10-20&location=2mgdl287kq",
+    "text": "Appointment list",
+    "hidden": false
+   },
+   {
+    "href": "/schedule/providers/1x0jb5xxv1?date=2026-10-14",
+    "text": "Diana Anderson, PA",
+    "hidden": false
+   },
+   {
+    "href": "/patients/1z51c6nt6k/appointments/000gz3ss24",
+    "text": "8:00 AM to 8:20 AM Turner, Shirley Completed \u00b7 Office visit",
+    "hidden": false
+   },
+   {
+    "href": "/patients/2z02hsrvb9/appointments/6vhg2s7cz3",
+    "text": "8:00 AM to 9:00 AM Wilson, George Cancelled \u00b7 Infusion thera",
+    "hidden": false
+   },
+   {
+    "href": "/patients/1lzxvj88zd/appointments/00fl88nb8t",
+    "text": "9:00 AM to 9:20 AM Lee, Jonathan Completed \u00b7 Follow-up visit",
+    "hidden": false
+   },
+   {
+    "href": "/patients/5vzzjptxlw/appointments/1l46g5fq5s",
+    "text": "9:20 AM to 9:40 AM Vasquez, Jean Completed \u00b7 Sports physical",
+    "hidden": false
+   },
+   {
+    "href": "/patients/1xb41ths62/appointments/615thbfj3x",
+    "text": "9:40 AM to 10:00 AM Ortega, Robert Completed \u00b7 Follow-up vis",
+    "hidden": false
+   },
+   {
+    "href": "/patients/5d7xfdthjt/appointments/3npvpr2qbt",
+    "text": "10:00 AM to 10:15 AM \u00b7 Late cancel Matthews, Omar Late cance",
+    "hidden": false
+   },
+   {
+    "href": "/patients/3hdhbsfbq2/appointments/39bjx66468",
+    "text": "10:00 AM to 10:40 AM Hudson, Aisha Scheduled \u00b7 Annual physic",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/appointments/6x505m94xc",
+    "text": "10:40 AM to 11:00 AM Murphy, Valentina Scheduled \u00b7 Sick visi",
+    "hidden": false
+   },
+   {
+    "href": "/patients/728375g94r/appointments/1w6v4vf2w5",
+    "text": "11:00 AM to 11:30 AM Russell, Natalie Scheduled \u00b7 Skin biops",
+    "hidden": false
+   },
+   {
+    "href": "/patients/07ngwp7x0s/appointments/1gdlz8xnz7",
+    "text": "11:20 AM to 11:40 AM Wright, Debra Cancelled \u00b7 Office visit",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6s5wtkp362/appointments/42rhfbvx87",
+    "text": "1:00 PM to 1:20 PM Khan, Garrett Scheduled \u00b7 Telehealth visi",
+    "hidden": false
+   },
+   {
+    "href": "/patients/51pplkkcs1/recurring/313bv2hbx1",
+    "text": "3:20 PM to 4:05 PM Nelson, Thomas Scheduled \u00b7 Nutrition coun",
+    "hidden": false
+   },
+   {
+    "href": "/patients/2wwmkfhxhp/appointments/0nm8pctdll",
+    "text": "4:20 PM to 4:40 PM Dixon, Ashley Scheduled \u00b7 Sick visit",
+    "hidden": false
+   },
+   {
+    "href": "/patients/07bq5915p6/appointments/3gl206z4f6",
+    "text": "4:40 PM to 5:00 PM Hern\u00e1ndez, Diana Scheduled \u00b7 Follow-up vi",
+    "hidden": false
+   },
+   {
+    "href": "/schedule/providers/042xngpx1b?date=2026-10-14",
+    "text": "Desmond Fields, PA",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6szfd4wn3d/recurring/31zc3fzlbf",
+    "text": "8:00 AM to 8:30 AM Tran, Robert Completed \u00b7 Smoking cessatio",
+    "hidden": false
+   },
+   {
+    "href": "/patients/2pdn6rb53m/appointments/2g9f15xwwb",
+    "text": "8:30 AM to 8:50 AM Davis, Virginia Completed \u00b7 Follow-up vis",
+    "hidden": false
+   },
+   {
+    "href": "/patients/4n066v5brb/recurring/0ffvkkq7nr",
+    "text": "9:30 AM to 10:15 AM Green, Kathleen Scheduled \u00b7 Physical the",
+    "hidden": false
+   },
+   {
+    "href": "/patients/25nh4hczgf/appointments/2cflmj9pqh",
+    "text": "11:00 AM to 11:40 AM Evans, David Scheduled \u00b7 Specialist con",
+    "hidden": false
+   },
+   {
+    "href": "/patients/231j9bqh96/appointments/3tm38lbp48",
+    "text": "1:00 PM to 1:20 PM Kennedy, Samuel Scheduled \u00b7 Office visit",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6l07jlmzvr/appointments/5psxmtprzp",
+    "text": "1:00 PM to 1:45 PM Dixon, Susan Late cancel \u00b7 Echocardiogram",
+    "hidden": false
+   },
+   {
+    "href": "/patients/183mf68mh1/appointments/1rtz7hscks",
+    "text": "1:30 PM to 2:30 PM Riley, Katherine Scheduled \u00b7 Stress test",
+    "hidden": false
+   },
+   {
+    "href": "/patients/1vk89wlvpt/appointments/5wf7wx2crv",
+    "text": "2:30 PM to 2:50 PM Willis, Joshua Scheduled \u00b7 Office visit",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6zbzghmvlp/appointments/5j9mlkndwr",
+    "text": "3:00 PM to 3:20 PM Allen, Daniel Scheduled \u00b7 Sick visit",
+    "hidden": false
+   },
+   {
+    "href": "/patients/3mnqc0n88z/appointments/4p27lzpp7l",
+    "text": "3:30 PM to 3:50 PM Hayes, Lawrence Scheduled \u00b7 Office visit",
+    "hidden": false
+   },
+   {
+    "href": "/patients/16hhh9dmz9/appointments/521hklxbpz",
+    "text": "4:00 PM to 4:20 PM Cook, John Scheduled \u00b7 Sick visit",
+    "hidden": false
+   },
+   {
+    "href": "/patients/1w2xx2mxq8/appointments/2qng8w34f0",
+    "text": "4:30 PM to 4:50 PM Reyes, Lauren Scheduled \u00b7 Follow-up visit",
+    "hidden": false
+   },
+   {
+    "href": "/schedule/providers/57dkc53brc?date=2026-10-14",
+    "text": "Donald Silva, MD",
+    "hidden": false
+   },
+   {
+    "href": "/patients/2w1zn1chdn/recurring/5mpkmh353n",
+    "text": "1:20 PM to 1:50 PM Owens, Linda Cancelled \u00b7 Smoking cessatio",
+    "hidden": false
+   },
+   {
+    "href": "/patients/0g979fz42p/recurring/6mk3lg1t28",
+    "text": "4:00 PM to 4:15 PM \u00b7 Cancelled Flores, Lisa Cancelled \u00b7 Anti",
+    "hidden": false
+   },
+   {
+    "href": "/patients/1jhgv608lb/recurring/423wx2pwkl",
+    "text": "6:40 PM to 7:40 PM Johnson, John Cancelled \u00b7 Infusion therap",
+    "hidden": false
+   },
+   {
+    "href": "/schedule/providers/4zxht0glk9?date=2026-10-14",
+    "text": "Mark Sorensen, MD",
+    "hidden": false
+   },
+   {
+    "href": "/patients/21p6zv34d3/recurring/49kzhht3ct",
+    "text": "8:00 AM to 8:30 AM Wilson, Wayne Completed \u00b7 Wound care",
+    "hidden": false
+   },
+   {
+    "href": "/patients/3b6b750nt0/appointments/50j3qxxr61",
+    "text": "8:30 AM to 8:50 AM Garcia, David No-show \u00b7 Office visit",
+    "hidden": false
+   },
+   {
+    "href": "/patients/3fd2gk8r5n/recurring/0wm1b0mw23",
+    "text": "9:00 AM to 9:20 AM Miller, Elizabeth Completed \u00b7 Prenatal vi",
+    "hidden": false
+   },
+   {
+    "href": "/patients/1dvgjvhz7d/appointments/50w68q70xf",
+    "text": "9:15 AM to 9:55 AM Perry, Christine Cancelled \u00b7 Annual physi",
+    "hidden": false
+   },
+   {
+    "href": "/patients/4xqp60q94x/appointments/4sml828ltr",
+    "text": "9:45 AM to 10:00 AM \u00b7 Late cancel Harris, Michael Late cance",
+    "hidden": false
+   },
+   {
+    "href": "/patients/4qzq3f7zl5/appointments/0t3q0qxp3z",
+    "text": "9:45 AM to 10:25 AM Perez, Abigail Scheduled \u00b7 New patient v",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6hpq2qsfkb/appointments/71cj1n19xk",
+    "text": "10:00 AM to 10:20 AM Mitchell, Ashley Cancelled \u00b7 Follow-up ",
+    "hidden": false
+   },
+   {
+    "href": "/patients/5fljr2js6t/appointments/5rn5gw5n9g",
+    "text": "10:30 AM to 10:50 AM Schaefer, Jessica Scheduled \u00b7 Telehealt",
+    "hidden": false
+   },
+   {
+    "href": "/patients/535rn1pbvb/recurring/4wmqk4lx5r",
+    "text": "11:15 AM to 11:30 AM \u00b7 Scheduled Gray, Anna Scheduled \u00b7 Anti",
+    "hidden": false
+   },
+   {
+    "href": "/patients/5lws4nxrsr/recurring/4cl1j5sq5v",
+    "text": "1:30 PM to 2:30 PM Anderson, Patricia Scheduled \u00b7 Infusion t",
+    "hidden": false
+   },
+   {
+    "href": "/patients/1zlqksddm2/appointments/4l04d2lrtw",
+    "text": "2:45 PM to 3:00 PM \u00b7 Scheduled Turner, Mary Scheduled \u00b7 Lab ",
+    "hidden": false
+   },
+   {
+    "href": "/patients/00t29dq131/appointments/092v8mblvg",
+    "text": "3:00 PM to 3:15 PM \u00b7 Scheduled Rice, Megan Scheduled \u00b7 Antic",
+    "hidden": false
+   },
+   {
+    "href": "/patients/0qjcn0vsr2/appointments/191j5t47mr",
+    "text": "3:30 PM to 3:50 PM Jacobsen, Betty Scheduled \u00b7 Office visit",
+    "hidden": false
+   },
+   {
+    "href": "/patients/476338vz9r/recurring/4359nxlv3z",
+    "text": "3:45 PM to 4:15 PM Moore, Hannah Deleted Cancelled \u00b7 Smoking",
+    "hidden": false
+   },
+   {
+    "href": "/patients/06jj56sm1l/appointments/0bnmwzktvl",
+    "text": "4:15 PM to 5:00 PM Hern\u00e1ndez, Judith Cancelled \u00b7 Physical th",
+    "hidden": false
+   },
+   {
+    "href": "/schedule/providers/45h1bjsgfw?date=2026-10-14",
+    "text": "Aaron Wagner, MD",
+    "hidden": false
+   },
+   {
+    "href": "/patients/1j01x82b8s/appointments/41g8x6rppt",
+    "text": "11:00 AM to 11:20 AM Williams, Mary Scheduled \u00b7 Follow-up vi",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6xr9jl170v/appointments/3wdpd807cg",
+    "text": "11:20 AM to 11:40 AM Nguyen, Donna Scheduled \u00b7 Follow-up vis",
+    "hidden": false
+   },
+   {
+    "href": "/patients/539cl6rp94/recurring/46s33fz2jc",
+    "text": "11:40 AM to 11:55 AM \u00b7 Scheduled Moore, Jesse Scheduled \u00b7 Al",
+    "hidden": false
+   },
+   {
+    "href": "/patients/3tq61r51x2/appointments/3s727rbq9b",
+    "text": "12:20 PM to 12:40 PM Vargas, Richard Scheduled \u00b7 Follow-up v",
+    "hidden": false
+   },
+   {
+    "href": "/patients/06h771clr3/recurring/2zdrfjqkvk",
+    "text": "1:00 PM to 1:20 PM Sandoval, Garrett Scheduled \u00b7 Prenatal vi",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6jl312547c/appointments/0kpb6rs2d7",
+    "text": "1:20 PM to 2:00 PM Wagner, Judith Scheduled \u00b7 New patient vi",
+    "hidden": false
+   },
+   {
+    "href": "/patients/054pt5h3lc/appointments/3rr9zzgh6n",
+    "text": "2:00 PM to 2:20 PM Hall, Mei Scheduled \u00b7 Prenatal visit",
+    "hidden": false
+   },
+   {
+    "href": "/patients/160t4d8hd3/appointments/1wgssrqf95",
+    "text": "2:20 PM to 2:50 PM Young, Robert Scheduled \u00b7 Diabetes manage",
+    "hidden": false
+   },
+   {
+    "href": "/patients/2f5nz6s7xh/recurring/2kkspx1xk4",
+    "text": "4:00 PM to 4:15 PM \u00b7 Scheduled Morris, Patricia Scheduled \u00b7 ",
+    "hidden": false
+   },
+   {
+    "href": "/patients/3b66t633xt/recurring/465htpjjzd",
+    "text": "4:20 PM to 4:50 PM Anderson, Michael Scheduled \u00b7 Smoking ces",
+    "hidden": false
+   },
+   {
+    "href": "/patients/0lkjvxb7w7/appointments/4rcnst2gtf",
+    "text": "5:00 PM to 5:15 PM \u00b7 Scheduled Mitchell, Jose Scheduled \u00b7 Me",
+    "hidden": false
+   },
+   {
+    "href": "/patients/00t29dq131/appointments/0tvn0lvb8v",
+    "text": "5:00 PM to 5:20 PM Rice, Megan Cancelled \u00b7 Office visit",
+    "hidden": false
+   },
+   {
+    "href": "/patients/3qg21db89v/appointments/2mm5nckb2d",
+    "text": "5:40 PM to 6:00 PM Jones, Donald Scheduled \u00b7 Follow-up visit",
+    "hidden": false
+   },
+   {
+    "href": "/patients/3b66t633xt/appointments/1wdldmpl3b",
+    "text": "6:20 PM to 6:40 PM Anderson, Michael Scheduled \u00b7 Office visi",
+    "hidden": false
+   },
+   {
+    "href": "/patients/3nv20sg2kl/appointments/62qwnjmhhk",
+    "text": "7:00 PM to 7:20 PM Graham, Astrid Scheduled \u00b7 Office visit",
+    "hidden": false
+   },
+   {
+    "href": "/patients/5cpncfr02k/recurring/3t053hztn5",
+    "text": "7:20 PM to 7:40 PM Taylor, Michael Scheduled \u00b7 Follow-up vis",
+    "hidden": false
+   },
+   {
+    "href": "/schedule/providers/3xn04x0076?date=2026-10-14",
+    "text": "Brenda West, MD",
+    "hidden": false
+   },
+   {
+    "href": "/patients/3f800709v2/appointments/0l8b6vqmhs",
+    "text": "8:20 AM to 9:20 AM Smith, Joyce Completed \u00b7 Minor procedure",
+    "hidden": false
+   },
+   {
+    "href": "/patients/5xjqv6d7mf/appointments/1zn5vqpvns",
+    "text": "9:40 AM to 10:10 AM Ford, John Scheduled \u00b7 Wound care",
+    "hidden": false
+   },
+   {
+    "href": "/patients/3n3cj2whx1/appointments/2bfld4h9ks",
+    "text": "10:20 AM to 10:50 AM Luna, Ronald Scheduled \u00b7 Wound care",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6sqtnhdpq1/appointments/5qmf7g4kj1",
+    "text": "11:00 AM to 11:15 AM \u00b7 Scheduled Rodr\u00edguez, Hannah Scheduled",
+    "hidden": false
+   },
+   {
+    "href": "/patients/5lv61qbn3p/appointments/61wh27r5jw",
+    "text": "11:20 AM to 11:40 AM Montgomery, Jeffrey Scheduled \u00b7 Sick vi",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6jxgqvx1fk/appointments/4z6vh5rfl4",
+    "text": "11:40 AM to 11:55 AM \u00b7 Scheduled Williams, Ashley Scheduled ",
+    "hidden": false
+   },
+   {
+    "href": "/patients/0njj3wftzj/appointments/5hrxm70vlg",
+    "text": "1:00 PM to 1:20 PM Martinez, Chlo\u00e9 Scheduled \u00b7 Follow-up vis",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6fm9mh5fnd/appointments/2vz6kqvv6q",
+    "text": "1:20 PM to 1:40 PM Lopez, Betty Scheduled \u00b7 Telehealth visit",
+    "hidden": false
+   },
+   {
+    "href": "/patients/612m3gf23m/appointments/3slb0jq2xz",
+    "text": "1:40 PM to 1:55 PM \u00b7 Scheduled Watson, Alexander Scheduled \u00b7",
+    "hidden": false
+   },
+   {
+    "href": "/patients/394h02g1h3/appointments/1hg6qcr4nn",
+    "text": "2:00 PM to 2:15 PM \u00b7 Scheduled Guzman, Bruce Scheduled \u00b7 Ele",
+    "hidden": false
+   },
+   {
+    "href": "/patients/21ffzk38k5/appointments/12xwc6dv40",
+    "text": "2:40 PM to 3:00 PM Baker, Mark Scheduled \u00b7 Telehealth visit",
+    "hidden": false
+   },
+   {
+    "href": "/patients/293hmb4pwf/recurring/024hlc96rt",
+    "text": "3:20 PM to 3:50 PM Ward, Brenda Scheduled \u00b7 Smoking cessatio",
+    "hidden": false
+   },
+   {
+    "href": "/patients/42v2j23f6x/appointments/4x9swt0c72",
+    "text": "4:00 PM to 4:20 PM Campbell, Hannah Scheduled \u00b7 Post-operati",
+    "hidden": false
+   },
+   {
+    "href": "/patients/34vjdk1w3l/appointments/0zzqzwlv7l",
+    "text": "4:20 PM to 4:40 PM Salazar, Sharon Scheduled \u00b7 Follow-up vis",
+    "hidden": false
+   },
+   {
+    "href": "/patients/609sr4nznb/recurring/3r1z6j0fft",
+    "text": "4:40 PM to 4:55 PM \u00b7 Scheduled Wilson, Kathryn Scheduled \u00b7 A",
+    "hidden": false
+   }
+  ],
+  "buttons": [
+   " [Previous day]",
+   "Today",
+   " [Next day]"
+  ],
+  "forms": [],
+  "tables": [],
+  "nonicon_svgs": [
+   [
+    null,
+    null,
+    null,
+    180
+   ],
+   [
+    null,
+    null,
+    null,
+    179
+   ],
+   [
+    null,
+    null,
+    null,
+    253
+   ],
+   [
+    null,
+    null,
+    null,
+    253
+   ],
+   [
+    null,
+    null,
+    null,
+    253
+   ],
+   [
+    null,
+    null,
+    null,
+    253
+   ]
+  ],
+  "imgs": [],
+  "canvas": 0,
+  "iframes": [],
+  "dl": [],
+  "details": [],
+  "text_len": 6139,
+  "shell_url": "https://practice.speedrun.scopehealth.com/schedule?date=2026-10-14",
+  "load_s": 0.357
+ },
+ "/schedule?location=2mgdl287kq": {
+  "title": "Schedule \u00b7 Wrenfield",
+  "h1": [
+   "Schedule"
+  ],
+  "h2": [
+   "Wednesday, October 14, 2026",
+   "Diana Anderson, PA",
+   "Desmond Fields, PA",
+   "Donald Silva, MD",
+   "Mark Sorensen, MD",
+   "Aaron Wagner, MD",
+   "Brenda West, MD"
+  ],
+  "links": [
+   {
+    "href": "/schedule?date=2026-10-14",
+    "text": "Day",
+    "hidden": false
+   },
+   {
+    "href": "/schedule/providers/4vqb93p4g9?date=2026-10-14",
+    "text": "Provider",
+    "hidden": false
+   },
+   {
+    "href": "/schedule/appointments?from=2026-10-14&to=2026-10-20&location=2mgdl287kq",
+    "text": "Appointment list",
+    "hidden": false
+   },
+   {
+    "href": "/schedule/providers/1x0jb5xxv1?date=2026-10-14",
+    "text": "Diana Anderson, PA",
+    "hidden": false
+   },
+   {
+    "href": "/patients/1z51c6nt6k/appointments/000gz3ss24",
+    "text": "8:00 AM to 8:20 AM Turner, Shirley Completed \u00b7 Office visit",
+    "hidden": false
+   },
+   {
+    "href": "/patients/2z02hsrvb9/appointments/6vhg2s7cz3",
+    "text": "8:00 AM to 9:00 AM Wilson, George Cancelled \u00b7 Infusion thera",
+    "hidden": false
+   },
+   {
+    "href": "/patients/1lzxvj88zd/appointments/00fl88nb8t",
+    "text": "9:00 AM to 9:20 AM Lee, Jonathan Completed \u00b7 Follow-up visit",
+    "hidden": false
+   },
+   {
+    "href": "/patients/5vzzjptxlw/appointments/1l46g5fq5s",
+    "text": "9:20 AM to 9:40 AM Vasquez, Jean Completed \u00b7 Sports physical",
+    "hidden": false
+   },
+   {
+    "href": "/patients/1xb41ths62/appointments/615thbfj3x",
+    "text": "9:40 AM to 10:00 AM Ortega, Robert Completed \u00b7 Follow-up vis",
+    "hidden": false
+   },
+   {
+    "href": "/patients/5d7xfdthjt/appointments/3npvpr2qbt",
+    "text": "10:00 AM to 10:15 AM \u00b7 Late cancel Matthews, Omar Late cance",
+    "hidden": false
+   },
+   {
+    "href": "/patients/3hdhbsfbq2/appointments/39bjx66468",
+    "text": "10:00 AM to 10:40 AM Hudson, Aisha Scheduled \u00b7 Annual physic",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/appointments/6x505m94xc",
+    "text": "10:40 AM to 11:00 AM Murphy, Valentina Scheduled \u00b7 Sick visi",
+    "hidden": false
+   },
+   {
+    "href": "/patients/728375g94r/appointments/1w6v4vf2w5",
+    "text": "11:00 AM to 11:30 AM Russell, Natalie Scheduled \u00b7 Skin biops",
+    "hidden": false
+   },
+   {
+    "href": "/patients/07ngwp7x0s/appointments/1gdlz8xnz7",
+    "text": "11:20 AM to 11:40 AM Wright, Debra Cancelled \u00b7 Office visit",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6s5wtkp362/appointments/42rhfbvx87",
+    "text": "1:00 PM to 1:20 PM Khan, Garrett Scheduled \u00b7 Telehealth visi",
+    "hidden": false
+   },
+   {
+    "href": "/patients/51pplkkcs1/recurring/313bv2hbx1",
+    "text": "3:20 PM to 4:05 PM Nelson, Thomas Scheduled \u00b7 Nutrition coun",
+    "hidden": false
+   },
+   {
+    "href": "/patients/2wwmkfhxhp/appointments/0nm8pctdll",
+    "text": "4:20 PM to 4:40 PM Dixon, Ashley Scheduled \u00b7 Sick visit",
+    "hidden": false
+   },
+   {
+    "href": "/patients/07bq5915p6/appointments/3gl206z4f6",
+    "text": "4:40 PM to 5:00 PM Hern\u00e1ndez, Diana Scheduled \u00b7 Follow-up vi",
+    "hidden": false
+   },
+   {
+    "href": "/schedule/providers/042xngpx1b?date=2026-10-14",
+    "text": "Desmond Fields, PA",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6szfd4wn3d/recurring/31zc3fzlbf",
+    "text": "8:00 AM to 8:30 AM Tran, Robert Completed \u00b7 Smoking cessatio",
+    "hidden": false
+   },
+   {
+    "href": "/patients/2pdn6rb53m/appointments/2g9f15xwwb",
+    "text": "8:30 AM to 8:50 AM Davis, Virginia Completed \u00b7 Follow-up vis",
+    "hidden": false
+   },
+   {
+    "href": "/patients/4n066v5brb/recurring/0ffvkkq7nr",
+    "text": "9:30 AM to 10:15 AM Green, Kathleen Scheduled \u00b7 Physical the",
+    "hidden": false
+   },
+   {
+    "href": "/patients/25nh4hczgf/appointments/2cflmj9pqh",
+    "text": "11:00 AM to 11:40 AM Evans, David Scheduled \u00b7 Specialist con",
+    "hidden": false
+   },
+   {
+    "href": "/patients/231j9bqh96/appointments/3tm38lbp48",
+    "text": "1:00 PM to 1:20 PM Kennedy, Samuel Scheduled \u00b7 Office visit",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6l07jlmzvr/appointments/5psxmtprzp",
+    "text": "1:00 PM to 1:45 PM Dixon, Susan Late cancel \u00b7 Echocardiogram",
+    "hidden": false
+   },
+   {
+    "href": "/patients/183mf68mh1/appointments/1rtz7hscks",
+    "text": "1:30 PM to 2:30 PM Riley, Katherine Scheduled \u00b7 Stress test",
+    "hidden": false
+   },
+   {
+    "href": "/patients/1vk89wlvpt/appointments/5wf7wx2crv",
+    "text": "2:30 PM to 2:50 PM Willis, Joshua Scheduled \u00b7 Office visit",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6zbzghmvlp/appointments/5j9mlkndwr",
+    "text": "3:00 PM to 3:20 PM Allen, Daniel Scheduled \u00b7 Sick visit",
+    "hidden": false
+   },
+   {
+    "href": "/patients/3mnqc0n88z/appointments/4p27lzpp7l",
+    "text": "3:30 PM to 3:50 PM Hayes, Lawrence Scheduled \u00b7 Office visit",
+    "hidden": false
+   },
+   {
+    "href": "/patients/16hhh9dmz9/appointments/521hklxbpz",
+    "text": "4:00 PM to 4:20 PM Cook, John Scheduled \u00b7 Sick visit",
+    "hidden": false
+   },
+   {
+    "href": "/patients/1w2xx2mxq8/appointments/2qng8w34f0",
+    "text": "4:30 PM to 4:50 PM Reyes, Lauren Scheduled \u00b7 Follow-up visit",
+    "hidden": false
+   },
+   {
+    "href": "/schedule/providers/57dkc53brc?date=2026-10-14",
+    "text": "Donald Silva, MD",
+    "hidden": false
+   },
+   {
+    "href": "/patients/2w1zn1chdn/recurring/5mpkmh353n",
+    "text": "1:20 PM to 1:50 PM Owens, Linda Cancelled \u00b7 Smoking cessatio",
+    "hidden": false
+   },
+   {
+    "href": "/patients/0g979fz42p/recurring/6mk3lg1t28",
+    "text": "4:00 PM to 4:15 PM \u00b7 Cancelled Flores, Lisa Cancelled \u00b7 Anti",
+    "hidden": false
+   },
+   {
+    "href": "/patients/1jhgv608lb/recurring/423wx2pwkl",
+    "text": "6:40 PM to 7:40 PM Johnson, John Cancelled \u00b7 Infusion therap",
+    "hidden": false
+   },
+   {
+    "href": "/schedule/providers/4zxht0glk9?date=2026-10-14",
+    "text": "Mark Sorensen, MD",
+    "hidden": false
+   },
+   {
+    "href": "/patients/21p6zv34d3/recurring/49kzhht3ct",
+    "text": "8:00 AM to 8:30 AM Wilson, Wayne Completed \u00b7 Wound care",
+    "hidden": false
+   },
+   {
+    "href": "/patients/3b6b750nt0/appointments/50j3qxxr61",
+    "text": "8:30 AM to 8:50 AM Garcia, David No-show \u00b7 Office visit",
+    "hidden": false
+   },
+   {
+    "href": "/patients/3fd2gk8r5n/recurring/0wm1b0mw23",
+    "text": "9:00 AM to 9:20 AM Miller, Elizabeth Completed \u00b7 Prenatal vi",
+    "hidden": false
+   },
+   {
+    "href": "/patients/1dvgjvhz7d/appointments/50w68q70xf",
+    "text": "9:15 AM to 9:55 AM Perry, Christine Cancelled \u00b7 Annual physi",
+    "hidden": false
+   },
+   {
+    "href": "/patients/4xqp60q94x/appointments/4sml828ltr",
+    "text": "9:45 AM to 10:00 AM \u00b7 Late cancel Harris, Michael Late cance",
+    "hidden": false
+   },
+   {
+    "href": "/patients/4qzq3f7zl5/appointments/0t3q0qxp3z",
+    "text": "9:45 AM to 10:25 AM Perez, Abigail Scheduled \u00b7 New patient v",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6hpq2qsfkb/appointments/71cj1n19xk",
+    "text": "10:00 AM to 10:20 AM Mitchell, Ashley Cancelled \u00b7 Follow-up ",
+    "hidden": false
+   },
+   {
+    "href": "/patients/5fljr2js6t/appointments/5rn5gw5n9g",
+    "text": "10:30 AM to 10:50 AM Schaefer, Jessica Scheduled \u00b7 Telehealt",
+    "hidden": false
+   },
+   {
+    "href": "/patients/535rn1pbvb/recurring/4wmqk4lx5r",
+    "text": "11:15 AM to 11:30 AM \u00b7 Scheduled Gray, Anna Scheduled \u00b7 Anti",
+    "hidden": false
+   },
+   {
+    "href": "/patients/5lws4nxrsr/recurring/4cl1j5sq5v",
+    "text": "1:30 PM to 2:30 PM Anderson, Patricia Scheduled \u00b7 Infusion t",
+    "hidden": false
+   },
+   {
+    "href": "/patients/1zlqksddm2/appointments/4l04d2lrtw",
+    "text": "2:45 PM to 3:00 PM \u00b7 Scheduled Turner, Mary Scheduled \u00b7 Lab ",
+    "hidden": false
+   },
+   {
+    "href": "/patients/00t29dq131/appointments/092v8mblvg",
+    "text": "3:00 PM to 3:15 PM \u00b7 Scheduled Rice, Megan Scheduled \u00b7 Antic",
+    "hidden": false
+   },
+   {
+    "href": "/patients/0qjcn0vsr2/appointments/191j5t47mr",
+    "text": "3:30 PM to 3:50 PM Jacobsen, Betty Scheduled \u00b7 Office visit",
+    "hidden": false
+   },
+   {
+    "href": "/patients/476338vz9r/recurring/4359nxlv3z",
+    "text": "3:45 PM to 4:15 PM Moore, Hannah Deleted Cancelled \u00b7 Smoking",
+    "hidden": false
+   },
+   {
+    "href": "/patients/06jj56sm1l/appointments/0bnmwzktvl",
+    "text": "4:15 PM to 5:00 PM Hern\u00e1ndez, Judith Cancelled \u00b7 Physical th",
+    "hidden": false
+   },
+   {
+    "href": "/schedule/providers/45h1bjsgfw?date=2026-10-14",
+    "text": "Aaron Wagner, MD",
+    "hidden": false
+   },
+   {
+    "href": "/patients/1j01x82b8s/appointments/41g8x6rppt",
+    "text": "11:00 AM to 11:20 AM Williams, Mary Scheduled \u00b7 Follow-up vi",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6xr9jl170v/appointments/3wdpd807cg",
+    "text": "11:20 AM to 11:40 AM Nguyen, Donna Scheduled \u00b7 Follow-up vis",
+    "hidden": false
+   },
+   {
+    "href": "/patients/539cl6rp94/recurring/46s33fz2jc",
+    "text": "11:40 AM to 11:55 AM \u00b7 Scheduled Moore, Jesse Scheduled \u00b7 Al",
+    "hidden": false
+   },
+   {
+    "href": "/patients/3tq61r51x2/appointments/3s727rbq9b",
+    "text": "12:20 PM to 12:40 PM Vargas, Richard Scheduled \u00b7 Follow-up v",
+    "hidden": false
+   },
+   {
+    "href": "/patients/06h771clr3/recurring/2zdrfjqkvk",
+    "text": "1:00 PM to 1:20 PM Sandoval, Garrett Scheduled \u00b7 Prenatal vi",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6jl312547c/appointments/0kpb6rs2d7",
+    "text": "1:20 PM to 2:00 PM Wagner, Judith Scheduled \u00b7 New patient vi",
+    "hidden": false
+   },
+   {
+    "href": "/patients/054pt5h3lc/appointments/3rr9zzgh6n",
+    "text": "2:00 PM to 2:20 PM Hall, Mei Scheduled \u00b7 Prenatal visit",
+    "hidden": false
+   },
+   {
+    "href": "/patients/160t4d8hd3/appointments/1wgssrqf95",
+    "text": "2:20 PM to 2:50 PM Young, Robert Scheduled \u00b7 Diabetes manage",
+    "hidden": false
+   },
+   {
+    "href": "/patients/2f5nz6s7xh/recurring/2kkspx1xk4",
+    "text": "4:00 PM to 4:15 PM \u00b7 Scheduled Morris, Patricia Scheduled \u00b7 ",
+    "hidden": false
+   },
+   {
+    "href": "/patients/3b66t633xt/recurring/465htpjjzd",
+    "text": "4:20 PM to 4:50 PM Anderson, Michael Scheduled \u00b7 Smoking ces",
+    "hidden": false
+   },
+   {
+    "href": "/patients/0lkjvxb7w7/appointments/4rcnst2gtf",
+    "text": "5:00 PM to 5:15 PM \u00b7 Scheduled Mitchell, Jose Scheduled \u00b7 Me",
+    "hidden": false
+   },
+   {
+    "href": "/patients/00t29dq131/appointments/0tvn0lvb8v",
+    "text": "5:00 PM to 5:20 PM Rice, Megan Cancelled \u00b7 Office visit",
+    "hidden": false
+   },
+   {
+    "href": "/patients/3qg21db89v/appointments/2mm5nckb2d",
+    "text": "5:40 PM to 6:00 PM Jones, Donald Scheduled \u00b7 Follow-up visit",
+    "hidden": false
+   },
+   {
+    "href": "/patients/3b66t633xt/appointments/1wdldmpl3b",
+    "text": "6:20 PM to 6:40 PM Anderson, Michael Scheduled \u00b7 Office visi",
+    "hidden": false
+   },
+   {
+    "href": "/patients/3nv20sg2kl/appointments/62qwnjmhhk",
+    "text": "7:00 PM to 7:20 PM Graham, Astrid Scheduled \u00b7 Office visit",
+    "hidden": false
+   },
+   {
+    "href": "/patients/5cpncfr02k/recurring/3t053hztn5",
+    "text": "7:20 PM to 7:40 PM Taylor, Michael Scheduled \u00b7 Follow-up vis",
+    "hidden": false
+   },
+   {
+    "href": "/schedule/providers/3xn04x0076?date=2026-10-14",
+    "text": "Brenda West, MD",
+    "hidden": false
+   },
+   {
+    "href": "/patients/3f800709v2/appointments/0l8b6vqmhs",
+    "text": "8:20 AM to 9:20 AM Smith, Joyce Completed \u00b7 Minor procedure",
+    "hidden": false
+   },
+   {
+    "href": "/patients/5xjqv6d7mf/appointments/1zn5vqpvns",
+    "text": "9:40 AM to 10:10 AM Ford, John Scheduled \u00b7 Wound care",
+    "hidden": false
+   },
+   {
+    "href": "/patients/3n3cj2whx1/appointments/2bfld4h9ks",
+    "text": "10:20 AM to 10:50 AM Luna, Ronald Scheduled \u00b7 Wound care",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6sqtnhdpq1/appointments/5qmf7g4kj1",
+    "text": "11:00 AM to 11:15 AM \u00b7 Scheduled Rodr\u00edguez, Hannah Scheduled",
+    "hidden": false
+   },
+   {
+    "href": "/patients/5lv61qbn3p/appointments/61wh27r5jw",
+    "text": "11:20 AM to 11:40 AM Montgomery, Jeffrey Scheduled \u00b7 Sick vi",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6jxgqvx1fk/appointments/4z6vh5rfl4",
+    "text": "11:40 AM to 11:55 AM \u00b7 Scheduled Williams, Ashley Scheduled ",
+    "hidden": false
+   },
+   {
+    "href": "/patients/0njj3wftzj/appointments/5hrxm70vlg",
+    "text": "1:00 PM to 1:20 PM Martinez, Chlo\u00e9 Scheduled \u00b7 Follow-up vis",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6fm9mh5fnd/appointments/2vz6kqvv6q",
+    "text": "1:20 PM to 1:40 PM Lopez, Betty Scheduled \u00b7 Telehealth visit",
+    "hidden": false
+   },
+   {
+    "href": "/patients/612m3gf23m/appointments/3slb0jq2xz",
+    "text": "1:40 PM to 1:55 PM \u00b7 Scheduled Watson, Alexander Scheduled \u00b7",
+    "hidden": false
+   },
+   {
+    "href": "/patients/394h02g1h3/appointments/1hg6qcr4nn",
+    "text": "2:00 PM to 2:15 PM \u00b7 Scheduled Guzman, Bruce Scheduled \u00b7 Ele",
+    "hidden": false
+   },
+   {
+    "href": "/patients/21ffzk38k5/appointments/12xwc6dv40",
+    "text": "2:40 PM to 3:00 PM Baker, Mark Scheduled \u00b7 Telehealth visit",
+    "hidden": false
+   },
+   {
+    "href": "/patients/293hmb4pwf/recurring/024hlc96rt",
+    "text": "3:20 PM to 3:50 PM Ward, Brenda Scheduled \u00b7 Smoking cessatio",
+    "hidden": false
+   },
+   {
+    "href": "/patients/42v2j23f6x/appointments/4x9swt0c72",
+    "text": "4:00 PM to 4:20 PM Campbell, Hannah Scheduled \u00b7 Post-operati",
+    "hidden": false
+   },
+   {
+    "href": "/patients/34vjdk1w3l/appointments/0zzqzwlv7l",
+    "text": "4:20 PM to 4:40 PM Salazar, Sharon Scheduled \u00b7 Follow-up vis",
+    "hidden": false
+   },
+   {
+    "href": "/patients/609sr4nznb/recurring/3r1z6j0fft",
+    "text": "4:40 PM to 4:55 PM \u00b7 Scheduled Wilson, Kathryn Scheduled \u00b7 A",
+    "hidden": false
+   }
+  ],
+  "buttons": [
+   " [Previous day]",
+   "Today",
+   " [Next day]"
+  ],
+  "forms": [],
+  "tables": [],
+  "nonicon_svgs": [
+   [
+    null,
+    null,
+    null,
+    180
+   ],
+   [
+    null,
+    null,
+    null,
+    179
+   ],
+   [
+    null,
+    null,
+    null,
+    253
+   ],
+   [
+    null,
+    null,
+    null,
+    253
+   ],
+   [
+    null,
+    null,
+    null,
+    253
+   ],
+   [
+    null,
+    null,
+    null,
+    253
+   ]
+  ],
+  "imgs": [],
+  "canvas": 0,
+  "iframes": [],
+  "dl": [],
+  "details": [],
+  "text_len": 6139,
+  "shell_url": "https://practice.speedrun.scopehealth.com/schedule?date=2026-10-14",
+  "load_s": 0.411
+ },
+ "/patients/03q14ndmmd/appointments/6x505m94xc": {
+  "title": "Murphy, Valentina \u00b7 Wrenfield",
+  "h1": [
+   "Murphy, Valentina"
+  ],
+  "h2": [
+   "Appointment on Oct 14, 2026 Close",
+   "Visit",
+   "People and place",
+   "Record",
+   "History",
+   "Recurring appointments"
+  ],
+  "links": [
+   {
+    "href": "/billing/accounts/03q14ndmmd",
+    "text": "Invoices",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd",
+    "text": "Demographics",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/insurance",
+    "text": "Insurance",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/problems",
+    "text": "Problems",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/notes",
+    "text": "Notes",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/documents",
+    "text": "Documents",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/appointments",
+    "text": "Appointments",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/activity",
+    "text": "Activity",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/recurring/36b1t0bf71",
+    "text": "Every week on Tuesday at 11:40",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/appointments/13g9mf78pg",
+    "text": "Nov 6, 2026, 2:40 PM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/appointments/1xzh0q58ck",
+    "text": "Oct 21, 2026, 2:40 PM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/appointments/14pcgjvn0v",
+    "text": "Oct 20, 2026, 11:00 AM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/appointments/6x505m94xc",
+    "text": "Oct 14, 2026, 10:40 AM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/appointments/6csgmpk98b",
+    "text": "Oct 5, 2026, 5:00 PM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/appointments/0w7q5g78ns",
+    "text": "Sep 1, 2026, 2:00 PM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/appointments/5sc6lbk545",
+    "text": "Aug 30, 2026, 9:40 AM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/appointments/502chv4zcb",
+    "text": "Jul 14, 2026, 1:00 PM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/appointments/41p04h58jn",
+    "text": "Jul 8, 2026, 8:40 AM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/appointments/3l7kvbpx1p",
+    "text": "May 28, 2026, 3:00 PM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/appointments/0z65mmg72k",
+    "text": "May 8, 2026, 12:40 PM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/appointments/1w06xcwk3w",
+    "text": "Apr 29, 2026, 4:20 PM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/appointments/0jp8v19vq2",
+    "text": "Apr 1, 2026, 2:00 PM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/appointments/0j2c9893tx",
+    "text": "Mar 3, 2026, 7:00 PM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/appointments/71qx3d049q",
+    "text": "Jan 13, 2026, 12:20 PM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/appointments/5rt93n2m7q",
+    "text": "Nov 29, 2025, 10:20 AM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/appointments/2c2w48glpt",
+    "text": "Nov 24, 2025, 4:40 PM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/appointments/4dhjqr2dwr",
+    "text": "Nov 3, 2025, 11:00 AM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/appointments/49c35dnwx7",
+    "text": "Oct 28, 2025, 5:20 PM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/appointments/5sf75jwth8",
+    "text": "Oct 3, 2025, 3:20 PM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/appointments/1jq55009dl",
+    "text": "Oct 2, 2025, 8:20 AM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/appointments/0fx5pvc93q",
+    "text": "Sep 14, 2025, 10:00 AM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/appointments/565s7fps14",
+    "text": "Sep 11, 2025, 3:20 PM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/appointments/1q2vb4qf61",
+    "text": "Sep 4, 2025, 11:20 AM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/appointments/4wtpkb3pgl",
+    "text": "Jul 10, 2025, 9:20 AM",
+    "hidden": false
+   }
+  ],
+  "buttons": [
+   "Close",
+   "Previous",
+   "Next"
+  ],
+  "forms": [],
+  "tables": [
+   {
+    "caption": "History of this appointment",
+    "hdr": [
+     "When",
+     "User",
+     "Change"
+    ],
+    "rows": 2
+   },
+   {
+    "caption": "Appointments, newest first",
+    "hdr": [
+     "Date and time",
+     "Type",
+     "Provider",
+     "Location",
+     "Status"
+    ],
+    "rows": 26
+   }
+  ],
+  "nonicon_svgs": [
+   [
+    null,
+    null,
+    null,
+    204
+   ],
+   [
+    null,
+    null,
+    null,
+    295
+   ]
+  ],
+  "imgs": [],
+  "canvas": 0,
+  "iframes": [],
+  "dl": [
+   [
+    "MRN",
+    "Date of birth",
+    "Sex",
+    "Billing"
+   ],
+   [
+    "Date",
+    "Time",
+    "Length",
+    "Type",
+    "Status"
+   ],
+   [
+    "Provider",
+    "Location"
+   ],
+   [
+    "Reference",
+    "Booked",
+    "Last changed"
+   ]
+  ],
+  "details": [],
+  "text_len": 2794,
+  "shell_url": "https://practice.speedrun.scopehealth.com/patients/03q14ndmmd/appointments/6x505m94xc",
+  "load_s": 0.385
+ },
+ "/patients/03q14ndmmd": {
+  "title": "Murphy, Valentina \u00b7 Wrenfield",
+  "h1": [
+   "Murphy, Valentina"
+  ],
+  "h2": [
+   "Contact",
+   "Care team"
+  ],
+  "links": [
+   {
+    "href": "/billing/accounts/03q14ndmmd",
+    "text": "Invoices",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd",
+    "text": "Demographics",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/insurance",
+    "text": "Insurance",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/problems",
+    "text": "Problems",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/notes",
+    "text": "Notes",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/documents",
+    "text": "Documents",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/appointments",
+    "text": "Appointments",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/activity",
+    "text": "Activity",
+    "hidden": false
+   }
+  ],
+  "buttons": [],
+  "forms": [],
+  "tables": [],
+  "nonicon_svgs": [],
+  "imgs": [],
+  "canvas": 0,
+  "iframes": [],
+  "dl": [
+   [
+    "MRN",
+    "Date of birth",
+    "Sex",
+    "Billing"
+   ],
+   [
+    "Phone",
+    "Email",
+    "Address"
+   ],
+   [
+    "Primary provider",
+    "Home location"
+   ]
+  ],
+  "details": [],
+  "text_len": 394,
+  "shell_url": "https://practice.speedrun.scopehealth.com/patients/03q14ndmmd",
+  "load_s": 0.337
+ },
+ "/patients/6sqtnhdpq1/appointments/5qmf7g4kj1": {
+  "title": "Rodr\u00edguez, Hannah \u00b7 Wrenfield",
+  "h1": [
+   "Rodr\u00edguez, Hannah"
+  ],
+  "h2": [
+   "Appointment on Oct 14, 2026 Close",
+   "Visit",
+   "People and place",
+   "Record",
+   "History"
+  ],
+  "links": [
+   {
+    "href": "/billing/accounts/6sqtnhdpq1",
+    "text": "Invoices",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6sqtnhdpq1",
+    "text": "Demographics",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6sqtnhdpq1/insurance",
+    "text": "Insurance",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6sqtnhdpq1/problems",
+    "text": "Problems",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6sqtnhdpq1/notes",
+    "text": "Notes",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6sqtnhdpq1/documents",
+    "text": "Documents",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6sqtnhdpq1/appointments",
+    "text": "Appointments",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6sqtnhdpq1/activity",
+    "text": "Activity",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6sqtnhdpq1/appointments/5qmf7g4kj1",
+    "text": "Oct 14, 2026, 11:00 AM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6sqtnhdpq1/appointments/4r5gfnkkxj",
+    "text": "Oct 6, 2026, 8:00 AM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6sqtnhdpq1/appointments/3q5d1vgc4g",
+    "text": "Nov 4, 2025, 11:20 AM",
+    "hidden": false
+   }
+  ],
+  "buttons": [
+   "Close"
+  ],
+  "forms": [],
+  "tables": [
+   {
+    "caption": "History of this appointment",
+    "hdr": [
+     "When",
+     "User",
+     "Change"
+    ],
+    "rows": 2
+   },
+   {
+    "caption": "Appointments, newest first",
+    "hdr": [
+     "Date and time",
+     "Type",
+     "Provider",
+     "Location",
+     "Status"
+    ],
+    "rows": 4
+   }
+  ],
+  "nonicon_svgs": [
+   [
+    null,
+    null,
+    null,
+    204
+   ]
+  ],
+  "imgs": [],
+  "canvas": 0,
+  "iframes": [],
+  "dl": [
+   [
+    "MRN",
+    "Date of birth",
+    "Sex",
+    "Billing"
+   ],
+   [
+    "Date",
+    "Time",
+    "Length",
+    "Type",
+    "Status"
+   ],
+   [
+    "Provider",
+    "Location"
+   ],
+   [
+    "Reference",
+    "Booked",
+    "Last changed"
+   ]
+  ],
+  "details": [],
+  "text_len": 919,
+  "shell_url": "https://practice.speedrun.scopehealth.com/patients/6sqtnhdpq1/appointments/5qmf7g4kj1",
+  "load_s": 0.417
+ },
+ "/patients/535rn1pbvb/recurring/4wmqk4lx5r": {
+  "title": "Gray, Anna \u00b7 Wrenfield",
+  "h1": [
+   "Gray, Anna"
+  ],
+  "h2": [
+   "Recurring appointment: Every week on Wednesday at 11:15 Close",
+   "Rule",
+   "People and place",
+   "Changed dates",
+   "All dates",
+   "Recurring appointments"
+  ],
+  "links": [
+   {
+    "href": "/billing/accounts/535rn1pbvb",
+    "text": "Invoices",
+    "hidden": false
+   },
+   {
+    "href": "/patients/535rn1pbvb",
+    "text": "Demographics",
+    "hidden": false
+   },
+   {
+    "href": "/patients/535rn1pbvb/insurance",
+    "text": "Insurance",
+    "hidden": false
+   },
+   {
+    "href": "/patients/535rn1pbvb/problems",
+    "text": "Problems",
+    "hidden": false
+   },
+   {
+    "href": "/patients/535rn1pbvb/notes",
+    "text": "Notes",
+    "hidden": false
+   },
+   {
+    "href": "/patients/535rn1pbvb/documents",
+    "text": "Documents",
+    "hidden": false
+   },
+   {
+    "href": "/patients/535rn1pbvb/appointments",
+    "text": "Appointments",
+    "hidden": false
+   },
+   {
+    "href": "/patients/535rn1pbvb/activity",
+    "text": "Activity",
+    "hidden": false
+   },
+   {
+    "href": "/patients/535rn1pbvb/recurring/4wmqk4lx5r",
+    "text": "Every week on Wednesday at 11:15",
+    "hidden": false
+   },
+   {
+    "href": "/patients/535rn1pbvb/appointments/6swpqq08f8",
+    "text": "Nov 30, 2026, 2:30 PM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/535rn1pbvb/appointments/2nqgktfb51",
+    "text": "Nov 20, 2026, 2:00 PM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/535rn1pbvb/appointments/126hskmmmm",
+    "text": "Oct 23, 2026, 4:15 PM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/535rn1pbvb/appointments/6tm3sn6sfz",
+    "text": "Oct 7, 2026, 1:00 PM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/535rn1pbvb/appointments/0zrmc0ljn0",
+    "text": "Oct 5, 2026, 8:15 AM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/535rn1pbvb/appointments/33m6xvh5r9",
+    "text": "Sep 28, 2026, 2:30 PM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/535rn1pbvb/appointments/2q4dn6njhg",
+    "text": "Sep 25, 2026, 1:15 PM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/535rn1pbvb/appointments/3vh3wvgzdq",
+    "text": "Aug 31, 2026, 9:15 AM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/535rn1pbvb/appointments/0nl7v5lsqq",
+    "text": "Jul 27, 2026, 8:00 AM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/535rn1pbvb/appointments/60hlpkk0bv",
+    "text": "Jul 13, 2026, 11:00 AM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/535rn1pbvb/appointments/370vrtt9f8",
+    "text": "Jul 13, 2026, 10:45 AM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/535rn1pbvb/appointments/45sr71jp7t",
+    "text": "Jun 12, 2026, 3:00 PM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/535rn1pbvb/appointments/40qf03lkws",
+    "text": "Jun 8, 2026, 3:45 PM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/535rn1pbvb/appointments/4nlhvh25x8",
+    "text": "Jun 5, 2026, 10:15 AM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/535rn1pbvb/appointments/6rv6mch998",
+    "text": "May 11, 2026, 10:00 AM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/535rn1pbvb/appointments/100hs69t55",
+    "text": "Mar 20, 2026, 3:45 PM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/535rn1pbvb/appointments/6p498s02lt",
+    "text": "Mar 13, 2026, 11:30 AM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/535rn1pbvb/appointments/37zpvbjlnr",
+    "text": "Dec 31, 2025, 3:15 PM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/535rn1pbvb/appointments/4t8q94zt09",
+    "text": "Dec 19, 2025, 1:15 PM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/535rn1pbvb/appointments/6bqzl97ln3",
+    "text": "Nov 24, 2025, 2:15 PM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/535rn1pbvb/appointments/0f7b908wqw",
+    "text": "Oct 1, 2025, 10:15 AM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/535rn1pbvb/appointments/122d5k2h5q",
+    "text": "Sep 26, 2025, 11:15 AM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/535rn1pbvb/appointments/0nf7pqcqqv",
+    "text": "Sep 17, 2025, 11:30 AM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/535rn1pbvb/appointments/5jnb5zw2mt",
+    "text": "Sep 17, 2025, 10:15 AM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/535rn1pbvb/appointments/6hs67277mb",
+    "text": "Jun 6, 2025, 9:45 AM",
+    "hidden": false
+   }
+  ],
+  "buttons": [
+   "Close",
+   "Previous",
+   "Next"
+  ],
+  "forms": [],
+  "tables": [
+   {
+    "caption": "Dates on which this series was changed",
+    "hdr": [
+     "Date",
+     "Change",
+     "Recorded"
+    ],
+    "rows": 3
+   },
+   {
+    "caption": "Every date of this recurring appointment, newest first",
+    "hdr": [
+     "Date and time",
+     "Status"
+    ],
+    "rows": 23
+   },
+   {
+    "caption": "Appointments, newest first",
+    "hdr": [
+     "Date and time",
+     "Type",
+     "Provider",
+     "Location",
+     "Status"
+    ],
+    "rows": 26
+   }
+  ],
+  "nonicon_svgs": [
+   [
+    null,
+    null,
+    null,
+    204
+   ],
+   [
+    null,
+    null,
+    null,
+    295
+   ]
+  ],
+  "imgs": [],
+  "canvas": 0,
+  "iframes": [],
+  "dl": [
+   [
+    "MRN",
+    "Date of birth",
+    "Sex",
+    "Billing"
+   ],
+   [
+    "Repeats",
+    "Length",
+    "From",
+    "Until",
+    "Type"
+   ],
+   [
+    "Provider",
+    "Location",
+    "Created",
+    "Last changed"
+   ]
+  ],
+  "details": [],
+  "text_len": 3767,
+  "shell_url": "https://practice.speedrun.scopehealth.com/patients/535rn1pbvb/recurring/4wmqk4lx5r",
+  "load_s": 0.368
+ },
+ "/patients/3pdsxpwzr5/activity": {
+  "title": "Wrenfield",
+  "h1": [
+   "This chart is restricted"
+  ],
+  "h2": [],
+  "links": [],
+  "buttons": [
+   "Request access"
+  ],
+  "forms": [
+   [
+    {
+     "tag": "select",
+     "name": "reason",
+     "type": null,
+     "value": null,
+     "options": [
+      [
+       "",
+       "Choose a reason",
+       false
+      ],
+      [
+       "treatment",
+       "Providing care to this patient",
+       false
+      ],
+      [
+       "scheduling",
+       "Scheduling an appointment",
+       false
+      ],
+      [
+       "billing",
+       "Billing or insurance question",
+       false
+      ],
+      [
+       "patient_request",
+       "Request from the patient",
+       false
+      ],
+      [
+       "other",
+       "Other reason",
+       false
+      ]
+     ]
+    },
+    {
+     "tag": "textarea",
+     "name": "details",
+     "type": null,
+     "value": null
+    }
+   ]
+  ],
+  "tables": [],
+  "nonicon_svgs": [
+   [
+    null,
+    null,
+    null,
+    253
+   ]
+  ],
+  "imgs": [],
+  "canvas": 0,
+  "iframes": [],
+  "dl": [],
+  "details": [],
+  "text_len": 406,
+  "shell_url": "https://practice.speedrun.scopehealth.com/patients/3pdsxpwzr5/activity",
+  "load_s": 0.377
+ },
+ "/patients/28xpx631v1/activity": {
+  "title": "Wrenfield",
+  "h1": [
+   "This chart is restricted"
+  ],
+  "h2": [],
+  "links": [],
+  "buttons": [
+   "Request access"
+  ],
+  "forms": [
+   [
+    {
+     "tag": "select",
+     "name": "reason",
+     "type": null,
+     "value": null,
+     "options": [
+      [
+       "",
+       "Choose a reason",
+       false
+      ],
+      [
+       "treatment",
+       "Providing care to this patient",
+       false
+      ],
+      [
+       "scheduling",
+       "Scheduling an appointment",
+       false
+      ],
+      [
+       "billing",
+       "Billing or insurance question",
+       false
+      ],
+      [
+       "patient_request",
+       "Request from the patient",
+       false
+      ],
+      [
+       "other",
+       "Other reason",
+       false
+      ]
+     ]
+    },
+    {
+     "tag": "textarea",
+     "name": "details",
+     "type": null,
+     "value": null
+    }
+   ]
+  ],
+  "tables": [],
+  "nonicon_svgs": [
+   [
+    null,
+    null,
+    null,
+    253
+   ]
+  ],
+  "imgs": [],
+  "canvas": 0,
+  "iframes": [],
+  "dl": [],
+  "details": [],
+  "text_len": 406,
+  "shell_url": "https://practice.speedrun.scopehealth.com/patients/28xpx631v1/activity",
+  "load_s": 0.322
+ },
+ "/billing/invoices/6b7q92km6g": {
+  "title": "Wrenfield",
+  "h1": [
+   "Invoice 82593504"
+  ],
+  "h2": [
+   "Details",
+   "Ledger"
+  ],
+  "links": [
+   {
+    "href": "/billing",
+    "text": "Invoices",
+    "hidden": false
+   },
+   {
+    "href": "/billing/accounts/5htg68sn64",
+    "text": "Patient account",
+    "hidden": false
+   },
+   {
+    "href": "/patients/5htg68sn64",
+    "text": "Open chart",
+    "hidden": false
+   },
+   {
+    "href": "/patients/5htg68sn64",
+    "text": "Soto, James",
+    "hidden": false
+   }
+  ],
+  "buttons": [],
+  "forms": [],
+  "tables": [
+   {
+    "caption": "Ledger of this invoice, oldest first",
+    "hdr": [
+     "Date",
+     "Description",
+     "Charges",
+     "Payments and adjustments"
+    ],
+    "rows": 4
+   }
+  ],
+  "nonicon_svgs": [
+   [
+    null,
+    null,
+    null,
+    179
+   ],
+   [
+    null,
+    null,
+    null,
+    325
+   ],
+   [
+    null,
+    null,
+    null,
+    333
+   ]
+  ],
+  "imgs": [],
+  "canvas": 0,
+  "iframes": [],
+  "dl": [
+   [
+    "Patient",
+    "Location",
+    "Service date",
+    "Issued",
+    "Total",
+    "Status"
+   ]
+  ],
+  "details": [],
+  "text_len": 492,
+  "shell_url": "https://practice.speedrun.scopehealth.com/billing/invoices/6b7q92km6g",
+  "load_s": 0.352
+ },
+ "/billing/invoices/2cw2d6krzf": {
+  "title": "Wrenfield",
+  "h1": [
+   "Invoice 21617829"
+  ],
+  "h2": [
+   "Details",
+   "Ledger"
+  ],
+  "links": [
+   {
+    "href": "/billing",
+    "text": "Invoices",
+    "hidden": false
+   },
+   {
+    "href": "/billing/accounts/60qx33k364",
+    "text": "Patient account",
+    "hidden": false
+   },
+   {
+    "href": "/patients/60qx33k364",
+    "text": "Open chart",
+    "hidden": false
+   },
+   {
+    "href": "/patients/60qx33k364",
+    "text": "Matthews, Astrid",
+    "hidden": false
+   }
+  ],
+  "buttons": [],
+  "forms": [],
+  "tables": [
+   {
+    "caption": "Ledger of this invoice, oldest first",
+    "hdr": [
+     "Date",
+     "Description",
+     "Charges",
+     "Payments and adjustments"
+    ],
+    "rows": 3
+   }
+  ],
+  "nonicon_svgs": [
+   [
+    null,
+    null,
+    null,
+    179
+   ],
+   [
+    null,
+    null,
+    null,
+    325
+   ],
+   [
+    null,
+    null,
+    null,
+    333
+   ]
+  ],
+  "imgs": [],
+  "canvas": 0,
+  "iframes": [],
+  "dl": [
+   [
+    "Patient",
+    "Location",
+    "Service date",
+    "Issued",
+    "Total",
+    "Status"
+   ]
+  ],
+  "details": [],
+  "text_len": 469,
+  "shell_url": "https://practice.speedrun.scopehealth.com/billing/invoices/2cw2d6krzf",
+  "load_s": 0.333
+ },
+ "/schedule?date=2026-10-14": {
+  "title": "Schedule \u00b7 Wrenfield",
+  "h1": [
+   "Schedule"
+  ],
+  "h2": [
+   "Wednesday, October 14, 2026",
+   "Diana Anderson, PA",
+   "Desmond Fields, PA",
+   "Donald Silva, MD",
+   "Mark Sorensen, MD",
+   "Aaron Wagner, MD",
+   "Brenda West, MD"
+  ],
+  "links": [
+   {
+    "href": "/schedule?date=2026-10-14",
+    "text": "Day",
+    "hidden": false
+   },
+   {
+    "href": "/schedule/providers/4vqb93p4g9?date=2026-10-14",
+    "text": "Provider",
+    "hidden": false
+   },
+   {
+    "href": "/schedule/appointments?from=2026-10-14&to=2026-10-20",
+    "text": "Appointment list",
+    "hidden": false
+   },
+   {
+    "href": "/schedule/providers/1x0jb5xxv1?date=2026-10-14",
+    "text": "Diana Anderson, PA",
+    "hidden": false
+   },
+   {
+    "href": "/patients/1z51c6nt6k/appointments/000gz3ss24",
+    "text": "8:00 AM to 8:20 AM Turner, Shirley Completed \u00b7 Office visit",
+    "hidden": false
+   },
+   {
+    "href": "/patients/2z02hsrvb9/appointments/6vhg2s7cz3",
+    "text": "8:00 AM to 9:00 AM Wilson, George Cancelled \u00b7 Infusion thera",
+    "hidden": false
+   },
+   {
+    "href": "/patients/1lzxvj88zd/appointments/00fl88nb8t",
+    "text": "9:00 AM to 9:20 AM Lee, Jonathan Completed \u00b7 Follow-up visit",
+    "hidden": false
+   },
+   {
+    "href": "/patients/5vzzjptxlw/appointments/1l46g5fq5s",
+    "text": "9:20 AM to 9:40 AM Vasquez, Jean Completed \u00b7 Sports physical",
+    "hidden": false
+   },
+   {
+    "href": "/patients/1xb41ths62/appointments/615thbfj3x",
+    "text": "9:40 AM to 10:00 AM Ortega, Robert Completed \u00b7 Follow-up vis",
+    "hidden": false
+   },
+   {
+    "href": "/patients/5d7xfdthjt/appointments/3npvpr2qbt",
+    "text": "10:00 AM to 10:15 AM \u00b7 Late cancel Matthews, Omar Late cance",
+    "hidden": false
+   },
+   {
+    "href": "/patients/3hdhbsfbq2/appointments/39bjx66468",
+    "text": "10:00 AM to 10:40 AM Hudson, Aisha Scheduled \u00b7 Annual physic",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/appointments/6x505m94xc",
+    "text": "10:40 AM to 11:00 AM Murphy, Valentina Scheduled \u00b7 Sick visi",
+    "hidden": false
+   },
+   {
+    "href": "/patients/728375g94r/appointments/1w6v4vf2w5",
+    "text": "11:00 AM to 11:30 AM Russell, Natalie Scheduled \u00b7 Skin biops",
+    "hidden": false
+   },
+   {
+    "href": "/patients/07ngwp7x0s/appointments/1gdlz8xnz7",
+    "text": "11:20 AM to 11:40 AM Wright, Debra Cancelled \u00b7 Office visit",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6s5wtkp362/appointments/42rhfbvx87",
+    "text": "1:00 PM to 1:20 PM Khan, Garrett Scheduled \u00b7 Telehealth visi",
+    "hidden": false
+   },
+   {
+    "href": "/patients/51pplkkcs1/recurring/313bv2hbx1",
+    "text": "3:20 PM to 4:05 PM Nelson, Thomas Scheduled \u00b7 Nutrition coun",
+    "hidden": false
+   },
+   {
+    "href": "/patients/2wwmkfhxhp/appointments/0nm8pctdll",
+    "text": "4:20 PM to 4:40 PM Dixon, Ashley Scheduled \u00b7 Sick visit",
+    "hidden": false
+   },
+   {
+    "href": "/patients/07bq5915p6/appointments/3gl206z4f6",
+    "text": "4:40 PM to 5:00 PM Hern\u00e1ndez, Diana Scheduled \u00b7 Follow-up vi",
+    "hidden": false
+   },
+   {
+    "href": "/schedule/providers/042xngpx1b?date=2026-10-14",
+    "text": "Desmond Fields, PA",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6szfd4wn3d/recurring/31zc3fzlbf",
+    "text": "8:00 AM to 8:30 AM Tran, Robert Completed \u00b7 Smoking cessatio",
+    "hidden": false
+   },
+   {
+    "href": "/patients/2pdn6rb53m/appointments/2g9f15xwwb",
+    "text": "8:30 AM to 8:50 AM Davis, Virginia Completed \u00b7 Follow-up vis",
+    "hidden": false
+   },
+   {
+    "href": "/patients/4n066v5brb/recurring/0ffvkkq7nr",
+    "text": "9:30 AM to 10:15 AM Green, Kathleen Scheduled \u00b7 Physical the",
+    "hidden": false
+   },
+   {
+    "href": "/patients/25nh4hczgf/appointments/2cflmj9pqh",
+    "text": "11:00 AM to 11:40 AM Evans, David Scheduled \u00b7 Specialist con",
+    "hidden": false
+   },
+   {
+    "href": "/patients/231j9bqh96/appointments/3tm38lbp48",
+    "text": "1:00 PM to 1:20 PM Kennedy, Samuel Scheduled \u00b7 Office visit",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6l07jlmzvr/appointments/5psxmtprzp",
+    "text": "1:00 PM to 1:45 PM Dixon, Susan Late cancel \u00b7 Echocardiogram",
+    "hidden": false
+   },
+   {
+    "href": "/patients/183mf68mh1/appointments/1rtz7hscks",
+    "text": "1:30 PM to 2:30 PM Riley, Katherine Scheduled \u00b7 Stress test",
+    "hidden": false
+   },
+   {
+    "href": "/patients/1vk89wlvpt/appointments/5wf7wx2crv",
+    "text": "2:30 PM to 2:50 PM Willis, Joshua Scheduled \u00b7 Office visit",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6zbzghmvlp/appointments/5j9mlkndwr",
+    "text": "3:00 PM to 3:20 PM Allen, Daniel Scheduled \u00b7 Sick visit",
+    "hidden": false
+   },
+   {
+    "href": "/patients/3mnqc0n88z/appointments/4p27lzpp7l",
+    "text": "3:30 PM to 3:50 PM Hayes, Lawrence Scheduled \u00b7 Office visit",
+    "hidden": false
+   },
+   {
+    "href": "/patients/16hhh9dmz9/appointments/521hklxbpz",
+    "text": "4:00 PM to 4:20 PM Cook, John Scheduled \u00b7 Sick visit",
+    "hidden": false
+   },
+   {
+    "href": "/patients/1w2xx2mxq8/appointments/2qng8w34f0",
+    "text": "4:30 PM to 4:50 PM Reyes, Lauren Scheduled \u00b7 Follow-up visit",
+    "hidden": false
+   },
+   {
+    "href": "/schedule/providers/57dkc53brc?date=2026-10-14",
+    "text": "Donald Silva, MD",
+    "hidden": false
+   },
+   {
+    "href": "/patients/2w1zn1chdn/recurring/5mpkmh353n",
+    "text": "1:20 PM to 1:50 PM Owens, Linda Cancelled \u00b7 Smoking cessatio",
+    "hidden": false
+   },
+   {
+    "href": "/patients/0g979fz42p/recurring/6mk3lg1t28",
+    "text": "4:00 PM to 4:15 PM \u00b7 Cancelled Flores, Lisa Cancelled \u00b7 Anti",
+    "hidden": false
+   },
+   {
+    "href": "/patients/1jhgv608lb/recurring/423wx2pwkl",
+    "text": "6:40 PM to 7:40 PM Johnson, John Cancelled \u00b7 Infusion therap",
+    "hidden": false
+   },
+   {
+    "href": "/schedule/providers/4zxht0glk9?date=2026-10-14",
+    "text": "Mark Sorensen, MD",
+    "hidden": false
+   },
+   {
+    "href": "/patients/21p6zv34d3/recurring/49kzhht3ct",
+    "text": "8:00 AM to 8:30 AM Wilson, Wayne Completed \u00b7 Wound care",
+    "hidden": false
+   },
+   {
+    "href": "/patients/3b6b750nt0/appointments/50j3qxxr61",
+    "text": "8:30 AM to 8:50 AM Garcia, David No-show \u00b7 Office visit",
+    "hidden": false
+   },
+   {
+    "href": "/patients/3fd2gk8r5n/recurring/0wm1b0mw23",
+    "text": "9:00 AM to 9:20 AM Miller, Elizabeth Completed \u00b7 Prenatal vi",
+    "hidden": false
+   },
+   {
+    "href": "/patients/1dvgjvhz7d/appointments/50w68q70xf",
+    "text": "9:15 AM to 9:55 AM Perry, Christine Cancelled \u00b7 Annual physi",
+    "hidden": false
+   },
+   {
+    "href": "/patients/4xqp60q94x/appointments/4sml828ltr",
+    "text": "9:45 AM to 10:00 AM \u00b7 Late cancel Harris, Michael Late cance",
+    "hidden": false
+   },
+   {
+    "href": "/patients/4qzq3f7zl5/appointments/0t3q0qxp3z",
+    "text": "9:45 AM to 10:25 AM Perez, Abigail Scheduled \u00b7 New patient v",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6hpq2qsfkb/appointments/71cj1n19xk",
+    "text": "10:00 AM to 10:20 AM Mitchell, Ashley Cancelled \u00b7 Follow-up ",
+    "hidden": false
+   },
+   {
+    "href": "/patients/5fljr2js6t/appointments/5rn5gw5n9g",
+    "text": "10:30 AM to 10:50 AM Schaefer, Jessica Scheduled \u00b7 Telehealt",
+    "hidden": false
+   },
+   {
+    "href": "/patients/535rn1pbvb/recurring/4wmqk4lx5r",
+    "text": "11:15 AM to 11:30 AM \u00b7 Scheduled Gray, Anna Scheduled \u00b7 Anti",
+    "hidden": false
+   },
+   {
+    "href": "/patients/5lws4nxrsr/recurring/4cl1j5sq5v",
+    "text": "1:30 PM to 2:30 PM Anderson, Patricia Scheduled \u00b7 Infusion t",
+    "hidden": false
+   },
+   {
+    "href": "/patients/1zlqksddm2/appointments/4l04d2lrtw",
+    "text": "2:45 PM to 3:00 PM \u00b7 Scheduled Turner, Mary Scheduled \u00b7 Lab ",
+    "hidden": false
+   },
+   {
+    "href": "/patients/00t29dq131/appointments/092v8mblvg",
+    "text": "3:00 PM to 3:15 PM \u00b7 Scheduled Rice, Megan Scheduled \u00b7 Antic",
+    "hidden": false
+   },
+   {
+    "href": "/patients/0qjcn0vsr2/appointments/191j5t47mr",
+    "text": "3:30 PM to 3:50 PM Jacobsen, Betty Scheduled \u00b7 Office visit",
+    "hidden": false
+   },
+   {
+    "href": "/patients/476338vz9r/recurring/4359nxlv3z",
+    "text": "3:45 PM to 4:15 PM Moore, Hannah Deleted Cancelled \u00b7 Smoking",
+    "hidden": false
+   },
+   {
+    "href": "/patients/06jj56sm1l/appointments/0bnmwzktvl",
+    "text": "4:15 PM to 5:00 PM Hern\u00e1ndez, Judith Cancelled \u00b7 Physical th",
+    "hidden": false
+   },
+   {
+    "href": "/schedule/providers/45h1bjsgfw?date=2026-10-14",
+    "text": "Aaron Wagner, MD",
+    "hidden": false
+   },
+   {
+    "href": "/patients/1j01x82b8s/appointments/41g8x6rppt",
+    "text": "11:00 AM to 11:20 AM Williams, Mary Scheduled \u00b7 Follow-up vi",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6xr9jl170v/appointments/3wdpd807cg",
+    "text": "11:20 AM to 11:40 AM Nguyen, Donna Scheduled \u00b7 Follow-up vis",
+    "hidden": false
+   },
+   {
+    "href": "/patients/539cl6rp94/recurring/46s33fz2jc",
+    "text": "11:40 AM to 11:55 AM \u00b7 Scheduled Moore, Jesse Scheduled \u00b7 Al",
+    "hidden": false
+   },
+   {
+    "href": "/patients/3tq61r51x2/appointments/3s727rbq9b",
+    "text": "12:20 PM to 12:40 PM Vargas, Richard Scheduled \u00b7 Follow-up v",
+    "hidden": false
+   },
+   {
+    "href": "/patients/06h771clr3/recurring/2zdrfjqkvk",
+    "text": "1:00 PM to 1:20 PM Sandoval, Garrett Scheduled \u00b7 Prenatal vi",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6jl312547c/appointments/0kpb6rs2d7",
+    "text": "1:20 PM to 2:00 PM Wagner, Judith Scheduled \u00b7 New patient vi",
+    "hidden": false
+   },
+   {
+    "href": "/patients/054pt5h3lc/appointments/3rr9zzgh6n",
+    "text": "2:00 PM to 2:20 PM Hall, Mei Scheduled \u00b7 Prenatal visit",
+    "hidden": false
+   },
+   {
+    "href": "/patients/160t4d8hd3/appointments/1wgssrqf95",
+    "text": "2:20 PM to 2:50 PM Young, Robert Scheduled \u00b7 Diabetes manage",
+    "hidden": false
+   },
+   {
+    "href": "/patients/2f5nz6s7xh/recurring/2kkspx1xk4",
+    "text": "4:00 PM to 4:15 PM \u00b7 Scheduled Morris, Patricia Scheduled \u00b7 ",
+    "hidden": false
+   },
+   {
+    "href": "/patients/3b66t633xt/recurring/465htpjjzd",
+    "text": "4:20 PM to 4:50 PM Anderson, Michael Scheduled \u00b7 Smoking ces",
+    "hidden": false
+   },
+   {
+    "href": "/patients/0lkjvxb7w7/appointments/4rcnst2gtf",
+    "text": "5:00 PM to 5:15 PM \u00b7 Scheduled Mitchell, Jose Scheduled \u00b7 Me",
+    "hidden": false
+   },
+   {
+    "href": "/patients/00t29dq131/appointments/0tvn0lvb8v",
+    "text": "5:00 PM to 5:20 PM Rice, Megan Cancelled \u00b7 Office visit",
+    "hidden": false
+   },
+   {
+    "href": "/patients/3qg21db89v/appointments/2mm5nckb2d",
+    "text": "5:40 PM to 6:00 PM Jones, Donald Scheduled \u00b7 Follow-up visit",
+    "hidden": false
+   },
+   {
+    "href": "/patients/3b66t633xt/appointments/1wdldmpl3b",
+    "text": "6:20 PM to 6:40 PM Anderson, Michael Scheduled \u00b7 Office visi",
+    "hidden": false
+   },
+   {
+    "href": "/patients/3nv20sg2kl/appointments/62qwnjmhhk",
+    "text": "7:00 PM to 7:20 PM Graham, Astrid Scheduled \u00b7 Office visit",
+    "hidden": false
+   },
+   {
+    "href": "/patients/5cpncfr02k/recurring/3t053hztn5",
+    "text": "7:20 PM to 7:40 PM Taylor, Michael Scheduled \u00b7 Follow-up vis",
+    "hidden": false
+   },
+   {
+    "href": "/schedule/providers/3xn04x0076?date=2026-10-14",
+    "text": "Brenda West, MD",
+    "hidden": false
+   },
+   {
+    "href": "/patients/3f800709v2/appointments/0l8b6vqmhs",
+    "text": "8:20 AM to 9:20 AM Smith, Joyce Completed \u00b7 Minor procedure",
+    "hidden": false
+   },
+   {
+    "href": "/patients/5xjqv6d7mf/appointments/1zn5vqpvns",
+    "text": "9:40 AM to 10:10 AM Ford, John Scheduled \u00b7 Wound care",
+    "hidden": false
+   },
+   {
+    "href": "/patients/3n3cj2whx1/appointments/2bfld4h9ks",
+    "text": "10:20 AM to 10:50 AM Luna, Ronald Scheduled \u00b7 Wound care",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6sqtnhdpq1/appointments/5qmf7g4kj1",
+    "text": "11:00 AM to 11:15 AM \u00b7 Scheduled Rodr\u00edguez, Hannah Scheduled",
+    "hidden": false
+   },
+   {
+    "href": "/patients/5lv61qbn3p/appointments/61wh27r5jw",
+    "text": "11:20 AM to 11:40 AM Montgomery, Jeffrey Scheduled \u00b7 Sick vi",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6jxgqvx1fk/appointments/4z6vh5rfl4",
+    "text": "11:40 AM to 11:55 AM \u00b7 Scheduled Williams, Ashley Scheduled ",
+    "hidden": false
+   },
+   {
+    "href": "/patients/0njj3wftzj/appointments/5hrxm70vlg",
+    "text": "1:00 PM to 1:20 PM Martinez, Chlo\u00e9 Scheduled \u00b7 Follow-up vis",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6fm9mh5fnd/appointments/2vz6kqvv6q",
+    "text": "1:20 PM to 1:40 PM Lopez, Betty Scheduled \u00b7 Telehealth visit",
+    "hidden": false
+   },
+   {
+    "href": "/patients/612m3gf23m/appointments/3slb0jq2xz",
+    "text": "1:40 PM to 1:55 PM \u00b7 Scheduled Watson, Alexander Scheduled \u00b7",
+    "hidden": false
+   },
+   {
+    "href": "/patients/394h02g1h3/appointments/1hg6qcr4nn",
+    "text": "2:00 PM to 2:15 PM \u00b7 Scheduled Guzman, Bruce Scheduled \u00b7 Ele",
+    "hidden": false
+   },
+   {
+    "href": "/patients/21ffzk38k5/appointments/12xwc6dv40",
+    "text": "2:40 PM to 3:00 PM Baker, Mark Scheduled \u00b7 Telehealth visit",
+    "hidden": false
+   },
+   {
+    "href": "/patients/293hmb4pwf/recurring/024hlc96rt",
+    "text": "3:20 PM to 3:50 PM Ward, Brenda Scheduled \u00b7 Smoking cessatio",
+    "hidden": false
+   },
+   {
+    "href": "/patients/42v2j23f6x/appointments/4x9swt0c72",
+    "text": "4:00 PM to 4:20 PM Campbell, Hannah Scheduled \u00b7 Post-operati",
+    "hidden": false
+   },
+   {
+    "href": "/patients/34vjdk1w3l/appointments/0zzqzwlv7l",
+    "text": "4:20 PM to 4:40 PM Salazar, Sharon Scheduled \u00b7 Follow-up vis",
+    "hidden": false
+   },
+   {
+    "href": "/patients/609sr4nznb/recurring/3r1z6j0fft",
+    "text": "4:40 PM to 4:55 PM \u00b7 Scheduled Wilson, Kathryn Scheduled \u00b7 A",
+    "hidden": false
+   }
+  ],
+  "buttons": [
+   " [Previous day]",
+   "Today",
+   " [Next day]"
+  ],
+  "forms": [],
+  "tables": [],
+  "nonicon_svgs": [
+   [
+    null,
+    null,
+    null,
+    180
+   ],
+   [
+    null,
+    null,
+    null,
+    179
+   ],
+   [
+    null,
+    null,
+    null,
+    253
+   ],
+   [
+    null,
+    null,
+    null,
+    253
+   ],
+   [
+    null,
+    null,
+    null,
+    253
+   ],
+   [
+    null,
+    null,
+    null,
+    253
+   ]
+  ],
+  "imgs": [],
+  "canvas": 0,
+  "iframes": [],
+  "dl": [],
+  "details": [],
+  "text_len": 6139,
+  "shell_url": "https://practice.speedrun.scopehealth.com/schedule?date=2026-10-14",
+  "load_s": 0.355
+ },
+ "/schedule/providers/4vqb93p4g9?date=2026-10-14": {
+  "title": "Schedule \u00b7 Wrenfield",
+  "h1": [
+   "Schedule"
+  ],
+  "h2": [
+   "Gloria Allen, NP"
+  ],
+  "links": [
+   {
+    "href": "/schedule?date=2026-10-14",
+    "text": "Day",
+    "hidden": false
+   },
+   {
+    "href": "/schedule/providers/4vqb93p4g9?date=2026-10-14",
+    "text": "Provider",
+    "hidden": false
+   },
+   {
+    "href": "/schedule/appointments?from=2026-10-14&to=2026-10-20",
+    "text": "Appointment list",
+    "hidden": false
+   }
+  ],
+  "buttons": [
+   " [Previous day]",
+   "Today",
+   " [Next day]"
+  ],
+  "forms": [],
+  "tables": [],
+  "nonicon_svgs": [
+   [
+    null,
+    null,
+    null,
+    180
+   ],
+   [
+    null,
+    null,
+    null,
+    179
+   ],
+   [
+    null,
+    null,
+    null,
+    334
+   ]
+  ],
+  "imgs": [],
+  "canvas": 0,
+  "iframes": [],
+  "dl": [],
+  "details": [],
+  "text_len": 1671,
+  "shell_url": "https://practice.speedrun.scopehealth.com/schedule/providers/4vqb93p4g9?date=2026-10-14",
+  "load_s": 0.328
+ },
+ "/schedule/appointments?from=2026-10-14&to=2026-10-20": {
+  "title": "Schedule \u00b7 Wrenfield",
+  "h1": [
+   "Schedule"
+  ],
+  "h2": [],
+  "links": [
+   {
+    "href": "/schedule?date=2026-10-14",
+    "text": "Day",
+    "hidden": false
+   },
+   {
+    "href": "/schedule/providers/4vqb93p4g9?date=2026-10-14",
+    "text": "Provider",
+    "hidden": false
+   },
+   {
+    "href": "/schedule/appointments?from=2026-10-14&to=2026-10-20",
+    "text": "Appointment list",
+    "hidden": false
+   }
+  ],
+  "buttons": [],
+  "forms": [],
+  "tables": [],
+  "nonicon_svgs": [],
+  "imgs": [],
+  "canvas": 0,
+  "iframes": [
+   "/v/x8gfr77bq2g3w6dxrd1fwn939f/"
+  ],
+  "dl": [],
+  "details": [],
+  "text_len": 106,
+  "shell_url": "https://practice.speedrun.scopehealth.com/schedule/appointments?from=2026-10-14&to=2026-10-20",
+  "load_s": 0.349
+ },
+ "/schedule/providers/1x0jb5xxv1?date=2026-10-14": {
+  "title": "Schedule \u00b7 Wrenfield",
+  "h1": [
+   "Schedule"
+  ],
+  "h2": [
+   "Diana Anderson, PA",
+   "Northgate Times in CDT"
+  ],
+  "links": [
+   {
+    "href": "/schedule?date=2026-10-14",
+    "text": "Day",
+    "hidden": false
+   },
+   {
+    "href": "/schedule/providers/1x0jb5xxv1?date=2026-10-14",
+    "text": "Provider",
+    "hidden": false
+   },
+   {
+    "href": "/schedule/appointments?from=2026-10-14&to=2026-10-20",
+    "text": "Appointment list",
+    "hidden": false
+   },
+   {
+    "href": "/patients/1z51c6nt6k/appointments/000gz3ss24",
+    "text": "8:00 AM to 8:20 AM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/1z51c6nt6k",
+    "text": "Turner, Shirley",
+    "hidden": false
+   },
+   {
+    "href": "/patients/2z02hsrvb9/appointments/6vhg2s7cz3",
+    "text": "8:00 AM to 9:00 AM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/2z02hsrvb9",
+    "text": "Wilson, George",
+    "hidden": false
+   },
+   {
+    "href": "/patients/1lzxvj88zd/appointments/00fl88nb8t",
+    "text": "9:00 AM to 9:20 AM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/1lzxvj88zd",
+    "text": "Lee, Jonathan",
+    "hidden": false
+   },
+   {
+    "href": "/patients/5vzzjptxlw/appointments/1l46g5fq5s",
+    "text": "9:20 AM to 9:40 AM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/5vzzjptxlw",
+    "text": "Vasquez, Jean",
+    "hidden": false
+   },
+   {
+    "href": "/patients/1xb41ths62/appointments/615thbfj3x",
+    "text": "9:40 AM to 10:00 AM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/1xb41ths62",
+    "text": "Ortega, Robert",
+    "hidden": false
+   },
+   {
+    "href": "/patients/5d7xfdthjt/appointments/3npvpr2qbt",
+    "text": "10:00 AM to 10:15 AM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/5d7xfdthjt",
+    "text": "Matthews, Omar",
+    "hidden": false
+   },
+   {
+    "href": "/patients/3hdhbsfbq2/appointments/39bjx66468",
+    "text": "10:00 AM to 10:40 AM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/3hdhbsfbq2",
+    "text": "Hudson, Aisha",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/appointments/6x505m94xc",
+    "text": "10:40 AM to 11:00 AM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd",
+    "text": "Murphy, Valentina",
+    "hidden": false
+   },
+   {
+    "href": "/patients/728375g94r/appointments/1w6v4vf2w5",
+    "text": "11:00 AM to 11:30 AM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/728375g94r",
+    "text": "Russell, Natalie",
+    "hidden": false
+   },
+   {
+    "href": "/patients/07ngwp7x0s/appointments/1gdlz8xnz7",
+    "text": "11:20 AM to 11:40 AM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/07ngwp7x0s",
+    "text": "Wright, Debra",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6s5wtkp362/appointments/42rhfbvx87",
+    "text": "1:00 PM to 1:20 PM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6s5wtkp362",
+    "text": "Khan, Garrett",
+    "hidden": false
+   },
+   {
+    "href": "/patients/51pplkkcs1/recurring/313bv2hbx1",
+    "text": "3:20 PM to 4:05 PM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/51pplkkcs1",
+    "text": "Nelson, Thomas",
+    "hidden": false
+   },
+   {
+    "href": "/patients/2wwmkfhxhp/appointments/0nm8pctdll",
+    "text": "4:20 PM to 4:40 PM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/2wwmkfhxhp",
+    "text": "Dixon, Ashley",
+    "hidden": false
+   },
+   {
+    "href": "/patients/07bq5915p6/appointments/3gl206z4f6",
+    "text": "4:40 PM to 5:00 PM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/07bq5915p6",
+    "text": "Hern\u00e1ndez, Diana",
+    "hidden": false
+   }
+  ],
+  "buttons": [
+   " [Previous day]",
+   "Today",
+   " [Next day]"
+  ],
+  "forms": [],
+  "tables": [
+   {
+    "caption": "Appointments and open slots at Northgate on Wednesday, October 14, 2026",
+    "hdr": [
+     "Time",
+     "Patient",
+     "Visit type",
+     "Status"
+    ],
+    "rows": 24
+   }
+  ],
+  "nonicon_svgs": [
+   [
+    null,
+    null,
+    null,
+    180
+   ],
+   [
+    null,
+    null,
+    null,
+    179
+   ]
+  ],
+  "imgs": [],
+  "canvas": 0,
+  "iframes": [],
+  "dl": [],
+  "details": [],
+  "text_len": 2772,
+  "shell_url": "https://practice.speedrun.scopehealth.com/schedule/providers/1x0jb5xxv1?date=2026-10-14",
+  "load_s": 0.492
+ },
+ "/patients/51pplkkcs1/recurring/313bv2hbx1": {
+  "title": "Nelson, Thomas \u00b7 Wrenfield",
+  "h1": [
+   "Nelson, Thomas"
+  ],
+  "h2": [
+   "Recurring appointment: Every week on Wednesday at 15:20 Close",
+   "Rule",
+   "People and place",
+   "Changed dates",
+   "All dates",
+   "Recurring appointments"
+  ],
+  "links": [
+   {
+    "href": "/billing/accounts/51pplkkcs1",
+    "text": "Invoices",
+    "hidden": false
+   },
+   {
+    "href": "/patients/51pplkkcs1",
+    "text": "Demographics",
+    "hidden": false
+   },
+   {
+    "href": "/patients/51pplkkcs1/insurance",
+    "text": "Insurance",
+    "hidden": false
+   },
+   {
+    "href": "/patients/51pplkkcs1/problems",
+    "text": "Problems",
+    "hidden": false
+   },
+   {
+    "href": "/patients/51pplkkcs1/notes",
+    "text": "Notes",
+    "hidden": false
+   },
+   {
+    "href": "/patients/51pplkkcs1/documents",
+    "text": "Documents",
+    "hidden": false
+   },
+   {
+    "href": "/patients/51pplkkcs1/appointments",
+    "text": "Appointments",
+    "hidden": false
+   },
+   {
+    "href": "/patients/51pplkkcs1/activity",
+    "text": "Activity",
+    "hidden": false
+   },
+   {
+    "href": "/patients/51pplkkcs1/recurring/313bv2hbx1",
+    "text": "Every week on Wednesday at 15:20",
+    "hidden": false
+   },
+   {
+    "href": "/patients/51pplkkcs1/appointments/71r130rm8m",
+    "text": "Dec 8, 2026, 11:40 AM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/51pplkkcs1/appointments/1d6d80d54n",
+    "text": "Oct 8, 2026, 9:40 AM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/51pplkkcs1/appointments/1z5rlmgqp2",
+    "text": "Sep 28, 2026, 2:20 PM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/51pplkkcs1/appointments/4lkzchxbg1",
+    "text": "Sep 28, 2026, 10:20 AM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/51pplkkcs1/appointments/0l4s6g6cgz",
+    "text": "Sep 8, 2026, 2:20 PM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/51pplkkcs1/appointments/0qp6dg8zq6",
+    "text": "Sep 4, 2026, 1:00 PM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/51pplkkcs1/appointments/4hldcrz35k",
+    "text": "Aug 22, 2026, 12:20 PM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/51pplkkcs1/appointments/441f19xjvx",
+    "text": "Jul 20, 2026, 8:20 AM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/51pplkkcs1/appointments/5324x3qc0k",
+    "text": "Jun 16, 2026, 12:40 PM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/51pplkkcs1/appointments/1bv3b54zlq",
+    "text": "Jun 8, 2026, 3:00 PM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/51pplkkcs1/appointments/03l6tmnhpt",
+    "text": "Jun 3, 2026, 1:00 PM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/51pplkkcs1/appointments/5r8qrzn8hh",
+    "text": "Mar 24, 2026, 2:20 PM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/51pplkkcs1/appointments/0xnt4cq6kr",
+    "text": "Mar 20, 2026, 11:20 AM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/51pplkkcs1/appointments/4ptzl9163n",
+    "text": "Feb 27, 2026, 4:00 PM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/51pplkkcs1/appointments/3c9m43th97",
+    "text": "Feb 6, 2026, 2:45 PM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/51pplkkcs1/appointments/149l6qtm26",
+    "text": "Feb 1, 2026, 12:40 PM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/51pplkkcs1/appointments/06k2znchcf",
+    "text": "Dec 22, 2025, 4:00 PM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/51pplkkcs1/appointments/34x50st0n0",
+    "text": "Dec 8, 2025, 3:40 PM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/51pplkkcs1/appointments/608p4p61mh",
+    "text": "Dec 4, 2025, 10:20 AM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/51pplkkcs1/appointments/6rcftlqx7w",
+    "text": "Nov 5, 2025, 4:00 PM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/51pplkkcs1/appointments/1c37j8hcv6",
+    "text": "Oct 26, 2025, 9:20 AM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/51pplkkcs1/appointments/6zfpqb5920",
+    "text": "Oct 20, 2025, 2:40 PM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/51pplkkcs1/appointments/1wk8h7zgw3",
+    "text": "Oct 17, 2025, 11:20 AM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/51pplkkcs1/appointments/3xkks17m6v",
+    "text": "Oct 15, 2025, 11:00 AM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/51pplkkcs1/appointments/3cg6672drg",
+    "text": "Oct 11, 2025, 9:00 AM",
+    "hidden": false
+   }
+  ],
+  "buttons": [
+   "Close",
+   "Previous",
+   "Next"
+  ],
+  "forms": [],
+  "tables": [
+   {
+    "caption": "Dates on which this series was changed",
+    "hdr": [
+     "Date",
+     "Change",
+     "Recorded"
+    ],
+    "rows": 2
+   },
+   {
+    "caption": "Every date of this recurring appointment, newest first",
+    "hdr": [
+     "Date and time",
+     "Status"
+    ],
+    "rows": 18
+   },
+   {
+    "caption": "Appointments, newest first",
+    "hdr": [
+     "Date and time",
+     "Type",
+     "Provider",
+     "Location",
+     "Status"
+    ],
+    "rows": 26
+   }
+  ],
+  "nonicon_svgs": [
+   [
+    null,
+    null,
+    null,
+    204
+   ],
+   [
+    null,
+    null,
+    null,
+    295
+   ]
+  ],
+  "imgs": [],
+  "canvas": 0,
+  "iframes": [],
+  "dl": [
+   [
+    "MRN",
+    "Date of birth",
+    "Sex",
+    "Billing"
+   ],
+   [
+    "Repeats",
+    "Length",
+    "From",
+    "Until",
+    "Type"
+   ],
+   [
+    "Provider",
+    "Location",
+    "Created",
+    "Last changed"
+   ]
+  ],
+  "details": [],
+  "text_len": 3622,
+  "shell_url": "https://practice.speedrun.scopehealth.com/patients/51pplkkcs1/recurring/313bv2hbx1",
+  "load_s": 0.363
+ },
+ "/documents/34vz41brm2": {
+  "title": "Documents \u00b7 Wrenfield",
+  "h1": [
+   "Documents"
+  ],
+  "h2": [
+   "Lab report: Thyroid panel Close document"
+  ],
+  "links": [
+   {
+    "href": "/patients/5kkrr64r0l",
+    "text": "Smith, Jessica",
+    "hidden": false
+   },
+   {
+    "href": "/documents/34vz41brm2",
+    "text": "View",
+    "hidden": false
+   },
+   {
+    "href": "/patients/0qd3n67j0p",
+    "text": "Patterson, Evelyn",
+    "hidden": false
+   },
+   {
+    "href": "/documents/6m7c9qtdq0",
+    "text": "View",
+    "hidden": false
+   },
+   {
+    "href": "/patients/091n46gqmk",
+    "text": "Moreno, Rosa",
+    "hidden": false
+   },
+   {
+    "href": "/documents/08824xj7zj",
+    "text": "View",
+    "hidden": false
+   },
+   {
+    "href": "/patients/3pt7sxrzwn",
+    "text": "Fernandez, William",
+    "hidden": false
+   },
+   {
+    "href": "/documents/5zl98snqmq",
+    "text": "View",
+    "hidden": false
+   },
+   {
+    "href": "/patients/7374ss0kgs",
+    "text": "Barnes, Betty",
+    "hidden": false
+   },
+   {
+    "href": "/documents/3bhxtfkcbs",
+    "text": "View",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6nm1jsxqr7",
+    "text": "Griffin, Christine",
+    "hidden": false
+   },
+   {
+    "href": "/documents/2v8gfcj1j7",
+    "text": "View",
+    "hidden": false
+   },
+   {
+    "href": "/patients/2r239dnrcb",
+    "text": "Mitchell, Miguel",
+    "hidden": false
+   },
+   {
+    "href": "/documents/4fx16s9lfj",
+    "text": "View",
+    "hidden": false
+   },
+   {
+    "href": "/patients/3xpp0phpqh",
+    "text": "Williams, Matthew",
+    "hidden": false
+   },
+   {
+    "href": "/documents/08hjq4m8dc",
+    "text": "View",
+    "hidden": false
+   },
+   {
+    "href": "/patients/47f6bfng97",
+    "text": "Sanders, Kimberly",
+    "hidden": false
+   },
+   {
+    "href": "/documents/0jxv72v48c",
+    "text": "View",
+    "hidden": false
+   },
+   {
+    "href": "/patients/3qg4krxj49",
+    "text": "Perez, Alexis",
+    "hidden": false
+   },
+   {
+    "href": "/documents/0k6lzw3wql",
+    "text": "View",
+    "hidden": false
+   },
+   {
+    "href": "/patients/079jk4z11r",
+    "text": "Martinez, Henry",
+    "hidden": false
+   },
+   {
+    "href": "/documents/737z2h84x8",
+    "text": "View",
+    "hidden": false
+   },
+   {
+    "href": "/patients/634xlphvxq",
+    "text": "Smith, Stephanie",
+    "hidden": false
+   },
+   {
+    "href": "/documents/6nrfp5jqmq",
+    "text": "View",
+    "hidden": false
+   },
+   {
+    "href": "/patients/41jnsfdhvn",
+    "text": "Phillips, Amanda",
+    "hidden": false
+   },
+   {
+    "href": "/documents/0psh41qld9",
+    "text": "View",
+    "hidden": false
+   },
+   {
+    "href": "/patients/114jtj0j80",
+    "text": "Anderson, Bjorn",
+    "hidden": false
+   },
+   {
+    "href": "/documents/3bfl691mss",
+    "text": "View",
+    "hidden": false
+   },
+   {
+    "href": "/patients/30qnqh7jwz",
+    "text": "Garcia, Thomas",
+    "hidden": false
+   },
+   {
+    "href": "/documents/64451k48w4",
+    "text": "View",
+    "hidden": false
+   },
+   {
+    "href": "/patients/3fl4ch2909",
+    "text": "Lee, Charles",
+    "hidden": false
+   },
+   {
+    "href": "/documents/73zh74bp2d",
+    "text": "View",
+    "hidden": false
+   },
+   {
+    "href": "/patients/19t68rln8z",
+    "text": "Maldonado, Logan",
+    "hidden": false
+   },
+   {
+    "href": "/documents/0cn0fp9r1q",
+    "text": "View",
+    "hidden": false
+   },
+   {
+    "href": "/patients/341zbrxkh3",
+    "text": "Roberts, Amanda",
+    "hidden": false
+   },
+   {
+    "href": "/documents/1j2gjc6zc3",
+    "text": "View",
+    "hidden": false
+   },
+   {
+    "href": "/patients/1hc15sjcrn",
+    "text": "Duncan, Rachel",
+    "hidden": false
+   },
+   {
+    "href": "/documents/1bp5kwtzzd",
+    "text": "View",
+    "hidden": false
+   },
+   {
+    "href": "/patients/1cfqgttthq",
+    "text": "Hanson, Elliott",
+    "hidden": false
+   },
+   {
+    "href": "/documents/6xcbfz95bs",
+    "text": "View",
+    "hidden": false
+   },
+   {
+    "href": "/patients/39gzfzms4t",
+    "text": "Ali, Carolyn",
+    "hidden": false
+   },
+   {
+    "href": "/documents/3wx3hx3gtr",
+    "text": "View",
+    "hidden": false
+   },
+   {
+    "href": "/patients/1grhp4v2wt",
+    "text": "Johnson, Sarah",
+    "hidden": false
+   },
+   {
+    "href": "/documents/4z61d89tnb",
+    "text": "View",
+    "hidden": false
+   },
+   {
+    "href": "/patients/0qvk7gk961",
+    "text": "Wilson, Melissa",
+    "hidden": false
+   },
+   {
+    "href": "/documents/2lqzjjkxhh",
+    "text": "View",
+    "hidden": false
+   },
+   {
+    "href": "/patients/4wnxjfspmk",
+    "text": "Kelly, Nancy",
+    "hidden": false
+   },
+   {
+    "href": "/documents/5b58d12sx6",
+    "text": "View",
+    "hidden": false
+   },
+   {
+    "href": "/patients/71fzwkbklk",
+    "text": "Moreno, Eric",
+    "hidden": false
+   },
+   {
+    "href": "/documents/4j35jfk3rd",
+    "text": "View",
+    "hidden": false
+   }
+  ],
+  "buttons": [
+   "Apply",
+   "Clear filters",
+   "Find",
+   "Close document",
+   "Received , newest first. Change the order",
+   "Previous",
+   "1",
+   "2",
+   "3",
+   "Next"
+  ],
+  "forms": [
+   [
+    {
+     "tag": "select",
+     "name": "kind",
+     "type": null,
+     "value": null,
+     "options": [
+      [
+       "",
+       "All types",
+       false
+      ],
+      [
+       "referral_letter",
+       "Referral letter",
+       false
+      ],
+      [
+       "lab_report",
+       "Lab report",
+       false
+      ],
+      [
+       "statement",
+       "Statement",
+       false
+      ]
+     ]
+    },
+    {
+     "tag": "input",
+     "name": "from",
+     "type": "date",
+     "value": ""
+    },
+    {
+     "tag": "input",
+     "name": "to",
+     "type": "date",
+     "value": ""
+    }
+   ],
+   [
+    {
+     "tag": "input",
+     "name": "patient",
+     "type": null,
+     "value": ""
+    }
+   ]
+  ],
+  "tables": [
+   {
+    "caption": "Documents received, newest first",
+    "hdr": [
+     "Received , newest first. Change the order",
+     "Type",
+     "Title",
+     "Patient",
+     "Actions"
+    ],
+    "rows": 26
+   }
+  ],
+  "nonicon_svgs": [
+   [
+    null,
+    null,
+    null,
+    221
+   ],
+   [
+    null,
+    null,
+    null,
+    204
+   ],
+   [
+    null,
+    null,
+    null,
+    206
+   ],
+   [
+    null,
+    null,
+    null,
+    253
+   ],
+   [
+    null,
+    null,
+    null,
+    253
+   ]
+  ],
+  "imgs": [],
+  "canvas": 0,
+  "iframes": [
+   "/v/j2dgfflklsh0bcjqzzl9wdwj7m/"
+  ],
+  "dl": [],
+  "details": [],
+  "text_len": 2278,
+  "shell_url": "https://practice.speedrun.scopehealth.com/documents/34vz41brm2",
+  "load_s": 0.38
+ },
+ "/documents/6m7c9qtdq0": {
+  "title": "Documents \u00b7 Wrenfield",
+  "h1": [
+   "Documents"
+  ],
+  "h2": [
+   "Lab report: Vitamin D Close document"
+  ],
+  "links": [
+   {
+    "href": "/patients/5kkrr64r0l",
+    "text": "Smith, Jessica",
+    "hidden": false
+   },
+   {
+    "href": "/documents/34vz41brm2",
+    "text": "View",
+    "hidden": false
+   },
+   {
+    "href": "/patients/0qd3n67j0p",
+    "text": "Patterson, Evelyn",
+    "hidden": false
+   },
+   {
+    "href": "/documents/6m7c9qtdq0",
+    "text": "View",
+    "hidden": false
+   },
+   {
+    "href": "/patients/091n46gqmk",
+    "text": "Moreno, Rosa",
+    "hidden": false
+   },
+   {
+    "href": "/documents/08824xj7zj",
+    "text": "View",
+    "hidden": false
+   },
+   {
+    "href": "/patients/3pt7sxrzwn",
+    "text": "Fernandez, William",
+    "hidden": false
+   },
+   {
+    "href": "/documents/5zl98snqmq",
+    "text": "View",
+    "hidden": false
+   },
+   {
+    "href": "/patients/7374ss0kgs",
+    "text": "Barnes, Betty",
+    "hidden": false
+   },
+   {
+    "href": "/documents/3bhxtfkcbs",
+    "text": "View",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6nm1jsxqr7",
+    "text": "Griffin, Christine",
+    "hidden": false
+   },
+   {
+    "href": "/documents/2v8gfcj1j7",
+    "text": "View",
+    "hidden": false
+   },
+   {
+    "href": "/patients/2r239dnrcb",
+    "text": "Mitchell, Miguel",
+    "hidden": false
+   },
+   {
+    "href": "/documents/4fx16s9lfj",
+    "text": "View",
+    "hidden": false
+   },
+   {
+    "href": "/patients/3xpp0phpqh",
+    "text": "Williams, Matthew",
+    "hidden": false
+   },
+   {
+    "href": "/documents/08hjq4m8dc",
+    "text": "View",
+    "hidden": false
+   },
+   {
+    "href": "/patients/47f6bfng97",
+    "text": "Sanders, Kimberly",
+    "hidden": false
+   },
+   {
+    "href": "/documents/0jxv72v48c",
+    "text": "View",
+    "hidden": false
+   },
+   {
+    "href": "/patients/3qg4krxj49",
+    "text": "Perez, Alexis",
+    "hidden": false
+   },
+   {
+    "href": "/documents/0k6lzw3wql",
+    "text": "View",
+    "hidden": false
+   },
+   {
+    "href": "/patients/079jk4z11r",
+    "text": "Martinez, Henry",
+    "hidden": false
+   },
+   {
+    "href": "/documents/737z2h84x8",
+    "text": "View",
+    "hidden": false
+   },
+   {
+    "href": "/patients/634xlphvxq",
+    "text": "Smith, Stephanie",
+    "hidden": false
+   },
+   {
+    "href": "/documents/6nrfp5jqmq",
+    "text": "View",
+    "hidden": false
+   },
+   {
+    "href": "/patients/41jnsfdhvn",
+    "text": "Phillips, Amanda",
+    "hidden": false
+   },
+   {
+    "href": "/documents/0psh41qld9",
+    "text": "View",
+    "hidden": false
+   },
+   {
+    "href": "/patients/114jtj0j80",
+    "text": "Anderson, Bjorn",
+    "hidden": false
+   },
+   {
+    "href": "/documents/3bfl691mss",
+    "text": "View",
+    "hidden": false
+   },
+   {
+    "href": "/patients/30qnqh7jwz",
+    "text": "Garcia, Thomas",
+    "hidden": false
+   },
+   {
+    "href": "/documents/64451k48w4",
+    "text": "View",
+    "hidden": false
+   },
+   {
+    "href": "/patients/3fl4ch2909",
+    "text": "Lee, Charles",
+    "hidden": false
+   },
+   {
+    "href": "/documents/73zh74bp2d",
+    "text": "View",
+    "hidden": false
+   },
+   {
+    "href": "/patients/19t68rln8z",
+    "text": "Maldonado, Logan",
+    "hidden": false
+   },
+   {
+    "href": "/documents/0cn0fp9r1q",
+    "text": "View",
+    "hidden": false
+   },
+   {
+    "href": "/patients/341zbrxkh3",
+    "text": "Roberts, Amanda",
+    "hidden": false
+   },
+   {
+    "href": "/documents/1j2gjc6zc3",
+    "text": "View",
+    "hidden": false
+   },
+   {
+    "href": "/patients/1hc15sjcrn",
+    "text": "Duncan, Rachel",
+    "hidden": false
+   },
+   {
+    "href": "/documents/1bp5kwtzzd",
+    "text": "View",
+    "hidden": false
+   },
+   {
+    "href": "/patients/1cfqgttthq",
+    "text": "Hanson, Elliott",
+    "hidden": false
+   },
+   {
+    "href": "/documents/6xcbfz95bs",
+    "text": "View",
+    "hidden": false
+   },
+   {
+    "href": "/patients/39gzfzms4t",
+    "text": "Ali, Carolyn",
+    "hidden": false
+   },
+   {
+    "href": "/documents/3wx3hx3gtr",
+    "text": "View",
+    "hidden": false
+   },
+   {
+    "href": "/patients/1grhp4v2wt",
+    "text": "Johnson, Sarah",
+    "hidden": false
+   },
+   {
+    "href": "/documents/4z61d89tnb",
+    "text": "View",
+    "hidden": false
+   },
+   {
+    "href": "/patients/0qvk7gk961",
+    "text": "Wilson, Melissa",
+    "hidden": false
+   },
+   {
+    "href": "/documents/2lqzjjkxhh",
+    "text": "View",
+    "hidden": false
+   },
+   {
+    "href": "/patients/4wnxjfspmk",
+    "text": "Kelly, Nancy",
+    "hidden": false
+   },
+   {
+    "href": "/documents/5b58d12sx6",
+    "text": "View",
+    "hidden": false
+   },
+   {
+    "href": "/patients/71fzwkbklk",
+    "text": "Moreno, Eric",
+    "hidden": false
+   },
+   {
+    "href": "/documents/4j35jfk3rd",
+    "text": "View",
+    "hidden": false
+   }
+  ],
+  "buttons": [
+   "Apply",
+   "Clear filters",
+   "Find",
+   "Close document",
+   "Received , newest first. Change the order",
+   "Previous",
+   "1",
+   "2",
+   "3",
+   "Next"
+  ],
+  "forms": [
+   [
+    {
+     "tag": "select",
+     "name": "kind",
+     "type": null,
+     "value": null,
+     "options": [
+      [
+       "",
+       "All types",
+       false
+      ],
+      [
+       "referral_letter",
+       "Referral letter",
+       false
+      ],
+      [
+       "lab_report",
+       "Lab report",
+       false
+      ],
+      [
+       "statement",
+       "Statement",
+       false
+      ]
+     ]
+    },
+    {
+     "tag": "input",
+     "name": "from",
+     "type": "date",
+     "value": ""
+    },
+    {
+     "tag": "input",
+     "name": "to",
+     "type": "date",
+     "value": ""
+    }
+   ],
+   [
+    {
+     "tag": "input",
+     "name": "patient",
+     "type": null,
+     "value": ""
+    }
+   ]
+  ],
+  "tables": [
+   {
+    "caption": "Documents received, newest first",
+    "hdr": [
+     "Received , newest first. Change the order",
+     "Type",
+     "Title",
+     "Patient",
+     "Actions"
+    ],
+    "rows": 26
+   }
+  ],
+  "nonicon_svgs": [
+   [
+    null,
+    null,
+    null,
+    221
+   ],
+   [
+    null,
+    null,
+    null,
+    204
+   ],
+   [
+    null,
+    null,
+    null,
+    206
+   ],
+   [
+    null,
+    null,
+    null,
+    253
+   ],
+   [
+    null,
+    null,
+    null,
+    253
+   ]
+  ],
+  "imgs": [],
+  "canvas": 0,
+  "iframes": [
+   "/v/1wbrs07v894ct7cqk452hl8xcr/"
+  ],
+  "dl": [],
+  "details": [],
+  "text_len": 2274,
+  "shell_url": "https://practice.speedrun.scopehealth.com/documents/6m7c9qtdq0",
+  "load_s": 0.385
+ },
+ "/schedule/appointments?from=2026-10-14&to=2026-10-20&location=2mgdl287kq": {
+  "title": "Schedule \u00b7 Wrenfield",
+  "h1": [
+   "Schedule"
+  ],
+  "h2": [],
+  "links": [
+   {
+    "href": "/schedule?date=2026-10-14",
+    "text": "Day",
+    "hidden": false
+   },
+   {
+    "href": "/schedule/providers/4vqb93p4g9?date=2026-10-14",
+    "text": "Provider",
+    "hidden": false
+   },
+   {
+    "href": "/schedule/appointments?from=2026-10-14&to=2026-10-20&location=2mgdl287kq",
+    "text": "Appointment list",
+    "hidden": false
+   }
+  ],
+  "buttons": [],
+  "forms": [],
+  "tables": [],
+  "nonicon_svgs": [],
+  "imgs": [],
+  "canvas": 0,
+  "iframes": [
+   "/v/vbksq3310lg9zs54bx3ffqswrk/"
+  ],
+  "dl": [],
+  "details": [],
+  "text_len": 106,
+  "shell_url": "https://practice.speedrun.scopehealth.com/schedule/appointments?from=2026-10-14&to=2026-10-20&location=2mgdl287kq",
+  "load_s": 0.352
+ },
+ "/billing/accounts/03q14ndmmd": {
+  "title": "Wrenfield",
+  "h1": [
+   "Murphy, Valentina"
+  ],
+  "h2": [
+   "Invoices"
+  ],
+  "links": [
+   {
+    "href": "/billing",
+    "text": "Invoices",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd",
+    "text": "Open chart",
+    "hidden": false
+   },
+   {
+    "href": "/billing/invoices/6dlw8w1d1j",
+    "text": "28899944",
+    "hidden": false
+   },
+   {
+    "href": "/billing/invoices/45775vsmpt",
+    "text": "26281105",
+    "hidden": false
+   },
+   {
+    "href": "/billing/invoices/0p8h5s5fm3",
+    "text": "30107454",
+    "hidden": false
+   },
+   {
+    "href": "/billing/invoices/3dfgwqpcbq",
+    "text": "76038511",
+    "hidden": false
+   },
+   {
+    "href": "/billing/invoices/08jcfnkl0v",
+    "text": "16287619",
+    "hidden": false
+   },
+   {
+    "href": "/billing/invoices/4glgv44l9q",
+    "text": "50101003",
+    "hidden": false
+   },
+   {
+    "href": "/billing/invoices/2l8lt730j7",
+    "text": "45497432",
+    "hidden": false
+   },
+   {
+    "href": "/billing/invoices/3mcxdqv99z",
+    "text": "83933652",
+    "hidden": false
+   },
+   {
+    "href": "/billing/invoices/2gfgpc08vj",
+    "text": "53315013",
+    "hidden": false
+   },
+   {
+    "href": "/billing/invoices/1mrxm06cwq",
+    "text": "99213674",
+    "hidden": false
+   },
+   {
+    "href": "/billing/invoices/12n2bj7p0z",
+    "text": "70979396",
+    "hidden": false
+   },
+   {
+    "href": "/billing/invoices/6wn72r976p",
+    "text": "87865169",
+    "hidden": false
+   },
+   {
+    "href": "/billing/invoices/13ms37v9tt",
+    "text": "13523772",
+    "hidden": false
+   },
+   {
+    "href": "/billing/invoices/4039vdf24h",
+    "text": "60770022",
+    "hidden": false
+   },
+   {
+    "href": "/billing/invoices/22f2dkqszg",
+    "text": "19537767",
+    "hidden": false
+   },
+   {
+    "href": "/billing/invoices/0lbn8b4h14",
+    "text": "98845858",
+    "hidden": false
+   },
+   {
+    "href": "/billing/invoices/54ttw3xm61",
+    "text": "09707314",
+    "hidden": false
+   },
+   {
+    "href": "/billing/invoices/1fkp0s0fv6",
+    "text": "58604165",
+    "hidden": false
+   },
+   {
+    "href": "/billing/invoices/54vm5l8135",
+    "text": "79232957",
+    "hidden": false
+   },
+   {
+    "href": "/billing/invoices/5g6mb1shhh",
+    "text": "20146946",
+    "hidden": false
+   }
+  ],
+  "buttons": [
+   "Previous",
+   "1",
+   "2",
+   "Next"
+  ],
+  "forms": [],
+  "tables": [
+   {
+    "caption": "Invoices of this patient, newest service first",
+    "hdr": [
+     "Invoice",
+     "Service date",
+     "Location",
+     "Issued",
+     "Total",
+     "Status",
+     "Filed under"
+    ],
+    "rows": 21
+   }
+  ],
+  "nonicon_svgs": [
+   [
+    null,
+    null,
+    null,
+    179
+   ],
+   [
+    null,
+    null,
+    null,
+    333
+   ]
+  ],
+  "imgs": [],
+  "canvas": 0,
+  "iframes": [],
+  "dl": [
+   [
+    "MRN",
+    "Date of birth"
+   ]
+  ],
+  "details": [],
+  "text_len": 1337,
+  "shell_url": "https://practice.speedrun.scopehealth.com/billing/accounts/03q14ndmmd",
+  "load_s": 0.353
+ },
+ "/patients/03q14ndmmd/insurance": {
+  "title": "Murphy, Valentina \u00b7 Wrenfield",
+  "h1": [
+   "Murphy, Valentina"
+  ],
+  "h2": [],
+  "links": [
+   {
+    "href": "/billing/accounts/03q14ndmmd",
+    "text": "Invoices",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd",
+    "text": "Demographics",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/insurance",
+    "text": "Insurance",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/problems",
+    "text": "Problems",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/notes",
+    "text": "Notes",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/documents",
+    "text": "Documents",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/appointments",
+    "text": "Appointments",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/activity",
+    "text": "Activity",
+    "hidden": false
+   }
+  ],
+  "buttons": [],
+  "forms": [],
+  "tables": [],
+  "nonicon_svgs": [
+   [
+    null,
+    null,
+    null,
+    359
+   ]
+  ],
+  "imgs": [],
+  "canvas": 0,
+  "iframes": [],
+  "dl": [
+   [
+    "MRN",
+    "Date of birth",
+    "Sex",
+    "Billing"
+   ]
+  ],
+  "details": [],
+  "text_len": 291,
+  "shell_url": "https://practice.speedrun.scopehealth.com/patients/03q14ndmmd/insurance",
+  "load_s": 0.376
+ },
+ "/patients/03q14ndmmd/problems": {
+  "title": "Murphy, Valentina \u00b7 Wrenfield",
+  "h1": [
+   "Murphy, Valentina"
+  ],
+  "h2": [],
+  "links": [
+   {
+    "href": "/billing/accounts/03q14ndmmd",
+    "text": "Invoices",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd",
+    "text": "Demographics",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/insurance",
+    "text": "Insurance",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/problems",
+    "text": "Problems",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/notes",
+    "text": "Notes",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/documents",
+    "text": "Documents",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/appointments",
+    "text": "Appointments",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/activity",
+    "text": "Activity",
+    "hidden": false
+   }
+  ],
+  "buttons": [],
+  "forms": [],
+  "tables": [
+   {
+    "caption": "Conditions on the problem list",
+    "hdr": [
+     "Code",
+     "Condition",
+     "Onset"
+    ],
+    "rows": 5
+   }
+  ],
+  "nonicon_svgs": [],
+  "imgs": [],
+  "canvas": 0,
+  "iframes": [],
+  "dl": [
+   [
+    "MRN",
+    "Date of birth",
+    "Sex",
+    "Billing"
+   ]
+  ],
+  "details": [],
+  "text_len": 431,
+  "shell_url": "https://practice.speedrun.scopehealth.com/patients/03q14ndmmd/problems",
+  "load_s": 0.334
+ },
+ "/patients/03q14ndmmd/notes": {
+  "title": "Murphy, Valentina \u00b7 Wrenfield",
+  "h1": [
+   "Murphy, Valentina"
+  ],
+  "h2": [],
+  "links": [
+   {
+    "href": "/billing/accounts/03q14ndmmd",
+    "text": "Invoices",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd",
+    "text": "Demographics",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/insurance",
+    "text": "Insurance",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/problems",
+    "text": "Problems",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/notes",
+    "text": "Notes",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/documents",
+    "text": "Documents",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/appointments",
+    "text": "Appointments",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/activity",
+    "text": "Activity",
+    "hidden": false
+   }
+  ],
+  "buttons": [
+   "Apply",
+   "Clear"
+  ],
+  "forms": [
+   [
+    {
+     "tag": "input",
+     "name": "from",
+     "type": "date",
+     "value": ""
+    },
+    {
+     "tag": "input",
+     "name": "to",
+     "type": "date",
+     "value": ""
+    }
+   ]
+  ],
+  "tables": [],
+  "nonicon_svgs": [],
+  "imgs": [],
+  "canvas": 0,
+  "iframes": [],
+  "dl": [
+   [
+    "MRN",
+    "Date of birth",
+    "Sex",
+    "Billing"
+   ]
+  ],
+  "details": [],
+  "text_len": 798,
+  "shell_url": "https://practice.speedrun.scopehealth.com/patients/03q14ndmmd/notes",
+  "load_s": 0.367
+ },
+ "/patients/03q14ndmmd/documents": {
+  "title": "Murphy, Valentina \u00b7 Wrenfield",
+  "h1": [
+   "Murphy, Valentina"
+  ],
+  "h2": [],
+  "links": [
+   {
+    "href": "/billing/accounts/03q14ndmmd",
+    "text": "Invoices",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd",
+    "text": "Demographics",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/insurance",
+    "text": "Insurance",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/problems",
+    "text": "Problems",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/notes",
+    "text": "Notes",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/documents",
+    "text": "Documents",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/appointments",
+    "text": "Appointments",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/activity",
+    "text": "Activity",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/documents/0l1jqh8zfg",
+    "text": "View",
+    "hidden": false
+   }
+  ],
+  "buttons": [],
+  "forms": [],
+  "tables": [
+   {
+    "caption": "Documents in this chart, newest first",
+    "hdr": [
+     "Title",
+     "Type",
+     "Received",
+     "Actions"
+    ],
+    "rows": 2
+   }
+  ],
+  "nonicon_svgs": [],
+  "imgs": [],
+  "canvas": 0,
+  "iframes": [],
+  "dl": [
+   [
+    "MRN",
+    "Date of birth",
+    "Sex",
+    "Billing"
+   ]
+  ],
+  "details": [],
+  "text_len": 382,
+  "shell_url": "https://practice.speedrun.scopehealth.com/patients/03q14ndmmd/documents",
+  "load_s": 0.371
+ },
+ "/patients/03q14ndmmd/appointments": {
+  "title": "Murphy, Valentina \u00b7 Wrenfield",
+  "h1": [
+   "Murphy, Valentina"
+  ],
+  "h2": [
+   "Recurring appointments"
+  ],
+  "links": [
+   {
+    "href": "/billing/accounts/03q14ndmmd",
+    "text": "Invoices",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd",
+    "text": "Demographics",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/insurance",
+    "text": "Insurance",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/problems",
+    "text": "Problems",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/notes",
+    "text": "Notes",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/documents",
+    "text": "Documents",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/appointments",
+    "text": "Appointments",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/activity",
+    "text": "Activity",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/recurring/36b1t0bf71",
+    "text": "Every week on Tuesday at 11:40",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/appointments/13g9mf78pg",
+    "text": "Nov 6, 2026, 2:40 PM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/appointments/1xzh0q58ck",
+    "text": "Oct 21, 2026, 2:40 PM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/appointments/14pcgjvn0v",
+    "text": "Oct 20, 2026, 11:00 AM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/appointments/6x505m94xc",
+    "text": "Oct 14, 2026, 10:40 AM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/appointments/6csgmpk98b",
+    "text": "Oct 5, 2026, 5:00 PM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/appointments/0w7q5g78ns",
+    "text": "Sep 1, 2026, 2:00 PM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/appointments/5sc6lbk545",
+    "text": "Aug 30, 2026, 9:40 AM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/appointments/502chv4zcb",
+    "text": "Jul 14, 2026, 1:00 PM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/appointments/41p04h58jn",
+    "text": "Jul 8, 2026, 8:40 AM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/appointments/3l7kvbpx1p",
+    "text": "May 28, 2026, 3:00 PM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/appointments/0z65mmg72k",
+    "text": "May 8, 2026, 12:40 PM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/appointments/1w06xcwk3w",
+    "text": "Apr 29, 2026, 4:20 PM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/appointments/0jp8v19vq2",
+    "text": "Apr 1, 2026, 2:00 PM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/appointments/0j2c9893tx",
+    "text": "Mar 3, 2026, 7:00 PM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/appointments/71qx3d049q",
+    "text": "Jan 13, 2026, 12:20 PM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/appointments/5rt93n2m7q",
+    "text": "Nov 29, 2025, 10:20 AM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/appointments/2c2w48glpt",
+    "text": "Nov 24, 2025, 4:40 PM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/appointments/4dhjqr2dwr",
+    "text": "Nov 3, 2025, 11:00 AM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/appointments/49c35dnwx7",
+    "text": "Oct 28, 2025, 5:20 PM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/appointments/5sf75jwth8",
+    "text": "Oct 3, 2025, 3:20 PM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/appointments/1jq55009dl",
+    "text": "Oct 2, 2025, 8:20 AM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/appointments/0fx5pvc93q",
+    "text": "Sep 14, 2025, 10:00 AM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/appointments/565s7fps14",
+    "text": "Sep 11, 2025, 3:20 PM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/appointments/1q2vb4qf61",
+    "text": "Sep 4, 2025, 11:20 AM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/appointments/4wtpkb3pgl",
+    "text": "Jul 10, 2025, 9:20 AM",
+    "hidden": false
+   }
+  ],
+  "buttons": [
+   "Previous",
+   "Next"
+  ],
+  "forms": [],
+  "tables": [
+   {
+    "caption": "Appointments, newest first",
+    "hdr": [
+     "Date and time",
+     "Type",
+     "Provider",
+     "Location",
+     "Status"
+    ],
+    "rows": 26
+   }
+  ],
+  "nonicon_svgs": [
+   [
+    null,
+    null,
+    null,
+    295
+   ]
+  ],
+  "imgs": [],
+  "canvas": 0,
+  "iframes": [],
+  "dl": [
+   [
+    "MRN",
+    "Date of birth",
+    "Sex",
+    "Billing"
+   ]
+  ],
+  "details": [],
+  "text_len": 2423,
+  "shell_url": "https://practice.speedrun.scopehealth.com/patients/03q14ndmmd/appointments",
+  "load_s": 0.401
+ },
+ "/billing/accounts/6sqtnhdpq1": {
+  "title": "Wrenfield",
+  "h1": [
+   "Rodr\u00edguez, Hannah"
+  ],
+  "h2": [
+   "Invoices"
+  ],
+  "links": [
+   {
+    "href": "/billing",
+    "text": "Invoices",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6sqtnhdpq1",
+    "text": "Open chart",
+    "hidden": false
+   }
+  ],
+  "buttons": [],
+  "forms": [],
+  "tables": [],
+  "nonicon_svgs": [
+   [
+    null,
+    null,
+    null,
+    179
+   ],
+   [
+    null,
+    null,
+    null,
+    333
+   ],
+   [
+    null,
+    null,
+    null,
+    325
+   ]
+  ],
+  "imgs": [],
+  "canvas": 0,
+  "iframes": [],
+  "dl": [
+   [
+    "MRN",
+    "Date of birth"
+   ]
+  ],
+  "details": [],
+  "text_len": 196,
+  "shell_url": "https://practice.speedrun.scopehealth.com/billing/accounts/6sqtnhdpq1",
+  "load_s": 0.398
+ },
+ "/patients/6sqtnhdpq1/insurance": {
+  "title": "Rodr\u00edguez, Hannah \u00b7 Wrenfield",
+  "h1": [
+   "Rodr\u00edguez, Hannah"
+  ],
+  "h2": [
+   "Primary insurance"
+  ],
+  "links": [
+   {
+    "href": "/billing/accounts/6sqtnhdpq1",
+    "text": "Invoices",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6sqtnhdpq1",
+    "text": "Demographics",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6sqtnhdpq1/insurance",
+    "text": "Insurance",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6sqtnhdpq1/problems",
+    "text": "Problems",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6sqtnhdpq1/notes",
+    "text": "Notes",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6sqtnhdpq1/documents",
+    "text": "Documents",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6sqtnhdpq1/appointments",
+    "text": "Appointments",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6sqtnhdpq1/activity",
+    "text": "Activity",
+    "hidden": false
+   }
+  ],
+  "buttons": [],
+  "forms": [],
+  "tables": [],
+  "nonicon_svgs": [],
+  "imgs": [],
+  "canvas": 0,
+  "iframes": [],
+  "dl": [
+   [
+    "MRN",
+    "Date of birth",
+    "Sex",
+    "Billing"
+   ],
+   [
+    "Payer",
+    "Plan",
+    "Member ID"
+   ]
+  ],
+  "details": [],
+  "text_len": 320,
+  "shell_url": "https://practice.speedrun.scopehealth.com/patients/6sqtnhdpq1/insurance",
+  "load_s": 0.325
+ },
+ "/patients/6sqtnhdpq1/problems": {
+  "title": "Rodr\u00edguez, Hannah \u00b7 Wrenfield",
+  "h1": [
+   "Rodr\u00edguez, Hannah"
+  ],
+  "h2": [],
+  "links": [
+   {
+    "href": "/billing/accounts/6sqtnhdpq1",
+    "text": "Invoices",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6sqtnhdpq1",
+    "text": "Demographics",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6sqtnhdpq1/insurance",
+    "text": "Insurance",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6sqtnhdpq1/problems",
+    "text": "Problems",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6sqtnhdpq1/notes",
+    "text": "Notes",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6sqtnhdpq1/documents",
+    "text": "Documents",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6sqtnhdpq1/appointments",
+    "text": "Appointments",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6sqtnhdpq1/activity",
+    "text": "Activity",
+    "hidden": false
+   }
+  ],
+  "buttons": [],
+  "forms": [],
+  "tables": [
+   {
+    "caption": "Conditions on the problem list",
+    "hdr": [
+     "Code",
+     "Condition",
+     "Onset"
+    ],
+    "rows": 5
+   }
+  ],
+  "nonicon_svgs": [],
+  "imgs": [],
+  "canvas": 0,
+  "iframes": [],
+  "dl": [
+   [
+    "MRN",
+    "Date of birth",
+    "Sex",
+    "Billing"
+   ]
+  ],
+  "details": [],
+  "text_len": 427,
+  "shell_url": "https://practice.speedrun.scopehealth.com/patients/6sqtnhdpq1/problems",
+  "load_s": 0.312
+ },
+ "/patients/6sqtnhdpq1/notes": {
+  "title": "Rodr\u00edguez, Hannah \u00b7 Wrenfield",
+  "h1": [
+   "Rodr\u00edguez, Hannah"
+  ],
+  "h2": [],
+  "links": [
+   {
+    "href": "/billing/accounts/6sqtnhdpq1",
+    "text": "Invoices",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6sqtnhdpq1",
+    "text": "Demographics",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6sqtnhdpq1/insurance",
+    "text": "Insurance",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6sqtnhdpq1/problems",
+    "text": "Problems",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6sqtnhdpq1/notes",
+    "text": "Notes",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6sqtnhdpq1/documents",
+    "text": "Documents",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6sqtnhdpq1/appointments",
+    "text": "Appointments",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6sqtnhdpq1/activity",
+    "text": "Activity",
+    "hidden": false
+   }
+  ],
+  "buttons": [
+   "Apply",
+   "Clear"
+  ],
+  "forms": [
+   [
+    {
+     "tag": "input",
+     "name": "from",
+     "type": "date",
+     "value": ""
+    },
+    {
+     "tag": "input",
+     "name": "to",
+     "type": "date",
+     "value": ""
+    }
+   ]
+  ],
+  "tables": [],
+  "nonicon_svgs": [],
+  "imgs": [],
+  "canvas": 0,
+  "iframes": [],
+  "dl": [
+   [
+    "MRN",
+    "Date of birth",
+    "Sex",
+    "Billing"
+   ]
+  ],
+  "details": [],
+  "text_len": 418,
+  "shell_url": "https://practice.speedrun.scopehealth.com/patients/6sqtnhdpq1/notes",
+  "load_s": 0.422
+ },
+ "/patients/6sqtnhdpq1/documents": {
+  "title": "Rodr\u00edguez, Hannah \u00b7 Wrenfield",
+  "h1": [
+   "Rodr\u00edguez, Hannah"
+  ],
+  "h2": [],
+  "links": [
+   {
+    "href": "/billing/accounts/6sqtnhdpq1",
+    "text": "Invoices",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6sqtnhdpq1",
+    "text": "Demographics",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6sqtnhdpq1/insurance",
+    "text": "Insurance",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6sqtnhdpq1/problems",
+    "text": "Problems",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6sqtnhdpq1/notes",
+    "text": "Notes",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6sqtnhdpq1/documents",
+    "text": "Documents",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6sqtnhdpq1/appointments",
+    "text": "Appointments",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6sqtnhdpq1/activity",
+    "text": "Activity",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6sqtnhdpq1/documents/348tvqwp59",
+    "text": "View",
+    "hidden": false
+   }
+  ],
+  "buttons": [],
+  "forms": [],
+  "tables": [
+   {
+    "caption": "Documents in this chart, newest first",
+    "hdr": [
+     "Title",
+     "Type",
+     "Received",
+     "Actions"
+    ],
+    "rows": 2
+   }
+  ],
+  "nonicon_svgs": [],
+  "imgs": [],
+  "canvas": 0,
+  "iframes": [],
+  "dl": [
+   [
+    "MRN",
+    "Date of birth",
+    "Sex",
+    "Billing"
+   ]
+  ],
+  "details": [],
+  "text_len": 359,
+  "shell_url": "https://practice.speedrun.scopehealth.com/patients/6sqtnhdpq1/documents",
+  "load_s": 0.388
+ },
+ "/patients/6sqtnhdpq1/appointments": {
+  "title": "Rodr\u00edguez, Hannah \u00b7 Wrenfield",
+  "h1": [
+   "Rodr\u00edguez, Hannah"
+  ],
+  "h2": [],
+  "links": [
+   {
+    "href": "/billing/accounts/6sqtnhdpq1",
+    "text": "Invoices",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6sqtnhdpq1",
+    "text": "Demographics",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6sqtnhdpq1/insurance",
+    "text": "Insurance",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6sqtnhdpq1/problems",
+    "text": "Problems",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6sqtnhdpq1/notes",
+    "text": "Notes",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6sqtnhdpq1/documents",
+    "text": "Documents",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6sqtnhdpq1/appointments",
+    "text": "Appointments",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6sqtnhdpq1/activity",
+    "text": "Activity",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6sqtnhdpq1/appointments/5qmf7g4kj1",
+    "text": "Oct 14, 2026, 11:00 AM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6sqtnhdpq1/appointments/4r5gfnkkxj",
+    "text": "Oct 6, 2026, 8:00 AM",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6sqtnhdpq1/appointments/3q5d1vgc4g",
+    "text": "Nov 4, 2025, 11:20 AM",
+    "hidden": false
+   }
+  ],
+  "buttons": [],
+  "forms": [],
+  "tables": [
+   {
+    "caption": "Appointments, newest first",
+    "hdr": [
+     "Date and time",
+     "Type",
+     "Provider",
+     "Location",
+     "Status"
+    ],
+    "rows": 4
+   }
+  ],
+  "nonicon_svgs": [],
+  "imgs": [],
+  "canvas": 0,
+  "iframes": [],
+  "dl": [
+   [
+    "MRN",
+    "Date of birth",
+    "Sex",
+    "Billing"
+   ]
+  ],
+  "details": [],
+  "text_len": 539,
+  "shell_url": "https://practice.speedrun.scopehealth.com/patients/6sqtnhdpq1/appointments",
+  "load_s": 0.383
+ },
+ "/patients/03q14ndmmd/documents/0l1jqh8zfg": {
+  "title": "Murphy, Valentina \u00b7 Wrenfield",
+  "h1": [
+   "Murphy, Valentina"
+  ],
+  "h2": [
+   "Referral letter from Harbor Glen Medical Group Close document"
+  ],
+  "links": [
+   {
+    "href": "/billing/accounts/03q14ndmmd",
+    "text": "Invoices",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd",
+    "text": "Demographics",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/insurance",
+    "text": "Insurance",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/problems",
+    "text": "Problems",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/notes",
+    "text": "Notes",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/documents",
+    "text": "Documents",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/appointments",
+    "text": "Appointments",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/activity",
+    "text": "Activity",
+    "hidden": false
+   },
+   {
+    "href": "/patients/03q14ndmmd/documents/0l1jqh8zfg",
+    "text": "View",
+    "hidden": false
+   }
+  ],
+  "buttons": [
+   "Close document"
+  ],
+  "forms": [],
+  "tables": [
+   {
+    "caption": "Documents in this chart, newest first",
+    "hdr": [
+     "Title",
+     "Type",
+     "Received",
+     "Actions"
+    ],
+    "rows": 2
+   }
+  ],
+  "nonicon_svgs": [
+   [
+    null,
+    null,
+    null,
+    204
+   ]
+  ],
+  "imgs": [],
+  "canvas": 0,
+  "iframes": [
+   "/v/g0vlrc04566c0gpht7npkqmjgb/"
+  ],
+  "dl": [
+   [
+    "MRN",
+    "Date of birth",
+    "Sex",
+    "Billing"
+   ]
+  ],
+  "details": [],
+  "text_len": 442,
+  "shell_url": "https://practice.speedrun.scopehealth.com/patients/03q14ndmmd/documents/0l1jqh8zfg",
+  "load_s": 0.341
+ },
+ "/patients/6sqtnhdpq1/documents/348tvqwp59": {
+  "title": "Rodr\u00edguez, Hannah \u00b7 Wrenfield",
+  "h1": [
+   "Rodr\u00edguez, Hannah"
+  ],
+  "h2": [
+   "Statement of account 2026-05 Close document"
+  ],
+  "links": [
+   {
+    "href": "/billing/accounts/6sqtnhdpq1",
+    "text": "Invoices",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6sqtnhdpq1",
+    "text": "Demographics",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6sqtnhdpq1/insurance",
+    "text": "Insurance",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6sqtnhdpq1/problems",
+    "text": "Problems",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6sqtnhdpq1/notes",
+    "text": "Notes",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6sqtnhdpq1/documents",
+    "text": "Documents",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6sqtnhdpq1/appointments",
+    "text": "Appointments",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6sqtnhdpq1/activity",
+    "text": "Activity",
+    "hidden": false
+   },
+   {
+    "href": "/patients/6sqtnhdpq1/documents/348tvqwp59",
+    "text": "View",
+    "hidden": false
+   }
+  ],
+  "buttons": [
+   "Close document"
+  ],
+  "forms": [],
+  "tables": [
+   {
+    "caption": "Documents in this chart, newest first",
+    "hdr": [
+     "Title",
+     "Type",
+     "Received",
+     "Actions"
+    ],
+    "rows": 2
+   }
+  ],
+  "nonicon_svgs": [
+   [
+    null,
+    null,
+    null,
+    204
+   ]
+  ],
+  "imgs": [],
+  "canvas": 0,
+  "iframes": [
+   "/v/bpdghcl08g32hrt4c8ts73jc0c/"
+  ],
+  "dl": [
+   [
+    "MRN",
+    "Date of birth",
+    "Sex",
+    "Billing"
+   ]
+  ],
+  "details": [],
+  "text_len": 401,
+  "shell_url": "https://practice.speedrun.scopehealth.com/patients/6sqtnhdpq1/documents/348tvqwp59",
+  "load_s": 0.476
+ }
+}

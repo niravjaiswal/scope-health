@@ -1,0 +1,51 @@
+URL https://practice.speedrun.scopehealth.com/patients?lastName=Gray
+
+== FRAME https://practice.speedrun.scopehealth.com/v/rrgkd26v0d7fw7v4cfqcfqnr6x/ ==
+Patients
+
+Find a patient by last name or date of birth.
+
+Last name
+or
+Date of birth
+Search
+
+Enter a last name or a full date of birth.
+
+Results
+Patients found
+Patient	MRN	Date of birth	Sex	
+Flags
+
+Gray, Elizabeth	HG4432493	12/02/1974 (51 y)	Female	
+Gray, Henry	HG5123789	04/05/1968 (58 y)	Male	
+Gray, Rachel	HG6282792	03/11/1948 (78 y)	Female	
+Gray, Sandra	HG7797682	06/11/2004 (22 y)	Female	
+Gray, Sara	HG8919090	12/19/2014 (11 y)	Female	
+Gray, Susan	HG6674690	01/19/2023 (3 y)	Female	
+
+6 patients
+
+Restricted chart requests
+Your requests to open restricted charts
+Patient	Reason	Status
+Ramirez, David	Providing care to this patient	Ended
+Ramirez, David	Providing care to this patient	Ended
+Porter, Catherine	Billing or insurance question	Ended
+Porter, Catherine	Billing or insurance question	Ended
+
+4 requests
+== FRAME INTERACTIVE ==
+INPUT Gray
+INPUT 
+BUTTON Search
+A Gray, Elizabeth href=/patients/71v4745nw0
+A Gray, Henry href=/patients/344q623sgd
+A Gray, Rachel href=/patients/3wld755xr4
+A Gray, Sandra href=/patients/1nlgt9jrd4
+A Gray, Sara href=/patients/6k4kk5tpqt
+A Gray, Susan href=/patients/4kbmdx4k3p
+A Ramirez, David href=/patients/3pdsxpwzr5
+A Ramirez, David href=/patients/28xpx631v1
+A Porter, Catherine href=/patients/2q123zlg2m
+A Porter, Catherine href=/patients/2q123zlg2m

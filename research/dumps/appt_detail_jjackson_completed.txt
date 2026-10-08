@@ -1,0 +1,84 @@
+URL: https://practice.speedrun.scopehealth.com/patients/2g52fpbwf6/appointments/4n8cb154t8
+TITLE: Jackson, Judith · Wrenfield
+
+Jackson, Judith
+MRN
+HG4904582
+Date of birth
+11/12/2004 (21 years)
+Sex
+Female
+Billing
+Invoices
+Demographics
+Insurance
+Problems
+Notes
+Documents
+Appointments
+Activity
+Appointment on Jul 21, 2025
+Close
+Visit
+Date
+Jul 21, 2025
+Time
+8:00 AM to 8:20 AM MDT
+Length
+20 minutes
+Type
+Follow-up visit
+Status
+Completed
+People and place
+Provider
+William Kelly, NP
+Location
+Highline
+Record
+Reference
+98717975
+Booked
+Jul 12, 2025, 7:19 PM MDT
+Last changed
+Jul 21, 2025, 8:31 AM MDT
+History
+History of this appointment
+When	User	Change
+Jul 12, 2025, 7:19 PM MDT	ethompson	Booked
+Jul 21, 2025, 8:31 AM MDT	sanderson	Status changed from 
+Scheduled to 
+Completed
+
+2 entries
+
+Appointments, newest first
+Date and time	Type	Provider	Location	Status
+Oct 22, 2026, 8:20 AM MDT	Post-operative check	William Kelly, NP	Highline	
+Scheduled
+Dec 24, 2025, 11:00 AM MST	Allergy injection	William Kelly, NP	Cedar Hollow	
+Completed
+Nov 3, 2025, 8:30 AM CST	Prenatal visit	Mark Sorensen, MD	Northgate	
+Completed
+Jul 21, 2025, 8:00 AM MDT	Follow-up visit	William Kelly, NP	Highline	
+Completed
+May 1, 2025, 11:20 AM MDT	Sick visit	William Kelly, NP	Highline	
+Completed
+
+5 appointments
+
+---- INTERACTIVE ----
+[A] 'Invoices' /billing/accounts/2g52fpbwf6  
+[A] 'Demographics' /patients/2g52fpbwf6  
+[A] 'Insurance' /patients/2g52fpbwf6/insurance  
+[A] 'Problems' /patients/2g52fpbwf6/problems  
+[A] 'Notes' /patients/2g52fpbwf6/notes  
+[A] 'Documents' /patients/2g52fpbwf6/documents  
+[A] 'Appointments' /patients/2g52fpbwf6/appointments  page
+[A] 'Activity' /patients/2g52fpbwf6/activity  
+[BUTTON] 'Close'   
+[A] 'Oct 22, 2026, 8:20 AM' /patients/2g52fpbwf6/appointments/50nhqbxwlh  
+[A] 'Dec 24, 2025, 11:00 AM' /patients/2g52fpbwf6/appointments/46zr4cvz9h  
+[A] 'Nov 3, 2025, 8:30 AM' /patients/2g52fpbwf6/appointments/3sb5sbzhkp  
+[A] 'Jul 21, 2025, 8:00 AM' /patients/2g52fpbwf6/appointments/4n8cb154t8  
+[A] 'May 1, 2025, 11:20 AM' /patients/2g52fpbwf6/appointments/0nrpgksqzn  

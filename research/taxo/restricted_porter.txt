@@ -1,0 +1,22 @@
+URL https://practice.speedrun.scopehealth.com/patients/2q123zlg2m
+
+== FRAME https://practice.speedrun.scopehealth.com/v/m9qwwfw9fx9k8h4xc1rwglt2t2/ ==
+This chart is restricted
+
+MRN HG7778159
+
+Give a reason to open it. Your request and the reason are recorded, and access ends after a short time.
+
+Reason for access
+Choose a reason
+Providing care to this patient
+Scheduling an appointment
+Billing or insurance question
+Request from the patient
+Other reason
+Details (needed for "Other reason")
+Request access
+== FRAME INTERACTIVE ==
+SELECT[select-one] Choose a reason / Providing care to this patient / Scheduling an appointment / Billing
+TEXTAREA[textarea] 
+BUTTON[submit] Request access

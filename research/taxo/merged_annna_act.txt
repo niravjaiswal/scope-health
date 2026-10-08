@@ -1,0 +1,55 @@
+URL https://practice.speedrun.scopehealth.com/patients/2jx2vmvf82/activity
+
+== FRAME https://practice.speedrun.scopehealth.com/v/r9j3q0dlv857f0lqt2b1qc8l03/ ==
+The record with MRN HG1889359 was merged into this record
+
+What was filed under it is shown here.
+
+Martínez, Anna
+MRN
+HG8823240
+Date of birth
+08/11/1999 (27 years)
+Sex
+Female
+Billing
+Invoices
+Demographics
+Insurance
+Problems
+Notes
+Documents
+Appointments
+Activity
+Activity
+Show
+All activity
+Changes
+Chart views
+Activity on this record, newest first
+When	User	What
+Sep 21, 2026, 11:43 PM CDT	jbrown	Opened the chart (on a record merged into this one)
+Sep 12, 2026, 6:41 AM CDT	bpalmer	Opened the chart
+Sep 5, 2026, 5:25 AM CDT	ashaw	Opened the chart
+Aug 20, 2026, 4:29 AM CDT	mdavis	Opened the chart (on a record merged into this one)
+Aug 15, 2026, 11:46 AM CDT	orivera	Opened the chart (on a record merged into this one)
+Aug 13, 2026, 8:24 PM CDT	jbrown	Opened the chart
+Aug 9, 2026, 9:26 AM CDT	jjackson	Merged the record into another record (on a record merged into this one)
+Aug 8, 2026, 9:50 AM CDT	jbowman	Opened the chart (on a record merged into this one)
+Aug 6, 2026, 6:42 AM CDT	rmartinez	Opened the chart (on a record merged into this one)
+Jul 4, 2026, 5:54 PM CDT	kmiller	Opened the chart (on a record merged into this one)
+Jun 4, 2026, 3:38 AM CDT	mmiller	Created the record (on a record merged into this one)
+Sep 30, 2025, 3:06 PM CDT	cjackson	Opened the chart
+Sep 24, 2025, 9:08 AM CDT	framirez	Created the record
+
+13 entries
+== FRAME INTERACTIVE ==
+A Invoices href=/billing/accounts/2jx2vmvf82
+A Demographics href=/patients/2jx2vmvf82
+A Insurance href=/patients/2jx2vmvf82/insurance
+A Problems href=/patients/2jx2vmvf82/problems
+A Notes href=/patients/2jx2vmvf82/notes
+A Documents href=/patients/2jx2vmvf82/documents
+A Appointments href=/patients/2jx2vmvf82/appointments
+A Activity href=/patients/2jx2vmvf82/activity
+SELECT All activity / Changes / Chart views

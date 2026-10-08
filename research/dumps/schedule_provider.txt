@@ -1,0 +1,173 @@
+URL: https://practice.speedrun.scopehealth.com/schedule/providers/47vhl7tdlt?date=2026-10-14
+TITLE: Schedule · Wrenfield
+
+Schedule
+Day
+Provider
+Appointment list
+Today
+Date
+Angel Ali, NP
+
+Family Medicine · Wednesday, October 14, 2026
+
+Provider
+Angel Ali, NP
+Gloria Allen, NP
+Diana Anderson, PA
+Lawrence Bennett, MD
+Joshua Bowman, PA
+Mateo Butler, MD
+Mei Carpenter, PA
+Valentina Carroll, MD
+Renee Chen, MD
+Jason Collins, NP
+James Cook, PA
+Jose Crawford, MD
+Donna Cunningham, MD
+Charles Davis, MD
+Matthew Evans, PA
+Liam Farrell, NP
+Desmond Fields, PA
+Ann Foster, MD
+David Fowler, MD
+Judith Garcia, MD
+Kathleen Garrison, DO
+Austin Gibson, NP
+Diane Gonzalez, MD
+Colleen Grant, PA
+Elena Gutierrez, NP
+Walter Guzman, PA
+Richard Harrison, NP
+Susan Herrera, DO
+Brandon Howell, NP
+Catherine Jackson, MD
+Lucas Johnson, NP
+William Kelly, NP
+Harold Larsen, PA
+Denise Lee, DO
+Matthew Lindgren, MD
+Edward Lindqvist, NP
+Lucas Lopez, NP
+Frances Maldonado, DO
+Janet Marshall, MD
+Lawrence Martin, MD
+Dorothy Mason, PA
+Garrett Meyer, MD
+Kevin Miller, MD
+Victoria Moore, MD
+Samuel Morris, MD
+Joyce Nelson, NP
+Katherine Nichols, NP
+Jose Nielsen, MD
+Bryan Palmer, NP
+Jennifer Parker, MD
+Valentina Perez, MD
+Joan Ramirez, MD
+Hannah Ramos, MD
+Brian Reed, NP
+Martha Reynolds, MD
+Jacqueline Rios, MD
+Olivia Rivera, NP
+Priya Roberts, NP
+Lawrence Rodriguez, NP
+Zachary Ruiz, MD
+Dorothy Scott, NP
+Donald Silva, MD
+Mark Sorensen, MD
+Julie Soto, MD
+Kenneth Sullivan, NP
+James Tillman, DO
+Susan Vasquez, NP
+Aaron Wagner, MD
+Lori Watkins, MD
+Soren Welch, NP
+Brenda West, MD
+Megan Williamson, MD
+Ruth Green, DO
+Douglas Hughes, MD
+Rachel Martinez, MD
+Laura Murphy, MD
+Martha Olson, MD
+Edward Pierce, NP
+Ann Shaw, MD
+Joe Wilson, PA
+Highline
+Times in MDT
+Working 11:00 AM to 3:00 PM, 4:00 PM to 8:00 PM
+Appointments and open slots at Highline on Wednesday, October 14, 2026
+Time	Patient	Visit type	Status
+11:00 AM to 11:20 AM	Young, Andrew	Follow-up visit	
+Scheduled
+11:20 AM to 12:00 PM	Okonkwo, Donna	Annual physical	
+Scheduled
+12:00 PM to 12:45 PM	Jenkins, Betty	Nutrition counseling	
+Scheduled
+1:00 PM to 1:40 PM	Bailey, Daniel 
+Restricted	Specialist consultation	
+Scheduled
+1:40 PM to 2:10 PM	Anderson, Carmen	Skin biopsy	
+Scheduled
+2:20 PM to 2:40 PM	Open slot
+2:40 PM to 3:00 PM	Diaz, Mary	Office visit	
+Scheduled
+4:00 PM to 4:15 PM	Hart, Amy	Immunization	
+Scheduled
+4:20 PM to 4:40 PM	Patel, Carol	Sick visit	
+Cancelled
+4:20 PM to 4:40 PM	Andrews, Valentina	Follow-up visit	
+Scheduled
+4:40 PM to 5:20 PM	Rodriguez, Donald	Specialist consultation	
+Scheduled
+5:20 PM to 5:50 PM	Johnston, Debra	Diabetes management	
+Scheduled
+6:00 PM to 6:20 PM	Open slot
+6:20 PM to 6:40 PM	Corbett, David	Office visit	
+Scheduled
+6:40 PM to 7:20 PM	Miller, Robert	New patient visit	
+Scheduled
+7:20 PM to 7:40 PM	Stewart, Pamela 
+Restricted	Sick visit	
+Scheduled
+7:40 PM to 8:00 PM	Wood, Lisa	Follow-up visit	
+Scheduled
+
+---- INTERACTIVE ----
+[A] 'Day' /schedule?date=2026-10-14  
+[A] 'Provider' /schedule/providers/47vhl7tdlt?date=2026-10-14  page
+[A] 'Appointment list' /schedule/appointments?from=2026-10-14&to=2026-10-20  
+[BUTTON] 'Previous day'   
+[BUTTON] 'Today'   
+[BUTTON] 'Next day'   
+[INPUT] '2026-10-14'  date 
+[SELECT] 'Angel Ali, NP\nGloria Allen, NP\nDiana Anderson, PA\nLawrence Bennett, MD\nJoshua Bo'  provider 
+[A] '11:00 AM to 11:20 AM' /patients/4xhjckq3kv/appointments/1974jhqx7q  
+[A] 'Young, Andrew' /patients/4xhjckq3kv  
+[A] '11:20 AM to 12:00 PM' /patients/2l1p7cjvs6/appointments/4rllr0p27m  
+[A] 'Okonkwo, Donna' /patients/2l1p7cjvs6  
+[A] '12:00 PM to 12:45 PM' /patients/5b815g5bvv/recurring/2926b0gz34  
+[A] 'Jenkins, Betty' /patients/5b815g5bvv  
+[A] '1:00 PM to 1:40 PM' /patients/04nsg3k39r/appointments/12sfphg8v7  
+[A] 'Bailey, Daniel' /patients/04nsg3k39r  
+[A] '1:40 PM to 2:10 PM' /patients/32z1zc28k9/appointments/0l6rv6lv7z  
+[A] 'Anderson, Carmen' /patients/32z1zc28k9  
+[A] '2:40 PM to 3:00 PM' /patients/4tk70d6dg8/appointments/3wrrrtqlpj  
+[A] 'Diaz, Mary' /patients/4tk70d6dg8  
+[A] '4:00 PM to 4:15 PM' /patients/61wwwhpgkg/appointments/5pc8f27pm4  
+[A] 'Hart, Amy' /patients/61wwwhpgkg  
+[A] '4:20 PM to 4:40 PM' /patients/5lc2tstzmn/appointments/1j3p5prc80  
+[A] 'Patel, Carol' /patients/5lc2tstzmn  
+[A] '4:20 PM to 4:40 PM' /patients/6w6979l7jw/appointments/0z3gkxx314  
+[A] 'Andrews, Valentina' /patients/6w6979l7jw  
+[A] '4:40 PM to 5:20 PM' /patients/6hx9v2kldp/appointments/1m199tfjwq  
+[A] 'Rodriguez, Donald' /patients/6hx9v2kldp  
+[A] '5:20 PM to 5:50 PM' /patients/364p5z0fw5/recurring/3m7z7mnn2h  
+[A] 'Johnston, Debra' /patients/364p5z0fw5  
+[A] '6:20 PM to 6:40 PM' /patients/2j7v31kwk9/appointments/3g6fs139bg  
+[A] 'Corbett, David' /patients/2j7v31kwk9  
+[A] '6:40 PM to 7:20 PM' /patients/557q9zmk2n/appointments/2207b7whgh  
+[A] 'Miller, Robert' /patients/557q9zmk2n  
+[A] '7:20 PM to 7:40 PM' /patients/16rwbmhgc5/appointments/31w400zb8g  
+[A] 'Stewart, Pamela' /patients/16rwbmhgc5  
+[A] '7:40 PM to 8:00 PM' /patients/023j05xkgh/appointments/6wlc1tv5r0  
+[A] 'Wood, Lisa' /patients/023j05xkgh  

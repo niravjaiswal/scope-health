@@ -1,0 +1,94 @@
+URL: https://practice.speedrun.scopehealth.com/patients/0dfkpm8z1g/notes
+TITLE: Jones, Carol · Wrenfield
+
+Jones, Carol
+MRN
+HG9736761
+Date of birth
+09/07/1982 (44 years)
+Sex
+Female
+Billing
+Invoices
+Demographics
+Insurance
+Problems
+Notes
+Documents
+Appointments
+Activity
+Written from
+Written to
+Apply
+Clear
+Message
+Caleb Price
+Jul 22, 2026, 4:37 PM
+CDT
+
+Patient wrote in about a referral that has not arrived. Forwarded to the front desk for handling.
+
+Phone call
+Teresa Warren
+May 6, 2026, 12:46 PM
+CDT
+
+Called Carol regarding prior authorization for imaging. No answer, left a voicemail asking for a call back.
+
+Phone call
+Jordan Alvarado
+Apr 14, 2026, 10:32 AM
+CDT
+
+Patient says the best number to reach them is 7853499086. Will try that number for the next reminder.
+
+Phone call
+Teresa Warren
+Jan 2, 2026, 1:38 PM
+CST
+
+Patient called about a prescription refill. Advised to keep the visit near 2026-01-14. Patient agreed.
+
+Message
+Aisha Wilson
+Nov 17, 2025, 3:37 PM
+CST
+
+Message to patient: results reviewed by Dr. Parker, no action needed. Continue levothyroxine 75 mcg daily.
+
+Message
+Melissa Davis
+Oct 21, 2025, 5:32 PM
+CDT
+
+Patient requests directions to the clinic. Completed and sent through the portal.
+
+Phone call
+Grace Garcia
+Aug 6, 2025, 10:30 AM
+CDT
+
+Patient called twice about directions to the clinic. Returned the call and resolved the question.
+
+Message
+Aisha Wilson
+Feb 1, 2025, 4:03 PM
+CST
+
+Message to patient: results reviewed by Dr. Parker, no action needed. Continue omeprazole 20 mg daily.
+
+8 notes
+
+---- INTERACTIVE ----
+[A] 'Invoices' /billing/accounts/0dfkpm8z1g  
+[A] 'Demographics' /patients/0dfkpm8z1g  
+[A] 'Insurance' /patients/0dfkpm8z1g/insurance  
+[A] 'Problems' /patients/0dfkpm8z1g/problems  
+[A] 'Notes' /patients/0dfkpm8z1g/notes  page
+[A] 'Documents' /patients/0dfkpm8z1g/documents  
+[A] 'Appointments' /patients/0dfkpm8z1g/appointments  
+[A] 'Activity' /patients/0dfkpm8z1g/activity  
+[INPUT] ''  from 
+[INPUT] ''  to 
+[BUTTON] 'Apply'   
+[BUTTON] 'Clear'   

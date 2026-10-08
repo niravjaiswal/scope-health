@@ -1,0 +1,369 @@
+{
+  "suiteVersion": "speedrun-3",
+  "maxPoints": 908,
+  "final": false,
+  "sets": [
+    {
+      "id": "public",
+      "title": "Set 1",
+      "role": "scored",
+      "tasks": 224
+    },
+    {
+      "id": "private-a",
+      "title": "Set 2",
+      "role": "scored",
+      "tasks": 226
+    },
+    {
+      "id": "private-b",
+      "title": "Set 3",
+      "role": "scored",
+      "tasks": 458
+    }
+  ],
+  "rows": [
+    {
+      "rank": 1,
+      "name": "speedrun squad",
+      "score": 325,
+      "counts": {
+        "correct": 334,
+        "wrong": 9,
+        "skipped": 565,
+        "not_reached": 0
+      },
+      "setPoints": [
+        167,
+        112,
+        46
+      ],
+      "submittedAtUtc": "2026-10-08T16:02:46.064Z",
+      "submissions": 5
+    },
+    {
+      "rank": 2,
+      "name": "riz",
+      "score": 287,
+      "counts": {
+        "correct": 300,
+        "wrong": 13,
+        "skipped": 595,
+        "not_reached": 0
+      },
+      "setPoints": [
+        180,
+        83,
+        24
+      ],
+      "submittedAtUtc": "2026-10-08T22:23:21.075Z",
+      "submissions": 21
+    },
+    {
+      "rank": 3,
+      "name": "coins",
+      "score": 278,
+      "counts": {
+        "correct": 278,
+        "wrong": 0,
+        "skipped": 630,
+        "not_reached": 0
+      },
+      "setPoints": [
+        185,
+        34,
+        59
+      ],
+      "submittedAtUtc": "2026-10-08T20:46:30.705Z",
+      "submissions": 27
+    },
+    {
+      "rank": 4,
+      "name": "anonymous_pizza_lovers",
+      "score": 234,
+      "counts": {
+        "correct": 234,
+        "wrong": 0,
+        "skipped": 674,
+        "not_reached": 0
+      },
+      "setPoints": [
+        167,
+        27,
+        40
+      ],
+      "submittedAtUtc": "2026-10-08T20:04:22.331Z",
+      "submissions": 13
+    },
+    {
+      "rank": 5,
+      "name": "AK",
+      "score": 221,
+      "counts": {
+        "correct": 229,
+        "wrong": 8,
+        "skipped": 639,
+        "not_reached": 32
+      },
+      "setPoints": [
+        173,
+        31,
+        17
+      ],
+      "submittedAtUtc": "2026-10-08T20:34:20.838Z",
+      "submissions": 17
+    },
+    {
+      "rank": 6,
+      "name": "tonylicious",
+      "score": 219,
+      "counts": {
+        "correct": 223,
+        "wrong": 4,
+        "skipped": 367,
+        "not_reached": 314
+      },
+      "setPoints": [
+        147,
+        29,
+        43
+      ],
+      "submittedAtUtc": "2026-10-08T21:56:32.046Z",
+      "submissions": 15
+    },
+    {
+      "rank": 7,
+      "name": "JhunxMarble",
+      "score": 208,
+      "counts": {
+        "correct": 222,
+        "wrong": 14,
+        "skipped": 672,
+        "not_reached": 0
+      },
+      "setPoints": [
+        157,
+        19,
+        32
+      ],
+      "submittedAtUtc": "2026-10-08T22:18:01.264Z",
+      "submissions": 17
+    },
+    {
+      "rank": 8,
+      "name": "To be healthy",
+      "score": 159,
+      "counts": {
+        "correct": 171,
+        "wrong": 12,
+        "skipped": 725,
+        "not_reached": 0
+      },
+      "setPoints": [
+        93,
+        29,
+        37
+      ],
+      "submittedAtUtc": "2026-10-08T21:07:24.687Z",
+      "submissions": 17
+    },
+    {
+      "rank": 9,
+      "name": "DuncanLarzelere team",
+      "score": 155,
+      "counts": {
+        "correct": 163,
+        "wrong": 8,
+        "skipped": 715,
+        "not_reached": 22
+      },
+      "setPoints": [
+        122,
+        25,
+        8
+      ],
+      "submittedAtUtc": "2026-10-08T22:24:56.930Z",
+      "submissions": 26
+    },
+    {
+      "rank": 10,
+      "name": "wow",
+      "score": 154,
+      "counts": {
+        "correct": 158,
+        "wrong": 4,
+        "skipped": 746,
+        "not_reached": 0
+      },
+      "setPoints": [
+        98,
+        19,
+        37
+      ],
+      "submittedAtUtc": "2026-10-08T22:27:20.226Z",
+      "submissions": 6
+    },
+    {
+      "rank": 11,
+      "name": "krillion",
+      "score": 142,
+      "counts": {
+        "correct": 173,
+        "wrong": 31,
+        "skipped": 402,
+        "not_reached": 302
+      },
+      "setPoints": [
+        57,
+        25,
+        60
+      ],
+      "submittedAtUtc": "2026-10-08T22:50:18.898Z",
+      "submissions": 5
+    },
+    {
+      "rank": 12,
+      "name": "Physical Realities",
+      "score": 78,
+      "counts": {
+        "correct": 89,
+        "wrong": 11,
+        "skipped": 808,
+        "not_reached": 0
+      },
+      "setPoints": [
+        71,
+        6,
+        1
+      ],
+      "submittedAtUtc": "2026-10-08T18:23:36.744Z",
+      "submissions": 13
+    },
+    {
+      "rank": 13,
+      "name": "Kaicheng",
+      "score": 58,
+      "counts": {
+        "correct": 80,
+        "wrong": 22,
+        "skipped": 173,
+        "not_reached": 633
+      },
+      "setPoints": [
+        35,
+        16,
+        7
+      ],
+      "submittedAtUtc": "2026-10-08T21:50:24.562Z",
+      "submissions": 7
+    },
+    {
+      "rank": 14,
+      "name": "Sammy Jankis",
+      "score": 45,
+      "counts": {
+        "correct": 53,
+        "wrong": 8,
+        "skipped": 847,
+        "not_reached": 0
+      },
+      "setPoints": [
+        41,
+        -2,
+        6
+      ],
+      "submittedAtUtc": "2026-10-07T07:47:26.870Z",
+      "submissions": 9
+    },
+    {
+      "rank": 15,
+      "name": "Name",
+      "score": 36,
+      "counts": {
+        "correct": 55,
+        "wrong": 19,
+        "skipped": 834,
+        "not_reached": 0
+      },
+      "setPoints": [
+        19,
+        -1,
+        18
+      ],
+      "submittedAtUtc": "2026-10-08T13:15:31.146Z",
+      "submissions": 6
+    },
+    {
+      "rank": 16,
+      "name": "nomos",
+      "score": 32,
+      "counts": {
+        "correct": 66,
+        "wrong": 34,
+        "skipped": 808,
+        "not_reached": 0
+      },
+      "setPoints": [
+        2,
+        15,
+        15
+      ],
+      "submittedAtUtc": "2026-10-08T22:20:59.898Z",
+      "submissions": 5
+    },
+    {
+      "rank": 17,
+      "name": "CreamOfWheat",
+      "score": 2,
+      "counts": {
+        "correct": 39,
+        "wrong": 37,
+        "skipped": 297,
+        "not_reached": 535
+      },
+      "setPoints": [
+        -14,
+        4,
+        12
+      ],
+      "submittedAtUtc": "2026-10-08T19:45:58.031Z",
+      "submissions": 1
+    },
+    {
+      "rank": 18,
+      "name": "Nirav Wins",
+      "score": 0,
+      "counts": {
+        "correct": 0,
+        "wrong": 0,
+        "skipped": 908,
+        "not_reached": 0
+      },
+      "setPoints": [
+        0,
+        0,
+        0
+      ],
+      "submittedAtUtc": "2026-10-08T23:20:26.108Z",
+      "submissions": 1
+    },
+    {
+      "rank": 19,
+      "name": "teamsters",
+      "score": -172,
+      "counts": {
+        "correct": 32,
+        "wrong": 204,
+        "skipped": 672,
+        "not_reached": 0
+      },
+      "setPoints": [
+        -70,
+        -40,
+        -62
+      ],
+      "submittedAtUtc": "2026-10-08T21:42:51.194Z",
+      "submissions": 1
+    }
+  ]
+}

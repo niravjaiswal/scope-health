@@ -1,0 +1,51 @@
+URL https://practice.speedrun.scopehealth.com/patients?lastName=Driscoll
+
+== FRAME https://practice.speedrun.scopehealth.com/v/tsg7w67l888x0ml8xch38vv6k8/ ==
+Patients
+
+Find a patient by last name or date of birth.
+
+Last name
+or
+Date of birth
+Search
+
+Enter a last name or a full date of birth.
+
+Results
+Patients found
+Patient	MRN	Date of birth	Sex	
+Flags
+
+Driscoll, Brandon	HG6749684	09/08/1953 (73 y)	Male	
+Driscoll, Gabriel	HG1152838	10/27/2001 (24 y)	Male	
+Driscoll, Jennifer	HG8640635	10/09/1985 (41 y)	Female	
+Driscoll, Jessica	HG3734869	02/13/1965 (61 y)	Female	
+Driscoll, Mary	HG9101543	05/16/2014 (12 y)	Female	
+Driscoll, Sophia	HG5117289	05/31/1964 (62 y)	Female	
+
+6 patients
+
+Restricted chart requests
+Your requests to open restricted charts
+Patient	Reason	Status
+Ramirez, David	Providing care to this patient	Ended
+Ramirez, David	Providing care to this patient	Ended
+Porter, Catherine	Billing or insurance question	Ended
+Porter, Catherine	Billing or insurance question	Ended
+
+4 requests
+== FRAME INTERACTIVE ==
+INPUT Driscoll
+INPUT 
+BUTTON Search
+A Driscoll, Brandon href=/patients/0gng5cn41h
+A Driscoll, Gabriel href=/patients/58z9vnq9zg
+A Driscoll, Jennifer href=/patients/0s9tgvkjb4
+A Driscoll, Jessica href=/patients/1zl525nwgm
+A Driscoll, Mary href=/patients/61m6dvnwm8
+A Driscoll, Sophia href=/patients/1130jmpxx3
+A Ramirez, David href=/patients/3pdsxpwzr5
+A Ramirez, David href=/patients/28xpx631v1
+A Porter, Catherine href=/patients/2q123zlg2m
+A Porter, Catherine href=/patients/2q123zlg2m

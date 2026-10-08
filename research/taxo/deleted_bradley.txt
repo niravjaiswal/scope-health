@@ -1,0 +1,42 @@
+URL https://practice.speedrun.scopehealth.com/patients/2c27l9p0rx
+
+== FRAME https://practice.speedrun.scopehealth.com/v/5474927bc6ds0hnpjn8qdv87fd/ ==
+Martinez, Bradley
+Deleted
+MRN
+HG9069482
+Date of birth
+12/13/1993 (32 years)
+Sex
+Male
+Billing
+Invoices
+Demographics
+Insurance
+Problems
+Notes
+Documents
+Appointments
+Activity
+Contact
+Phone
+(570) 642-1428
+Email
+Not on file
+Address
+5560 Cedar Pl
+Harbor Glen, KS 66741
+Care team
+Primary provider
+Gloria Allen, NP
+Home location
+Northgate
+== FRAME INTERACTIVE ==
+A Invoices href=/billing/accounts/2c27l9p0rx
+A Demographics href=/patients/2c27l9p0rx
+A Insurance href=/patients/2c27l9p0rx/insurance
+A Problems href=/patients/2c27l9p0rx/problems
+A Notes href=/patients/2c27l9p0rx/notes
+A Documents href=/patients/2c27l9p0rx/documents
+A Appointments href=/patients/2c27l9p0rx/appointments
+A Activity href=/patients/2c27l9p0rx/activity

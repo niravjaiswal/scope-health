@@ -1,0 +1,37 @@
+URL: https://practice.speedrun.scopehealth.com/patients/0dfkpm8z1g/problems
+TITLE: Jones, Carol · Wrenfield
+
+Jones, Carol
+MRN
+HG9736761
+Date of birth
+09/07/1982 (44 years)
+Sex
+Female
+Billing
+Invoices
+Demographics
+Insurance
+Problems
+Notes
+Documents
+Appointments
+Activity
+Conditions on the problem list
+Code	Condition	Onset
+I10	Essential hypertension	Apr 6, 2015
+G47.33	Obstructive sleep apnea	Aug 31, 2017
+G43.909	Migraine	Jul 29, 2019
+K21.9	Gastroesophageal reflux disease	Oct 22, 2025
+
+4 conditions
+
+---- INTERACTIVE ----
+[A] 'Invoices' /billing/accounts/0dfkpm8z1g  
+[A] 'Demographics' /patients/0dfkpm8z1g  
+[A] 'Insurance' /patients/0dfkpm8z1g/insurance  
+[A] 'Problems' /patients/0dfkpm8z1g/problems  page
+[A] 'Notes' /patients/0dfkpm8z1g/notes  
+[A] 'Documents' /patients/0dfkpm8z1g/documents  
+[A] 'Appointments' /patients/0dfkpm8z1g/appointments  
+[A] 'Activity' /patients/0dfkpm8z1g/activity  

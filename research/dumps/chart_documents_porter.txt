@@ -1,0 +1,39 @@
+URL: https://practice.speedrun.scopehealth.com/patients/0916zmqf4t/documents
+TITLE: Porter, Gregory · Wrenfield
+
+Porter, Gregory
+MRN
+HG6455681
+Date of birth
+04/08/1976 (50 years)
+Sex
+Male
+Billing
+Invoices
+Demographics
+Insurance
+Problems
+Notes
+Documents
+Appointments
+Activity
+Documents in this chart, newest first
+Title	Type	Received	
+Actions
+
+Lab report: Vitamin D	Lab report	Jun 8, 2026	View
+Referral letter from Marrow Lake Urgent Care	Referral letter	Sep 16, 2025	View
+
+2 documents
+
+---- INTERACTIVE ----
+[A] 'Invoices' /billing/accounts/0916zmqf4t  
+[A] 'Demographics' /patients/0916zmqf4t  
+[A] 'Insurance' /patients/0916zmqf4t/insurance  
+[A] 'Problems' /patients/0916zmqf4t/problems  
+[A] 'Notes' /patients/0916zmqf4t/notes  
+[A] 'Documents' /patients/0916zmqf4t/documents  page
+[A] 'Appointments' /patients/0916zmqf4t/appointments  
+[A] 'Activity' /patients/0916zmqf4t/activity  
+[A] 'View' /patients/0916zmqf4t/documents/56cgksj9k5  
+[A] 'View' /patients/0916zmqf4t/documents/40gf29nm6c  

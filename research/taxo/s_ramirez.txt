@@ -1,0 +1,106 @@
+URL https://practice.speedrun.scopehealth.com/patients?lastName=Ramirez
+
+== FRAME https://practice.speedrun.scopehealth.com/v/4hzzrbj5dl6tmhqfk05hnf4lkk/ ==
+Patients
+
+Find a patient by last name or date of birth.
+
+Last name
+or
+Date of birth
+Search
+
+Enter a last name or a full date of birth.
+
+Results
+Patients found
+Patient	MRN	Date of birth	Sex	
+Flags
+
+Ramírez, Alice	HG3092289	01/22/1973 (53 y)	Female	
+Ramirez, Andrea	HG1284825	10/06/1973 (53 y)	Female	
+Ramírez, Andrea	HG3683638	10/19/2020 (5 y)	Female	
+Ramirez, Barrett	HG8673769	04/15/1985 (41 y)	Male	
+Restricted
+Ramirez, Benjamin	HG4208345	10/03/1988 (38 y)	Male	
+Ramirez, Betty	HG9818421	02/10/1950 (76 y)	Female	
+Ramirez, Billy	HG9268003	11/12/1987 (38 y)	Male	
+Ramirez, Brenda	HG2826781	05/17/1943 (83 y)	Female	
+Ramírez, Charles	HG4250921	11/20/2005 (20 y)	Male	
+Ramírez, Charles	HG1886301	08/16/1943 (83 y)	Male	
+Ramirez, Christine	HG4360832	12/19/1973 (52 y)	Female	
+Restricted
+Ramírez, Colleen	HG9157286	11/29/1996 (29 y)	Female	
+Ramírez, Cynthia	HG4074539	05/04/1975 (51 y)	Female	
+Ramirez, Diane	HG8992699	10/29/2020 (5 y)	Female	
+Ramírez, Eric	HG4865078	03/13/1970 (56 y)	Male	
+Ramírez, Garrett	HG4665550	09/21/1975 (51 y)	Unspecified	
+Restricted
+Ramírez, Gloria	HG7631217	04/27/1975 (51 y)	Female	
+Ramírez, Jacob	HG3155022	07/01/1978 (48 y)	Male	
+Ramirez, Jennifer	HG4352212	05/20/2026 (0 y)	Female	
+Ramirez, Jonathan	HG2279045	11/08/1940 (85 y)	Male	
+Ramirez, Judith	HG4639113	09/10/1978 (48 y)	Female	
+Ramirez, Julia	HG8215099	10/11/2020 (6 y)	Female	
+Ramirez, Kayyla	HG9022146	12/01/1967 (58 y)	Female	
+Merged
+Ramirez, Kevin	HG6706545	01/02/1970 (56 y)	Male	
+Ramírez, Lauren	HG5021687	04/24/1933 (93 y)	Female	
+
+Showing 1 to 25 of 40 patients
+
+Rows per page
+25 per page
+50 per page
+100 per page
+Previous
+1
+2
+Next
+Restricted chart requests
+Your requests to open restricted charts
+Patient	Reason	Status
+Ramirez, David	Providing care to this patient	Ended
+Ramirez, David	Providing care to this patient	Ended
+Porter, Catherine	Billing or insurance question	Ended
+Porter, Catherine	Billing or insurance question	Ended
+
+4 requests
+== FRAME INTERACTIVE ==
+INPUT[text] Ramirez
+INPUT[date] 
+BUTTON[submit] Search
+A[] Ramírez, Alice href=/patients/3swl6qfzhr
+A[] Ramirez, Andrea href=/patients/53twnlcd3s
+A[] Ramírez, Andrea href=/patients/6fjzdfg4qj
+A[] Ramirez, Barrett href=/patients/0qmq5xk01f
+A[] Ramirez, Benjamin href=/patients/3jnxnkkrqc
+A[] Ramirez, Betty href=/patients/6ckwl4sq92
+A[] Ramirez, Billy href=/patients/0hgrsfsq8h
+A[] Ramirez, Brenda href=/patients/53tgx0rj0g
+A[] Ramírez, Charles href=/patients/71tmbt5tr0
+A[] Ramírez, Charles href=/patients/3375qhk5xj
+A[] Ramirez, Christine href=/patients/6m575xmjjs
+A[] Ramírez, Colleen href=/patients/1xklszt01q
+A[] Ramírez, Cynthia href=/patients/154xqznlrb
+A[] Ramirez, Diane href=/patients/45mg44v4rw
+A[] Ramírez, Eric href=/patients/1glb0757d6
+A[] Ramírez, Garrett href=/patients/0tf7p4mc59
+A[] Ramírez, Gloria href=/patients/4vhj7lcnsl
+A[] Ramírez, Jacob href=/patients/1rrcjftpfs
+A[] Ramirez, Jennifer href=/patients/3ls6nptc19
+A[] Ramirez, Jonathan href=/patients/395dsw6t3m
+A[] Ramirez, Judith href=/patients/1fqcj8lq44
+A[] Ramirez, Julia href=/patients/1jlr7c7q1q
+A[] Ramirez, Kayyla href=/patients/2gq722tm5t
+A[] Ramirez, Kevin href=/patients/0w242l722l
+A[] Ramírez, Lauren href=/patients/10bqlhxj6z
+SELECT[select-one] 25 per page / 50 per page / 100 per page
+BUTTON[button] Previous
+BUTTON[button] 1
+BUTTON[button] 2
+BUTTON[button] Next
+A[] Ramirez, David href=/patients/3pdsxpwzr5
+A[] Ramirez, David href=/patients/28xpx631v1
+A[] Porter, Catherine href=/patients/2q123zlg2m
+A[] Porter, Catherine href=/patients/2q123zlg2m

@@ -1,0 +1,32 @@
+Gray, Anna || "Atkinson Hyperlegible Next", ui-sans-serif, system-ui, sans || H1
+MRN || "Atkinson Hyperlegible Next", ui-sans-serif, system-ui, sans || DT
+HG8916636 || bzpzx, ui-monospace, monospace || SPAN
+Date of birth || "Atkinson Hyperlegible Next", ui-sans-serif, system-ui, sans || DT
+11/21/1963 || bzpzx, ui-monospace, monospace || SPAN
+(62 years) || "Atkinson Hyperlegible Next", ui-sans-serif, system-ui, sans || SPAN
+Sex || "Atkinson Hyperlegible Next", ui-sans-serif, system-ui, sans || DT
+Female || "Atkinson Hyperlegible Next", ui-sans-serif, system-ui, sans || DD
+Billing || "Atkinson Hyperlegible Next", ui-sans-serif, system-ui, sans || DT
+Invoices || "Atkinson Hyperlegible Next", ui-sans-serif, system-ui, sans || A
+Demographics || "Atkinson Hyperlegible Next", ui-sans-serif, system-ui, sans || A
+Insurance || "Atkinson Hyperlegible Next", ui-sans-serif, system-ui, sans || A
+Problems || "Atkinson Hyperlegible Next", ui-sans-serif, system-ui, sans || A
+Notes || "Atkinson Hyperlegible Next", ui-sans-serif, system-ui, sans || A
+Documents || "Atkinson Hyperlegible Next", ui-sans-serif, system-ui, sans || A
+Appointments || "Atkinson Hyperlegible Next", ui-sans-serif, system-ui, sans || A
+Activity || "Atkinson Hyperlegible Next", ui-sans-serif, system-ui, sans || A
+Contact || "Atkinson Hyperlegible Next", ui-sans-serif, system-ui, sans || SPAN
+Phone || "Atkinson Hyperlegible Next", ui-sans-serif, system-ui, sans || DT
+(850) 662-3324 || dz2hs, ui-monospace, monospace || SPAN
+Email || "Atkinson Hyperlegible Next", ui-sans-serif, system-ui, sans || DT
+a•••••@wrenmail.example || "Atkinson Hyperlegible Next", ui-sans-serif, system-ui, sans || DD
+Address || "Atkinson Hyperlegible Next", ui-sans-serif, system-ui, sans || DT
+7683 Harbor St || "Atkinson Hyperlegible Next", ui-sans-serif, system-ui, sans || DD
+Harbor Glen, KS 66741 || "Atkinson Hyperlegible Next", ui-sans-serif, system-ui, sans || DD
+Care team || "Atkinson Hyperlegible Next", ui-sans-serif, system-ui, sans || SPAN
+Primary provider || "Atkinson Hyperlegible Next", ui-sans-serif, system-ui, sans || DT
+Mark Sorensen, MD || "Atkinson Hyperlegible Next", ui-sans-serif, system-ui, sans || DD
+Home location || "Atkinson Hyperlegible Next", ui-sans-serif, system-ui, sans || DT
+Eastside || "Atkinson Hyperlegible Next", ui-sans-serif, system-ui, sans || DD
+Wrenfield is not responding. Try again i || "Atkinson Hyperlegible Next", ui-sans-serif, system-ui, sans || DIV
+window["_mv8w9l6p"]=function(){var z=doc || "Atkinson Hyperlegible Next", ui-sans-serif, system-ui, sans || SCRIPT

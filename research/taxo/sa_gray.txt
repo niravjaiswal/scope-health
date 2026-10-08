@@ -1,0 +1,107 @@
+URL https://practice.speedrun.scopehealth.com/patients?lastName=Gray
+
+== FRAME https://practice.speedrun.scopehealth.com/v/g44q612szsc0gh39mk42pnw43f/ ==
+Patients
+
+Find a patient by last name or date of birth.
+
+Last name
+or
+Date of birth
+Search
+
+Enter a last name or a full date of birth.
+
+Results
+Patients found
+Patient	MRN	Date of birth	Sex	
+Flags
+
+Gray, Aice	HG4518775	09/10/1973 (53 y)	Female	
+Merged
+Gray, Albert	HG1927805	10/26/1986 (39 y)	Male	
+Gray, Alice	HG8140771	09/10/1973 (53 y)	Female	
+Gray, Amber	HG1608421	12/03/1950 (75 y)	Female	
+Gray, Amy	HG8485926	12/07/2005 (20 y)	Female	
+Gray, André	HG7039007	03/11/2022 (4 y)	Male	
+Gray, Andrea	HG3761187	04/13/1949 (77 y)	Female	
+Gray, Andrew	HG3912670	06/15/1977 (49 y)	Male	
+Gray, Ann	HG4867004	01/02/1964 (62 y)	Female	
+Gray, Anna	HG6250190	11/29/1969 (56 y)	Female	
+Gray, Anna	HG8916636	11/21/1963 (62 y)	Female	
+Gray, Anthony	HG1186288	01/06/1967 (59 y)	Male	
+Gray, Barbara	HG4538793	09/30/2011 (15 y)	Female	
+Restricted
+Gray, Barbara	HG2408439	03/01/1961 (65 y)	Female	
+Restricted
+Gray, Benjamin	HG8416038	04/15/2023 (3 y)	Male	
+Gray, Betty	HG9293571	11/04/1934 (91 y)	Female	
+Gray, Bjorn	HG6305390	05/09/1963 (63 y)	Male	
+Gray, Bradley	HG1005824	05/09/1994 (32 y)	Male	
+Gray, Brian	HG3374866	02/04/2024 (2 y)	Male	
+Gray, Brittany	HG5524494	04/23/1949 (77 y)	Female	
+Gray, Carol	HG1090598	07/28/1955 (71 y)	Female	
+Gray, Carol	HG1232796	12/29/1976 (49 y)	Female	
+Gray, Carolyn	HG7249290	08/29/1971 (55 y)	Female	
+Gray, Carolyn	HG8983332	12/21/2000 (25 y)	Female	
+Gray, Carolyn	HG8360477	10/18/1967 (58 y)	Female	
+
+Showing 1 to 25 of 198 patients
+
+Rows per page
+25 per page
+50 per page
+100 per page
+Previous
+1
+2
+3
+Next
+Restricted chart requests
+Your requests to open restricted charts
+Patient	Reason	Status
+Ramirez, David	Providing care to this patient	Ended
+Ramirez, David	Providing care to this patient	Ended
+Porter, Catherine	Billing or insurance question	Ended
+Porter, Catherine	Billing or insurance question	Ended
+
+4 requests
+== FRAME INTERACTIVE ==
+INPUT Gray
+INPUT 
+BUTTON Search
+A Gray, Aice href=/patients/2xqp9w1hrr
+A Gray, Albert href=/patients/7264jjzcvd
+A Gray, Alice href=/patients/682rhlcmvt
+A Gray, Amber href=/patients/2v699gtvpv
+A Gray, Amy href=/patients/3z396bq2jk
+A Gray, André href=/patients/0c7hlgp2t8
+A Gray, Andrea href=/patients/6l5b8z1wv3
+A Gray, Andrew href=/patients/3rmm3gqbgx
+A Gray, Ann href=/patients/0l3n0r5dxr
+A Gray, Anna href=/patients/391g36ckm6
+A Gray, Anna href=/patients/535rn1pbvb
+A Gray, Anthony href=/patients/2jxvptc7qn
+A Gray, Barbara href=/patients/4xk13qjbbn
+A Gray, Barbara href=/patients/6nx7x4bm20
+A Gray, Benjamin href=/patients/35h2btbwz6
+A Gray, Betty href=/patients/3hc9l2k08t
+A Gray, Bjorn href=/patients/3rz4q6d1zb
+A Gray, Bradley href=/patients/3z07q9k84q
+A Gray, Brian href=/patients/0hj1kdrncp
+A Gray, Brittany href=/patients/4cml54zt2r
+A Gray, Carol href=/patients/1jl6s9kxvx
+A Gray, Carol href=/patients/4zw73pz95f
+A Gray, Carolyn href=/patients/4zh908042f
+A Gray, Carolyn href=/patients/11x4m38ndj
+A Gray, Carolyn href=/patients/5l9vj52jxg
+SELECT 25 per page / 50 per page / 100 per page
+BUTTON Previous
+BUTTON 1
+BUTTON 2
+BUTTON 3
+BUTTON Next
+A Ramirez, David href=/patients/3pdsxpwzr5
+A Ramirez, David href=/patients/28xpx631v1
+A Porter, Catherine href=/patients/2q123zlg2m
+A Porter, Catherine href=/patients/2q123zlg2m

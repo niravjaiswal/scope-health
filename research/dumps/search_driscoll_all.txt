@@ -1,0 +1,108 @@
+URL: https://practice.speedrun.scopehealth.com/patients?lastName=Driscoll
+TITLE: Patients · Wrenfield
+
+Patients
+
+Find a patient by last name or date of birth.
+
+Last name
+or
+Date of birth
+Search
+
+Enter a last name or a full date of birth.
+
+Results
+Patients found
+Patient	MRN	Date of birth	Sex	
+Flags
+
+Driscoll, Aisha	HG6206090	06/20/2013 (13 y)	Female	
+Driscoll, Alexis	HG6252261	03/28/1963 (63 y)	Female	
+Driscoll, Andrea	HG2781654	06/29/1940 (86 y)	Female	
+Driscoll, Angela	HG9531007	12/18/1984 (41 y)	Female	
+Driscoll, Anna	HG6935684	12/26/1947 (78 y)	Female	
+Driscoll, Ashley	HG6887293	02/25/1988 (38 y)	Female	
+Driscoll, Bradley	HG6057038	05/29/1987 (39 y)	Male	
+Driscoll, Brandon	HG6749684	09/08/1953 (73 y)	Male	
+Driscoll, Brittany	HG8884761	07/30/1985 (41 y)	Female	
+Driscoll, Brradley	HG6743057	05/29/1987 (39 y)	Male	
+Merged
+Driscoll, Chistopher	HG6413589	02/27/1972 (54 y)	Male	
+Merged
+Driscoll, Chris	HG2301332	02/27/1972 (54 y)	Male	
+Merged
+Driscoll, Christopher	HG3028894	02/27/1972 (54 y)	Male	
+Driscoll, Christopher	HG2764117	06/01/1959 (67 y)	Male	
+Driscoll, David	HG7443032	01/08/1995 (31 y)	Male	Deleted
+Driscoll, David	HG9648080	11/24/1952 (73 y)	Male	
+Driscoll, David	HG4960465	12/19/1938 (87 y)	Male	
+Driscoll, Dennis	HG9354332	06/02/1969 (57 y)	Male	
+Driscoll, Diana	HG2727942	02/03/1981 (45 y)	Female	
+Driscoll, Dorothy	HG2606564	08/13/1972 (54 y)	Female	
+Driscoll, Douglas	HG9617336	04/28/1993 (33 y)	Male	
+Driscoll, Edward	HG3291160	04/28/1989 (37 y)	Male	
+Driscoll, Edward	HG7642031	03/13/1987 (39 y)	Male	
+Driscoll, Eric	HG5535679	03/27/1956 (70 y)	Male	
+Driscoll, Gabriel	HG1152838	10/27/2001 (24 y)	Male	
+
+Showing 1 to 25 of 76 patients
+
+Rows per page
+25 per page
+50 per page
+100 per page
+Previous
+1
+2
+3
+Next
+Restricted chart requests
+Your requests to open restricted charts
+Patient	Reason	Status
+Ramirez, David	Providing care to this patient	Approved
+Ramirez, David	Providing care to this patient	Ended
+Porter, Catherine	Billing or insurance question	Ended
+Porter, Catherine	Billing or insurance question	Ended
+
+4 requests
+
+---- INTERACTIVE ----
+[INPUT] 'Driscoll'  lastName 
+[INPUT] ''  dob 
+[BUTTON] 'Search'   
+[A] 'Driscoll, Aisha' /patients/0rt05p7r1f  
+[A] 'Driscoll, Alexis' /patients/43lq1dht6j  
+[A] 'Driscoll, Andrea' /patients/285z4h2fbj  
+[A] 'Driscoll, Angela' /patients/70jz8x8ktr  
+[A] 'Driscoll, Anna' /patients/5nhcs5vhw5  
+[A] 'Driscoll, Ashley' /patients/4vw16twmt5  
+[A] 'Driscoll, Bradley' /patients/0wcn8nz22j  
+[A] 'Driscoll, Brandon' /patients/0gng5cn41h  
+[A] 'Driscoll, Brittany' /patients/2x4mtq5vg0  
+[A] 'Driscoll, Brradley' /patients/60xjhrkcp8  
+[A] 'Driscoll, Chistopher' /patients/08l02f0nh4  
+[A] 'Driscoll, Chris' /patients/4mnpvl1nfp  
+[A] 'Driscoll, Christopher' /patients/21vnfcj01d  
+[A] 'Driscoll, Christopher' /patients/1399l5ps2s  
+[A] 'Driscoll, David' /patients/1zf1855ln4  
+[A] 'Driscoll, David' /patients/34x00nbr9b  
+[A] 'Driscoll, David' /patients/4jl9g5rcn8  
+[A] 'Driscoll, Dennis' /patients/6k7hvrplj4  
+[A] 'Driscoll, Diana' /patients/2kw9h7t7f1  
+[A] 'Driscoll, Dorothy' /patients/6xtd9lt6n3  
+[A] 'Driscoll, Douglas' /patients/16dp8ngrql  
+[A] 'Driscoll, Edward' /patients/42217jszpj  
+[A] 'Driscoll, Edward' /patients/5zqvsbll0s  
+[A] 'Driscoll, Eric' /patients/2wpfmq5jmw  
+[A] 'Driscoll, Gabriel' /patients/58z9vnq9zg  
+[SELECT] '25 per page\n50 per page\n100 per page'  size 
+[BUTTON] 'Previous'   
+[BUTTON] '1'   page
+[BUTTON] '2'   
+[BUTTON] '3'   
+[BUTTON] 'Next'   
+[A] 'Ramirez, David' /patients/3pdsxpwzr5  
+[A] 'Ramirez, David' /patients/28xpx631v1  
+[A] 'Porter, Catherine' /patients/2q123zlg2m  
+[A] 'Porter, Catherine' /patients/2q123zlg2m  

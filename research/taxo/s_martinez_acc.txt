@@ -1,0 +1,110 @@
+URL https://practice.speedrun.scopehealth.com/patients?lastName=Mart%C3%ADnez
+
+== FRAME https://practice.speedrun.scopehealth.com/v/v4njgp9fww0qtbbfx0vhtg6njd/ ==
+Patients
+
+Find a patient by last name or date of birth.
+
+Last name
+or
+Date of birth
+Search
+
+Enter a last name or a full date of birth.
+
+Results
+Patients found
+Patient	MRN	Date of birth	Sex	
+Flags
+
+Martinez, Amber	HG9935322	02/16/1954 (72 y)	Female	
+Martínez, Andre	HG3001317	03/30/1964 (62 y)	Male	
+Restricted
+Martínez, Anna	HG8823240	08/11/1999 (27 y)	Female	
+Martínez, Annna	HG1889359	08/11/1999 (27 y)	Female	
+Merged
+Martinez, Anthony	HG6118651	07/05/2018 (8 y)	Male	
+Martinez, Barrett	HG5066806	11/06/1976 (49 y)	Male	
+Martinez, Betty	HG6975506	02/15/1968 (58 y)	Female	
+Restricted
+Martínez, Bobby	HG5489571	04/07/1953 (73 y)	Male	
+Martinez, Bradley	HG9069482	12/13/1993 (32 y)	Male	Deleted
+Martinez, Bruce	HG1102971	10/08/2000 (26 y)	Male	
+Martinez, Caarl	HG4668916	02/12/1996 (30 y)	Male	
+Merged
+Martínez, Camila	HG7983898	01/17/2006 (20 y)	Female	
+Martinez, Carl	HG1490717	02/12/1996 (30 y)	Male	
+Martinez, Carlos	HG2407446	02/08/1967 (59 y)	Male	
+Restricted
+Martinez, Catherine	HG8994434	04/23/1999 (27 y)	Female	
+Martínez, Catherine	HG9058163	01/18/1963 (63 y)	Female	
+Martinez, Christine	HG6723541	12/19/1975 (50 y)	Female	
+Martinez, Colleen	HG3776356	10/29/1983 (42 y)	Female	
+Martinez, Daniel	HG2517831	05/07/1983 (43 y)	Male	
+Martinez, David	HG9700450	03/30/1943 (83 y)	Male	
+Martínez, Dorothy	HG6340718	09/08/1990 (36 y)	Female	
+Martinez, Dorothy	HG6491239	02/23/1985 (41 y)	Female	
+Restricted Deleted
+Martínez, Elena	HG3427696	08/09/2004 (22 y)	Female	
+Martinez, Elizabeth	HG8821245	01/23/1953 (73 y)	Female	
+Martinez, Elizabeth	HG7328999	02/17/1987 (39 y)	Female	
+
+Showing 1 to 25 of 70 patients
+
+Rows per page
+25 per page
+50 per page
+100 per page
+Previous
+1
+2
+3
+Next
+Restricted chart requests
+Your requests to open restricted charts
+Patient	Reason	Status
+Ramirez, David	Providing care to this patient	Ended
+Ramirez, David	Providing care to this patient	Ended
+Porter, Catherine	Billing or insurance question	Ended
+Porter, Catherine	Billing or insurance question	Ended
+
+4 requests
+== FRAME INTERACTIVE ==
+INPUT[text] Martínez
+INPUT[date] 
+BUTTON[submit] Search
+A[] Martinez, Amber href=/patients/5786j4zjmx
+A[] Martínez, Andre href=/patients/3mb3fmvpqf
+A[] Martínez, Anna href=/patients/2jx2vmvf82
+A[] Martínez, Annna href=/patients/3cp06mqmkr
+A[] Martinez, Anthony href=/patients/43sp877hk8
+A[] Martinez, Barrett href=/patients/1qhr71j35s
+A[] Martinez, Betty href=/patients/2m7hcr8c8p
+A[] Martínez, Bobby href=/patients/64q4kwm435
+A[] Martinez, Bradley href=/patients/2c27l9p0rx
+A[] Martinez, Bruce href=/patients/5s7q8720kf
+A[] Martinez, Caarl href=/patients/14lxwz6731
+A[] Martínez, Camila href=/patients/40wchr3r76
+A[] Martinez, Carl href=/patients/58kz9snbw0
+A[] Martinez, Carlos href=/patients/70spv9np36
+A[] Martinez, Catherine href=/patients/4d5pvsjncc
+A[] Martínez, Catherine href=/patients/3z99m5crt3
+A[] Martinez, Christine href=/patients/3hmts0r8np
+A[] Martinez, Colleen href=/patients/6v7thxpvl1
+A[] Martinez, Daniel href=/patients/72bppzz644
+A[] Martinez, David href=/patients/24m9nmcsjc
+A[] Martínez, Dorothy href=/patients/2zlzf853t6
+A[] Martinez, Dorothy href=/patients/06pn9gwhsm
+A[] Martínez, Elena href=/patients/3z3g2px51v
+A[] Martinez, Elizabeth href=/patients/6k663t0zvd
+A[] Martinez, Elizabeth href=/patients/6v6wfql01j
+SELECT[select-one] 25 per page / 50 per page / 100 per page
+BUTTON[button] Previous
+BUTTON[button] 1
+BUTTON[button] 2
+BUTTON[button] 3
+BUTTON[button] Next
+A[] Ramirez, David href=/patients/3pdsxpwzr5
+A[] Ramirez, David href=/patients/28xpx631v1
+A[] Porter, Catherine href=/patients/2q123zlg2m
+A[] Porter, Catherine href=/patients/2q123zlg2m

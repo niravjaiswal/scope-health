@@ -1,0 +1,300 @@
+URL https://practice.speedrun.scopehealth.com/schedule/appointments?from=2026-10-14&to=2026-10-20
+
+== FRAME https://practice.speedrun.scopehealth.com/v/vj7c0710zb480hvx0m0t2s1zrj/ ==
+Schedule
+Day
+Provider
+Appointment list
+== FRAME INTERACTIVE ==
+A[] Day href=/schedule?date=2026-10-14
+A[] Provider href=/schedule/providers/4vqb93p4g9?date=2026-10-14
+A[] Appointment list href=/schedule/appointments?from=2026-10-14&to=2026-10-20
+IFRAME[]  src=/v/s15lw60phbph29djq9hwq5zrkj/
+== FRAME https://practice.speedrun.scopehealth.com/v/s15lw60phbph29djq9hwq5zrkj/ ==
+From
+To
+Location
+All locations
+Northgate
+Front Range
+Eastside
+Stonebrook
+Lakeside
+Riverbend
+Highline
+Prairie View
+Cedar Hollow
+Willow Creek
+Provider
+All providers
+Angel Ali, NP
+Gloria Allen, NP
+Diana Anderson, PA
+Lawrence Bennett, MD
+Joshua Bowman, PA
+Mateo Butler, MD
+Mei Carpenter, PA
+Valentina Carroll, MD
+Renee Chen, MD
+Jason Collins, NP
+James Cook, PA
+Jose Crawford, MD
+Donna Cunningham, MD
+Charles Davis, MD
+Matthew Evans, PA
+Liam Farrell, NP
+Desmond Fields, PA
+Ann Foster, MD
+David Fowler, MD
+Judith Garcia, MD
+Kathleen Garrison, DO
+Austin Gibson, NP
+Diane Gonzalez, MD
+Colleen Grant, PA
+Elena Gutierrez, NP
+Walter Guzman, PA
+Richard Harrison, NP
+Susan Herrera, DO
+Brandon Howell, NP
+Catherine Jackson, MD
+Lucas Johnson, NP
+William Kelly, NP
+Harold Larsen, PA
+Denise Lee, DO
+Matthew Lindgren, MD
+Edward Lindqvist, NP
+Lucas Lopez, NP
+Frances Maldonado, DO
+Janet Marshall, MD
+Lawrence Martin, MD
+Dorothy Mason, PA
+Garrett Meyer, MD
+Kevin Miller, MD
+Victoria Moore, MD
+Samuel Morris, MD
+Joyce Nelson, NP
+Katherine Nichols, NP
+Jose Nielsen, MD
+Bryan Palmer, NP
+Jennifer Parker, MD
+Valentina Perez, MD
+Joan Ramirez, MD
+Hannah Ramos, MD
+Brian Reed, NP
+Martha Reynolds, MD
+Jacqueline Rios, MD
+Olivia Rivera, NP
+Priya Roberts, NP
+Lawrence Rodriguez, NP
+Zachary Ruiz, MD
+Dorothy Scott, NP
+Donald Silva, MD
+Mark Sorensen, MD
+Julie Soto, MD
+Kenneth Sullivan, NP
+James Tillman, DO
+Susan Vasquez, NP
+Aaron Wagner, MD
+Lori Watkins, MD
+Soren Welch, NP
+Brenda West, MD
+Megan Williamson, MD
+Ruth Green, DO
+Douglas Hughes, MD
+Rachel Martinez, MD
+Laura Murphy, MD
+Martha Olson, MD
+Edward Pierce, NP
+Ann Shaw, MD
+Joe Wilson, PA
+Status
+All statuses
+Scheduled
+Completed
+Cancelled
+Late cancel
+No-show
+Visit type
+All visit types
+Allergy injection
+Annual physical
+Anticoagulation check
+Behavioral health session
+Blood pressure check
+Cardiac rehabilitation
+Cast check
+Diabetes management
+Echocardiogram
+Electrocardiogram
+Follow-up visit
+Hearing test
+Immunization
+Infusion therapy
+Joint injection
+Lab draw
+Medication check
+Minor procedure
+New patient visit
+Nutrition counseling
+Office visit
+Physical therapy session
+Post-operative check
+Pre-operative evaluation
+Prenatal visit
+Sick visit
+Skin biopsy
+Skin check
+Sleep consultation
+Smoking cessation counseling
+Specialist consultation
+Sports physical
+Stress test
+Telehealth visit
+Travel consultation
+Ultrasound
+Vision screening
+Well-child check
+Wound care
+X-ray
+Show appointments
+Appointments from Oct 14, 2026 to Oct 20, 2026
+Appointments, earliest first
+Date
+, earliest first. Change the order
+	Time	Patient	Provider	Visit type	Status
+Oct 14, 2026	8:00 AM to 8:20 AM CDT	Turner, Shirley	Diana Anderson, PA	Office visit	
+Completed
+Oct 14, 2026	8:00 AM to 8:30 AM CDT 
+Recurring
+	Wilson, Wayne	Mark Sorensen, MD	Wound care	
+Completed
+Oct 14, 2026	8:00 AM to 8:30 AM CDT 
+Recurring
+	Tran, Robert	Desmond Fields, PA	Smoking cessation counseling	
+Completed
+Oct 14, 2026	8:00 AM to 9:00 AM CDT	Wilson, George	Diana Anderson, PA	Infusion therapy	
+Cancelled
+Oct 14, 2026	8:20 AM to 9:20 AM CDT	Smith, Joyce	Brenda West, MD	Minor procedure	
+Completed
+Oct 14, 2026	8:30 AM to 8:50 AM CDT	Davis, Virginia	Desmond Fields, PA	Follow-up visit	
+Completed
+Oct 14, 2026	8:30 AM to 8:50 AM CDT	Garcia, David	Mark Sorensen, MD	Office visit	
+No-show
+Oct 14, 2026	9:00 AM to 9:20 AM CDT	Lee, Jonathan	Diana Anderson, PA	Follow-up visit	
+Completed
+Oct 14, 2026	9:00 AM to 9:20 AM CDT 
+Recurring
+	Miller, Elizabeth	Mark Sorensen, MD	Prenatal visit	
+Completed
+Oct 14, 2026	9:15 AM to 9:55 AM CDT	Perry, Christine	Mark Sorensen, MD	Annual physical	
+Cancelled
+Oct 14, 2026	9:20 AM to 9:40 AM CDT	Vasquez, Jean	Diana Anderson, PA	Sports physical	
+Completed
+Oct 14, 2026	9:30 AM to 10:15 AM CDT 
+Recurring
+	Green, Kathleen	Desmond Fields, PA	Physical therapy session	
+Scheduled
+Oct 14, 2026	9:40 AM to 10:00 AM CDT	Ortega, Robert	Diana Anderson, PA	Follow-up visit	
+Completed
+Oct 14, 2026	9:40 AM to 10:10 AM CDT	Ford, John	Brenda West, MD	Wound care	
+Scheduled
+Oct 14, 2026	9:45 AM to 10:00 AM CDT	Harris, Michael	Mark Sorensen, MD	Lab draw	
+Late cancel
+Oct 14, 2026	9:45 AM to 10:25 AM CDT	Perez, Abigail	Mark Sorensen, MD	New patient visit	
+Scheduled
+Oct 14, 2026	10:00 AM to 10:15 AM CDT	Matthews, Omar	Diana Anderson, PA	Medication check	
+Late cancel
+Oct 14, 2026	10:00 AM to 10:20 AM CDT	Mitchell, Ashley	Mark Sorensen, MD	Follow-up visit	
+Cancelled
+Oct 14, 2026	10:00 AM to 10:40 AM CDT	Hudson, Aisha	Diana Anderson, PA	Annual physical	
+Scheduled
+Oct 14, 2026	10:20 AM to 10:50 AM CDT	Luna, Ronald	Brenda West, MD	Wound care	
+Scheduled
+Oct 14, 2026	10:30 AM to 10:50 AM CDT	Schaefer, Jessica	Mark Sorensen, MD	Telehealth visit	
+Scheduled
+Oct 14, 2026	10:40 AM to 11:00 AM CDT	Murphy, Valentina	Diana Anderson, PA	Sick visit	
+Scheduled
+Oct 14, 2026	11:00 AM to 11:15 AM CDT	Rodríguez, Hannah	Brenda West, MD	Anticoagulation check	
+Scheduled
+Oct 14, 2026	11:00 AM to 11:20 AM CDT	Williams, Mary	Aaron Wagner, MD	Follow-up visit	
+Scheduled
+Oct 14, 2026	11:00 AM to 11:30 AM CDT	Russell, Natalie	Diana Anderson, PA	Skin biopsy	
+Scheduled
+
+Showing 1 to 25 of 200+ appointments
+
+Rows per page
+25 per page
+50 per page
+100 per page
+Previous
+1
+2
+3
+Next
+== FRAME INTERACTIVE ==
+INPUT[date] 2026-10-14
+INPUT[date] 2026-10-20
+SELECT[select-one] All locations / Northgate / Front Range / Eastside / Stonebrook / Lakeside / Riverbend / Highl OPTIONS=All locations|Northgate|Front Range|Eastside|Stonebrook|Lakeside|Riverbend|Highline|Prairie View|Cedar Hollow|Willow Creek
+SELECT[select-one] All providers / Angel Ali, NP / Gloria Allen, NP / Diana Anderson, PA / Lawrence Bennett OPTIONS=All providers|Angel Ali, NP|Gloria Allen, NP|Diana Anderson, PA|Lawrence Bennett, MD|Joshua Bowman, PA|Mateo Butler, MD|Mei Carpenter, PA|Valentina Carroll, MD|Renee Chen, MD|Jason Collins, NP|James Cook, PA|Jose Crawford, MD|Donna Cunningham, MD|Charles Davis, MD|Matthew Evans, PA|Liam Farrell, NP|Desmond Fields, PA|Ann Foster, MD|David Fowler, MD|Judith Garcia, MD|Kathleen Garrison, DO|Austin Gibson, NP|Diane Gonzalez, MD|Colleen Grant, PA|Elena Gutierrez, NP|Walter Guzman, PA|Richard Harrison, NP|Susan Herrera, DO|Brandon Howell, NP|Catherine Jackson, MD|Lucas Johnson, NP|William Kelly, NP|Harold Larsen, PA|Denise Lee, DO|Matthew Lindgren, MD|Edward Lindqvist, NP|Lucas Lopez, NP|Frances Maldonado, DO|Janet Marshall, MD|Lawrence Martin, MD|Dorothy Mason, PA|Garrett Meyer, MD|Kevin Miller, MD|Victoria Moore, MD|Samuel Morris, MD|Joyce Nelson, NP|Katherine Nichols, NP|Jose Nielsen, MD|Bryan Palmer, NP|Jennifer Parker, MD|Valentina Perez, MD|Joan Ramirez, MD|Hannah Ramos, MD|Brian Reed, NP|Martha Reynolds, MD|Jacqueline Rios, MD|Olivia Rivera, NP|Priya Roberts, NP|Lawrence Rodriguez, NP|Zachary Ruiz, MD|Dorothy Scott, NP|Donald Silva, MD|Mark Sorensen, MD|Julie Soto, MD|Kenneth Sullivan, NP|James Tillman, DO|Susan Vasquez, NP|Aaron Wagner, MD|Lori Watkins, MD|Soren Welch, NP|Brenda West, MD|Megan Williamson, MD|Ruth Green, DO|Douglas Hughes, MD|Rachel Martinez, MD|Laura Murphy, MD|Martha Olson, MD|Edward Pierce, NP|Ann Shaw, MD|Joe Wilson, PA
+SELECT[select-one] All statuses / Scheduled / Completed / Cancelled / Late cancel / No-show OPTIONS=All statuses|Scheduled|Completed|Cancelled|Late cancel|No-show
+SELECT[select-one] All visit types / Allergy injection / Annual physical / Anticoagulation check / Behavior OPTIONS=All visit types|Allergy injection|Annual physical|Anticoagulation check|Behavioral health session|Blood pressure check|Cardiac rehabilitation|Cast check|Diabetes management|Echocardiogram|Electrocardiogram|Follow-up visit|Hearing test|Immunization|Infusion therapy|Joint injection|Lab draw|Medication check|Minor procedure|New patient visit|Nutrition counseling|Office visit|Physical therapy session|Post-operative check|Pre-operative evaluation|Prenatal visit|Sick visit|Skin biopsy|Skin check|Sleep consultation|Smoking cessation counseling|Specialist consultation|Sports physical|Stress test|Telehealth visit|Travel consultation|Ultrasound|Vision screening|Well-child check|Wound care|X-ray
+INPUT[hidden] 
+BUTTON[submit] Show appointments
+BUTTON[button] Date / , earliest first. Change the order
+A[] Oct 14, 2026 href=/patients/1z51c6nt6k/appointments/000gz3ss24
+A[] Turner, Shirley href=/patients/1z51c6nt6k
+A[] Oct 14, 2026 href=/patients/21p6zv34d3/recurring/49kzhht3ct
+A[] Wilson, Wayne href=/patients/21p6zv34d3
+A[] Oct 14, 2026 href=/patients/6szfd4wn3d/recurring/31zc3fzlbf
+A[] Tran, Robert href=/patients/6szfd4wn3d
+A[] Oct 14, 2026 href=/patients/2z02hsrvb9/appointments/6vhg2s7cz3
+A[] Wilson, George href=/patients/2z02hsrvb9
+A[] Oct 14, 2026 href=/patients/3f800709v2/appointments/0l8b6vqmhs
+A[] Smith, Joyce href=/patients/3f800709v2
+A[] Oct 14, 2026 href=/patients/2pdn6rb53m/appointments/2g9f15xwwb
+A[] Davis, Virginia href=/patients/2pdn6rb53m
+A[] Oct 14, 2026 href=/patients/3b6b750nt0/appointments/50j3qxxr61
+A[] Garcia, David href=/patients/3b6b750nt0
+A[] Oct 14, 2026 href=/patients/1lzxvj88zd/appointments/00fl88nb8t
+A[] Lee, Jonathan href=/patients/1lzxvj88zd
+A[] Oct 14, 2026 href=/patients/3fd2gk8r5n/recurring/0wm1b0mw23
+A[] Miller, Elizabeth href=/patients/3fd2gk8r5n
+A[] Oct 14, 2026 href=/patients/1dvgjvhz7d/appointments/50w68q70xf
+A[] Perry, Christine href=/patients/1dvgjvhz7d
+A[] Oct 14, 2026 href=/patients/5vzzjptxlw/appointments/1l46g5fq5s
+A[] Vasquez, Jean href=/patients/5vzzjptxlw
+A[] Oct 14, 2026 href=/patients/4n066v5brb/recurring/0ffvkkq7nr
+A[] Green, Kathleen href=/patients/4n066v5brb
+A[] Oct 14, 2026 href=/patients/1xb41ths62/appointments/615thbfj3x
+A[] Ortega, Robert href=/patients/1xb41ths62
+A[] Oct 14, 2026 href=/patients/5xjqv6d7mf/appointments/1zn5vqpvns
+A[] Ford, John href=/patients/5xjqv6d7mf
+A[] Oct 14, 2026 href=/patients/4xqp60q94x/appointments/4sml828ltr
+A[] Harris, Michael href=/patients/4xqp60q94x
+A[] Oct 14, 2026 href=/patients/4qzq3f7zl5/appointments/0t3q0qxp3z
+A[] Perez, Abigail href=/patients/4qzq3f7zl5
+A[] Oct 14, 2026 href=/patients/5d7xfdthjt/appointments/3npvpr2qbt
+A[] Matthews, Omar href=/patients/5d7xfdthjt
+A[] Oct 14, 2026 href=/patients/6hpq2qsfkb/appointments/71cj1n19xk
+A[] Mitchell, Ashley href=/patients/6hpq2qsfkb
+A[] Oct 14, 2026 href=/patients/3hdhbsfbq2/appointments/39bjx66468
+A[] Hudson, Aisha href=/patients/3hdhbsfbq2
+A[] Oct 14, 2026 href=/patients/3n3cj2whx1/appointments/2bfld4h9ks
+A[] Luna, Ronald href=/patients/3n3cj2whx1
+A[] Oct 14, 2026 href=/patients/5fljr2js6t/appointments/5rn5gw5n9g
+A[] Schaefer, Jessica href=/patients/5fljr2js6t
+A[] Oct 14, 2026 href=/patients/03q14ndmmd/appointments/6x505m94xc
+A[] Murphy, Valentina href=/patients/03q14ndmmd
+A[] Oct 14, 2026 href=/patients/6sqtnhdpq1/appointments/5qmf7g4kj1
+A[] Rodríguez, Hannah href=/patients/6sqtnhdpq1
+A[] Oct 14, 2026 href=/patients/1j01x82b8s/appointments/41g8x6rppt
+A[] Williams, Mary href=/patients/1j01x82b8s
+A[] Oct 14, 2026 href=/patients/728375g94r/appointments/1w6v4vf2w5
+A[] Russell, Natalie href=/patients/728375g94r
+SELECT[select-one] 25 per page / 50 per page / 100 per page OPTIONS=25 per page|50 per page|100 per page
+BUTTON[button] Previous
+BUTTON[button] 1
+BUTTON[button] 2
+BUTTON[button] 3
+BUTTON[button] Next

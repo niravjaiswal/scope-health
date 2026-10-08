@@ -1,0 +1,60 @@
+URL https://practice.speedrun.scopehealth.com/patients/535rn1pbvb/documents/33svbjbwc6
+
+== FRAME https://practice.speedrun.scopehealth.com/v/0k9q248sbfhplnhl7fxklzcbs2/ ==
+Gray, Anna
+MRN
+HG8916636
+Date of birth
+11/21/1963 (62 years)
+Sex
+Female
+Billing
+Invoices
+Demographics
+Insurance
+Problems
+Notes
+Documents
+Appointments
+Activity
+Documents in this chart, newest first
+Title	Type	Received	
+Actions
+
+Lab report: Hemoglobin A1c	Lab report	Apr 22, 2026	View
+Referral letter from Elk Bend Health Center	Referral letter	Mar 4, 2026	View
+Referral letter from Juniper Flats Eye and Ear	Referral letter	Feb 17, 2026	View
+Referral letter from Juniper Flats Eye and Ear	Referral letter	Jul 3, 2025	View
+
+4 documents
+
+Referral letter from Elk Bend Health Center
+Close document
+== FRAME INTERACTIVE ==
+A[] Invoices href=/billing/accounts/535rn1pbvb
+A[] Demographics href=/patients/535rn1pbvb
+A[] Insurance href=/patients/535rn1pbvb/insurance
+A[] Problems href=/patients/535rn1pbvb/problems
+A[] Notes href=/patients/535rn1pbvb/notes
+A[] Documents href=/patients/535rn1pbvb/documents
+A[] Appointments href=/patients/535rn1pbvb/appointments
+A[] Activity href=/patients/535rn1pbvb/activity
+A[] View href=/patients/535rn1pbvb/documents/2rmsqvd0l4
+A[] View href=/patients/535rn1pbvb/documents/33svbjbwc6
+A[] View href=/patients/535rn1pbvb/documents/1wzjlg3sdx
+A[] View href=/patients/535rn1pbvb/documents/376q535wmf
+BUTTON[button] Close document
+IFRAME[]  src=/v/ppgntp6wqbr09q2v58z97k80nf/
+== FRAME https://practice.speedrun.scopehealth.com/v/ppgntp6wqbr09q2v58z97k80nf/ ==
+Referral letter, received Mar 4, 2026 · 1 page · 26 KB
+Open in new tab
+Download
+100%
+Fit width
+== FRAME INTERACTIVE ==
+A[] Open in new tab href=/v/ppgntp6wqbr09q2v58z97k80nf/vprb0ck11njr2077mp
+A[] Download href=/v/ppgntp6wqbr09q2v58z97k80nf/vprb0ck11njr2077mp
+BUTTON[button] Zoom out
+BUTTON[button] Zoom in
+BUTTON[button] Fit width
+IMG[] Page 1 of 1, Referral letter received Mar 4, 2026 src=/v/ppgntp6wqbr09q2v58z97k80nf/jwgml318c6xdh3tp4l

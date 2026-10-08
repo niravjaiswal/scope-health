@@ -1,0 +1,42 @@
+URL: https://practice.speedrun.scopehealth.com/patients/2g52fpbwf6
+TITLE: Jackson, Judith · Wrenfield
+
+Jackson, Judith
+MRN
+HG4904582
+Date of birth
+11/12/2004 (21 years)
+Sex
+Female
+Billing
+Invoices
+Demographics
+Insurance
+Problems
+Notes
+Documents
+Appointments
+Activity
+Contact
+Phone
+(315) 747-7361
+Email
+j•••••@wrenmail.example
+Address
+2761 Harbor Ln
+Granite Fork, CO 80752
+Care team
+Primary provider
+William Kelly, NP
+Home location
+Highline
+
+---- INTERACTIVE ----
+[A] 'Invoices' /billing/accounts/2g52fpbwf6  
+[A] 'Demographics' /patients/2g52fpbwf6  page
+[A] 'Insurance' /patients/2g52fpbwf6/insurance  
+[A] 'Problems' /patients/2g52fpbwf6/problems  
+[A] 'Notes' /patients/2g52fpbwf6/notes  
+[A] 'Documents' /patients/2g52fpbwf6/documents  
+[A] 'Appointments' /patients/2g52fpbwf6/appointments  
+[A] 'Activity' /patients/2g52fpbwf6/activity  
