@@ -1,0 +1,95 @@
+URL https://practice.speedrun.scopehealth.com/patients/1j01x82b8s/appointments/249bpbk6g5
+
+== FRAME https://practice.speedrun.scopehealth.com/v/1ps12v0ltq47r12l1wtd1xv2tl/ ==
+Williams, Mary
+MRN
+HG8275898
+Date of birth
+03/19/2006 (20 years)
+Sex
+Female
+Billing
+Invoices
+Demographics
+Insurance
+Problems
+Notes
+Documents
+Appointments
+Activity
+Appointment on Jun 12, 2025
+Close
+Visit
+Date
+Jun 12, 2025
+Time
+2:15 PM to 2:55 PM CDT
+Length
+40 minutes
+Type
+New patient visit
+Status
+No-show
+People and place
+Provider
+Ann Shaw, MD
+Location
+Northgate
+Record
+Reference
+17141787
+Booked
+Jun 11, 2025, 6:43 PM CDT
+Last changed
+Jun 12, 2025, 2:34 PM CDT
+History
+History of this appointment
+When	User	Change
+Jun 11, 2025, 6:43 PM CDT	ethompson	Booked
+Jun 12, 2025, 2:34 PM CDT	dfisher	Status changed from 
+Scheduled to 
+No-show
+
+2 entries
+
+Appointments, newest first
+Date and time	Type	Provider	Location	Status
+Oct 14, 2026, 11:00 AM CDT	Follow-up visit	Aaron Wagner, MD	Northgate	
+Scheduled
+Feb 3, 2026, 1:15 PM CST	Minor procedure	Ann Shaw, MD	Northgate	
+Completed
+Jan 12, 2026, 7:45 AM CST	Post-operative check	Ann Shaw, MD	Northgate	
+Completed
+Nov 17, 2025, 1:15 PM CST	Cast check	Ann Shaw, MD	Northgate	
+Completed
+Nov 17, 2025, 9:45 AM CST	Office visit	Ann Shaw, MD	Northgate	
+Cancelled
+Nov 3, 2025, 2:00 PM CST	Office visit	Ann Shaw, MD	Northgate	
+Completed
+Jun 12, 2025, 2:15 PM CDT	New patient visit	Ann Shaw, MD	Northgate	
+No-show
+Jan 22, 2025, 12:45 PM CST	Post-operative check	Ann Shaw, MD	Northgate	
+Completed
+Oct 22, 2024, 2:00 PM CDT	Medication check	Ann Shaw, MD	Northgate	
+Late cancel
+
+9 appointments
+== FRAME INTERACTIVE ==
+A[] Invoices href=/billing/accounts/1j01x82b8s
+A[] Demographics href=/patients/1j01x82b8s
+A[] Insurance href=/patients/1j01x82b8s/insurance
+A[] Problems href=/patients/1j01x82b8s/problems
+A[] Notes href=/patients/1j01x82b8s/notes
+A[] Documents href=/patients/1j01x82b8s/documents
+A[] Appointments href=/patients/1j01x82b8s/appointments
+A[] Activity href=/patients/1j01x82b8s/activity
+BUTTON[button] Close
+A[] Oct 14, 2026, 11:00 AM href=/patients/1j01x82b8s/appointments/41g8x6rppt
+A[] Feb 3, 2026, 1:15 PM href=/patients/1j01x82b8s/appointments/2c78v2p4m1
+A[] Jan 12, 2026, 7:45 AM href=/patients/1j01x82b8s/appointments/4kpzdrn7fv
+A[] Nov 17, 2025, 1:15 PM href=/patients/1j01x82b8s/appointments/354fksxhzq
+A[] Nov 17, 2025, 9:45 AM href=/patients/1j01x82b8s/appointments/6gvh5wd85v
+A[] Nov 3, 2025, 2:00 PM href=/patients/1j01x82b8s/appointments/1c0cmv2vq5
+A[] Jun 12, 2025, 2:15 PM href=/patients/1j01x82b8s/appointments/249bpbk6g5
+A[] Jan 22, 2025, 12:45 PM href=/patients/1j01x82b8s/appointments/5lq2f80jxp
+A[] Oct 22, 2024, 2:00 PM href=/patients/1j01x82b8s/appointments/1jbs6mcb2x

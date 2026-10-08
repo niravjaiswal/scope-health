@@ -1,0 +1,113 @@
+Documents
+
+Referral letters, lab reports, and statements received for patients.
+
+Type
+All types
+Referral letter
+Lab report
+Statement
+Received from
+Received to
+Apply
+Clear filters
+Patient
+Find
+Documents received, newest first
+Received
+, newest first. Change the order
+	Type	Title	Patient	
+Actions
+
+Oct 14, 2026	Statement	Statement of account 2026-10	
+Jones, Ronald
+	View
+Oct 14, 2026	Statement	Statement of account 2026-10	
+Rogers, Juan
+	View
+Oct 14, 2026	Statement	Statement of account 2026-10	
+Davis, Betty
+	View
+Oct 14, 2026	Statement	Statement of account 2026-10	
+Austin, Linda
+	View
+Oct 14, 2026	Statement	Statement of account 2026-10	
+Sánchez, Jessica
+	View
+Oct 14, 2026	Statement	Statement of account 2026-10	
+Contreras, Kathleen
+	View
+Oct 14, 2026	Statement	Statement of account 2026-10	
+Powell, James
+	View
+Oct 14, 2026	Statement	Statement of account 2026-10	
+King, Donna
+	View
+Oct 14, 2026	Statement	
+Restricted chart	
+Fernandez, William
+Restricted
+	View
+Oct 14, 2026	Statement	Statement of account 2026-10	
+Álvarez, Debra
+	View
+Oct 13, 2026	Statement	Statement of account 2026-10	
+Johnson, Martha
+	View
+Oct 13, 2026	Statement	Statement of account 2026-10	
+Brown, Rebecca
+	View
+Oct 13, 2026	Statement	Statement of account 2026-10	
+Vega, Michael
+	View
+Oct 13, 2026	Statement	Statement of account 2026-10	
+Young, Larry
+	View
+Oct 13, 2026	Statement	Statement of account 2026-10	
+Williams, Ana
+	View
+Oct 13, 2026	Statement	Statement of account 2026-10	
+Garrett, Diego
+	View
+Oct 13, 2026	Statement	Statement of account 2026-10	
+Price, Ava
+	View
+Oct 13, 2026	Statement	Statement of account 2026-10	
+King, Robert
+	View
+Oct 13, 2026	Statement	Statement of account 2026-10	
+Martin, Ryan
+	View
+Oct 13, 2026	Statement	Statement of account 2026-10	
+Graham, Kimberly
+	View
+Oct 13, 2026	Statement	Statement of account 2026-10	
+James, Charles
+	View
+Oct 12, 2026	Statement	Statement of account 2026-10	
+Powell, Matthew
+	View
+Oct 12, 2026	Statement	
+Restricted chart	
+Wright, Gregory
+Restricted
+	View
+Oct 12, 2026	Statement	Statement of account 2026-10	
+Gonzalez, Zachary
+	View
+Oct 12, 2026	Statement	Statement of account 2026-10	
+Allen, Barbara
+	View
+
+Showing 1 to 25 of 200+ documents
+
+Rows per page
+25 per page
+50 per page
+100 per page
+Previous
+1
+2
+3
+Next
+[['Jones, Ronald', '/patients/3z3b0vjb73'], ['View', '/documents/3141523qmg'], ['Rogers, Juan', '/patients/3qbbxrbcg5'], ['View', '/documents/58z2c7k8jd'], ['Davis, Betty', '/patients/1cxnhkjmg3'], ['View', '/documents/1r35tm3t38'], ['Austin, Linda', '/patients/5q71h7cmqv'], ['View', '/documents/4bsz99qz9q'], ['Sánchez, Jessica', '/patients/5m1bxlg84h'], ['View', '/documents/2qc6ql8kvj'], ['Contreras, Kathleen', '/patients/30kzs61bxr'], ['View', '/documents/33z3x80dl6'], ['Powell, James', '/patients/0swj3nkh9s'], ['View', '/documents/672d4v17z9'], ['King, Donna', '/patients/2hv6h4l6gs'], ['View', '/documents/3dng1mhnwj'], ['Fernandez, William', '/patients/3pt7sxrzwn'], ['View', '/documents/5zl98snqmq'], ['Álvarez, Debra', '/patients/5nhcrpctlc'], ['View', '/documents/36rktcwtjm'], ['Johnson, Martha', '/patients/4l4hssrsx6'], ['View', '/documents/3z5mphxt1l'], ['Brown, Rebecca', '/patients/22hw5z10jf'], ['View', '/documents/5xk3jkp31l'], ['Vega, Michael', '/patients/5qs9tz0bgz'], ['View', '/documents/674djr6vqw'], ['Young, Larry', '/patients/6g53rw5fj1'], ['View', '/documents/0nhpdgmvm7'], ['Williams, Ana', '/patients/0mkdbh9mwv'], ['View', '/documents/5z6bgc8dbk'], ['Garrett, Diego', '/patients/1pcq9kxzwp'], ['View', '/documents/3w7mj6ttf4'], ['Price, Ava', '/patients/2r42x32xvq'], ['View', '/documents/05k9hmzcg2'], ['King, Robert', '/patients/0sm3rrgrc5'], ['View', '/documents/6xv03dg3w5'], ['Martin, Ryan', '/patients/6x6c4brvc3'], ['View', '/documents/6q0pjh36sg'], ['Graham, Kimberly', '/patients/24pl1b4d14'], ['View', '/documents/51k8hc56xn'], ['James, Charles', '/patients/2059vf9r2k'], ['View', '/documents/2qjg09r8tb'], ['Powell, Matthew', '/patients/65wt1dwrms'], ['View', '/documents/6m835vp48h'], ['Wright, Gregory', '/patients/1jng9lc61h'], ['View', '/documents/4908w3k0wn'], ['Gonzalez, Zachary', '/patients/2bk28xqq2q'], ['View', '/documents/3t9434px35'], ['Allen, Barbara', '/patients/401jl9cxm2'], ['View', '/documents/3p1p5s7pb7']]

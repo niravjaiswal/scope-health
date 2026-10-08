@@ -1,0 +1,127 @@
+URL: https://practice.speedrun.scopehealth.com/billing
+SORT: Total, largest first
+
+Billing
+
+Invoices of the practice. Filter by patient, location, dates, status, or amount owed.
+
+Find invoice
+Open
+Patient
+Find patient
+Location
+All locations
+Northgate
+Front Range
+Eastside
+Stonebrook
+Lakeside
+Riverbend
+Highline
+Prairie View
+Cedar Hollow
+Willow Creek
+Status
+All statuses
+Open
+Partly paid
+Paid
+Void
+Service date
+to
+Issued date
+to
+Amount owed
+to
+Apply filters
+Clear filters
+Invoices
+Sort by
+Issued date, newest first
+Issued date, oldest first
+Service date, newest first
+Service date, oldest first
+Amount owed, largest first
+Amount owed, smallest first
+Total, largest first
+Total, smallest first
+Patient, A to Z
+Patient, Z to A
+Location, A to Z
+Location, Z to A
+Status, A to Z
+Status, Z to A
+Invoice number, ascending
+Invoice number, descending
+Invoices matching the filters
+Invoice
+	Patient
+	Location
+	Service date
+	Issued
+	Total
+	Status
+
+29101395	Bowman, Jennifer	Highline	Jun 15, 2026	Jun 23, 2026	$14,894.68	
+Paid
+67140271	Baker, Christopher	Lakeside	Feb 7, 2025	Feb 13, 2025	$14,236.94	
+Paid
+31742868	Jones, Natalie	Cedar Hollow	Oct 10, 2025	Oct 15, 2025	$13,562.00	
+Paid
+90439975	Sullivan, Edward	Highline	Dec 30, 2024	Jan 6, 2025	$12,142.50	
+Partly paid
+70464575	Bradley, Deborah	Highline	Jan 9, 2025	Jan 9, 2025	$10,093.24	
+Paid
+03864859	Foster, Nancy	Prairie View	Apr 23, 2025	May 1, 2025	$9,235.00	
+Paid
+87769978	Fowler, Elizabeth	Highline	Jul 10, 2025	Jul 12, 2025	$9,070.39	
+Paid
+47110477	Munoz, Logan	Highline	Jul 8, 2025	Jul 15, 2025	$8,797.00	
+Paid
+30173765	Washington, Isabella	Prairie View	Feb 22, 2025	Feb 24, 2025	$8,537.17	
+Partly paid
+76044117	Thomas, Kyle	Prairie View	Dec 16, 2024	Dec 18, 2024	$8,390.00	
+Paid
+79449472	Soto, James	Willow Creek	Oct 31, 2024	Nov 2, 2024	$8,234.00	
+Partly paid
+29059532	Foster, Linda	Eastside	Feb 5, 2026	Feb 5, 2026	$8,119.00	
+Partly paid
+25342940	Ferguson, Steven	Front Range	Oct 29, 2024	Nov 7, 2024	$7,893.00	
+Paid
+95246750	Moreno, Jacqueline	Riverbend	Feb 19, 2026	Feb 24, 2026	$7,860.00	
+Paid
+71079793	Kessler, Christopher	Cedar Hollow	Aug 27, 2026	Aug 28, 2026	$7,805.84	
+Paid
+19782108	Castillo, Sandra	Prairie View	Jan 9, 2026	Jan 10, 2026	$7,502.67	
+Paid
+00701546	Bell, Jesse	Prairie View	Jul 24, 2026	Jul 27, 2026	$7,475.00	
+Partly paid
+42591782	Carlson, Terry	Prairie View	Nov 6, 2025	Nov 14, 2025	$7,283.00	
+Paid
+05665660	Phillips, Barbara	Highline	Aug 4, 2026	Aug 6, 2026	$7,121.00	
+Partly paid
+49284115	Sample, Demo 
+Restricted Test record	Prairie View	Apr 30, 2026	May 3, 2026	$7,078.00	
+Paid
+43463482	Gibson, Jennifer	Highline	Oct 8, 2025	Oct 15, 2025	$6,985.00	
+Paid
+82649908	Moore, Emma	Front Range	Oct 23, 2025	Oct 25, 2025	$6,936.90	
+Paid
+96538466	James, Colleen	Front Range	Nov 19, 2024	Nov 20, 2024	$6,762.17	
+Paid
+36797459	Willis, James	Northgate	Mar 10, 2025	Mar 19, 2025	$6,664.04	
+Void
+64924689	Davis, John	Lakeside	Feb 24, 2026	Feb 26, 2026	$6,628.93	
+Paid
+
+Showing 1 to 25 of 500+ invoices
+
+Rows per page
+25 per page
+50 per page
+100 per page
+Previous
+1
+2
+3
+Next

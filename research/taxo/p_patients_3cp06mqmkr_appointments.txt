@@ -1,0 +1,39 @@
+URL https://practice.speedrun.scopehealth.com/patients/2jx2vmvf82/appointments
+
+== FRAME https://practice.speedrun.scopehealth.com/v/1km8lx6s7n8dk37z84sj0g8211/ ==
+The record with MRN HG1889359 was merged into this record
+
+What was filed under it is shown here.
+
+Martínez, Anna
+MRN
+HG8823240
+Date of birth
+08/11/1999 (27 years)
+Sex
+Female
+Billing
+Invoices
+Demographics
+Insurance
+Problems
+Notes
+Documents
+Appointments
+Activity
+Appointments, newest first
+Date and time	Type	Provider	Location	Status
+Sep 30, 2025, 11:00 AM CDT	Immunization	Diana Anderson, PA	Northgate	
+Completed
+
+1 appointment
+== FRAME INTERACTIVE ==
+A[] Invoices href=/billing/accounts/2jx2vmvf82
+A[] Demographics href=/patients/2jx2vmvf82
+A[] Insurance href=/patients/2jx2vmvf82/insurance
+A[] Problems href=/patients/2jx2vmvf82/problems
+A[] Notes href=/patients/2jx2vmvf82/notes
+A[] Documents href=/patients/2jx2vmvf82/documents
+A[] Appointments href=/patients/2jx2vmvf82/appointments
+A[] Activity href=/patients/2jx2vmvf82/activity
+A[] Sep 30, 2025, 11:00 AM href=/patients/2jx2vmvf82/appointments/6vt0xtghsv

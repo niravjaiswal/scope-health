@@ -1,0 +1,127 @@
+URL: https://practice.speedrun.scopehealth.com/billing
+SORT: Issued date, oldest first
+
+Billing
+
+Invoices of the practice. Filter by patient, location, dates, status, or amount owed.
+
+Find invoice
+Open
+Patient
+Find patient
+Location
+All locations
+Northgate
+Front Range
+Eastside
+Stonebrook
+Lakeside
+Riverbend
+Highline
+Prairie View
+Cedar Hollow
+Willow Creek
+Status
+All statuses
+Open
+Partly paid
+Paid
+Void
+Service date
+to
+Issued date
+to
+Amount owed
+to
+Apply filters
+Clear filters
+Invoices
+Sort by
+Issued date, newest first
+Issued date, oldest first
+Service date, newest first
+Service date, oldest first
+Amount owed, largest first
+Amount owed, smallest first
+Total, largest first
+Total, smallest first
+Patient, A to Z
+Patient, Z to A
+Location, A to Z
+Location, Z to A
+Status, A to Z
+Status, Z to A
+Invoice number, ascending
+Invoice number, descending
+Invoices matching the filters
+Invoice
+	Patient
+	Location
+	Service date
+	Issued
+	Total
+	Status
+
+95428199	Khan, Olivia	Riverbend	Oct 14, 2024	Oct 14, 2024	$110.00	
+Void
+60917044	Ferguson, Michael	Eastside	Oct 14, 2024	Oct 14, 2024	$77.00	
+Paid
+77962759	Mensah, Matthew	Prairie View	Oct 14, 2024	Oct 14, 2024	$236.85	
+Paid
+98249087	Alvarez, Melissa	Prairie View	Oct 14, 2024	Oct 14, 2024	$186.61	
+Paid
+29349738	Bell, Lisa	Highline	Oct 14, 2024	Oct 14, 2024	$183.54	
+Paid
+83902146	Pérez, Mason 
+Restricted	Northgate	Oct 14, 2024	Oct 14, 2024	$48.61	
+Paid
+85218758	Ashby, Isabella	Cedar Hollow	Oct 14, 2024	Oct 14, 2024	$66.00	
+Paid
+93774958	Gutierrez, Daniel	Lakeside	Oct 14, 2024	Oct 14, 2024	$212.00	
+Paid
+17217436	Hicks, Joe	Northgate	Oct 14, 2024	Oct 14, 2024	$61.77	
+Paid
+43188577	Griffin, Jeremy	Eastside	Oct 14, 2024	Oct 14, 2024	$118.00	
+Paid
+24293706	Vega, Janet	Willow Creek	Oct 14, 2024	Oct 14, 2024	$331.00	
+Paid
+86639172	Fox, William	Front Range	Oct 14, 2024	Oct 14, 2024	$324.00	
+Paid
+66801410	Brown, Arthur	Northgate	Oct 14, 2024	Oct 14, 2024	$115.00	
+Partly paid
+10903162	Davis, Jennifer	Eastside	Oct 14, 2024	Oct 14, 2024	$51.10	
+Paid
+01791975	Jacobsen, Margaret	Prairie View	Oct 14, 2024	Oct 14, 2024	$38.79	
+Paid
+59779451	Smith, Jessica	Cedar Hollow	Oct 14, 2024	Oct 14, 2024	$73.00	
+Partly paid
+91996272	Gonzalez, Ronald	Front Range	Oct 14, 2024	Oct 14, 2024	$121.00	
+Paid
+19135416	Wheeler, Carolyn	Northgate	Oct 14, 2024	Oct 14, 2024	$530.99	
+Paid
+87413385	Mendoza, Charles	Willow Creek	Oct 14, 2024	Oct 14, 2024	$118.38	
+Paid
+24629932	Cox, Anthony	Highline	Oct 14, 2024	Oct 14, 2024	$74.98	
+Paid
+95261092	Snyder, Nathan	Lakeside	Oct 14, 2024	Oct 14, 2024	$94.00	
+Paid
+12498290	Ortiz, Christine	Highline	Oct 14, 2024	Oct 14, 2024	$68.00	
+Partly paid
+73708614	Gonzalez, Doris	Prairie View	Oct 14, 2024	Oct 14, 2024	$142.28	
+Paid
+19837598	Harrison, Benjamin	Lakeside	Oct 14, 2024	Oct 14, 2024	$174.60	
+Paid
+69698815	Chen, Robert	Prairie View	Oct 14, 2024	Oct 14, 2024	$69.92	
+Paid
+
+Showing 1 to 25 of 500+ invoices
+
+Rows per page
+25 per page
+50 per page
+100 per page
+Previous
+1
+2
+3
+Next

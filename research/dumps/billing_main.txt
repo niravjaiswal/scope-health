@@ -1,0 +1,183 @@
+URL: https://practice.speedrun.scopehealth.com/billing
+TITLE: Billing · Wrenfield
+
+Billing
+
+Invoices of the practice. Filter by patient, location, dates, status, or amount owed.
+
+Find invoice
+Open
+Patient
+Find patient
+Location
+All locations
+Northgate
+Front Range
+Eastside
+Stonebrook
+Lakeside
+Riverbend
+Highline
+Prairie View
+Cedar Hollow
+Willow Creek
+Status
+All statuses
+Open
+Partly paid
+Paid
+Void
+Service date
+to
+Issued date
+to
+Amount owed
+to
+Apply filters
+Clear filters
+Invoices
+Sort by
+Issued date, newest first
+Issued date, oldest first
+Service date, newest first
+Service date, oldest first
+Amount owed, largest first
+Amount owed, smallest first
+Total, largest first
+Total, smallest first
+Patient, A to Z
+Patient, Z to A
+Location, A to Z
+Location, Z to A
+Status, A to Z
+Status, Z to A
+Invoice number, ascending
+Invoice number, descending
+Invoices matching the filters
+Invoice
+	Patient
+	Location
+	Service date
+	Issued
+	Total
+	Status
+
+82593504	Soto, James	Lakeside	Oct 14, 2026	Oct 14, 2026	$186.00	
+Paid
+21617829	Matthews, Astrid	Highline	Oct 14, 2026	Oct 14, 2026	$122.00	
+Open
+03483827	Carter, Ryan	Prairie View	Oct 14, 2026	Oct 14, 2026	$189.58	
+Partly paid
+20724781	Ortega, Robert	Northgate	Oct 14, 2026	Oct 14, 2026	$186.00	
+Paid
+33536159	Gómez, Lisa	Cedar Hollow	Oct 14, 2026	Oct 14, 2026	$65.00	
+Open
+71924090	Griffin, Richard	Eastside	Oct 14, 2026	Oct 14, 2026	$194.11	
+Open
+39960657	Allen, Brandon	Front Range	Oct 14, 2026	Oct 14, 2026	$50.18	
+Open
+65227689	Barrett, Jessica	Eastside	Oct 14, 2026	Oct 14, 2026	$77.00	
+Partly paid
+04931186	Bennett, Jacqueline	Front Range	Oct 14, 2026	Oct 14, 2026	$167.93	
+Open
+43228220	Austin, Jessica	Cedar Hollow	Oct 14, 2026	Oct 14, 2026	$85.00	
+Open
+31386638	Gómez, Abigail	Front Range	Oct 14, 2026	Oct 14, 2026	$81.00	
+Partly paid
+64569788	Miller, Amanda	Northgate	Oct 12, 2026	Oct 14, 2026	$71.00	
+Partly paid
+04985749	Jimenez, Laura	Cedar Hollow	Oct 12, 2026	Oct 14, 2026	$67.00	
+Paid
+35143260	Vargas, Diana 
+Restricted	Prairie View	Oct 6, 2026	Oct 14, 2026	$288.75	
+Partly paid
+93596251	Jones, Melissa	Eastside	Oct 13, 2026	Oct 14, 2026	$82.00	
+Open
+12713202	Rodriguez, Henry	Front Range	Oct 13, 2026	Oct 14, 2026	$281.00	
+Open
+25452487	Phillips, Ryan	Northgate	Oct 12, 2026	Oct 14, 2026	$307.00	
+Open
+02901303	Bryant, Ines	Highline	Oct 9, 2026	Oct 14, 2026	$177.33	
+Open
+82241746	Harris, Julie	Prairie View	Oct 12, 2026	Oct 14, 2026	$156.00	
+Open
+32707981	Brown, Edward 
+Restricted	Riverbend	Oct 14, 2026	Oct 14, 2026	$89.00	
+Open
+75951701	Hernandez, John	Stonebrook	Oct 13, 2026	Oct 14, 2026	$377.00	
+Open
+27894852	Whitaker, Susan	Northgate	Oct 9, 2026	Oct 14, 2026	$153.58	
+Paid
+13832243	Smith, Andrea	Willow Creek	Oct 9, 2026	Oct 14, 2026	$37.00	
+Open
+66844228	Hansen, Russell	Stonebrook	Oct 9, 2026	Oct 14, 2026	$214.57	
+Paid
+92607115	Smith, Jennifer	Cedar Hollow	Oct 13, 2026	Oct 14, 2026	$111.00	
+Paid
+
+Showing 1 to 25 of 500+ invoices
+
+Rows per page
+25 per page
+50 per page
+100 per page
+Previous
+1
+2
+3
+Next
+
+---- INTERACTIVE ----
+[INPUT] 'Invoice number'  number 
+[BUTTON] 'Open'   
+[INPUT] 'Last name'  patient 
+[BUTTON] 'Find patient'   
+[SELECT] 'All locations\nNorthgate\nFront Range\nEastside\nStonebrook\nLakeside\nRiverbend\nHighl'  location 
+[SELECT] 'All statuses\nOpen\nPartly paid\nPaid\nVoid'  status 
+[INPUT] 'Service date from'  serviceFrom 
+[INPUT] 'Service date to'  serviceTo 
+[INPUT] 'Issued date from'  issuedFrom 
+[INPUT] 'Issued date to'  issuedTo 
+[INPUT] 'Amount owed, at least'  owedAtLeast 
+[INPUT] 'Amount owed, at most'  owedAtMost 
+[BUTTON] 'Apply filters'   
+[BUTTON] 'Clear filters'   
+[SELECT] 'Issued date, newest first\nIssued date, oldest first\nService date, newest first\nS'  sort 
+[BUTTON] 'Invoice'   
+[BUTTON] 'Patient'   
+[BUTTON] 'Location'   
+[BUTTON] 'Service date'   
+[BUTTON] 'Issued'   
+[BUTTON] 'Total'   
+[BUTTON] 'Status'   
+[A] '82593504' /billing/invoices/6b7q92km6g  
+[A] '21617829' /billing/invoices/2cw2d6krzf  
+[A] '03483827' /billing/invoices/5h618fxx1w  
+[A] '20724781' /billing/invoices/0h9svwws1g  
+[A] '33536159' /billing/invoices/2dm5dwxwwn  
+[A] '71924090' /billing/invoices/72vkfclnck  
+[A] '39960657' /billing/invoices/1njk73zn9k  
+[A] '65227689' /billing/invoices/4l6c4vkcx5  
+[A] '04931186' /billing/invoices/5nkzrqwvbl  
+[A] '43228220' /billing/invoices/01mzwxsv5k  
+[A] '31386638' /billing/invoices/37cb9w7xbp  
+[A] '64569788' /billing/invoices/2343qgct07  
+[A] '04985749' /billing/invoices/6zqkx9b148  
+[A] '35143260' /billing/invoices/130g464065  
+[A] '93596251' /billing/invoices/1pqf6tfgbl  
+[A] '12713202' /billing/invoices/5l1205k000  
+[A] '25452487' /billing/invoices/2hdcz7nbzh  
+[A] '02901303' /billing/invoices/2csmjmdjr8  
+[A] '82241746' /billing/invoices/5dnnks294d  
+[A] '32707981' /billing/invoices/2c0rhf95cn  
+[A] '75951701' /billing/invoices/4mfmp9fcwm  
+[A] '27894852' /billing/invoices/66v5xrf1jz  
+[A] '13832243' /billing/invoices/54cqksq126  
+[A] '66844228' /billing/invoices/48fn7t1nx2  
+[A] '92607115' /billing/invoices/0419ck9qb7  
+[SELECT] '25 per page\n50 per page\n100 per page'  size 
+[BUTTON] 'Previous'   
+[BUTTON] '1'   page
+[BUTTON] '2'   
+[BUTTON] '3'   
+[BUTTON] 'Next'   

@@ -1,0 +1,43 @@
+URL: https://practice.speedrun.scopehealth.com/billing/invoices/2jpjhscb4k
+TITLE: Billing · Wrenfield
+
+Invoices
+Invoice 64848917
+Invoice 64848917
+Void
+
+Espinoza, Sofía · Eastside · Service on Oct 13, 2026
+
+Patient account
+Open chart
+
+This invoice is void
+
+Nothing is owed on it.
+
+Details
+Patient
+Espinoza, Sofía MRN HG9542438
+Location
+Eastside
+Service date
+Oct 13, 2026
+Issued
+Oct 14, 2026
+Total
+$159.00
+Status
+Void
+Ledger
+Ledger of this invoice, oldest first
+Date	Description	Charges	Payments and adjustments
+Oct 14, 2026	Charge for services on Oct 13, 2026	$159.00	
+Oct 14, 2026	Payment received		$36.82
+Oct 14, 2026	Invoice voided		$122.18
+Amount owed	$0.00
+
+---- INTERACTIVE ----
+[A] 'Invoices' /billing  
+[A] 'Patient account' /billing/accounts/52l4wbx8sr  
+[A] 'Open chart' /patients/52l4wbx8sr  
+[A] 'Espinoza, Sofía' /patients/52l4wbx8sr  

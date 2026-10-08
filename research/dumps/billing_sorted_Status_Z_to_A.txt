@@ -1,0 +1,126 @@
+URL: https://practice.speedrun.scopehealth.com/billing
+SORT: Status, Z to A
+
+Billing
+
+Invoices of the practice. Filter by patient, location, dates, status, or amount owed.
+
+Find invoice
+Open
+Patient
+Find patient
+Location
+All locations
+Northgate
+Front Range
+Eastside
+Stonebrook
+Lakeside
+Riverbend
+Highline
+Prairie View
+Cedar Hollow
+Willow Creek
+Status
+All statuses
+Open
+Partly paid
+Paid
+Void
+Service date
+to
+Issued date
+to
+Amount owed
+to
+Apply filters
+Clear filters
+Invoices
+Sort by
+Issued date, newest first
+Issued date, oldest first
+Service date, newest first
+Service date, oldest first
+Amount owed, largest first
+Amount owed, smallest first
+Total, largest first
+Total, smallest first
+Patient, A to Z
+Patient, Z to A
+Location, A to Z
+Location, Z to A
+Status, A to Z
+Status, Z to A
+Invoice number, ascending
+Invoice number, descending
+Invoices matching the filters
+Invoice
+	Patient
+	Location
+	Service date
+	Issued
+	Total
+	Status
+
+64848917	Espinoza, Sofía	Eastside	Oct 13, 2026	Oct 14, 2026	$159.00	
+Void
+89272701	Long, Dylan	Northgate	Oct 12, 2026	Oct 14, 2026	$116.00	
+Void
+46120668	Martin, Kathleen	Highline	Oct 13, 2026	Oct 14, 2026	$221.34	
+Void
+04646290	Ramirez, Lawrence	Highline	Oct 13, 2026	Oct 14, 2026	$137.00	
+Void
+90687432	Miller, Michael	Lakeside	Oct 9, 2026	Oct 14, 2026	$38.00	
+Void
+71759579	Brown, Linda	Highline	Oct 7, 2026	Oct 14, 2026	$37.00	
+Void
+81915307	Hill, Jacob	Northgate	Oct 9, 2026	Oct 14, 2026	$62.00	
+Void
+83390690	Henry, John	Front Range	Oct 6, 2026	Oct 14, 2026	$44.96	
+Void
+37469620	Scott, Elizabeth	Eastside	Oct 13, 2026	Oct 14, 2026	$84.00	
+Void
+44253614	Keller, Donald	Northgate	Oct 6, 2026	Oct 14, 2026	$130.41	
+Void
+32330375	Thomas, Mei	Eastside	Oct 8, 2026	Oct 14, 2026	$182.00	
+Void
+25090650	Rodríguez, Joan	Front Range	Oct 12, 2026	Oct 14, 2026	$78.00	
+Void
+77353005	Hayes, Evelyn	Front Range	Oct 6, 2026	Oct 14, 2026	$371.58	
+Void
+46515929	Harris, Terry	Highline	Oct 9, 2026	Oct 14, 2026	$222.00	
+Void
+29561979	Morris, Brian	Prairie View	Oct 7, 2026	Oct 14, 2026	$26.00	
+Void
+49998097	Henry, Joshua	Eastside	Oct 6, 2026	Oct 14, 2026	$39.12	
+Void
+82621269	Gómez, Christopher	Riverbend	Oct 12, 2026	Oct 14, 2026	$197.00	
+Void
+80149171	Bell, Kathleen	Riverbend	Oct 12, 2026	Oct 14, 2026	$48.63	
+Void
+41752784	Gomez, Mark	Cedar Hollow	Oct 12, 2026	Oct 14, 2026	$55.00	
+Void
+19051583	Jimenez, Margaret	Willow Creek	Oct 13, 2026	Oct 14, 2026	$220.29	
+Void
+07829343	Nielsen, Nicole	Prairie View	Oct 13, 2026	Oct 14, 2026	$123.00	
+Void
+90027784	Rios, Jacqueline	Cedar Hollow	Oct 13, 2026	Oct 14, 2026	$71.00	
+Void
+11744253	Hanson, Linda	Front Range	Oct 9, 2026	Oct 14, 2026	$103.00	
+Void
+94707139	Anderson, Bradley	Front Range	Oct 13, 2026	Oct 14, 2026	$179.00	
+Void
+72855797	Davis, Larry	Willow Creek	Oct 12, 2026	Oct 14, 2026	$91.13	
+Void
+
+Showing 1 to 25 of 500+ invoices
+
+Rows per page
+25 per page
+50 per page
+100 per page
+Previous
+1
+2
+3
+Next

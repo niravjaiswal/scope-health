@@ -1,0 +1,17 @@
+URL https://practice.speedrun.scopehealth.com/billing/accounts/21vnfcj01d
+
+== FRAME https://practice.speedrun.scopehealth.com/v/0wxt9g6pjl1s2h514j2c4pw8r3/ ==
+Invoices
+Account of Driscoll, Christopher
+Driscoll, Christopher
+MRN
+HG3028894
+Date of birth
+02/27/1972
+Open chart
+Invoices
+
+No invoices on this account
+== FRAME INTERACTIVE ==
+A[] Invoices href=/billing
+A[] Open chart href=/patients/21vnfcj01d

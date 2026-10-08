@@ -1,0 +1,382 @@
+URL https://practice.speedrun.scopehealth.com/activity?record=document
+
+== FRAME https://practice.speedrun.scopehealth.com/v/3g9k76kr3xcvn2s3z084rfk2th/ ==
+Activity
+
+What staff did in Wrenfield, newest first.
+
+User
+All users
+Aisha Wilson (awilson)
+Alexander Nunez (anunez)
+Andrea Hill (ahill)
+Andres Mendez (amendez)
+Angel Ali, NP (aali)
+Anna Mejia (amejia)
+Austin Gibson, NP (agibson)
+Barbara Wilson (bwilson)
+Betty Baker (bbaker)
+Brandon Howell, NP (bhowell)
+Brian Reed, NP (breed)
+Bryan Palmer, NP (bpalmer)
+Caleb Price (cprice)
+Carlos Barnes (cbarnes)
+Christian Walker (cwalker)
+Colleen Grant, PA (cgrant)
+David Hamilton (dhamilton)
+Debra Stevens (dstevens)
+Desmond Fields, PA (dfields)
+Diana Anderson, PA (danderson)
+Diane Fisher (dfisher)
+Dorothy Mason, PA (dmason)
+Dorothy Scott, NP (dscott)
+Dr. Bennett (lbennett)
+Dr. Butler (mbutler)
+Dr. Carroll (vcarroll)
+Dr. Chen (rchen)
+Dr. Crawford (jcrawford)
+Dr. Cunningham (dcunningham)
+Dr. Davis (cdavis)
+Dr. Foster (afoster)
+Dr. Fowler (dfowler)
+Dr. Garcia (jgarcia)
+Dr. Garrison (kgarrison)
+Dr. Gonzalez (dgonzalez)
+Dr. Green (rgreen)
+Dr. Herrera (sherrera)
+Dr. Hughes (dhughes)
+Dr. Jackson (cjackson)
+Dr. Lee (dlee)
+Dr. Lindgren (mlindgren)
+Dr. Maldonado (fmaldonado)
+Dr. Marshall (jmarshall)
+Dr. Martin (lmartin)
+Dr. Martinez (rmartinez)
+Dr. Meyer (gmeyer)
+Dr. Miller (kmiller)
+Dr. Moore (vmoore)
+Dr. Morris (smorris)
+Dr. Murphy (lmurphy)
+Dr. Nielsen (jnielsen)
+Dr. Olson (molson)
+Dr. Parker (jparker)
+Dr. Perez (vperez)
+Dr. Ramirez (jramirez)
+Dr. Ramos (hramos)
+Dr. Reynolds (mreynolds)
+Dr. Rios (jrios)
+Dr. Ruiz (zruiz)
+Dr. Shaw (ashaw)
+Dr. Silva (dsilva)
+Dr. Sorensen (msorensen)
+Dr. Soto (jsoto)
+Dr. Tillman (jtillman)
+Dr. Wagner (awagner)
+Dr. Watkins (lwatkins)
+Dr. West (bwest)
+Dr. Williamson (mwilliamson)
+Edward Lindqvist, NP (elindqvist)
+Edward Pierce, NP (epierce)
+Elena Gutierrez, NP (egutierrez)
+Elena Thompson (ethompson)
+Fatima Ramirez (framirez)
+Gary Haddad (ghaddad)
+Gloria Allen, NP (gallen)
+Grace Garcia (ggarcia)
+Gregory Patterson (gpatterson)
+Harold Larsen, PA (hlarsen)
+Henry Davis (hdavis)
+Ingrid Rivera (irivera)
+Jack Simpson (jsimpson)
+James Cook, PA (jcook)
+Janice Adams (jadams)
+Jason Collins, NP (jcollins)
+Joe Brown (jbrown)
+Joe Jackson (jjackson)
+Joe Wilson, PA (jwilson)
+Jonathan Jacobsen (jjacobsen)
+Jordan Alvarado (jalvarado)
+Joshua Bowman, PA (jbowman)
+Joyce Nelson, NP (jnelson)
+Juan Price (jprice)
+Katherine Nichols, NP (knichols)
+Kathryn Martinez (kmartinez)
+Kathryn Russell (krussell)
+Kenneth Sullivan, NP (ksullivan)
+Kimberly Espinoza (kespinoza)
+Larry Jones (ljones2)
+Lawrence Jones (ljones)
+Lawrence Rodriguez, NP (lrodriguez)
+Liam Farrell, NP (lfarrell)
+Logan Martinez (lmartinez)
+Lucas Johnson, NP (ljohnson)
+Lucas Lopez, NP (llopez)
+Maria Flores (mflores)
+Matthew Evans, PA (mevans)
+Mei Carpenter, PA (mcarpenter)
+Mei Miller (mmiller)
+Melissa Davis (mdavis)
+Michelle Martinez (mmartinez)
+Nancy Phillips (nphillips)
+Olivia Rivera, NP (orivera)
+Priya Roberts, NP (proberts)
+Richard Harrison, NP (rharrison)
+Sandra Anderson (sanderson)
+Sophia Clark (sclark)
+Soren Welch, NP (swelch)
+Stephanie Henderson (shenderson)
+Susan Vasquez, NP (svasquez)
+Teresa Warren (twarren)
+Theresa Medina (tmedina)
+Timothy Moore (tmoore)
+Vincent Herrera (vherrera)
+Vincent Morgan (vmorgan)
+Walter Guzman, PA (wguzman)
+William Kelly, NP (wkelly)
+Zoe Christensen (zchristensen)
+frontdesk (frontdesk)
+Action
+All actions
+Created
+Changed
+Deleted
+Merged
+Opened
+Logged in
+Record
+All records
+Patient
+Appointment
+Recurring appointment
+Invoice
+Document
+User account
+From
+To
+Apply
+Clear filters
+Patient
+Find
+Activity, newest first
+Time	User	Action	Record	What changed
+Oct 14, 2026, 9:59 AM CDT	
+David Hamilton
+dhamilton
+	Opened	
+Lab report, received Oct 14, 2026
+Ramírez, David
+	None
+Oct 14, 2026, 9:59 AM CDT	
+Gloria Allen, NP
+gallen
+	Opened	
+Lab report, received Oct 14, 2026
+Lee, Cheryl
+	None
+Oct 14, 2026, 9:59 AM CDT	
+Dr. Soto
+jsoto
+	Opened	
+Lab report, received Oct 14, 2026
+Ramírez, David
+	None
+Oct 14, 2026, 9:59 AM CDT	
+Dr. Nielsen
+jnielsen
+	Opened	
+Lab report, received Oct 14, 2026
+Lee, Cheryl
+	None
+Oct 14, 2026, 9:59 AM CDT	
+Ingrid Rivera
+irivera
+	Created	
+Lab report, received Oct 14, 2026
+Ramírez, David
+	Filed
+Oct 14, 2026, 8:59 AM MDT	
+Desmond Fields, PA
+dfields
+	Opened	
+Referral letter, received Oct 11, 2026
+Pena, Shirley
+	None
+Oct 14, 2026, 9:58 AM CDT	
+Dr. Lee
+dlee
+	Opened	
+Statement, received Oct 14, 2026
+Davis, Betty
+	None
+Oct 14, 2026, 8:58 AM MDT	
+Dr. Ramos
+hramos
+	Opened	
+Lab report, received Oct 14, 2026
+Moore, Judy
+	None
+Oct 14, 2026, 8:58 AM MDT	
+Matthew Evans, PA
+mevans
+	Opened	
+Lab report, received Oct 14, 2026
+Johnson, Ashley
+	None
+Oct 14, 2026, 9:58 AM CDT	
+Olivia Rivera, NP
+orivera
+	Opened	
+Lab report, received Oct 14, 2026
+González, Billy
+	None
+Oct 14, 2026, 9:57 AM CDT	
+Dr. Crawford
+jcrawford
+	Opened	
+Lab report, received Oct 14, 2026
+Lee, Cheryl
+	None
+Oct 14, 2026, 9:57 AM CDT	
+Dr. Garrison
+kgarrison
+	Opened	
+Referral letter, received Oct 13, 2026
+Sanders, Michelle
+	None
+Oct 14, 2026, 9:57 AM CDT	
+Dr. Butler
+mbutler
+	Opened	
+Lab report, received Oct 14, 2026
+Lee, Cheryl
+	None
+Oct 14, 2026, 9:57 AM CDT	
+Sophia Clark
+sclark
+	Created	
+Lab report, received Oct 14, 2026
+Lee, Cheryl
+	Filed
+Oct 14, 2026, 9:57 AM CDT	
+Lawrence Jones
+ljones
+	Created	
+Lab report, received Oct 14, 2026
+Robertson, Wayne
+	Filed
+Oct 14, 2026, 9:56 AM CDT	
+Lucas Lopez, NP
+llopez
+	Opened	
+Statement, received Oct 14, 2026
+Jones, Ronald
+	None
+Oct 14, 2026, 8:56 AM MDT	
+Dr. Shaw
+ashaw
+	Opened	
+Referral letter, received Oct 14, 2026
+Davis, Mary
+	None
+Oct 14, 2026, 8:56 AM MDT	
+Dr. Marshall
+jmarshall
+	Opened	
+Lab report, received Oct 14, 2026
+Harvey, Sharon
+	None
+Oct 14, 2026, 9:55 AM CDT	
+Dr. Chen
+rchen
+	Opened	
+Lab report, received Oct 14, 2026
+Voss, Jesus
+	None
+Oct 14, 2026, 9:55 AM CDT	
+Dorothy Mason, PA
+dmason
+	Opened	
+Lab report, received Oct 14, 2026
+Ellis, Bradley
+	None
+Oct 14, 2026, 9:55 AM CDT	
+Lawrence Jones
+ljones
+	Created	
+Statement, received Oct 14, 2026
+Jones, Ronald
+	Filed
+Oct 14, 2026, 8:55 AM MDT	
+Dr. Ruiz
+zruiz
+	Opened	
+Referral letter, received Oct 14, 2026
+Alexander, Sarah
+	None
+Oct 14, 2026, 8:55 AM MDT	
+Desmond Fields, PA
+dfields
+	Opened	
+Lab report, received Oct 14, 2026
+Davis, Ahmed
+	None
+Oct 14, 2026, 8:54 AM MDT	
+Dr. Davis
+cdavis
+	Opened	
+Lab report, received Oct 14, 2026
+Young, Richard
+	None
+Oct 14, 2026, 9:54 AM CDT	
+Austin Gibson, NP
+agibson
+	Opened	
+Referral letter, received Oct 14, 2026
+Ruiz, Andrew
+	None
+
+Showing 1 to 25 of 200+ entries
+
+Rows per page
+25 per page
+50 per page
+Previous
+Next
+== FRAME INTERACTIVE ==
+SELECT All users / Aisha Wilson (awilson) / Alexander Nunez (anunez) / Andrea Hill (ahill) / An
+SELECT All actions / Created / Changed / Deleted / Merged / Opened / Logged in
+SELECT All records / Patient / Appointment / Recurring appointment / Invoice / Document / User acco
+INPUT 
+INPUT 
+BUTTON Apply
+BUTTON Clear filters
+INPUT 
+BUTTON Find
+A Lab report, received Oct 14, 2026 href=/documents/4nswk8vqpn
+A Lab report, received Oct 14, 2026 href=/documents/3cwnq3mk1j
+A Lab report, received Oct 14, 2026 href=/documents/4nswk8vqpn
+A Lab report, received Oct 14, 2026 href=/documents/3cwnq3mk1j
+A Lab report, received Oct 14, 2026 href=/documents/4nswk8vqpn
+A Referral letter, received Oct 11, 2026 href=/documents/1hdj6fx3jr
+A Statement, received Oct 14, 2026 href=/documents/1r35tm3t38
+A Lab report, received Oct 14, 2026 href=/documents/72k6w983bc
+A Lab report, received Oct 14, 2026 href=/documents/4q9336b214
+A Lab report, received Oct 14, 2026 href=/documents/6z7xnqw3jm
+A Lab report, received Oct 14, 2026 href=/documents/3cwnq3mk1j
+A Referral letter, received Oct 13, 2026 href=/documents/2tqhx8zf5j
+A Lab report, received Oct 14, 2026 href=/documents/3cwnq3mk1j
+A Lab report, received Oct 14, 2026 href=/documents/3cwnq3mk1j
+A Lab report, received Oct 14, 2026 href=/documents/62xz9n2lgg
+A Statement, received Oct 14, 2026 href=/documents/3141523qmg
+A Referral letter, received Oct 14, 2026 href=/documents/14wrdvd1pj
+A Lab report, received Oct 14, 2026 href=/documents/3mbnn13rz5
+A Lab report, received Oct 14, 2026 href=/documents/5hkwgqxr1n
+A Lab report, received Oct 14, 2026 href=/documents/21k22z2jf7
+A Statement, received Oct 14, 2026 href=/documents/3141523qmg
+A Referral letter, received Oct 14, 2026 href=/documents/3ghvzrp048
+A Lab report, received Oct 14, 2026 href=/documents/5m5lkzpd40
+A Lab report, received Oct 14, 2026 href=/documents/06njr38mfd
+A Referral letter, received Oct 14, 2026 href=/documents/4220mpqnr4
+SELECT 25 per page / 50 per page
+BUTTON Previous
+BUTTON Next

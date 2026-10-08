@@ -1,0 +1,17 @@
+URL https://practice.speedrun.scopehealth.com/billing/accounts/35psdd8vkf
+
+== FRAME https://practice.speedrun.scopehealth.com/v/jnfrjhnl3ltfz0n6pjqnm55rlh/ ==
+Invoices
+Account of Palmer, Betty
+Palmer, Betty
+MRN
+HG6168682
+Date of birth
+10/06/1982
+Open chart
+Invoices
+
+No invoices on this account
+== FRAME INTERACTIVE ==
+A[] Invoices href=/billing
+A[] Open chart href=/patients/35psdd8vkf

@@ -1,0 +1,614 @@
+
+#### 3swl6qfzhr
+Ramírez, Alice
+Contact
+Phone
+(360) 625-3953
+Email
+a•••••@postfield.example
+Address
+9133 Willow Ave
+Harbor Glen, KS 66741
+Care team
+Primary provider
+Diana Anderson, PA
+Home location
+Northgate
+#### 3swl6qfzhr/insurance
+Ramírez, Alice
+Primary insurance
+Payer
+Union Workers Health Fund
+Plan
+Local 114 Plan
+Member ID
+BPQ275572268
+#### 3swl6qfzhr/appointments
+Ramírez, Alice
+Appointments, newest first
+Date and time	Type	Provider	Location	Status
+Oct 22, 2026, 3:40 PM CDT	Sick visit	Diana Anderson, PA	Northgate	
+Scheduled
+Sep 16, 2026, 4:40 PM CDT	Immunization	Diana Anderson, PA	Northgate	
+Completed
+May 28, 2026, 8:00 AM CDT	Office visit	Diana Anderson, PA	Northgate	
+Completed
+May 3, 2026, 9:40 AM CDT	Follow-up visit	Diana Anderson, PA	Northgate	
+Cancelled
+Apr 29, 2026, 9:00 AM CDT	Office visit	Diana Anderson, PA	Northgate	
+Completed
+Oct 22, 2025, 8:20 AM CDT	Medication check	Diana Anderson, PA	Northgate	
+Completed
+Oct 1, 2025, 8:40 AM CDT	Stress test	Diana Anderson, PA	Northgate	
+Completed
+Jul 30, 2025, 10:40 AM CDT	Cast check	Diana Anderson, PA	Northgate	
+Completed
+Jun 21, 2025, 10:20 AM CDT	Immunization	Diana Anderson, PA	Northgate	
+Completed
+Apr 28, 2025, 8:40 AM CDT	Sick visit	Diana Anderson, PA	Northgate	
+Completed
+Feb 18, 2025, 9:00 AM CST	Infusion therapy	Desmond Fields, PA	Northgate	
+Late cancel
+Jan 30, 2025, 8:30 AM CST	Follow-up visit	Desmond Fields, PA	Northgate	
+Completed
+Oct 18, 2024, 10:15 AM CDT	Follow-up visit	Valentina Perez, MD	Northgate	
+Completed
+
+13 appointments
+#### 53twnlcd3s
+Ramirez, Andrea
+Contact
+Phone
+(360) 924-8490
+Email
+a•••••@mailbox.example
+Address
+5270 Summit Pl
+Harbor Glen, KS 66741
+Care team
+Primary provider
+Ann Shaw, MD
+Home location
+Northgate
+#### 53twnlcd3s/insurance
+Ramirez, Andrea
+Primary insurance
+Payer
+Tallgrass Health Plan
+Plan
+Bronze 6000
+Member ID
+UGK327933189
+#### 53twnlcd3s/appointments
+Ramirez, Andrea
+Appointments, newest first
+Date and time	Type	Provider	Location	Status
+Jan 15, 2026, 7:00 AM CST	Follow-up visit	Ann Shaw, MD	Northgate	
+Completed
+Jan 2, 2026, 9:30 AM CST	Well-child check	Ann Shaw, MD	Northgate	
+Completed
+Dec 12, 2025, 8:15 AM CST	Lab draw	Ann Shaw, MD	Northgate	
+No-show
+Aug 14, 2025, 2:00 PM CDT	Follow-up visit	Ann Shaw, MD	Northgate	
+Completed
+Mar 7, 2025, 2:30 PM CST	Telehealth visit	Ann Shaw, MD	Northgate	
+Completed
+Oct 29, 2024, 10:30 AM CDT	Post-operative check	Ann Shaw, MD	Northgate	
+Completed
+
+6 appointments
+#### 6fjzdfg4qj
+Ramírez, Andrea
+Contact
+Phone
+(360) 936-2507
+Email
+a•••••@inbox.example
+Address
+1021 Pine Ln
+Alder Creek, KS 66752
+Care team
+Primary provider
+Julie Soto, MD
+Home location
+Northgate
+#### 6fjzdfg4qj/insurance
+Ramírez, Andrea
+Primary insurance
+Payer
+Tallgrass Health Plan
+Plan
+Silver 3500
+Member ID
+JYQ258226682
+#### 6fjzdfg4qj/appointments
+Ramírez, Andrea
+Appointments, newest first
+Date and time	Type	Provider	Location	Status
+May 22, 2026, 3:45 PM CDT	Minor procedure	Julie Soto, MD	Northgate	
+No-show
+
+1 appointment
+#### 3jnxnkkrqc
+Ramirez, Benjamin
+Contact
+Phone
+(360) 826-0424
+Email
+b•••••@mailbox.example
+Address
+6237 Orchard Blvd
+Harbor Glen, KS 66741
+Care team
+Primary provider
+None on file
+Home location
+Northgate
+#### 3jnxnkkrqc/insurance
+Ramirez, Benjamin
+Primary insurance
+Payer
+Union Workers Health Fund
+Plan
+Local 114 Plan
+Member ID
+JVW160761766
+#### 3jnxnkkrqc/appointments
+Ramirez, Benjamin
+Appointments, newest first
+Date and time	Type	Provider	Location	Status
+Sep 22, 2026, 6:20 PM CDT	New patient visit	Diana Anderson, PA	Northgate	
+Late cancel
+May 13, 2025, 2:40 PM CDT	Follow-up visit	Joe Wilson, PA	Northgate	
+Completed
+Mar 25, 2025, 4:00 PM CDT	Telehealth visit	Joe Wilson, PA	Northgate	
+Completed
+
+3 appointments
+#### 6ckwl4sq92
+Ramirez, Betty
+Contact
+Phone
+(360) 804-2408
+Email
+Not on file
+Address
+4761 Ridge Ave
+Alder Creek, KS 66752
+Care team
+Primary provider
+None on file
+Home location
+Northgate
+#### 6ckwl4sq92/insurance
+Ramirez, Betty
+Primary insurance
+Payer
+Tallgrass Health Plan
+Plan
+Bronze 6000
+Member ID
+THH540323314
+#### 6ckwl4sq92/appointments
+Ramirez, Betty
+Appointments, newest first
+Date and time	Type	Provider	Location	Status
+Apr 13, 2026, 9:40 AM CDT	Office visit	Gloria Allen, NP	Northgate	
+No-show
+
+1 appointment
+#### 0hgrsfsq8h
+Ramirez, Billy
+Contact
+Phone
+(360) 601-4798
+Email
+b•••••@wrenmail.example
+Address
+4185 Prairie Ct Apt 20
+Harbor Glen, KS 66741
+Care team
+Primary provider
+Desmond Fields, PA
+Home location
+Northgate
+#### 0hgrsfsq8h/insurance
+Ramirez, Billy
+
+No insurance on file
+
+This patient is recorded as self-pay.
+#### 0hgrsfsq8h/appointments
+Ramirez, Billy
+Appointments, newest first
+Date and time	Type	Provider	Location	Status
+Aug 26, 2026, 8:00 AM CDT	Lab draw	Desmond Fields, PA	Northgate	
+Completed
+Aug 13, 2026, 3:00 PM CDT	Medication check	Desmond Fields, PA	Northgate	
+Completed
+Aug 7, 2026, 3:00 PM CDT	Skin biopsy	Desmond Fields, PA	Northgate	
+Completed
+Jun 22, 2026, 3:30 PM CDT	Sick visit	Desmond Fields, PA	Northgate	
+Completed
+Jun 4, 2026, 9:30 AM CDT	New patient visit	Desmond Fields, PA	Northgate	
+Cancelled
+May 13, 2026, 2:00 PM CDT	Office visit	Desmond Fields, PA	Northgate	
+Completed
+Apr 1, 2026, 3:00 PM CDT	Sick visit	Desmond Fields, PA	Northgate	
+Completed
+Mar 5, 2026, 2:30 PM CST	Physical therapy session	Desmond Fields, PA	Northgate	
+Completed
+Oct 31, 2025, 2:30 PM CDT	Follow-up visit	Valentina Perez, MD	Northgate	
+Completed
+Sep 16, 2025, 11:30 AM CDT	Medication check	Desmond Fields, PA	Northgate	
+Completed
+Jul 15, 2025, 1:00 PM CDT	New patient visit	Desmond Fields, PA	Northgate	
+Late cancel
+Jun 26, 2025, 4:30 PM CDT	Skin check	Desmond Fields, PA	Northgate	
+No-show
+Apr 24, 2025, 2:30 PM CDT	Immunization	Desmond Fields, PA	Northgate	
+Completed
+Mar 18, 2025, 9:30 AM CDT	Behavioral health session	Desmond Fields, PA	Northgate	
+Completed
+Jan 20, 2025, 9:30 AM CST	Follow-up visit	Desmond Fields, PA	Northgate	
+Late cancel
+Jan 10, 2025, 10:30 AM CST	Office visit	Desmond Fields, PA	Northgate	
+Completed
+Dec 11, 2024, 3:00 PM CST	Post-operative check	Desmond Fields, PA	Northgate	
+Completed
+Nov 12, 2024, 7:00 PM CST	Annual physical	Diana Anderson, PA	Northgate	
+Completed
+Nov 1, 2024, 4:00 PM CDT	Post-operative check	Joe Wilson, PA	Northgate	
+Completed
+Oct 30, 2024, 4:00 PM CDT	New patient visit	Desmond Fields, PA	Northgate	
+Completed
+
+20 appointments
+#### 53tgx0rj0g
+Ramirez, Brenda
+Contact
+Phone
+(360) 534-7081
+Email
+b•••••@postfield.example
+Address
+6291 Oak Way
+Alder Creek, KS 66752
+Care team
+Primary provider
+Desmond Fields, PA
+Home location
+Northgate
+#### 53tgx0rj0g/insurance
+Ramirez, Brenda
+Primary insurance
+Payer
+State Family Assistance
+Plan
+Family Care
+Member ID
+WUF867463166
+#### 53tgx0rj0g/appointments
+Ramirez, Brenda
+Appointments, newest first
+Date and time	Type	Provider	Location	Status
+Aug 18, 2026, 11:30 AM CDT	Lab draw	Desmond Fields, PA	Northgate	
+Completed
+Aug 18, 2026, 9:30 AM CDT	Lab draw	Desmond Fields, PA	Northgate	
+Completed
+May 11, 2026, 10:45 AM CDT	Lab draw	Julie Soto, MD	Northgate	
+Completed
+Apr 16, 2026, 11:00 AM CDT	Follow-up visit	Desmond Fields, PA	Northgate	
+Completed
+Feb 12, 2026, 1:00 PM CST	Lab draw	Desmond Fields, PA	Northgate	
+Completed
+Jan 23, 2026, 1:00 PM CST	Skin check	Desmond Fields, PA	Northgate	
+Completed
+Dec 4, 2025, 8:30 AM CST	Sick visit	Desmond Fields, PA	Northgate	
+Completed
+Dec 2, 2025, 9:00 AM CST	Lab draw	Desmond Fields, PA	Northgate	
+Late cancel
+Nov 12, 2025, 1:30 PM CST	Sick visit	Desmond Fields, PA	Northgate	
+Completed
+Aug 29, 2025, 4:00 PM CDT	Follow-up visit	Desmond Fields, PA	Northgate	
+Completed
+Aug 7, 2025, 10:00 AM CDT	Stress test	Desmond Fields, PA	Northgate	
+Late cancel
+Aug 5, 2025, 1:00 PM CDT	Annual physical	Desmond Fields, PA	Northgate	
+No-show
+Jul 28, 2025, 10:30 AM CDT	Medication check	Desmond Fields, PA	Northgate	
+Completed
+May 14, 2025, 3:30 PM CDT	Office visit	Desmond Fields, PA	Northgate	
+Completed
+May 13, 2025, 2:30 PM CDT	Allergy injection	Desmond Fields, PA	Northgate	
+Completed
+Apr 22, 2025, 11:00 AM CDT	Follow-up visit	Desmond Fields, PA	Northgate	
+Completed
+Feb 18, 2025, 2:00 PM CST	Nutrition counseling	Desmond Fields, PA	Northgate	
+Cancelled
+Dec 27, 2024, 10:30 AM CST	Follow-up visit	Desmond Fields, PA	Northgate	
+Completed
+Dec 13, 2024, 11:30 AM CST	Office visit	Desmond Fields, PA	Northgate	
+Completed
+Dec 12, 2024, 3:30 PM CST	Sick visit	Desmond Fields, PA	Northgate	
+Completed
+Nov 14, 2024, 10:00 AM CST	Hearing test	Desmond Fields, PA	Northgate	
+Completed
+
+21 appointments
+#### 71tmbt5tr0
+Ramírez, Charles
+Contact
+Phone
+(360) 347-1615
+Email
+c•••••@wrenmail.example
+Address
+951 Juniper Blvd
+Harbor Glen, KS 66741
+Care team
+Primary provider
+None on file
+Home location
+Northgate
+#### 71tmbt5tr0/insurance
+Ramírez, Charles
+Primary insurance
+Payer
+Meridian Mutual Health
+Plan
+PPO Plus
+Member ID
+YHR346170897
+#### 71tmbt5tr0/appointments
+Ramírez, Charles
+
+No single appointments on record.
+#### 3375qhk5xj
+Ramírez, Charles
+Contact
+Phone
+(360) 802-6588
+Email
+c•••••@wrenmail.example
+Address
+1631 Mesa Ln
+Alder Creek, KS 66752
+Care team
+Primary provider
+Charles Davis, MD
+Home location
+Northgate
+#### 3375qhk5xj/insurance
+Ramírez, Charles
+Primary insurance
+Payer
+Tallgrass Health Plan
+Plan
+Gold 1000
+Member ID
+FHS208665908
+#### 3375qhk5xj/appointments
+Ramírez, Charles
+Appointments, newest first
+Date and time	Type	Provider	Location	Status
+Jun 9, 2026, 2:15 PM CDT	Office visit	Charles Davis, MD	Northgate	
+Completed
+May 15, 2026, 9:30 AM CDT	X-ray	Charles Davis, MD	Northgate	
+Completed
+May 12, 2026, 2:20 PM CDT	Follow-up visit	Gloria Allen, NP	Northgate	
+No-show
+Oct 10, 2025, 2:00 PM CDT	Annual physical	Charles Davis, MD	Northgate	
+Completed
+Apr 22, 2025, 12:00 PM CDT	Follow-up visit	Charles Davis, MD	Northgate	
+Completed
+
+5 appointments
+#### 1xklszt01q
+Ramírez, Colleen
+Contact
+Phone
+(360) 293-5773
+Email
+c•••••@mailbox.example
+Address
+1631 Mesa Ln
+Alder Creek, KS 66752
+Care team
+Primary provider
+Brenda West, MD
+Home location
+Northgate
+#### 1xklszt01q/insurance
+Ramírez, Colleen
+Primary insurance
+Payer
+Tallgrass Health Plan
+Plan
+Gold 1000
+Member ID
+GUS523243035
+#### 1xklszt01q/appointments
+Ramírez, Colleen
+
+No single appointments on record.
+#### 154xqznlrb
+Ramírez, Cynthia
+Contact
+Phone
+(360) 944-9923
+Email
+c•••••@postfield.example
+Address
+2703 Maple Ave
+Harbor Glen, KS 66741
+Care team
+Primary provider
+Ann Shaw, MD
+Home location
+Northgate
+#### 154xqznlrb/insurance
+Ramírez, Cynthia
+Primary insurance
+Payer
+Tallgrass Health Plan
+Plan
+Bronze 6000
+Member ID
+HGC059558417
+#### 154xqznlrb/appointments
+Ramírez, Cynthia
+Appointments, newest first
+Date and time	Type	Provider	Location	Status
+Apr 21, 2026, 12:00 PM CDT	Immunization	Ann Shaw, MD	Northgate	
+Completed
+Feb 24, 2026, 12:00 PM CST	Sick visit	Ann Shaw, MD	Northgate	
+Completed
+Oct 2, 2025, 7:15 AM CDT	Lab draw	Ann Shaw, MD	Northgate	
+Completed
+Aug 7, 2025, 2:30 PM CDT	Lab draw	Ann Shaw, MD	Northgate	
+Cancelled
+Jul 28, 2025, 1:15 PM CDT	Telehealth visit	Ann Shaw, MD	Northgate	
+Completed
+Jul 16, 2025, 4:00 PM CDT	Telehealth visit	Joe Wilson, PA	Northgate	
+Completed
+Jun 18, 2025, 11:00 AM CDT	Lab draw	Aaron Wagner, MD	Northgate	
+Completed
+Oct 24, 2024, 8:00 AM CDT	Annual physical	Ann Shaw, MD	Northgate	
+Completed
+
+8 appointments
+#### 45mg44v4rw
+Ramirez, Diane
+Contact
+Phone
+(360) 804-2408
+Email
+d•••••@inbox.example
+Address
+4761 Ridge Ave
+Alder Creek, KS 66752
+Care team
+Primary provider
+Charles Davis, MD
+Home location
+Northgate
+#### 45mg44v4rw/insurance
+Ramirez, Diane
+Primary insurance
+Payer
+Copper Mesa Health
+Plan
+Open Access
+Member ID
+VPQ021052513
+#### 45mg44v4rw/appointments
+Ramirez, Diane
+
+No single appointments on record.
+#### 2gq722tm5t
+The record with MRN HG9022146 was merged into this record
+Contact
+Phone
+(360) 865-9468
+Email
+k•••••@wrenmail.example
+Address
+6381 Glen Ave
+Harbor Glen, KS 66741
+Care team
+Primary provider
+Lucas Johnson, NP
+Home location
+Northgate
+#### 2gq722tm5t/insurance
+The record with MRN HG9022146 was merged into this record
+Primary insurance
+Payer
+Union Workers Health Fund
+Plan
+Local 114 Plan
+Member ID
+BWJ389505277
+#### 2gq722tm5t/appointments
+The record with MRN HG9022146 was merged into this record
+Appointments, newest first
+Date and time	Type	Provider	Location	Status
+Jan 29, 2026, 7:15 AM CST	Office visit	Lucas Johnson, NP	Northgate	
+No-show
+Dec 23, 2025, 4:00 PM CST	Office visit	Judith Garcia, MD	Northgate	
+Completed
+Sep 11, 2025, 1:40 PM CDT	Follow-up visit	Brenda West, MD	Northgate	
+Cancelled
+Aug 5, 2025, 8:20 AM CDT	Blood pressure check	Joe Wilson, PA	Northgate	
+Completed
+Jul 31, 2025, 12:30 PM CDT	Office visit	Lucas Johnson, NP	Northgate	
+Completed
+Jul 31, 2025, 9:30 AM CDT	Follow-up visit	Lucas Johnson, NP	Northgate	
+Completed
+May 28, 2025, 1:30 PM CDT	Office visit	Mark Sorensen, MD	Northgate	
+Completed
+Mar 12, 2025, 10:15 AM CDT	Follow-up visit	Mark Sorensen, MD	Northgate	
+Completed
+Feb 6, 2025, 8:15 AM CST	Office visit	Lucas Johnson, NP	Northgate	
+Completed
+Dec 9, 2024, 9:30 AM CST	Follow-up visit	Mark Sorensen, MD	Northgate	
+Completed
+
+10 appointments
+#### 610g063wl6
+Singh, Carol
+Contact
+Phone
+(214) 950-8397
+Email
+Not on file
+Address
+5382 Madison Rd
+Granite Fork, CO 80752
+Care team
+Primary provider
+William Kelly, NP
+Home location
+Highline
+#### 610g063wl6/insurance
+Singh, Carol
+Primary insurance
+Payer
+Meridian Mutual Health
+Plan
+HMO Select
+Member ID
+QJQ934051669
+#### 610g063wl6/appointments
+Singh, Carol
+
+No single appointments on record.
+#### 4mnpvl1nfp
+The record with MRN HG2301332 was merged into this record
+Contact
+Phone
+(214) 205-9647
+Email
+c•••••@mailbox.example
+Address
+9417 Jefferson Ave Apt 12
+Granite Fork, CO 80752
+Care team
+Primary provider
+Renee Chen, MD
+Home location
+Highline
+#### 4mnpvl1nfp/insurance
+The record with MRN HG2301332 was merged into this record
+Primary insurance
+Payer
+Meridian Mutual Health
+Plan
+HMO Select
+Member ID
+JLC537331451
+#### 4mnpvl1nfp/appointments
+The record with MRN HG2301332 was merged into this record
+
+No single appointments on record.

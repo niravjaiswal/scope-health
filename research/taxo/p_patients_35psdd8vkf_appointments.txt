@@ -1,0 +1,30 @@
+URL https://practice.speedrun.scopehealth.com/patients/35psdd8vkf/appointments
+
+== FRAME https://practice.speedrun.scopehealth.com/v/3c7f88wk2z5lcg1mjsqvcxg31f/ ==
+Palmer, Betty
+MRN
+HG6168682
+Date of birth
+10/06/1982 (44 years)
+Sex
+Female
+Billing
+Invoices
+Demographics
+Insurance
+Problems
+Notes
+Documents
+Appointments
+Activity
+
+No single appointments on record.
+== FRAME INTERACTIVE ==
+A[] Invoices href=/billing/accounts/35psdd8vkf
+A[] Demographics href=/patients/35psdd8vkf
+A[] Insurance href=/patients/35psdd8vkf/insurance
+A[] Problems href=/patients/35psdd8vkf/problems
+A[] Notes href=/patients/35psdd8vkf/notes
+A[] Documents href=/patients/35psdd8vkf/documents
+A[] Appointments href=/patients/35psdd8vkf/appointments
+A[] Activity href=/patients/35psdd8vkf/activity

@@ -1,0 +1,127 @@
+URL: https://practice.speedrun.scopehealth.com/billing
+SORT: Amount owed, largest first
+
+Billing
+
+Invoices of the practice. Filter by patient, location, dates, status, or amount owed.
+
+Find invoice
+Open
+Patient
+Find patient
+Location
+All locations
+Northgate
+Front Range
+Eastside
+Stonebrook
+Lakeside
+Riverbend
+Highline
+Prairie View
+Cedar Hollow
+Willow Creek
+Status
+All statuses
+Open
+Partly paid
+Paid
+Void
+Service date
+to
+Issued date
+to
+Amount owed
+to
+Apply filters
+Clear filters
+Invoices
+Sort by
+Issued date, newest first
+Issued date, oldest first
+Service date, newest first
+Service date, oldest first
+Amount owed, largest first
+Amount owed, smallest first
+Total, largest first
+Total, smallest first
+Patient, A to Z
+Patient, Z to A
+Location, A to Z
+Location, Z to A
+Status, A to Z
+Status, Z to A
+Invoice number, ascending
+Invoice number, descending
+Invoices matching the filters
+Invoice
+	Patient
+	Location
+	Service date
+	Issued
+	Total
+	Status
+
+29059532	Foster, Linda	Eastside	Feb 5, 2026	Feb 5, 2026	$8,119.00	
+Partly paid
+90439975	Sullivan, Edward	Highline	Dec 30, 2024	Jan 6, 2025	$12,142.50	
+Partly paid
+60640253	McDonald, Julia	Willow Creek	Feb 12, 2025	Feb 20, 2025	$5,076.00	
+Open
+46694288	García, Lisa	Front Range	Oct 13, 2026	Oct 14, 2026	$4,334.17	
+Open
+00701546	Bell, Jesse	Prairie View	Jul 24, 2026	Jul 27, 2026	$7,475.00	
+Partly paid
+79449472	Soto, James	Willow Creek	Oct 31, 2024	Nov 2, 2024	$8,234.00	
+Partly paid
+79277303	Warren, David	Eastside	Oct 8, 2026	Oct 12, 2026	$3,672.26	
+Open
+72771905	Barrett, Sean	Prairie View	Dec 9, 2024	Dec 14, 2024	$3,648.00	
+Open
+75174646	Turner, Patricia	Eastside	Sep 25, 2026	Sep 28, 2026	$3,645.00	
+Open
+30173765	Washington, Isabella	Prairie View	Feb 22, 2025	Feb 24, 2025	$8,537.17	
+Partly paid
+38771007	Bradley, Karen	Eastside	Feb 4, 2026	Feb 9, 2026	$4,823.00	
+Partly paid
+37943018	Chapman, Abigail 
+Restricted	Front Range	Aug 18, 2025	Aug 21, 2025	$3,547.91	
+Open
+51037518	Cooper, Mary	Front Range	Sep 22, 2026	Sep 22, 2026	$3,881.00	
+Partly paid
+05665660	Phillips, Barbara	Highline	Aug 4, 2026	Aug 6, 2026	$7,121.00	
+Partly paid
+62429894	Lane, Yuki	Highline	Dec 2, 2025	Dec 9, 2025	$3,255.22	
+Open
+50461220	Cruz, Liam	Northgate	Jul 1, 2026	Jul 10, 2026	$3,244.20	
+Open
+03592750	Clark, Zachary	Stonebrook	Oct 7, 2026	Oct 7, 2026	$4,329.00	
+Partly paid
+21347822	Vargas, Susan	Highline	Oct 30, 2024	Oct 30, 2024	$3,124.00	
+Open
+29400387	Perez, Dorothy	Northgate	Jul 10, 2025	Jul 11, 2025	$3,496.81	
+Partly paid
+59546674	Bailey, Jack	Cedar Hollow	Feb 10, 2025	Feb 13, 2025	$2,877.00	
+Open
+53456213	Baker, Catherine	Lakeside	Sep 16, 2026	Sep 17, 2026	$2,768.00	
+Open
+06901124	Carter, Cheryl	Prairie View	Sep 29, 2026	Sep 29, 2026	$2,763.61	
+Open
+60210862	Kowalski, Emily	Front Range	Sep 24, 2026	Sep 26, 2026	$2,749.00	
+Open
+39228969	Clark, Deborah	Cedar Hollow	Dec 11, 2024	Dec 20, 2024	$3,314.00	
+Partly paid
+60220988	Gardner, Mason	Lakeside	Jul 15, 2025	Jul 24, 2025	$3,626.00	
+Partly paid
+
+Showing 1 to 25 of 500+ invoices
+
+Rows per page
+25 per page
+50 per page
+100 per page
+Previous
+1
+2
+3
+Next

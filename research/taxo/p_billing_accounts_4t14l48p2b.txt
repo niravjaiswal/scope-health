@@ -1,0 +1,17 @@
+URL https://practice.speedrun.scopehealth.com/billing/accounts/4t14l48p2b
+
+== FRAME https://practice.speedrun.scopehealth.com/v/80pqrw6lnhlr9r1clrxzbb82dq/ ==
+Invoices
+Account of Greene, Robert
+Greene, Robert
+MRN
+HG5154051
+Date of birth
+06/29/2001
+Open chart
+Invoices
+
+No invoices on this account
+== FRAME INTERACTIVE ==
+A[] Invoices href=/billing
+A[] Open chart href=/patients/4t14l48p2b

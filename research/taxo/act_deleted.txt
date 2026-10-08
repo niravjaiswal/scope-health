@@ -1,0 +1,385 @@
+URL https://practice.speedrun.scopehealth.com/activity?action=delete
+
+== FRAME https://practice.speedrun.scopehealth.com/v/1qpffv3jhcr4cz182s1d5n6744/ ==
+Activity
+
+What staff did in Wrenfield, newest first.
+
+User
+All users
+Aisha Wilson (awilson)
+Alexander Nunez (anunez)
+Andrea Hill (ahill)
+Andres Mendez (amendez)
+Angel Ali, NP (aali)
+Anna Mejia (amejia)
+Austin Gibson, NP (agibson)
+Barbara Wilson (bwilson)
+Betty Baker (bbaker)
+Brandon Howell, NP (bhowell)
+Brian Reed, NP (breed)
+Bryan Palmer, NP (bpalmer)
+Caleb Price (cprice)
+Carlos Barnes (cbarnes)
+Christian Walker (cwalker)
+Colleen Grant, PA (cgrant)
+David Hamilton (dhamilton)
+Debra Stevens (dstevens)
+Desmond Fields, PA (dfields)
+Diana Anderson, PA (danderson)
+Diane Fisher (dfisher)
+Dorothy Mason, PA (dmason)
+Dorothy Scott, NP (dscott)
+Dr. Bennett (lbennett)
+Dr. Butler (mbutler)
+Dr. Carroll (vcarroll)
+Dr. Chen (rchen)
+Dr. Crawford (jcrawford)
+Dr. Cunningham (dcunningham)
+Dr. Davis (cdavis)
+Dr. Foster (afoster)
+Dr. Fowler (dfowler)
+Dr. Garcia (jgarcia)
+Dr. Garrison (kgarrison)
+Dr. Gonzalez (dgonzalez)
+Dr. Green (rgreen)
+Dr. Herrera (sherrera)
+Dr. Hughes (dhughes)
+Dr. Jackson (cjackson)
+Dr. Lee (dlee)
+Dr. Lindgren (mlindgren)
+Dr. Maldonado (fmaldonado)
+Dr. Marshall (jmarshall)
+Dr. Martin (lmartin)
+Dr. Martinez (rmartinez)
+Dr. Meyer (gmeyer)
+Dr. Miller (kmiller)
+Dr. Moore (vmoore)
+Dr. Morris (smorris)
+Dr. Murphy (lmurphy)
+Dr. Nielsen (jnielsen)
+Dr. Olson (molson)
+Dr. Parker (jparker)
+Dr. Perez (vperez)
+Dr. Ramirez (jramirez)
+Dr. Ramos (hramos)
+Dr. Reynolds (mreynolds)
+Dr. Rios (jrios)
+Dr. Ruiz (zruiz)
+Dr. Shaw (ashaw)
+Dr. Silva (dsilva)
+Dr. Sorensen (msorensen)
+Dr. Soto (jsoto)
+Dr. Tillman (jtillman)
+Dr. Wagner (awagner)
+Dr. Watkins (lwatkins)
+Dr. West (bwest)
+Dr. Williamson (mwilliamson)
+Edward Lindqvist, NP (elindqvist)
+Edward Pierce, NP (epierce)
+Elena Gutierrez, NP (egutierrez)
+Elena Thompson (ethompson)
+Fatima Ramirez (framirez)
+Gary Haddad (ghaddad)
+Gloria Allen, NP (gallen)
+Grace Garcia (ggarcia)
+Gregory Patterson (gpatterson)
+Harold Larsen, PA (hlarsen)
+Henry Davis (hdavis)
+Ingrid Rivera (irivera)
+Jack Simpson (jsimpson)
+James Cook, PA (jcook)
+Janice Adams (jadams)
+Jason Collins, NP (jcollins)
+Joe Brown (jbrown)
+Joe Jackson (jjackson)
+Joe Wilson, PA (jwilson)
+Jonathan Jacobsen (jjacobsen)
+Jordan Alvarado (jalvarado)
+Joshua Bowman, PA (jbowman)
+Joyce Nelson, NP (jnelson)
+Juan Price (jprice)
+Katherine Nichols, NP (knichols)
+Kathryn Martinez (kmartinez)
+Kathryn Russell (krussell)
+Kenneth Sullivan, NP (ksullivan)
+Kimberly Espinoza (kespinoza)
+Larry Jones (ljones2)
+Lawrence Jones (ljones)
+Lawrence Rodriguez, NP (lrodriguez)
+Liam Farrell, NP (lfarrell)
+Logan Martinez (lmartinez)
+Lucas Johnson, NP (ljohnson)
+Lucas Lopez, NP (llopez)
+Maria Flores (mflores)
+Matthew Evans, PA (mevans)
+Mei Carpenter, PA (mcarpenter)
+Mei Miller (mmiller)
+Melissa Davis (mdavis)
+Michelle Martinez (mmartinez)
+Nancy Phillips (nphillips)
+Olivia Rivera, NP (orivera)
+Priya Roberts, NP (proberts)
+Richard Harrison, NP (rharrison)
+Sandra Anderson (sanderson)
+Sophia Clark (sclark)
+Soren Welch, NP (swelch)
+Stephanie Henderson (shenderson)
+Susan Vasquez, NP (svasquez)
+Teresa Warren (twarren)
+Theresa Medina (tmedina)
+Timothy Moore (tmoore)
+Vincent Herrera (vherrera)
+Vincent Morgan (vmorgan)
+Walter Guzman, PA (wguzman)
+William Kelly, NP (wkelly)
+Zoe Christensen (zchristensen)
+frontdesk (frontdesk)
+Action
+All actions
+Created
+Changed
+Deleted
+Merged
+Opened
+Logged in
+Record
+All records
+Patient
+Appointment
+Recurring appointment
+Invoice
+Document
+User account
+From
+To
+Apply
+Clear filters
+Patient
+Find
+Activity, newest first
+Time	User	Action	Record	What changed
+Oct 14, 2026, 2:51 AM MDT	
+Joe Jackson
+jjackson
+	Deleted	
+Ramos, Edward
+Deleted
+	Record deleted
+Oct 13, 2026, 8:30 AM MDT	
+Carlos Barnes
+cbarnes
+	Deleted	
+García, Vincent
+Deleted
+	Record deleted
+Oct 13, 2026, 7:35 AM MDT	
+Carlos Barnes
+cbarnes
+	Deleted	
+Álvarez, Lucas
+Deleted
+	Record deleted
+Oct 13, 2026, 1:44 AM CDT	
+Carlos Barnes
+cbarnes
+	Deleted	
+Adams, Karen
+Deleted
+	Record deleted
+Oct 12, 2026, 6:27 PM CDT	
+Carlos Barnes
+cbarnes
+	Deleted	
+Miller, Stephen
+Deleted
+	Record deleted
+Oct 12, 2026, 4:33 PM MDT	
+Carlos Barnes
+cbarnes
+	Deleted	
+Harris, María
+Deleted
+	Record deleted
+Oct 12, 2026, 2:58 AM MDT	
+Joe Jackson
+jjackson
+	Deleted	
+Torres, Helen
+Deleted
+	Record deleted
+Oct 12, 2026, 12:57 AM CDT	
+Carlos Barnes
+cbarnes
+	Deleted	
+Moore, Hannah
+Restricted
+Deleted
+	Record deleted
+Oct 11, 2026, 7:46 PM CDT	
+Joe Jackson
+jjackson
+	Deleted	
+Harrison, John
+Deleted
+	Record deleted
+Oct 11, 2026, 10:25 AM MDT	
+Carlos Barnes
+cbarnes
+	Deleted	
+Boyd, Danielle
+Deleted
+	Record deleted
+Oct 11, 2026, 9:54 AM CDT	
+Joe Jackson
+jjackson
+	Deleted	
+Hernandez, Liam
+Deleted
+	Record deleted
+Oct 10, 2026, 11:35 PM CDT	
+Joe Jackson
+jjackson
+	Deleted	
+White, Kelly
+Restricted
+Deleted
+	Record deleted
+Oct 10, 2026, 2:58 PM CDT	
+Joe Jackson
+jjackson
+	Deleted	
+Wright, Dylan
+Deleted
+	Record deleted
+Oct 10, 2026, 1:05 PM CDT	
+Joe Jackson
+jjackson
+	Deleted	
+Chavez, Sarah
+Deleted
+	Record deleted
+Oct 10, 2026, 9:37 AM CDT	
+Joe Jackson
+jjackson
+	Deleted	
+Fisher, Lisa
+Deleted
+	Record deleted
+Oct 10, 2026, 3:03 AM CDT	
+Joe Jackson
+jjackson
+	Deleted	
+Gonzalez, Robert
+Deleted
+	Record deleted
+Oct 9, 2026, 11:52 PM CDT	
+Joe Jackson
+jjackson
+	Deleted	
+Baker, Sean
+Deleted
+	Record deleted
+Oct 9, 2026, 11:26 PM CDT	
+Joe Jackson
+jjackson
+	Deleted	
+Chavez, Paul
+Deleted
+	Record deleted
+Oct 9, 2026, 8:27 PM MDT	
+Carlos Barnes
+cbarnes
+	Deleted	
+George, Patricia
+Deleted
+	Record deleted
+Oct 8, 2026, 7:21 PM MDT	
+Joe Jackson
+jjackson
+	Deleted	
+Alvarez, Nancy
+Deleted
+	Record deleted
+Oct 8, 2026, 5:12 PM CDT	
+Joe Jackson
+jjackson
+	Deleted	
+Crawford, Alexander
+Deleted
+	Record deleted
+Oct 8, 2026, 12:32 PM CDT	
+Joe Jackson
+jjackson
+	Deleted	
+Thomas, Elizabeth
+Deleted
+	Record deleted
+Oct 8, 2026, 11:31 AM MDT	
+Carlos Barnes
+cbarnes
+	Deleted	
+Davis, Virginia
+Deleted
+	Record deleted
+Oct 7, 2026, 8:50 PM CDT	
+Carlos Barnes
+cbarnes
+	Deleted	
+Christensen, Aisha
+Deleted
+	Record deleted
+Oct 6, 2026, 3:56 PM CDT	
+Carlos Barnes
+cbarnes
+	Deleted	
+Maldonado, Sarah
+Restricted
+Deleted
+	Record deleted
+
+Showing 1 to 25 of 200+ entries
+
+Rows per page
+25 per page
+50 per page
+Previous
+Next
+== FRAME INTERACTIVE ==
+SELECT All users / Aisha Wilson (awilson) / Alexander Nunez (anunez) / Andrea Hill (ahill) / An
+SELECT All actions / Created / Changed / Deleted / Merged / Opened / Logged in
+SELECT All records / Patient / Appointment / Recurring appointment / Invoice / Document / User acco
+INPUT 
+INPUT 
+BUTTON Apply
+BUTTON Clear filters
+INPUT 
+BUTTON Find
+A Ramos, Edward href=/patients/37kq09z86r
+A García, Vincent href=/patients/6mx7rkmjcs
+A Álvarez, Lucas href=/patients/6jnkf8xlgp
+A Adams, Karen href=/patients/3f3zp4l38x
+A Miller, Stephen href=/patients/6t5nx4d5xd
+A Harris, María href=/patients/041mhn631m
+A Torres, Helen href=/patients/2331spflvd
+A Moore, Hannah href=/patients/476338vz9r
+A Harrison, John href=/patients/089rtqj7jw
+A Boyd, Danielle href=/patients/1mvddpd44r
+A Hernandez, Liam href=/patients/2cgk4fmzvm
+A White, Kelly href=/patients/71lk6wf60w
+A Wright, Dylan href=/patients/39q3b98499
+A Chavez, Sarah href=/patients/31wzqm8h76
+A Fisher, Lisa href=/patients/2w0chvz4r6
+A Gonzalez, Robert href=/patients/56svbt55g9
+A Baker, Sean href=/patients/05pz5j5p0s
+A Chavez, Paul href=/patients/1jj4g8rbp5
+A George, Patricia href=/patients/5b6bnl55sz
+A Alvarez, Nancy href=/patients/16rqt0spwt
+A Crawford, Alexander href=/patients/1j0w5w7trt
+A Thomas, Elizabeth href=/patients/6tnlhwns5r
+A Davis, Virginia href=/patients/59265cdj00
+A Christensen, Aisha href=/patients/33jj7f6hvr
+A Maldonado, Sarah href=/patients/4wfd6xbk2h
+SELECT 25 per page / 50 per page
+BUTTON Previous
+BUTTON Next

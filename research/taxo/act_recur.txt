@@ -1,0 +1,382 @@
+URL https://practice.speedrun.scopehealth.com/activity?record=series
+
+== FRAME https://practice.speedrun.scopehealth.com/v/wnx3rzl0k98pwz7339rtd9l5bj/ ==
+Activity
+
+What staff did in Wrenfield, newest first.
+
+User
+All users
+Aisha Wilson (awilson)
+Alexander Nunez (anunez)
+Andrea Hill (ahill)
+Andres Mendez (amendez)
+Angel Ali, NP (aali)
+Anna Mejia (amejia)
+Austin Gibson, NP (agibson)
+Barbara Wilson (bwilson)
+Betty Baker (bbaker)
+Brandon Howell, NP (bhowell)
+Brian Reed, NP (breed)
+Bryan Palmer, NP (bpalmer)
+Caleb Price (cprice)
+Carlos Barnes (cbarnes)
+Christian Walker (cwalker)
+Colleen Grant, PA (cgrant)
+David Hamilton (dhamilton)
+Debra Stevens (dstevens)
+Desmond Fields, PA (dfields)
+Diana Anderson, PA (danderson)
+Diane Fisher (dfisher)
+Dorothy Mason, PA (dmason)
+Dorothy Scott, NP (dscott)
+Dr. Bennett (lbennett)
+Dr. Butler (mbutler)
+Dr. Carroll (vcarroll)
+Dr. Chen (rchen)
+Dr. Crawford (jcrawford)
+Dr. Cunningham (dcunningham)
+Dr. Davis (cdavis)
+Dr. Foster (afoster)
+Dr. Fowler (dfowler)
+Dr. Garcia (jgarcia)
+Dr. Garrison (kgarrison)
+Dr. Gonzalez (dgonzalez)
+Dr. Green (rgreen)
+Dr. Herrera (sherrera)
+Dr. Hughes (dhughes)
+Dr. Jackson (cjackson)
+Dr. Lee (dlee)
+Dr. Lindgren (mlindgren)
+Dr. Maldonado (fmaldonado)
+Dr. Marshall (jmarshall)
+Dr. Martin (lmartin)
+Dr. Martinez (rmartinez)
+Dr. Meyer (gmeyer)
+Dr. Miller (kmiller)
+Dr. Moore (vmoore)
+Dr. Morris (smorris)
+Dr. Murphy (lmurphy)
+Dr. Nielsen (jnielsen)
+Dr. Olson (molson)
+Dr. Parker (jparker)
+Dr. Perez (vperez)
+Dr. Ramirez (jramirez)
+Dr. Ramos (hramos)
+Dr. Reynolds (mreynolds)
+Dr. Rios (jrios)
+Dr. Ruiz (zruiz)
+Dr. Shaw (ashaw)
+Dr. Silva (dsilva)
+Dr. Sorensen (msorensen)
+Dr. Soto (jsoto)
+Dr. Tillman (jtillman)
+Dr. Wagner (awagner)
+Dr. Watkins (lwatkins)
+Dr. West (bwest)
+Dr. Williamson (mwilliamson)
+Edward Lindqvist, NP (elindqvist)
+Edward Pierce, NP (epierce)
+Elena Gutierrez, NP (egutierrez)
+Elena Thompson (ethompson)
+Fatima Ramirez (framirez)
+Gary Haddad (ghaddad)
+Gloria Allen, NP (gallen)
+Grace Garcia (ggarcia)
+Gregory Patterson (gpatterson)
+Harold Larsen, PA (hlarsen)
+Henry Davis (hdavis)
+Ingrid Rivera (irivera)
+Jack Simpson (jsimpson)
+James Cook, PA (jcook)
+Janice Adams (jadams)
+Jason Collins, NP (jcollins)
+Joe Brown (jbrown)
+Joe Jackson (jjackson)
+Joe Wilson, PA (jwilson)
+Jonathan Jacobsen (jjacobsen)
+Jordan Alvarado (jalvarado)
+Joshua Bowman, PA (jbowman)
+Joyce Nelson, NP (jnelson)
+Juan Price (jprice)
+Katherine Nichols, NP (knichols)
+Kathryn Martinez (kmartinez)
+Kathryn Russell (krussell)
+Kenneth Sullivan, NP (ksullivan)
+Kimberly Espinoza (kespinoza)
+Larry Jones (ljones2)
+Lawrence Jones (ljones)
+Lawrence Rodriguez, NP (lrodriguez)
+Liam Farrell, NP (lfarrell)
+Logan Martinez (lmartinez)
+Lucas Johnson, NP (ljohnson)
+Lucas Lopez, NP (llopez)
+Maria Flores (mflores)
+Matthew Evans, PA (mevans)
+Mei Carpenter, PA (mcarpenter)
+Mei Miller (mmiller)
+Melissa Davis (mdavis)
+Michelle Martinez (mmartinez)
+Nancy Phillips (nphillips)
+Olivia Rivera, NP (orivera)
+Priya Roberts, NP (proberts)
+Richard Harrison, NP (rharrison)
+Sandra Anderson (sanderson)
+Sophia Clark (sclark)
+Soren Welch, NP (swelch)
+Stephanie Henderson (shenderson)
+Susan Vasquez, NP (svasquez)
+Teresa Warren (twarren)
+Theresa Medina (tmedina)
+Timothy Moore (tmoore)
+Vincent Herrera (vherrera)
+Vincent Morgan (vmorgan)
+Walter Guzman, PA (wguzman)
+William Kelly, NP (wkelly)
+Zoe Christensen (zchristensen)
+frontdesk (frontdesk)
+Action
+All actions
+Created
+Changed
+Deleted
+Merged
+Opened
+Logged in
+Record
+All records
+Patient
+Appointment
+Recurring appointment
+Invoice
+Document
+User account
+From
+To
+Apply
+Clear filters
+Patient
+Find
+Activity, newest first
+Time	User	Action	Record	What changed
+Oct 14, 2026, 8:59 AM MDT	
+Henry Davis
+hdavis
+	Changed	
+Recurring appointment
+Payne, Wayne
+	Occurrence on Jan 1, 2027 changed to Cancelled
+Oct 14, 2026, 8:59 AM MDT	
+Vincent Herrera
+vherrera
+	Changed	
+Recurring appointment
+Bryant, Ines
+	Occurrence on Dec 25, 2026 changed to Cancelled
+Oct 14, 2026, 8:59 AM MDT	
+Zoe Christensen
+zchristensen
+	Changed	
+Recurring appointment
+Bryant, Ines
+	Occurrence on Dec 11, 2026 changed to Cancelled
+Oct 14, 2026, 8:59 AM MDT	
+Juan Price
+jprice
+	Changed	
+Recurring appointment
+Bryant, Ines
+	Occurrence on Nov 13, 2026 changed to Cancelled
+Oct 14, 2026, 8:59 AM MDT	
+Mei Miller
+mmiller
+	Changed	
+Recurring appointment
+Lewis, James
+	Occurrence on Dec 29, 2026 changed to Cancelled
+Oct 14, 2026, 9:59 AM CDT	
+Diane Fisher
+dfisher
+	Changed	
+Recurring appointment
+Watson, Jerry
+	Occurrence on Dec 28, 2026 changed to Cancelled
+Oct 14, 2026, 9:59 AM CDT	
+Diane Fisher
+dfisher
+	Changed	
+Recurring appointment
+Thompson, Andrea
+	Occurrence on Dec 28, 2026 changed to Cancelled
+Oct 14, 2026, 9:59 AM CDT	
+Mei Miller
+mmiller
+	Changed	
+Recurring appointment
+Anderson, Patricia
+	Occurrence on Jan 6, 2027 changed to Cancelled
+Oct 14, 2026, 9:59 AM CDT	
+Kathryn Russell
+krussell
+	Changed	
+Recurring appointment
+Lynch, Christopher
+	Occurrence on Nov 26, 2026 changed to Cancelled
+Oct 14, 2026, 8:59 AM MDT	
+Kimberly Espinoza
+kespinoza
+	Changed	
+Recurring appointment
+Holmes, Cheryl
+	Occurrence on Dec 30, 2026 changed to Cancelled
+Oct 14, 2026, 8:59 AM MDT	
+Jordan Alvarado
+jalvarado
+	Changed	
+Recurring appointment
+Austin, Jessica
+	Occurrence on Dec 23, 2026 changed to Cancelled
+Oct 14, 2026, 8:59 AM MDT	
+Michelle Martinez
+mmartinez
+	Changed	
+Recurring appointment
+Nielsen, Ruth
+	Occurrence on Jan 7, 2027 changed to Cancelled
+Oct 14, 2026, 9:59 AM CDT	
+Diane Fisher
+dfisher
+	Changed	
+Recurring appointment
+Arnold, Mary
+	Occurrence on Dec 24, 2026 changed to Cancelled
+Oct 14, 2026, 9:59 AM CDT	
+Ingrid Rivera
+irivera
+	Changed	
+Recurring appointment
+Arnold, Mary
+	Occurrence on Nov 26, 2026 changed to Cancelled
+Oct 14, 2026, 9:59 AM CDT	
+Elena Thompson
+ethompson
+	Changed	
+Recurring appointment
+Arnold, Mary
+	Occurrence on Oct 22, 2026 changed to Cancelled
+Oct 14, 2026, 9:59 AM CDT	
+Christian Walker
+cwalker
+	Changed	
+Recurring appointment
+Nguyen, John
+	Occurrence on Jan 1, 2027 changed to Cancelled
+Oct 14, 2026, 9:59 AM CDT	
+Nancy Phillips
+nphillips
+	Changed	
+Recurring appointment
+Nguyen, John
+	Occurrence on Dec 25, 2026 changed to Cancelled
+Oct 14, 2026, 9:59 AM CDT	
+Diane Fisher
+dfisher
+	Changed	
+Recurring appointment
+Nguyen, John
+	Occurrence on Nov 13, 2026 changed to Cancelled
+Oct 14, 2026, 9:59 AM CDT	
+Kimberly Espinoza
+kespinoza
+	Changed	
+Recurring appointment
+Nguyen, John
+	Occurrence on Nov 6, 2026 changed to Cancelled
+Oct 14, 2026, 8:59 AM MDT	
+Christian Walker
+cwalker
+	Changed	
+Recurring appointment
+Thompson, Alice
+	Occurrence on Dec 25, 2026 changed to Cancelled
+Oct 14, 2026, 9:59 AM CDT	
+Michelle Martinez
+mmartinez
+	Changed	
+Recurring appointment
+Jackson, Evelyn
+	Occurrence on Oct 23, 2026 changed to Cancelled
+Oct 14, 2026, 8:59 AM MDT	
+Sophia Clark
+sclark
+	Changed	
+Recurring appointment
+Gómez, Sharon
+	Occurrence on Jan 7, 2027 changed to Cancelled
+Oct 14, 2026, 8:59 AM MDT	
+Elena Thompson
+ethompson
+	Changed	
+Recurring appointment
+Gómez, Sharon
+	Occurrence on Dec 3, 2026 changed to Cancelled
+Oct 14, 2026, 8:59 AM MDT	
+Jordan Alvarado
+jalvarado
+	Changed	
+Recurring appointment
+Gómez, Sharon
+	Occurrence on Nov 26, 2026 changed to Cancelled
+Oct 14, 2026, 9:59 AM CDT	
+Michelle Martinez
+mmartinez
+	Changed	
+Recurring appointment
+Johnson, Samuel
+	Occurrence on Jan 1, 2027 changed to Cancelled
+
+Showing 1 to 25 of 200+ entries
+
+Rows per page
+25 per page
+50 per page
+Previous
+Next
+== FRAME INTERACTIVE ==
+SELECT All users / Aisha Wilson (awilson) / Alexander Nunez (anunez) / Andrea Hill (ahill) / An
+SELECT All actions / Created / Changed / Deleted / Merged / Opened / Logged in
+SELECT All records / Patient / Appointment / Recurring appointment / Invoice / Document / User acco
+INPUT 
+INPUT 
+BUTTON Apply
+BUTTON Clear filters
+INPUT 
+BUTTON Find
+A Recurring appointment href=/patients/5kch40m297/recurring/38p5vcjpgv
+A Recurring appointment href=/patients/25zs7sx4lh/recurring/5bgcff1zjp
+A Recurring appointment href=/patients/25zs7sx4lh/recurring/5bgcff1zjp
+A Recurring appointment href=/patients/25zs7sx4lh/recurring/5bgcff1zjp
+A Recurring appointment href=/patients/5537lv6cxj/recurring/34s9q35224
+A Recurring appointment href=/patients/1554pm64cc/recurring/4v60r52xjx
+A Recurring appointment href=/patients/13trwhxqh2/recurring/57skzk74mz
+A Recurring appointment href=/patients/5lws4nxrsr/recurring/4cl1j5sq5v
+A Recurring appointment href=/patients/49ppc32bzl/recurring/1t5zlj71t3
+A Recurring appointment href=/patients/0bqjtx6cp2/recurring/5bq9f9ctzz
+A Recurring appointment href=/patients/197xhx18w1/recurring/3cg0m157kx
+A Recurring appointment href=/patients/3t6p96cg95/recurring/547zft1tnz
+A Recurring appointment href=/patients/16rvdhpflt/recurring/3d8pqxc5ss
+A Recurring appointment href=/patients/16rvdhpflt/recurring/3d8pqxc5ss
+A Recurring appointment href=/patients/16rvdhpflt/recurring/3d8pqxc5ss
+A Recurring appointment href=/patients/232djcgsfn/recurring/2ctcmc9wmv
+A Recurring appointment href=/patients/232djcgsfn/recurring/2ctcmc9wmv
+A Recurring appointment href=/patients/232djcgsfn/recurring/2ctcmc9wmv
+A Recurring appointment href=/patients/232djcgsfn/recurring/2ctcmc9wmv
+A Recurring appointment href=/patients/69j5nnpvdh/recurring/1lwds7fcst
+A Recurring appointment href=/patients/0cphp17xkb/recurring/1plf8r2gv5
+A Recurring appointment href=/patients/1d9sr1k03b/recurring/6jppj6zd7b
+A Recurring appointment href=/patients/1d9sr1k03b/recurring/6jppj6zd7b
+A Recurring appointment href=/patients/1d9sr1k03b/recurring/6jppj6zd7b
+A Recurring appointment href=/patients/31fd2j1f3w/recurring/2f9d91nlk5
+SELECT 25 per page / 50 per page
+BUTTON Previous
+BUTTON Next

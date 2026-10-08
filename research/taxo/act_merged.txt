@@ -1,0 +1,384 @@
+URL https://practice.speedrun.scopehealth.com/activity?action=merge
+
+== FRAME https://practice.speedrun.scopehealth.com/v/z2wdmrgztxrbl43fmbbt3mtkgh/ ==
+Activity
+
+What staff did in Wrenfield, newest first.
+
+User
+All users
+Aisha Wilson (awilson)
+Alexander Nunez (anunez)
+Andrea Hill (ahill)
+Andres Mendez (amendez)
+Angel Ali, NP (aali)
+Anna Mejia (amejia)
+Austin Gibson, NP (agibson)
+Barbara Wilson (bwilson)
+Betty Baker (bbaker)
+Brandon Howell, NP (bhowell)
+Brian Reed, NP (breed)
+Bryan Palmer, NP (bpalmer)
+Caleb Price (cprice)
+Carlos Barnes (cbarnes)
+Christian Walker (cwalker)
+Colleen Grant, PA (cgrant)
+David Hamilton (dhamilton)
+Debra Stevens (dstevens)
+Desmond Fields, PA (dfields)
+Diana Anderson, PA (danderson)
+Diane Fisher (dfisher)
+Dorothy Mason, PA (dmason)
+Dorothy Scott, NP (dscott)
+Dr. Bennett (lbennett)
+Dr. Butler (mbutler)
+Dr. Carroll (vcarroll)
+Dr. Chen (rchen)
+Dr. Crawford (jcrawford)
+Dr. Cunningham (dcunningham)
+Dr. Davis (cdavis)
+Dr. Foster (afoster)
+Dr. Fowler (dfowler)
+Dr. Garcia (jgarcia)
+Dr. Garrison (kgarrison)
+Dr. Gonzalez (dgonzalez)
+Dr. Green (rgreen)
+Dr. Herrera (sherrera)
+Dr. Hughes (dhughes)
+Dr. Jackson (cjackson)
+Dr. Lee (dlee)
+Dr. Lindgren (mlindgren)
+Dr. Maldonado (fmaldonado)
+Dr. Marshall (jmarshall)
+Dr. Martin (lmartin)
+Dr. Martinez (rmartinez)
+Dr. Meyer (gmeyer)
+Dr. Miller (kmiller)
+Dr. Moore (vmoore)
+Dr. Morris (smorris)
+Dr. Murphy (lmurphy)
+Dr. Nielsen (jnielsen)
+Dr. Olson (molson)
+Dr. Parker (jparker)
+Dr. Perez (vperez)
+Dr. Ramirez (jramirez)
+Dr. Ramos (hramos)
+Dr. Reynolds (mreynolds)
+Dr. Rios (jrios)
+Dr. Ruiz (zruiz)
+Dr. Shaw (ashaw)
+Dr. Silva (dsilva)
+Dr. Sorensen (msorensen)
+Dr. Soto (jsoto)
+Dr. Tillman (jtillman)
+Dr. Wagner (awagner)
+Dr. Watkins (lwatkins)
+Dr. West (bwest)
+Dr. Williamson (mwilliamson)
+Edward Lindqvist, NP (elindqvist)
+Edward Pierce, NP (epierce)
+Elena Gutierrez, NP (egutierrez)
+Elena Thompson (ethompson)
+Fatima Ramirez (framirez)
+Gary Haddad (ghaddad)
+Gloria Allen, NP (gallen)
+Grace Garcia (ggarcia)
+Gregory Patterson (gpatterson)
+Harold Larsen, PA (hlarsen)
+Henry Davis (hdavis)
+Ingrid Rivera (irivera)
+Jack Simpson (jsimpson)
+James Cook, PA (jcook)
+Janice Adams (jadams)
+Jason Collins, NP (jcollins)
+Joe Brown (jbrown)
+Joe Jackson (jjackson)
+Joe Wilson, PA (jwilson)
+Jonathan Jacobsen (jjacobsen)
+Jordan Alvarado (jalvarado)
+Joshua Bowman, PA (jbowman)
+Joyce Nelson, NP (jnelson)
+Juan Price (jprice)
+Katherine Nichols, NP (knichols)
+Kathryn Martinez (kmartinez)
+Kathryn Russell (krussell)
+Kenneth Sullivan, NP (ksullivan)
+Kimberly Espinoza (kespinoza)
+Larry Jones (ljones2)
+Lawrence Jones (ljones)
+Lawrence Rodriguez, NP (lrodriguez)
+Liam Farrell, NP (lfarrell)
+Logan Martinez (lmartinez)
+Lucas Johnson, NP (ljohnson)
+Lucas Lopez, NP (llopez)
+Maria Flores (mflores)
+Matthew Evans, PA (mevans)
+Mei Carpenter, PA (mcarpenter)
+Mei Miller (mmiller)
+Melissa Davis (mdavis)
+Michelle Martinez (mmartinez)
+Nancy Phillips (nphillips)
+Olivia Rivera, NP (orivera)
+Priya Roberts, NP (proberts)
+Richard Harrison, NP (rharrison)
+Sandra Anderson (sanderson)
+Sophia Clark (sclark)
+Soren Welch, NP (swelch)
+Stephanie Henderson (shenderson)
+Susan Vasquez, NP (svasquez)
+Teresa Warren (twarren)
+Theresa Medina (tmedina)
+Timothy Moore (tmoore)
+Vincent Herrera (vherrera)
+Vincent Morgan (vmorgan)
+Walter Guzman, PA (wguzman)
+William Kelly, NP (wkelly)
+Zoe Christensen (zchristensen)
+frontdesk (frontdesk)
+Action
+All actions
+Created
+Changed
+Deleted
+Merged
+Opened
+Logged in
+Record
+All records
+Patient
+Appointment
+Recurring appointment
+Invoice
+Document
+User account
+From
+To
+Apply
+Clear filters
+Patient
+Find
+Activity, newest first
+Time	User	Action	Record	What changed
+Oct 14, 2026, 5:56 AM MDT	
+Joe Jackson
+jjackson
+	Merged	
+Zztest, Zztest
+Test record
+On a record merged into this one
+	Merged into another record
+Oct 13, 2026, 6:58 AM MDT	
+Carlos Barnes
+cbarnes
+	Merged	
+Greene, Robert
+On a record merged into this one
+	Merged into another record
+Oct 12, 2026, 8:01 PM MDT	
+Carlos Barnes
+cbarnes
+	Merged	
+Palmer, Betty
+On a record merged into this one
+	Merged into another record
+Oct 12, 2026, 6:45 AM MDT	
+Carlos Barnes
+cbarnes
+	Merged	
+Morris, Thomas
+On a record merged into this one
+	Merged into another record
+Oct 11, 2026, 9:14 PM CDT	
+Joe Jackson
+jjackson
+	Merged	
+Simmons, Mary
+On a record merged into this one
+	Merged into another record
+Oct 11, 2026, 8:13 PM CDT	
+Carlos Barnes
+cbarnes
+	Merged	
+Wheeler, Amy
+On a record merged into this one
+	Merged into another record
+Oct 11, 2026, 2:59 AM MDT	
+Carlos Barnes
+cbarnes
+	Merged	
+Turner, Fatima
+Test record
+On a record merged into this one
+	Merged into another record
+Oct 10, 2026, 11:35 PM CDT	
+Carlos Barnes
+cbarnes
+	Merged	
+Clark, Terry
+On a record merged into this one
+	Merged into another record
+Oct 9, 2026, 9:06 PM MDT	
+Carlos Barnes
+cbarnes
+	Merged	
+Martinez, Emily
+On a record merged into this one
+	Merged into another record
+Oct 9, 2026, 4:38 AM MDT	
+Carlos Barnes
+cbarnes
+	Merged	
+Weber, Elizabeth
+On a record merged into this one
+	Merged into another record
+Oct 9, 2026, 2:56 AM CDT	
+Joe Jackson
+jjackson
+	Merged	
+Rodriguez, Jesse
+On a record merged into this one
+	Merged into another record
+Oct 8, 2026, 7:16 PM CDT	
+Joe Jackson
+jjackson
+	Merged	
+Jackson, Zachary
+On a record merged into this one
+	Merged into another record
+Oct 8, 2026, 2:20 PM CDT	
+Carlos Barnes
+cbarnes
+	Merged	
+Rodriguez, Jesse
+On a record merged into this one
+	Merged into another record
+Oct 8, 2026, 9:38 AM CDT	
+Joe Jackson
+jjackson
+	Merged	
+Williams, Jason
+On a record merged into this one
+	Merged into another record
+Oct 7, 2026, 11:50 PM MDT	
+Carlos Barnes
+cbarnes
+	Merged	
+Allen, Nicole
+On a record merged into this one
+	Merged into another record
+Oct 7, 2026, 5:50 PM CDT	
+Joe Jackson
+jjackson
+	Merged	
+García, Jason
+On a record merged into this one
+	Merged into another record
+Oct 7, 2026, 3:23 PM MDT	
+Carlos Barnes
+cbarnes
+	Merged	
+Vargas, Robert
+On a record merged into this one
+	Merged into another record
+Oct 7, 2026, 3:13 PM MDT	
+Joe Jackson
+jjackson
+	Merged	
+Soto, Teresa
+On a record merged into this one
+	Merged into another record
+Oct 7, 2026, 4:31 AM CDT	
+Joe Jackson
+jjackson
+	Merged	
+Johnson, Dylan
+On a record merged into this one
+	Merged into another record
+Oct 6, 2026, 8:02 PM MDT	
+Joe Jackson
+jjackson
+	Merged	
+Soto, Carlos
+On a record merged into this one
+	Merged into another record
+Oct 6, 2026, 8:34 PM CDT	
+Carlos Barnes
+cbarnes
+	Merged	
+Taylor, Lisa
+On a record merged into this one
+	Merged into another record
+Oct 6, 2026, 8:14 AM MDT	
+Joe Jackson
+jjackson
+	Merged	
+Scott, Steven
+On a record merged into this one
+	Merged into another record
+Oct 6, 2026, 7:46 AM CDT	
+Carlos Barnes
+cbarnes
+	Merged	
+Gomez, Stephen
+On a record merged into this one
+	Merged into another record
+Oct 5, 2026, 3:35 PM MDT	
+Carlos Barnes
+cbarnes
+	Merged	
+Ashby, Kevin
+On a record merged into this one
+	Merged into another record
+Oct 5, 2026, 2:18 PM CDT	
+Carlos Barnes
+cbarnes
+	Merged	
+Carr, Jerry
+On a record merged into this one
+	Merged into another record
+
+Showing 1 to 25 of 200+ entries
+
+Rows per page
+25 per page
+50 per page
+Previous
+Next
+== FRAME INTERACTIVE ==
+SELECT All users / Aisha Wilson (awilson) / Alexander Nunez (anunez) / Andrea Hill (ahill) / An
+SELECT All actions / Created / Changed / Deleted / Merged / Opened / Logged in
+SELECT All records / Patient / Appointment / Recurring appointment / Invoice / Document / User acco
+INPUT 
+INPUT 
+BUTTON Apply
+BUTTON Clear filters
+INPUT 
+BUTTON Find
+A Zztest, Zztest href=/patients/31qtr6tkz7
+A Greene, Robert href=/patients/4t14l48p2b
+A Palmer, Betty href=/patients/35psdd8vkf
+A Morris, Thomas href=/patients/47tf3svjgs
+A Simmons, Mary href=/patients/19v8fflkvx
+A Wheeler, Amy href=/patients/1zkcgx617n
+A Turner, Fatima href=/patients/637s6xpjbp
+A Clark, Terry href=/patients/5zp0slksgc
+A Martinez, Emily href=/patients/1wv775xgml
+A Weber, Elizabeth href=/patients/2m7pvf9rn0
+A Rodriguez, Jesse href=/patients/1l5qv64qgk
+A Jackson, Zachary href=/patients/0psdqg54r6
+A Rodriguez, Jesse href=/patients/1l5qv64qgk
+A Williams, Jason href=/patients/6b6b7jn2jp
+A Allen, Nicole href=/patients/134qts33ps
+A García, Jason href=/patients/50mhk0b3nd
+A Vargas, Robert href=/patients/34q6xf79jp
+A Soto, Teresa href=/patients/5dr1fbc750
+A Johnson, Dylan href=/patients/42crqwnkvw
+A Soto, Carlos href=/patients/1w22xmm461
+A Taylor, Lisa href=/patients/08xg9lx412
+A Scott, Steven href=/patients/22z81jw0kh
+A Gomez, Stephen href=/patients/0b1rqkzs03
+A Ashby, Kevin href=/patients/1zbp085gng
+A Carr, Jerry href=/patients/29v8l0cs30
+SELECT 25 per page / 50 per page
+BUTTON Previous
+BUTTON Next

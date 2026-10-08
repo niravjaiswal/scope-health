@@ -1,0 +1,292 @@
+URL: https://practice.speedrun.scopehealth.com/schedule/appointments?from=2026-10-14&to=2026-10-20
+TITLE: Schedule · Wrenfield
+
+From
+To
+Location
+All locations
+Northgate
+Front Range
+Eastside
+Stonebrook
+Lakeside
+Riverbend
+Highline
+Prairie View
+Cedar Hollow
+Willow Creek
+Provider
+All providers
+Angel Ali, NP
+Gloria Allen, NP
+Diana Anderson, PA
+Lawrence Bennett, MD
+Joshua Bowman, PA
+Mateo Butler, MD
+Mei Carpenter, PA
+Valentina Carroll, MD
+Renee Chen, MD
+Jason Collins, NP
+James Cook, PA
+Jose Crawford, MD
+Donna Cunningham, MD
+Charles Davis, MD
+Matthew Evans, PA
+Liam Farrell, NP
+Desmond Fields, PA
+Ann Foster, MD
+David Fowler, MD
+Judith Garcia, MD
+Kathleen Garrison, DO
+Austin Gibson, NP
+Diane Gonzalez, MD
+Colleen Grant, PA
+Elena Gutierrez, NP
+Walter Guzman, PA
+Richard Harrison, NP
+Susan Herrera, DO
+Brandon Howell, NP
+Catherine Jackson, MD
+Lucas Johnson, NP
+William Kelly, NP
+Harold Larsen, PA
+Denise Lee, DO
+Matthew Lindgren, MD
+Edward Lindqvist, NP
+Lucas Lopez, NP
+Frances Maldonado, DO
+Janet Marshall, MD
+Lawrence Martin, MD
+Dorothy Mason, PA
+Garrett Meyer, MD
+Kevin Miller, MD
+Victoria Moore, MD
+Samuel Morris, MD
+Joyce Nelson, NP
+Katherine Nichols, NP
+Jose Nielsen, MD
+Bryan Palmer, NP
+Jennifer Parker, MD
+Valentina Perez, MD
+Joan Ramirez, MD
+Hannah Ramos, MD
+Brian Reed, NP
+Martha Reynolds, MD
+Jacqueline Rios, MD
+Olivia Rivera, NP
+Priya Roberts, NP
+Lawrence Rodriguez, NP
+Zachary Ruiz, MD
+Dorothy Scott, NP
+Donald Silva, MD
+Mark Sorensen, MD
+Julie Soto, MD
+Kenneth Sullivan, NP
+James Tillman, DO
+Susan Vasquez, NP
+Aaron Wagner, MD
+Lori Watkins, MD
+Soren Welch, NP
+Brenda West, MD
+Megan Williamson, MD
+Ruth Green, DO
+Douglas Hughes, MD
+Rachel Martinez, MD
+Laura Murphy, MD
+Martha Olson, MD
+Edward Pierce, NP
+Ann Shaw, MD
+Joe Wilson, PA
+Status
+All statuses
+Scheduled
+Completed
+Cancelled
+Late cancel
+No-show
+Visit type
+All visit types
+Allergy injection
+Annual physical
+Anticoagulation check
+Behavioral health session
+Blood pressure check
+Cardiac rehabilitation
+Cast check
+Diabetes management
+Echocardiogram
+Electrocardiogram
+Follow-up visit
+Hearing test
+Immunization
+Infusion therapy
+Joint injection
+Lab draw
+Medication check
+Minor procedure
+New patient visit
+Nutrition counseling
+Office visit
+Physical therapy session
+Post-operative check
+Pre-operative evaluation
+Prenatal visit
+Sick visit
+Skin biopsy
+Skin check
+Sleep consultation
+Smoking cessation counseling
+Specialist consultation
+Sports physical
+Stress test
+Telehealth visit
+Travel consultation
+Ultrasound
+Vision screening
+Well-child check
+Wound care
+X-ray
+Show appointments
+Appointments from Oct 14, 2026 to Oct 20, 2026
+Appointments, earliest first
+Date
+, earliest first. Change the order
+	Time	Patient	Provider	Location	Visit type	Status
+Oct 14, 2026	7:00 AM to 7:20 AM CDT	Jordan, Donna	Lawrence Martin, MD	Willow Creek	Office visit	
+Completed
+Oct 14, 2026	7:00 AM to 7:30 AM CDT	Grant, Benjamin	Charles Davis, MD	Willow Creek	Travel consultation	
+Completed
+Oct 14, 2026	7:20 AM to 7:40 AM CDT	Hudson, Nathan	Lawrence Martin, MD	Willow Creek	Office visit	
+Completed
+Oct 14, 2026	7:30 AM to 7:45 AM CDT	Jenkins, Timothy	Charles Davis, MD	Willow Creek	Medication check	
+Completed
+Oct 14, 2026	7:30 AM to 8:15 AM CDT 
+Recurring
+	Barnes, Donald	Diane Gonzalez, MD	Eastside	Nutrition counseling	
+Completed
+Oct 14, 2026	7:40 AM to 8:00 AM CDT	Carter, Karen	Olivia Rivera, NP	Prairie View	Follow-up visit	
+Completed
+Oct 14, 2026	7:45 AM to 8:25 AM CDT	Farrell, Megan 
+Restricted	Charles Davis, MD	Willow Creek	Specialist consultation	
+Cancelled
+Oct 14, 2026	8:00 AM to 8:15 AM CDT	Harris, James	Matthew Evans, PA	Lakeside	Lab draw	
+Completed
+Oct 14, 2026	8:00 AM to 8:15 AM CDT	Lane, Joan	Lawrence Martin, MD	Willow Creek	Blood pressure check	
+Completed
+Oct 14, 2026	8:00 AM to 8:20 AM CDT	Turner, Shirley	Diana Anderson, PA	Northgate	Office visit	
+Completed
+Oct 14, 2026	8:00 AM to 8:20 AM CDT	Ellis, Olivia	Hannah Ramos, MD	Willow Creek	Follow-up visit	
+Completed
+Oct 14, 2026	8:00 AM to 8:20 AM CDT	Holmes, Zoë	James Cook, PA	Prairie View	Follow-up visit	
+Completed
+Oct 14, 2026	8:00 AM to 8:20 AM CDT	Lee, Justin	Charles Davis, MD	Willow Creek	Office visit	
+Completed
+Oct 14, 2026	8:00 AM to 8:20 AM CDT	Smith, Chloe	Lawrence Martin, MD	Willow Creek	Office visit	
+Cancelled
+Oct 14, 2026	8:00 AM to 8:20 AM CDT	Torres, Andres	Valentina Perez, MD	Prairie View	Office visit	
+Completed
+Oct 14, 2026	7:00 AM to 7:20 AM MDT	Adams, Keith	James Tillman, DO	Front Range	Follow-up visit	
+Completed
+Oct 14, 2026	8:00 AM to 8:20 AM CDT 
+Recurring
+	Gibson, Luis	Jose Nielsen, MD	Eastside	Prenatal visit	
+Completed
+Oct 14, 2026	8:00 AM to 8:30 AM CDT	Price, Randy	Gloria Allen, NP	Riverbend	Diabetes management	
+Completed
+Oct 14, 2026	8:00 AM to 8:30 AM CDT	Wright, Angela	Lucas Lopez, NP	Prairie View	Joint injection	
+Completed
+Oct 14, 2026	8:00 AM to 8:30 AM CDT 
+Recurring
+	Wilson, Wayne	Mark Sorensen, MD	Northgate	Wound care	
+Completed
+Oct 14, 2026	8:00 AM to 8:30 AM CDT 
+Recurring
+	Tran, Robert	Desmond Fields, PA	Northgate	Smoking cessation counseling	
+Completed
+Oct 14, 2026	7:00 AM to 7:40 AM MDT	Moore, Chloe	Mei Carpenter, PA	Highline	New patient visit	
+Completed
+Oct 14, 2026	8:00 AM to 8:40 AM CDT	Cook, Hannah	Brandon Howell, NP	Eastside	Annual physical	
+Completed
+Oct 14, 2026	8:00 AM to 8:40 AM CDT	Campbell, Jessica	Jennifer Parker, MD	Eastside	Annual physical	
+Completed
+Oct 14, 2026	8:00 AM to 8:40 AM CDT	Mason, Doris	Valentina Perez, MD	Prairie View	Annual physical	
+Cancelled
+
+Showing 1 to 25 of 200+ appointments
+
+Rows per page
+25 per page
+50 per page
+100 per page
+Previous
+1
+2
+3
+Next
+
+---- INTERACTIVE ----
+[INPUT] '2026-10-14'  from 
+[INPUT] '2026-10-20'  to 
+[SELECT] 'All locations\nNorthgate\nFront Range\nEastside\nStonebrook\nLakeside\nRiverbend\nHighl'  location 
+[SELECT] 'All providers\nAngel Ali, NP\nGloria Allen, NP\nDiana Anderson, PA\nLawrence Bennett'  provider 
+[SELECT] 'All statuses\nScheduled\nCompleted\nCancelled\nLate cancel\nNo-show'  status 
+[SELECT] 'All visit types\nAllergy injection\nAnnual physical\nAnticoagulation check\nBehavior'  type 
+[INPUT] ''  order 
+[BUTTON] 'Show appointments'   
+[BUTTON] 'Date\n, earliest first. Change the order'   
+[A] 'Oct 14, 2026' /patients/38b3s1fczr/appointments/1jclwzfr0x  
+[A] 'Jordan, Donna' /patients/38b3s1fczr  
+[A] 'Oct 14, 2026' /patients/37c39tdcw2/appointments/6bl3sj4b7k  
+[A] 'Grant, Benjamin' /patients/37c39tdcw2  
+[A] 'Oct 14, 2026' /patients/1h5rq8mwk9/appointments/0m8tb15xdm  
+[A] 'Hudson, Nathan' /patients/1h5rq8mwk9  
+[A] 'Oct 14, 2026' /patients/3285pc136r/appointments/71q7g82cxl  
+[A] 'Jenkins, Timothy' /patients/3285pc136r  
+[A] 'Oct 14, 2026' /patients/0mm4mv3c3d/recurring/44rgp8hg67  
+[A] 'Barnes, Donald' /patients/0mm4mv3c3d  
+[A] 'Oct 14, 2026' /patients/6p01l9m871/appointments/5fxpwgk146  
+[A] 'Carter, Karen' /patients/6p01l9m871  
+[A] 'Oct 14, 2026' /patients/60jxhxdck5/appointments/2x1j840dt5  
+[A] 'Farrell, Megan' /patients/60jxhxdck5  
+[A] 'Oct 14, 2026' /patients/3144459p49/appointments/6jc6cf6v47  
+[A] 'Harris, James' /patients/3144459p49  
+[A] 'Oct 14, 2026' /patients/1wbbmj74bb/appointments/47w6q8x8xw  
+[A] 'Lane, Joan' /patients/1wbbmj74bb  
+[A] 'Oct 14, 2026' /patients/1z51c6nt6k/appointments/000gz3ss24  
+[A] 'Turner, Shirley' /patients/1z51c6nt6k  
+[A] 'Oct 14, 2026' /patients/6qmsdvpwfw/appointments/1rmmq34rkm  
+[A] 'Ellis, Olivia' /patients/6qmsdvpwfw  
+[A] 'Oct 14, 2026' /patients/2v6p0klfd8/appointments/6bbh4khb73  
+[A] 'Holmes, Zoë' /patients/2v6p0klfd8  
+[A] 'Oct 14, 2026' /patients/0jmhbg8xvr/appointments/34v5n6qnwm  
+[A] 'Lee, Justin' /patients/0jmhbg8xvr  
+[A] 'Oct 14, 2026' /patients/6lmr842n9k/appointments/1whlhfxjlm  
+[A] 'Smith, Chloe' /patients/6lmr842n9k  
+[A] 'Oct 14, 2026' /patients/64sfxqbm63/appointments/076d0qgm1s  
+[A] 'Torres, Andres' /patients/64sfxqbm63  
+[A] 'Oct 14, 2026' /patients/2xs7pmknzs/appointments/0rzq3161v3  
+[A] 'Adams, Keith' /patients/2xs7pmknzs  
+[A] 'Oct 14, 2026' /patients/14b0km9thv/recurring/3rhgf04g0p  
+[A] 'Gibson, Luis' /patients/14b0km9thv  
+[A] 'Oct 14, 2026' /patients/5pm2nknfv6/appointments/6s2stk8b59  
+[A] 'Price, Randy' /patients/5pm2nknfv6  
+[A] 'Oct 14, 2026' /patients/046gswsmn2/appointments/11vd4jklq0  
+[A] 'Wright, Angela' /patients/046gswsmn2  
+[A] 'Oct 14, 2026' /patients/21p6zv34d3/recurring/49kzhht3ct  
+[A] 'Wilson, Wayne' /patients/21p6zv34d3  
+[A] 'Oct 14, 2026' /patients/6szfd4wn3d/recurring/31zc3fzlbf  
+[A] 'Tran, Robert' /patients/6szfd4wn3d  
+[A] 'Oct 14, 2026' /patients/035bz9wc3p/appointments/1fsjp1n6x5  
+[A] 'Moore, Chloe' /patients/035bz9wc3p  
+[A] 'Oct 14, 2026' /patients/3nl8g88lfl/appointments/0nrvvv6f4h  
+[A] 'Cook, Hannah' /patients/3nl8g88lfl  
+[A] 'Oct 14, 2026' /patients/16ssnv9qb8/appointments/4c3d306f8j  
+[A] 'Campbell, Jessica' /patients/16ssnv9qb8  
+[A] 'Oct 14, 2026' /patients/20cczpsh6c/appointments/1k5r836b3j  
+[A] 'Mason, Doris' /patients/20cczpsh6c  
+[SELECT] '25 per page\n50 per page\n100 per page'  size 
+[BUTTON] 'Previous'   
+[BUTTON] '1'   page
+[BUTTON] '2'   
+[BUTTON] '3'   
+[BUTTON] 'Next'   

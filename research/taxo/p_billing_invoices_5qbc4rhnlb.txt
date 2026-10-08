@@ -1,0 +1,35 @@
+URL https://practice.speedrun.scopehealth.com/billing/invoices/5qbc4rhnlb
+
+== FRAME https://practice.speedrun.scopehealth.com/v/9m0w9qxm0phd8gxz7hjzg3xl46/ ==
+Invoices
+Invoice 28823838
+Invoice 28823838
+Open
+
+Gray, Anna · Northgate · Service on Sep 23, 2026
+
+Patient account
+Open chart
+Details
+Patient
+Gray, Anna MRN HG8916636
+Location
+Northgate
+Service date
+Sep 23, 2026
+Issued
+Sep 27, 2026
+Total
+$53.32
+Status
+Open
+Ledger
+Ledger of this invoice, oldest first
+Date	Description	Charges	Payments and adjustments
+Sep 27, 2026	Charge for services on Sep 23, 2026	$53.32	
+Amount owed	$53.32
+== FRAME INTERACTIVE ==
+A[] Invoices href=/billing
+A[] Patient account href=/billing/accounts/535rn1pbvb
+A[] Open chart href=/patients/535rn1pbvb
+A[] Gray, Anna href=/patients/535rn1pbvb

@@ -1,0 +1,360 @@
+URL https://practice.speedrun.scopehealth.com/activity?action=update&record=patient
+
+== FRAME https://practice.speedrun.scopehealth.com/v/gl1lrptv65bs6mxpwfcnqwprs4/ ==
+Activity
+
+What staff did in Wrenfield, newest first.
+
+User
+All users
+Aisha Wilson (awilson)
+Alexander Nunez (anunez)
+Andrea Hill (ahill)
+Andres Mendez (amendez)
+Angel Ali, NP (aali)
+Anna Mejia (amejia)
+Austin Gibson, NP (agibson)
+Barbara Wilson (bwilson)
+Betty Baker (bbaker)
+Brandon Howell, NP (bhowell)
+Brian Reed, NP (breed)
+Bryan Palmer, NP (bpalmer)
+Caleb Price (cprice)
+Carlos Barnes (cbarnes)
+Christian Walker (cwalker)
+Colleen Grant, PA (cgrant)
+David Hamilton (dhamilton)
+Debra Stevens (dstevens)
+Desmond Fields, PA (dfields)
+Diana Anderson, PA (danderson)
+Diane Fisher (dfisher)
+Dorothy Mason, PA (dmason)
+Dorothy Scott, NP (dscott)
+Dr. Bennett (lbennett)
+Dr. Butler (mbutler)
+Dr. Carroll (vcarroll)
+Dr. Chen (rchen)
+Dr. Crawford (jcrawford)
+Dr. Cunningham (dcunningham)
+Dr. Davis (cdavis)
+Dr. Foster (afoster)
+Dr. Fowler (dfowler)
+Dr. Garcia (jgarcia)
+Dr. Garrison (kgarrison)
+Dr. Gonzalez (dgonzalez)
+Dr. Green (rgreen)
+Dr. Herrera (sherrera)
+Dr. Hughes (dhughes)
+Dr. Jackson (cjackson)
+Dr. Lee (dlee)
+Dr. Lindgren (mlindgren)
+Dr. Maldonado (fmaldonado)
+Dr. Marshall (jmarshall)
+Dr. Martin (lmartin)
+Dr. Martinez (rmartinez)
+Dr. Meyer (gmeyer)
+Dr. Miller (kmiller)
+Dr. Moore (vmoore)
+Dr. Morris (smorris)
+Dr. Murphy (lmurphy)
+Dr. Nielsen (jnielsen)
+Dr. Olson (molson)
+Dr. Parker (jparker)
+Dr. Perez (vperez)
+Dr. Ramirez (jramirez)
+Dr. Ramos (hramos)
+Dr. Reynolds (mreynolds)
+Dr. Rios (jrios)
+Dr. Ruiz (zruiz)
+Dr. Shaw (ashaw)
+Dr. Silva (dsilva)
+Dr. Sorensen (msorensen)
+Dr. Soto (jsoto)
+Dr. Tillman (jtillman)
+Dr. Wagner (awagner)
+Dr. Watkins (lwatkins)
+Dr. West (bwest)
+Dr. Williamson (mwilliamson)
+Edward Lindqvist, NP (elindqvist)
+Edward Pierce, NP (epierce)
+Elena Gutierrez, NP (egutierrez)
+Elena Thompson (ethompson)
+Fatima Ramirez (framirez)
+Gary Haddad (ghaddad)
+Gloria Allen, NP (gallen)
+Grace Garcia (ggarcia)
+Gregory Patterson (gpatterson)
+Harold Larsen, PA (hlarsen)
+Henry Davis (hdavis)
+Ingrid Rivera (irivera)
+Jack Simpson (jsimpson)
+James Cook, PA (jcook)
+Janice Adams (jadams)
+Jason Collins, NP (jcollins)
+Joe Brown (jbrown)
+Joe Jackson (jjackson)
+Joe Wilson, PA (jwilson)
+Jonathan Jacobsen (jjacobsen)
+Jordan Alvarado (jalvarado)
+Joshua Bowman, PA (jbowman)
+Joyce Nelson, NP (jnelson)
+Juan Price (jprice)
+Katherine Nichols, NP (knichols)
+Kathryn Martinez (kmartinez)
+Kathryn Russell (krussell)
+Kenneth Sullivan, NP (ksullivan)
+Kimberly Espinoza (kespinoza)
+Larry Jones (ljones2)
+Lawrence Jones (ljones)
+Lawrence Rodriguez, NP (lrodriguez)
+Liam Farrell, NP (lfarrell)
+Logan Martinez (lmartinez)
+Lucas Johnson, NP (ljohnson)
+Lucas Lopez, NP (llopez)
+Maria Flores (mflores)
+Matthew Evans, PA (mevans)
+Mei Carpenter, PA (mcarpenter)
+Mei Miller (mmiller)
+Melissa Davis (mdavis)
+Michelle Martinez (mmartinez)
+Nancy Phillips (nphillips)
+Olivia Rivera, NP (orivera)
+Priya Roberts, NP (proberts)
+Richard Harrison, NP (rharrison)
+Sandra Anderson (sanderson)
+Sophia Clark (sclark)
+Soren Welch, NP (swelch)
+Stephanie Henderson (shenderson)
+Susan Vasquez, NP (svasquez)
+Teresa Warren (twarren)
+Theresa Medina (tmedina)
+Timothy Moore (tmoore)
+Vincent Herrera (vherrera)
+Vincent Morgan (vmorgan)
+Walter Guzman, PA (wguzman)
+William Kelly, NP (wkelly)
+Zoe Christensen (zchristensen)
+frontdesk (frontdesk)
+Action
+All actions
+Created
+Changed
+Deleted
+Merged
+Opened
+Logged in
+Record
+All records
+Patient
+Appointment
+Recurring appointment
+Invoice
+Document
+User account
+From
+To
+Apply
+Clear filters
+Patient
+Find
+Activity, newest first
+Time	User	Action	Record	What changed
+Oct 14, 2026, 9:56 AM CDT	
+Nancy Phillips
+nphillips
+	Changed	
+Harris, Robert
+	Email address changed
+Oct 14, 2026, 9:44 AM CDT	
+Ingrid Rivera
+irivera
+	Changed	
+Morales, Barbara
+	Insurance plan changed from Local 114 Plan to Open Access
+Oct 14, 2026, 7:20 AM CDT	
+Elena Thompson
+ethompson
+	Changed	
+Hanson, Gary
+	Street address changed
+Oct 14, 2026, 5:32 AM CDT	
+Lawrence Jones
+ljones
+	Changed	
+Johnson, Peter
+Restricted
+	Phone number changed
+Oct 14, 2026, 2:20 AM MDT	
+Kimberly Espinoza
+kespinoza
+	Changed	
+Rogers, Brenda
+	Street address changed
+Oct 14, 2026, 2:04 AM MDT	
+Kathryn Martinez
+kmartinez
+	Changed	
+Martinez, Nathan
+	Primary care provider changed from William Kelly, NP to Joan Ramirez, MD
+Oct 14, 2026, 2:33 AM CDT	
+Henry Davis
+hdavis
+	Changed	
+Parker, Amy
+	Insurance plan changed from HMO Select to Bronze 6000
+Oct 14, 2026, 1:22 AM MDT	
+Kathryn Martinez
+kmartinez
+	Changed	
+Whitaker, Lori
+	Phone number changed
+Oct 14, 2026, 2:15 AM CDT	
+Sophia Clark
+sclark
+	Changed	
+Jordan, Patricia
+	Phone number changed
+Oct 14, 2026, 2:03 AM CDT	
+Nancy Phillips
+nphillips
+	Changed	
+Clark, Lucia
+	Email address changed
+Oct 14, 2026, 1:24 AM CDT	
+Elena Thompson
+ethompson
+	Changed	
+Taylor, Joshua
+	Email address changed
+Oct 14, 2026, 12:23 AM MDT	
+Michelle Martinez
+mmartinez
+	Changed	
+Kelly, Ronald
+	Street address changed
+Oct 14, 2026, 12:27 AM CDT	
+Sophia Clark
+sclark
+	Changed	
+Smith, Ahmed
+	Phone number changed
+Oct 14, 2026, 12:11 AM CDT	
+Christian Walker
+cwalker
+	Changed	
+Bishop, Renee
+	Street address changed
+Oct 13, 2026, 10:53 PM MDT	
+Carlos Barnes
+cbarnes
+	Changed	
+Nunez, Anna
+Restricted
+	Restricted setting changed from not restricted to restricted
+Oct 13, 2026, 10:46 PM MDT	
+Debra Stevens
+dstevens
+	Changed	
+Okafor, Sean
+	Insurance plan changed from Children's Care to HMO Select
+Oct 13, 2026, 11:40 PM CDT	
+Nancy Phillips
+nphillips
+	Changed	
+White, Carolyn
+	Street address changed
+Oct 13, 2026, 10:45 PM CDT	
+Joe Jackson
+jjackson
+	Changed	
+Richardson, Jason
+Restricted
+	Restricted setting changed from not restricted to restricted
+Oct 13, 2026, 10:31 PM CDT	
+Henry Davis
+hdavis
+	Changed	
+Lopez, Julie
+	Phone number changed
+Oct 13, 2026, 8:59 PM MDT	
+Mei Miller
+mmiller
+	Changed	
+Adams, Scott
+	Street address changed
+Oct 13, 2026, 8:55 PM MDT	
+Ingrid Rivera
+irivera
+	Changed	
+Jones, John
+	Email address changed
+Oct 13, 2026, 8:40 PM MDT	
+Kathryn Russell
+krussell
+	Changed	
+Hernandez, Emily
+	Street address changed
+Oct 13, 2026, 9:27 PM CDT	
+Nancy Phillips
+nphillips
+	Changed	
+Schaefer, Michael
+	Phone number changed
+Oct 13, 2026, 9:26 PM CDT	
+Michelle Martinez
+mmartinez
+	Changed	
+Johnson, Katherine
+	Email address changed
+Oct 13, 2026, 8:53 PM CDT	
+Nancy Phillips
+nphillips
+	Changed	
+Allen, George
+	Phone number changed
+
+Showing 1 to 25 of 200+ entries
+
+Rows per page
+25 per page
+50 per page
+Previous
+Next
+== FRAME INTERACTIVE ==
+SELECT All users / Aisha Wilson (awilson) / Alexander Nunez (anunez) / Andrea Hill (ahill) / An
+SELECT All actions / Created / Changed / Deleted / Merged / Opened / Logged in
+SELECT All records / Patient / Appointment / Recurring appointment / Invoice / Document / User acco
+INPUT 
+INPUT 
+BUTTON Apply
+BUTTON Clear filters
+INPUT 
+BUTTON Find
+A Harris, Robert href=/patients/268mr6nf7m
+A Morales, Barbara href=/patients/02rcb78zm4
+A Hanson, Gary href=/patients/4td3z3272d
+A Johnson, Peter href=/patients/3n7fgqfmpj
+A Rogers, Brenda href=/patients/65ff1kw88d
+A Martinez, Nathan href=/patients/45zr5xk494
+A Parker, Amy href=/patients/5sscj22nmx
+A Whitaker, Lori href=/patients/2jxng94sxv
+A Jordan, Patricia href=/patients/5rwn2bhn5m
+A Clark, Lucia href=/patients/4t37zvmrt1
+A Taylor, Joshua href=/patients/4mlz2nh7xx
+A Kelly, Ronald href=/patients/3k2mvrc71m
+A Smith, Ahmed href=/patients/24l9q3njlz
+A Bishop, Renee href=/patients/4293c0htll
+A Nunez, Anna href=/patients/59wh7986pk
+A Okafor, Sean href=/patients/4kzq4v3qcd
+A White, Carolyn href=/patients/4hczpx3b6n
+A Richardson, Jason href=/patients/2k18kpf0dl
+A Lopez, Julie href=/patients/2kn0b6x909
+A Adams, Scott href=/patients/31gcrft9ph
+A Jones, John href=/patients/18ngrf4gpj
+A Hernandez, Emily href=/patients/6j1pm1w89t
+A Schaefer, Michael href=/patients/63x5m1flgg
+A Johnson, Katherine href=/patients/4c44fv6lrg
+A Allen, George href=/patients/07krtp0cl0
+SELECT 25 per page / 50 per page
+BUTTON Previous
+BUTTON Next

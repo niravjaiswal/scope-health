@@ -1,0 +1,45 @@
+URL https://practice.speedrun.scopehealth.com/patients/21vnfcj01d
+
+== FRAME https://practice.speedrun.scopehealth.com/v/hns3tf5d0hrbnlz778sfkdvf7c/ ==
+The record with MRN HG2301332 was merged into this record
+
+What was filed under it is shown here.
+
+Driscoll, Christopher
+MRN
+HG3028894
+Date of birth
+02/27/1972 (54 years)
+Sex
+Male
+Billing
+Invoices
+Demographics
+Insurance
+Problems
+Notes
+Documents
+Appointments
+Activity
+Contact
+Phone
+(814) 807-6945
+Email
+c•••••@mailbox.example
+Address
+9417 Jefferson Ave Apt 12
+Granite Fork, CO 80752
+Care team
+Primary provider
+Renee Chen, MD
+Home location
+Highline
+== FRAME INTERACTIVE ==
+A[] Invoices href=/billing/accounts/21vnfcj01d
+A[] Demographics href=/patients/21vnfcj01d
+A[] Insurance href=/patients/21vnfcj01d/insurance
+A[] Problems href=/patients/21vnfcj01d/problems
+A[] Notes href=/patients/21vnfcj01d/notes
+A[] Documents href=/patients/21vnfcj01d/documents
+A[] Appointments href=/patients/21vnfcj01d/appointments
+A[] Activity href=/patients/21vnfcj01d/activity

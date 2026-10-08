@@ -1,0 +1,50 @@
+URL: https://practice.speedrun.scopehealth.com/patients/0mm4mv3c3d/appointments
+TITLE: Barnes, Donald · Wrenfield
+
+Barnes, Donald
+MRN
+HG4002109
+Date of birth
+05/16/2003 (23 years)
+Sex
+Male
+Billing
+Invoices
+Demographics
+Insurance
+Problems
+Notes
+Documents
+Appointments
+Activity
+Recurring appointments
+Every week on Wednesday at 07:30
+Nutrition counseling with Diane Gonzalez, MD at Eastside
+Jul 15, 2026 to Nov 11, 2026, 2 changed dates
+
+1 recurring appointment
+
+Appointments, newest first
+Date and time	Type	Provider	Location	Status
+Jul 2, 2026, 1:30 PM CDT	Office visit	Diane Gonzalez, MD	Lakeside	
+Completed
+Mar 24, 2026, 1:00 PM CDT	Office visit	Julie Soto, MD	Lakeside	
+Completed
+Nov 15, 2024, 12:00 PM CST	Infusion therapy	Diane Gonzalez, MD	Lakeside	
+No-show
+
+3 appointments
+
+---- INTERACTIVE ----
+[A] 'Invoices' /billing/accounts/0mm4mv3c3d  
+[A] 'Demographics' /patients/0mm4mv3c3d  
+[A] 'Insurance' /patients/0mm4mv3c3d/insurance  
+[A] 'Problems' /patients/0mm4mv3c3d/problems  
+[A] 'Notes' /patients/0mm4mv3c3d/notes  
+[A] 'Documents' /patients/0mm4mv3c3d/documents  
+[A] 'Appointments' /patients/0mm4mv3c3d/appointments  page
+[A] 'Activity' /patients/0mm4mv3c3d/activity  
+[A] 'Every week on Wednesday at 07:30' /patients/0mm4mv3c3d/recurring/44rgp8hg67  
+[A] 'Jul 2, 2026, 1:30 PM' /patients/0mm4mv3c3d/appointments/43x51jwpw4  
+[A] 'Mar 24, 2026, 1:00 PM' /patients/0mm4mv3c3d/appointments/37gchhknfc  
+[A] 'Nov 15, 2024, 12:00 PM' /patients/0mm4mv3c3d/appointments/2dszxz6q5x  

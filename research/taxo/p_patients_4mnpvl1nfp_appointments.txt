@@ -1,0 +1,34 @@
+URL https://practice.speedrun.scopehealth.com/patients/21vnfcj01d/appointments
+
+== FRAME https://practice.speedrun.scopehealth.com/v/dwfb84v3tk8n5n6lw63z6lkrg3/ ==
+The record with MRN HG2301332 was merged into this record
+
+What was filed under it is shown here.
+
+Driscoll, Christopher
+MRN
+HG3028894
+Date of birth
+02/27/1972 (54 years)
+Sex
+Male
+Billing
+Invoices
+Demographics
+Insurance
+Problems
+Notes
+Documents
+Appointments
+Activity
+
+No single appointments on record.
+== FRAME INTERACTIVE ==
+A[] Invoices href=/billing/accounts/21vnfcj01d
+A[] Demographics href=/patients/21vnfcj01d
+A[] Insurance href=/patients/21vnfcj01d/insurance
+A[] Problems href=/patients/21vnfcj01d/problems
+A[] Notes href=/patients/21vnfcj01d/notes
+A[] Documents href=/patients/21vnfcj01d/documents
+A[] Appointments href=/patients/21vnfcj01d/appointments
+A[] Activity href=/patients/21vnfcj01d/activity

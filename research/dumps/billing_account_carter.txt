@@ -1,0 +1,25 @@
+URL: https://practice.speedrun.scopehealth.com/billing/accounts/33wg812twh
+TITLE: Billing · Wrenfield
+
+Invoices
+Account of Carter, Ryan
+Carter, Ryan
+MRN
+HG6715653
+Date of birth
+07/28/1969
+Open chart
+Invoices
+Invoices of this patient, newest service first
+Invoice	Service date	Location	Issued	Total	Status	
+Filed under
+
+03483827	Oct 14, 2026	Prairie View	Oct 14, 2026	$189.58	
+Partly paid	
+
+1 invoice
+
+---- INTERACTIVE ----
+[A] 'Invoices' /billing  
+[A] 'Open chart' /patients/33wg812twh  
+[A] '03483827' /billing/invoices/5h618fxx1w  

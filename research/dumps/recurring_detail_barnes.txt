@@ -1,0 +1,128 @@
+URL: https://practice.speedrun.scopehealth.com/patients/0mm4mv3c3d/recurring/44rgp8hg67
+TITLE: Barnes, Donald · Wrenfield
+
+Barnes, Donald
+MRN
+HG4002109
+Date of birth
+05/16/2003 (23 years)
+Sex
+Male
+Billing
+Invoices
+Demographics
+Insurance
+Problems
+Notes
+Documents
+Appointments
+Activity
+Recurring appointment: Every week on Wednesday at 07:30
+Close
+Rule
+Repeats
+Every week on Wednesday at 07:30
+Length
+45 minutes
+From
+Jul 15, 2026
+Until
+Nov 11, 2026
+Type
+Nutrition counseling
+
+Times are local to the location.
+
+People and place
+Provider
+Diane Gonzalez, MD
+Location
+Eastside
+Created
+Jun 27, 2026, 1:07 PM CDT
+Last changed
+Sep 19, 2026, 1:55 AM CDT
+Changed dates
+Dates on which this series was changed
+Date	Change	Recorded
+Aug 19, 2026	
+Cancelled	Aug 10, 2026, 1:13 AM CDT
+Sep 30, 2026	
+Cancelled	Sep 19, 2026, 1:55 AM CDT
+
+2 changed dates
+
+All dates
+Every date of this recurring appointment, newest first
+Date and time	Status
+Nov 11, 2026, 7:30 AM CST	
+Scheduled
+Nov 4, 2026, 7:30 AM CST	
+Scheduled
+Oct 28, 2026, 7:30 AM CDT	
+Scheduled
+Oct 21, 2026, 7:30 AM CDT	
+Scheduled
+Oct 14, 2026, 7:30 AM CDT	
+Completed
+Oct 7, 2026, 7:30 AM CDT	
+Completed
+Sep 30, 2026, 7:30 AM CDT	
+Cancelled
+Sep 23, 2026, 7:30 AM CDT	
+Completed
+Sep 16, 2026, 7:30 AM CDT	
+Completed
+Sep 9, 2026, 7:30 AM CDT	
+Completed
+Sep 2, 2026, 7:30 AM CDT	
+Completed
+Aug 26, 2026, 7:30 AM CDT	
+Completed
+Aug 19, 2026, 7:30 AM CDT	
+Cancelled
+Aug 12, 2026, 7:30 AM CDT	
+Completed
+Aug 5, 2026, 7:30 AM CDT	
+Completed
+Jul 29, 2026, 7:30 AM CDT	
+Completed
+Jul 22, 2026, 7:30 AM CDT	
+Completed
+Jul 15, 2026, 7:30 AM CDT	
+Completed
+
+18 dates
+
+Recurring appointments
+Every week on Wednesday at 07:30
+Nutrition counseling with Diane Gonzalez, MD at Eastside
+Jul 15, 2026 to Nov 11, 2026, 2 changed dates
+
+1 recurring appointment
+
+Appointments, newest first
+Date and time	Type	Provider	Location	Status
+Jul 2, 2026, 1:30 PM CDT	Office visit	Diane Gonzalez, MD	Lakeside	
+Completed
+Mar 24, 2026, 1:00 PM CDT	Office visit	Julie Soto, MD	Lakeside	
+Completed
+Nov 15, 2024, 12:00 PM CST	Infusion therapy	Diane Gonzalez, MD	Lakeside	
+No-show
+
+3 appointments
+
+---- INTERACTIVE ----
+[A] 'Invoices' /billing/accounts/0mm4mv3c3d  
+[A] 'Demographics' /patients/0mm4mv3c3d  
+[A] 'Insurance' /patients/0mm4mv3c3d/insurance  
+[A] 'Problems' /patients/0mm4mv3c3d/problems  
+[A] 'Notes' /patients/0mm4mv3c3d/notes  
+[A] 'Documents' /patients/0mm4mv3c3d/documents  
+[A] 'Appointments' /patients/0mm4mv3c3d/appointments  page
+[A] 'Activity' /patients/0mm4mv3c3d/activity  
+[BUTTON] 'Close'   
+[A] 'Every week on Wednesday at 07:30' /patients/0mm4mv3c3d/recurring/44rgp8hg67  
+[A] 'Jul 2, 2026, 1:30 PM' /patients/0mm4mv3c3d/appointments/43x51jwpw4  
+[A] 'Mar 24, 2026, 1:00 PM' /patients/0mm4mv3c3d/appointments/37gchhknfc  
+[A] 'Nov 15, 2024, 12:00 PM' /patients/0mm4mv3c3d/appointments/2dszxz6q5x  

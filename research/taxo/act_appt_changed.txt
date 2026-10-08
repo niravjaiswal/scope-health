@@ -1,0 +1,432 @@
+URL https://practice.speedrun.scopehealth.com/activity?action=update&record=appointment
+
+== FRAME https://practice.speedrun.scopehealth.com/v/h3khp91ksn41vk932rs3v9nwj2/ ==
+Activity
+
+What staff did in Wrenfield, newest first.
+
+User
+All users
+Aisha Wilson (awilson)
+Alexander Nunez (anunez)
+Andrea Hill (ahill)
+Andres Mendez (amendez)
+Angel Ali, NP (aali)
+Anna Mejia (amejia)
+Austin Gibson, NP (agibson)
+Barbara Wilson (bwilson)
+Betty Baker (bbaker)
+Brandon Howell, NP (bhowell)
+Brian Reed, NP (breed)
+Bryan Palmer, NP (bpalmer)
+Caleb Price (cprice)
+Carlos Barnes (cbarnes)
+Christian Walker (cwalker)
+Colleen Grant, PA (cgrant)
+David Hamilton (dhamilton)
+Debra Stevens (dstevens)
+Desmond Fields, PA (dfields)
+Diana Anderson, PA (danderson)
+Diane Fisher (dfisher)
+Dorothy Mason, PA (dmason)
+Dorothy Scott, NP (dscott)
+Dr. Bennett (lbennett)
+Dr. Butler (mbutler)
+Dr. Carroll (vcarroll)
+Dr. Chen (rchen)
+Dr. Crawford (jcrawford)
+Dr. Cunningham (dcunningham)
+Dr. Davis (cdavis)
+Dr. Foster (afoster)
+Dr. Fowler (dfowler)
+Dr. Garcia (jgarcia)
+Dr. Garrison (kgarrison)
+Dr. Gonzalez (dgonzalez)
+Dr. Green (rgreen)
+Dr. Herrera (sherrera)
+Dr. Hughes (dhughes)
+Dr. Jackson (cjackson)
+Dr. Lee (dlee)
+Dr. Lindgren (mlindgren)
+Dr. Maldonado (fmaldonado)
+Dr. Marshall (jmarshall)
+Dr. Martin (lmartin)
+Dr. Martinez (rmartinez)
+Dr. Meyer (gmeyer)
+Dr. Miller (kmiller)
+Dr. Moore (vmoore)
+Dr. Morris (smorris)
+Dr. Murphy (lmurphy)
+Dr. Nielsen (jnielsen)
+Dr. Olson (molson)
+Dr. Parker (jparker)
+Dr. Perez (vperez)
+Dr. Ramirez (jramirez)
+Dr. Ramos (hramos)
+Dr. Reynolds (mreynolds)
+Dr. Rios (jrios)
+Dr. Ruiz (zruiz)
+Dr. Shaw (ashaw)
+Dr. Silva (dsilva)
+Dr. Sorensen (msorensen)
+Dr. Soto (jsoto)
+Dr. Tillman (jtillman)
+Dr. Wagner (awagner)
+Dr. Watkins (lwatkins)
+Dr. West (bwest)
+Dr. Williamson (mwilliamson)
+Edward Lindqvist, NP (elindqvist)
+Edward Pierce, NP (epierce)
+Elena Gutierrez, NP (egutierrez)
+Elena Thompson (ethompson)
+Fatima Ramirez (framirez)
+Gary Haddad (ghaddad)
+Gloria Allen, NP (gallen)
+Grace Garcia (ggarcia)
+Gregory Patterson (gpatterson)
+Harold Larsen, PA (hlarsen)
+Henry Davis (hdavis)
+Ingrid Rivera (irivera)
+Jack Simpson (jsimpson)
+James Cook, PA (jcook)
+Janice Adams (jadams)
+Jason Collins, NP (jcollins)
+Joe Brown (jbrown)
+Joe Jackson (jjackson)
+Joe Wilson, PA (jwilson)
+Jonathan Jacobsen (jjacobsen)
+Jordan Alvarado (jalvarado)
+Joshua Bowman, PA (jbowman)
+Joyce Nelson, NP (jnelson)
+Juan Price (jprice)
+Katherine Nichols, NP (knichols)
+Kathryn Martinez (kmartinez)
+Kathryn Russell (krussell)
+Kenneth Sullivan, NP (ksullivan)
+Kimberly Espinoza (kespinoza)
+Larry Jones (ljones2)
+Lawrence Jones (ljones)
+Lawrence Rodriguez, NP (lrodriguez)
+Liam Farrell, NP (lfarrell)
+Logan Martinez (lmartinez)
+Lucas Johnson, NP (ljohnson)
+Lucas Lopez, NP (llopez)
+Maria Flores (mflores)
+Matthew Evans, PA (mevans)
+Mei Carpenter, PA (mcarpenter)
+Mei Miller (mmiller)
+Melissa Davis (mdavis)
+Michelle Martinez (mmartinez)
+Nancy Phillips (nphillips)
+Olivia Rivera, NP (orivera)
+Priya Roberts, NP (proberts)
+Richard Harrison, NP (rharrison)
+Sandra Anderson (sanderson)
+Sophia Clark (sclark)
+Soren Welch, NP (swelch)
+Stephanie Henderson (shenderson)
+Susan Vasquez, NP (svasquez)
+Teresa Warren (twarren)
+Theresa Medina (tmedina)
+Timothy Moore (tmoore)
+Vincent Herrera (vherrera)
+Vincent Morgan (vmorgan)
+Walter Guzman, PA (wguzman)
+William Kelly, NP (wkelly)
+Zoe Christensen (zchristensen)
+frontdesk (frontdesk)
+Action
+All actions
+Created
+Changed
+Deleted
+Merged
+Opened
+Logged in
+Record
+All records
+Patient
+Appointment
+Recurring appointment
+Invoice
+Document
+User account
+From
+To
+Apply
+Clear filters
+Patient
+Find
+Activity, newest first
+Time	User	Action	Record	What changed
+Oct 14, 2026, 10:00 AM CDT	
+Olivia Rivera, NP
+orivera
+	Changed	
+Appointment on Oct 14, 2026
+Carter, Ryan
+	Status changed from 
+Scheduled to 
+Completed
+Oct 14, 2026, 10:00 AM CDT	
+Dr. Jackson
+cjackson
+	Changed	
+Appointment on Oct 14, 2026
+Bailey, Jennifer
+	Status changed from 
+Scheduled to 
+Completed
+Oct 14, 2026, 10:00 AM CDT	
+Edward Lindqvist, NP
+elindqvist
+	Changed	
+Appointment on Oct 14, 2026
+Dean, William
+	Status changed from 
+Scheduled to 
+Completed
+Oct 14, 2026, 9:00 AM MDT	
+Lawrence Rodriguez, NP
+lrodriguez
+	Changed	
+Appointment on Oct 14, 2026
+Christensen, Richard
+	Status changed from 
+Scheduled to 
+Completed
+Oct 14, 2026, 9:00 AM MDT	
+Stephanie Henderson
+shenderson
+	Changed	
+Appointment on Oct 14, 2026
+Nelson, Susan
+	Status changed from 
+Scheduled to 
+Completed
+Oct 14, 2026, 10:00 AM CDT	
+Aisha Wilson
+awilson
+	Changed	
+Appointment on Oct 14, 2026
+Ortega, Robert
+	Status changed from 
+Scheduled to 
+Completed
+Oct 14, 2026, 10:00 AM CDT	
+Dr. Parker
+jparker
+	Changed	
+Appointment on Oct 14, 2026
+Martin, William
+	Status changed from 
+Scheduled to 
+Completed
+Oct 14, 2026, 9:00 AM MDT	
+Anna Mejia
+amejia
+	Changed	
+Appointment on Oct 14, 2026
+Gómez, Lisa
+	Status changed from 
+Scheduled to 
+Completed
+Oct 14, 2026, 10:00 AM CDT	
+Dr. Perez
+vperez
+	Changed	
+Appointment on Oct 14, 2026
+Robinson, Ana
+	Status changed from 
+Scheduled to 
+Completed
+Oct 14, 2026, 10:00 AM CDT	
+Dr. Gonzalez
+dgonzalez
+	Changed	
+Appointment on Oct 14, 2026
+Baker, Nathan
+	Status changed from 
+Scheduled to 
+Completed
+Oct 14, 2026, 9:00 AM MDT	
+Zoe Christensen
+zchristensen
+	Changed	
+Appointment on Oct 14, 2026
+Reed, Arthur
+	Status changed from 
+Scheduled to 
+No-show
+Oct 14, 2026, 10:00 AM CDT	
+Edward Lindqvist, NP
+elindqvist
+	Changed	
+Appointment on Oct 14, 2026
+Griffin, Richard
+	Status changed from 
+Scheduled to 
+Completed
+Oct 14, 2026, 9:00 AM MDT	
+Liam Farrell, NP
+lfarrell
+	Changed	
+Appointment on Oct 14, 2026
+Freeman, Lauren
+	Status changed from 
+Scheduled to 
+Completed
+Oct 14, 2026, 9:00 AM MDT	
+Aisha Wilson
+awilson
+	Changed	
+Appointment on Oct 14, 2026
+Woods, Michael
+	Status changed from 
+Scheduled to 
+Completed
+Oct 14, 2026, 10:00 AM CDT	
+Soren Welch, NP
+swelch
+	Changed	
+Appointment on Oct 14, 2026
+Adams, Kenneth
+	Status changed from 
+Scheduled to 
+Completed
+Oct 14, 2026, 9:00 AM MDT	
+Juan Price
+jprice
+	Changed	
+Appointment on Oct 14, 2026
+Carroll, Linda
+	Status changed from 
+Scheduled to 
+No-show
+Oct 14, 2026, 9:00 AM MDT	
+Dr. Maldonado
+fmaldonado
+	Changed	
+Appointment on Oct 14, 2026
+Allen, Brandon
+	Status changed from 
+Scheduled to 
+Completed
+Oct 14, 2026, 9:00 AM MDT	
+Joyce Nelson, NP
+jnelson
+	Changed	
+Appointment on Oct 14, 2026
+Sanders, Desmond
+	Status changed from 
+Scheduled to 
+Completed
+Oct 14, 2026, 10:00 AM CDT	
+Dr. Nielsen
+jnielsen
+	Changed	
+Appointment on Oct 14, 2026
+Barrett, Jessica
+	Status changed from 
+Scheduled to 
+Completed
+Oct 14, 2026, 10:00 AM CDT	
+Dorothy Mason, PA
+dmason
+	Changed	
+Appointment on Oct 14, 2026
+Price, Paul
+	Status changed from 
+Scheduled to 
+Completed
+Oct 14, 2026, 10:00 AM CDT	
+Lucas Lopez, NP
+llopez
+	Changed	
+Appointment on Oct 14, 2026
+Williams, Patricia
+	Status changed from 
+Scheduled to 
+Completed
+Oct 14, 2026, 10:00 AM CDT	
+Sandra Anderson
+sanderson
+	Changed	
+Appointment on Oct 14, 2026
+Martin, Cynthia
+	Status changed from 
+Scheduled to 
+Completed
+Oct 14, 2026, 9:00 AM MDT	
+David Hamilton
+dhamilton
+	Changed	
+Appointment on Oct 14, 2026
+Bennett, Jacqueline
+	Status changed from 
+Scheduled to 
+Completed
+Oct 14, 2026, 10:00 AM CDT	
+Matthew Evans, PA
+mevans
+	Changed	
+Appointment on Oct 14, 2026
+Evans, Thomas
+	Status changed from 
+Scheduled to 
+Completed
+Oct 14, 2026, 10:00 AM CDT	
+Betty Baker
+bbaker
+	Changed	
+Appointment on Oct 14, 2026
+Vargas, Megan
+	Status changed from 
+Scheduled to 
+Completed
+
+Showing 1 to 25 of 200+ entries
+
+Rows per page
+25 per page
+50 per page
+Previous
+Next
+== FRAME INTERACTIVE ==
+SELECT All users / Aisha Wilson (awilson) / Alexander Nunez (anunez) / Andrea Hill (ahill) / An
+SELECT All actions / Created / Changed / Deleted / Merged / Opened / Logged in
+SELECT All records / Patient / Appointment / Recurring appointment / Invoice / Document / User acco
+INPUT 
+INPUT 
+BUTTON Apply
+BUTTON Clear filters
+INPUT 
+BUTTON Find
+A Appointment on Oct 14, 2026 href=/patients/33wg812twh/appointments/0r1qvtgwgw
+A Appointment on Oct 14, 2026 href=/patients/642ml1qpp4/appointments/0f2hs7q0bv
+A Appointment on Oct 14, 2026 href=/patients/0mnbtmmmns/appointments/3qqlq4d6xs
+A Appointment on Oct 14, 2026 href=/patients/0wwk072l87/appointments/2fcxjdpjjr
+A Appointment on Oct 14, 2026 href=/patients/4k7ht5hqhg/appointments/0ds3fccg0z
+A Appointment on Oct 14, 2026 href=/patients/1xb41ths62/appointments/615thbfj3x
+A Appointment on Oct 14, 2026 href=/patients/5z2l3hww0v/appointments/26g2h4w0d7
+A Appointment on Oct 14, 2026 href=/patients/2n8h2397hx/appointments/3nzt5dz96h
+A Appointment on Oct 14, 2026 href=/patients/27pr7b9kqr/appointments/290rmmvr87
+A Appointment on Oct 14, 2026 href=/patients/0zxq9f2w7z/appointments/33c66b9vs2
+A Appointment on Oct 14, 2026 href=/patients/2sftn7vhvw/appointments/2pgzcpmmzh
+A Appointment on Oct 14, 2026 href=/patients/1m4ljzzh66/appointments/6hbrpmmbgw
+A Appointment on Oct 14, 2026 href=/patients/0tsbg6d3mk/appointments/0rpr24k00k
+A Appointment on Oct 14, 2026 href=/patients/4zhrzwbdbw/appointments/6mrxv6g50l
+A Appointment on Oct 14, 2026 href=/patients/3n3fz63ptt/appointments/1dcnhm7wnz
+A Appointment on Oct 14, 2026 href=/patients/1rh5nt2htq/appointments/4733r3hlp2
+A Appointment on Oct 14, 2026 href=/patients/3dkvq7h6cq/appointments/0vwlqdsxnw
+A Appointment on Oct 14, 2026 href=/patients/26291rxr9g/appointments/17drcc9f2r
+A Appointment on Oct 14, 2026 href=/patients/44844mrbgg/appointments/5kqsxb637c
+A Appointment on Oct 14, 2026 href=/patients/1fc9kc5q9k/appointments/376s0gmssd
+A Appointment on Oct 14, 2026 href=/patients/2mzdvkv6dq/appointments/11bwz56mzh
+A Appointment on Oct 14, 2026 href=/patients/06fm9n5mzz/appointments/05hkj5p8b8
+A Appointment on Oct 14, 2026 href=/patients/73q0rfxcnz/appointments/28rwjcgjkw
+A Appointment on Oct 14, 2026 href=/patients/3jv4v73606/appointments/1llb95xhwl
+A Appointment on Oct 14, 2026 href=/patients/0650n6m6w7/appointments/0vgc98vk5v
+SELECT 25 per page / 50 per page
+BUTTON Previous
+BUTTON Next

@@ -1,0 +1,121 @@
+
+#### /billing/invoices/47wx8gxvjx
+Details
+Patient
+Foster, Linda MRN HG1260791
+Location
+Eastside
+Service date
+Feb 5, 2026
+Issued
+Feb 5, 2026
+Total
+$8,119.00
+Status
+Partly paid
+Ledger
+Ledger of this invoice, oldest first
+Date	Description	Charges	Payments and adjustments
+Feb 5, 2026	Charge for services on Feb 5, 2026	$8,119.00	
+Feb 26, 2026	Payment received		$1,016.66
+Amount owed	$7,102.34
+#### /billing/invoices/6gm5vwh00m
+Details
+Patient
+Sullivan, Edward MRN HG4925487
+Location
+Highline
+Service date
+Dec 30, 2024
+Issued
+Jan 6, 2025
+Total
+$12,142.50
+Status
+Partly paid
+Ledger
+Ledger of this invoice, oldest first
+Date	Description	Charges	Payments and adjustments
+Jan 6, 2025	Charge for services on Dec 30, 2024	$12,142.50	
+Jan 22, 2025	Payment received		$5,537.68
+Amount owed	$6,604.82
+#### /billing/invoices/3hqvh13b41
+Details
+Patient
+McDonald, Julia MRN HG2986286
+Location
+Willow Creek
+Service date
+Feb 12, 2025
+Issued
+Feb 20, 2025
+Total
+$5,076.00
+Status
+Open
+Ledger
+Ledger of this invoice, oldest first
+Date	Description	Charges	Payments and adjustments
+Feb 20, 2025	Charge for services on Feb 12, 2025	$5,076.00	
+Amount owed	$5,076.00
+#### /billing/invoices/50v74bj4f1
+Details
+Patient
+García, Lisa MRN HG7122724
+Location
+Front Range
+Service date
+Oct 13, 2026
+Issued
+Oct 14, 2026
+Total
+$4,334.17
+Status
+Open
+Ledger
+Ledger of this invoice, oldest first
+Date	Description	Charges	Payments and adjustments
+Oct 14, 2026	Charge for services on Oct 13, 2026	$4,334.17	
+Amount owed	$4,334.17
+#### /billing/invoices/3rcsswv012
+Details
+Patient
+Bell, Jesse MRN HG1019663
+Location
+Prairie View
+Service date
+Jul 24, 2026
+Issued
+Jul 27, 2026
+Total
+$7,475.00
+Status
+Partly paid
+Ledger
+Ledger of this invoice, oldest first
+Date	Description	Charges	Payments and adjustments
+Jul 27, 2026	Charge for services on Jul 24, 2026	$7,475.00	
+Jul 28, 2026	Payment received		$1,533.70
+Aug 10, 2026	Payment received		$1,759.00
+Amount owed	$4,182.30
+#### /billing/invoices/58ds9b72kz
+Details
+Patient
+Soto, James MRN HG1709596
+Location
+Willow Creek
+Service date
+Oct 31, 2024
+Issued
+Nov 2, 2024
+Total
+$8,234.00
+Status
+Partly paid
+Ledger
+Ledger of this invoice, oldest first
+Date	Description	Charges	Payments and adjustments
+Nov 2, 2024	Charge for services on Oct 31, 2024	$8,234.00	
+Nov 6, 2024	Payment received		$2,560.82
+Nov 23, 2024	Payment received		$1,515.89
+Amount owed	$4,157.29

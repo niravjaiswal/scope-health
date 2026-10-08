@@ -1,0 +1,30 @@
+URL https://practice.speedrun.scopehealth.com/patients/4t14l48p2b/appointments
+
+== FRAME https://practice.speedrun.scopehealth.com/v/078g6qn08tlp01tfhkvgdshvc6/ ==
+Greene, Robert
+MRN
+HG5154051
+Date of birth
+06/29/2001 (25 years)
+Sex
+Male
+Billing
+Invoices
+Demographics
+Insurance
+Problems
+Notes
+Documents
+Appointments
+Activity
+
+No single appointments on record.
+== FRAME INTERACTIVE ==
+A[] Invoices href=/billing/accounts/4t14l48p2b
+A[] Demographics href=/patients/4t14l48p2b
+A[] Insurance href=/patients/4t14l48p2b/insurance
+A[] Problems href=/patients/4t14l48p2b/problems
+A[] Notes href=/patients/4t14l48p2b/notes
+A[] Documents href=/patients/4t14l48p2b/documents
+A[] Appointments href=/patients/4t14l48p2b/appointments
+A[] Activity href=/patients/4t14l48p2b/activity

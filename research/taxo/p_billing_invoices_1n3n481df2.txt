@@ -1,0 +1,41 @@
+URL https://practice.speedrun.scopehealth.com/billing/invoices/1n3n481df2
+
+== FRAME https://practice.speedrun.scopehealth.com/v/4l0p3g29bk9t1g9f614mq67f9m/ ==
+Invoices
+Invoice 10871299
+Invoice 10871299
+Void
+
+Gray, Anna · Northgate · Service on Sep 25, 2026
+
+Patient account
+Open chart
+
+This invoice is void
+
+Nothing is owed on it.
+
+Details
+Patient
+Gray, Anna MRN HG8916636
+Location
+Northgate
+Service date
+Sep 25, 2026
+Issued
+Oct 3, 2026
+Total
+$152.00
+Status
+Void
+Ledger
+Ledger of this invoice, oldest first
+Date	Description	Charges	Payments and adjustments
+Oct 3, 2026	Charge for services on Sep 25, 2026	$152.00	
+Oct 14, 2026	Invoice voided		$152.00
+Amount owed	$0.00
+== FRAME INTERACTIVE ==
+A[] Invoices href=/billing
+A[] Patient account href=/billing/accounts/535rn1pbvb
+A[] Open chart href=/patients/535rn1pbvb
+A[] Gray, Anna href=/patients/535rn1pbvb

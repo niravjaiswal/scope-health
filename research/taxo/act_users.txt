@@ -1,0 +1,332 @@
+URL https://practice.speedrun.scopehealth.com/activity?record=user
+
+== FRAME https://practice.speedrun.scopehealth.com/v/1bflz0fpfnv87hwhv9p6wpchhv/ ==
+Activity
+
+What staff did in Wrenfield, newest first.
+
+User
+All users
+Aisha Wilson (awilson)
+Alexander Nunez (anunez)
+Andrea Hill (ahill)
+Andres Mendez (amendez)
+Angel Ali, NP (aali)
+Anna Mejia (amejia)
+Austin Gibson, NP (agibson)
+Barbara Wilson (bwilson)
+Betty Baker (bbaker)
+Brandon Howell, NP (bhowell)
+Brian Reed, NP (breed)
+Bryan Palmer, NP (bpalmer)
+Caleb Price (cprice)
+Carlos Barnes (cbarnes)
+Christian Walker (cwalker)
+Colleen Grant, PA (cgrant)
+David Hamilton (dhamilton)
+Debra Stevens (dstevens)
+Desmond Fields, PA (dfields)
+Diana Anderson, PA (danderson)
+Diane Fisher (dfisher)
+Dorothy Mason, PA (dmason)
+Dorothy Scott, NP (dscott)
+Dr. Bennett (lbennett)
+Dr. Butler (mbutler)
+Dr. Carroll (vcarroll)
+Dr. Chen (rchen)
+Dr. Crawford (jcrawford)
+Dr. Cunningham (dcunningham)
+Dr. Davis (cdavis)
+Dr. Foster (afoster)
+Dr. Fowler (dfowler)
+Dr. Garcia (jgarcia)
+Dr. Garrison (kgarrison)
+Dr. Gonzalez (dgonzalez)
+Dr. Green (rgreen)
+Dr. Herrera (sherrera)
+Dr. Hughes (dhughes)
+Dr. Jackson (cjackson)
+Dr. Lee (dlee)
+Dr. Lindgren (mlindgren)
+Dr. Maldonado (fmaldonado)
+Dr. Marshall (jmarshall)
+Dr. Martin (lmartin)
+Dr. Martinez (rmartinez)
+Dr. Meyer (gmeyer)
+Dr. Miller (kmiller)
+Dr. Moore (vmoore)
+Dr. Morris (smorris)
+Dr. Murphy (lmurphy)
+Dr. Nielsen (jnielsen)
+Dr. Olson (molson)
+Dr. Parker (jparker)
+Dr. Perez (vperez)
+Dr. Ramirez (jramirez)
+Dr. Ramos (hramos)
+Dr. Reynolds (mreynolds)
+Dr. Rios (jrios)
+Dr. Ruiz (zruiz)
+Dr. Shaw (ashaw)
+Dr. Silva (dsilva)
+Dr. Sorensen (msorensen)
+Dr. Soto (jsoto)
+Dr. Tillman (jtillman)
+Dr. Wagner (awagner)
+Dr. Watkins (lwatkins)
+Dr. West (bwest)
+Dr. Williamson (mwilliamson)
+Edward Lindqvist, NP (elindqvist)
+Edward Pierce, NP (epierce)
+Elena Gutierrez, NP (egutierrez)
+Elena Thompson (ethompson)
+Fatima Ramirez (framirez)
+Gary Haddad (ghaddad)
+Gloria Allen, NP (gallen)
+Grace Garcia (ggarcia)
+Gregory Patterson (gpatterson)
+Harold Larsen, PA (hlarsen)
+Henry Davis (hdavis)
+Ingrid Rivera (irivera)
+Jack Simpson (jsimpson)
+James Cook, PA (jcook)
+Janice Adams (jadams)
+Jason Collins, NP (jcollins)
+Joe Brown (jbrown)
+Joe Jackson (jjackson)
+Joe Wilson, PA (jwilson)
+Jonathan Jacobsen (jjacobsen)
+Jordan Alvarado (jalvarado)
+Joshua Bowman, PA (jbowman)
+Joyce Nelson, NP (jnelson)
+Juan Price (jprice)
+Katherine Nichols, NP (knichols)
+Kathryn Martinez (kmartinez)
+Kathryn Russell (krussell)
+Kenneth Sullivan, NP (ksullivan)
+Kimberly Espinoza (kespinoza)
+Larry Jones (ljones2)
+Lawrence Jones (ljones)
+Lawrence Rodriguez, NP (lrodriguez)
+Liam Farrell, NP (lfarrell)
+Logan Martinez (lmartinez)
+Lucas Johnson, NP (ljohnson)
+Lucas Lopez, NP (llopez)
+Maria Flores (mflores)
+Matthew Evans, PA (mevans)
+Mei Carpenter, PA (mcarpenter)
+Mei Miller (mmiller)
+Melissa Davis (mdavis)
+Michelle Martinez (mmartinez)
+Nancy Phillips (nphillips)
+Olivia Rivera, NP (orivera)
+Priya Roberts, NP (proberts)
+Richard Harrison, NP (rharrison)
+Sandra Anderson (sanderson)
+Sophia Clark (sclark)
+Soren Welch, NP (swelch)
+Stephanie Henderson (shenderson)
+Susan Vasquez, NP (svasquez)
+Teresa Warren (twarren)
+Theresa Medina (tmedina)
+Timothy Moore (tmoore)
+Vincent Herrera (vherrera)
+Vincent Morgan (vmorgan)
+Walter Guzman, PA (wguzman)
+William Kelly, NP (wkelly)
+Zoe Christensen (zchristensen)
+frontdesk (frontdesk)
+Action
+All actions
+Created
+Changed
+Deleted
+Merged
+Opened
+Logged in
+Record
+All records
+Patient
+Appointment
+Recurring appointment
+Invoice
+Document
+User account
+From
+To
+Apply
+Clear filters
+Patient
+Find
+Activity, newest first
+Time	User	Action	Record	What changed
+Oct 14, 2026, 9:59 AM CDT	
+Mei Carpenter, PA
+mcarpenter
+	Logged in	
+Mei Carpenter, PA
+	None
+Oct 14, 2026, 9:59 AM CDT	
+Aisha Wilson
+awilson
+	Logged in	
+Aisha Wilson
+	None
+Oct 14, 2026, 9:59 AM CDT	
+Caleb Price
+cprice
+	Logged in	
+Caleb Price
+	None
+Oct 14, 2026, 9:59 AM CDT	
+Betty Baker
+bbaker
+	Logged in	
+Betty Baker
+	None
+Oct 14, 2026, 9:59 AM CDT	
+Christian Walker
+cwalker
+	Logged in	
+Christian Walker
+	None
+Oct 14, 2026, 9:59 AM CDT	
+Vincent Herrera
+vherrera
+	Logged in	
+Vincent Herrera
+	None
+Oct 14, 2026, 9:59 AM CDT	
+Katherine Nichols, NP
+knichols
+	Logged in	
+Katherine Nichols, NP
+	None
+Oct 14, 2026, 9:59 AM CDT	
+Diane Fisher
+dfisher
+	Logged in	
+Diane Fisher
+	None
+Oct 14, 2026, 9:59 AM CDT	
+Lawrence Rodriguez, NP
+lrodriguez
+	Logged in	
+Lawrence Rodriguez, NP
+	None
+Oct 14, 2026, 9:59 AM CDT	
+Olivia Rivera, NP
+orivera
+	Logged in	
+Olivia Rivera, NP
+	None
+Oct 14, 2026, 9:59 AM CDT	
+Dr. Perez
+vperez
+	Logged in	
+Dr. Perez
+	None
+Oct 14, 2026, 9:59 AM CDT	
+Joyce Nelson, NP
+jnelson
+	Logged in	
+Joyce Nelson, NP
+	None
+Oct 14, 2026, 9:59 AM CDT	
+Dr. Soto
+jsoto
+	Logged in	
+Dr. Soto
+	None
+Oct 14, 2026, 9:59 AM CDT	
+Joe Wilson, PA
+jwilson
+	Logged in	
+Joe Wilson, PA
+	None
+Oct 14, 2026, 9:59 AM CDT	
+Dr. Reynolds
+mreynolds
+	Logged in	
+Dr. Reynolds
+	None
+Oct 14, 2026, 9:59 AM CDT	
+Joyce Nelson, NP
+jnelson
+	Logged in	
+Joyce Nelson, NP
+	None
+Oct 14, 2026, 9:59 AM CDT	
+Gary Haddad
+ghaddad
+	Logged in	
+Gary Haddad
+	None
+Oct 14, 2026, 9:59 AM CDT	
+Joe Brown
+jbrown
+	Logged in	
+Joe Brown
+	None
+Oct 14, 2026, 9:59 AM CDT	
+Dr. Meyer
+gmeyer
+	Logged in	
+Dr. Meyer
+	None
+Oct 14, 2026, 9:59 AM CDT	
+Kenneth Sullivan, NP
+ksullivan
+	Logged in	
+Kenneth Sullivan, NP
+	None
+Oct 14, 2026, 9:59 AM CDT	
+Betty Baker
+bbaker
+	Logged in	
+Betty Baker
+	None
+Oct 14, 2026, 9:59 AM CDT	
+Dr. Miller
+kmiller
+	Logged in	
+Dr. Miller
+	None
+Oct 14, 2026, 9:59 AM CDT	
+Dr. Martinez
+rmartinez
+	Logged in	
+Dr. Martinez
+	None
+Oct 14, 2026, 9:59 AM CDT	
+Lawrence Jones
+ljones
+	Logged in	
+Lawrence Jones
+	None
+Oct 14, 2026, 9:59 AM CDT	
+Soren Welch, NP
+swelch
+	Logged in	
+Soren Welch, NP
+	None
+
+Showing 1 to 25 of 200+ entries
+
+Rows per page
+25 per page
+50 per page
+Previous
+Next
+== FRAME INTERACTIVE ==
+SELECT All users / Aisha Wilson (awilson) / Alexander Nunez (anunez) / Andrea Hill (ahill) / An
+SELECT All actions / Created / Changed / Deleted / Merged / Opened / Logged in
+SELECT All records / Patient / Appointment / Recurring appointment / Invoice / Document / User acco
+INPUT 
+INPUT 
+BUTTON Apply
+BUTTON Clear filters
+INPUT 
+BUTTON Find
+SELECT 25 per page / 50 per page
+BUTTON Previous
+BUTTON Next

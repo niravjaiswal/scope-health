@@ -1,0 +1,24 @@
+URL https://practice.speedrun.scopehealth.com/billing/accounts/2jx2vmvf82
+
+== FRAME https://practice.speedrun.scopehealth.com/v/zhkk536mq12rjdkmzbt9d1t892/ ==
+Invoices
+Account of Martínez, Anna
+Martínez, Anna
+MRN
+HG8823240
+Date of birth
+08/11/1999
+Open chart
+Invoices
+Invoices of this patient, newest service first
+Invoice	Service date	Location	Issued	Total	Status	
+Filed under
+
+92546644	Sep 30, 2025	Northgate	Sep 30, 2025	$1,525.17	
+Paid	
+
+1 invoice
+== FRAME INTERACTIVE ==
+A[] Invoices href=/billing
+A[] Open chart href=/patients/2jx2vmvf82
+A[] 92546644 href=/billing/invoices/280h1v7cb8

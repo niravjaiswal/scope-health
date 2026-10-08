@@ -1,0 +1,107 @@
+URL https://practice.speedrun.scopehealth.com/schedule/providers/4vqb93p4g9?date=2026-10-14
+
+== FRAME https://practice.speedrun.scopehealth.com/v/fg4g16fs7qs5wv2qvtwql9r9fb/ ==
+Schedule
+Day
+Provider
+Appointment list
+Today
+Date
+Gloria Allen, NP
+
+Family Medicine · Wednesday, October 14, 2026
+
+Provider
+Angel Ali, NP
+Gloria Allen, NP
+Diana Anderson, PA
+Lawrence Bennett, MD
+Joshua Bowman, PA
+Mateo Butler, MD
+Mei Carpenter, PA
+Valentina Carroll, MD
+Renee Chen, MD
+Jason Collins, NP
+James Cook, PA
+Jose Crawford, MD
+Donna Cunningham, MD
+Charles Davis, MD
+Matthew Evans, PA
+Liam Farrell, NP
+Desmond Fields, PA
+Ann Foster, MD
+David Fowler, MD
+Judith Garcia, MD
+Kathleen Garrison, DO
+Austin Gibson, NP
+Diane Gonzalez, MD
+Colleen Grant, PA
+Elena Gutierrez, NP
+Walter Guzman, PA
+Richard Harrison, NP
+Susan Herrera, DO
+Brandon Howell, NP
+Catherine Jackson, MD
+Lucas Johnson, NP
+William Kelly, NP
+Harold Larsen, PA
+Denise Lee, DO
+Matthew Lindgren, MD
+Edward Lindqvist, NP
+Lucas Lopez, NP
+Frances Maldonado, DO
+Janet Marshall, MD
+Lawrence Martin, MD
+Dorothy Mason, PA
+Garrett Meyer, MD
+Kevin Miller, MD
+Victoria Moore, MD
+Samuel Morris, MD
+Joyce Nelson, NP
+Katherine Nichols, NP
+Jose Nielsen, MD
+Bryan Palmer, NP
+Jennifer Parker, MD
+Valentina Perez, MD
+Joan Ramirez, MD
+Hannah Ramos, MD
+Brian Reed, NP
+Martha Reynolds, MD
+Jacqueline Rios, MD
+Olivia Rivera, NP
+Priya Roberts, NP
+Lawrence Rodriguez, NP
+Zachary Ruiz, MD
+Dorothy Scott, NP
+Donald Silva, MD
+Mark Sorensen, MD
+Julie Soto, MD
+Kenneth Sullivan, NP
+James Tillman, DO
+Susan Vasquez, NP
+Aaron Wagner, MD
+Lori Watkins, MD
+Soren Welch, NP
+Brenda West, MD
+Megan Williamson, MD
+Ruth Green, DO
+Douglas Hughes, MD
+Rachel Martinez, MD
+Laura Murphy, MD
+Martha Olson, MD
+Edward Pierce, NP
+Ann Shaw, MD
+Joe Wilson, PA
+
+Nothing scheduled on this day
+
+Gloria Allen, NP has no working hours or appointments on Wednesday, October 14, 2026.
+== FRAME INTERACTIVE ==
+A[] Day href=/schedule?date=2026-10-14
+A[] Provider href=/schedule/providers/4vqb93p4g9?date=2026-10-14
+A[] Appointment list href=/schedule/appointments?from=2026-10-14&to=2026-10-20
+BUTTON[button] Previous day
+BUTTON[button] Today
+BUTTON[button] Next day
+INPUT[date] 2026-10-14
+SELECT[select-one] Angel Ali, NP / Gloria Allen, NP / Diana Anderson, PA / Lawrence Bennett, MD / Joshua Bo OPTIONS=Angel Ali, NP|Gloria Allen, NP|Diana Anderson, PA|Lawrence Bennett, MD|Joshua Bowman, PA|Mateo Butler, MD|Mei Carpenter, PA|Valentina Carroll, MD|Renee Chen, MD|Jason Collins, NP|James Cook, PA|Jose Crawford, MD|Donna Cunningham, MD|Charles Davis, MD|Matthew Evans, PA|Liam Farrell, NP|Desmond Fields, PA|Ann Foster, MD|David Fowler, MD|Judith Garcia, MD|Kathleen Garrison, DO|Austin Gibson, NP|Diane Gonzalez, MD|Colleen Grant, PA|Elena Gutierrez, NP|Walter Guzman, PA|Richard Harrison, NP|Susan Herrera, DO|Brandon Howell, NP|Catherine Jackson, MD|Lucas Johnson, NP|William Kelly, NP|Harold Larsen, PA|Denise Lee, DO|Matthew Lindgren, MD|Edward Lindqvist, NP|Lucas Lopez, NP|Frances Maldonado, DO|Janet Marshall, MD|Lawrence Martin, MD|Dorothy Mason, PA|Garrett Meyer, MD|Kevin Miller, MD|Victoria Moore, MD|Samuel Morris, MD|Joyce Nelson, NP|Katherine Nichols, NP|Jose Nielsen, MD|Bryan Palmer, NP|Jennifer Parker, MD|Valentina Perez, MD|Joan Ramirez, MD|Hannah Ramos, MD|Brian Reed, NP|Martha Reynolds, MD|Jacqueline Rios, MD|Olivia Rivera, NP|Priya Roberts, NP|Lawrence Rodriguez, NP|Zachary Ruiz, MD|Dorothy Scott, NP|Donald Silva, MD|Mark Sorensen, MD|Julie Soto, MD|Kenneth Sullivan, NP|James Tillman, DO|Susan Vasquez, NP|Aaron Wagner, MD|Lori Watkins, MD|Soren Welch, NP|Brenda West, MD|Megan Williamson, MD|Ruth Green, DO|Douglas Hughes, MD|Rachel Martinez, MD|Laura Murphy, MD|Martha Olson, MD|Edward Pierce, NP|Ann Shaw, MD|Joe Wilson, PA

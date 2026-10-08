@@ -1,0 +1,30 @@
+URL https://practice.speedrun.scopehealth.com/patients/2jx2vmvf82/documents
+
+== FRAME https://practice.speedrun.scopehealth.com/v/tzlnt1j98v1czjxc4k66cg7t7n/ ==
+Martínez, Anna
+MRN
+HG8823240
+Date of birth
+08/11/1999 (27 years)
+Sex
+Female
+Billing
+Invoices
+Demographics
+Insurance
+Problems
+Notes
+Documents
+Appointments
+Activity
+
+No documents in this chart
+== FRAME INTERACTIVE ==
+A[] Invoices href=/billing/accounts/2jx2vmvf82
+A[] Demographics href=/patients/2jx2vmvf82
+A[] Insurance href=/patients/2jx2vmvf82/insurance
+A[] Problems href=/patients/2jx2vmvf82/problems
+A[] Notes href=/patients/2jx2vmvf82/notes
+A[] Documents href=/patients/2jx2vmvf82/documents
+A[] Appointments href=/patients/2jx2vmvf82/appointments
+A[] Activity href=/patients/2jx2vmvf82/activity
