@@ -1,0 +1,55 @@
+URL: https://practice.speedrun.scopehealth.com/patients/3mb3fmvpqf/appointments
+TITLE: Martínez, Andre · Wrenfield
+
+Martínez, Andre
+Restricted
+MRN
+HG3001317
+Date of birth
+03/30/1964 (62 years)
+Sex
+Male
+Billing
+Invoices
+Demographics
+Insurance
+Problems
+Notes
+Documents
+Appointments
+Activity
+Appointments, newest first
+Date and time	Type	Provider	Location	Status
+Feb 5, 2026, 10:30 AM CST	Hearing test	Ann Shaw, MD	Northgate	
+Completed
+Jan 14, 2026, 7:45 AM CST	Well-child check	Ann Shaw, MD	Northgate	
+Completed
+Jan 2, 2026, 2:45 PM CST	Follow-up visit	Valentina Perez, MD	Northgate	
+Completed
+Sep 25, 2025, 10:15 AM CDT	Follow-up visit	Ann Shaw, MD	Northgate	
+Completed
+Sep 4, 2025, 12:30 PM CDT	New patient visit	Ann Shaw, MD	Northgate	
+Completed
+Jul 29, 2025, 12:00 PM CDT	Follow-up visit	Ann Shaw, MD	Northgate	
+Late cancel
+Jul 1, 2025, 8:00 AM CDT	New patient visit	Ann Shaw, MD	Northgate	
+Completed
+
+7 appointments
+
+---- INTERACTIVE ----
+[A] 'Invoices' /billing/accounts/3mb3fmvpqf  
+[A] 'Demographics' /patients/3mb3fmvpqf  
+[A] 'Insurance' /patients/3mb3fmvpqf/insurance  
+[A] 'Problems' /patients/3mb3fmvpqf/problems  
+[A] 'Notes' /patients/3mb3fmvpqf/notes  
+[A] 'Documents' /patients/3mb3fmvpqf/documents  
+[A] 'Appointments' /patients/3mb3fmvpqf/appointments  page
+[A] 'Activity' /patients/3mb3fmvpqf/activity  
+[A] 'Feb 5, 2026, 10:30 AM' /patients/3mb3fmvpqf/appointments/5j8l8rhlqg  
+[A] 'Jan 14, 2026, 7:45 AM' /patients/3mb3fmvpqf/appointments/18jcbkdpl4  
+[A] 'Jan 2, 2026, 2:45 PM' /patients/3mb3fmvpqf/appointments/1n1r0m5w78  
+[A] 'Sep 25, 2025, 10:15 AM' /patients/3mb3fmvpqf/appointments/4rc0nkqfw3  
+[A] 'Sep 4, 2025, 12:30 PM' /patients/3mb3fmvpqf/appointments/2hfmnnhzds  
+[A] 'Jul 29, 2025, 12:00 PM' /patients/3mb3fmvpqf/appointments/1h5vf18k0v  
+[A] 'Jul 1, 2025, 8:00 AM' /patients/3mb3fmvpqf/appointments/5vshrz09xm  

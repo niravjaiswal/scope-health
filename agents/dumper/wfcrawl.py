@@ -93,6 +93,8 @@ class Browser:
             if f is None:
                 return {"path": path, "url": pg.url, "error": "timeout", "dt": time.time()-t}
             text = await f.evaluate(JS_EXTRACT)
+            if ('503 Service' in text[:200]) or ('not responding' in text[:200] and len(text) < 300):
+                return {"path": path, "url": pg.url, "error": "busy", "dt": time.time()-t}
             links = await f.evaluate("() => Array.from(document.querySelectorAll('a[href]')).map(a => a.getAttribute('href'))")
             shell_links = await pg.evaluate("() => Array.from(document.querySelectorAll('a[href]')).map(a => a.getAttribute('href'))")
             title = await pg.title()
@@ -153,6 +155,11 @@ async def crawl(br, seeds, deadline, on_page, max_pages=100000, workers=6):
             busy.add(id(asyncio.current_task()))
             r = await br.fetch(p)
             busy.discard(id(asyncio.current_task()))
+            if r.get('error') and retries.get(p, 0) < 4:
+                retries[p] = retries.get(p, 0) + 1
+                heapq.heappush(q, (priority(p) + 0.5, cnt, p)); cnt += 1
+                await asyncio.sleep(0.4 * retries[p])
+                continue
             done += 1
             on_page(r)
             if r.get('path', '').startswith('/patients?'):
@@ -163,7 +170,7 @@ async def crawl(br, seeds, deadline, on_page, max_pages=100000, workers=6):
                 n = norm(h, br.base)
                 if n and n not in seen:
                     seen.add(n); heapq.heappush(q, (priority(n), cnt, n)); cnt += 1
-    busy = set()
+    busy = set(); retries = {}
     def all_idle(): return not busy
     await asyncio.gather(*[worker() for _ in range(workers)])
     return done, len(seen), len(q)

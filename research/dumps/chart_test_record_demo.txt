@@ -1,0 +1,43 @@
+URL: https://practice.speedrun.scopehealth.com/patients/6s9d7qlrn7
+TITLE: Test, Demo · Wrenfield
+
+Test, Demo
+Test record
+MRN
+HG5400298
+Date of birth
+08/12/1996 (30 years)
+Sex
+Female
+Billing
+Invoices
+Demographics
+Insurance
+Problems
+Notes
+Documents
+Appointments
+Activity
+Contact
+Phone
+(647) 893-5260
+Email
+Not on file
+Address
+5510 Heron Ave
+Tilden Grove, KS 66785
+Care team
+Primary provider
+Katherine Nichols, NP
+Home location
+Prairie View
+
+---- INTERACTIVE ----
+[A] 'Invoices' /billing/accounts/6s9d7qlrn7  
+[A] 'Demographics' /patients/6s9d7qlrn7  page
+[A] 'Insurance' /patients/6s9d7qlrn7/insurance  
+[A] 'Problems' /patients/6s9d7qlrn7/problems  
+[A] 'Notes' /patients/6s9d7qlrn7/notes  
+[A] 'Documents' /patients/6s9d7qlrn7/documents  
+[A] 'Appointments' /patients/6s9d7qlrn7/appointments  
+[A] 'Activity' /patients/6s9d7qlrn7/activity  

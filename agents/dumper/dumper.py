@@ -50,7 +50,12 @@ async def main():
     only = os.environ.get("ONLY_VERSION")
     if only and only not in html:
         log("NOT TARGET VERSION -> skipping crawl"); deadline = 0
-    seeds = ["/", "/patients", "/schedule", "/billing", "/documents", "/activity", "/about/notices"]
+    seeds = ["/", "/patients", "/schedule", "/billing", "/documents", "/activity", "/about/notices", "/inbox", "/encounters", "/payers", "/claims", "/vaccines", "/staff", "/audit-log", "/settings"]
+    try:
+        dates = json.load(open(os.path.join(os.path.dirname(__file__), "set1_dates.json")))
+        seeds += ["/schedule?date=" + x for x in dates]
+    except Exception as e:
+        log("no dates", e)
     try:
         names = json.load(open(os.path.join(os.path.dirname(__file__), "set1_lastnames.json")))
         seeds = ["/patients?lastName=" + urllib.parse.quote(n) for n in names] + seeds

@@ -1,0 +1,48 @@
+URL: https://practice.speedrun.scopehealth.com/patients/3mb3fmvpqf/activity
+TITLE: Martínez, Andre · Wrenfield
+
+Martínez, Andre
+Restricted
+MRN
+HG3001317
+Date of birth
+03/30/1964 (62 years)
+Sex
+Male
+Billing
+Invoices
+Demographics
+Insurance
+Problems
+Notes
+Documents
+Appointments
+Activity
+Activity
+Show
+All activity
+Changes
+Chart views
+Activity on this record, newest first
+When	User	What
+Oct 14, 2026, 11:10 AM CDT	frontdesk	Opened the restricted chart. Reason: Billing or insurance question
+Apr 16, 2026, 4:42 PM CDT	cprice	Opened the chart
+Sep 4, 2025, 7:04 PM CDT	zchristensen	Changed the phone number
+May 3, 2024, 11:39 AM CDT	jjackson	Changed the restricted setting from not restricted to restricted
+Feb 5, 2024, 3:48 AM CST	dsilva	Opened the chart
+Feb 4, 2024, 2:46 PM CST	jparker	Opened the chart
+Dec 13, 2022, 12:41 AM CST	svasquez	Opened the chart
+Aug 25, 2022, 10:33 AM CDT	zchristensen	Created the record
+
+8 entries
+
+---- INTERACTIVE ----
+[A] 'Invoices' /billing/accounts/3mb3fmvpqf  
+[A] 'Demographics' /patients/3mb3fmvpqf  
+[A] 'Insurance' /patients/3mb3fmvpqf/insurance  
+[A] 'Problems' /patients/3mb3fmvpqf/problems  
+[A] 'Notes' /patients/3mb3fmvpqf/notes  
+[A] 'Documents' /patients/3mb3fmvpqf/documents  
+[A] 'Appointments' /patients/3mb3fmvpqf/appointments  
+[A] 'Activity' /patients/3mb3fmvpqf/activity  page
+[SELECT] 'All activity\nChanges\nChart views'  kind 

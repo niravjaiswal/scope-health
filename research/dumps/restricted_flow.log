@@ -1,0 +1,293 @@
+== AFTER REQUEST 1.6
+URL: https://practice.speedrun.scopehealth.com/patients/3mb3fmvpqf
+TITLE: Martínez, Andre · Wrenfield
+
+Martínez, Andre
+Restricted
+MRN
+HG3001317
+Date of birth
+03/30/1964 (62 years)
+Sex
+Male
+Billing
+Invoices
+Demographics
+Insurance
+Problems
+Notes
+Documents
+Appointments
+Activity
+Contact
+Phone
+(970) 611-0059
+Email
+a•••••@wrenmail.example
+Address
+6260 Sunset Ct
+Harbor Glen, KS 66741
+Care team
+Primary provider
+Ann Shaw, MD
+Home location
+Northgate
+
+---- INTERACTIVE ----
+[A] 'Invoices' /billing/accounts/3mb3fmvpqf  
+[A] 'Demographics' /patients/3mb3fmvpqf  page
+[A] 'Insurance' /patients/3mb3fmvpqf/insurance  
+[A] 'Problems' /patients/3mb3fmvpqf/problems  
+[A] 'Notes' /patients/3mb3fmvpqf/notes  
+[A] 'Documents' /patients/3mb3fmvpqf/documents  
+[A] 'Appointments' /patients/3mb3fmvpqf/appointments  
+[A] 'Activity' /patients/3mb3fmvpqf/activity  
+
+POSTS [(1791502445, 'POST', '/2wjtgwsfxps5cjkqfcdr4szpl4/lxxmdqrssg1p', 'kpb=1b9phwj5jx&d97w=x7fcbk'), (1791502447, 'POST', '/2wjtgwsfxps5cjkqfcdr4szpl4/lxxmdqrssg1p', 'kpb=ct6m6ppr65&d97w=bmimfh'), (1791502449, 'POST', '/mg9rq8547hmg8t46np2xn2h9g1/c1rswhxj5hhd', 'jt6=bv4m9kdwlk&qnkl=1js4y9w'), (1791502451, 'POST', '/cvjh8srdvvnf2w2flltzsbbdf5/qs76zwdnzxpx', 'reason=billing&details=&pb5=nj803vdcf6&zglf=njcffi')]
+== TAB  4.0
+URL: https://practice.speedrun.scopehealth.com/patients/3mb3fmvpqf
+TITLE: Martínez, Andre · Wrenfield
+
+Martínez, Andre
+Restricted
+MRN
+HG3001317
+Date of birth
+03/30/1964 (62 years)
+Sex
+Male
+Billing
+Invoices
+Demographics
+Insurance
+Problems
+Notes
+Documents
+Appointments
+Activity
+Contact
+Phone
+(970) 611-0059
+Email
+a•••••@wrenmail.example
+Address
+6260 Sunset Ct
+Harbor Glen, KS 66741
+Care team
+Primary provider
+Ann Shaw, MD
+Home location
+Northgate
+
+---- INTERACTIVE ----
+[A] 'Invoices' /billing/accounts/3mb3fmvpqf  
+[A] 'Demographics' /patients/3mb3fmvpqf  page
+[A] 'Insurance' /patients/3mb3fmvpqf/insurance  
+[A] 'Problems' /patients/3mb3fmvpqf/problems  
+[A] 'Notes' /patients/3mb3fmvpqf/notes  
+[A] 'Documents' /patients/3mb3fmvpqf/documents  
+[A] 'Appointments' /patients/3mb3fmvpqf/appointments  
+[A] 'Activity' /patients/3mb3fmvpqf/activity  
+
+== TAB /appointments 6.5
+URL: https://practice.speedrun.scopehealth.com/patients/3mb3fmvpqf/appointments
+TITLE: Martínez, Andre · Wrenfield
+
+Martínez, Andre
+Restricted
+MRN
+HG3001317
+Date of birth
+03/30/1964 (62 years)
+Sex
+Male
+Billing
+Invoices
+Demographics
+Insurance
+Problems
+Notes
+Documents
+Appointments
+Activity
+Appointments, newest first
+Date and time	Type	Provider	Location	Status
+Feb 5, 2026, 10:30 AM CST	Hearing test	Ann Shaw, MD	Northgate	
+Completed
+Jan 14, 2026, 7:45 AM CST	Well-child check	Ann Shaw, MD	Northgate	
+Completed
+Jan 2, 2026, 2:45 PM CST	Follow-up visit	Valentina Perez, MD	Northgate	
+Completed
+Sep 25, 2025, 10:15 AM CDT	Follow-up visit	Ann Shaw, MD	Northgate	
+Completed
+Sep 4, 2025, 12:30 PM CDT	New patient visit	Ann Shaw, MD	Northgate	
+Completed
+Jul 29, 2025, 12:00 PM CDT	Follow-up visit	Ann Shaw, MD	Northgate	
+Late cancel
+Jul 1, 2025, 8:00 AM CDT	New patient visit	Ann Shaw, MD	Northgate	
+Completed
+
+7 appointments
+
+---- INTERACTIVE ----
+[A] 'Invoices' /billing/accounts/3mb3fmvpqf  
+[A] 'Demographics' /patients/3mb3fmvpqf  
+[A] 'Insurance' /patients/3mb3fmvpqf/insurance  
+[A] 'Problems' /patients/3mb3fmvpqf/problems  
+[A] 'Notes' /patients/3mb3fmvpqf/notes  
+[A] 'Documents' /patients/3mb3fmvpqf/documents  
+[A] 'Appointments' /patients/3mb3fmvpqf/appointments  page
+[A] 'Activity' /patients/3mb3fmvpqf/activity  
+[A] 'Feb 5, 2026, 10:30 AM' /patients/3mb3fmvpqf/appointments/5j8l8rhlqg  
+[A] 'Jan 14, 2026, 7:45 AM' /patients/3mb3fmvpqf/appointments/18jcbkdpl4  
+[A] 'Jan 2, 2026, 2:45 PM' /
+== TAB /documents 8.8
+URL: https://practice.speedrun.scopehealth.com/patients/3mb3fmvpqf/documents
+TITLE: Martínez, Andre · Wrenfield
+
+Martínez, Andre
+Restricted
+MRN
+HG3001317
+Date of birth
+03/30/1964 (62 years)
+Sex
+Male
+Billing
+Invoices
+Demographics
+Insurance
+Problems
+Notes
+Documents
+Appointments
+Activity
+
+No documents in this chart
+
+---- INTERACTIVE ----
+[A] 'Invoices' /billing/accounts/3mb3fmvpqf  
+[A] 'Demographics' /patients/3mb3fmvpqf  
+[A] 'Insurance' /patients/3mb3fmvpqf/insurance  
+[A] 'Problems' /patients/3mb3fmvpqf/problems  
+[A] 'Notes' /patients/3mb3fmvpqf/notes  
+[A] 'Documents' /patients/3mb3fmvpqf/documents  page
+[A] 'Appointments' /patients/3mb3fmvpqf/appointments  
+[A] 'Activity' /patients/3mb3fmvpqf/activity  
+
+== TAB /notes 11.1
+URL: https://practice.speedrun.scopehealth.com/patients/3mb3fmvpqf/notes
+TITLE: Martínez, Andre · Wrenfield
+
+Martínez, Andre
+Restricted
+MRN
+HG3001317
+Date of birth
+03/30/1964 (62 years)
+Sex
+Male
+Billing
+Invoices
+Demographics
+Insurance
+Problems
+Notes
+Documents
+Appointments
+Activity
+Written from
+Written to
+Apply
+Clear
+
+No notes yet
+
+---- INTERACTIVE ----
+[A] 'Invoices' /billing/accounts/3mb3fmvpqf  
+[A] 'Demographics' /patients/3mb3fmvpqf  
+[A] 'Insurance' /patients/3mb3fmvpqf/insurance  
+[A] 'Problems' /patients/3mb3fmvpqf/problems  
+[A] 'Notes' /patients/3mb3fmvpqf/notes  page
+[A] 'Documents' /patients/3mb3fmvpqf/documents  
+[A] 'Appointments' /patients/3mb3fmvpqf/appointments  
+[A] 'Activity' /patients/3mb3fmvpqf/activity  
+[INPUT] ''  from 
+[INPUT] ''  to 
+[BUTTON] 'Apply'   
+[BUTTON] 'Clear'   
+
+== TAB /activity 13.6
+URL: https://practice.speedrun.scopehealth.com/patients/3mb3fmvpqf/activity
+TITLE: Martínez, Andre · Wrenfield
+
+Martínez, Andre
+Restricted
+MRN
+HG3001317
+Date of birth
+03/30/1964 (62 years)
+Sex
+Male
+Billing
+Invoices
+Demographics
+Insurance
+Problems
+Notes
+Documents
+Appointments
+Activity
+Activity
+Show
+All activity
+Changes
+Chart views
+Activity on this record, newest first
+When	User	What
+Oct 14, 2026, 11:10 AM CDT	frontdesk	Opened the restricted chart. Reason: Billing or insurance question
+Apr 16, 2026, 4:42 PM CDT	cprice	Opened the chart
+Sep 4, 2025, 7:04 PM CDT	zchristensen	Changed the phone number
+May 3, 2024, 11:39 AM CDT	jjackson	Changed the restricted setting from not restricted to restricted
+Feb 5, 2024, 3:48 AM CST	dsilva	Opened the chart
+Feb 4, 2024, 2:46 PM CST	jparker	Opened the chart
+Dec 13, 2022, 12:41 AM CST	svasquez	Opened the chart
+Aug 25, 2022, 10:33 AM CDT	zchristensen	Created the record
+
+8 entries
+
+---- INTERACTIVE ----
+[A] 'Invoices' /billing/accounts/3mb3fmvpqf  
+[A] 'Demographics' /patients/3mb3fmvpqf  
+[A] 'Insurance' /patients/3mb3fmvpqf/insurance  
+[A] 'Problems' /patients/3mb3fmvpqf/problems  
+[A] 'Notes' /patients/3mb3fmvpqf/notes  
+[A] 'Documents' /patients/3mb3fmvpqf/documents  
+[A] 'Appointments' /patients/3mb3fmvpqf/appointments  
+[A] 'Activity' /patients/3mb3fmvpqf/activity  page
+[SELECT] 'All activity\nChanges\nChart views'  kind 
+
+== /patients requests table
+Patients
+
+Find a patient by last name or date of birth.
+
+Last name
+or
+Date of birth
+Search
+
+Enter a last name or a full date of birth.
+
+Search to find a patient
+
+Results are sorted by last name, then first name.
+
+Restricted chart requests
+Your requests to open restricted charts
+Patient	Reason	Status
+Martínez, Andre	Billing or insurance question	Approved
+
+1 request
+t+47s OPEN Martínez, Andre | Restricted | MRN | HG3001317 | Date of birth | 03/30/1964 (62 years) | Sex | Male | Billing | Invoices | Demographics | Insu
+t+479s RESTRICTED-GATE This chart is restricted |  | MRN HG3001317 |  | Give a reason to open it. Your request and the reason are recorded, and access 

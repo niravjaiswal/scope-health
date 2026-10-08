@@ -1,0 +1,32 @@
+URL: https://practice.speedrun.scopehealth.com/patients/3mb3fmvpqf/documents
+TITLE: Martínez, Andre · Wrenfield
+
+Martínez, Andre
+Restricted
+MRN
+HG3001317
+Date of birth
+03/30/1964 (62 years)
+Sex
+Male
+Billing
+Invoices
+Demographics
+Insurance
+Problems
+Notes
+Documents
+Appointments
+Activity
+
+No documents in this chart
+
+---- INTERACTIVE ----
+[A] 'Invoices' /billing/accounts/3mb3fmvpqf  
+[A] 'Demographics' /patients/3mb3fmvpqf  
+[A] 'Insurance' /patients/3mb3fmvpqf/insurance  
+[A] 'Problems' /patients/3mb3fmvpqf/problems  
+[A] 'Notes' /patients/3mb3fmvpqf/notes  
+[A] 'Documents' /patients/3mb3fmvpqf/documents  page
+[A] 'Appointments' /patients/3mb3fmvpqf/appointments  
+[A] 'Activity' /patients/3mb3fmvpqf/activity  
