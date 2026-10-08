@@ -1,0 +1,141 @@
+[
+ {
+  "t": 0.173,
+  "m": "GET",
+  "url": "https://practice.speedrun.scopehealth.com/patients",
+  "st": 200,
+  "post": null,
+  "frame": "about:blank",
+  "body": "<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><title>Patients \u00b7 Wrenfield</title><link rel=\"icon\" href=\"/static/wrenfield.svg\"><link rel=\"stylesheet\" href=\"/v/q8s94n6xngqtw47ths4c16p9z8/jp591nxpwhp0dr5b.css\"><script nonce=\"3n18c07n5js4l1gj3dtv5nqx\">(function(){var c=null;try{c=localStorage.getItem(\"wf-theme\")}catch(e){}if(c===\"dark\"||(c!==\"light\"&&matchMedia(\"(prefers-color-scheme: dark)\").matches))document.documentElement.classList.add(\"pjcmh3\")})();</script><script nonce=\"3n18c07n5js4l1gj3dtv5nqx\" src=\"/v/q8s94n6xngqtw47ths4c16p9z8/1tb0wmrm0whbm3d8.js\" defer></script></head><body class=\"tsc7wt\" inert><div class=\"cl5sdm\" data-b2cc3s=\"xz2jqxgcmd\"><a href=\"#main\" class=\"gf8qwg\">Skip to main content</a>\n<div class=\"c1mq6h\"><nav aria-label=\"Main\" class=\"fnsqbr\"><div class=\"hvjdts\" data-b2cc3s=\"q7hrmf4f75\"><div class=\"njttcc\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><rect width=\"24\" height=\"24\" rx=\"4\" fill=\"var(--primary)\"/><path d=\"M5.5 7.5 8.6 17l3.4-7.2 3.4 7.2 3.1-9.5\" fill=\"none\" stroke=\"var(--primary-foreground)\" stroke-width=\"2.1\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg><span class=\"t3h31h\">Wrenfield</span></div>\n<ul class=\"dvb9qp\"><li><a href=\"/\" class=\"k72m4v\" data-p5x955m=\"whc8rsk53r\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect width=\"7\" height=\"9\" x=\"3\" y=\"3\" rx=\"1\"/><rect width=\"7\" height=\"5\" x=\"14\" y=\"3\" rx=\"1\"/><rect width=\"7\" height=\"9\" x=\"14\" y=\"12\" rx=\"1\"/><rect width=\"7\" height=\"5\" x=\"3\" y=\"16\" rx=\"1\"/></svg><span class=\"vn4qw6\">Dashboard</span></a></li><li><a href=\"/patients\" class=\"k72m4v zn04v5\" aria-current=\"page\" data-p5x955m=\"bjg8ks900k\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2\"/><path d=\"M16 3.128a4 4 0 0 1 0 7.744\"/><path d=\"M22 21v-2a4 4 0 0 0-3-3.87\"/><circle cx=\"9\" cy=\"7\" r=\"4\"/></svg><span class=\"vn4qw6\">Patients</span></a></li><li><a href=\"/schedule\" class=\"k72m4v\" data-p5x955m=\"wqdpzqnt8m\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M8 2v4\"/><path d=\"M16 2v4\"/><rect width=\"18\" height=\"18\" x=\"3\" y=\"4\" rx=\"2\"/><path d=\"M3 10h18\"/><path d=\"M8 14h.01\"/><path d=\"M12 14h.01\"/><path d=\"M16 14h.01\"/><path d=\"M8 18h.01\"/><path d=\"M12 18h.01\"/><path d=\"M16 18h.01\"/></svg><span class=\"vn4qw6\">Schedule</span></a></li><li><a href=\"/billing\" class=\"k72m4v\" data-p5x955m=\"810gbtb767\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z\"/><path d=\"M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8\"/><path d=\"M12 17.5v-11\"/></svg><span class=\"vn4qw6\">Billing</span></a></li><li><a href=\"/documents\" class=\"k72m4v\" data-p5x955m=\"gdt3sczb4j\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z\"/><path d=\"M14 2v4a2 2 0 0 0 2 2h4\"/><path d=\"M10 9H8\"/><path d=\"M16 13H8\"/><path d=\"M16 17H8\"/></svg><span class=\"vn4qw6\">Documents</span></a></li><li><a href=\"/activity\" class=\"k72m4v\" data-p5x955m=\"1cqp6jr6bh\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8\"/><path d=\"M3 3v5h5\"/><path d=\"M12 7v5l4 2\"/></svg><span class=\"vn4qw6\">Activity</span></a></li></ul><a href=\"/patients/all\" tabindex=\"-1\" aria-hidden=\"true\" class=\"tc6f88\">All patients</a></div></nav>\n<div class=\"jdcc4r\"><header class=\"d1tt7l\"><div class=\"hvjdts\" data-b2cc3s=\"pjxsvnkgft\"><span aria-hidden=\"true\" class=\"g67q8d l6k7np\"></span>\n<details class=\"dhxdxt\" data-p8xr4s=\"\">\n<summary class=\"mq4plr\" aria-label=\"Location: Northgate. Change location\">\n<span class=\"xbcsw0 l6k7np\"></span>\n<span class=\"kbbckg\"><span class=\"pdkk8x s8q9wc tr7fst\">Location</span><span class=\"gqxpxv bfzslm\">Northgate</span></span><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m7 15 5 5 5-5\"/><path d=\"m7 9 5-5 5 5\"/></svg></summary>\n<div class=\"spghz3 hsgg8r\"><p class=\"rbfmfs\">Work at location</p>\n<button type=\"button\" class=\"mmhxkx\" aria-pressed=\"false\" data-p5x955m=\"4m2tfpjj9m\"><span class=\"xbcsw0 kh3mxj\"></span><span>All locations</span></button>\n<button type=\"button\" class=\"mmhxkx z44gk4\" aria-pressed=\"true\" data-p5x955m=\"3nfq2f8rss\"><span class=\"xbcsw0 l6k7np\"></span><span class=\"kbbckg\"><span>Northgate</span><span class=\"t566z1 tr7fst\">Harbor Glen, KS</span></span></button><button type=\"button\" class=\"mmhxkx\" aria-pressed=\"false\" data-p5x955m=\"tht2g3cbjx\"><span class=\"xbcsw0 ldsrv4\"></span><span class=\"kbbckg\"><span>Front Range</span><span class=\"t566z1 tr7fst\">Summit Hollow, CO</span></span></button><button type=\"button\" class=\"mmhxkx\" aria-pressed=\"false\" data-p5x955m=\"spdss3pn1m\"><span class=\"xbcsw0 db8lcr\"></span><span class=\"kbbckg\"><span>Eastside</span><span class=\"t566z1 tr7fst\">Harbor Glen, KS</span></span></button><button type=\"button\" class=\"mmhxkx\" aria-pressed=\"false\" data-p5x955m=\"c32cfl8t0h\"><span class=\"xbcsw0 h3zrrd\"></span><span class=\"kbbckg\"><span>Stonebrook</span><span class=\"t566z1 tr7fst\">Stonebrook, CO</span></span></button><button type=\"button\" class=\"mmhxkx\" aria-pressed=\"false\" data-p5x955m=\"nmltkb4p7k\"><span class=\"xbcsw0 hwqp62\"></span><span class=\"kbbckg\"><span>Lakeside</span><span class=\"t566z1 tr7fst\">Marrow Lake, KS</span></span></button><button type=\"button\" class=\"mmhxkx\" aria-pressed=\"false\" data-p5x955m=\"dmzkgnjz8x\"><span class=\"xbcsw0 szs2r1\"></span><span class=\"kbbckg\"><span>Riverbend</span><span class=\"t566z1 tr7fst\">Pell Junction, KS</span></span></button><button type=\"button\" class=\"mmhxkx\" aria-pressed=\"false\" data-p5x955m=\"kt9xk0dp1k\"><span class=\"xbcsw0 twnw08\"></span><span class=\"kbbckg\"><span>Highline</span><span class=\"t566z1 tr7fst\">Granite Fork, CO</span></span></button><button type=\"button\" class=\"mmhxkx\" aria-pressed=\"false\" data-p5x955m=\"l57mt2mtc9\"><span class=\"xbcsw0 ggxkkj\"></span><span class=\"kbbckg\"><span>Prairie View</span><span class=\"t566z1 tr7fst\">Tilden Grove, KS</span></span></button><button type=\"button\" class=\"mmhxkx\" aria-pressed=\"false\" data-p5x955m=\"xv1k52dqk9\"><span class=\"xbcsw0 l6k7np\"></span><span class=\"kbbckg\"><span>Cedar Hollow</span><span class=\"t566z1 tr7fst\">Juniper Flats, CO</span></span></button><button type=\"button\" class=\"mmhxkx\" aria-pressed=\"false\" data-p5x955m=\"50w876jzwb\"><span class=\"xbcsw0 ldsrv4\"></span><span class=\"kbbckg\"><span>Willow Creek</span><span class=\"t566z1 tr7fst\">Alder Creek, KS</span></span></button></div></details>\n<div class=\"k5mkrf\"><span class=\"s8nh4m\">Harbor Glen Medical Group \u00b7 <span class=\"g67z0x\">Wrenfield 4.2.0</span></span>\n<details class=\"dhxdxt\" data-p8xr4s=\"\">\n<summary class=\"mq4plr\" aria-label=\"Account menu, frontdesk\"><span aria-hidden=\"true\" class=\"chzcb4\">f</span><span class=\"kbbckg s0q09d\"><span class=\"gqxpxv\">frontdesk</span><span class=\"pdkk8x tr7fst\">Administrator</span></span></summary>\n<div class=\"spghz3 bchxk7\"><p class=\"rbfmfs\"><span class=\"gqxpxv\">frontdesk</span><br>frontdesk</p>\n<div class=\"ttfqkg\"></div><p class=\"rbfmfs\">Theme</p>\n<label class=\"mmhxkx\"><input type=\"radio\" name=\"theme\" value=\"system\" data-bmc8fg=\"\">Match system</label><label class=\"mmhxkx\"><input type=\"radio\" name=\"theme\" value=\"light\" data-bmc8fg=\"\">Light</label><label class=\"mmhxkx\"><input type=\"radio\" name=\"theme\" value=\"dark\" data-bmc8fg=\"\">Dark</label>\n<div class=\"ttfqkg\"></div>\n<a href=\"/about/notices\" class=\"mmhxkx\" data-p5x955m=\"zsd8w1hlm3\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"M12 16v-4\"/><path d=\"M12 8h.01\"/></svg>Third-party notices</a>\n<button type=\"button\" class=\"mmhxkx\" data-p5x955m=\"rgk08bsxb7\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m16 17 5-5-5-5\"/><path d=\"M21 12H9\"/><path d=\"M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4\"/></svg>Log out</button>\n</div></details></div></div></header>\n<main id=\"main\" tabindex=\"-1\" class=\"k2st88\"><div class=\"hvjdts\" data-b2cc3s=\"sbs793mqs8\"><div class=\"hf062v\" data-p5x955m=\"47lf4lvkb3\" data-dzcqsrx=\"0\"><div class=\"mcz1s5 gmqt9q\"></div><span class=\"cml8t2\" role=\"status\">Loading Wrenfield</span></div></div></main></div></div>\n<span hidden data-mm7f=\"nxhp7cn766\"></span></div><div class=\"wgc7bp\" data-f8r58zh role=\"status\" hidden>Wrenfield is not responding. Try again in a moment.</div><div class=\"r8t7ckqb\" data-b2cc3s=\"zkvn3nts8j\" aria-hidden=\"true\"><i data-gnwd3v8=\"99dw5s1w63jv\" style=\"display:none\"></i><i class=\"dnpjz92t\"><i class=\"k2c2pltw\"></i><i class=\"k2c2pltw\"></i><i class=\"k2c2pltw\"></i><i class=\"k2c2pltw\"></i><i class=\"k2c2pltw\"></i><i class=\"k2c2pltw\"></i></i><i class=\"dnpjz92t\"><i class=\"k2c2pltw\"></i><i class=\"k2c2pltw\"></i><i class=\"k2c2pltw\"></i></i></div><meta data-r184vz=\"5\" content=\"Patients \u00b7 Wrenfield\"><script nonce=\"3n18c07n5js4l1gj3dtv5nqx\">window[\"_z530d0vx\"]=function(){var u=document,z=u.querySelector(\".r8t7ckqb\"),i=1076447732,o=function(g){return g.getBoundingClientRect()},p,a,m,g;p=z.children[2].children[2];i=Math.imul(i^Math.round(o(p).width/4),1509943907)>>>0;p=z.children[1].children[1];i=(Math.imul(i+Math.round(o(p).width/4)|0,3385988069)^i>>>4)>>>0;p=z.children[1];i=((i<<8|i>>>24)^Math.round(o(p).width/4)+258470840)>>>0;i=((i<<8|i>>>24)^z.children.length+111243098)>>>0;m=z.firstElementChild.getAttribute(\"data-gnwd3v8\")||\"\";for(g=0;g<m.length;g++)i=Math.imul(i^m.charCodeAt(g),923265891)>>>0;p=z.children[2];i=Math.imul(i^Math.round(o(p).width/4),1129027709)>>>0;return i.toString(36)};</script></body></html>"
+ },
+ {
+  "t": 0.324,
+  "m": "GET",
+  "url": "https://practice.speedrun.scopehealth.com/v/q8s94n6xngqtw47ths4c16p9z8/jp591nxpwhp0dr5b.css",
+  "st": 200,
+  "post": null,
+  "frame": "https://practice.speedrun.scopehealth.com/patients"
+ },
+ {
+  "t": 0.324,
+  "m": "GET",
+  "url": "https://practice.speedrun.scopehealth.com/v/q8s94n6xngqtw47ths4c16p9z8/1tb0wmrm0whbm3d8.js",
+  "st": 200,
+  "post": null,
+  "frame": "https://practice.speedrun.scopehealth.com/patients"
+ },
+ {
+  "t": 0.451,
+  "m": "GET",
+  "url": "https://practice.speedrun.scopehealth.com/static/hk47g9j121822h7g4440.woff2",
+  "st": 200,
+  "post": null,
+  "frame": "https://practice.speedrun.scopehealth.com/patients"
+ },
+ {
+  "t": 0.452,
+  "m": "GET",
+  "url": "https://practice.speedrun.scopehealth.com/static/0dbe07ed7679407db9d9.woff2",
+  "st": 200,
+  "post": null,
+  "frame": "https://practice.speedrun.scopehealth.com/patients"
+ },
+ {
+  "t": 0.453,
+  "m": "GET",
+  "url": "https://practice.speedrun.scopehealth.com/static/5cb240a4d99ab7e6fc3a.woff2",
+  "st": 200,
+  "post": null,
+  "frame": "https://practice.speedrun.scopehealth.com/patients"
+ },
+ {
+  "t": 0.453,
+  "m": "GET",
+  "url": "https://practice.speedrun.scopehealth.com/static/828f4525c741b6864718.woff2",
+  "st": 200,
+  "post": null,
+  "frame": "https://practice.speedrun.scopehealth.com/patients"
+ },
+ {
+  "t": 0.454,
+  "m": "GET",
+  "url": "https://practice.speedrun.scopehealth.com/static/f5243b80fbcabc6756a4.woff2",
+  "st": 200,
+  "post": null,
+  "frame": "https://practice.speedrun.scopehealth.com/patients"
+ },
+ {
+  "t": 0.45,
+  "m": "POST",
+  "url": "https://practice.speedrun.scopehealth.com/v/q8s94n6xngqtw47ths4c16p9z8/g98zhhg7m0m6",
+  "st": 200,
+  "post": "k40=47lf4lvkb3&jdtt=14w7trw",
+  "frame": "https://practice.speedrun.scopehealth.com/patients",
+  "body": "<template data-b2cc3s=\"sbs793mqs8\"><iframe src=\"/v/1zvhkgtlj4znn7013zgsn7mjqh/\" title=\"Patients\" class=\"t4cgdp\"></iframe></template><template data-b2cc3s=\"zkvn3nts8j\"><i data-gnwd3v8=\"0d632b9m4t36\" style=\"display:none\"></i><i class=\"s5zf25rj\"><i class=\"x6n2v9rt\"></i><i class=\"xnnhsbn9\"></i><i class=\"x6n2v9rt\"></i></i><i class=\"rcff92rh\"><i class=\"dw3bcg45\"></i><i></i><i></i><i class=\"dw3bcg45\"></i></i></template><script data-gt6187>window[\"_z530d0vx\"]=function(){var j=document,q=j.querySelector(\".r8t7ckqb\"),f=732733715,p=function(a){return a.getBoundingClientRect()},u,r,x,a;u=q.children[1];f=((f<<6|f>>>26)^Math.round(p(u).height/4)+36136405)>>>0;u=q.children[2].children[3];r=q.children[2];f=((f<<5|f>>>27)^Math.round((p(u).left-p(r).left)/4)+245810170)>>>0;f=Math.imul(f^q.children.length,1887658505)>>>0;x=q.firstElementChild.getAttribute(\"data-gnwd3v8\")||\"\";for(a=0;a<x.length;a++)f=Math.imul(f^x.charCodeAt(a),77021659)>>>0;u=q.children[1].children[2];r=q.children[1];f=((f<<7|f>>>25)^Math.round((p(u).top-p(r).top)/4)+32627090)>>>0;u=q.children[2].children[2];f=(Math.imul(f+Math.round(p(u).width/4)|0,2119118209)^f>>>15)>>>0;return f.toString(36)};</script>"
+ },
+ {
+  "t": 0.503,
+  "m": "GET",
+  "url": "https://practice.speedrun.scopehealth.com/v/1zvhkgtlj4znn7013zgsn7mjqh/",
+  "st": 200,
+  "post": null,
+  "frame": "",
+  "body": "<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><title>Wrenfield</title><link rel=\"stylesheet\" href=\"/v/1zvhkgtlj4znn7013zgsn7mjqh/4g3s42s15rsfnnf4.css\"><script nonce=\"4n118l803n31z4nhkx88h9sp\">(function(){var c=null;try{c=localStorage.getItem(\"wf-theme\")}catch(e){}if(c===\"dark\"||(c!==\"light\"&&matchMedia(\"(prefers-color-scheme: dark)\").matches))document.documentElement.classList.add(\"bjbkv6\")})();</script><script nonce=\"4n118l803n31z4nhkx88h9sp\" src=\"/v/1zvhkgtlj4znn7013zgsn7mjqh/z6schp1n5fq23mgv.js\" defer></script></head><body class=\"cw5bvl\" inert><div class=\"gg01hb\" data-khl4z=\"r1t071crtg\"><div class=\"z0nnxn\"><header class=\"hjvpxv\"><h1 class=\"p2l1sc\">Patients</h1><p class=\"v3hl8n\">Find a patient by last name or date of birth.</p></header>\n<search aria-label=\"Patient search\"><form class=\"tc9m6j znr9v3\" data-mnmd=\"lgv3nblfmf\" novalidate>\n<div class=\"zcsknt\">\n<div class=\"d2pjl9 bc08dw\"><label class=\"h4f30b\" for=\"lastName\">Last name</label><input id=\"lastName\" name=\"lastName\" class=\"scr78t\" autocomplete=\"off\" spellcheck=\"false\" placeholder=\"For example, Okafor\" value=\"\"></div>\n<span aria-hidden=\"true\" class=\"mn5vnb\">or</span>\n<div class=\"d2pjl9 v2lg4t\"><label class=\"h4f30b\" for=\"dob\">Date of birth</label><input id=\"dob\" name=\"dob\" type=\"date\" class=\"scr78t\" value=\"\"></div>\n<button type=\"submit\" class=\"ckpwhw g2vc4v\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m21 21-4.34-4.34\"/><circle cx=\"11\" cy=\"11\" r=\"8\"/></svg>Search</button></div>\n<p class=\"fwtszf td345q\">Enter a last name or a full date of birth.</p>\n\n</form></search>\n<div class=\"f3l7tj\" data-khl4z=\"cgjfxtfcgw\"><div class=\"f0g5k3\"><div class=\"p2l09t\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"10\" cy=\"7\" r=\"4\"/><path d=\"M10.3 15H7a4 4 0 0 0-4 4v2\"/><circle cx=\"17\" cy=\"17\" r=\"3\"/><path d=\"m21 21-1.9-1.9\"/></svg><p class=\"kvnqmd\">Search to find a patient</p><p>Results are sorted by last name, then first name.</p></div></div></div>\n<div class=\"f3l7tj\" data-khl4z=\"q4xp09jg46\"><div class=\"f0g5k3\"><section class=\"tc9m6j\"><h2 class=\"t4mjb0\"><span>Restricted chart requests</span></h2><div class=\"dz8r3s\"><table class=\"t5spvg\"><caption class=\"qk4w4f\">Your requests to open restricted charts</caption>\n<thead><tr><th scope=\"col\">Patient</th><th scope=\"col\">Reason</th><th scope=\"col\">Status</th></tr></thead><tbody><tr><td><a href=\"/patients/3pdsxpwzr5\" class=\"r5rm6m vg8z7x\" data-mnmd=\"nb5mhwz4vr\">Ramirez, David</a></td><td>Providing care to this patient</td><td><span class=\"gt8nch\">Approved</span></td></tr><tr><td><a href=\"/patients/28xpx631v1\" class=\"r5rm6m vg8z7x\" data-mnmd=\"t3xrcv70wr\">Ramirez, David</a></td><td>Providing care to this patient</td><td><span class=\"gt8nch\">Ended</span></td></tr><tr><td><a href=\"/patients/2q123zlg2m\" class=\"r5rm6m vg8z7x\" data-mnmd=\"lgknzkvg1k\">Porter, Catherine</a></td><td>Billing or insurance question</td><td><span class=\"gt8nch\">Ended</span></td></tr><tr><td><a href=\"/patients/2q123zlg2m\" class=\"r5rm6m vg8z7x\" data-mnmd=\"s9k1qqpvlp\">Porter, Catherine</a></td><td>Billing or insurance question</td><td><span class=\"gt8nch\">Ended</span></td></tr></tbody></table></div><div class=\"pf1bbq\"><p class=\"ldkrgs rgxztj\" aria-live=\"polite\">4 requests</p><div class=\"brrr9z\"></div></div></section></div></div></div></div><div class=\"sqcck9\" data-zhsn5f role=\"status\" hidden>Wrenfield is not responding. Try again in a moment.</div><div class=\"vzqzw2kc\" data-khl4z=\"09f9jpb3k2\" aria-hidden=\"true\"><i data-w94g=\"wfxgpbg1fcpj\" style=\"display:none\"></i><i class=\"ds11kvjf\"><i class=\"vqzw53v1\"></i></i><i class=\"fjxx5x8g\"><i class=\"x78820s9\"></i><i class=\"xqx7nf9t\"></i><i class=\"rvmmv7fc\"></i><i class=\"xqx7nf9t\"></i></i></div><script nonce=\"4n118l803n31z4nhkx88h9sp\">window[\"_nh0l8xn\"]=function(){var a=document,x=a.querySelector(\".vzqzw2kc\"),g=40967005,h=function(q){return q.getBoundingClientRect()},t,d,l,q;t=x.children[2].children[2];g=(Math.imul(g+Math.round(h(t).width/4)|0,372567099)^g>>>10)>>>0;l=x.firstElementChild.getAttribute(\"data-w94g\")||\"\";for(q=0;q<l.length;q++)g=Math.imul(g^l.charCodeAt(q),3071559865)>>>0;t=x.children[2].children[1];d=x.children[2];g=((g<<8|g>>>24)^Math.round((h(t).left-h(d).left)/4)+246788840)>>>0;t=x.children[1].children[0];g=Math.imul(g^Math.round(h(t).width/4),2009510477)>>>0;t=x.children[1].children[0];g=((g<<7|g>>>25)^Math.round(h(t).height/4)+262699928)>>>0;g=Math.imul(g^x.children.length,664936589)>>>0;return g.toString(36)};</script></body></html>"
+ },
+ {
+  "t": 0.559,
+  "m": "GET",
+  "url": "https://practice.speedrun.scopehealth.com/v/1zvhkgtlj4znn7013zgsn7mjqh/4g3s42s15rsfnnf4.css",
+  "st": 200,
+  "post": null,
+  "frame": "https://practice.speedrun.scopehealth.com/v/1zvhkgtlj4znn7013zgsn7mjqh/"
+ },
+ {
+  "t": 0.562,
+  "m": "GET",
+  "url": "https://practice.speedrun.scopehealth.com/v/1zvhkgtlj4znn7013zgsn7mjqh/z6schp1n5fq23mgv.js",
+  "st": 200,
+  "post": null,
+  "frame": "https://practice.speedrun.scopehealth.com/v/1zvhkgtlj4znn7013zgsn7mjqh/"
+ },
+ {
+  "t": 0.568,
+  "m": "GET",
+  "url": "https://practice.speedrun.scopehealth.com/static/hk47g9j121822h7g4440.woff2",
+  "st": 200,
+  "post": null,
+  "frame": "https://practice.speedrun.scopehealth.com/v/1zvhkgtlj4znn7013zgsn7mjqh/"
+ },
+ {
+  "t": 0.569,
+  "m": "GET",
+  "url": "https://practice.speedrun.scopehealth.com/static/5cb240a4d99ab7e6fc3a.woff2",
+  "st": 200,
+  "post": null,
+  "frame": "https://practice.speedrun.scopehealth.com/v/1zvhkgtlj4znn7013zgsn7mjqh/"
+ },
+ {
+  "t": 0.57,
+  "m": "GET",
+  "url": "https://practice.speedrun.scopehealth.com/static/f5243b80fbcabc6756a4.woff2",
+  "st": 200,
+  "post": null,
+  "frame": "https://practice.speedrun.scopehealth.com/v/1zvhkgtlj4znn7013zgsn7mjqh/"
+ },
+ {
+  "t": 0.57,
+  "m": "GET",
+  "url": "https://practice.speedrun.scopehealth.com/static/828f4525c741b6864718.woff2",
+  "st": 200,
+  "post": null,
+  "frame": "https://practice.speedrun.scopehealth.com/v/1zvhkgtlj4znn7013zgsn7mjqh/"
+ },
+ {
+  "t": 0.57,
+  "m": "GET",
+  "url": "https://practice.speedrun.scopehealth.com/static/0dbe07ed7679407db9d9.woff2",
+  "st": 200,
+  "post": null,
+  "frame": "https://practice.speedrun.scopehealth.com/v/1zvhkgtlj4znn7013zgsn7mjqh/"
+ }
+]

@@ -1,0 +1,222 @@
+== SHELL ==
+Skip to main content
+Wrenfield
+Dashboard
+Patients
+Schedule
+Billing
+Documents
+Activity
+Location
+Northgate
+Harbor Glen Medical Group · Wrenfield 4.2.0
+f
+frontdesk
+Administrator
+== SHELL INTERACTIVE ==
+A[] Skip to main content href=#main
+A[] Dashboard href=/
+A[] Patients href=/patients
+A[] Schedule href=/schedule
+A[] Billing href=/billing
+A[] Documents href=/documents
+A[] Activity href=/activity
+A[] All patients href=/patients/all
+BUTTON[button] 
+BUTTON[button] 
+BUTTON[button] 
+BUTTON[button] 
+BUTTON[button] 
+BUTTON[button] 
+BUTTON[button] 
+BUTTON[button] 
+BUTTON[button] 
+BUTTON[button] 
+BUTTON[button] 
+INPUT[radio] system
+INPUT[radio] light
+INPUT[radio] dark
+A[]  href=/about/notices
+BUTTON[button] 
+== FRAME https://practice.speedrun.scopehealth.com/v/4nx0xx3bk35kp588mxm97cdtkt/ ==
+Documents
+
+Referral letters, lab reports, and statements received for patients.
+
+Type
+All types
+Referral letter
+Lab report
+Statement
+Received from
+Received to
+Apply
+Clear filters
+Patient
+Find
+Documents received, newest first
+Received
+, newest first. Change the order
+	Type	Title	Patient	
+Actions
+
+Oct 14, 2026	Lab report	Lab report: Thyroid panel	
+Smith, Jessica
+	View
+Oct 14, 2026	Lab report	Lab report: Vitamin D	
+Patterson, Evelyn
+	View
+Oct 14, 2026	Referral letter	Referral letter from Juniper Flats Eye and Ear	
+Moreno, Rosa
+	View
+Oct 14, 2026	Statement	
+Restricted chart	
+Fernandez, William
+Restricted
+	View
+Oct 13, 2026	Lab report	Lab report: Lipid panel	
+Barnes, Betty
+	View
+Oct 13, 2026	Referral letter	Referral letter from Granite Fork Internal Medicine	
+Griffin, Christine
+	View
+Oct 13, 2026	Lab report	Lab report: Iron studies	
+Mitchell, Miguel
+	View
+Oct 12, 2026	Lab report	Lab report: Iron studies	
+Williams, Matthew
+	View
+Oct 12, 2026	Lab report	Lab report: Thyroid panel	
+Sanders, Kimberly
+	View
+Oct 12, 2026	Statement	Statement of account 2026-10	
+Perez, Alexis
+	View
+Oct 12, 2026	Lab report	Lab report: Thyroid panel	
+Martinez, Henry
+	View
+Oct 11, 2026	Lab report	Lab report: Thyroid panel	
+Smith, Stephanie
+	View
+Oct 11, 2026	Statement	Statement of account 2025-11	
+Phillips, Amanda
+	View
+Oct 11, 2026	Statement	Statement of account 2026-10	
+Anderson, Bjorn
+	View
+Oct 10, 2026	Referral letter	Referral letter from Summit Hollow Cardiology Partners	
+Garcia, Thomas
+	View
+Oct 10, 2026	Statement	Statement of account 2026-10	
+Lee, Charles
+	View
+Oct 10, 2026	Referral letter	Referral letter from Plains Dermatology Associates	
+Maldonado, Logan
+	View
+Oct 10, 2026	Statement	Statement of account 2026-10	
+Roberts, Amanda
+	View
+Oct 10, 2026	Lab report	Lab report: Vitamin D	
+Duncan, Rachel
+	View
+Oct 10, 2026	Statement	Statement of account 2026-10	
+Hanson, Elliott
+	View
+Oct 10, 2026	Lab report	Lab report: Lipid panel	
+Ali, Carolyn
+	View
+Oct 10, 2026	Lab report	Lab report: Thyroid panel	
+Johnson, Sarah
+	View
+Oct 10, 2026	Lab report	Lab report: Iron studies	
+Wilson, Melissa
+	View
+Oct 10, 2026	Lab report	Lab report: Liver function panel	
+Kelly, Nancy
+	View
+Oct 9, 2026	Statement	Statement of account 2026-10	
+Moreno, Eric
+	View
+
+Showing 1 to 25 of 200+ documents
+
+Rows per page
+25 per page
+50 per page
+100 per page
+Previous
+1
+2
+3
+Next
+== FRAME INTERACTIVE ==
+SELECT[select-one] All types
+Referral letter
+Lab report
+Statement OPTIONS=All types|Referral letter|Lab report|Statement
+INPUT[date] 
+INPUT[date] 
+BUTTON[submit] Apply
+BUTTON[button] Clear filters
+INPUT[text] Last name or date of birth
+BUTTON[submit] Find
+BUTTON[button] Received
+, newest first. Change the order
+A[] Smith, Jessica href=/patients/5kkrr64r0l
+A[] View href=/documents/34vz41brm2
+A[] Patterson, Evelyn href=/patients/0qd3n67j0p
+A[] View href=/documents/6m7c9qtdq0
+A[] Moreno, Rosa href=/patients/091n46gqmk
+A[] View href=/documents/08824xj7zj
+A[] Fernandez, William href=/patients/3pt7sxrzwn
+A[] View href=/documents/5zl98snqmq
+A[] Barnes, Betty href=/patients/7374ss0kgs
+A[] View href=/documents/3bhxtfkcbs
+A[] Griffin, Christine href=/patients/6nm1jsxqr7
+A[] View href=/documents/2v8gfcj1j7
+A[] Mitchell, Miguel href=/patients/2r239dnrcb
+A[] View href=/documents/4fx16s9lfj
+A[] Williams, Matthew href=/patients/3xpp0phpqh
+A[] View href=/documents/08hjq4m8dc
+A[] Sanders, Kimberly href=/patients/47f6bfng97
+A[] View href=/documents/0jxv72v48c
+A[] Perez, Alexis href=/patients/3qg4krxj49
+A[] View href=/documents/0k6lzw3wql
+A[] Martinez, Henry href=/patients/079jk4z11r
+A[] View href=/documents/737z2h84x8
+A[] Smith, Stephanie href=/patients/634xlphvxq
+A[] View href=/documents/6nrfp5jqmq
+A[] Phillips, Amanda href=/patients/41jnsfdhvn
+A[] View href=/documents/0psh41qld9
+A[] Anderson, Bjorn href=/patients/114jtj0j80
+A[] View href=/documents/3bfl691mss
+A[] Garcia, Thomas href=/patients/30qnqh7jwz
+A[] View href=/documents/64451k48w4
+A[] Lee, Charles href=/patients/3fl4ch2909
+A[] View href=/documents/73zh74bp2d
+A[] Maldonado, Logan href=/patients/19t68rln8z
+A[] View href=/documents/0cn0fp9r1q
+A[] Roberts, Amanda href=/patients/341zbrxkh3
+A[] View href=/documents/1j2gjc6zc3
+A[] Duncan, Rachel href=/patients/1hc15sjcrn
+A[] View href=/documents/1bp5kwtzzd
+A[] Hanson, Elliott href=/patients/1cfqgttthq
+A[] View href=/documents/6xcbfz95bs
+A[] Ali, Carolyn href=/patients/39gzfzms4t
+A[] View href=/documents/3wx3hx3gtr
+A[] Johnson, Sarah href=/patients/1grhp4v2wt
+A[] View href=/documents/4z61d89tnb
+A[] Wilson, Melissa href=/patients/0qvk7gk961
+A[] View href=/documents/2lqzjjkxhh
+A[] Kelly, Nancy href=/patients/4wnxjfspmk
+A[] View href=/documents/5b58d12sx6
+A[] Moreno, Eric href=/patients/71fzwkbklk
+A[] View href=/documents/4j35jfk3rd
+SELECT[select-one] 25 per page
+50 per page
+100 per page OPTIONS=25 per page|50 per page|100 per page
+BUTTON[button] Previous
+BUTTON[button] 1
+BUTTON[button] 2
+BUTTON[button] 3
+BUTTON[button] Next

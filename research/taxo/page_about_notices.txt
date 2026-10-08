@@ -1,0 +1,179 @@
+== SHELL ==
+Skip to main content
+Wrenfield
+Dashboard
+Patients
+Schedule
+Billing
+Documents
+Activity
+Location
+Northgate
+Harbor Glen Medical Group · Wrenfield 4.2.0
+f
+frontdesk
+Administrator
+== SHELL INTERACTIVE ==
+A[] Skip to main content href=#main
+A[] Dashboard href=/
+A[] Patients href=/patients
+A[] Schedule href=/schedule
+A[] Billing href=/billing
+A[] Documents href=/documents
+A[] Activity href=/activity
+A[] All patients href=/patients/all
+BUTTON[button] 
+BUTTON[button] 
+BUTTON[button] 
+BUTTON[button] 
+BUTTON[button] 
+BUTTON[button] 
+BUTTON[button] 
+BUTTON[button] 
+BUTTON[button] 
+BUTTON[button] 
+BUTTON[button] 
+INPUT[radio] system
+INPUT[radio] light
+INPUT[radio] dark
+A[]  href=/about/notices
+BUTTON[button] 
+== FRAME https://practice.speedrun.scopehealth.com/v/vrptt420s06jxs32hz0qhl7860/ ==
+Third-party notices
+
+Wrenfield includes the following typefaces and icons.
+
+Typefaces
+The font files in this directory are redistributed under the SIL Open Font License,
+Version 1.1. None of them declares a Reserved Font Name.
+
+JetBrains Mono (jetbrains-mono-latin-400-normal.woff)
+Copyright 2020 The JetBrains Mono Project Authors (https://github.com/JetBrains/JetBrainsMono)
+
+Noto Sans (noto-sans-latin-400-normal.woff, noto-sans-latin-700-normal.woff)
+Noto Serif (noto-serif-latin-400-normal.woff, noto-serif-latin-400-italic.woff,
+noto-serif-latin-700-normal.woff)
+Copyright 2022 The Noto Project Authors (https://github.com/notofonts/latin-greek-cyrillic)
+
+Atkinson Hyperlegible Mono (atkinson-hyperlegible-mono-latin-400-normal.woff)
+Copyright 2020, 2024 Braille Institute of America, Inc., a 501(c)(3) Charitable Organization
+
+Pangolin (pangolin-latin-400-normal.woff)
+Copyright 2016 The Pangolin Project Authors (https://github.com/googlefonts/pangolin)
+
+Mali (mali-latin-400-normal.woff)
+Copyright 2018 The Mali Project Authors (https://github.com/cadsondemak/Mali)
+
+The files are the Latin subsets published in the npm packages @fontsource/jetbrains-mono,
+@fontsource/noto-sans, @fontsource/noto-serif, @fontsource/atkinson-hyperlegible-mono,
+@fontsource/pangolin, and @fontsource/mali, version 5.2.5, unchanged.
+
+Fonts that this package derives from JetBrains Mono (the identifier fonts the site serves) and
+from Noto Sans, Noto Serif, Pangolin, and Mali (the subsets embedded in
+generated PDFs) are Modified Versions
+under the same license. They use a different font name. The identifier fonts carry no notice
+inside the file: the license lets the notice be a stand-alone text file, and this file is that
+notice. A product that serves those fonts includes this text in its third-party notices.
+
+Atkinson Hyperlegible Mono is used unmodified: this package reads its outlines to draw
+pictures of text and derives no font from it. The npm package's LICENSE file is the SIL Open
+Font License 1.1 with no Reserved Font Name. The license description inside the font file
+(name record 13) reads: "Braille Institute of America, Inc. provides Atkinson Hyperlegible
+for use, without derivatives or alteration, to the public free of charge for all
+non-commercial and commercial work. No attribution required." The two statements disagree
+about modification, so no modified version of this typeface is made.
+
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is copied below, and is also available with a FAQ at:
+https://openfontlicense.org
+
+-----------------------------------------------------------
+SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
+-----------------------------------------------------------
+
+PREAMBLE
+The goals of the Open Font License (OFL) are to stimulate worldwide
+development of collaborative font projects, to support the font creation
+efforts of academic and linguistic communities, and to provide a free and
+open framework in which fonts may be shared and improved in partnership
+with others.
+
+The OFL allows the licensed fonts to be used, studied, modified and
+redistributed freely as long as they are not sold by themselves. The
+fonts, including any derivative works, can be bundled, embedded,
+redistributed and/or sold with any software provided that any reserved
+names are not used by derivative works. The fonts and derivatives,
+however, cannot be released under any other type of license. The
+requirement for fonts to remain under this license does not apply
+to any document created using the fonts or their derivatives.
+
+DEFINITIONS
+"Font Software" refers to the set of files released by the Copyright
+Holder(s) under this license and clearly marked as such. This may
+include source files, build scripts and documentation.
+
+"Reserved Font Name" refers to any names specified as such after the
+copyright statement(s).
+
+"Original Version" refers to the collection of Font Software components as
+distributed by the Copyright Holder(s).
+
+"Modified Version" refers to any derivative made by adding to, deleting,
+or substituting -- in part or in whole -- any of the components of the
+Original Version, by changing formats or by porting the Font Software to a
+new environment.
+
+"Author" refers to any designer, engineer, programmer, technical
+writer or other person who contributed to the Font Software.
+
+PERMISSION & CONDITIONS
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of the Font Software, to use, study, copy, merge, embed, modify,
+redistribute, and sell modified and unmodified copies of the Font
+Software, subject to the following conditions:
+
+1) Neither the Font Software nor any of its individual components,
+in Original or Modified Versions, may be sold by itself.
+
+2) Original or Modified Versions of the Font Software may be bundled,
+redistributed and/or sold with any software, provided that each copy
+contains the above copyright notice and this license. These can be
+included either as stand-alone text files, human-readable headers or
+in the appropriate machine-readable metadata fields within text or
+binary files as long as those fields can be easily viewed by the user.
+
+3) No Modified Version of the Font Software may use the Reserved Font
+Name(s) unless explicit written permission is granted by the corresponding
+Copyright Holder. This restriction only applies to the primary font name as
+presented to the users.
+
+4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font
+Software shall not be used to promote, endorse or advertise any
+Modified Version, except to acknowledge the contribution(s) of the
+Copyright Holder(s) and the Author(s) or with their explicit written
+permission.
+
+5) The Font Software, modified or unmodified, in part or in whole,
+must be distributed entirely under this license, and must not be
+distributed under any other license. The requirement for fonts to
+remain under this license does not apply to any document created
+using the Font Software.
+
+TERMINATION
+This license becomes null and void if any of the above conditions are
+not met.
+
+DISCLAIMER
+THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT
+OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE
+COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL
+DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
+OTHER DEALINGS IN THE FONT SOFTWARE.
+
+Icons
+Lucide. ISC License. Copyright (c) for portions of Lucide are held by Cole Bemis 2013-2022 as part of Feather (MIT). All other copyright (c) for Lucide are held by Lucide Contributors 2022.
+== FRAME INTERACTIVE ==

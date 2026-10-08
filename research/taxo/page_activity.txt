@@ -1,0 +1,437 @@
+== SHELL ==
+Skip to main content
+Wrenfield
+Dashboard
+Patients
+Schedule
+Billing
+Documents
+Activity
+Location
+Northgate
+Harbor Glen Medical Group · Wrenfield 4.2.0
+f
+frontdesk
+Administrator
+== SHELL INTERACTIVE ==
+A[] Skip to main content href=#main
+A[] Dashboard href=/
+A[] Patients href=/patients
+A[] Schedule href=/schedule
+A[] Billing href=/billing
+A[] Documents href=/documents
+A[] Activity href=/activity
+A[] All patients href=/patients/all
+BUTTON[button] 
+BUTTON[button] 
+BUTTON[button] 
+BUTTON[button] 
+BUTTON[button] 
+BUTTON[button] 
+BUTTON[button] 
+BUTTON[button] 
+BUTTON[button] 
+BUTTON[button] 
+BUTTON[button] 
+INPUT[radio] system
+INPUT[radio] light
+INPUT[radio] dark
+A[]  href=/about/notices
+BUTTON[button] 
+== FRAME https://practice.speedrun.scopehealth.com/v/wxll9vwfqlfcw8bkjf63qfht84/ ==
+Activity
+
+What staff did in Wrenfield, newest first.
+
+User
+All users
+Aisha Wilson (awilson)
+Alexander Nunez (anunez)
+Andrea Hill (ahill)
+Andres Mendez (amendez)
+Angel Ali, NP (aali)
+Anna Mejia (amejia)
+Austin Gibson, NP (agibson)
+Barbara Wilson (bwilson)
+Betty Baker (bbaker)
+Brandon Howell, NP (bhowell)
+Brian Reed, NP (breed)
+Bryan Palmer, NP (bpalmer)
+Caleb Price (cprice)
+Carlos Barnes (cbarnes)
+Christian Walker (cwalker)
+Colleen Grant, PA (cgrant)
+David Hamilton (dhamilton)
+Debra Stevens (dstevens)
+Desmond Fields, PA (dfields)
+Diana Anderson, PA (danderson)
+Diane Fisher (dfisher)
+Dorothy Mason, PA (dmason)
+Dorothy Scott, NP (dscott)
+Dr. Bennett (lbennett)
+Dr. Butler (mbutler)
+Dr. Carroll (vcarroll)
+Dr. Chen (rchen)
+Dr. Crawford (jcrawford)
+Dr. Cunningham (dcunningham)
+Dr. Davis (cdavis)
+Dr. Foster (afoster)
+Dr. Fowler (dfowler)
+Dr. Garcia (jgarcia)
+Dr. Garrison (kgarrison)
+Dr. Gonzalez (dgonzalez)
+Dr. Green (rgreen)
+Dr. Herrera (sherrera)
+Dr. Hughes (dhughes)
+Dr. Jackson (cjackson)
+Dr. Lee (dlee)
+Dr. Lindgren (mlindgren)
+Dr. Maldonado (fmaldonado)
+Dr. Marshall (jmarshall)
+Dr. Martin (lmartin)
+Dr. Martinez (rmartinez)
+Dr. Meyer (gmeyer)
+Dr. Miller (kmiller)
+Dr. Moore (vmoore)
+Dr. Morris (smorris)
+Dr. Murphy (lmurphy)
+Dr. Nielsen (jnielsen)
+Dr. Olson (molson)
+Dr. Parker (jparker)
+Dr. Perez (vperez)
+Dr. Ramirez (jramirez)
+Dr. Ramos (hramos)
+Dr. Reynolds (mreynolds)
+Dr. Rios (jrios)
+Dr. Ruiz (zruiz)
+Dr. Shaw (ashaw)
+Dr. Silva (dsilva)
+Dr. Sorensen (msorensen)
+Dr. Soto (jsoto)
+Dr. Tillman (jtillman)
+Dr. Wagner (awagner)
+Dr. Watkins (lwatkins)
+Dr. West (bwest)
+Dr. Williamson (mwilliamson)
+Edward Lindqvist, NP (elindqvist)
+Edward Pierce, NP (epierce)
+Elena Gutierrez, NP (egutierrez)
+Elena Thompson (ethompson)
+Fatima Ramirez (framirez)
+Gary Haddad (ghaddad)
+Gloria Allen, NP (gallen)
+Grace Garcia (ggarcia)
+Gregory Patterson (gpatterson)
+Harold Larsen, PA (hlarsen)
+Henry Davis (hdavis)
+Ingrid Rivera (irivera)
+Jack Simpson (jsimpson)
+James Cook, PA (jcook)
+Janice Adams (jadams)
+Jason Collins, NP (jcollins)
+Joe Brown (jbrown)
+Joe Jackson (jjackson)
+Joe Wilson, PA (jwilson)
+Jonathan Jacobsen (jjacobsen)
+Jordan Alvarado (jalvarado)
+Joshua Bowman, PA (jbowman)
+Joyce Nelson, NP (jnelson)
+Juan Price (jprice)
+Katherine Nichols, NP (knichols)
+Kathryn Martinez (kmartinez)
+Kathryn Russell (krussell)
+Kenneth Sullivan, NP (ksullivan)
+Kimberly Espinoza (kespinoza)
+Larry Jones (ljones2)
+Lawrence Jones (ljones)
+Lawrence Rodriguez, NP (lrodriguez)
+Liam Farrell, NP (lfarrell)
+Logan Martinez (lmartinez)
+Lucas Johnson, NP (ljohnson)
+Lucas Lopez, NP (llopez)
+Maria Flores (mflores)
+Matthew Evans, PA (mevans)
+Mei Carpenter, PA (mcarpenter)
+Mei Miller (mmiller)
+Melissa Davis (mdavis)
+Michelle Martinez (mmartinez)
+Nancy Phillips (nphillips)
+Olivia Rivera, NP (orivera)
+Priya Roberts, NP (proberts)
+Richard Harrison, NP (rharrison)
+Sandra Anderson (sanderson)
+Sophia Clark (sclark)
+Soren Welch, NP (swelch)
+Stephanie Henderson (shenderson)
+Susan Vasquez, NP (svasquez)
+Teresa Warren (twarren)
+Theresa Medina (tmedina)
+Timothy Moore (tmoore)
+Vincent Herrera (vherrera)
+Vincent Morgan (vmorgan)
+Walter Guzman, PA (wguzman)
+William Kelly, NP (wkelly)
+Zoe Christensen (zchristensen)
+frontdesk (frontdesk)
+Action
+All actions
+Created
+Changed
+Deleted
+Merged
+Opened
+Logged in
+Record
+All records
+Patient
+Appointment
+Recurring appointment
+Invoice
+Document
+User account
+From
+To
+Apply
+Clear filters
+Patient
+Find
+Activity, newest first
+Time	User	Action	Record	What changed
+Oct 14, 2026, 10:52 AM	
+frontdesk
+frontdesk
+	Opened	
+Ramirez, David
+Restricted
+	Restricted chart opened. Reason: Providing care to this patient
+Oct 14, 2026, 10:49 AM	
+frontdesk
+frontdesk
+	Opened	
+Ramirez, David
+Restricted
+	Restricted chart opened. Reason: Providing care to this patient
+Oct 14, 2026, 10:46 AM	
+frontdesk
+frontdesk
+	Opened	
+Porter, Catherine
+Restricted
+	Restricted chart opened. Reason: Billing or insurance question
+Oct 14, 2026, 10:41 AM	
+frontdesk
+frontdesk
+	Opened	
+Porter, Catherine
+Restricted
+	Restricted chart opened. Reason: Billing or insurance question
+Oct 14, 2026, 10:29 AM	
+frontdesk
+frontdesk
+	Opened	
+Porter, Catherine
+Restricted
+	Restricted chart opened. Reason: Billing or insurance question
+Oct 14, 2026, 10:00 AM	
+Timothy Moore
+tmoore
+	Changed	
+Invoice 82593504
+Soto, James
+	Status changed from Open to Paid
+Oct 14, 2026, 10:00 AM	
+Timothy Moore
+tmoore
+	Created	
+Invoice 82593504
+Soto, James
+	Issued
+Oct 14, 2026, 10:00 AM	
+Theresa Medina
+tmedina
+	Created	
+Invoice 21617829
+Matthews, Astrid
+	Issued
+Oct 14, 2026, 10:00 AM	
+Jonathan Jacobsen
+jjacobsen
+	Changed	
+Invoice 03483827
+Carter, Ryan
+	Status changed from Partly paid to Partly paid
+Oct 14, 2026, 10:00 AM	
+Logan Martinez
+lmartinez
+	Changed	
+Invoice 03483827
+Carter, Ryan
+	Status changed from Open to Partly paid
+Oct 14, 2026, 10:00 AM	
+Timothy Moore
+tmoore
+	Created	
+Invoice 03483827
+Carter, Ryan
+	Issued
+Oct 14, 2026, 10:00 AM	
+Logan Martinez
+lmartinez
+	Changed	
+Invoice 20724781
+Ortega, Robert
+	Status changed from Open to Paid
+Oct 14, 2026, 10:00 AM	
+Jonathan Jacobsen
+jjacobsen
+	Created	
+Invoice 20724781
+Ortega, Robert
+	Issued
+Oct 14, 2026, 10:00 AM	
+Barbara Wilson
+bwilson
+	Created	
+Invoice 33536159
+Gómez, Lisa
+	Issued
+Oct 14, 2026, 10:00 AM	
+Barbara Wilson
+bwilson
+	Created	
+Invoice 71924090
+Griffin, Richard
+	Issued
+Oct 14, 2026, 10:00 AM	
+Timothy Moore
+tmoore
+	Created	
+Invoice 39960657
+Allen, Brandon
+	Issued
+Oct 14, 2026, 10:00 AM	
+Theresa Medina
+tmedina
+	Changed	
+Invoice 65227689
+Barrett, Jessica
+	Status changed from Partly paid to Partly paid
+Oct 14, 2026, 10:00 AM	
+Barbara Wilson
+bwilson
+	Changed	
+Invoice 65227689
+Barrett, Jessica
+	Status changed from Open to Partly paid
+Oct 14, 2026, 10:00 AM	
+Jonathan Jacobsen
+jjacobsen
+	Created	
+Invoice 65227689
+Barrett, Jessica
+	Issued
+Oct 14, 2026, 10:00 AM	
+Logan Martinez
+lmartinez
+	Created	
+Invoice 04931186
+Bennett, Jacqueline
+	Issued
+Oct 14, 2026, 10:00 AM	
+Timothy Moore
+tmoore
+	Created	
+Invoice 43228220
+Austin, Jessica
+	Issued
+Oct 14, 2026, 10:00 AM	
+Logan Martinez
+lmartinez
+	Changed	
+Invoice 31386638
+Gómez, Abigail
+	Status changed from Open to Partly paid
+Oct 14, 2026, 10:00 AM	
+Barbara Wilson
+bwilson
+	Created	
+Invoice 31386638
+Gómez, Abigail
+	Issued
+Oct 14, 2026, 10:00 AM	
+Logan Martinez
+lmartinez
+	Changed	
+Invoice 64569788
+Miller, Amanda
+	Status changed from Open to Partly paid
+Oct 14, 2026, 10:00 AM	
+Barbara Wilson
+bwilson
+	Changed	
+Invoice 04985749
+Jimenez, Laura
+	Status changed from Open to Paid
+
+Showing 1 to 25 of 200+ entries
+
+Rows per page
+25 per page
+50 per page
+Previous
+Next
+== FRAME INTERACTIVE ==
+SELECT[select-one] All users
+Aisha Wilson (awilson)
+Alexander Nunez (anunez)
+Andrea Hill (ahill)
+An OPTIONS=All users|Aisha Wilson (awilson)|Alexander Nunez (anunez)|Andrea Hill (ahill)|Andres Mendez (amendez)|Angel Ali, NP (aali)|Anna Mejia (amejia)|Austin Gibson, NP (agibson)|Barbara Wilson (bwilson)|Betty Baker (bbaker)|Brandon Howell, NP (bhowell)|Brian Reed, NP (breed)|Bryan Palmer, NP (bpalmer)|Caleb Price (cprice)|Carlos Barnes (cbarnes)|Christian Walker (cwalker)|Colleen Grant, PA (cgrant)|David Hamilton (dhamilton)|Debra Stevens (dstevens)|Desmond Fields, PA (dfields)|Diana Anderson, PA (danderson)|Diane Fisher (dfisher)|Dorothy Mason, PA (dmason)|Dorothy Scott, NP (dscott)|Dr. Bennett (lbennett)|Dr. Butler (mbutler)|Dr. Carroll (vcarroll)|Dr. Chen (rchen)|Dr. Crawford (jcrawford)|Dr. Cunningham (dcunningham)|Dr. Davis (cdavis)|Dr. Foster (afoster)|Dr. Fowler (dfowler)|Dr. Garcia (jgarcia)|Dr. Garrison (kgarrison)|Dr. Gonzalez (dgonzalez)|Dr. Green (rgreen)|Dr. Herrera (sherrera)|Dr. Hughes (dhughes)|Dr. Jackson (cjackson)|Dr. Lee (dlee)|Dr. Lindgren (mlindgren)|Dr. Maldonado (fmaldonado)|Dr. Marshall (jmarshall)|Dr. Martin (lmartin)|Dr. Martinez (rmartinez)|Dr. Meyer (gmeyer)|Dr. Miller (kmiller)|Dr. Moore (vmoore)|Dr. Morris (smorris)|Dr. Murphy (lmurphy)|Dr. Nielsen (jnielsen)|Dr. Olson (molson)|Dr. Parker (jparker)|Dr. Perez (vperez)|Dr. Ramirez (jramirez)|Dr. Ramos (hramos)|Dr. Reynolds (mreynolds)|Dr. Rios (jrios)|Dr. Ruiz (zruiz)|Dr. Shaw (ashaw)|Dr. Silva (dsilva)|Dr. Sorensen (msorensen)|Dr. Soto (jsoto)|Dr. Tillman (jtillman)|Dr. Wagner (awagner)|Dr. Watkins (lwatkins)|Dr. West (bwest)|Dr. Williamson (mwilliamson)|Edward Lindqvist, NP (elindqvist)|Edward Pierce, NP (epierce)|Elena Gutierrez, NP (egutierrez)|Elena Thompson (ethompson)|Fatima Ramirez (framirez)|Gary Haddad (ghaddad)|Gloria Allen, NP (gallen)|Grace Garcia (ggarcia)|Gregory Patterson (gpatterson)|Harold Larsen, PA (hlarsen)|Henry Davis (hdavis)|Ingrid Rivera (irivera)|Jack Simpson (jsimpson)|James Cook, PA (jcook)|Janice Adams (jadams)|Jason Collins, NP (jcollins)|Joe Brown (jbrown)|Joe Jackson (jjackson)|Joe Wilson, PA (jwilson)|Jonathan Jacobsen (jjacobsen)|Jordan Alvarado (jalvarado)|Joshua Bowman, PA (jbowman)|Joyce Nelson, NP (jnelson)|Juan Price (jprice)|Katherine Nichols, NP (knichols)|Kathryn Martinez (kmartinez)|Kathryn Russell (krussell)|Kenneth Sullivan, NP (ksullivan)|Kimberly Espinoza (kespinoza)|Larry Jones (ljones2)|Lawrence Jones (ljones)|Lawrence Rodriguez, NP (lrodriguez)|Liam Farrell, NP (lfarrell)|Logan Martinez (lmartinez)|Lucas Johnson, NP (ljohnson)|Lucas Lopez, NP (llopez)|Maria Flores (mflores)|Matthew Evans, PA (mevans)|Mei Carpenter, PA (mcarpenter)|Mei Miller (mmiller)|Melissa Davis (mdavis)|Michelle Martinez (mmartinez)|Nancy Phillips (nphillips)|Olivia Rivera, NP (orivera)|Priya Roberts, NP (proberts)|Richard Harrison, NP (rharrison)|Sandra Anderson (sanderson)|Sophia Clark (sclark)|Soren Welch, NP (swelch)|Stephanie Henderson (shenderson)|Susan Vasquez, NP (svasquez)|Teresa Warren (twarren)|Theresa Medina (tmedina)|Timothy Moore (tmoore)|Vincent Herrera (vherrera)|Vincent Morgan (vmorgan)|Walter Guzman, PA (wguzman)|William Kelly, NP (wkelly)|Zoe Christensen (zchristensen)|frontdesk (frontdesk)
+SELECT[select-one] All actions
+Created
+Changed
+Deleted
+Merged
+Opened
+Logged in OPTIONS=All actions|Created|Changed|Deleted|Merged|Opened|Logged in
+SELECT[select-one] All records
+Patient
+Appointment
+Recurring appointment
+Invoice
+Document
+User acco OPTIONS=All records|Patient|Appointment|Recurring appointment|Invoice|Document|User account
+INPUT[date] 
+INPUT[date] 
+BUTTON[submit] Apply
+BUTTON[button] Clear filters
+INPUT[text] Last name or date of birth
+BUTTON[submit] Find
+A[] Ramirez, David href=/patients/3pdsxpwzr5
+A[] Ramirez, David href=/patients/28xpx631v1
+A[] Porter, Catherine href=/patients/2q123zlg2m
+A[] Porter, Catherine href=/patients/2q123zlg2m
+A[] Porter, Catherine href=/patients/2q123zlg2m
+A[] Invoice 82593504 href=/billing/invoices/6b7q92km6g
+A[] Invoice 82593504 href=/billing/invoices/6b7q92km6g
+A[] Invoice 21617829 href=/billing/invoices/2cw2d6krzf
+A[] Invoice 03483827 href=/billing/invoices/5h618fxx1w
+A[] Invoice 03483827 href=/billing/invoices/5h618fxx1w
+A[] Invoice 03483827 href=/billing/invoices/5h618fxx1w
+A[] Invoice 20724781 href=/billing/invoices/0h9svwws1g
+A[] Invoice 20724781 href=/billing/invoices/0h9svwws1g
+A[] Invoice 33536159 href=/billing/invoices/2dm5dwxwwn
+A[] Invoice 71924090 href=/billing/invoices/72vkfclnck
+A[] Invoice 39960657 href=/billing/invoices/1njk73zn9k
+A[] Invoice 65227689 href=/billing/invoices/4l6c4vkcx5
+A[] Invoice 65227689 href=/billing/invoices/4l6c4vkcx5
+A[] Invoice 65227689 href=/billing/invoices/4l6c4vkcx5
+A[] Invoice 04931186 href=/billing/invoices/5nkzrqwvbl
+A[] Invoice 43228220 href=/billing/invoices/01mzwxsv5k
+A[] Invoice 31386638 href=/billing/invoices/37cb9w7xbp
+A[] Invoice 31386638 href=/billing/invoices/37cb9w7xbp
+A[] Invoice 64569788 href=/billing/invoices/2343qgct07
+A[] Invoice 04985749 href=/billing/invoices/6zqkx9b148
+SELECT[select-one] 25 per page
+50 per page OPTIONS=25 per page|50 per page
+BUTTON[button] Previous
+BUTTON[button] Next

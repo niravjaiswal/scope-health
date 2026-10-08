@@ -1,0 +1,141 @@
+[
+ {
+  "t": 0.177,
+  "m": "GET",
+  "url": "https://practice.speedrun.scopehealth.com/about/notices",
+  "st": 200,
+  "post": null,
+  "frame": "about:blank",
+  "body": "<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><title>Third-party notices \u00b7 Wrenfield</title><link rel=\"icon\" href=\"/static/wrenfield.svg\"><link rel=\"stylesheet\" href=\"/v/plsfrqnq3x98fwqvcx9814l3rx/1shk4tqhsqvsd9x2.css\"><script nonce=\"n90l2cr298hwjxk4gjpj92d8\">(function(){var c=null;try{c=localStorage.getItem(\"wf-theme\")}catch(e){}if(c===\"dark\"||(c!==\"light\"&&matchMedia(\"(prefers-color-scheme: dark)\").matches))document.documentElement.classList.add(\"z57jn2\")})();</script><script nonce=\"n90l2cr298hwjxk4gjpj92d8\" src=\"/v/plsfrqnq3x98fwqvcx9814l3rx/cd8wvfgvpflf972h.js\" defer></script></head><body class=\"q2h28x\" inert><div class=\"zz29xb\" data-v085dw=\"j5z3kv8n8l\"><a href=\"#main\" class=\"xjfbvt\">Skip to main content</a>\n<div class=\"sjmscj\"><nav aria-label=\"Main\" class=\"qxqcb2\"><div class=\"bcr5jq\" data-v085dw=\"qbcnj0bbmh\"><div class=\"cmbcdn\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><rect width=\"24\" height=\"24\" rx=\"4\" fill=\"var(--primary)\"/><path d=\"M5.5 7.5 8.6 17l3.4-7.2 3.4 7.2 3.1-9.5\" fill=\"none\" stroke=\"var(--primary-foreground)\" stroke-width=\"2.1\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg><span class=\"djn3b8\">Wrenfield</span></div>\n<ul class=\"f34qjj\"><li><a href=\"/\" class=\"gj2rm8\" data-hh6130v=\"q8prxmpj6b\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect width=\"7\" height=\"9\" x=\"3\" y=\"3\" rx=\"1\"/><rect width=\"7\" height=\"5\" x=\"14\" y=\"3\" rx=\"1\"/><rect width=\"7\" height=\"9\" x=\"14\" y=\"12\" rx=\"1\"/><rect width=\"7\" height=\"5\" x=\"3\" y=\"16\" rx=\"1\"/></svg><span class=\"p2196r\">Dashboard</span></a></li><li><a href=\"/patients\" class=\"gj2rm8\" data-hh6130v=\"m6hvk7v2fg\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2\"/><path d=\"M16 3.128a4 4 0 0 1 0 7.744\"/><path d=\"M22 21v-2a4 4 0 0 0-3-3.87\"/><circle cx=\"9\" cy=\"7\" r=\"4\"/></svg><span class=\"p2196r\">Patients</span></a></li><li><a href=\"/schedule\" class=\"gj2rm8\" data-hh6130v=\"ggg4m9vzlv\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M8 2v4\"/><path d=\"M16 2v4\"/><rect width=\"18\" height=\"18\" x=\"3\" y=\"4\" rx=\"2\"/><path d=\"M3 10h18\"/><path d=\"M8 14h.01\"/><path d=\"M12 14h.01\"/><path d=\"M16 14h.01\"/><path d=\"M8 18h.01\"/><path d=\"M12 18h.01\"/><path d=\"M16 18h.01\"/></svg><span class=\"p2196r\">Schedule</span></a></li><li><a href=\"/billing\" class=\"gj2rm8\" data-hh6130v=\"mhxk5swsph\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z\"/><path d=\"M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8\"/><path d=\"M12 17.5v-11\"/></svg><span class=\"p2196r\">Billing</span></a></li><li><a href=\"/documents\" class=\"gj2rm8\" data-hh6130v=\"wsfzs82fhd\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z\"/><path d=\"M14 2v4a2 2 0 0 0 2 2h4\"/><path d=\"M10 9H8\"/><path d=\"M16 13H8\"/><path d=\"M16 17H8\"/></svg><span class=\"p2196r\">Documents</span></a></li><li><a href=\"/activity\" class=\"gj2rm8\" data-hh6130v=\"s6vx6sr6wj\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8\"/><path d=\"M3 3v5h5\"/><path d=\"M12 7v5l4 2\"/></svg><span class=\"p2196r\">Activity</span></a></li></ul><a href=\"/patients/all\" tabindex=\"-1\" aria-hidden=\"true\" class=\"ckm548\">All patients</a></div></nav>\n<div class=\"f6xk1k\"><header class=\"cq5dx4\"><div class=\"bcr5jq\" data-v085dw=\"wmbrb6jzn7\"><span aria-hidden=\"true\" class=\"g4sqbw vxgw64\"></span>\n<details class=\"pprq97\" data-p4hlgl=\"\">\n<summary class=\"tc20tm\" aria-label=\"Location: Northgate. Change location\">\n<span class=\"qb94l4 vxgw64\"></span>\n<span class=\"t0c98r\"><span class=\"ttffjz gwrf7j c1dz1l\">Location</span><span class=\"n203h4 ggl0s3\">Northgate</span></span><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m7 15 5 5 5-5\"/><path d=\"m7 9 5-5 5 5\"/></svg></summary>\n<div class=\"v9267l x38jt8\"><p class=\"m2bqxt\">Work at location</p>\n<button type=\"button\" class=\"w10stc\" aria-pressed=\"false\" data-hh6130v=\"jdl0bcm5jb\"><span class=\"qb94l4 jhd19g\"></span><span>All locations</span></button>\n<button type=\"button\" class=\"w10stc gjrccs\" aria-pressed=\"true\" data-hh6130v=\"x8wthxn6bg\"><span class=\"qb94l4 vxgw64\"></span><span class=\"t0c98r\"><span>Northgate</span><span class=\"mzkr7g c1dz1l\">Harbor Glen, KS</span></span></button><button type=\"button\" class=\"w10stc\" aria-pressed=\"false\" data-hh6130v=\"vhkkpt63q6\"><span class=\"qb94l4 jqz9xq\"></span><span class=\"t0c98r\"><span>Front Range</span><span class=\"mzkr7g c1dz1l\">Summit Hollow, CO</span></span></button><button type=\"button\" class=\"w10stc\" aria-pressed=\"false\" data-hh6130v=\"lp982bzb3d\"><span class=\"qb94l4 wnvgdw\"></span><span class=\"t0c98r\"><span>Eastside</span><span class=\"mzkr7g c1dz1l\">Harbor Glen, KS</span></span></button><button type=\"button\" class=\"w10stc\" aria-pressed=\"false\" data-hh6130v=\"sc3nj6921s\"><span class=\"qb94l4 bh9qc7\"></span><span class=\"t0c98r\"><span>Stonebrook</span><span class=\"mzkr7g c1dz1l\">Stonebrook, CO</span></span></button><button type=\"button\" class=\"w10stc\" aria-pressed=\"false\" data-hh6130v=\"vxh98zfrlw\"><span class=\"qb94l4 xlh1nw\"></span><span class=\"t0c98r\"><span>Lakeside</span><span class=\"mzkr7g c1dz1l\">Marrow Lake, KS</span></span></button><button type=\"button\" class=\"w10stc\" aria-pressed=\"false\" data-hh6130v=\"m4nms4ms9s\"><span class=\"qb94l4 ws9d1c\"></span><span class=\"t0c98r\"><span>Riverbend</span><span class=\"mzkr7g c1dz1l\">Pell Junction, KS</span></span></button><button type=\"button\" class=\"w10stc\" aria-pressed=\"false\" data-hh6130v=\"z42cq8wtnt\"><span class=\"qb94l4 n156ht\"></span><span class=\"t0c98r\"><span>Highline</span><span class=\"mzkr7g c1dz1l\">Granite Fork, CO</span></span></button><button type=\"button\" class=\"w10stc\" aria-pressed=\"false\" data-hh6130v=\"m7c89c2w47\"><span class=\"qb94l4 sk1whr\"></span><span class=\"t0c98r\"><span>Prairie View</span><span class=\"mzkr7g c1dz1l\">Tilden Grove, KS</span></span></button><button type=\"button\" class=\"w10stc\" aria-pressed=\"false\" data-hh6130v=\"w2kbw9mfb3\"><span class=\"qb94l4 vxgw64\"></span><span class=\"t0c98r\"><span>Cedar Hollow</span><span class=\"mzkr7g c1dz1l\">Juniper Flats, CO</span></span></button><button type=\"button\" class=\"w10stc\" aria-pressed=\"false\" data-hh6130v=\"z7m6ndph04\"><span class=\"qb94l4 jqz9xq\"></span><span class=\"t0c98r\"><span>Willow Creek</span><span class=\"mzkr7g c1dz1l\">Alder Creek, KS</span></span></button></div></details>\n<div class=\"skhb1p\"><span class=\"vmcl9n\">Harbor Glen Medical Group \u00b7 <span class=\"xjgtlc\">Wrenfield 4.2.0</span></span>\n<details class=\"pprq97\" data-p4hlgl=\"\">\n<summary class=\"tc20tm\" aria-label=\"Account menu, frontdesk\"><span aria-hidden=\"true\" class=\"kgwn9g\">f</span><span class=\"t0c98r jjz7dp\"><span class=\"n203h4\">frontdesk</span><span class=\"ttffjz c1dz1l\">Administrator</span></span></summary>\n<div class=\"v9267l jf4fvz\"><p class=\"m2bqxt\"><span class=\"n203h4\">frontdesk</span><br>frontdesk</p>\n<div class=\"p70mj6\"></div><p class=\"m2bqxt\">Theme</p>\n<label class=\"w10stc\"><input type=\"radio\" name=\"theme\" value=\"system\" data-w4p33=\"\">Match system</label><label class=\"w10stc\"><input type=\"radio\" name=\"theme\" value=\"light\" data-w4p33=\"\">Light</label><label class=\"w10stc\"><input type=\"radio\" name=\"theme\" value=\"dark\" data-w4p33=\"\">Dark</label>\n<div class=\"p70mj6\"></div>\n<a href=\"/about/notices\" class=\"w10stc\" data-hh6130v=\"l7ncgw7h30\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"M12 16v-4\"/><path d=\"M12 8h.01\"/></svg>Third-party notices</a>\n<button type=\"button\" class=\"w10stc\" data-hh6130v=\"knb2t62g83\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m16 17 5-5-5-5\"/><path d=\"M21 12H9\"/><path d=\"M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4\"/></svg>Log out</button>\n</div></details></div></div></header>\n<main id=\"main\" tabindex=\"-1\" class=\"dmn2hm\"><div class=\"bcr5jq\" data-v085dw=\"vl43dmbwhn\"><div class=\"lctlsh\" data-hh6130v=\"hv2dz17kx3\" data-n30d=\"0\"><div class=\"bb2szp j3ssj7\"></div><span class=\"j1xrc6\" role=\"status\">Loading Wrenfield</span></div></div></main></div></div>\n<span hidden data-pwmf5g=\"shjknmtxzf\"></span></div><div class=\"mw7v9k\" data-b7fr role=\"status\" hidden>Wrenfield is not responding. Try again in a moment.</div><div class=\"nkr0r5hs\" data-v085dw=\"j1kpzvxbzs\" aria-hidden=\"true\"><i data-c2xwft=\"6q5l11dqmmvc\" style=\"display:none\"></i><i class=\"qx3rdgvr\"><i class=\"fdp01rs0\"><i class=\"k625g0zq\"></i></i></i><i class=\"h65cx6pk nx7nxzxd\"><i class=\"lq9xl5q3 nx7nxzxd\"><i class=\"cghjgbbk\"></i></i></i><i class=\"h65cx6pk sh4p2xcd\"><i class=\"lq9xl5q3 nx7nxzxd sh4p2xcd\"><i class=\"cghjgbbk\"></i></i></i></div><meta data-q0fhv=\"5\" content=\"Third-party notices \u00b7 Wrenfield\"><script nonce=\"n90l2cr298hwjxk4gjpj92d8\">window[\"_w4rlm0\"]=function(){var a=document,d=a.querySelector(\".nkr0r5hs\"),f=1191297064,j=function(n){return n.getBoundingClientRect()},t,e,o,n;t=d.children[2].children[0].children[0];f=(Math.imul(f+Math.round(j(t).width/4)|0,2238883299)^f>>>7)>>>0;t=d.children[3].children[0].children[0];f=((f<<9|f>>>23)^Math.round(j(t).width/4)+65371046)>>>0;f=((f<<6|f>>>26)^d.children.length+213091371)>>>0;o=d.firstElementChild.getAttribute(\"data-c2xwft\")||\"\";for(n=0;n<o.length;n++)f=Math.imul(f^o.charCodeAt(n),190973133)>>>0;t=d.children[1].children[0].children[0];e=d.children[1];f=((f<<5|f>>>27)^Math.round((j(t).left-j(e).left)/4)+67259733)>>>0;t=d.children[1].children[0].children[0];f=((f<<10|f>>>22)^Math.round(j(t).height/4)+202860745)>>>0;return f.toString(36)};</script></body></html>"
+ },
+ {
+  "t": 0.234,
+  "m": "GET",
+  "url": "https://practice.speedrun.scopehealth.com/v/plsfrqnq3x98fwqvcx9814l3rx/1shk4tqhsqvsd9x2.css",
+  "st": 200,
+  "post": null,
+  "frame": "https://practice.speedrun.scopehealth.com/about/notices"
+ },
+ {
+  "t": 0.283,
+  "m": "GET",
+  "url": "https://practice.speedrun.scopehealth.com/v/plsfrqnq3x98fwqvcx9814l3rx/cd8wvfgvpflf972h.js",
+  "st": 200,
+  "post": null,
+  "frame": "https://practice.speedrun.scopehealth.com/about/notices"
+ },
+ {
+  "t": 0.355,
+  "m": "GET",
+  "url": "https://practice.speedrun.scopehealth.com/static/828f4525c741b6864718.woff2",
+  "st": 200,
+  "post": null,
+  "frame": "https://practice.speedrun.scopehealth.com/about/notices"
+ },
+ {
+  "t": 0.357,
+  "m": "GET",
+  "url": "https://practice.speedrun.scopehealth.com/static/hk47g9j121822h7g4440.woff2",
+  "st": 200,
+  "post": null,
+  "frame": "https://practice.speedrun.scopehealth.com/about/notices"
+ },
+ {
+  "t": 0.358,
+  "m": "GET",
+  "url": "https://practice.speedrun.scopehealth.com/static/0dbe07ed7679407db9d9.woff2",
+  "st": 200,
+  "post": null,
+  "frame": "https://practice.speedrun.scopehealth.com/about/notices"
+ },
+ {
+  "t": 0.36,
+  "m": "GET",
+  "url": "https://practice.speedrun.scopehealth.com/static/f5243b80fbcabc6756a4.woff2",
+  "st": 200,
+  "post": null,
+  "frame": "https://practice.speedrun.scopehealth.com/about/notices"
+ },
+ {
+  "t": 0.358,
+  "m": "POST",
+  "url": "https://practice.speedrun.scopehealth.com/v/plsfrqnq3x98fwqvcx9814l3rx/hkx461vf6pk3",
+  "st": 200,
+  "post": "b0b=hv2dz17kx3&h2gh=sosh78",
+  "frame": "https://practice.speedrun.scopehealth.com/about/notices",
+  "body": "<template data-v085dw=\"vl43dmbwhn\"><iframe src=\"/v/0l5r9gt7lkk7cqsls329krgrx1/\" title=\"Third-party notices\" class=\"wv9b7n\"></iframe></template><template data-v085dw=\"j1kpzvxbzs\"><i data-c2xwft=\"bdxfqfpl3dqt\" style=\"display:none\"></i><i class=\"qx3rdgvr\"><i class=\"k625g0zq\"><i class=\"fdp01rs0\"></i></i></i><i class=\"f57bqcjw\"><i class=\"sc5tscd9\"></i><i class=\"pjz4dzqq\"></i></i></template><script data-xnm2t>window[\"_w4rlm0\"]=function(){var c=document,r=c.querySelector(\".nkr0r5hs\"),f=4176256773,y=function(g){return g.getBoundingClientRect()},x,s,o,g;o=r.firstElementChild.getAttribute(\"data-c2xwft\")||\"\";for(g=0;g<o.length;g++)f=Math.imul(f^o.charCodeAt(g),1292299333)>>>0;x=r.children[2].children[0];f=Math.imul(f^Math.round(y(x).width/4),1701331821)>>>0;x=r.children[1].children[0].children[0];s=r.children[1];f=(f+Math.round((y(x).left-y(s).left)/4)*882169)>>>0;x=r.children[2].children[1];s=r.children[2];f=((f<<5|f>>>27)^Math.round((y(x).left-y(s).left)/4)+76893254)>>>0;f=(Math.imul(f+r.children.length|0,1251207995)^f>>>3)>>>0;x=r.children[1].children[0].children[0];f=(f+Math.round(y(x).width/4)*256071)>>>0;return f.toString(36)};</script>"
+ },
+ {
+  "t": 0.366,
+  "m": "GET",
+  "url": "https://practice.speedrun.scopehealth.com/static/5cb240a4d99ab7e6fc3a.woff2",
+  "st": 200,
+  "post": null,
+  "frame": "https://practice.speedrun.scopehealth.com/about/notices"
+ },
+ {
+  "t": 0.411,
+  "m": "GET",
+  "url": "https://practice.speedrun.scopehealth.com/v/0l5r9gt7lkk7cqsls329krgrx1/",
+  "st": 200,
+  "post": null,
+  "frame": "",
+  "body": "<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><title>Wrenfield</title><link rel=\"stylesheet\" href=\"/v/0l5r9gt7lkk7cqsls329krgrx1/20xtg0v2d09lrw7m.css\"><script nonce=\"9cjkdgx4qsxq2w41lxwzclwv\">(function(){var c=null;try{c=localStorage.getItem(\"wf-theme\")}catch(e){}if(c===\"dark\"||(c!==\"light\"&&matchMedia(\"(prefers-color-scheme: dark)\").matches))document.documentElement.classList.add(\"c1m3ff\")})();</script><script nonce=\"9cjkdgx4qsxq2w41lxwzclwv\" src=\"/v/0l5r9gt7lkk7cqsls329krgrx1/n55cpf5wb8149hs7.js\" defer></script></head><body class=\"ncgmmr\" inert><div class=\"hs6v6d\" data-z07f4l=\"rwv3bz96fk\"><div class=\"hv0pv1\"><header class=\"f09s3s\"><h1 class=\"tbd34d\">Third-party notices</h1><p class=\"pm1cbz\">Wrenfield includes the following typefaces and icons.</p></header><div class=\"x4g3s6\"><section class=\"xxcxv2\"><h2 class=\"h0xxbr\"><span>Typefaces</span></h2><div class=\"vxn300\"><pre class=\"qnxr8q\">The font files in this directory are redistributed under the SIL Open Font License,\nVersion 1.1. None of them declares a Reserved Font Name.\n\nJetBrains Mono (jetbrains-mono-latin-400-normal.woff)\nCopyright 2020 The JetBrains Mono Project Authors (https://github.com/JetBrains/JetBrainsMono)\n\nNoto Sans (noto-sans-latin-400-normal.woff, noto-sans-latin-700-normal.woff)\nNoto Serif (noto-serif-latin-400-normal.woff, noto-serif-latin-400-italic.woff,\nnoto-serif-latin-700-normal.woff)\nCopyright 2022 The Noto Project Authors (https://github.com/notofonts/latin-greek-cyrillic)\n\nAtkinson Hyperlegible Mono (atkinson-hyperlegible-mono-latin-400-normal.woff)\nCopyright 2020, 2024 Braille Institute of America, Inc., a 501(c)(3) Charitable Organization\n\nPangolin (pangolin-latin-400-normal.woff)\nCopyright 2016 The Pangolin Project Authors (https://github.com/googlefonts/pangolin)\n\nMali (mali-latin-400-normal.woff)\nCopyright 2018 The Mali Project Authors (https://github.com/cadsondemak/Mali)\n\nThe files are the Latin subsets published in the npm packages @fontsource/jetbrains-mono,\n@fontsource/noto-sans, @fontsource/noto-serif, @fontsource/atkinson-hyperlegible-mono,\n@fontsource/pangolin, and @fontsource/mali, version 5.2.5, unchanged.\n\nFonts that this package derives from JetBrains Mono (the identifier fonts the site serves) and\nfrom Noto Sans, Noto Serif, Pangolin, and Mali (the subsets embedded in\ngenerated PDFs) are Modified Versions\nunder the same license. They use a different font name. The identifier fonts carry no notice\ninside the file: the license lets the notice be a stand-alone text file, and this file is that\nnotice. A product that serves those fonts includes this text in its third-party notices.\n\nAtkinson Hyperlegible Mono is used unmodified: this package reads its outlines to draw\npictures of text and derives no font from it. The npm package&#39;s LICENSE file is the SIL Open\nFont License 1.1 with no Reserved Font Name. The license description inside the font file\n(name record 13) reads: &quot;Braille Institute of America, Inc. provides Atkinson Hyperlegible\nfor use, without derivatives or alteration, to the public free of charge for all\nnon-commercial and commercial work. No attribution required.&quot; The two statements disagree\nabout modification, so no modified version of this typeface is made.\n\nThis Font Software is licensed under the SIL Open Font License, Version 1.1.\nThis license is copied below, and is also available with a FAQ at:\nhttps://openfontlicense.org\n\n-----------------------------------------------------------\nSIL OPEN FONT LICENSE Version 1.1 - 26 February 2007\n-----------------------------------------------------------\n\nPREAMBLE\nThe goals of the Open Font License (OFL) are to stimulate worldwide\ndevelopment of collaborative font projects, to support the font creation\nefforts of academic and linguistic communities, and to provide a free and\nopen framework in which fonts may be shared and improved in partnership\nwith others.\n\nThe OFL allows the licensed fonts to be used, studied, modified and\nredistributed freely as long as they are not sold by themselves. The\nfonts, including any derivative works, can be bundled, embedded,\nredistributed and/or sold with any software provided that any reserved\nnames are not used by derivative works. The fonts and derivatives,\nhowever, cannot be released under any other type of license. The\nrequirement for fonts to remain under this license does not apply\nto any document created using the fonts or their derivatives.\n\nDEFINITIONS\n&quot;Font Software&quot; refers to the set of files released by the Copyright\nHolder(s) under this license and clearly marked as such. This may\ninclude source files, build scripts and documentation.\n\n&quot;Reserved Font Name&quot; refers to any names specified as such after the\ncopyright statement(s).\n\n&quot;Original Version&quot; refers to the collection of Font Software components as\ndistributed by the Copyright Holder(s).\n\n&quot;Modified Version&quot; refers to any derivative made by adding to, deleting,\nor substituting -- in part or in whole -- any of the components of the\nOriginal Version, by changing formats or by porting the Font Software to a\nnew environment.\n\n&quot;Author&quot; refers to any designer, engineer, programmer, technical\nwriter or other person who contributed to the Font Software.\n\nPERMISSION &amp; CONDITIONS\nPermission is hereby granted, free of charge, to any person obtaining\na copy of the Font Software, to use, study, copy, merge, embed, modify,\nredistribute, and sell modified and unmodified copies of the Font\nSoftware, subject to the following conditions:\n\n1) Neither the Font Software nor any of its individual components,\nin Original or Modified Versions, may be sold by itself.\n\n2) Original or Modified Versions of the Font Software may be bundled,\nredistributed and/or sold with any software, provided that each copy\ncontains the above copyright notice and this license. These can be\nincluded either as stand-alone text files, human-readable headers or\nin the appropriate machine-readable metadata fields within text or\nbinary files as long as those fields can be easily viewed by the user.\n\n3) No Modified Version of the Font Software may use the Reserved Font\nName(s) unless explicit written permission is granted by the corresponding\nCopyright Holder. This restriction only applies to the primary font name as\npresented to the users.\n\n4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font\nSoftware shall not be used to promote, endorse or advertise any\nModified Version, except to acknowledge the contribution(s) of the\nCopyright Holder(s) and the Author(s) or with their explicit written\npermission.\n\n5) The Font Software, modified or unmodified, in part or in whole,\nmust be distributed entirely under this license, and must not be\ndistributed under any other license. The requirement for fonts to\nremain under this license does not apply to any document created\nusing the Font Software.\n\nTERMINATION\nThis license becomes null and void if any of the above conditions are\nnot met.\n\nDISCLAIMER\nTHE FONT SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT\nOF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE\nCOPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,\nINCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL\nDAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING\nFROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM\nOTHER DEALINGS IN THE FONT SOFTWARE.\n</pre></div></section><section class=\"xxcxv2\"><h2 class=\"h0xxbr\"><span>Icons</span></h2><div class=\"vxn300\"><pre class=\"qnxr8q\">Lucide. ISC License. Copyright (c) for portions of Lucide are held by Cole Bemis 2013-2022 as part of Feather (MIT). All other copyright (c) for Lucide are held by Lucide Contributors 2022.</pre></div></section></div></div></div><div class=\"jkxl8w\" data-vg1d role=\"status\" hidden>Wrenfield is not responding. Try again in a moment.</div><div class=\"b7nkl36z\" data-z07f4l=\"z2b9z04cnj\" aria-hidden=\"true\"><i data-zggmk=\"qvv9bzkn4kq4\" style=\"display:none\"></i><i class=\"d3j301vc\"><i class=\"prcwvdt5\"></i><i class=\"bjh5frnd\"></i><i class=\"nfvq9mft\"></i><i class=\"bjh5frnd\"></i><i class=\"bjh5frnd\"></i></i><i class=\"g68lxd9d k1jg7c3k\"><i class=\"tg203r6g\"></i></i><i class=\"q68n12kg\"><i class=\"p63gkbb5\"></i></i></div><script nonce=\"9cjkdgx4qsxq2w41lxwzclwv\">window[\"_ghdd05bgc\"]=function(){var y=document,f=y.querySelector(\".b7nkl36z\"),p=903529569,j=function(e){return e.getBoundingClientRect()},l,a,u,e;l=f.children[1].children[4];a=f.children[1];p=Math.imul(p^Math.round((j(l).top-j(a).top)/4),290729881)>>>0;l=f.children[3].children[0];p=Math.imul(p^Math.round(j(l).height/4),1958037103)>>>0;l=f.children[2].children[0];p=Math.imul(p^Math.round(j(l).width/4),3749100719)>>>0;l=f.children[1];p=(p+Math.round(j(l).height/4)*325494)>>>0;u=f.firstElementChild.getAttribute(\"data-zggmk\")||\"\";for(e=0;e<u.length;e++)p=Math.imul(p^u.charCodeAt(e),516391127)>>>0;l=f.children[3].children[0];p=Math.imul(p^Math.round(j(l).width/4),3053608085)>>>0;p=(Math.imul(p+f.children.length|0,174683885)^p>>>8)>>>0;return p.toString(36)};</script></body></html>"
+ },
+ {
+  "t": 0.464,
+  "m": "GET",
+  "url": "https://practice.speedrun.scopehealth.com/v/0l5r9gt7lkk7cqsls329krgrx1/20xtg0v2d09lrw7m.css",
+  "st": 200,
+  "post": null,
+  "frame": "https://practice.speedrun.scopehealth.com/v/0l5r9gt7lkk7cqsls329krgrx1/"
+ },
+ {
+  "t": 0.471,
+  "m": "GET",
+  "url": "https://practice.speedrun.scopehealth.com/v/0l5r9gt7lkk7cqsls329krgrx1/n55cpf5wb8149hs7.js",
+  "st": 200,
+  "post": null,
+  "frame": "https://practice.speedrun.scopehealth.com/v/0l5r9gt7lkk7cqsls329krgrx1/"
+ },
+ {
+  "t": 0.477,
+  "m": "GET",
+  "url": "https://practice.speedrun.scopehealth.com/static/hk47g9j121822h7g4440.woff2",
+  "st": 200,
+  "post": null,
+  "frame": "https://practice.speedrun.scopehealth.com/v/0l5r9gt7lkk7cqsls329krgrx1/"
+ },
+ {
+  "t": 0.478,
+  "m": "GET",
+  "url": "https://practice.speedrun.scopehealth.com/static/5cb240a4d99ab7e6fc3a.woff2",
+  "st": 200,
+  "post": null,
+  "frame": "https://practice.speedrun.scopehealth.com/v/0l5r9gt7lkk7cqsls329krgrx1/"
+ },
+ {
+  "t": 0.478,
+  "m": "GET",
+  "url": "https://practice.speedrun.scopehealth.com/static/f5243b80fbcabc6756a4.woff2",
+  "st": 200,
+  "post": null,
+  "frame": "https://practice.speedrun.scopehealth.com/v/0l5r9gt7lkk7cqsls329krgrx1/"
+ },
+ {
+  "t": 0.478,
+  "m": "GET",
+  "url": "https://practice.speedrun.scopehealth.com/static/828f4525c741b6864718.woff2",
+  "st": 200,
+  "post": null,
+  "frame": "https://practice.speedrun.scopehealth.com/v/0l5r9gt7lkk7cqsls329krgrx1/"
+ },
+ {
+  "t": 0.478,
+  "m": "GET",
+  "url": "https://practice.speedrun.scopehealth.com/static/0dbe07ed7679407db9d9.woff2",
+  "st": 200,
+  "post": null,
+  "frame": "https://practice.speedrun.scopehealth.com/v/0l5r9gt7lkk7cqsls329krgrx1/"
+ }
+]

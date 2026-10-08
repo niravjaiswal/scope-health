@@ -1,0 +1,20 @@
+[
+ [
+  "GET",
+  "https://api.speedrun.scopehealth.com/api/me",
+  401,
+  "<err>"
+ ],
+ [
+  "GET",
+  "https://api.speedrun.scopehealth.com/api/me",
+  401,
+  "{\"error\":\"Sign in first.\"}"
+ ],
+ [
+  "GET",
+  "https://api.speedrun.scopehealth.com/api/config",
+  200,
+  "{\"keysEnabled\":true,\"google\":true,\"github\":true,\"emailPassword\":true,\"expiresAt\":\"2026-10-09T19:15:00Z\",\"judgeUrl\":\"https://judge.speedrun.scopehealth.com\"}"
+ ]
+]

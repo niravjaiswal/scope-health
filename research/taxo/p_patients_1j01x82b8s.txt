@@ -1,0 +1,41 @@
+URL https://practice.speedrun.scopehealth.com/patients/1j01x82b8s
+
+== FRAME https://practice.speedrun.scopehealth.com/v/sg4323fw60dz8kd6f4tt511zp6/ ==
+Williams, Mary
+MRN
+HG8275898
+Date of birth
+03/19/2006 (20 years)
+Sex
+Female
+Billing
+Invoices
+Demographics
+Insurance
+Problems
+Notes
+Documents
+Appointments
+Activity
+Contact
+Phone
+(750) 609-2009
+Email
+m•••••@wrenmail.example
+Address
+3547 Willow St
+Harbor Glen, KS 66741
+Care team
+Primary provider
+Ann Shaw, MD
+Home location
+Northgate
+== FRAME INTERACTIVE ==
+A[] Invoices href=/billing/accounts/1j01x82b8s
+A[] Demographics href=/patients/1j01x82b8s
+A[] Insurance href=/patients/1j01x82b8s/insurance
+A[] Problems href=/patients/1j01x82b8s/problems
+A[] Notes href=/patients/1j01x82b8s/notes
+A[] Documents href=/patients/1j01x82b8s/documents
+A[] Appointments href=/patients/1j01x82b8s/appointments
+A[] Activity href=/patients/1j01x82b8s/activity

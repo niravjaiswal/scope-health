@@ -1,0 +1,48 @@
+== SHELL ==
+Skip to main content
+Wrenfield
+Dashboard
+Patients
+Schedule
+Billing
+Documents
+Activity
+Location
+Northgate
+Harbor Glen Medical Group · Wrenfield 4.2.0
+f
+frontdesk
+Administrator
+== SHELL INTERACTIVE ==
+A[] Skip to main content href=#main
+A[] Dashboard href=/
+A[] Patients href=/patients
+A[] Schedule href=/schedule
+A[] Billing href=/billing
+A[] Documents href=/documents
+A[] Activity href=/activity
+A[] All patients href=/patients/all
+BUTTON[button] 
+BUTTON[button] 
+BUTTON[button] 
+BUTTON[button] 
+BUTTON[button] 
+BUTTON[button] 
+BUTTON[button] 
+BUTTON[button] 
+BUTTON[button] 
+BUTTON[button] 
+BUTTON[button] 
+INPUT[radio] system
+INPUT[radio] light
+INPUT[radio] dark
+A[]  href=/about/notices
+BUTTON[button] 
+== FRAME https://practice.speedrun.scopehealth.com/v/jrpjkb8xnh4kv7qr4n09dvn7p0/ ==
+This patient record is not available
+
+No patient has this address, or the record was removed.
+
+Search patients
+== FRAME INTERACTIVE ==
+A[] Search patients href=/patients

@@ -1,0 +1,105 @@
+URL: https://practice.speedrun.scopehealth.com/patients?lastName=Williams
+TITLE: Patients · Wrenfield
+
+Patients
+
+Find a patient by last name or date of birth.
+
+Last name
+or
+Date of birth
+Search
+
+Enter a last name or a full date of birth.
+
+Results
+Patients found
+Patient	MRN	Date of birth	Sex	
+Flags
+
+Williams, Abigail	HG5801614	07/25/1969 (57 y)	Female	
+Williams, Amy	HG2080644	08/30/1990 (36 y)	Female	
+Williams, Anna	HG4865846	01/15/1945 (81 y)	Female	
+Williams, Ashley	HG6223258	03/27/1960 (66 y)	Female	
+Williams, Ashley	HG5884393	03/10/1997 (29 y)	Female	
+Williams, Barbara	HG1606391	08/15/2016 (10 y)	Female	
+Williams, Barbara	HG8310522	06/15/1961 (65 y)	Female	
+Williams, Barrett	HG4485493	09/22/1987 (39 y)	Male	
+Williams, Bradley	HG5190586	10/07/2018 (8 y)	Male	
+Williams, Caleb	HG2188750	03/29/2002 (24 y)	Male	
+Williams, Carl	HG4246626	10/02/2013 (13 y)	Male	
+Williams, Carl	HG7925096	12/31/1946 (79 y)	Male	
+Williams, Carlos	HG9043725	06/26/2018 (8 y)	Male	
+Williams, Carol	HG7679770	01/29/2012 (14 y)	Female	
+Williams, Charles	HG3326659	04/21/1983 (43 y)	Male	
+Williams, Charles	HG9063453	02/07/1978 (48 y)	Male	
+Williams, Charlotte	HG3955728	04/22/2013 (13 y)	Female	
+Williams, Christopher	HG7677338	11/25/1999 (26 y)	Male	
+Williams, Christopher	HG8994019	10/28/1963 (62 y)	Male	
+Williams, Daniel	HG3230051	09/02/1986 (40 y)	Male	
+Williams, Danielle	HG4746736	12/06/1948 (77 y)	Female	
+Williams, Donna	HG3474364	12/21/2010 (15 y)	Female	
+Williams, Doris	HG2084495	03/13/1971 (55 y)	Female	
+Williams, Dorothy	HG3059875	06/07/1982 (44 y)	Female	
+Williams, Elizabeth	HG9033086	08/13/2018 (8 y)	Female	
+
+Showing 1 to 25 of 97 patients
+
+Rows per page
+25 per page
+50 per page
+100 per page
+Previous
+1
+2
+3
+Next
+Restricted chart requests
+Your requests to open restricted charts
+Patient	Reason	Status
+Ramirez, David	Providing care to this patient	Approved
+Ramirez, David	Providing care to this patient	Ended
+Porter, Catherine	Billing or insurance question	Ended
+Porter, Catherine	Billing or insurance question	Ended
+
+4 requests
+
+---- INTERACTIVE ----
+[INPUT] 'Williams'  lastName 
+[INPUT] ''  dob 
+[BUTTON] 'Search'   
+[A] 'Williams, Abigail' /patients/0dj0npnwph  
+[A] 'Williams, Amy' /patients/2btss2zpvv  
+[A] 'Williams, Anna' /patients/6x9bwj7kcb  
+[A] 'Williams, Ashley' /patients/6jxgqvx1fk  
+[A] 'Williams, Ashley' /patients/1x0fnn3rh0  
+[A] 'Williams, Barbara' /patients/1svj51x2n6  
+[A] 'Williams, Barbara' /patients/2x2m5k78r2  
+[A] 'Williams, Barrett' /patients/6m1382nm0z  
+[A] 'Williams, Bradley' /patients/4p54jfrh3s  
+[A] 'Williams, Caleb' /patients/16b0l30xw7  
+[A] 'Williams, Carl' /patients/66vbvqmxvd  
+[A] 'Williams, Carl' /patients/37zn4hnvj4  
+[A] 'Williams, Carlos' /patients/4k6wfl5qnf  
+[A] 'Williams, Carol' /patients/3wbblc3tg5  
+[A] 'Williams, Charles' /patients/6s7mr5q9hk  
+[A] 'Williams, Charles' /patients/6ssww46j47  
+[A] 'Williams, Charlotte' /patients/5mkt3r8hnr  
+[A] 'Williams, Christopher' /patients/61tccsw10t  
+[A] 'Williams, Christopher' /patients/4xmwjbdxqn  
+[A] 'Williams, Daniel' /patients/2nnk6004fd  
+[A] 'Williams, Danielle' /patients/019fbf7ptx  
+[A] 'Williams, Donna' /patients/1jfc4rfbsl  
+[A] 'Williams, Doris' /patients/44hwvn8qlv  
+[A] 'Williams, Dorothy' /patients/10zr4rtwsj  
+[A] 'Williams, Elizabeth' /patients/70mzn1wgt6  
+[SELECT] '25 per page\n50 per page\n100 per page'  size 
+[BUTTON] 'Previous'   
+[BUTTON] '1'   page
+[BUTTON] '2'   
+[BUTTON] '3'   
+[BUTTON] 'Next'   
+[A] 'Ramirez, David' /patients/3pdsxpwzr5  
+[A] 'Ramirez, David' /patients/28xpx631v1  
+[A] 'Porter, Catherine' /patients/2q123zlg2m  
+[A] 'Porter, Catherine' /patients/2q123zlg2m  

@@ -1,0 +1,37 @@
+URL https://practice.speedrun.scopehealth.com/billing/invoices/5h618fxx1w
+
+== FRAME https://practice.speedrun.scopehealth.com/v/xcksfk569dj8mpts7156fd15x6/ ==
+Invoices
+Invoice 03483827
+Invoice 03483827
+Partly paid
+
+Carter, Ryan · Prairie View · Service on Oct 14, 2026
+
+Patient account
+Open chart
+Details
+Patient
+Carter, Ryan MRN HG6715653
+Location
+Prairie View
+Service date
+Oct 14, 2026
+Issued
+Oct 14, 2026
+Total
+$189.58
+Status
+Partly paid
+Ledger
+Ledger of this invoice, oldest first
+Date	Description	Charges	Payments and adjustments
+Oct 14, 2026	Charge for services on Oct 14, 2026	$189.58	
+Oct 14, 2026	Payment received		$14.29
+Oct 14, 2026	Payment received		$14.33
+Amount owed	$160.96
+== FRAME INTERACTIVE ==
+A[] Invoices href=/billing
+A[] Patient account href=/billing/accounts/33wg812twh
+A[] Open chart href=/patients/33wg812twh
+A[] Carter, Ryan href=/patients/33wg812twh

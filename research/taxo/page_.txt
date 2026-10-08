@@ -1,0 +1,182 @@
+== SHELL ==
+Skip to main content
+Wrenfield
+Dashboard
+Patients
+Schedule
+Billing
+Documents
+Activity
+Location
+Northgate
+Harbor Glen Medical Group · Wrenfield 4.2.0
+f
+frontdesk
+Administrator
+== SHELL INTERACTIVE ==
+A[] Skip to main content href=#main
+A[] Dashboard href=/
+A[] Patients href=/patients
+A[] Schedule href=/schedule
+A[] Billing href=/billing
+A[] Documents href=/documents
+A[] Activity href=/activity
+A[] All patients href=/patients/all
+BUTTON[button] 
+BUTTON[button] 
+BUTTON[button] 
+BUTTON[button] 
+BUTTON[button] 
+BUTTON[button] 
+BUTTON[button] 
+BUTTON[button] 
+BUTTON[button] 
+BUTTON[button] 
+BUTTON[button] 
+INPUT[radio] system
+INPUT[radio] light
+INPUT[radio] dark
+A[]  href=/about/notices
+BUTTON[button] 
+== FRAME https://practice.speedrun.scopehealth.com/v/bnjsntch94pkd4h3h3qwzn8p0x/ ==
+Dashboard
+Oct 14, 2026
+
+Updated 10:00 AM CDT
+
+Appointments today
+
+74
+
+Scheduled
+52
+Completed
+9
+Cancelled
+9
+Late cancel
+3
+No-show
+1
+Open the list
+Patients seen today
+
+9
+
+Patients with a completed appointment
+Completed appointments
+Open slots today
+
+35
+
+Slots in working hours with nothing booked
+Open the day view
+New patients this month
+
+5
+
+Records created since Oct 1, 2026
+Activity
+Documents received this week
+
+11
+
+Oct 12, 2026 to Oct 18, 2026
+Documents
+Invoices issued this week
+
+188
+
+Oct 12, 2026 to Oct 18, 2026
+Billing
+Today's schedule
+Day view
+The rest of today's appointments, in time order
+Time	Patient	Provider	Visit type	Status
+10:40 AM to 11:00 AM	Murphy, Valentina	Diana Anderson, PA	Sick visit	
+Scheduled
+11:00 AM to 11:15 AM	Rodríguez, Hannah	Brenda West, MD	Anticoagulation check	
+Scheduled
+11:00 AM to 11:20 AM	Williams, Mary	Aaron Wagner, MD	Follow-up visit	
+Scheduled
+11:00 AM to 11:30 AM	Russell, Natalie	Diana Anderson, PA	Skin biopsy	
+Scheduled
+11:00 AM to 11:40 AM	Evans, David	Desmond Fields, PA	Specialist consultation	
+Scheduled
+11:15 AM to 11:30 AM	Gray, Anna	Mark Sorensen, MD	Anticoagulation check	
+Scheduled
+11:20 AM to 11:40 AM	Montgomery, Jeffrey	Brenda West, MD	Sick visit	
+Scheduled
+11:20 AM to 11:40 AM	Wright, Debra	Diana Anderson, PA	Office visit	
+Cancelled
+
+Showing 8 of 54 appointments
+
+Show more
+Recent activity
+All activity
+Latest activity, newest first
+When	User	What	Record
+Oct 14, 2026, 10:52 AM CDT	frontdesk	Opened the restricted chart. Reason: Providing care to this patient	Chart Ramirez, David
+Oct 14, 2026, 10:49 AM CDT	frontdesk	Opened the restricted chart. Reason: Providing care to this patient	Chart Ramirez, David
+Oct 14, 2026, 10:46 AM CDT	frontdesk	Opened the restricted chart. Reason: Billing or insurance question	Chart Porter, Catherine
+Oct 14, 2026, 10:41 AM CDT	frontdesk	Opened the restricted chart. Reason: Billing or insurance question	Chart Porter, Catherine
+Oct 14, 2026, 10:29 AM CDT	frontdesk	Opened the restricted chart. Reason: Billing or insurance question	Chart Porter, Catherine
+Oct 14, 2026, 10:00 AM CDT	tmoore	Changed the invoice status from Open to Paid	Invoice 82593504 Soto, James
+Oct 14, 2026, 10:00 AM CDT	tmoore	Issued the invoice	Invoice 82593504 Soto, James
+Oct 14, 2026, 10:00 AM CDT	tmedina	Issued the invoice	Invoice 21617829 Matthews, Astrid
+Oct 14, 2026, 10:00 AM CDT	jjacobsen	Changed the invoice status from Partly paid to Partly paid	Invoice 03483827 Carter, Ryan
+Oct 14, 2026, 10:00 AM CDT	lmartinez	Changed the invoice status from Open to Partly paid	Invoice 03483827 Carter, Ryan
+
+Showing 1 to 10 of 100+ entries
+
+Previous
+Next
+== FRAME INTERACTIVE ==
+A[] Scheduled
+52 href=/schedule/appointments?from=2026-10-14&to=2026-10-14&location=2mgdl287kq&status=1
+A[] Completed
+9 href=/schedule/appointments?from=2026-10-14&to=2026-10-14&location=2mgdl287kq&status=2
+A[] Cancelled
+9 href=/schedule/appointments?from=2026-10-14&to=2026-10-14&location=2mgdl287kq&status=3
+A[] Late cancel
+3 href=/schedule/appointments?from=2026-10-14&to=2026-10-14&location=2mgdl287kq&status=4
+A[] No-show
+1 href=/schedule/appointments?from=2026-10-14&to=2026-10-14&location=2mgdl287kq&status=5
+A[] Open the list href=/schedule/appointments?from=2026-10-14&to=2026-10-14&location=2mgdl287kq
+A[] Completed appointments href=/schedule/appointments?from=2026-10-14&to=2026-10-14&location=2mgdl287kq&status=2
+A[] Open the day view href=/schedule?date=2026-10-14&location=2mgdl287kq
+A[] Activity href=/activity
+A[] Documents href=/documents
+A[] Billing href=/billing
+A[] Day view href=/schedule?location=2mgdl287kq
+A[] 10:40 AM to 11:00 AM href=/patients/03q14ndmmd/appointments/6x505m94xc
+A[] Murphy, Valentina href=/patients/03q14ndmmd
+A[] 11:00 AM to 11:15 AM href=/patients/6sqtnhdpq1/appointments/5qmf7g4kj1
+A[] Rodríguez, Hannah href=/patients/6sqtnhdpq1
+A[] 11:00 AM to 11:20 AM href=/patients/1j01x82b8s/appointments/41g8x6rppt
+A[] Williams, Mary href=/patients/1j01x82b8s
+A[] 11:00 AM to 11:30 AM href=/patients/728375g94r/appointments/1w6v4vf2w5
+A[] Russell, Natalie href=/patients/728375g94r
+A[] 11:00 AM to 11:40 AM href=/patients/25nh4hczgf/appointments/2cflmj9pqh
+A[] Evans, David href=/patients/25nh4hczgf
+A[] 11:15 AM to 11:30 AM href=/patients/535rn1pbvb/recurring/4wmqk4lx5r
+A[] Gray, Anna href=/patients/535rn1pbvb
+A[] 11:20 AM to 11:40 AM href=/patients/5lv61qbn3p/appointments/61wh27r5jw
+A[] Montgomery, Jeffrey href=/patients/5lv61qbn3p
+A[] 11:20 AM to 11:40 AM href=/patients/07ngwp7x0s/appointments/1gdlz8xnz7
+A[] Wright, Debra href=/patients/07ngwp7x0s
+BUTTON[button] Show more
+A[] All activity href=/activity
+A[] Ramirez, David href=/patients/3pdsxpwzr5/activity
+A[] Ramirez, David href=/patients/28xpx631v1/activity
+A[] Porter, Catherine href=/patients/2q123zlg2m/activity
+A[] Porter, Catherine href=/patients/2q123zlg2m/activity
+A[] Porter, Catherine href=/patients/2q123zlg2m/activity
+A[] Soto, James href=/billing/invoices/6b7q92km6g
+A[] Soto, James href=/billing/invoices/6b7q92km6g
+A[] Matthews, Astrid href=/billing/invoices/2cw2d6krzf
+A[] Carter, Ryan href=/billing/invoices/5h618fxx1w
+A[] Carter, Ryan href=/billing/invoices/5h618fxx1w
+BUTTON[button] Previous
+BUTTON[button] Next

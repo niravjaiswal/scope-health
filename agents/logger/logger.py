@@ -30,6 +30,14 @@ def strip(s):
     s = re.sub(r"(\s*\|\s*)+", " | ", s)
     return html.unescape(s)
 
+# Models served by proxy
+st, body = req("GET", LLM + "/models", headers={"Authorization": "Bearer " + KEY})
+try:
+    ids = [m["id"] for m in json.loads(body)["data"]]
+    log("MODELS", len(ids)); print("MODEL_IDS " + " ".join(ids), flush=True)
+except Exception:
+    log("MODELS_ERR", st, body[:500])
+
 # Queue first (time matters less for logger, but grab items quickly)
 items = []
 st, body = req("GET", Q + "/item")
@@ -58,11 +66,4 @@ for path in ["/login", "/", "/patients"]:
     print("SITE_TEXT", path, strip(body)[:3000], flush=True)
     print("SITE_HTML_HEAD", path, body[:1500].replace("\n", " "), flush=True)
 
-# Models served by proxy
-st, body = req("GET", LLM + "/models", headers={"Authorization": "Bearer " + KEY})
-try:
-    ids = [m["id"] for m in json.loads(body)["data"]]
-    log("MODELS", len(ids)); print("MODEL_IDS " + " ".join(ids), flush=True)
-except Exception:
-    log("MODELS_ERR", st, body[:500])
 log("END")

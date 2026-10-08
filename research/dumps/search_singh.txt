@@ -1,0 +1,46 @@
+URL: https://practice.speedrun.scopehealth.com/patients?lastName=Singh
+TITLE: Patients · Wrenfield
+
+Patients
+
+Find a patient by last name or date of birth.
+
+Last name
+or
+Date of birth
+Search
+
+Enter a last name or a full date of birth.
+
+Results
+Patients found
+Patient	MRN	Date of birth	Sex	
+Flags
+
+Singh, Arthur	HG6352594	10/24/1952 (73 y)	Male	
+Singh, Emily	HG6956521	11/01/1980 (45 y)	Female	
+Singh, Nancy	HG7877476	02/12/1998 (28 y)	Female	
+
+3 patients
+
+Restricted chart requests
+Your requests to open restricted charts
+Patient	Reason	Status
+Ramirez, David	Providing care to this patient	Approved
+Ramirez, David	Providing care to this patient	Ended
+Porter, Catherine	Billing or insurance question	Ended
+Porter, Catherine	Billing or insurance question	Ended
+
+4 requests
+
+---- INTERACTIVE ----
+[INPUT] 'Singh'  lastName 
+[INPUT] ''  dob 
+[BUTTON] 'Search'   
+[A] 'Singh, Arthur' /patients/5nc6jj7g2q  
+[A] 'Singh, Emily' /patients/4x42svsvls  
+[A] 'Singh, Nancy' /patients/3m7zkp1q1l  
+[A] 'Ramirez, David' /patients/3pdsxpwzr5  
+[A] 'Ramirez, David' /patients/28xpx631v1  
+[A] 'Porter, Catherine' /patients/2q123zlg2m  
+[A] 'Porter, Catherine' /patients/2q123zlg2m  

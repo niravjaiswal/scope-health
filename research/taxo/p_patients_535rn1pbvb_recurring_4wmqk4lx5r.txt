@@ -1,0 +1,210 @@
+URL https://practice.speedrun.scopehealth.com/patients/535rn1pbvb/recurring/4wmqk4lx5r
+
+== FRAME https://practice.speedrun.scopehealth.com/v/88k8rk9ltcv2bltwpvsd9k7snz/ ==
+Gray, Anna
+MRN
+HG8916636
+Date of birth
+11/21/1963 (62 years)
+Sex
+Female
+Billing
+Invoices
+Demographics
+Insurance
+Problems
+Notes
+Documents
+Appointments
+Activity
+Recurring appointment: Every week on Wednesday at 11:15
+Close
+Rule
+Repeats
+Every week on Wednesday at 11:15
+Length
+15 minutes
+From
+Jun 24, 2026
+Until
+Nov 18, 2026
+Type
+Anticoagulation check
+
+Times are local to the location.
+
+People and place
+Provider
+Mark Sorensen, MD
+Location
+Northgate
+Created
+Jun 21, 2026, 1:42 PM CDT
+Last changed
+Sep 30, 2026, 12:26 PM CDT
+Changed dates
+Dates on which this series was changed
+Date	Change	Recorded
+Aug 5, 2026	
+Cancelled	Jul 24, 2026, 6:34 AM CDT
+Sep 30, 2026	
+No-show	Sep 30, 2026, 12:26 PM CDT
+
+2 changed dates
+
+All dates
+Every date of this recurring appointment, newest first
+Date and time	Status
+Nov 18, 2026, 11:15 AM CST	
+Scheduled
+Nov 11, 2026, 11:15 AM CST	
+Scheduled
+Nov 4, 2026, 11:15 AM CST	
+Scheduled
+Oct 28, 2026, 11:15 AM CDT	
+Scheduled
+Oct 21, 2026, 11:15 AM CDT	
+Scheduled
+Oct 14, 2026, 11:15 AM CDT	
+Scheduled
+Oct 7, 2026, 11:15 AM CDT	
+Completed
+Sep 30, 2026, 11:15 AM CDT	
+No-show
+Sep 23, 2026, 11:15 AM CDT	
+Completed
+Sep 16, 2026, 11:15 AM CDT	
+Completed
+Sep 9, 2026, 11:15 AM CDT	
+Completed
+Sep 2, 2026, 11:15 AM CDT	
+Completed
+Aug 26, 2026, 11:15 AM CDT	
+Completed
+Aug 19, 2026, 11:15 AM CDT	
+Completed
+Aug 12, 2026, 11:15 AM CDT	
+Completed
+Aug 5, 2026, 11:15 AM CDT	
+Cancelled
+Jul 29, 2026, 11:15 AM CDT	
+Completed
+Jul 22, 2026, 11:15 AM CDT	
+Completed
+Jul 15, 2026, 11:15 AM CDT	
+Completed
+Jul 8, 2026, 11:15 AM CDT	
+Completed
+Jul 1, 2026, 11:15 AM CDT	
+Completed
+Jun 24, 2026, 11:15 AM CDT	
+Completed
+
+22 dates
+
+Recurring appointments
+Every week on Wednesday at 11:15
+Anticoagulation check with Mark Sorensen, MD at Northgate
+Jun 24, 2026 to Nov 18, 2026, 2 changed dates
+
+1 recurring appointment
+
+Appointments, newest first
+Date and time	Type	Provider	Location	Status
+Nov 30, 2026, 2:30 PM CST	Nutrition counseling	Mark Sorensen, MD	Northgate	
+Scheduled
+Nov 20, 2026, 2:00 PM CST	Minor procedure	Mark Sorensen, MD	Northgate	
+Scheduled
+Oct 23, 2026, 4:15 PM CDT	X-ray	Mark Sorensen, MD	Northgate	
+Scheduled
+Oct 7, 2026, 1:00 PM CDT	Office visit	Mark Sorensen, MD	Northgate	
+Completed
+Oct 5, 2026, 8:15 AM CDT	Follow-up visit	Mark Sorensen, MD	Northgate	
+Cancelled
+Sep 28, 2026, 2:30 PM CDT	Echocardiogram	Mark Sorensen, MD	Northgate	
+Completed
+Sep 25, 2026, 1:15 PM CDT	Office visit	Mark Sorensen, MD	Northgate	
+Completed
+Aug 31, 2026, 9:15 AM CDT	Follow-up visit	Mark Sorensen, MD	Northgate	
+Cancelled
+Jul 27, 2026, 8:00 AM CDT	Physical therapy session	Mark Sorensen, MD	Northgate	
+Completed
+Jul 13, 2026, 11:00 AM CDT	Well-child check	Mark Sorensen, MD	Northgate	
+Cancelled
+Jul 13, 2026, 10:45 AM CDT	Office visit	Mark Sorensen, MD	Northgate	
+Completed
+Jun 12, 2026, 3:00 PM CDT	Office visit	Mark Sorensen, MD	Northgate	
+Completed
+Jun 8, 2026, 3:45 PM CDT	Behavioral health session	Mark Sorensen, MD	Northgate	
+Completed
+Jun 5, 2026, 10:15 AM CDT	Immunization	Mark Sorensen, MD	Northgate	
+Completed
+May 11, 2026, 10:00 AM CDT	Diabetes management	Mark Sorensen, MD	Northgate	
+Completed
+Mar 20, 2026, 3:45 PM CDT	Follow-up visit	Mark Sorensen, MD	Northgate	
+Completed
+Mar 13, 2026, 11:30 AM CDT	Ultrasound	Mark Sorensen, MD	Northgate	
+Completed
+Dec 31, 2025, 3:15 PM CST	Office visit	Mark Sorensen, MD	Northgate	
+Completed
+Dec 19, 2025, 1:15 PM CST	Lab draw	Mark Sorensen, MD	Northgate	
+Late cancel
+Nov 24, 2025, 2:15 PM CST	Office visit	Mark Sorensen, MD	Northgate	
+Completed
+Oct 1, 2025, 10:15 AM CDT	Prenatal visit	Mark Sorensen, MD	Northgate	
+Late cancel
+Sep 26, 2025, 11:15 AM CDT	Annual physical	Mark Sorensen, MD	Northgate	
+Completed
+Sep 17, 2025, 11:30 AM CDT	Office visit	Mark Sorensen, MD	Northgate	
+Completed
+Sep 17, 2025, 10:15 AM CDT	Prenatal visit	Mark Sorensen, MD	Northgate	
+Completed
+Jun 6, 2025, 9:45 AM CDT	Sick visit	Mark Sorensen, MD	Northgate	
+Completed
+
+Showing 1 to 25 of 33 appointments
+
+Rows per page
+25 per page
+50 per page
+Previous
+Next
+== FRAME INTERACTIVE ==
+A[] Invoices href=/billing/accounts/535rn1pbvb
+A[] Demographics href=/patients/535rn1pbvb
+A[] Insurance href=/patients/535rn1pbvb/insurance
+A[] Problems href=/patients/535rn1pbvb/problems
+A[] Notes href=/patients/535rn1pbvb/notes
+A[] Documents href=/patients/535rn1pbvb/documents
+A[] Appointments href=/patients/535rn1pbvb/appointments
+A[] Activity href=/patients/535rn1pbvb/activity
+BUTTON[button] Close
+A[] Every week on Wednesday at 11:15 href=/patients/535rn1pbvb/recurring/4wmqk4lx5r
+A[] Nov 30, 2026, 2:30 PM href=/patients/535rn1pbvb/appointments/6swpqq08f8
+A[] Nov 20, 2026, 2:00 PM href=/patients/535rn1pbvb/appointments/2nqgktfb51
+A[] Oct 23, 2026, 4:15 PM href=/patients/535rn1pbvb/appointments/126hskmmmm
+A[] Oct 7, 2026, 1:00 PM href=/patients/535rn1pbvb/appointments/6tm3sn6sfz
+A[] Oct 5, 2026, 8:15 AM href=/patients/535rn1pbvb/appointments/0zrmc0ljn0
+A[] Sep 28, 2026, 2:30 PM href=/patients/535rn1pbvb/appointments/33m6xvh5r9
+A[] Sep 25, 2026, 1:15 PM href=/patients/535rn1pbvb/appointments/2q4dn6njhg
+A[] Aug 31, 2026, 9:15 AM href=/patients/535rn1pbvb/appointments/3vh3wvgzdq
+A[] Jul 27, 2026, 8:00 AM href=/patients/535rn1pbvb/appointments/0nl7v5lsqq
+A[] Jul 13, 2026, 11:00 AM href=/patients/535rn1pbvb/appointments/60hlpkk0bv
+A[] Jul 13, 2026, 10:45 AM href=/patients/535rn1pbvb/appointments/370vrtt9f8
+A[] Jun 12, 2026, 3:00 PM href=/patients/535rn1pbvb/appointments/45sr71jp7t
+A[] Jun 8, 2026, 3:45 PM href=/patients/535rn1pbvb/appointments/40qf03lkws
+A[] Jun 5, 2026, 10:15 AM href=/patients/535rn1pbvb/appointments/4nlhvh25x8
+A[] May 11, 2026, 10:00 AM href=/patients/535rn1pbvb/appointments/6rv6mch998
+A[] Mar 20, 2026, 3:45 PM href=/patients/535rn1pbvb/appointments/100hs69t55
+A[] Mar 13, 2026, 11:30 AM href=/patients/535rn1pbvb/appointments/6p498s02lt
+A[] Dec 31, 2025, 3:15 PM href=/patients/535rn1pbvb/appointments/37zpvbjlnr
+A[] Dec 19, 2025, 1:15 PM href=/patients/535rn1pbvb/appointments/4t8q94zt09
+A[] Nov 24, 2025, 2:15 PM href=/patients/535rn1pbvb/appointments/6bqzl97ln3
+A[] Oct 1, 2025, 10:15 AM href=/patients/535rn1pbvb/appointments/0f7b908wqw
+A[] Sep 26, 2025, 11:15 AM href=/patients/535rn1pbvb/appointments/122d5k2h5q
+A[] Sep 17, 2025, 11:30 AM href=/patients/535rn1pbvb/appointments/0nf7pqcqqv
+A[] Sep 17, 2025, 10:15 AM href=/patients/535rn1pbvb/appointments/5jnb5zw2mt
+A[] Jun 6, 2025, 9:45 AM href=/patients/535rn1pbvb/appointments/6hs67277mb
+SELECT[select-one] 25 per page / 50 per page OPTIONS=25 per page|50 per page
+BUTTON[button] Previous
+BUTTON[button] Next
