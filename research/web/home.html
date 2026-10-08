@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Speedrun by Scope</title>
+    <meta name="description" content="Speedrun is a week-long computer use agent competition hosted by Scope at V1 Startup Week, Oct 5–9, 2026. Your agent works a shift in a clinic's records system, answering a queue of requests in a fixed time. First place wins $5,000 split among the team and an iPhone Duo for each team member." />
+    <!-- When the competition starts: an ISO 8601 time with an offset. Until then the page shows a countdown and has no leaderboard. -->
+    <meta name="speedrun-start" content="2026-10-05T22:00:00-04:00" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Speedrun by Scope" />
+    <meta property="og:title" content="Speedrun: build the fastest computer use agent at Michigan" />
+    <meta property="og:description" content="A week-long computer use agent competition at V1 Startup Week, Oct 5–9, 2026. Teams of 1 to 3. First place: $5,000 split among the team + iPhone Duo per member. Second: $3,000 split among the team. Third: AirPods Pro per member." />
+    <meta property="og:url" content="https://speedrun.scopehealth.com/" />
+    <meta property="og:image" content="https://speedrun.scopehealth.com/og.png?v=20261005-live" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="A $5,000 check from Scope beside the Speedrun welcome window and Aqua-style app dock." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Speedrun: build the fastest computer use agent at Michigan" />
+    <meta name="twitter:description" content="A week-long computer use agent competition at V1 Startup Week, Oct 5–9, 2026. Teams of 1 to 3. First place: $5,000 split among the team + iPhone Duo per member. Second: $3,000 split among the team. Third: AirPods Pro per member." />
+    <meta name="twitter:image" content="https://speedrun.scopehealth.com/og.png?v=20261005-live" />
+    <link rel="describedby" href="/llms.txt" />
+    <link rel="alternate" type="text/markdown" href="/getting-started.md" />
+    <link rel="icon" type="image/png" href="/brand/scope-app-icon.png" />
+    <link rel="apple-touch-icon" href="/brand/scope-app-icon.png" />
+    <!-- EB Garamond stands in for Apple Garamond; the two script faces are for the hand-written stickers. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;600&family=Mrs+Saint+Delafield&family=Nothing+You+Could+Do&display=swap" />
+    <link rel="preload" as="image" href="/brand/scope-mark.png" />
+    <link rel="preload" as="image" href="/icons/aqua/scope.png" />
+    <script>
+      document.documentElement.classList.add('js');
+      // Reduced motion skips the startup screen; hide it before first paint.
+      if (matchMedia('(prefers-reduced-motion: reduce)').matches) document.documentElement.classList.add('no-startup');
+      // Phones get the single-page mobile site instead of the desktop.
+      if (matchMedia('(max-width: 719px)').matches) document.documentElement.classList.add('is-mobile');
+    </script>
+    <noscript><style>.os { opacity: 1; } .startup { display: none; }</style></noscript>
+    <script type="module" crossorigin src="/assets/index-Om4uAjDj.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BeignsLA.css">
+  </head>
+  <body>
+    <section class="participant-intro" aria-label="About Speedrun">
+      <h1>Speedrun by Scope</h1>
+      <p>Build an agent that answers a clinic's back-office requests using its web records system.</p>
+      <p><a href="https://practice.speedrun.scopehealth.com/">Explore the practice clinic</a>.</p>
+      <p>Register with <a href="/signup/google/">Google</a>, <a href="/signup/github/">GitHub</a>, or <a href="/#register">email</a>.</p>
+      <p><a href="/getting-started.md">Read the getting-started guide</a> or <a href="/llms.txt">the agent documentation index</a>.</p>
+    </section>
+    <div id="sprite" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden"></div>
+
+    <!-- Startup screen: painted from HTML + CSS so it's up before any script runs. -->
+    <div class="startup" id="startup" role="progressbar" aria-label="Starting Speedrun" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+      <div class="su-chime">
+        <div class="su-logo">
+          <svg class="su-mark" viewBox="-1 -1 51 36" aria-hidden="true"><path pathLength="1" d="M33.7821 16.0264C35.7233 16.0299 37.6645 16.0279 39.6546 16.0283C42.1505 16.0286 44.5975 16.0264 47.0445 16.0303C48.1967 16.0322 48.7978 16.6573 48.7985 17.8599C48.801 22.2953 48.7994 26.7307 48.7972 31.166C48.7967 32.2112 48.3343 32.8809 47.3302 32.913C44.8777 32.9915 42.3897 33.2593 40.0122 32.36C36.0208 30.8502 33.334 28.0448 32.4874 23.5774C32.2833 22.5001 32.351 21.3636 32.3183 20.2536C32.2947 19.4494 32.323 18.6437 32.3073 17.8392C32.2936 17.1341 31.9433 16.5789 31.3339 16.567C28.4603 16.5109 25.5536 16.1099 22.7513 17.13C19.5668 18.2892 17.5508 20.657 16.8815 24.0861C15.8466 29.3888 10.9634 33.1174 6.14676 32.9764C4.7123 32.9344 3.27583 32.9717 1.84031 32.966C0.547359 32.9608 0.00103422 32.3799 0.000831319 31.0217C0.000178858 26.6548 -0.000517045 22.2879 0.00055796 17.921C0.000884875 16.5926 0.546495 16.0279 1.82223 16.0274C3.58405 16.0266 5.34588 16.0325 7.10767 16.0248C12.0273 16.0034 15.8956 12.7387 16.9705 7.7076C17.9372 3.1833 21.5603 0.0819898 25.9811 0.0138398C27.449 -0.00879015 28.9174 0.000819489 30.3855 0.0111195C31.451 0.0185895 32.0178 0.62434 32.0182 1.72894C32.0198 5.8732 32.0188 10.0175 32.0201 14.1618C32.0206 15.5259 32.4898 16.024 33.7821 16.0264Z"/></svg>
+          <img class="su-gel" src="/icons/aqua/scope.png" alt="" />
+        </div>
+        <div class="progress su-bar"><i data-su-bar></i></div>
+      </div>
+    </div>
+
+    <main class="os" id="os" aria-label="Speedrun desktop">
+      <div class="wall" aria-hidden="true">
+        <svg viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="wBase" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2A2E31" /><stop offset=".55" stop-color="#17191A" /><stop offset="1" stop-color="#0E0F10" /></linearGradient>
+            <linearGradient id="wRibbon" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#E3ECEF" /><stop offset=".5" stop-color="#9FB6C0" /><stop offset="1" stop-color="#506A76" /></linearGradient>
+            <linearGradient id="wDeep" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5E7A87" /><stop offset="1" stop-color="#1E2326" /></linearGradient>
+            <linearGradient id="wHaze" x1="1" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#CFDDE2" stop-opacity=".9" /><stop offset="1" stop-color="#CFDDE2" stop-opacity="0" /></linearGradient>
+            <radialGradient id="wGlow" cx=".72" cy=".22" r=".5"><stop offset="0" stop-color="#DDE8EC" stop-opacity=".45" /><stop offset="1" stop-color="#DDE8EC" stop-opacity="0" /></radialGradient>
+            <linearGradient id="wMarkFill" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#EEF4F6" /><stop offset="1" stop-color="#BFD0D7" /></linearGradient>
+            <mask id="wMarkMask" maskUnits="userSpaceOnUse" x="0" y="0" width="1600" height="1000">
+              <image href="/brand/scope-mark.png" x="880" y="10" width="560" height="560" />
+            </mask>
+          </defs>
+          <rect width="1600" height="1000" fill="url(#wBase)" />
+          <rect width="1600" height="1000" fill="url(#wGlow)" />
+          <path d="M-100 330 C 260 150 620 470 980 270 S 1560 60 1760 150 V-100 H-100Z" fill="url(#wHaze)" opacity=".55" />
+          <g fill="none" stroke="#CFDDE2" stroke-opacity=".13" stroke-width="1.5">
+            <path d="M-50 520 C 300 360 640 700 1000 500 S 1560 300 1700 380" />
+            <path d="M-50 548 C 300 388 640 728 1000 528 S 1560 328 1700 408" />
+            <path d="M-50 576 C 300 416 640 756 1000 556 S 1560 356 1700 436" />
+            <path d="M-50 604 C 300 444 640 784 1000 584 S 1560 384 1700 464" />
+            <path d="M-50 632 C 300 472 640 812 1000 612 S 1560 412 1700 492" />
+            <path d="M-50 660 C 300 500 640 840 1000 640 S 1560 440 1700 520" />
+          </g>
+          <path d="M-100 700 C 300 520 620 860 1040 660 S 1600 480 1800 600 V1100 H-100Z" fill="url(#wRibbon)" />
+          <path d="M-100 820 C 360 660 700 980 1120 800 S 1620 690 1800 760 V1100 H-100Z" fill="url(#wDeep)" />
+          <rect width="1600" height="1000" fill="url(#wMarkFill)" mask="url(#wMarkMask)" />
+        </svg>
+      </div>
+
+      <div class="stickers" id="stickers"></div>
+      <div class="layer" id="layer"></div>
+
+      <header class="menubar">
+        <button type="button" data-menu="scope" aria-haspopup="menu" aria-expanded="false" aria-label="Scope menu"><img class="menubar-logo" src="/icons/aqua/scope.png" alt="" /></button>
+        <span class="app" id="mbApp">Finder</span>
+        <button type="button" class="opt" data-menu="file" aria-haspopup="menu" aria-expanded="false">File</button>
+        <button type="button" class="opt" data-menu="go" aria-haspopup="menu" aria-expanded="false">Go</button>
+        <button type="button" class="opt" data-menu="window" aria-haspopup="menu" aria-expanded="false">Window</button>
+        <button type="button" class="opt" data-menu="help" aria-haspopup="menu" aria-expanded="false">Help</button>
+        <span class="sp"></span>
+        <span class="count count-bar" data-count hidden><span class="count-time" data-count-time></span></span>
+        <button type="button" class="mb-mail" id="mbMail" aria-label="Messages" hidden><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#ic-mail" /></svg><span data-count></span></button>
+        <button type="button" class="mute" id="mute" aria-label="Mute sounds" aria-pressed="false">
+          <svg viewBox="0 0 24 24">
+            <defs><linearGradient id="mbGel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" /><stop offset=".5" stop-color="#e3ecef" /><stop offset=".52" stop-color="#9fb6c0" /><stop offset="1" stop-color="#dbe7eb" /></linearGradient></defs>
+            <path d="M3.500 9.200v5.600h3.800l5 4.400V4.800l-5 4.400z" fill="url(#mbGel)" stroke="#22323b" stroke-width=".7" stroke-linejoin="round" />
+            <g fill="none" stroke="url(#mbGel)" stroke-width="2" stroke-linecap="round"><path class="waves" d="M15.500 9a4.200 4.200 0 0 1 0 6M18.200 6.500a7.800 7.800 0 0 1 0 11" /><path class="cross" d="M16 9.500l5 5M21 9.500l-5 5" /></g>
+          </svg>
+        </button>
+        <span class="clock" id="clock"></span>
+      </header>
+
+      <nav class="dock" id="dock" aria-label="Dock"></nav>
+    </main>
+
+  </body>
+</html>

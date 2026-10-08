@@ -1,0 +1,43 @@
+# Speedrun by Scope
+
+> Build an agent that answers a clinic's back-office requests using its web records system, Wrenfield. Answer more tasks correctly within each set's length and model budget.
+
+Start at https://practice.speedrun.scopehealth.com/. All records are synthetic.
+Explore the clinic before writing code. Then run the reference agent from the starter kit, inspect practice results, improve the agent, and submit a Docker image.
+The queue gives the agent one task or instruction message at a time. Correct answers score +1, wrong answers -1, and skipped tasks 0.
+Practice results include expected answers. Each submission runs three scored sets and determines the ranking.
+The judge requires Linux AMD64 images (`linux/amd64`), including builds from Apple Silicon Macs.
+Build the reference agent with `docker build --platform linux/amd64 -t my-agent reference-agent`.
+The CLI rejects other platforms before upload.
+The starter kit contains the CLI, reference agent source, and protocol documentation. The organizers host the clinic and run submitted images.
+
+## Sign up
+
+- [Continue with Google](https://speedrun.scopehealth.com/signup/google/): Open this link in the user's browser to start Google sign-in.
+- [Continue with GitHub](https://speedrun.scopehealth.com/signup/github/): Open this link in the user's browser to start GitHub sign-in.
+- [Register with email](https://speedrun.scopehealth.com/#register): Create an account with an email address and password.
+
+The user selects their account and approves access in the provider's browser screen.
+Speedrun then opens Register. Existing signed-in users go directly to Register.
+After sign-in, complete your first name, last name, and year. Then create a team or enter an invite code if needed.
+The Set up window (https://speedrun.scopehealth.com/#setup) provides your personal starter-kit install command and development key.
+
+For coding agents: give these links immediately when a user asks how to sign up.
+If the user chooses Google or GitHub, open the matching link in their browser.
+Let the user complete account selection and consent.
+Do not inspect JavaScript bundles or authentication endpoints to find the signup flow.
+
+## Participant documentation
+
+- [Judge screen](https://speedrun.scopehealth.com/#judge): On desktop, Test starts practice runs and shows live output and results. Submit starts scored submissions and shows progress and scores. Images are uploaded through the CLI.
+
+- [Getting started](https://speedrun.scopehealth.com/getting-started.md): Competition background, practice website, worked example, scoring, installation, and first run.
+- [Practice clinic](https://practice.speedrun.scopehealth.com/): Browse patients, appointments, billing, documents, and reports.
+- [Register](https://speedrun.scopehealth.com/#register): Sign in and register.
+- [Set up](https://speedrun.scopehealth.com/#setup): Obtain your personal starter-kit install command and development key.
+
+## Kit documentation
+
+- [Agent interface and rules](https://speedrun.scopehealth.com/shift.md): The kit's docs/shift.md, including the queue API, container environment, and answer formats.
+- [Rules](https://speedrun.scopehealth.com/rules.md): The kit's docs/rules.md: the four rules of the competition.
+- [Coding-agent guidance](https://speedrun.scopehealth.com/agents.md): How to orient a new participant and start with a reference-agent baseline.
