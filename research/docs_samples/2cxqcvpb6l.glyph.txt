@@ -1,0 +1,19 @@
+Harbor Glen Medical Group | LABORATORY REPORT
+Clinical Laboratory, Highline | Report status: Final
+3100 Highline Ave, Granite Fork, CO 80752
+Patient | Russell Mitchell | Ordering provider | Joshua Bowman, PA
+Date of birth | 2006-08-10 | Collected | 2026-10-10
+Sex | M | Received | 2026-10-14
+Record number | HG2422299 | Report number | LR-039979
+Liver function panel
+Test | Result | Units | Reference range | Flag
+Alanine aminotransferase | 42 | U/L | 7 - 56 | normal
+Aspartate aminotransferase | 25 | U/L | 10 - 40 | normal
+Alkaline phosphatase | 52 | U/L | 44 - 147 | normal
+Total bilirubin | 0.8 | mg/dL | 0.1 - 1.2 | normal
+Albumin | 4.1 | g/dL | 3.4 - 5.4 | normal
+Tests reported: 5
+A result outside its reference range is flagged high or low. Reference ranges apply to adults and may differ by age and sex.
+Results should be read together with the clinical picture.
+End of report
+Harbor Glen Medical Group Clinical Laboratory. Confidential patient information. | Page 1 of 1

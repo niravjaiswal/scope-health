@@ -1,0 +1,48 @@
+[
+ {
+  "n": 1,
+  "kind": "message",
+  "text": "From billing: telling new patients from established ones\n\nNew or established?\n\nThe two are billed with different visit codes, so the front desk and the coders often ask which one a visit is. Each question is about one visit: a patient, a provider, and a date. The visit may be coming up or may already have happened.\n\nA patient is established if they had an appointment that counts with the same provider, or with another provider in the same specialty, in the 3 years before the visit date. Otherwise they are new.\n\n## Which past appointments count\n\nAn appointment counts only if all of these are true:\n\n- Its status is Completed. Scheduled, Cancelled, Late cancel, and No-show appointments do not count.\n- It was with the same provider or with a provider in the same specialty. Each provider has one specialty. Providers who have left the group keep the specialty they had.\n- It is not one of these services, which never make a patient established: Lab draw, Immunization, X-ray, Ultrasound, Electrocardiogram, Echocardiogram, Allergy injection, Blood pressure check, Hearing test, Vision screening, Infusion therapy, Anticoagulation check.\n- Its date is inside the 3-year window.\n\nLook at all of the patient's appointments: those at every one of our locations, those filed under a duplicate record that was later merged into the patient's chart, and each date of a recurring appointment, with the status that date has. The date of an appointment is the calendar date at the location where it took place.\n\n## The 3-year window\n\nThe window starts the day after the same date 3 years earlier and ends the day before the visit. For a visit on 2026-11-05 the window is 2023-11-06 through 2026-11-04, so an appointment on 2023-11-05 is too old. Appointments on the visit date or after it do not count. For a visit on February 29, the same date 3 years earlier is February 28.\n\n## How to answer\n\nIf nothing counts, answer `NEW`. Otherwise answer `ESTABLISHED:` followed by the date of the most recent appointment that counts, as YYYY-MM-DD, for example `ESTABLISHED:2025-03-11`. If a later appointment in the specialty does not count, such as a no-show or a lab draw, ignore it and give the date of the last one that does.\n\n## Example\n\nIf someone asks: \"On 2026-11-05 there is a visit with Walter Guzman, PA for Stewart, Linda, DOB 2009-04-25, and I need new vs. established for it.\"\n\nThe answer is `ESTABLISHED:2026-06-18`.\n\nWalter Guzman, PA is in Behavioral Health. For a visit on 2026-11-05 the window is 2023-11-06 through 2026-11-04. The patient has 10 appointments in all, 8 with a provider in Behavioral Health. The most recent one that counts inside the window is the Prenatal visit on 2026-06-18 with Lawrence Bennett, MD.\n"
+ },
+ {
+  "n": 2,
+  "kind": "task",
+  "text": "Is Judith Jackson (born 2004-11-12) new or established for Kenneth Sullivan, NP on 2028-07-20?",
+  "expected": "ESTABLISHED:2025-07-21"
+ },
+ {
+  "n": 3,
+  "kind": "task",
+  "text": "Referral letter received on 2024-12-01 for patient Ana Corbett (born 2000-11-13): which practice made the referral?",
+  "expected": "Granite Fork Internal Medicine"
+ },
+ {
+  "n": 4,
+  "kind": "task",
+  "text": "What phone number do we have on file for patient Carol Jones (born 1982-09-07)?",
+  "expected": "7853106041"
+ },
+ {
+  "n": 5,
+  "kind": "message",
+  "text": "The vending machine by the back entrance takes cards again, but the coin slot is still jammed."
+ },
+ {
+  "n": 6,
+  "kind": "task",
+  "text": "On 2026-12-25 there is a visit with Douglas Hughes, MD for Henry, Peter, DOB 1975-06-23, and I need new vs. established for it.",
+  "expected": "NEW"
+ },
+ {
+  "n": 7,
+  "kind": "task",
+  "text": "Referral letter received on 2025-09-16 for patient Gregory Porter (born 1976-04-08): what reason does it give for the referral?",
+  "expected": "Chronic cough lasting more than eight weeks"
+ },
+ {
+  "n": 8,
+  "kind": "task",
+  "text": "Is Laura Torres (born 2001-02-20) new or established for Elena Gutierrez, NP on 2025-12-30?",
+  "expected": "ESTABLISHED:2025-08-14"
+ }
+]

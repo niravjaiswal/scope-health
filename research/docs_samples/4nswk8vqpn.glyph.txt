@@ -1,0 +1,22 @@
+Harbor Glen Medical Group | LABORATORY REPORT
+Clinical Laboratory, Riverbend | Report status: Final
+730 Mill St, Pell Junction, KS 66763
+Patient | David Ramírez | Ordering provider | Richard Harrison, NP
+Date of birth | 2006-01-03 | Collected | 2026-10-13
+Sex | M | Received | 2026-10-14
+Record number | HG5460668 | Report number | LR-040000
+Basic metabolic panel
+Test | Result | Units | Reference range | Flag
+Sodium | 145 | mmol/L | 135 - 145 | normal
+Potassium | 3.4 | mmol/L | 3.5 - 5.1 | low
+Chloride | 106 | mmol/L | 98 - 107 | normal
+Carbon dioxide | 27 | mmol/L | 22 - 29 | normal
+Blood urea nitrogen | 10 | mg/dL | 7 - 20 | normal
+Creatinine | 1.20 | mg/dL | 0.60 - 1.30 | normal
+Glucose | 81 | mg/dL | 70 - 99 | normal
+Calcium | 9.0 | mg/dL | 8.6 - 10.2 | normal
+Tests reported: 8
+A result outside its reference range is flagged high or low. Reference ranges apply to adults and may differ by age and sex.
+Results should be read together with the clinical picture.
+End of report
+Harbor Glen Medical Group Clinical Laboratory. Confidential patient information. | Page 1 of 1

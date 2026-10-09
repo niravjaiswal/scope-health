@@ -1,0 +1,18 @@
+{
+ "0gjvghxffh": {"type": "lab", "keys": ["Elizabeth Marshall", "1992-06-29", "HG9467714", "Jennifer Parker, MD", "2026-10-11", "2026-10-14", "LR-039969", "Iron studies", "Clinical Laboratory, Eastside", "Tests reported: 3"],
+   "fields": {"patient": "Elizabeth Marshall", "date_of_birth": "1992-06-29", "sex": "F", "record_number": "HG9467714", "collected": "2026-10-11", "received": "2026-10-14", "report_number": "LR-039969", "panel": "Iron studies"},
+   "rows": [["Ferritin","143","ng/mL","20 - 250","normal"],["Serum iron","112","ug/dL","60 - 170","normal"],["Transferrin saturation","33","%","20 - 50","normal"]]},
+ "1k0cd5bcj1": {"type": "lab", "keys": ["Robert Hernandez", "2026-10-10", "HG9791922", "Edward Pierce, NP", "2026-10-14", "LR-039983", "Liver function panel", "Clinical Laboratory, Lakeside", "Tests reported: 5"],
+   "fields": {"patient": "Robert Hernandez", "date_of_birth": "2026-10-10", "sex": "M", "record_number": "HG9791922", "collected": "2026-10-14", "received": "2026-10-14", "report_number": "LR-039983", "panel": "Liver function panel"},
+   "rows": [["Alanine aminotransferase","28","U/L","7 - 56","normal"],["Aspartate aminotransferase","20","U/L","10 - 40","normal"],["Alkaline phosphatase","188","U/L","44 - 147","high"],["Total bilirubin","1.0","mg/dL","0.1 - 1.2","normal"],["Albumin","4.4","g/dL","3.4 - 5.4","normal"]]},
+ "5m5lkzpd40": {"type": "lab", "keys": ["Ahmed Davis", "2023-04-30", "HG8110840", "Samuel Morris, MD", "2026-10-11", "2026-10-14", "LR-039944", "Hemoglobin A1c", "Clinical Laboratory, Highline", "Tests reported: 1"],
+   "fields": {"patient": "Ahmed Davis", "date_of_birth": "2023-04-30", "sex": "M", "record_number": "HG8110840", "collected": "2026-10-11", "received": "2026-10-14", "report_number": "LR-039944", "panel": "Hemoglobin A1c"},
+   "rows": [["Hemoglobin A1c","5.5","%","4.0 - 5.6","normal"]]},
+ "72ftdnmrb9": {"type": "lab", "keys": ["Sean Silva", "1958-04-06", "HG6270351", "Liam Farrell, NP", "2026-10-11", "2026-10-14", "LR-039971", "Vitamin D", "Clinical Laboratory, Highline", "Tests reported: 1"],
+   "fields": {"patient": "Sean Silva", "date_of_birth": "1958-04-06", "sex": "M", "record_number": "HG6270351", "collected": "2026-10-11", "received": "2026-10-14", "report_number": "LR-039971", "panel": "Vitamin D"},
+   "rows": [["25-hydroxyvitamin D","20","ng/mL","30 - 100","low"]]},
+ "1r35tm3t38": {"type": "statement", "keys": ["Betty Davis", "9042 Birch Ave", "Tilden Grove, KS 66785", "2026-10-14", "HG5436503", "2026-11-05", "$141.84", "$55.12", "$266.10", "-$179.38", "-$0.00", "620-555-0112"], "rows": []},
+ "2gx3bv8x97": {"type": "referral", "keys": ["Dunmore Regional Hospital", "7525 Lakeview Street, Suite 364", "785-555-0116", "785-555-0169", "2026-10-14", "Referral Coordinator, Front Range", "John Adeyemi", "1976-12-21", "Anxiety and depressed mood", "routine", "Gabriel Ashby, NP"], "rows": []},
+ "2tqhx8zf5j": {"type": "referral", "keys": ["Granite Fork Internal Medicine", "5472 Larch Avenue, Suite 255", "620-555-0184", "620-555-0111", "2026-10-13", "Referral Coordinator, Eastside", "Michelle Sanders", "1949-10-31", "Abnormal mammogram follow-up", "routine", "Terry George, MD"], "rows": []},
+ "55cnnt653f": {"type": "referral", "keys": ["Plains Dermatology Associates", "5977 Depot Parkway, Suite 375", "785-555-0117", "785-555-0126", "2025-10-07", "Referral Coordinator, Highline", "Patricia Anderson", "1974-02-06", "Suspicious skin lesion on the left forearm", "urgent", "Steven Dominguez, DO"], "rows": []}
+}

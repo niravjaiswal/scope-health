@@ -1,0 +1,15 @@
+Harbor Glen Medical Group | LABORATORY REPORT
+Clinical Laboratory, Riverbend | Report status: Final
+730 Mill St, Pell Junction, KS 66763
+Patient | Olivia Wallace | Ordering provider | Edward Lindqvist, NP
+Date of birth | 1994-08-06 | Collected | 2026-10-10
+Sex | F | Received | 2026-10-14
+Record number | HG5745711 | Report number | LR-039991
+Vitamin D
+Test | Result | Units | Reference range | Flag
+25-hydroxyvitamin D | 74 | ng/mL | 30 - 100 | normal
+Tests reported: 1
+A result outside its reference range is flagged high or low. Reference ranges apply to adults and may differ by age and sex.
+Results should be read together with the clinical picture.
+End of report
+Harbor Glen Medical Group Clinical Laboratory. Confidential patient information. | Page 1 of 1

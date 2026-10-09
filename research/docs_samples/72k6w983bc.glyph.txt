@@ -1,0 +1,22 @@
+Harbor Glen Medical Group | LABORATORY REPORT
+Clinical Laboratory, Highline | Report status: Final
+3100 Highline Ave, Granite Fork, CO 80752
+Patient | Judy Moore | Ordering provider | Garrett Meyer, MD
+Date of birth | 1999-09-06 | Collected | 2026-04-18
+Sex | F | Received | 2026-04-19
+Record number | HG3943006 | Report number | LR-030201
+Basic metabolic panel
+Test | Result | Units | Reference range | Flag
+Sodium | 146 | mmol/L | 135 - 145 | high
+Potassium | 5.3 | mmol/L | 3.5 - 5.1 | high
+Chloride | 101 | mmol/L | 98 - 107 | normal
+Carbon dioxide | 23 | mmol/L | 22 - 29 | normal
+Blood urea nitrogen | 11 | mg/dL | 7 - 20 | normal
+Creatinine | 1.01 | mg/dL | 0.60 - 1.30 | normal
+Glucose | 90 | mg/dL | 70 - 99 | normal
+Calcium | 9.0 | mg/dL | 8.6 - 10.2 | normal
+Tests reported: 8
+A result outside its reference range is flagged high or low. Reference ranges apply to adults and may differ by age and sex.
+Results should be read together with the clinical picture.
+End of report
+Harbor Glen Medical Group Clinical Laboratory. Confidential patient information. | Page 1 of 1

@@ -1,0 +1,16 @@
+Harbor Glen Medical Group | LABORATORY REPORT
+Clinical Laboratory, Northgate | Report status: Final
+410 Northgate Blvd, Harbor Glen, KS 66741
+Patient | Jessica Smith | Ordering provider | Ann Shaw, MD
+Date of birth | 1952-07-05 | Collected | 2026-10-13
+Sex | F | Received | 2026-10-14
+Record number | HG1770625 | Report number | LR-039996
+Thyroid panel
+Test | Result | Units | Reference range | Flag
+Thyroid stimulating hormone | 2.46 | mIU/L | 0.40 - 4.00 | normal
+Free T4 | 1.48 | ng/dL | 0.80 - 1.80 | normal
+Tests reported: 2
+A result outside its reference range is flagged high or low. Reference ranges apply to adults and may differ by age and sex.
+Results should be read together with the clinical picture.
+End of report
+Harbor Glen Medical Group Clinical Laboratory. Confidential patient information. | Page 1 of 1

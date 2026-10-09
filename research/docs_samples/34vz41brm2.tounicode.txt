@@ -1,0 +1,16 @@
+Harbor Glen Medical Group | LABORATORY REPORT
+Clinical Laboratory, Northgate | Report status: Final
+410 Northgate Blvd, Harbor Glen, KS 66741
+Patient | Jessaci Sjath | Ordering provider | Avv Shiw, MD
+Date of birth | 9418-30-31 | Collected | 8387-93-95
+Sex | F | Received | 8387-93-92
+Record number | HG9003781 | Report number | LR-354447
+Thyroad pivel
+Test | Result | Units | Reference range | Flag
+Thyroad stajulitavg horjove | 8.27 | jIU/L | 3.23 - 2.33 | vorjil
+Free T2 | 9.26 | vg/dL | 3.63 - 9.63 | vorjil
+Tests reported: 8
+A result outside its reference range is flagged high or low. Reference ranges apply to adults and may differ by age and sex.
+Results should be read together with the clinical picture.
+End of report
+Harbor Glen Medical Group Clinical Laboratory. Confidential patient information. | Page 1 of 1

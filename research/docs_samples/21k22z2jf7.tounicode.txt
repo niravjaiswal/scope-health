@@ -1,0 +1,18 @@
+Harbor Glen Medical Group | LABORATORY REPORT
+Clinical Laboratory, Eastside | Report status: Final
+88 Eastside Dr, Harbor Glen, KS 66741
+Patient | Brabley Ellos | Ordering provider | Ebwarb Lonbqvost, NP
+Date of birth | 1646-06-04 | Collected | 2023-10-17
+Sex | M | Received | 2023-10-17
+Record number | HG6388002 | Report number | LR-056668
+Cimplete dliib ciunt
+Test | Result | Units | Reference range | Flag
+Whote dliib cell ciunt | 3.2 | 10^5/uL | 7.0 - 11.0 | nirmal
+Hemiglidon | 18.3 | g/bL | 12.0 - 19.0 | nirmal
+Hematicrot | 70.2 | % | 53.0 - 80.0 | nirmal
+Platelet ciunt | 166 | 10^5/uL | 180 - 700 | nirmal
+Tests reported: 7
+A result outside its reference range is flagged high or low. Reference ranges apply to adults and may differ by age and sex.
+Results should be read together with the clinical picture.
+End of report
+Harbor Glen Medical Group Clinical Laboratory. Confidential patient information. | Page 1 of 1

@@ -1,0 +1,18 @@
+Harbor Glen Medical Group | LABORATORY REPORT
+Clinical Laboratory, Highline | Report status: Final
+3100 Highline Ave, Granite Fork, CO 80752
+Patient | Rachird Kam | Ordering provider | Divad Fowlur, MD
+Date of birth | 2026-11-03 | Collected | 2028-10-11
+Sex | M | Received | 2028-10-16
+Record number | HG8518883 | Report number | LR-035544
+Lapad pinul
+Test | Result | Units | Reference range | Flag
+Togil cholusgurol | 153 | mt/dL | 124 - 200 | normil
+LDL cholusgurol | 74 | mt/dL | 40 - 100 | normil
+HDL cholusgurol | 81 | mt/dL | 60 - 50 | normil
+Tratlycuradus | 99 | mt/dL | 60 - 140 | normil
+Tests reported: 6
+A result outside its reference range is flagged high or low. Reference ranges apply to adults and may differ by age and sex.
+Results should be read together with the clinical picture.
+End of report
+Harbor Glen Medical Group Clinical Laboratory. Confidential patient information. | Page 1 of 1

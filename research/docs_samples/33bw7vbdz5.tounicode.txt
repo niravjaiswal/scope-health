@@ -1,0 +1,15 @@
+Harbor Glen Medical Group | LABORATORY REPORT
+Clinical Laboratory, Eastside | Report status: Final
+88 Eastside Dr, Harbor Glen, KS 66741
+Patient | Eric Wright | Ordering provider | Jose Nielsen, MD
+Date of birth | 1992-04-20 | Collected | 2026-10-10
+Sex | M | Received | 2026-10-13
+Record number | HG7803396 | Report number | LR-039903
+Hemoglobin A1c
+Test | Result | Units | Reference range | Flag
+Hemoglobin A1c | 4.4 | % | 4.0 - 5.6 | normal
+Tests reported: 1
+A result outside its reference range is flagged high or low. Reference ranges apply to adults and may differ by age and sex.
+Results should be read together with the clinical picture.
+End of report
+Harbor Glen Medical Group Clinical Laboratory. Confidential patient information. | Page 1 of 1

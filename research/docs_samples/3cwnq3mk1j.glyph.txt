@@ -1,0 +1,22 @@
+Harbor Glen Medical Group | LABORATORY REPORT
+Clinical Laboratory, Eastside | Report status: Final
+88 Eastside Dr, Harbor Glen, KS 66741
+Patient | Cheryl Lee | Ordering provider | Brandon Howell, NP
+Date of birth | 2003-09-17 | Collected | 2026-10-12
+Sex | F | Received | 2026-10-14
+Record number | HG3301590 | Report number | LR-039999
+Basic metabolic panel
+Test | Result | Units | Reference range | Flag
+Sodium | 144 | mmol/L | 135 - 145 | normal
+Potassium | 5.5 | mmol/L | 3.5 - 5.1 | high
+Chloride | 105 | mmol/L | 98 - 107 | normal
+Carbon dioxide | 20 | mmol/L | 22 - 29 | low
+Blood urea nitrogen | 16 | mg/dL | 7 - 20 | normal
+Creatinine | 1.46 | mg/dL | 0.60 - 1.30 | high
+Glucose | 87 | mg/dL | 70 - 99 | normal
+Calcium | 9.6 | mg/dL | 8.6 - 10.2 | normal
+Tests reported: 8
+A result outside its reference range is flagged high or low. Reference ranges apply to adults and may differ by age and sex.
+Results should be read together with the clinical picture.
+End of report
+Harbor Glen Medical Group Clinical Laboratory. Confidential patient information. | Page 1 of 1

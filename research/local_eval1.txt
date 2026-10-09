@@ -1,0 +1,70 @@
+[   3.68] SITE started 3.5s tabs=4
+[   3.69] SITE locations ['All locations', 'Northgate', 'Front Range', 'Eastside', 'Stonebrook', 'Lakeside', 'Riverbend', 'Highline', 'Prairie View', 'Cedar Hollow', 'Willow Creek'] current Northgate
+[   4.09] SITE location -> Northgate
+[   4.47] SITE version 4.2.0 today None nav [['Dashboard', '/'], ['Patients', '/patients'], ['Schedule', '/schedule'], ['Billing', '/billing'], ['Documents', '/documents'], ['Activity', '/activity']]
+[   4.47] MEMORY workflow #0 item1: From billing: telling new patients from established ones
+[   4.85] LLM route openai/gpt-oss-120b 0.4s in=376 out=221 $0.0003 tot=$0.000
+[   4.85] ROUTE {"workflow": 0, "kind": "patient_status", "patients": [{"first": "Judith", "last": "Jackson", "dob": "2004-11-12"}], "providers": ["Kenneth Sullivan, NP"], "locations": [], "dates": ["2028-07-20"], "times": [], "ids": [], "answer_kind": "text"}
+[   5.57] PREFETCH 0 pages 1.1s kind=patient_status wf=0
+[   6.01] LLM step0 openai/gpt-oss-120b 0.4s in=2727 out=103 $0.0010 tot=$0.001
+[   6.76] LLM step1 openai/gpt-oss-120b 0.3s in=2776 out=76 $0.0010 tot=$0.002
+[   7.92] LLM step2 openai/gpt-oss-120b 0.4s in=5221 out=198 $0.0020 tot=$0.004
+[   8.73] LLM step3 openai/gpt-oss-120b 0.4s in=5267 out=57 $0.0019 tot=$0.006
+[   9.25] LLM step4 openai/gpt-oss-120b 0.3s in=5313 out=133 $0.0020 tot=$0.008
+[   9.69] LLM step5 openai/gpt-oss-120b 0.2s in=5362 out=84 $0.0019 tot=$0.010
+[  10.21] LLM step6 openai/gpt-oss-120b 0.3s in=5408 out=169 $0.0020 tot=$0.012
+[  10.21] TASK result 5.7s null
+LOCAL {"n": 2, "text": "Is Judith Jackson (born 2004-11-12) new or established for Kenneth Sullivan, NP on 2028-07-20?", "answer": null, "expected": "ESTABLISHED:2025-07-21", "ok": false, "conf": null, "dt": 5.7}
+[  10.54] LLM route openai/gpt-oss-120b 0.3s in=378 out=177 $0.0003 tot=$0.012
+[  10.54] ROUTE {"workflow": null, "kind": "referral_practice", "patients": [{"first": "Ana", "last": "Corbett", "dob": "2000-11-13"}], "providers": [], "locations": [], "dates": ["2024-12-01"], "times": [], "ids": [], "answer_kind": "text"}
+[  10.86] PREFETCH 0 pages 0.7s kind=referral_practice wf=None
+[  11.75] LLM step0 openai/gpt-oss-120b 0.9s in=1429 out=101 $0.0006 tot=$0.013
+[  12.43] LLM step1 openai/gpt-oss-120b 0.4s in=1478 out=162 $0.0006 tot=$0.014
+[  13.22] LLM step2 openai/gpt-oss-120b 0.2s in=1645 out=93 $0.0006 tot=$0.014
+[  13.83] LLM step3 openai/gpt-oss-120b 0.4s in=2044 out=319 $0.0010 tot=$0.015
+[  14.49] LLM step4 openai/gpt-oss-120b 0.4s in=2301 out=388 $0.0011 tot=$0.016
+[  14.81] LLM step5 openai/gpt-oss-120b 0.3s in=2468 out=246 $0.0010 tot=$0.017
+[  14.81] TASK result 4.6s {"skip": true, "reason": "Patient Ana Corbett not found and referral document not located"}
+LOCAL {"n": 3, "text": "Referral letter received on 2024-12-01 for patient Ana Corbett (born 2000-11-13): which practice made the referral?", "answer": null, "expected": "Granite Fork Internal Medicine", "ok": false, "conf": null, "dt": 4.6}
+[  15.01] LLM route openai/gpt-oss-120b 0.2s in=368 out=129 $0.0002 tot=$0.018
+[  15.01] ROUTE {"workflow": null, "kind": "phone_lookup", "patients": [{"first": "Carol", "last": "Jones", "dob": "1982-09-07"}], "providers": [], "locations": [], "dates": [], "times": [], "ids": [], "answer_kind": "phone"}
+[  15.73] PREFETCH 0 pages 0.9s kind=phone_lookup wf=None
+[  15.96] LLM step0 openai/gpt-oss-120b 0.2s in=2089 out=104 $0.0008 tot=$0.018
+[  16.53] LLM step1 openai/gpt-oss-120b 0.3s in=2138 out=193 $0.0009 tot=$0.019
+[  17.59] LLM step2 openai/gpt-oss-120b 0.3s in=4625 out=104 $0.0017 tot=$0.021
+[  17.59] TASK result 2.8s {"skip": true, "reason": "Patient Carol Jones not found in system"}
+LOCAL {"n": 4, "text": "What phone number do we have on file for patient Carol Jones (born 1982-09-07)?", "answer": null, "expected": "7853106041", "ok": false, "conf": null, "dt": 2.8}
+[  17.59] MEMORY note item5: The vending machine by the back entrance takes cards again, but the coin slot is still jammed.
+[  17.99] LLM route openai/gpt-oss-120b 0.4s in=387 out=240 $0.0003 tot=$0.021
+[  17.99] ROUTE {"workflow": 0, "kind": "new_vs_established", "patients": [{"first": "Peter", "last": "Henry", "dob": "1975-06-23"}], "providers": ["Douglas Hughes, MD"], "locations": [], "dates": ["2026-12-25"], "times": [], "ids": [], "answer_kind": "text"}
+[  18.48] PREFETCH 1 pages 0.9s kind=new_vs_established wf=0
+[  18.70] LLM step0 openai/gpt-oss-120b 0.2s in=2071 out=134 $0.0008 tot=$0.022
+[  19.30] LLM step1 openai/gpt-oss-120b 0.3s in=2150 out=141 $0.0009 tot=$0.023
+[  20.32] LLM step2 openai/gpt-oss-120b 0.7s in=3448 out=143 $0.0013 tot=$0.024
+[  20.89] LLM step3 openai/gpt-oss-120b 0.3s in=4220 out=77 $0.0015 tot=$0.026
+[  21.99] LLM step4 openai/gpt-oss-120b 0.9s in=4996 out=88 $0.0018 tot=$0.028
+[  22.49] LLM step5 openai/gpt-oss-120b 0.2s in=6346 out=142 $0.0023 tot=$0.030
+[  23.53] LLM step6 openai/gpt-oss-120b 0.8s in=7123 out=801 $0.0031 tot=$0.033
+[  23.53] TASK result 5.9s {"answer": "", "confidence": 0, "why": "Unable to locate provider Douglas Hughes, MD or determine his specialty, and no prior appointments with him exist for the patient. Without specialty info, cannot assess if any prior appointment counts."}
+LOCAL {"n": 6, "text": "On 2026-12-25 there is a visit with Douglas Hughes, MD for Henry, Peter, DOB 1975-06-23, and I need new vs. established ", "answer": null, "expected": "NEW", "ok": false, "conf": 0, "dt": 5.9}
+[  23.76] LLM route openai/gpt-oss-120b 0.2s in=380 out=197 $0.0003 tot=$0.033
+[  23.76] ROUTE {"workflow": null, "kind": "referral_practice", "patients": [{"first": "Gregory", "last": "Porter", "dob": "1976-04-08"}], "providers": [], "locations": [], "dates": ["2025-09-16"], "times": [], "ids": [], "answer_kind": "text"}
+[  23.99] PREFETCH 0 pages 0.5s kind=referral_practice wf=None
+[  24.24] LLM step0 openai/gpt-oss-120b 0.2s in=1992 out=132 $0.0008 tot=$0.034
+[  25.24] LLM step1 openai/gpt-oss-120b 0.8s in=2041 out=181 $0.0009 tot=$0.035
+[  25.69] LLM step2 openai/gpt-oss-120b 0.2s in=2977 out=48 $0.0011 tot=$0.036
+[  27.64] LLM step3 openai/gpt-oss-120b 1.7s in=3022 out=256 $0.0012 tot=$0.037
+[  28.23] LLM step4 openai/gpt-oss-120b 0.4s in=3066 out=251 $0.0013 tot=$0.039
+[  28.97] LLM step5 openai/gpt-oss-120b 0.5s in=7461 out=253 $0.0028 tot=$0.041
+[  29.51] LLM step6 openai/gpt-oss-120b 0.3s in=8777 out=116 $0.0032 tot=$0.045
+[  29.74] TASK result 6.2s null
+LOCAL {"n": 7, "text": "Referral letter received on 2025-09-16 for patient Gregory Porter (born 1976-04-08): what reason does it give for the re", "answer": null, "expected": "Chronic cough lasting more than eight weeks", "ok": false, "conf": null, "dt": 6.2}
+[  30.06] LLM route openai/gpt-oss-120b 0.3s in=378 out=262 $0.0003 tot=$0.045
+[  30.06] ROUTE {"workflow": 0, "kind": "new_established", "patients": [{"first": "Laura", "last": "Torres", "dob": "2001-02-20"}], "providers": ["Elena Gutierrez, NP"], "locations": [], "dates": ["2025-12-30"], "times": [], "ids": [], "answer_kind": "text"}
+[  30.47] PREFETCH 0 pages 0.7s kind=new_established wf=0
+[  30.71] LLM step0 openai/gpt-oss-120b 0.2s in=2789 out=99 $0.0011 tot=$0.046
+[  31.13] LLM step1 openai/gpt-oss-120b 0.2s in=2838 out=81 $0.0011 tot=$0.047
+[  32.11] LLM step2 openai/gpt-oss-120b 0.6s in=5368 out=160 $0.0020 tot=$0.049
+[  32.11] TASK result 2.4s {"answer": "NEW", "confidence": 0.97, "why": "Patient Laura Torres with DOB 2001-02-20 does not exist in the system, so there are no past appointments to count; thus the patient is considered new for the visit."}
+LOCAL {"n": 8, "text": "Is Laura Torres (born 2001-02-20) new or established for Elena Gutierrez, NP on 2025-12-30?", "answer": "NEW", "expected": "ESTABLISHED:2025-08-14", "ok": false, "conf": 0.97, "dt": 2.4}
+[  32.11] LOCAL done correct=0 wrong=6 n=6 llm=$0.049

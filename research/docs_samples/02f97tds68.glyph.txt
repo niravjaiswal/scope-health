@@ -1,0 +1,15 @@
+Harbor Glen Medical Group | LABORATORY REPORT
+Clinical Laboratory, Cedar Hollow | Report status: Final
+1210 Cedar Hollow Rd, Juniper Flats, CO 80785
+Patient | Nicole Tran | Ordering provider | David Fowler, MD
+Date of birth | 1935-12-22 | Collected | 2026-10-11
+Sex | F | Received | 2026-10-14
+Record number | HG9746871 | Report number | LR-039956
+Hemoglobin A1c
+Test | Result | Units | Reference range | Flag
+Hemoglobin A1c | 3.8 | % | 4.0 - 5.6 | low
+Tests reported: 1
+A result outside its reference range is flagged high or low. Reference ranges apply to adults and may differ by age and sex.
+Results should be read together with the clinical picture.
+End of report
+Harbor Glen Medical Group Clinical Laboratory. Confidential patient information. | Page 1 of 1

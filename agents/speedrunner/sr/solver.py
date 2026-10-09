@@ -1,0 +1,278 @@
+"""Task solver: router -> entity resolution -> prefetch -> LLM tool loop -> validation."""
+import asyncio, json, re, time, unicodedata
+from .util import log, jdump, now
+from . import prompts
+
+FAST = {"model": "openai/gpt-oss-120b", "extra": {"provider": {"sort": "throughput"}}}
+STRONG = {"model": "openai/gpt-6.1-sol", "extra": {}}
+
+TOOLS = [
+    {"type": "function", "function": {
+        "name": "open", "description": "Open a Wrenfield page by path (e.g. /patients/abc123/notes) and return its decoded text. "
+        "Set all_pages=true to also read every further page of a paginated list (slower).",
+        "parameters": {"type": "object", "properties": {
+            "path": {"type": "string"}, "all_pages": {"type": "boolean"}}, "required": ["path"]}}},
+    {"type": "function", "function": {
+        "name": "search_patients", "description": "Search patients by last name (prefix ok) OR by date of birth YYYY-MM-DD. Returns matching rows with chart links and flags.",
+        "parameters": {"type": "object", "properties": {
+            "last_name": {"type": "string"}, "dob": {"type": "string"}}}}},
+    {"type": "function", "function": {
+        "name": "read_document", "description": "Read a document (scanned/printed page images, e.g. lab report, referral letter, outside record) from its viewer path and return a faithful transcription.",
+        "parameters": {"type": "object", "properties": {"path": {"type": "string"}}, "required": ["path"]}}},
+    {"type": "function", "function": {
+        "name": "answer", "description": "Submit the final answer (exact required format). confidence = probability (0-1) that it is exactly right.",
+        "parameters": {"type": "object", "properties": {
+            "answer": {"type": "string"}, "confidence": {"type": "number"}, "why": {"type": "string"}},
+            "required": ["answer", "confidence"]}}},
+    {"type": "function", "function": {
+        "name": "skip", "description": "Skip this task (no penalty) when the data cannot be found or the answer is uncertain.",
+        "parameters": {"type": "object", "properties": {"reason": {"type": "string"}}, "required": ["reason"]}}},
+]
+
+
+def norm(s):
+    s = unicodedata.normalize("NFKD", s or "")
+    return "".join(c for c in s if not unicodedata.combining(c)).casefold().strip()
+
+
+def dob_iso(s):
+    if not s: return None
+    m = re.search(r"(\d{4})-(\d{2})-(\d{2})", s)
+    if m: return m.group(0)
+    m = re.search(r"(\d{1,2})/(\d{1,2})/(\d{4})", s)
+    if m: return f"{m.group(3)}-{int(m.group(1)):02d}-{int(m.group(2)):02d}"
+    return None
+
+
+def abstract_path(p, ids):
+    for k, v in ids.items():
+        if v and v in p:
+            p = p.replace(v, "{" + k + "}")
+    return p
+
+
+class Solver:
+    def __init__(self, site, llm, memory, cfg):
+        self.site = site; self.llm = llm; self.mem = memory; self.cfg = cfg
+        self.plans = {}       # kind -> {abstract_path: count}
+        self.doc_cache = {}
+
+    # ------------------------------------------------------------------ router
+    async def route(self, text):
+        wf = self.mem.workflow_titles()
+        msgs = [{"role": "system", "content": prompts.ROUTER_SYS},
+                {"role": "user", "content": prompts.router_user(text, wf)}]
+        r = await self.llm.chat(FAST["model"], msgs, max_tokens=900, json_mode=True,
+                                reasoning={"effort": "low"}, extra=FAST["extra"], timeout=12, tag="route")
+        from .llm import parse_json
+        d = parse_json(r["content"]) if r else None
+        return d or {}
+
+    # ------------------------------------------------------------------ entities
+    async def resolve_patient(self, p):
+        last = (p.get("last") or "").strip()
+        first = (p.get("first") or "").strip()
+        dob = dob_iso(p.get("dob") or "")
+        rows = []
+        if last:
+            rows = await self.site.search(last_name=last)
+            if not rows and " " in last:
+                rows = await self.site.search(last_name=last.split()[-1])
+        if not rows and dob:
+            rows = await self.site.search(dob=dob)
+        cands = []
+        for r in rows:
+            name = r.get("name") or ""
+            if "," in name:
+                rl, rf = [x.strip() for x in name.split(",", 1)]
+            else:
+                parts = name.split(); rf, rl = (" ".join(parts[:-1]), parts[-1]) if parts else ("", "")
+            ok_first = not first or norm(rf).split(" ")[0] == norm(first).split(" ")[0] or norm(rf).startswith(norm(first))
+            ok_last = not last or norm(rl) == norm(last) or norm(rl).startswith(norm(last))
+            ok_dob = not dob or dob_iso(r.get("dob") or "") == dob
+            if ok_first and ok_last and ok_dob:
+                cands.append(r)
+        return cands, rows
+
+    # ------------------------------------------------------------------ tools
+    async def tool_open(self, path, all_pages=False, fresh=False):
+        path = path.strip()
+        if path.startswith("http"):
+            path = re.sub(r"^https?://[^/]+", "", path)
+        if not path.startswith("/"): path = "/" + path
+        if re.search(r"/patients/all\b|logout|log-out", path):
+            return "Refused: not allowed."
+        if all_pages:
+            async with self.site.sem:
+                async with self.site.c.tab() as tab:
+                    try:
+                        await tab.goto(path)
+                        pages = await tab.paginate_all(max_pages=20)
+                        txt = "\n\n--- next page ---\n\n".join(pages)
+                    except Exception as e:
+                        txt = f"ERROR {e!r}"
+            return txt
+        return await self.site.page(path, fresh=fresh)
+
+    async def tool_read_document(self, path):
+        if path in self.doc_cache: return self.doc_cache[path]
+        try:
+            files = await self.site.documents(path)
+        except Exception as e:
+            return f"ERROR {e!r}"
+        imgs = [f for f in files if f.get("kind") == "image" and f.get("data")]
+        if not imgs:
+            return "ERROR: no page images found on this document page"
+        from .docs import transcribe
+        txt = await transcribe(self.llm, [f["data"] for f in imgs[:4]])
+        self.doc_cache[path] = txt
+        return txt
+
+    # ------------------------------------------------------------------ main
+    async def solve(self, item, deadline):
+        text = item["text"]
+        t0 = time.time()
+        route = await self.route(text)
+        log("ROUTE", jdump(route, 500))
+        kind = (route.get("kind") or "other").strip().lower()[:60]
+        wf_idx = route.get("workflow")
+        wf_text = self.mem.workflow_text(wf_idx) if wf_idx is not None else None
+        plan_key = f"wf{wf_idx}" if wf_idx is not None else kind
+
+        # entity resolution + prefetch
+        ctx_parts = []
+        ids = {}
+        pats = route.get("patients") or []
+        resolved = await asyncio.gather(*[self.resolve_patient(p) for p in pats[:2]])
+        prefetch = []
+        for i, (cands, rows) in enumerate(resolved):
+            p = pats[i]
+            if not cands:
+                ctx_parts.append(f"[patient search for {jdump(p)}: no exact match. Search rows: {jdump(rows[:12], 2500)}]")
+                continue
+            ctx_parts.append(f"[patient search for {jdump(p)} -> candidates: {jdump(cands[:6], 2000)}]")
+            for j, c in enumerate(cands[:3]):
+                href = c.get("href") or ""
+                m = re.search(r"/patients/([0-9a-z]+)", href)
+                if not m: continue
+                pid = m.group(1)
+                if i == 0 and j == 0: ids["pid"] = pid
+                prefetch.append(f"/patients/{pid}")
+                for ap, cnt in sorted(self.plans.get(plan_key, {}).items(), key=lambda x: -x[1])[:8]:
+                    if "{pid}" in ap and cnt >= 1:
+                        prefetch.append(ap.replace("{pid}", pid))
+        for ap, cnt in sorted(self.plans.get(plan_key, {}).items(), key=lambda x: -x[1])[:6]:
+            if "{" not in ap and cnt >= 2:
+                prefetch.append(ap)
+        prefetch = list(dict.fromkeys(prefetch))[:10]
+        if prefetch:
+            texts = await self.site.pages(prefetch)
+            for pth, tx in zip(prefetch, texts):
+                ctx_parts.append(f"=== PAGE {pth} ===\n{clip(tx, 9000)}")
+        log(f"PREFETCH {len(prefetch)} pages {time.time()-t0:.1f}s kind={kind} wf={wf_idx}")
+
+        sys_prompt = prompts.solver_system(self.site, self.mem, wf_idx)
+        user = prompts.solver_user(text, route, "\n\n".join(ctx_parts))
+        msgs = [{"role": "system", "content": sys_prompt}, {"role": "user", "content": user}]
+        opened = []
+        model = self.cfg.get("loop_model", FAST)
+        result = None
+        for step in range(self.cfg.get("max_steps", 7)):
+            left = deadline - time.time()
+            if left < 2.5:
+                log("STEP budget exhausted"); break
+            r = await self.llm.chat(model["model"], msgs, max_tokens=3000, tools=TOOLS, extra=model["extra"],
+                                    reasoning={"effort": self.cfg.get("effort", "medium")}, timeout=min(40, left), tag=f"step{step}")
+            if not r:
+                break
+            m = r["message"]
+            calls = m.get("tool_calls") or []
+            msgs.append({"role": "assistant", "content": m.get("content") or "", "tool_calls": calls} if calls else
+                        {"role": "assistant", "content": m.get("content") or ""})
+            if not calls:
+                log("NOCALL content", (m.get("content") or "")[:300])
+                # model answered in text: try to parse a final answer
+                result = parse_text_answer(m.get("content") or "")
+                break
+            outs = []
+            final = None
+            async def run(call):
+                fn = call["function"]["name"]
+                try: args = json.loads(call["function"].get("arguments") or "{}")
+                except Exception: args = {}
+                if fn == "open":
+                    opened.append(args.get("path", ""))
+                    return await self.tool_open(args.get("path", ""), bool(args.get("all_pages")))
+                if fn == "search_patients":
+                    rows = await self.site.search(last_name=args.get("last_name"), dob=args.get("dob"))
+                    return jdump(rows[:40], 6000) if rows else "No patients match."
+                if fn == "read_document":
+                    opened.append(args.get("path", ""))
+                    return await self.tool_read_document(args.get("path", ""))
+                return ""
+            finals = [c for c in calls if c["function"]["name"] in ("answer", "skip")]
+            others = [c for c in calls if c["function"]["name"] not in ("answer", "skip")]
+            if finals and not others:
+                c = finals[0]
+                try: args = json.loads(c["function"].get("arguments") or "{}")
+                except Exception: args = {}
+                result = {"skip": c["function"]["name"] == "skip", **args}
+                break
+            log("TOOLS", jdump([(c["function"]["name"], c["function"].get("arguments")) for c in others], 600))
+            res = await asyncio.gather(*[run(c) for c in others])
+            for c, out in zip(others, res):
+                msgs.append({"role": "tool", "tool_call_id": c["id"], "content": clip(out or "", 12000)})
+            for c in finals:
+                msgs.append({"role": "tool", "tool_call_id": c["id"], "content": "Ignored: call answer alone after reading the results."})
+        # gate: a request about a patient must be grounded in that patient's chart
+        charts = set(re.findall(r"/patients/([0-9a-z]{6,})", " ".join(prefetch + opened)))
+        if result and not result.get("skip") and pats and not charts:
+            log("GATE no chart opened for patient request -> skip")
+            result = {"skip": True, "reason": "patient chart never opened"}
+        # verification by a stronger model on workflow tasks
+        if result and not result.get("skip") and wf_idx is not None and self.cfg.get("verify", True) and deadline - time.time() > 4:
+            evidence = "\n\n".join(m["content"] for m in msgs[1:] if m.get("role") in ("user", "tool") and m.get("content"))
+            ref = getattr(self.site, "reference", "")
+            if ref: evidence = "REFERENCE DATA:\n" + ref[:14000] + "\n\n" + evidence
+            vr = await self.llm.json(STRONG["model"], [{"role": "system", "content": prompts.VERIFY_SYS},
+                                     {"role": "user", "content": prompts.verify_user(text, wf_text, self.mem.notes_text(), clip(evidence, 120000))}],
+                                     max_tokens=6000, reasoning={"effort": self.cfg.get("verify_effort", "low")}, timeout=min(45, deadline - time.time() - 1), tag="verify")
+            if vr is None and deadline - time.time() > 4:
+                vr = await self.llm.json("anthropic/claude-sonnet-5.5", [{"role": "system", "content": prompts.VERIFY_SYS},
+                                         {"role": "user", "content": prompts.verify_user(text, wf_text, self.mem.notes_text(), clip(evidence, 120000))}],
+                                         max_tokens=6000, timeout=min(45, deadline - time.time() - 1), tag="verify2")
+            log("VERIFY", jdump(vr, 400))
+            a1 = str(result.get("answer", "")).strip().lower().replace(" ", "")
+            a2 = str((vr or {}).get("answer", "")).strip().lower().replace(" ", "")
+            if vr and a2 and a1 == a2:
+                result["confidence"] = max(float(result.get("confidence") or 0), float(vr.get("confidence") or 0))
+            elif vr and a2 and float(vr.get("confidence") or 0) >= 0.85:
+                log("VERIFY override", a1, "->", a2)
+                result = {"answer": vr["answer"], "confidence": float(vr.get("confidence")) - 0.05, "why": "verifier: " + str(vr.get("why"))}
+            elif vr is None:
+                result["confidence"] = float(result.get("confidence") or 0) * 0.9
+            else:
+                result["confidence"] = min(float(result.get("confidence") or 0), 0.5)
+        # learn plan
+        if result and not result.get("skip") and opened:
+            pl = self.plans.setdefault(plan_key, {})
+            for p in set(opened):
+                ap = abstract_path(p, ids)
+                pl[ap] = pl.get(ap, 0) + 1
+        return result, {"route": route, "kind": kind, "wf": wf_idx, "opened": opened, "msgs": msgs}
+
+
+def clip(s, n):
+    s = s or ""
+    return s if len(s) <= n else s[:n] + f"\n…[truncated {len(s)-n} chars]"
+
+
+def parse_text_answer(s):
+    from .llm import parse_json
+    d = parse_json(s)
+    if d and "answer" in d:
+        return d
+    m = re.search(r"(?im)^\s*answer\s*[:=]\s*(.+)$", s)
+    if m:
+        return {"answer": m.group(1).strip().strip("`"), "confidence": 0.5}
+    return None

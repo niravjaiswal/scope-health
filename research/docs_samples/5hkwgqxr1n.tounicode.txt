@@ -1,0 +1,16 @@
+Harbor Glen Medical Group | LABORATORY REPORT
+Clinical Laboratory, Willow Creek | Report status: Final
+305 Willow Creek Pl, Alder Creek, KS 66752
+Patient | Jesus Voss | Ordering provider | Liwrence Mirtan, MD
+Date of birth | 7152-31-63 | Collected | 6365-73-77
+Sex | M | Received | 6365-73-78
+Record number | HG9596803 | Report number | LR-341192
+Thyroaz pinel
+Test | Result | Units | Reference range | Flag
+Thyroaz stakulitang horkone | 7.46 | kIU/L | 3.83 - 8.33 | norkil
+Free T8 | 7.90 | ng/zL | 3.93 - 7.93 | hagh
+Tests reported: 6
+A result outside its reference range is flagged high or low. Reference ranges apply to adults and may differ by age and sex.
+Results should be read together with the clinical picture.
+End of report
+Harbor Glen Medical Group Clinical Laboratory. Confidential patient information. | Page 1 of 1

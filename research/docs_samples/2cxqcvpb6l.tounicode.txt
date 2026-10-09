@@ -1,0 +1,19 @@
+Harbor Glen Medical Group | LABORATORY REPORT
+Clinical Laboratory, Highline | Report status: Final
+3100 Highline Ave, Granite Fork, CO 80752
+Patient | Raddell Mitchell | Ordering provider | Jodhau Bowmun, PA
+Date of birth | 8991-94-59 | Collected | 8981-59-59
+Sex | M | Received | 8981-59-50
+Record number | HG8088833 | Report number | LR-963323
+Liver fanction punel
+Test | Result | Units | Reference range | Flag
+Alunine uminotrundferude | 08 | O/L | 2 - 71 | normul
+Adpurtute uminotrundferude | 87 | O/L | 59 - 09 | normul
+Alkuline phodphutude | 78 | O/L | 00 - 502 | normul
+Totul bilirabin | 9.4 | mg/sL | 9.5 - 5.8 | normul
+Albamin | 0.5 | g/sL | 6.0 - 7.0 | normul
+Tests reported: 7
+A result outside its reference range is flagged high or low. Reference ranges apply to adults and may differ by age and sex.
+Results should be read together with the clinical picture.
+End of report
+Harbor Glen Medical Group Clinical Laboratory. Confidential patient information. | Page 1 of 1

@@ -15,7 +15,7 @@ class LLM:
         self.sem = asyncio.Semaphore(12)
 
     async def chat(self, model, messages, max_tokens=800, temperature=0, timeout=60, json_mode=False,
-                   reasoning=None, extra=None, retries=2, tag=""):
+                   reasoning=None, extra=None, retries=2, tag="", tools=None):
         if self.dead:
             return None
         body = {"model": model, "messages": messages, "max_tokens": max_tokens, "temperature": temperature,
@@ -24,6 +24,9 @@ class LLM:
             body["response_format"] = {"type": "json_object"}
         if reasoning is not None:
             body["reasoning"] = reasoning
+        if tools:
+            body["tools"] = tools
+            body["tool_choice"] = "auto"
         if extra:
             body.update(extra)
         t = time.time()
@@ -35,10 +38,17 @@ class LLM:
                 if r.status_code == 402:
                     self.dead = True; log("LLM budget exhausted"); return None
                 if r.status_code == 429 or r.status_code >= 500:
-                    log("LLM", r.status_code, r.text[:200]); await asyncio.sleep(0.5 + attempt); continue
+                    log("LLM", r.status_code, r.text[:200]); await asyncio.sleep(0.3 + attempt); continue
                 if r.status_code != 200:
-                    log("LLM err", r.status_code, r.text[:300]); return None
+                    log("LLM err", r.status_code, r.text[:300])
+                    if attempt < retries and r.status_code in (400, 404) and "provider" in body:
+                        body.pop("provider", None); continue
+                    return None
                 d = r.json()
+                if not d.get("choices"):
+                    log("LLM no choices", model, str(d)[:300])
+                    if attempt < retries: await asyncio.sleep(0.3); continue
+                    return None
                 u = d.get("usage") or {}
                 cost = u.get("cost") or 0.0
                 self.spent += float(cost or 0); self.calls += 1
@@ -49,7 +59,7 @@ class LLM:
                 return {"content": content, "message": msg, "usage": u, "dt": time.time() - t}
             except (httpx.TimeoutException, httpx.TransportError) as e:
                 log("LLM timeout/transport", model, repr(e)[:120])
-                if attempt >= retries: return None
+                if attempt >= retries or time.time() - t > timeout: return None
             except Exception as e:
                 log("LLM exc", repr(e)[:200]); return None
         return None

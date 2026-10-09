@@ -1,0 +1,22 @@
+Harbor Glen Medical Group | LABORATORY REPORT
+Clinical Laboratory, Riverbend | Report status: Final
+730 Mill St, Pell Junction, KS 66763
+Patient | Divam Ridíroz | Ordering provider | Rachirm Hirrasen, NP
+Date of birth | 7880-86-82 | Collected | 7870-68-62
+Sex | M | Received | 7870-68-65
+Record number | HG9508004 | Report number | LR-858888
+Bisac dotibelac pinol
+Test | Result | Units | Reference range | Flag
+Semaud | 659 | ddel/L | 629 - 659 | nerdil
+Petissaud | 2.5 | ddel/L | 2.9 - 9.6 | lew
+Chleramo | 680 | ddel/L | 34 - 681 | nerdil
+Cirben maexamo | 71 | ddel/L | 77 - 73 | nerdil
+Bleem uroi natregon | 68 | dg/mL | 1 - 78 | nerdil
+Croitanano | 6.78 | dg/mL | 8.08 - 6.28 | nerdil
+Gluceso | 46 | dg/mL | 18 - 33 | nerdil
+Cilcaud | 3.8 | dg/mL | 4.0 - 68.7 | nerdil
+Tests reported: 4
+A result outside its reference range is flagged high or low. Reference ranges apply to adults and may differ by age and sex.
+Results should be read together with the clinical picture.
+End of report
+Harbor Glen Medical Group Clinical Laboratory. Confidential patient information. | Page 1 of 1

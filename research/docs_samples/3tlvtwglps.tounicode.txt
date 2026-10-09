@@ -1,0 +1,18 @@
+Harbor Glen Medical Group | LABORATORY REPORT
+Clinical Laboratory, Lakeside | Report status: Final
+9 Lakeview Ct, Marrow Lake, KS 66774
+Patient | Robert Mills | Ordering provider | Jose Crawford, MD
+Date of birth | 1976-03-15 | Collected | 2026-10-13
+Sex | M | Received | 2026-10-14
+Record number | HG2214598 | Report number | LR-039961
+Complete blood count
+Test | Result | Units | Reference range | Flag
+White blood cell count | 8.1 | 10^3/uL | 4.0 - 11.0 | normal
+Hemoglobin | 14.4 | g/dL | 12.0 - 17.0 | normal
+Hematocrit | 38.8 | % | 36.0 - 50.0 | normal
+Platelet count | 245 | 10^3/uL | 150 - 400 | normal
+Tests reported: 4
+A result outside its reference range is flagged high or low. Reference ranges apply to adults and may differ by age and sex.
+Results should be read together with the clinical picture.
+End of report
+Harbor Glen Medical Group Clinical Laboratory. Confidential patient information. | Page 1 of 1

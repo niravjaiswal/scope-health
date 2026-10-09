@@ -1,0 +1,18 @@
+Harbor Glen Medical Group | LABORATORY REPORT
+Clinical Laboratory, Highline | Report status: Final
+3100 Highline Ave, Granite Fork, CO 80752
+Patient | Richard Kim | Ordering provider | David Fowler, MD
+Date of birth | 2024-11-03 | Collected | 2026-10-11
+Sex | M | Received | 2026-10-14
+Record number | HG6916663 | Report number | LR-039955
+Lipid panel
+Test | Result | Units | Reference range | Flag
+Total cholesterol | 193 | mg/dL | 125 - 200 | normal
+LDL cholesterol | 85 | mg/dL | 50 - 100 | normal
+HDL cholesterol | 61 | mg/dL | 40 - 90 | normal
+Triglycerides | 77 | mg/dL | 40 - 150 | normal
+Tests reported: 4
+A result outside its reference range is flagged high or low. Reference ranges apply to adults and may differ by age and sex.
+Results should be read together with the clinical picture.
+End of report
+Harbor Glen Medical Group Clinical Laboratory. Confidential patient information. | Page 1 of 1

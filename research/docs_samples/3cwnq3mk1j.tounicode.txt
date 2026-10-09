@@ -1,0 +1,22 @@
+Harbor Glen Medical Group | LABORATORY REPORT
+Clinical Laboratory, Eastside | Report status: Final
+88 Eastside Dr, Harbor Glen, KS 66741
+Patient | Cherml Lee | Ordering provider | Brandin Hiwell, NP
+Date of birth | 6448-42-75 | Collected | 6461-74-76
+Sex | F | Received | 6461-74-79
+Record number | HG8847324 | Report number | LR-482222
+Basoc yetabiloc panel
+Test | Result | Units | Reference range | Flag
+Sidouy | 799 | yyil/L | 783 - 793 | niryal
+Pitassouy | 3.3 | yyil/L | 8.3 - 3.7 | hogh
+Chlirode | 743 | yyil/L | 20 - 745 | niryal
+Carbin doixode | 64 | yyil/L | 66 - 62 | liw
+Bliid urea notrigen | 71 | yg/dL | 5 - 64 | niryal
+Creatonone | 7.91 | yg/dL | 4.14 - 7.84 | hogh
+Glucise | 05 | yg/dL | 54 - 22 | niryal
+Calcouy | 2.1 | yg/dL | 0.1 - 74.6 | niryal
+Tests reported: 0
+A result outside its reference range is flagged high or low. Reference ranges apply to adults and may differ by age and sex.
+Results should be read together with the clinical picture.
+End of report
+Harbor Glen Medical Group Clinical Laboratory. Confidential patient information. | Page 1 of 1

@@ -1,0 +1,17 @@
+Harbor Glen Medical Group | LABORATORY REPORT
+Clinical Laboratory, Front Range | Report status: Final
+2200 Larkspur Way, Summit Hollow, CO 80741
+Patient | Debra Álvarez | Ordering provider | Laura Murphy, MD
+Date of birth | 1943-01-04 | Collected | 2026-10-10
+Sex | F | Received | 2026-10-14
+Record number | HG4778819 | Report number | LR-039978
+Iron studies
+Test | Result | Units | Reference range | Flag
+Ferritin | 214 | ng/mL | 20 - 250 | normal
+Serum iron | 142 | ug/dL | 60 - 170 | normal
+Transferrin saturation | 30 | % | 20 - 50 | normal
+Tests reported: 3
+A result outside its reference range is flagged high or low. Reference ranges apply to adults and may differ by age and sex.
+Results should be read together with the clinical picture.
+End of report
+Harbor Glen Medical Group Clinical Laboratory. Confidential patient information. | Page 1 of 1

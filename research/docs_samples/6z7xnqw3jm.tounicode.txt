@@ -1,0 +1,15 @@
+Harbor Glen Medical Group | LABORATORY REPORT
+Clinical Laboratory, Eastside | Report status: Final
+88 Eastside Dr, Harbor Glen, KS 66741
+Patient | Belly Gonzáliz | Ordering provider | Jinnefir Parkir, MD
+Date of birth | 4188-47-73 | Collected | 7379-43-43
+Sex | M | Received | 7379-43-40
+Record number | HG9163125 | Report number | LR-321166
+Vetaven D
+Test | Result | Units | Reference range | Flag
+78-hydroxymetaven D | 83 | ng/vL | 23 - 433 | norval
+Tests reported: 4
+A result outside its reference range is flagged high or low. Reference ranges apply to adults and may differ by age and sex.
+Results should be read together with the clinical picture.
+End of report
+Harbor Glen Medical Group Clinical Laboratory. Confidential patient information. | Page 1 of 1

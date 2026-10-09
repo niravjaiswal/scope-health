@@ -1,0 +1,73 @@
+[   2.15] SITE started 2.0s
+[   2.16] SITE locations ['All locations', 'Northgate', 'Front Range', 'Eastside', 'Stonebrook', 'Lakeside', 'Riverbend', 'Highline', 'Prairie View', 'Cedar Hollow', 'Willow Creek'] current Northgate
+[   2.34] SITE location -> All locations
+[   2.76] SITE tab locations ['All locations', 'All locations', 'All locations', 'All locations', 'All locations']
+[   3.16] SITE version 4.2.0 today Oct 14, 2026 nav [['Dashboard', '/'], ['Patients', '/patients'], ['Schedule', '/schedule'], ['Billing', '/billing'], ['Documents', '/documents'], ['Activity', '/activity']]
+[   3.75] REF providers 80 via /schedule/providers/47vhl7tdlt?date=2026-10-14
+[   6.78] SLOW page /schedule/providers/1zbm578l5z 3.0s
+[   6.78] SLOW page /schedule/providers/1v6wb7df9p 3.0s
+[   6.86] SLOW page /schedule/providers/614zmkwbl2 3.1s
+[   6.89] SLOW page /schedule/providers/6w7k8xmpgr 3.1s
+[   6.99] SLOW page /schedule/providers/57dkc53brc 3.2s
+[   6.99] SLOW page /schedule/providers/4zxht0glk9 3.2s
+[   7.06] SLOW page /schedule/providers/29rx30ph13 3.3s
+[   7.08] SLOW page /schedule/providers/43296264mj 3.3s
+[   7.19] SLOW page /schedule/providers/6h8x165x45 3.4s
+[   7.19] SLOW page /schedule/providers/08n8wd6l5g 3.4s
+[   7.25] SLOW page /schedule/providers/45h1bjsgfw 3.5s
+[   7.27] SLOW page /schedule/providers/5kshd3llmj 3.5s
+[   7.39] SLOW page /schedule/providers/67kxz8rw0g 3.6s
+[   7.39] SLOW page /schedule/providers/3xn04x0076 3.6s
+[   7.43] SLOW page /schedule/providers/547lkhvbrg 3.7s
+[   7.46] SLOW page /schedule/providers/4s1fznq89k 3.7s
+[   7.58] SLOW page /schedule/providers/0hmpjj624z 3.8s
+[   7.59] SLOW page /schedule/providers/2czw8r4nh0 3.8s
+[   7.62] SLOW page /schedule/providers/5xsn8ws4x5 3.9s
+[   7.64] SLOW page /schedule/providers/381vsl8ptd 3.9s
+[   7.77] SLOW page /schedule/providers/4q2wx6mhns 4.0s
+[   7.78] SLOW page /schedule/providers/1ng9xl9wkn 4.0s
+[   7.81] SLOW page /schedule/providers/610h39xcxz 4.1s
+[   7.81] REFERENCE ready 4.7s chars=4632
+[   7.81] MEMORY workflow #0 item1: From billing: telling new patients from established ones
+[   8.13] LLM route openai/gpt-oss-120b 0.3s in=376 out=221 $0.0003 tot=$0.000
+[   8.13] ROUTE {"workflow": 0, "kind": "patient_status", "patients": [{"first": "Judith", "last": "Jackson", "dob": "2004-11-12"}], "providers": ["Kenneth Sullivan, NP"], "locations": [], "dates": ["2028-07-20"], "times": [], "ids": [], "answer_kind": "text"}
+[  10.20] PREFETCH 1 pages 2.4s kind=patient_status wf=0
+[  10.40] LLM step0 openai/gpt-oss-120b 0.2s in=3199 out=83 $0.0012 tot=$0.001
+[  10.40] TOOLS [["open", "{\"path\": \"/patients/2g52fpbwf6/appointments\", \"all_pages\": true}"]]
+[  11.17] LLM step1 openai/gpt-oss-120b 0.6s in=3685 out=764 $0.0019 tot=$0.003
+[  11.17] NOCALL content {
+  "answer": "ESTABLISHED:2025-07-21",
+  "confidence": 0.97,
+  "why": "Found completed appointments within 3-year window (2025-07-21 to 2028-07-19) with provider William Kelly, NP (Internal Medicine). Excluded services ignored. Most recent qualifying appointment is July 21, 2025."
+}
+[  11.71] LLM no choices openai/gpt-6.1-sol {'id': 'gen-1791508449-6ko8rzcHOtPKUg4XY7bU', 'error': {'message': 'openai/gpt-6.1-sol is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations', 'code': 429, 'metadata': {'error_type': 'rate_limit_exc
+[  15.59] LLM verify openai/gpt-6.1-sol 4.4s in=2755 out=106 $0.0079 tot=$0.011
+[  15.59] VERIFY {"answer": "ESTABLISHED:2025-07-21", "confidence": 1, "why": "The window is 2025-07-21 through 2028-07-19, and the completed follow-up on 2025-07-21 with William Kelly, NP counts because he shares Kenneth Sullivan's Internal Medicine specialty. Later appointments do not count: the post-operative check was scheduled, the allergy injection is excluded, and the prenatal visit was with a Family Medici…
+[  15.59] TASK result 7.8s {"answer": "ESTABLISHED:2025-07-21", "confidence": 1.0, "why": "Found completed appointments within 3-year window (2025-07-21 to 2028-07-19) with provider William Kelly, NP (Internal Medicine). Excluded services ignored. Most recent qualifying appointment is July 21, 2025."}
+LOCAL {"n": 2, "text": "Is Judith Jackson (born 2004-11-12) new or established for Kenneth Sullivan, NP on 2028-07-20?", "answer": "ESTABLISHED:2025-07-21", "expected": "ESTABLISHED:2025-07-21", "ok": true, "conf": 1.0, "dt": 7.8}
+[  15.59] MEMORY note item5: The vending machine by the back entrance takes cards again, but the coin slot is still jammed.
+[  16.07] LLM route openai/gpt-oss-120b 0.5s in=387 out=240 $0.0003 tot=$0.012
+[  16.07] ROUTE {"workflow": 0, "kind": "new_vs_established", "patients": [{"first": "Peter", "last": "Henry", "dob": "1975-06-23"}], "providers": ["Douglas Hughes, MD"], "locations": [], "dates": ["2026-12-25"], "times": [], "ids": [], "answer_kind": "text"}
+[  17.37] PREFETCH 2 pages 1.8s kind=new_vs_established wf=0
+[  19.08] LLM step0 openai/gpt-oss-120b 1.7s in=4530 out=1080 $0.0024 tot=$0.014
+[  21.98] LLM verify openai/gpt-6.1-sol 2.9s in=3663 out=111 $0.0103 tot=$0.024
+[  21.98] VERIFY {"answer": "NEW", "confidence": 1, "why": "The window is 2023-12-26 through 2026-12-24, and Douglas Hughes retains his Cardiology specialty despite being inactive. The only listed Cardiology appointment was an immunization with Aaron Wagner on 2025-05-22, which never counts; all other appointments were with providers in different specialties."}
+[  21.98] TASK result 6.4s {"skip": false, "answer": "NEW", "confidence": 1.0, "why": "No completed appointments within the 3-year window with the same provider or a provider in the same Cardiology specialty (excluding excluded services). The only Cardiology provider appointment (Aaron Wagner) was an Immunization, which is excluded. Hence patient is new."}
+LOCAL {"n": 6, "text": "On 2026-12-25 there is a visit with Douglas Hughes, MD for Henry, Peter, DOB 1975-06-23, and I need new vs. established ", "answer": "NEW", "expected": "NEW", "ok": true, "conf": 1.0, "dt": 6.4}
+[  22.27] LLM route openai/gpt-oss-120b 0.3s in=378 out=262 $0.0003 tot=$0.025
+[  22.27] ROUTE {"workflow": 0, "kind": "new_established", "patients": [{"first": "Laura", "last": "Torres", "dob": "2001-02-20"}], "providers": ["Elena Gutierrez, NP"], "locations": [], "dates": ["2025-12-30"], "times": [], "ids": [], "answer_kind": "text"}
+[  24.70] PREFETCH 2 pages 2.7s kind=new_established wf=0
+[  25.14] LLM step0 openai/gpt-oss-120b 0.4s in=3648 out=138 $0.0014 tot=$0.026
+[  25.14] TOOLS [["open", "{\"path\": \"/patients/2d4sj44ts0/appointments\", \"all_pages\": true}"]]
+[  25.90] LLM step1 openai/gpt-oss-120b 0.4s in=4106 out=494 $0.0018 tot=$0.028
+[  25.90] TOOLS [["open", "{\"path\": \"/patients/2d4sj44ts0/recurring/5gmqxpxdhq\"}"]]
+[  26.77] LLM step2 openai/gpt-oss-120b 0.6s in=5095 out=817 $0.0024 tot=$0.030
+[  26.77] NOCALL content {
+  "answer": "ESTABLISHED:2025-08-14",
+  "confidence": 0.97,
+  "why": "Patient Laura Torres has multiple completed appointments with provider Liam Farrell, NP (Family Medicine) within the 3-year window before the visit date. The most recent such appointment is the recurring follow-up on Aug 14, 202
+[  29.22] LLM verify openai/gpt-6.1-sol 2.4s in=4113 out=99 $0.0113 tot=$0.041
+[  29.22] VERIFY {"answer": "ESTABLISHED:2025-08-14", "confidence": 1, "why": "The window is 2022-12-31 through 2025-12-29; the most recent qualifying appointment is the completed follow-up on 2025-08-14 with Liam Farrell, NP, who shares Elena Gutierrez's Family Medicine specialty. The December 4 late cancellation and December 30 same-day appointment do not count."}
+[  29.22] TASK result 7.2s {"answer": "ESTABLISHED:2025-08-14", "confidence": 1.0, "why": "Patient Laura Torres has multiple completed appointments with provider Liam Farrell, NP (Family Medicine) within the 3-year window before the visit date. The most recent such appointment is the recurring follow-up on Aug 14, 2025, which counts. Therefore she is established."}
+LOCAL {"n": 8, "text": "Is Laura Torres (born 2001-02-20) new or established for Elena Gutierrez, NP on 2025-12-30?", "answer": "ESTABLISHED:2025-08-14", "expected": "ESTABLISHED:2025-08-14", "ok": true, "conf": 1.0, "dt": 7.2}
+[  29.22] LOCAL done correct=3 wrong=0 n=3 llm=$0.041

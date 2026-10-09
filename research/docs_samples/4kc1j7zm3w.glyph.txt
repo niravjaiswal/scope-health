@@ -1,0 +1,17 @@
+Harbor Glen Medical Group | LABORATORY REPORT
+Clinical Laboratory, Eastside | Report status: Final
+88 Eastside Dr, Harbor Glen, KS 66741
+Patient | Charles Freeman | Ordering provider | Brian Reed, NP
+Date of birth | 2011-05-05 | Collected | 2026-10-11
+Sex | M | Received | 2026-10-14
+Record number | HG9100058 | Report number | LR-039967
+Iron studies
+Test | Result | Units | Reference range | Flag
+Ferritin | 213 | ng/mL | 20 - 250 | normal
+Serum iron | 78 | ug/dL | 60 - 170 | normal
+Transferrin saturation | 33 | % | 20 - 50 | normal
+Tests reported: 3
+A result outside its reference range is flagged high or low. Reference ranges apply to adults and may differ by age and sex.
+Results should be read together with the clinical picture.
+End of report
+Harbor Glen Medical Group Clinical Laboratory. Confidential patient information. | Page 1 of 1

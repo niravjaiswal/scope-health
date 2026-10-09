@@ -1,0 +1,18 @@
+Harbor Glen Medical Group | LABORATORY REPORT
+Clinical Laboratory, Front Range | Report status: Final
+2200 Larkspur Way, Summit Hollow, CO 80741
+Patient | Marilyn Ortiz | Ordering provider | Harold Larsen, PA
+Date of birth | 2026-04-02 | Collected | 2026-10-11
+Sex | F | Received | 2026-10-14
+Record number | HG6175186 | Report number | LR-039980
+Lipid panel
+Test | Result | Units | Reference range | Flag
+Total cholesterol | 178 | mg/dL | 125 - 200 | normal
+LDL cholesterol | 78 | mg/dL | 50 - 100 | normal
+HDL cholesterol | 91 | mg/dL | 40 - 90 | high
+Triglycerides | 73 | mg/dL | 40 - 150 | normal
+Tests reported: 4
+A result outside its reference range is flagged high or low. Reference ranges apply to adults and may differ by age and sex.
+Results should be read together with the clinical picture.
+End of report
+Harbor Glen Medical Group Clinical Laboratory. Confidential patient information. | Page 1 of 1

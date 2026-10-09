@@ -1,0 +1,18 @@
+Harbor Glen Medical Group | LABORATORY REPORT
+Clinical Laboratory, Eastside | Report status: Final
+88 Eastside Dr, Harbor Glen, KS 66741
+Patient | Bradley Ellis | Ordering provider | Edward Lindqvist, NP
+Date of birth | 1989-09-08 | Collected | 2026-10-14
+Sex | M | Received | 2026-10-14
+Record number | HG9655002 | Report number | LR-039995
+Complete blood count
+Test | Result | Units | Reference range | Flag
+White blood cell count | 6.2 | 10^3/uL | 4.0 - 11.0 | normal
+Hemoglobin | 15.6 | g/dL | 12.0 - 17.0 | normal
+Hematocrit | 40.2 | % | 36.0 - 50.0 | normal
+Platelet count | 199 | 10^3/uL | 150 - 400 | normal
+Tests reported: 4
+A result outside its reference range is flagged high or low. Reference ranges apply to adults and may differ by age and sex.
+Results should be read together with the clinical picture.
+End of report
+Harbor Glen Medical Group Clinical Laboratory. Confidential patient information. | Page 1 of 1

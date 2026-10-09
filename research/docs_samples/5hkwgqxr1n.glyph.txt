@@ -1,0 +1,16 @@
+Harbor Glen Medical Group | LABORATORY REPORT
+Clinical Laboratory, Willow Creek | Report status: Final
+305 Willow Creek Pl, Alder Creek, KS 66752
+Patient | Jesus Voss | Ordering provider | Lawrence Martin, MD
+Date of birth | 1967-09-20 | Collected | 2026-10-11
+Sex | M | Received | 2026-10-14
+Record number | HG8682450 | Report number | LR-039987
+Thyroid panel
+Test | Result | Units | Reference range | Flag
+Thyroid stimulating hormone | 1.32 | mIU/L | 0.40 - 4.00 | normal
+Free T4 | 1.85 | ng/dL | 0.80 - 1.80 | high
+Tests reported: 2
+A result outside its reference range is flagged high or low. Reference ranges apply to adults and may differ by age and sex.
+Results should be read together with the clinical picture.
+End of report
+Harbor Glen Medical Group Clinical Laboratory. Confidential patient information. | Page 1 of 1

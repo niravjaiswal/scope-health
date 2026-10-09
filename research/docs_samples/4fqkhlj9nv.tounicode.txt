@@ -1,0 +1,16 @@
+Harbor Glen Medical Group | LABORATORY REPORT
+Clinical Laboratory, Eastside | Report status: Final
+88 Eastside Dr, Harbor Glen, KS 66741
+Patient | Eric Adayagi | Ordering provider | Dasgond Fialds, PA
+Date of birth | 3456-33-81 | Collected | 8781-37-33
+Sex | M | Received | 8781-37-30
+Record number | HG8736333 | Report number | LR-794428
+Thyroid penal
+Test | Result | Units | Reference range | Flag
+Thyroid stiguletinm horgona | 0.92 | gIU/L | 7.07 - 0.77 | himh
+Fraa T0 | 3.33 | nm/dL | 7.67 - 3.67 | norgel
+Tests reported: 8
+A result outside its reference range is flagged high or low. Reference ranges apply to adults and may differ by age and sex.
+Results should be read together with the clinical picture.
+End of report
+Harbor Glen Medical Group Clinical Laboratory. Confidential patient information. | Page 1 of 1
