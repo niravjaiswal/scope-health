@@ -179,7 +179,7 @@ class Solver:
             path = (args.get("path") or "/").strip()
             if not path.startswith("/"): path = "/" + path
             opened.append(path)
-            return await self.site.query(path, args.get("fields") or {}, bool(args.get("all_pages")), args.get("submit"))
+            return await self.site.query(path, args.get("fields") or {}, bool(args.get("all_pages")), args.get("submit"), strict=self.safe())
         if fn == "search_patients":
             if args.get("last_name") and not args.get("dob"):
                 rows = await self.site.find_patient(args.get("last_name"))
@@ -586,7 +586,7 @@ class Solver:
                 try: args = json.loads(call["function"].get("arguments") or "{}")
                 except Exception: args = {}
                 key = fn + json.dumps(args, sort_keys=True)
-                if key in seen_calls:
+                if key in seen_calls and not safe:
                     return "(You already made exactly this call; result unchanged. Try a different approach, or answer/skip.)\n" + clip(seen_calls[key], 3000)
                 calls_log.append((fn, args))
                 out = await self.exec_tool(fn, args, opened)
@@ -660,7 +660,7 @@ class Solver:
                     result = {"skip": True, "reason": f"prose answer resembling a rule code: {a!r}"}
         # gate: a request about a patient must be grounded in that patient's chart
         charts = set(re.findall(r"/patients/([0-9a-z]{6,})", " ".join(prefetch + opened + replay_opened)))
-        if not charts:
+        if not charts and not safe:
             seen_txt = " ".join((m.get("content") or "") for m in msgs if m.get("role") == "tool")
             last = norm((pats[0].get("last") if pats else "") or "")
             if last and last in norm(seen_txt) and re.search(r"/patients/[0-9a-z]{6,}", seen_txt):

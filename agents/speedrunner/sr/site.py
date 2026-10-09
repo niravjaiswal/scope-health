@@ -319,7 +319,7 @@ class Site:
             return await tab.page.screenshot(type="jpeg", quality=85, full_page=False)
         return await self.use(fn, 10, label="shot " + path)
 
-    async def query(self, path, fields, all_pages=False, submit=None):
+    async def query(self, path, fields, all_pages=False, submit=None, strict=False):
         async def fn(tab):
             await tab.goto(path)
             done, ignored = [], []
@@ -342,6 +342,8 @@ class Site:
                         await loc.fill(v, timeout=2500)
                     done.append(k)
                 except Exception:
+                    if strict:
+                        return f"ERROR setting field {k!r}: not found. Check the field names (SITE MAP lists them)."
                     ignored.append(k)
             note = ("NOTE: these fields do not exist on this page and were ignored: " + ", ".join(ignored) + "\n") if ignored else ""
             clicked = False
