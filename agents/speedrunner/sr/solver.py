@@ -229,8 +229,12 @@ class Solver:
             except Exception as e:
                 return f"ERROR loading rows: {e!r}"[:300]
             hdrs = list(rows[0].keys()) if rows else []
+            capped = len(rows) >= 490 or any(re.search(r"of \d+\+", n or "") and str(len(rows)) in (n or "") for n in notes[-1:])
+            if capped:
+                return (f"WARNING: the list hit its row cap ({len(rows)} rows) so it is INCOMPLETE and any count from it is wrong. "
+                        f"Narrow it with filters (location, provider, status, shorter date range) and run table_compute again. page notes: {notes[-2:]}")
             res = safe_eval(args.get("code") or "len(rows)", rows)
-            return f"rows loaded: {len(rows)}; columns: {hdrs}; page notes: {notes[-2:]}\nfirst rows: {jdump(rows[:3], 900)}\nRESULT: {res}"
+            return f"rows loaded: {len(rows)} (complete); columns: {hdrs}; page notes: {notes[-2:]}\nfirst rows: {jdump(rows[:3], 900)}\nRESULT: {res}"
         return ""
 
     @staticmethod
@@ -309,10 +313,10 @@ class Solver:
             self.doc_futs.pop(path, None)
             return f"ERROR {e!r}"[:200]
 
-    async def _read_doc(self, path, hint=""):
+    async def _read_doc(self, path, hint="", background=False):
         t = time.time()
         try:
-            d = await self.site.documents(path)
+            d = await self.site.documents(path, background=background)
         except Exception as e:
             self.doc_futs.pop(path, None)
             return f"ERROR {e!r}"[:200]
@@ -354,7 +358,7 @@ class Solver:
         for sc, path in cands:
             if started >= limit: break
             if path in self.doc_cache or path in self.doc_futs: continue
-            self.doc_futs[path] = asyncio.ensure_future(self._read_doc(path))
+            self.doc_futs[path] = asyncio.ensure_future(self._read_doc(path, background=True))
             started += 1
         if started:
             log(f"SPEC docs started {started}: {[c[1] for c in cands[:limit]]}")
@@ -419,7 +423,10 @@ class Solver:
             log("failfast err", repr(e)[:100])
         plan_key = f"wf{wf_idx}" if wf_idx is not None else kind
 
-        # entity resolution + prefetch
+        # entity resolution + prefetch (provider lookups run concurrently)
+        from .reference import provider_info
+        provs = (route.get("providers") or [])[:4]
+        prov_task = asyncio.ensure_future(asyncio.gather(*[provider_info(self.site, pv) for pv in provs], return_exceptions=True)) if provs else None
         ctx_parts = []
         ids = {}
         pats = route.get("patients") or []
@@ -439,12 +446,6 @@ class Solver:
                 pid = m.group(1)
                 if i == 0 and j == 0: ids["pid"] = pid
                 prefetch.append(f"/patients/{pid}")
-                for ap, cnt in sorted(self.plans.get(plan_key, {}).items(), key=lambda x: -x[1])[:8]:
-                    if "{pid}" in ap and cnt >= 1:
-                        prefetch.append(ap.replace("{pid}", pid))
-        for ap, cnt in sorted(self.plans.get(plan_key, {}).items(), key=lambda x: -x[1])[:6]:
-            if "{" not in ap and cnt >= 2:
-                prefetch.append(ap)
         prefetch = list(dict.fromkeys(prefetch))[:10]
         asks_ident = bool(re.search(r"(?i)phone|MRN|record number|member id|insurance id|account number", text) or route.get("answer_kind") == "phone")
         rule_ident = bool(wf_text and re.search(r"(?i)record number|\bMRN\b", wf_text))
@@ -486,10 +487,8 @@ class Solver:
                 calls_log.append((fn, a))
             log(f"REPLAY {plan_key} {len(todo)} calls {time.time()-t_rep:.1f}s")
         # provider facts (specialty, id, status), made salient
-        from .reference import provider_info
         ref = getattr(self.site, "reference", "") or ""
-        provs = (route.get("providers") or [])[:4]
-        infos = await asyncio.gather(*[provider_info(self.site, pv) for pv in provs], return_exceptions=True)
+        infos = (await prov_task) if prov_task is not None else []
         for prov, info in zip(provs, infos):
             pn = norm(re.sub(r",.*$", "", prov))
             hits = [l for l in ref.splitlines() if pn and pn in norm(l)]
@@ -512,7 +511,7 @@ class Solver:
         msgs = [{"role": "system", "content": sys_prompt}, {"role": "user", "content": user}]
         opened = []
         model = self.cfg.get("loop_model", FAST)
-        teacher = wf_idx is not None and not tmpl and self.cfg.get("teacher", True) and self.taught.get(plan_key, 0) < 2
+        teacher = wf_idx is not None and not tmpl and self.cfg.get("teacher", False) and self.taught.get(plan_key, 0) < 1
         if teacher:
             self.taught[plan_key] = self.taught.get(plan_key, 0) + 1
             model = {"model": STRONG["model"], "extra": {}}
@@ -610,13 +609,8 @@ class Solver:
             trust["skipped"] += 1
             log(f"VERIFY skipped (trusted {plan_key}: {trust})")
         if result and not result.get("skip") and wf_idx is not None and self.cfg.get("verify", True) and not trusted and deadline - time.time() <= 4:
-            from .stats import KSTATS
-            if (KSTATS.pace or 4) >= 2.5:
-                deadline = time.time() + 4.5
-                log("VERIFY extension +4.5s")
-            else:
-                log("VERIFY no time -> unverified rule answer, skipping")
-                result["confidence"] = min(float(result.get("confidence") or 0), 0.7)
+            log("VERIFY no time -> accepting unverified rule answer at reduced confidence")
+            result["confidence"] = float(result.get("confidence") or 0) * 0.9
         if result and not result.get("skip") and wf_idx is not None and self.cfg.get("verify", True) and deadline - time.time() > 4 and not trusted:
             trust["skipped"] = 0
             evidence = "\n\n".join(m["content"] for m in msgs[1:] if m.get("role") in ("user", "tool") and m.get("content"))

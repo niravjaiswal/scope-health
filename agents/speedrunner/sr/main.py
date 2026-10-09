@@ -63,10 +63,11 @@ def validate(ans):
 from .stats import KSTATS
 
 
-async def handle_task(item, solver, deadline):
+async def handle_task(item, solver, deadline, hard_end=None):
     t = time.time()
     try:
-        res, info = await asyncio.wait_for(solver.solve(item, deadline), timeout=max(1, deadline - time.time()) + 10)
+        slack = 10.0 if hard_end is None else max(0.5, min(10.0, hard_end - deadline))
+        res, info = await asyncio.wait_for(solver.solve(item, deadline), timeout=max(1, deadline - time.time()) + slack)
     except asyncio.TimeoutError:
         log("TASK timeout"); return None, {"why": "timeout"}
     except Exception as e:
@@ -133,7 +134,7 @@ async def run_queue():
         if budget < 3:
             state = await q.close(it["id"], skip=True); skipped += 1; continue
         t = time.time()
-        ans, res = await handle_task(it, solver, time.time() + budget)
+        ans, res = await handle_task(it, solver, time.time() + budget, hard_end=time.time() + max(1.0, secs_left - 3.0))
         KSTATS.add(KSTATS.key(it.get("_route")), ans is not None, time.time() - t)
         if ans is None:
             state = await q.close(it["id"], skip=True); skipped += 1

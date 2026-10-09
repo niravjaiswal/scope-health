@@ -3,6 +3,7 @@ import asyncio, os, re, time
 from .util import log, now
 from .wf.wf_client import WrenfieldClient, WrenfieldError
 
+SUSP_RE = re.compile(r"account is suspended|cannot use Wrenfield with this account", re.I)
 TRUNC_RE = re.compile(r"is busy, so this list shows fewer|fewer rows than usual|Open it again in a moment", re.I)
 BUSY_RE = re.compile(r"503 Service|Service Temporarily Unavailable|is not responding|Too Many Requests|Bad Gateway", re.I)
 VLINK_RE = re.compile(r"\s*<\/v\/[^>]*>")
@@ -28,6 +29,7 @@ class Site:
         self.probe_budget = int(os.environ.get("PROBES", "8"))
         self.reference = ""
         self.sitemap = ""
+        self.suspended_since = None
 
     # ------------------------------------------------------------------ lifecycle
     async def start(self):
@@ -157,6 +159,17 @@ class Site:
                 txt = f"ERROR {e!r}"[:300]
             dt = time.time() - t
             self.stats["fetch"] += 1; self.stats["time"] += dt
+            if txt and SUSP_RE.search(txt[:600]):
+                self.stats["suspended"] = self.stats.get("suspended", 0) + 1
+                if not self.suspended_since:
+                    self.suspended_since = time.time()
+                log(f"SUSPENDED page {path} attempt={attempt} (since {time.time()-self.suspended_since:.1f}s)")
+                last = "ERROR: the account is temporarily suspended (try again later)"
+                await asyncio.sleep(2.0 + 2.0 * attempt)
+                continue
+            if self.suspended_since and txt and not txt.startswith("ERROR"):
+                log(f"SUSPENSION over after {time.time()-self.suspended_since:.1f}s")
+                self.suspended_since = None
             if txt and not txt.startswith("ERROR") and not (BUSY_RE.search(txt[:400]) and len(txt) < 600):
                 if TRUNC_RE.search(txt) and attempt < retries:
                     self.stats["trunc"] = self.stats.get("trunc", 0) + 1
@@ -265,7 +278,7 @@ class Site:
             log("FIND err", last, repr(e)[:200])
             return []
 
-    async def documents(self, path, want=("pdf",)):
+    async def documents(self, path, want=("pdf",), background=False):
         """One viewer load: page text + PDF (and/or page image) bytes."""
         async def fn(tab):
             await tab.goto(path)
@@ -274,7 +287,7 @@ class Site:
             if not any(f.get("data") for f in files) and "image" not in want:
                 files = await tab.document_files(want=("pdf", "image"))
             return {"text": text, "files": files}
-        return await self.use(fn, 14, label="doc " + path)
+        return await self.use(fn, 14, background=background, label="doc " + path)
 
     async def click_read(self, path, label):
         """Open path, press the button/link whose text matches label, return resulting text + any document files."""
