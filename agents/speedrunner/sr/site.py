@@ -234,6 +234,22 @@ class Site:
                 if not TRUNC_RE.search(txt): break
                 await asyncio.sleep(0.5 + 0.5 * attempt)
                 await tab.goto("/patients?lastName=" + quote(last), fresh=True)
+            # this version may ignore the lastName URL parameter: fall back to the visible search form
+            try:
+                probe_rows = await tab._patient_rows()
+            except Exception:
+                probe_rows = None
+            if probe_rows is None:
+                self.stats["form_fallback"] = self.stats.get("form_fallback", 0) + 1
+                for label in ("Last name", "Surname", "Family name", "Name", "Patient", "Search"):
+                    try:
+                        await tab.fill(label, last)
+                        await tab.submit(field=label)
+                        if await tab._patient_rows() is not None:
+                            log(f"FIND form fallback via {label!r}")
+                            break
+                    except Exception:
+                        continue
             # biggest page size available
             try:
                 for fr in tab.page.frames:

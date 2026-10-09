@@ -760,6 +760,8 @@ class Solver:
             for p in set(opened):
                 ap = abstract_path(p, ids)
                 pl[ap] = pl.get(ap, 0) + 1
+        if pats and not ids.get("pid") and (result is None or result.get("skip")):
+            result = dict(result or {"skip": True, "reason": "patient not resolved"}); result["_nopat"] = True
         return result, {"route": route, "kind": kind, "wf": wf_idx, "opened": opened, "msgs": msgs}
 
 
