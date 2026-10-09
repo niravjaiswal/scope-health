@@ -333,6 +333,67 @@ class Site:
         except Exception as e:
             return f"ERROR {e!r}"[:300]
 
+    async def table_rows(self, path, fields=None, submit=None, max_pages=25):
+        """All rows (dicts keyed by header) of the main table(s) of a list page, after optional filters, across pages."""
+        async def fn(tab):
+            await tab.goto(path)
+            if fields:
+                for k, v in fields.items():
+                    loc = await tab._field(k)
+                    tag = await loc.evaluate("e => e.tagName")
+                    if tag == "SELECT":
+                        try:
+                            await loc.select_option(label=str(v), timeout=2500)
+                        except Exception:
+                            opts = await loc.evaluate("e => [...e.options].map(o => [o.value, o.textContent.trim()])")
+                            m = next((o for o in opts if o[1].lower() == str(v).lower()), None) or next((o for o in opts if str(v).lower() in o[1].lower()), None)
+                            if not m: raise WrenfieldError(f"option {v!r} not in {k!r}")
+                            await loc.select_option(value=m[0], timeout=2500)
+                    else:
+                        await loc.fill(str(v), timeout=2500)
+                clicked = False
+                for bt in ([submit] if submit else []) + ["Apply filters", "Apply", "Show appointments", "Show", "Search", "Find"]:
+                    try:
+                        if bt and await tab._has_enabled_button(bt):
+                            await tab.click_by_text(bt, contains=False, navigate_links=False); clicked = True; break
+                    except Exception:
+                        continue
+                await tab.wait_settled(timeout=8)
+            # largest page size
+            try:
+                for fr in tab.page.frames:
+                    loc = fr.locator('select[name="size"]')
+                    if await loc.count():
+                        opts = await loc.first.evaluate("s => [...s.options].map(o=>o.value)")
+                        best = max(opts, key=lambda v: int(re.sub(r"\D", "", v) or 0))
+                        if best != await loc.first.evaluate("s => s.value"):
+                            await loc.first.select_option(value=best); await asyncio.sleep(0.03); await tab.wait_settled(timeout=8)
+                        break
+            except Exception:
+                pass
+            rows, notes = [], []
+            for page_no in range(max_pages):
+                txt = await tab.text(max_options=0)
+                if TRUNC_RE.search(txt):
+                    notes.append("busy-truncated page")
+                    await asyncio.sleep(0.6); await tab.reload(); continue
+                tbs = await tab.tables()
+                best = max(tbs, key=lambda t: len(t.get("rows") or []), default=None)
+                if best:
+                    hdr = best.get("header") or []
+                    for r in best.get("rows") or []:
+                        cells = r.get("cells") or []
+                        d = {(hdr[i] if i < len(hdr) and hdr[i] else f"col{i}"): c for i, c in enumerate(cells)}
+                        if r.get("links"): d["_links"] = r["links"]
+                        rows.append(d)
+                m = re.search(r"Showing [^\n]*", txt)
+                if m: notes.append(m.group(0)[:80])
+                if not await tab._has_enabled_button("Next"):
+                    break
+                await tab.click_by_text("Next", contains=False, navigate_links=False)
+            return rows, notes
+        return await self.use(fn, 30, label="rows " + path)
+
     # ------------------------------------------------------------------ recon
     def _maybe_probe(self, path):
         pk = re.sub(r"[0-9a-z]{10}", "<id>", path.split("?")[0])

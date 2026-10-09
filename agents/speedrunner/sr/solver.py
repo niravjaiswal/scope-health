@@ -24,6 +24,11 @@ TOOLS = [
             "submit": {"type": "string", "description": "text of the button to press after filling (e.g. 'Open' next to 'Find invoice', 'Apply filters', 'Search', 'Show appointments'); default: the page's main filter/search button"},
             "all_pages": {"type": "boolean"}}, "required": ["path", "fields"]}}},
     {"type": "function", "function": {
+        "name": "table_compute", "description": "For counting/aggregating over a list: loads ALL rows of the list at path (optionally after setting filter fields and pressing submit), across all pages, as `rows` = list of dicts keyed by the table's column headers (plus '_links'), then evaluates your Python expression `code` over `rows` and returns the result. Use it instead of counting by eye. Available: rows, re, Counter, defaultdict, datetime. Example code: len({r['Patient'] for r in rows if r['Status']=='Completed' and 'Test record' not in r['Patient'] and 'Deleted' not in r['Patient']})",
+        "parameters": {"type": "object", "properties": {
+            "path": {"type": "string"}, "fields": {"type": "object"}, "submit": {"type": "string"}, "code": {"type": "string"}},
+            "required": ["path", "code"]}}},
+    {"type": "function", "function": {
         "name": "read_document", "description": "Read a document (lab report, referral letter, outside record...) given its viewer page path from the documents list (e.g. /patients/<id>/documents/<docid>), returning a faithful transcription. Opening a document viewer page with open() also includes the content.",
         "parameters": {"type": "object", "properties": {"path": {"type": "string"}}, "required": ["path"]}}},
     {"type": "function", "function": {
@@ -63,6 +68,8 @@ class Solver:
         self.site = site; self.llm = llm; self.mem = memory; self.cfg = cfg
         self.plans = {}       # kind -> {abstract_path: count}
         self.trust = {}       # plan_key -> verifier agreement record
+        self.replays = {}     # plan_key -> [(tool, templated args)]
+        self.taught = {}
         self.doc_cache = {}
 
     # ------------------------------------------------------------------ router
@@ -140,6 +147,95 @@ class Solver:
             doc = await self.tool_read_document(path)
             txt += "\n\n=== DOCUMENT CONTENT (decoded from the document file) ===\n" + doc
         return txt
+
+    async def exec_tool(self, fn, args, opened):
+        if fn == "open":
+            ps = [p for p in ([args.get("path")] if args.get("path") else []) + list(args.get("paths") or []) if p][:8]
+            opened.extend(ps)
+            outs = await asyncio.gather(*[self.tool_open(p, bool(args.get("all_pages"))) for p in ps])
+            if len(ps) == 1: return outs[0]
+            return "\n\n".join(f"=== PAGE {p} ===\n{clip(o, 9000)}" for p, o in zip(ps, outs))
+        if fn == "query":
+            path = (args.get("path") or "/").strip()
+            if not path.startswith("/"): path = "/" + path
+            opened.append(path)
+            return await self.site.query(path, args.get("fields") or {}, bool(args.get("all_pages")), args.get("submit"))
+        if fn == "search_patients":
+            if args.get("last_name") and not args.get("dob"):
+                rows = await self.site.find_patient(args.get("last_name"))
+            else:
+                rows = await self.site.search(last_name=args.get("last_name"), dob=args.get("dob"))
+            return jdump(rows[:40], 6000) if rows else "No patients match."
+        if fn == "read_document":
+            opened.append(args.get("path", ""))
+            return await self.tool_read_document(args.get("path", ""))
+        if fn == "table_compute":
+            path = (args.get("path") or "/").strip()
+            if not path.startswith("/"): path = "/" + path
+            opened.append(path)
+            try:
+                rows, notes = await self.site.table_rows(path, args.get("fields") or None, args.get("submit"))
+            except Exception as e:
+                return f"ERROR loading rows: {e!r}"[:300]
+            hdrs = list(rows[0].keys()) if rows else []
+            res = safe_eval(args.get("code") or "len(rows)", rows)
+            return f"rows loaded: {len(rows)}; columns: {hdrs}; page notes: {notes[-2:]}\nfirst rows: {jdump(rows[:3], 900)}\nRESULT: {res}"
+        return ""
+
+    @staticmethod
+    def entities(route, ids, text=""):
+        ents = {}
+        tdates = re.findall(r"\b(\d{4}-\d{2}-\d{2})\b", text or "")
+        if ids.get("pid"): ents["pid"] = ids["pid"]
+        pats = route.get("patients") or []
+        if pats:
+            p = pats[0]
+            if p.get("last"): ents["last"] = p["last"]
+            if p.get("first"): ents["first"] = p["first"]
+            d = dob_iso(p.get("dob") or "")
+            if d:
+                ents["dob"] = d
+                ents["dobus"] = f"{d[5:7]}/{d[8:10]}/{d[0:4]}"
+        dob = ents.get("dob")
+        dl = [d for d in tdates if d != dob] or [d for d in (route.get("dates") or []) if re.fullmatch(r"\d{4}-\d{2}-\d{2}", str(d))]
+        for i, d in enumerate(dl[:3]):
+            ents[f"date{i}"] = d
+            ents[f"dateus{i}"] = f"{d[5:7]}/{d[8:10]}/{d[0:4]}"
+        for i, x in enumerate((route.get("ids") or [])[:3]):
+            if str(x).strip(): ents[f"id{i}"] = str(x).strip()
+        for i, x in enumerate((route.get("providers") or [])[:2]):
+            ents[f"prov{i}"] = re.sub(r",.*$", "", str(x)).strip()
+        for i, x in enumerate((route.get("locations") or [])[:2]):
+            ents[f"loc{i}"] = str(x).strip()
+        return {k: v for k, v in ents.items() if v and len(str(v)) >= 2}
+
+    @staticmethod
+    def templatize(obj, ents):
+        items = sorted(ents.items(), key=lambda kv: -len(str(kv[1])))
+        def t(x):
+            if isinstance(x, str):
+                for k, v in items:
+                    x = x.replace(str(v), "{" + k + "}")
+                return x
+            if isinstance(x, dict): return {kk: t(vv) for kk, vv in x.items()}
+            if isinstance(x, list): return [t(vv) for vv in x]
+            return x
+        return t(obj)
+
+    @staticmethod
+    def fill(obj, ents):
+        bad = [False]
+        def f(x):
+            if isinstance(x, str):
+                for k, v in ents.items():
+                    x = x.replace("{" + k + "}", str(v))
+                if re.search(r"\{[a-z]+\d?\}", x): bad[0] = True
+                return x
+            if isinstance(x, dict): return {kk: f(vv) for kk, vv in x.items()}
+            if isinstance(x, list): return [f(vv) for vv in x]
+            return x
+        out = f(obj)
+        return None if bad[0] else out
 
     async def tool_query(self, path, fields, all_pages=False):
         path = (path or "/").strip()
@@ -284,11 +380,40 @@ class Solver:
             vis_task = None
         log(f"PREFETCH {len(prefetch)} pages {time.time()-t0:.1f}s kind={kind} wf={wf_idx}")
 
+        # replay the tool calls that solved earlier tasks of this kind, with this task's entities
+        ents = self.entities(route, ids, text)
+        calls_log = []
+        replay_opened = []
+        tmpl = self.replays.get(plan_key) or []
+        todo = []
+        for fn, targs in tmpl:
+            a = self.fill(targs, ents)
+            if a is None: continue
+            blob = json.dumps(a)
+            if re.search(r"/[0-9a-z]{10}(?=[/?\"]|$)", blob.replace(ents.get("pid", "@@"), "")):
+                continue   # depends on an id discovered at run time
+            todo.append((fn, a))
+        todo = todo[:6]
+        if todo and deadline - time.time() > 4:
+            t1 = time.time()
+            outs = await asyncio.gather(*[self.exec_tool(fn, a, replay_opened) for fn, a in todo], return_exceptions=True)
+            for (fn, a), o in zip(todo, outs):
+                if isinstance(o, Exception): continue
+                ctx_parts.append(f"=== {fn} {json.dumps(a, ensure_ascii=False)} (pre-fetched) ===\n{clip(o or '', 9000)}")
+                calls_log.append((fn, a))
+            log(f"REPLAY {plan_key} {len(todo)} calls {time.time()-t1:.1f}s")
+
         sys_prompt = prompts.solver_system(self.site, self.mem, wf_text)
         user = prompts.solver_user(text, route, "\n\n".join(ctx_parts))
         msgs = [{"role": "system", "content": sys_prompt}, {"role": "user", "content": user}]
         opened = []
         model = self.cfg.get("loop_model", FAST)
+        teacher = wf_idx is not None and not tmpl and self.cfg.get("teacher", True) and self.taught.get(plan_key, 0) < 2
+        if teacher:
+            self.taught[plan_key] = self.taught.get(plan_key, 0) + 1
+            model = {"model": STRONG["model"], "extra": {}}
+            deadline = min(deadline + self.cfg.get("teacher_bonus", 8), t0 + 40)
+            log(f"TEACHER mode for {plan_key}")
         result = None
         nudged = False
         for step in range(self.cfg.get("max_steps", 7)):
@@ -296,7 +421,7 @@ class Solver:
             if left < 2.5:
                 log("STEP budget exhausted"); break
             r = await self.llm.chat(model["model"], msgs, max_tokens=3000, tools=TOOLS, extra=model["extra"],
-                                    reasoning={"effort": self.cfg.get("effort", "medium")}, timeout=min(40, left), tag=f"step{step}")
+                                    reasoning={"effort": "low" if teacher else self.cfg.get("effort", "medium")}, timeout=min(40, left), tag=f"step{step}")
             if not r:
                 break
             m = r["message"]
@@ -317,25 +442,8 @@ class Solver:
                 fn = call["function"]["name"]
                 try: args = json.loads(call["function"].get("arguments") or "{}")
                 except Exception: args = {}
-                if fn == "open":
-                    ps = [p for p in ([args.get("path")] if args.get("path") else []) + list(args.get("paths") or []) if p][:8]
-                    opened.extend(ps)
-                    outs = await asyncio.gather(*[self.tool_open(p, bool(args.get("all_pages"))) for p in ps])
-                    if len(ps) == 1: return outs[0]
-                    return "\n\n".join(f"=== PAGE {p} ===\n{clip(o, 9000)}" for p, o in zip(ps, outs))
-                if fn == "query":
-                    opened.append(args.get("path", ""))
-                    return await self.site.query((args.get("path") or "/").strip() if (args.get("path") or "").startswith("/") else "/" + (args.get("path") or ""), args.get("fields") or {}, bool(args.get("all_pages")), args.get("submit"))
-                if fn == "search_patients":
-                    if args.get("last_name") and not args.get("dob"):
-                        rows = await self.site.find_patient(args.get("last_name"))
-                    else:
-                        rows = await self.site.search(last_name=args.get("last_name"), dob=args.get("dob"))
-                    return jdump(rows[:40], 6000) if rows else "No patients match."
-                if fn == "read_document":
-                    opened.append(args.get("path", ""))
-                    return await self.tool_read_document(args.get("path", ""))
-                return ""
+                calls_log.append((fn, args))
+                return await self.exec_tool(fn, args, opened)
             finals = [c for c in calls if c["function"]["name"] in ("answer", "skip")]
             others = [c for c in calls if c["function"]["name"] not in ("answer", "skip")]
             if finals and not others:
@@ -431,6 +539,21 @@ class Solver:
                     result["confidence"] = min(float(result.get("confidence") or 0), 0.5)
             else:
                 result["confidence"] = float(result.get("confidence") or 0) * 0.9
+        # learn a replay template from the calls that led to an accepted answer
+        try:
+            if result and not result.get("skip") and float(result.get("confidence") or 0) >= 0.75 and calls_log:
+                seen = set(); tl = []
+                for fn, a in calls_log:
+                    ta = self.templatize(a, ents)
+                    k = fn + json.dumps(ta, sort_keys=True)
+                    if k in seen: continue
+                    seen.add(k); tl.append((fn, ta))
+                old = self.replays.get(plan_key) or []
+                merged = old + [x for x in tl if fn_key(x) not in {fn_key(y) for y in old}]
+                self.replays[plan_key] = merged[-8:]
+                log(f"LEARN {plan_key}: {jdump(self.replays[plan_key], 500)}")
+        except Exception as e:
+            log("learn err", repr(e)[:150])
         # learn plan
         if result and not result.get("skip") and opened:
             pl = self.plans.setdefault(plan_key, {})
@@ -438,6 +561,28 @@ class Solver:
                 ap = abstract_path(p, ids)
                 pl[ap] = pl.get(ap, 0) + 1
         return result, {"route": route, "kind": kind, "wf": wf_idx, "opened": opened, "msgs": msgs}
+
+
+def safe_eval(code, rows):
+    import collections, datetime
+    env = {"rows": rows, "re": re, "Counter": collections.Counter, "defaultdict": collections.defaultdict,
+           "datetime": datetime, "len": len, "set": set, "sorted": sorted, "sum": sum, "min": min, "max": max,
+           "any": any, "all": all, "list": list, "dict": dict, "str": str, "int": int, "float": float, "abs": abs,
+           "round": round, "enumerate": enumerate, "zip": zip, "range": range, "tuple": tuple, "print": print}
+    try:
+        try:
+            out = eval(code, {"__builtins__": {}}, env)
+        except SyntaxError:
+            loc = dict(env)
+            exec(code, {"__builtins__": {}}, loc)
+            out = loc.get("result", loc.get("answer"))
+        return repr(out)[:3000]
+    except Exception as e:
+        return f"ERROR in code: {e!r}"[:500]
+
+
+def fn_key(x):
+    return x[0] + json.dumps(x[1], sort_keys=True)
 
 
 def clip(s, n):

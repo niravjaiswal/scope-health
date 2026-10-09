@@ -63,7 +63,7 @@ from .stats import KSTATS
 async def handle_task(item, solver, deadline):
     t = time.time()
     try:
-        res, info = await asyncio.wait_for(solver.solve(item, deadline), timeout=max(1, deadline - time.time()))
+        res, info = await asyncio.wait_for(solver.solve(item, deadline), timeout=max(1, deadline - time.time()) + 10)
     except asyncio.TimeoutError:
         log("TASK timeout"); return None, {"why": "timeout"}
     except Exception as e:

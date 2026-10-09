@@ -1,0 +1,2 @@
+[{"n": 301, "kind": "task", "text": "How many patients had at least one completed visit at Willow Creek on 2026-10-13? Count each person once even if they are registered more than once, and leave out test records and deleted records."},
+ {"n": 302, "kind": "task", "text": "As of now, how many scheduled appointments does Angel Ali, NP have on 2026-10-21 across all locations? Leave out appointments of patients whose record is a test record or has been deleted."}]
