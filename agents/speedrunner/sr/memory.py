@@ -21,8 +21,8 @@ class Memory:
             self.notes.append((n, t))
             log(f"MEMORY note item{n}: {t[:120]}")
 
-    def workflow_titles(self):
-        return [(i, w["n"], w["title"] + (f" — applies to: {w['applies']}" if w.get("applies") else "")) for i, w in enumerate(self.workflows)]
+    def workflow_titles(self, plain=False):
+        return [(i, w["n"], w["title"] + ("" if plain or not w.get("applies") else f" — applies to: {w['applies']}")) for i, w in enumerate(self.workflows)]
 
     async def summarize(self, llm, idx):
         """One-line 'applies when' description of a workflow message (what requests it governs)."""

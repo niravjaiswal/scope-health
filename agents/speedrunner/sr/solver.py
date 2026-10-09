@@ -51,6 +51,9 @@ TOOLS = [
 ]
 
 
+TOOLS_V18 = [t for t in TOOLS if t["function"]["name"] in ("open", "search_patients", "query", "read_document", "answer", "skip")]
+
+
 def norm(s):
     s = unicodedata.normalize("NFKD", s or "")
     return "".join(c for c in s if not unicodedata.combining(c)).casefold().strip()
@@ -84,9 +87,9 @@ class Solver:
         self.doc_cache = {}
 
     # ------------------------------------------------------------------ router
-    async def route(self, text):
-        wf = self.mem.workflow_titles()
-        msgs = [{"role": "system", "content": prompts.ROUTER_SYS},
+    async def route(self, text, safe=False):
+        wf = self.mem.workflow_titles(plain=safe)
+        msgs = [{"role": "system", "content": prompts.ROUTER_SYS_V18 if safe else prompts.ROUTER_SYS},
                 {"role": "user", "content": prompts.router_user(text, wf)}]
         r = await self.llm.chat(FAST["model"], msgs, max_tokens=900, json_mode=True,
                                 reasoning={"effort": "low"}, extra=FAST["extra"], timeout=12, tag="route")
@@ -120,9 +123,10 @@ class Solver:
             c = match(rows)
             if c: return c, rows
         if last:
-            rows = await self.site.find_patient(last, first, dob)
+            kw = {"max_pages": 14, "timeout": 25.0} if self.safe() else {}
+            rows = await self.site.find_patient(last, first, dob, **kw)
             if not match(rows) and " " in last:
-                rows = await self.site.find_patient(last.split()[-1], first, dob)
+                rows = await self.site.find_patient(last.split()[-1], first, dob, **kw)
         return match(rows), rows
 
     async def _unused(self, rows, first, last, dob):
@@ -229,13 +233,26 @@ class Solver:
                 rows, notes = await self.site.table_rows(path, args.get("fields") or None, args.get("submit"))
             except Exception as e:
                 return f"ERROR loading rows: {e!r}"[:300]
-            hdrs = list(rows[0].keys()) if rows else []
+            hdrs = list(dict.fromkeys(k for r in rows for k in r.keys()))
+            if not rows:
+                return (f"0 rows loaded from {path} with fields {args.get('fields')} — the filters may not have been applied or the page has no table. "
+                        f"Do NOT conclude the answer is 0 from this; open the page to check, or use a different view. page notes: {notes[-2:]}")
             capped = len(rows) >= 490 or any(re.search(r"of \d+\+", n or "") and str(len(rows)) in (n or "") for n in notes[-1:])
             if capped:
                 return (f"WARNING: the list hit its row cap ({len(rows)} rows) so it is INCOMPLETE and any count from it is wrong. "
                         f"Narrow it with filters (location, provider, status, shorter date range) and run table_compute again. page notes: {notes[-2:]}")
             res = safe_eval(args.get("code") or "len(rows)", rows)
-            return f"rows loaded: {len(rows)} (complete); columns: {hdrs}; page notes: {notes[-2:]}\nfirst rows: {jdump(rows[:3], 900)}\nRESULT: {res}"
+            import collections as _c
+            summ = {}
+            for h in hdrs:
+                if h == "_links": continue
+                vals = _c.Counter(str(r.get(h, ""))[:40] for r in rows)
+                if 1 < len(vals) <= 12: summ[h] = dict(vals.most_common(12))
+            other = _c.Counter(k for r in rows for k in r if k not in hdrs)
+            return (f"rows loaded: {len(rows)} (complete); columns: {hdrs}; page notes: {notes[-2:]}\n"
+                    f"value counts (check your filter against these): {jdump(summ, 1500)}\n"
+                    f"first rows: {jdump(rows[:3], 900)}\nRESULT of your code: {res}\n"
+                    f"(Make sure the code excluded rows that are not real items, e.g. 'Open slot' rows, and applied the status/date/location the question asks for.)")
         return ""
 
     @staticmethod
@@ -396,7 +413,7 @@ class Solver:
         self._pre = {}
         for dm in ([] if safe else re.findall(r"(?i)(?:born|DOB|date of birth)[^0-9]{0,12}(\d{4}-\d{2}-\d{2})", text)[:2]):
             self._pre[dm] = asyncio.ensure_future(self.site.search(dob=dm))
-        route = await self.route(text)
+        route = await self.route(text, safe=safe)
         log("ROUTE", jdump(route, 500))
         kind = (route.get("kind") or "other").strip().lower()[:60]
         wfs = route.get("workflows")
@@ -454,6 +471,10 @@ class Solver:
                 pid = m.group(1)
                 if i == 0 and j == 0: ids["pid"] = pid
                 prefetch.append(f"/patients/{pid}")
+                if safe:
+                    for ap, cnt in sorted(self.plans.get(plan_key, {}).items(), key=lambda x: -x[1])[:8]:
+                        if "{pid}" in ap and cnt >= 1 and not re.search(r"/[0-9a-z]{10}(?=/|$|\?)", ap.replace("{pid}", "")):
+                            prefetch.append(ap.replace("{pid}", pid))
         prefetch = list(dict.fromkeys(prefetch))[:10]
         asks_ident = bool(re.search(r"(?i)phone|MRN|record number|member id|insurance id|account number", text) or route.get("answer_kind") == "phone")
         rule_ident = bool(wf_text and re.search(r"(?i)record number|\bMRN\b", wf_text))
@@ -515,6 +536,10 @@ class Solver:
 
 
         sys_prompt = prompts.solver_system(self.site, self.mem, wf_text)
+        if safe:
+            sys_prompt = "\n".join(l for l in sys_prompt.split("\n") if not l.startswith("COUNTING:"))
+            sys_prompt = sys_prompt.replace("; things shown as [Button] are in-page actions: use the click tool (never invent URLs).", ".")
+            sys_prompt = re.sub(r"Documents are images/PDFs:.*?one call, parallel\.", "Documents are images/PDFs: opening a document viewer page returns its decoded content (or use read_document on the viewer path).", sys_prompt)
         user = prompts.solver_user(text, route, "\n\n".join(ctx_parts))
         msgs = [{"role": "system", "content": sys_prompt}, {"role": "user", "content": user}]
         opened = []
@@ -532,7 +557,7 @@ class Solver:
             left = deadline - time.time()
             if left < 2.5:
                 log("STEP budget exhausted"); break
-            r = await self.llm.chat(model["model"], msgs, max_tokens=3000, tools=TOOLS, extra=model["extra"],
+            r = await self.llm.chat(model["model"], msgs, max_tokens=3000, tools=(TOOLS_V18 if safe else TOOLS), extra=model["extra"],
                                     reasoning={"effort": "low" if teacher else self.cfg.get("effort", "medium")}, timeout=min(40, left), tag=f"step{step}")
             if not r:
                 break

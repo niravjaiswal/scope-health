@@ -379,7 +379,10 @@ class Site:
             await tab.goto(path)
             if fields:
                 for k, v in fields.items():
-                    loc = await tab._field(k)
+                    try:
+                        loc = await tab._field(k)
+                    except Exception:
+                        raise WrenfieldError(f"no field {k!r} on {path}")
                     tag = await loc.evaluate("e => e.tagName")
                     if tag == "SELECT":
                         try:
