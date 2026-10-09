@@ -1,0 +1,2 @@
+[{"n": 201, "kind": "task", "text": "What's still owed on invoice 03483827 (patient Ryan Carter, service date 2026-10-14), in dollars? Still owed means the amount billed minus the payments received, and a voided invoice owes nothing."},
+ {"n": 202, "kind": "task", "text": "As of now, how much is still owed on invoice 21617829 (patient Astrid Matthews, service date 2026-10-14)? Give the amount in dollars. Still owed means the amount billed minus the payments received, and a voided invoice owes nothing."}]

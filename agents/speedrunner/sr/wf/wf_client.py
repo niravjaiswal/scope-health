@@ -254,9 +254,11 @@ function __wfMakeWalker(maps, opt){
       case 'DL': return dl(el, win);
       case 'DETAILS': if (!el.open) { const su = el.querySelector(':scope > summary'); return su ? ' '+walk(su, win)+' ' : ''; } break;
     }
-    let inner = pseudo(el, win, '::before');
-    for (const k of ordered(el, cs)) inner += walk(k, win);
-    inner += pseudo(el, win, '::after');
+    const pb = pseudo(el, win, '::before'), pa = pseudo(el, win, '::after');
+    let inner = pb;
+    const clipped = (cs.clipPath && cs.clipPath !== 'none') && el.childElementCount===0 && (pb || pa);
+    if (!clipped) { for (const k of ordered(el, cs)) inner += walk(k, win); }
+    inner += pa;
     const role = el.getAttribute('role');
     if (tag==='A' && opt.links) {
       const href = el.getAttribute('href');
@@ -274,7 +276,7 @@ function __wfMakeWalker(maps, opt){
     if (h) return '\n' + '#'.repeat(+h[1]) + ' ' + inner.replace(/\s+/g,' ').trim() + '\n';
     if (tag==='LI') return '\n- ' + inner.trim() + '\n';
     if (tag==='P' || BLOCKD.test(cs.display)) return '\n' + inner + '\n';
-    if (/^inline-(block|flex|grid|table)$/.test(cs.display)) return ' ' + inner + ' ';
+    if (/^inline-(block|flex|grid|table)$/.test(cs.display)) { const t = inner.trim(); if (t.length <= 2 && el.childElementCount===0) return t; return ' ' + inner + ' '; }
     return inner;
   }
   function clean(s){

@@ -280,7 +280,7 @@ class Site:
             return await tab.page.screenshot(type="jpeg", quality=85, full_page=False)
         return await self.use(fn, 10, label="shot " + path)
 
-    async def query(self, path, fields, all_pages=False):
+    async def query(self, path, fields, all_pages=False, submit=None):
         async def fn(tab):
             await tab.goto(path)
             done = []
@@ -305,7 +305,13 @@ class Site:
                 except Exception as e:
                     return f"ERROR setting field {k!r}: {type(e).__name__}. Check the field names (SITE MAP lists them)."
             clicked = False
-            for bt in ("Apply filters", "Apply", "Show appointments", "Show", "Search", "Find", "Filter", "Go", "Submit"):
+            if submit:
+                try:
+                    await tab.click_by_text(submit, contains=True, navigate_links=True); clicked = True
+                    await asyncio.sleep(0.05); await tab.wait_settled(timeout=8)
+                except Exception as e:
+                    return f"ERROR: no button {submit!r} ({type(e).__name__}). Buttons on this page are listed in the SITE MAP."
+            for bt in (() if clicked else ("Apply filters", "Apply", "Show appointments", "Show", "Search", "Find", "Filter", "Go", "Submit")):
                 try:
                     if await tab._has_enabled_button(bt):
                         await tab.click_by_text(bt, contains=False, navigate_links=False); clicked = True; break

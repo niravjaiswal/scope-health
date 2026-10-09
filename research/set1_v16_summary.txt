@@ -1,0 +1,224 @@
+2 ANS CALL_PROVIDER_NOW:Calcium,Creatinine,Potassium | 4.9 | Does the Basic metabolic panel lab report for Anderson, Evelyn (DOB 1981-12-28), received on 2026-01-23, need 
+3 ANS NURSE_REVIEW:1 | 9.4 | Please decide what to do with the Complete blood count lab report received on 2026-09-07 for Christopher Garri
+4 SKIP  | 1.7 | Please decide what to do with the Basic metabolic panel lab report received on 2025-09-25 for Barbara Li.
+6 SKIP  | 10.3 | What happens to the Complete blood count lab report for Adam O'Brien (born 1989-09-06), received 2026-02-11?
+7 SKIP  | 10.0 | Does the Basic metabolic panel lab report for Hunter, Albert (DOB 1929-11-12), received on 2025-10-09, need a 
+8 SKIP  | 0.2 | Does the Complete blood count lab report for Vasquez, Desmond (DOB 2015-04-08), received on 2026-06-21, need a
+9 SKIP  | 11.0 | Does the Complete blood count lab report for Wong, Austin (DOB 2002-10-11), received on 2025-03-04, need a cal
+10 SKIP  | 1.3 | Please decide what to do with the Complete blood count lab report received on 2026-09-30 for Teresa Murphy.
+11 ANS (620) 832-1153 | 3.5 | What phone number do we have on file for patient Abigail Price (born 1952-03-21)?
+12 ANS (620) 595-3889 | 3.8 | What phone number do we have on file for patient Sophia Smith (born 1954-03-03)?
+13 ANS CALL_PROVIDER_NOW:Hemoglobin,Platelet count,White blood cell count | 10.7 | Next step for a lab report: Andres Salazar, Complete blood count, received 2025-01-02.
+14 SKIP  | 0.4 | Please decide what to do with the Complete blood count lab report received on 2026-02-15 for Andrea Wright.
+15 ANS NURSE_REVIEW:2 | 11.2 | Next step for a lab report: Billy Nguyen, Complete blood count, received 2025-07-05.
+17 ANS (620) 686-9022 | 3.5 | What phone number do we have on file for patient Andrea Shaw (born 1984-10-11)?
+18 SKIP  | 0.3 | Next step for a lab report: Matthew Wells, Basic metabolic panel, received 2025-11-20.
+19 ANS 126.20 | 3.9 | What's still owed on invoice 83999703 (patient Henry Wong, service date 2026-03-02), in dollars? Still owed me
+20 ANS (316) 959-1030 | 3.6 | What phone number do we have on file for patient Nicholas Brown (born 2024-10-09)?
+21 SKIP  | 9.8 | What happens to the Complete blood count lab report for Justin Taylor (born 2005-12-12), received 2026-09-30?
+22 SKIP  | 0.3 | As of now, how many scheduled appointments does Amy Fuller, NP have on 2027-01-12 across all locations? Leave 
+23 SKIP  | 10.2 | What happens to the Thyroid panel lab report for Elijah Pérez (born 1970-05-21), received 2025-06-10?
+24 ANS CALL_PROVIDER_NOW:Hemoglobin | 8.9 | Does the Complete blood count lab report for Jackson, George (DOB 2010-07-30), received on 2026-01-10, need a 
+25 SKIP  | 0.2 | Next step for a lab report: Noelle Freeman, Basic metabolic panel, received 2025-03-08.
+26 SKIP  | 11.5 | Please decide what to do with the Complete blood count lab report received on 2026-06-13 for Jose Wheeler.
+27 ANS (785) 429-1408 | 5.0 | What phone number do we have on file for patient Mei Vega (born 1959-08-10)?
+28 ANS Plains Dermatology Associates | 11.1 | Referral letter received on 2024-12-20 for patient Nicole Rodríguez (born 1958-09-27): which practice made the
+29 SKIP  | 0.5 | Next step for a lab report: George García, Complete blood count, received 2026-10-14.
+31 SKIP  | 9.0 | Does the Complete blood count lab report for Young, Colleen (DOB 1970-10-15), received on 2026-07-21, need a c
+32 ANS (719) 631-4553 | 4.4 | What phone number do we have on file for patient Eric Engstrom (born 2013-02-14)?
+33 SKIP  | 0.4 | Does the Complete blood count lab report for Shaw, Julie (DOB 1939-05-15), received on 2026-10-02, need a call
+34 SKIP  | 9.3 | What happens to the Thyroid panel lab report for Emma Howard (born 2011-10-09), received 2026-08-12?
+35 ANS VACCINE:3:2011-06-24 | 7.5 | What should Douglas Walker have gotten for tetanus when they came in with a wound on 2025-09-23?
+36 SKIP  | 0.2 | Does the Basic metabolic panel lab report for Davis, Rosa (DOB 2003-06-17), received on 2025-03-04, need a cal
+37 SKIP  | 8.8 | What should Amy Marshall have gotten for tetanus when they came in with a wound on 2024-10-29?
+38 SKIP  | 0.5 | Doing chart review on wound visits. Mary Turner, DOB 2008-09-03, came in on 2024-11-17. What was due for tetan
+39 ANS NONE:4:2021-05-05 | 7.4 | I want to make sure we got the tetanus part right for Valdez, John (born 2016-04-07), seen 2026-05-05.
+40 SKIP  | 9.7 | What happens to the Complete blood count lab report for Thomas Smith (born 1963-01-07), received 2026-06-25?
+41 ANS (620) 615-7000 | 3.9 | What phone number do we have on file for patient Larry Perry (born 1933-06-24)?
+42 SKIP  | 1.3 | What happens to the Complete blood count lab report for John Coleman (born 1943-01-18), received 2026-05-15?
+43 ANS VACCINE:2:2023-05-02 | 5.2 | I want to make sure we got the tetanus part right for Sanders, Mary (born 1934-08-23), seen 2026-05-22.
+45 ANS NONE:4:2015-09-18 | 7.9 | I want to make sure we got the tetanus part right for Baker, Richard (born 1940-02-14), seen 2025-09-17.
+46 ANS 12 | 9.1 | As of now, how many scheduled appointments does Anthony Smith, DO have on 2026-10-29 across all locations? Lea
+47 ANS RELEASE | 7.3 | Next step for a lab report: Jose Rivera, Complete blood count, received 2026-05-13.
+48 SKIP  | 10.0 | What happens to the Complete blood count lab report for Bradley Owens (born 1955-07-17), received 2025-10-09?
+49 SKIP  | 10.7 | Doing chart review on wound visits. Sofía Hollis, DOB 1993-10-15, came in on 2025-10-14. What was due for teta
+50 SKIP  | 0.2 | What happens to the Complete blood count lab report for Ethan Chavez (born 1980-02-27), received 2025-05-09?
+51 SKIP  | 9.5 | I want to make sure we got the tetanus part right for Jackson, Christopher (born 2021-11-15), seen 2024-08-07.
+52 ANS 4 | 2.4 | As of now, how many scheduled appointments does Vincent Perez, MD have on 2026-11-02 across all locations? Lea
+53 ANS 5 | 1.6 | As of now, how many scheduled appointments does Ana Cruz, NP have on 2026-11-19 across all locations? Leave ou
+54 SKIP  | 0.6 | What happens to the Liver function panel lab report for Karen Lee (born 1961-12-01), received 2026-08-02?
+55 SKIP  | 8.7 | As of now, how many scheduled appointments does Henry Stephens, MD have on 2026-11-02 across all locations? Le
+56 ANS RELEASE | 8.4 | Does the Thyroid panel lab report for Miller, Jessica (DOB 1994-07-28), received on 2025-12-03, need a call to
+57 ANS 7 | 3.9 | As of now, how many scheduled appointments does Bruce Reed, NP have on 2026-11-11 across all locations? Leave 
+58 SKIP  | 8.1 | As of now, how many scheduled appointments does Gary Turner, PA have on 2026-11-09 across all locations? Leave
+59 ANS VACCINE:5:2021-08-05 | 6.8 | Doing chart review on wound visits. Rebecca White, DOB 1970-07-23, came in on 2026-08-06. What was due for tet
+60 SKIP  | 2.9 | Tetanus for Jean García on 2024-11-23: vaccine, vaccine and TIG, or nothing?
+61 SKIP  | 8.1 | As of now, how many scheduled appointments does Bridget Campbell, MD have on 2026-11-02 across all locations? 
+63 ANS 12 | 1.9 | How many open slots are there for Ethan Holmes, NP at Northgate on 2026-11-27? By open slot I mean a bookable 
+64 SKIP  | 0.2 | What happens to the Basic metabolic panel lab report for Noah Martinez (born 1978-07-23), received 2026-10-14?
+65 SKIP  | 10.3 | Tetanus for Priya Mitchell on 2025-08-21: vaccine, vaccine and TIG, or nothing?
+66 SKIP  | 10.2 | What phone number do we have on file for patient Robert Bennett (born 1986-02-11)?
+67 SKIP  | 0.2 | Please decide what to do with the Basic metabolic panel lab report received on 2026-10-02 for Camila Murphy.
+68 SKIP  | 9.4 | How many scheduled appointments does Hannah West, MD have on 2026-11-10, at any location? Leave out appointmen
+69 SKIP  | 8.8 | How many open slots are there for Jesse Morgan, MD at Highline on 2026-12-01? By open slot I mean a bookable t
+70 SKIP  | 0.5 | Please decide what to do with the Basic metabolic panel lab report received on 2026-10-02 for Rebecca Barrett.
+71 SKIP  | 8.8 | As of now, how much is still owed on invoice 42750277 (patient Paul Gray, service date 2026-06-22)? Give the a
+72 SKIP  | 9.0 | How many open slots are there for Samantha Morales, DO at Front Range on 2026-11-01? By open slot I mean a boo
+73 SKIP  | 1.1 | How many open slots are there for Omar Dean, MD at Riverbend on 2026-12-03? By open slot I mean a bookable tim
+74 SKIP  | 8.7 | What phone number do we have on file for patient Brittany Sorensen (born 2020-07-24)?
+75 SKIP  | 0.2 | What happens to the Basic metabolic panel lab report for Emily Harvey (born 2008-06-17), received 2026-08-20?
+77 SKIP  | 9.7 | How many scheduled appointments does Omar Dean, MD have on 2026-12-09, at any location? Leave out appointments
+78 SKIP  | 5.1 | How many patients are left to notify about the recall of lot C482FU1?
+79 SKIP  | 0.2 | Please decide what to do with the Basic metabolic panel lab report received on 2026-05-30 for Omar Peters.
+80 SKIP  | 6.5 | Recall, lot 5NF133C: patients left to notify?
+81 ANS (620) 675-2228 | 3.5 | What phone number do we have on file for patient Brenda Espinoza (born 1975-09-16)?
+82 ANS (620) 830-6743 | 3.5 | What phone number do we have on file for patient Barrett Harper (born 2009-08-12)?
+83 SKIP  | 5.5 | How many completed visits at Cedar Hollow on 2026-07-27 started before 14:00 local time? Leave out appointment
+84 ANS (620) 255-1581 | 3.2 | What phone number do we have on file for patient Gregory Brown (born 1964-06-16)?
+85 SKIP  | 0.4 | How many patients are left to notify about the recall of lot 71KM95J?
+86 SKIP  | 7.6 | Does the Basic metabolic panel lab report for White, Sarah (DOB 1987-11-29), received on 2025-12-02, need a ca
+87 SKIP  | 9.5 | Does the Basic metabolic panel lab report for Cox, Paul (DOB 1963-05-04), received on 2026-05-20, need a call 
+88 SKIP  | 6.9 | Referral letter received on 2024-10-20 for patient Caleb Johnson (born 1967-02-19): which practice made the re
+89 SKIP  | 2.2 | Could you count how many of our patients still haven't been told about the recall of vaccine lot 63XF12L?
+90 SKIP  | 2.2 | We've had a recall notice for vaccine lot 82JG29H. How many patients still need to be told?
+91 ANS VACCINE:0:NONE | 5.3 | Doing chart review on wound visits. James Mills, DOB 1952-03-11, came in on 2026-02-28. What was due for tetan
+92 SKIP  | 0.4 | Does the Basic metabolic panel lab report for Johnson, Sarah (DOB 1987-10-09), received on 2026-03-13, need a 
+93 SKIP  | 0.9 | Could you count how many of our patients still haven't been told about the recall of vaccine lot 5LG140V?
+94 ANS (785) 989-1534 | 3.2 | What phone number do we have on file for patient Robert Maldonado (born 2019-07-25)?
+95 SKIP  | 0.2 | How many open slots are there for Henry Stephens, MD at Cedar Hollow on 2026-11-02? By open slot I mean a book
+97 SKIP  | 1.1 | Recall, lot Y910RG0: patients left to notify?
+98 SKIP  | 0.7 | Could you count how many of our patients still haven't been told about the recall of vaccine lot 36JR47H?
+99 ANS 0.00 | 1.8 | What's still owed on invoice 42986171 (patient Jesus Hudson, service date 2025-07-21), in dollars? Still owed 
+100 ANS (970) 349-3995 | 2.7 | What phone number do we have on file for patient Peter Vargas (born 1964-07-21)?
+101 ANS 12 | 2.4 | How many completed visits did Ana Cruz, NP have on 2026-04-15? Count visits at any location. Leave out appoint
+102 SKIP  | 9.6 | What happens to the Complete blood count lab report for Shirley Smith (born 2012-02-18), received 2026-10-02?
+103 SKIP  | 8.2 | What's still owed on invoice 98820171 (patient Steven Williams, service date 2025-04-22), in dollars? Still ow
+104 SKIP  | 9.4 | Next step for a lab report: Angela Salazar, Complete blood count, received 2026-09-28.
+105 SKIP  | 0.8 | What happens to the Lipid panel lab report for Patricia Butler (born 1983-05-16), received 2025-09-21?
+106 ANS 9 | 5.4 | How many completed visits did Juan Martin, NP have on 2024-12-20? Count visits at any location. Leave out appo
+107 SKIP  | 7.7 | Does the Basic metabolic panel lab report for Johnson, Paul (DOB 2008-12-30), received on 2024-11-18, need a c
+108 SKIP  | 5.8 | Which three providers had the most completed visits across all locations in January 2025? List them with the m
+109 SKIP  | 2.4 | Recall, lot 0PZ245B: patients left to notify?
+110 SKIP  | 0.7 | How many patients are left to notify about the recall of lot N909SJ1?
+111 ANS 53.49 | 3.7 | What's still owed on invoice 99403747 (patient Betty Brown, service date 2026-07-31), in dollars? Still owed m
+112 SKIP  | 1.2 | We've had a recall notice for vaccine lot TF0252R. How many patients still need to be told?
+113 ANS (785) 630-0691 | 2.7 | What phone number do we have on file for patient Shirley Whitaker (born 1958-03-05)?
+114 ANS 15 | 1.8 | How many open slots are there for Samantha Morales, DO at Front Range on 2026-12-21? By open slot I mean a boo
+115 SKIP  | 4.2 | How many patients had at least one completed visit at Willow Creek in August 2025? Count each person once even
+116 ANS Tilden Grove Pediatrics | 2.4 | Referral letter received on 2025-03-18 for patient Joseph Tucker (born 1985-10-13): which practice made the re
+117 ANS 48.36 | 2.1 | What's still owed on invoice 32208721 (patient Abigail Gardner, service date 2025-03-13), in dollars? Still ow
+119 ANS Summit Hollow Cardiology Partners | 2.8 | Referral letter received on 2025-09-28 for patient Michael Kelly (born 2007-12-12): which practice made the re
+121 ANS (785) 386-0709 | 2.7 | What phone number do we have on file for patient Beverly Phillips (born 1941-12-30)?
+122 SKIP  | 4.0 | Next step on claim: Murphy, Samantha, DOB 1933-09-28, service date 2026-03-16
+123 ANS (719) 281-4527 | 3.4 | What phone number do we have on file for patient Colleen Nelson (born 2024-09-16)?
+124 ANS CONTACT_PATIENT | 7.8 | I'm going through the claim for Bradley Johnston with the date of service 2026-06-16. Where does it go from he
+125 ANS Knee pain with suspected meniscal tear | 1.8 | Referral letter received on 2025-10-04 for patient Megan Rodriguez (born 1980-05-17): what reason does it give
+126 SKIP  | 0.7 | We've had a recall notice for vaccine lot D82W70A. How many patients still need to be told?
+127 SKIP  | 9.1 | I'm going through the claim for Harold Wells with the date of service 2026-07-24. Where does it go from here?
+128 SKIP  | 6.9 | What's still owed on invoice 95710771 (patient David Lucas, service date 2025-11-28), in dollars? Still owed m
+129 ANS CONTACT_PATIENT | 5.3 | Next step on claim: Payne, Roger, DOB 1964-04-07, service date 2026-07-16
+130 SKIP  | 5.5 | How many patients have at least one scheduled appointment at Front Range in December 2026? Count each person o
+131 ANS (719) 424-7211 | 3.9 | What phone number do we have on file for patient Michael Young (born 2018-10-07)?
+133 SKIP  | 6.1 | Next step on claim: Lee, Elena, DOB 2023-07-02, service date 2026-08-28
+134 SKIP  | 0.2 | How many patients had at least one completed visit at Northgate in May 2025? Count each person once even if th
+135 ANS 11 | 6.0 | How many scheduled appointments does Anthony Smith, DO have on 2026-11-02, at any location? Leave out appointm
+136 ANS Suspicious skin lesion on the left forearm | 5.2 | Referral letter received on 2025-03-12 for patient Brittany Fields (born 2000-08-29): what reason does it give
+137 SKIP  | 0.3 | Could you look at the claim for Melissa Hill, born 1984-07-17, with the date of service 2026-02-10, and tell m
+138 ANS 9 | 5.0 | How many scheduled appointments does Renee Lopez, MD have on 2026-11-02, at any location? Leave out appointmen
+139 SKIP  | 8.5 | Next step on claim: Jackson, Robert, DOB 2009-02-05, service date 2026-06-04
+140 SKIP  | 0.3 | Could you look at the claim for Gary Kim, born 2022-01-28, with the date of service 2026-03-03, and tell me th
+141 SKIP  | 0.2 | Could you look at the claim for Robert Lee, born 2016-01-22, with the date of service 2026-06-25, and tell me 
+142 ANS BILL_PATIENT:25.00 | 4.0 | What's next for the claim for Doris Ryan, date of service 2025-05-02?
+143 SKIP  | 5.5 | Next step on claim: Morgan, Bruce, DOB 2018-05-09, service date 2026-07-06
+144 ANS Unexplained weight loss | 4.1 | Referral letter received on 2026-09-26 for patient Terry Mason (born 1938-10-04): what reason does it give for
+145 SKIP  | 7.6 | Could you look at the claim for Yuki Thomas, born 2011-03-21, with the date of service 2026-07-09, and tell me
+146 SKIP  | 0.4 | Next step on claim: Arnold, James, DOB 1948-08-27, service date 2026-01-12
+147 ANS RESUBMIT:PROCEDURE_CODE | 4.6 | Next step on claim: Stewart, Harold, DOB 1983-02-27, service date 2026-03-31
+148 ANS CONTACT_PATIENT | 8.2 | Could you look at the claim for Ryan Lewis, born 1988-01-04, with the date of service 2026-03-23, and tell me 
+149 ANS (970) 389-3527 | 4.4 | What phone number do we have on file for patient Joyce Woods (born 1934-12-25)?
+151 SKIP  | 3.0 | How many patients had at least one completed visit at Highline in August 2025? Count each person once even if 
+152 ANS 115.21 | 2.2 | As of now, how much is still owed on invoice 08614187 (patient Joe Franklin, service date 2026-08-03)? Give th
+153 ANS 19 | 2.7 | How many open slots are there for Carlos Chen, NP at Northgate on 2026-12-28? By open slot I mean a bookable t
+154 SKIP  | 0.8 | Could you look at the claim for Fatima Sanchez, born 1985-12-25, with the date of service 2026-02-27, and tell
+155 SKIP  | 6.4 | Anderson, Alexander, DOB 1971-07-30, date of service 2026-08-31. We haven't billed this one yet. What's the de
+156 ANS 2026-12-28 | 6.2 | Khan, Kevin, DOB 2009-11-04, date of service 2026-07-31. We haven't billed this one yet. What's the deadline t
+157 SKIP  | 0.3 | Could you look at the claim for Brenda Burke, born 1947-06-24, with the date of service 2026-05-13, and tell m
+158 SKIP  | 5.4 | Next step on claim: Nguyen, Justin, DOB 1975-10-01, service date 2025-08-04
+159 SKIP  | 3.7 | What's next for the claim for Rachel Riley, date of service 2026-02-23?
+160 SKIP  | 0.2 | Can we still file for Dennis Rivera's visit on 2026-06-04? If so, until when?
+161 SKIP  | 0.3 | Does the Basic metabolic panel lab report for Gibson, Adam (DOB 1995-01-29), received on 2025-12-25, need a ca
+162 ANS 22 | 1.3 | How many open slots are there for Sara Garcia, MD at Cedar Hollow on 2026-12-23? By open slot I mean a bookabl
+163 ANS WRITE_OFF:130.00 | 8.4 | Could you look at the claim for Dorothy García, born 2006-06-30, with the date of service 2026-02-02, and tell
+165 SKIP  | 3.1 | How many patients had at least one completed visit at Willow Creek in November 2025? Count each person once ev
+166 SKIP  | 0.3 | What's next for the claim for Amanda Pruitt, date of service 2026-02-12?
+167 SKIP  | 0.3 | John Rojas, born 2021-12-28, has a visit from 2026-01-09 on the not-yet-filed list. Could you work out the fil
+168 SKIP  | 5.7 | Next step on claim: Bell, Lisa, DOB 1962-02-05, service date 2026-01-28
+169 SKIP  | 0.5 | Next step on claim: Hall, James, DOB 2024-10-11, service date 2026-06-26
+170 ANS WRITE_OFF:175.00 | 7.6 | I'm going through the claim for George Collins with the date of service 2026-01-07. Where does it go from here
+171 SKIP  | 0.2 | Could you look at the claim for Sarah Jimenez, born 2015-12-19, with the date of service 2026-05-11, and tell 
+172 ANS AWAIT_PAYER | 3.2 | What's next for the claim for Katherine Sims, date of service 2026-10-07?
+173 ANS 9 | 4.0 | How many scheduled appointments does Charles James, NP have on 2026-10-26, at any location? Leave out appointm
+174 SKIP  | 4.6 | Can we still file for Astrid Bell's visit on 2026-01-02? If so, until when?
+175 SKIP  | 9.0 | Filing deadline for Kenneth Howell, DOS 2025-12-18?
+177 SKIP  | 1.5 | How many patients are left to notify about the recall of lot 22UP75G?
+178 SKIP  | 8.1 | Jessica Young, born 2016-10-23, has a visit from 2026-06-01 on the not-yet-filed list. Could you work out the 
+179 SKIP  | 0.6 | Filing deadline for Jessica Voss, DOS 2026-01-22?
+180 ANS EXPIRED:8 | 2.9 | Richard Jones, born 1961-07-12, has a visit from 2026-05-15 on the not-yet-filed list. Could you work out the 
+181 ANS Post-fracture rehabilitation | 5.0 | Referral letter received on 2025-05-28 for patient Miguel López (born 1968-02-12): what reason does it give fo
+182 SKIP  | 9.0 | As of now, how much is still owed on invoice 41754548 (patient Robert Farrell, service date 2025-09-08)? Give 
+183 SKIP  | 0.3 | Nancy Williams, born 2021-08-19, has a visit from 2026-02-13 on the not-yet-filed list. Could you work out the
+184 ANS EXPIRED:77 | 8.4 | Shaw, Carlos, DOB 1968-10-24, date of service 2026-03-18. We haven't billed this one yet. What's the deadline 
+185 SKIP  | 0.4 | Filing deadline for Larry Jiménez, DOS 2026-09-24?
+186 SKIP  | 0.2 | I'm going through the claim for María Cole with the date of service 2026-03-18. Where does it go from here?
+187 SKIP  | 9.0 | As of now, how much is still owed on invoice 45138187 (patient David Palmer, service date 2025-11-11)? Give th
+188 SKIP  | 7.5 | As of now, how much is still owed on invoice 09801089 (patient Kevin Campbell, service date 2026-05-13)? Give 
+189 SKIP  | 0.2 | As of now, how much is still owed on invoice 41194885 (patient Teresa Smith, service date 2025-10-07)? Give th
+190 SKIP  | 3.2 | As of now, how much is still owed on invoice 32772942 (patient Cheryl Thompson, service date 2026-07-23)? Give
+191 SKIP  | 0.3 | As of now, how much is still owed on invoice 30997252 (patient Jerry Aguilar, service date 2025-05-19)? Give t
+192 SKIP  | 0.2 | What's still owed on invoice 32908187 (patient Lisa Robinson, service date 2026-03-18), in dollars? Still owed
+193 SKIP  | 0.8 | As of now, how much is still owed on invoice 28228021 (patient Melissa Sánchez, service date 2024-10-27)? Give
+194 SKIP  | 1.1 | As of now, how much is still owed on invoice 53244474 (patient Elliott Ortiz, service date 2025-11-19)? Give t
+195 SKIP  | 0.7 | How many patients have at least one scheduled appointment at Lakeside in December 2026? Count each person once
+196 SKIP  | 0.4 | What's next for the claim for Bobby Torres, date of service 2026-05-08?
+197 SKIP  | 6.1 | How many scheduled appointments does Patrick Yamamoto, PA have on 2026-11-02, at any location? Leave out appoi
+199 ANS NOT_REQUIRED:SHORT_NOTICE | 6.7 | Aaron Mendoza is on the books for 2026-01-08 at 14:45. Do we owe them a good faith estimate, and by when?
+200 ANS Alder Creek Family Practice | 7.0 | Referral letter received on 2026-03-31 for patient William Taylor (born 1969-08-07): which practice made the r
+201 SKIP  | 1.3 | Does the Complete blood count lab report for Jones, William (DOB 1959-02-11), received on 2026-10-01, need a c
+202 SKIP  | 0.3 | How many scheduled appointments does Amy Fuller, NP have on 2026-12-10, at any location? Leave out appointment
+203 SKIP  | 0.3 | What's still owed on invoice 21669274 (patient Janice Bennett, service date 2026-03-24), in dollars? Still owe
+204 SKIP  | 0.3 | Could you look at the claim for Elizabeth Robinson, born 1953-06-14, with the date of service 2025-10-23, and 
+205 SKIP  | 0.2 | How many scheduled appointments does Justin Arnold, MD have on 2026-11-18, at any location? Leave out appointm
+206 SKIP  | 0.2 | Next step for a lab report: Noëlle Martinez, Complete blood count, received 2026-08-26.
+207 SKIP  | 0.4 | What happens to the Complete blood count lab report for Patricia Ramos (born 1980-04-28), received 2026-10-11?
+208 SKIP  | 8.9 | What's still owed on invoice 61629591 (patient Judy Sanders, service date 2026-04-14), in dollars? Still owed 
+209 SKIP  | 0.2 | I'm going through the claim for Dylan Roberts with the date of service 2026-04-23. Where does it go from here?
+210 ANS NOT_REQUIRED:INSURED | 5.9 | Good faith estimate question: Lee, Austin, born 2016-05-05, 08:20 on 2026-10-27. Is one required, and if so, w
+211 SKIP  | 0.2 | Could you look at the claim for Evelyn Green, born 2011-12-29, with the date of service 2026-06-08, and tell m
+213 SKIP  | 0.2 | When is the good faith estimate due for Ronald Lindqvist (DOB 1949-07-11)? Appointment 2025-10-02 11:00.
+214 ANS Chronic cough lasting more than eight weeks | 4.2 | Referral letter received on 2025-02-23 for patient Christina Spencer (born 2014-06-16): what reason does it gi
+215 ANS NOT_REQUIRED:INSURED | 4.6 | Good faith estimate question: Williams, Emma, born 1970-10-16, 13:00 on 2026-05-07. Is one required, and if so
+216 SKIP  | 0.2 | Next step on claim: Morrison, Jennifer, DOB 2024-01-02, service date 2025-12-24
+217 ANS 2026-10-05 | 7.6 | Good faith estimate question: Johnson, Kenneth, born 2004-10-13, 17:00 on 2026-10-22. Is one required, and if 
+218 SKIP  | 0.3 | Bryan George is on the books for 2025-01-16 at 08:20. Do we owe them a good faith estimate, and by when?
+219 SKIP  | 0.3 | When is the good faith estimate due for Keith Ortiz (DOB 1951-06-16)? Appointment 2025-07-29 13:00.
+220 SKIP  | 0.6 | I'm putting together the paperwork for Madison López's 11:20 appointment on 2026-01-09. What's the last day to
+221 SKIP  | 0.2 | Anderson, Patricia, DOB 1954-01-17, date of service 2026-05-29. We haven't billed this one yet. What's the dea
+222 ANS 2025-01-01 | 8.5 | I'm putting together the paperwork for Andrew Stewart's 14:30 appointment on 2025-01-06. What's the last day t
+223 SKIP  | 0.2 | Can we still file for Ana Sanchez's visit on 2026-02-13? If so, until when?
+224 SKIP  | 0.3 | When is the good faith estimate due for Patrick Jones (DOB 2011-03-17)? Appointment 2024-11-27 11:00.
+225 SKIP  | 0.7 | How many patients had at least one completed visit at Eastside in December 2024? Count each person once even i
+226 SKIP  | 0.2 | Patrick Watkins is on the books for 2025-11-17 at 13:00. Do we owe them a good faith estimate, and by when?
+227 SKIP  | 0.2 | Next step on claim: Fisher, Daniel, DOB 1971-08-03, service date 2026-01-21
+228 SKIP  | 0.3 | Could you look at the claim for Patricia Turner, born 2025-07-08, with the date of service 2026-10-09, and tel
+229 SKIP  | 0.7 | What's still owed on invoice 21991556 (patient Jennifer Hutchinson, service date 2025-09-26), in dollars? Stil
+230 ANS (620) 314-7363 | 3.1 | What phone number do we have on file for patient Martha Nelson (born 2019-06-24)?
+231 SKIP  | 0.2 | Next step on claim: Farrell, Robert, DOB 2015-01-04, service date 2026-07-29
+232 SKIP  | 9.5 | Next step on claim: Miller, Barbara, DOB 1976-12-11, service date 2025-07-24
+233 SKIP  | 0.4 | I'm putting together the paperwork for Megan Silva's 13:00 appointment on 2024-12-10. What's the last day to g
+234 SKIP  | 0.2 | What's still owed on invoice 89651037 (patient Brandon Foster, service date 2026-07-02), in dollars? Still owe
+235 SKIP  | 0.2 | How many open slots are there for Cheryl Taylor, MD at Eastside on 2026-12-29? By open slot I mean a bookable 
+236 SKIP  | 0.3 | How many patients had at least one completed visit at Northgate in September 2026? Count each person once even
+237 SKIP  | 0.2 | What's still owed on invoice 23688445 (patient David Hernandez, service date 2026-10-14), in dollars? Still ow
+238 ANS BILL_OTHER:Gold 1000 | 2.3 | Could you look at the claim for Robert Sánchez, born 2017-07-05, with the date of service 2026-04-27, and tell
+239 SKIP  | 0.6 | Could you look at the claim for Dorothy Williams, born 1978-02-11, with the date of service 2025-10-23, and te
+240 SKIP  | None | When is the good faith estimate due for Karen Gibson (DOB 2002-04-28)? Appointment 2026-07-13 16:20.

@@ -21,6 +21,7 @@ TOOLS = [
         "name": "query", "description": "Open a page, set form fields (filters/search boxes/selects, by field name or label as listed in the SITE MAP) and submit; returns the resulting page text (all pages if all_pages=true). Use for filtered lists (appointment list by provider/status/location/date range, invoice search, document type filters, note search, etc.).",
         "parameters": {"type": "object", "properties": {
             "path": {"type": "string"}, "fields": {"type": "object", "description": "field name or label -> value (for selects use the option text)"},
+            "submit": {"type": "string", "description": "text of the button to press after filling (e.g. 'Open' next to 'Find invoice', 'Apply filters', 'Search', 'Show appointments'); default: the page's main filter/search button"},
             "all_pages": {"type": "boolean"}}, "required": ["path", "fields"]}}},
     {"type": "function", "function": {
         "name": "read_document", "description": "Read a document (lab report, referral letter, outside record...) given its viewer page path from the documents list (e.g. /patients/<id>/documents/<docid>), returning a faithful transcription. Opening a document viewer page with open() also includes the content.",
@@ -61,6 +62,7 @@ class Solver:
     def __init__(self, site, llm, memory, cfg):
         self.site = site; self.llm = llm; self.mem = memory; self.cfg = cfg
         self.plans = {}       # kind -> {abstract_path: count}
+        self.trust = {}       # plan_key -> verifier agreement record
         self.doc_cache = {}
 
     # ------------------------------------------------------------------ router
@@ -233,7 +235,8 @@ class Solver:
         for i, (cands, rows) in enumerate(resolved):
             p = pats[i]
             if not cands:
-                ctx_parts.append(f"[patient search for {jdump(p)}: no exact match. Search rows: {jdump(rows[:12], 2500)}]")
+                capped = len(rows) >= 90
+                ctx_parts.append(f"[patient search for {jdump(p)}: no exact match" + ("; the name search is CAPPED (too many patients with this last name), so locate the record through its own section with filters instead: e.g. Documents filtered by type and received date, Claims by date of service, Billing 'Find invoice' + Open, appointment list by date, then follow the patient link" if capped else "") + f". Search rows: {jdump(rows[:8], 1500)}]")
                 continue
             ctx_parts.append(f"[patient search for {jdump(p)} -> candidates: {jdump(cands[:6], 2000)}]")
             for j, c in enumerate(cands[:3]):
@@ -250,6 +253,12 @@ class Solver:
             if "{" not in ap and cnt >= 2:
                 prefetch.append(ap)
         prefetch = list(dict.fromkeys(prefetch))[:10]
+        asks_ident = bool(re.search(r"(?i)phone|MRN|record number|member id|insurance id|account number", text) or route.get("answer_kind") == "phone")
+        rule_ident = bool(wf_text and re.search(r"(?i)record number|\bMRN\b", wf_text))
+        chart_paths = [p for p in prefetch if re.match(r"^/patients/[0-9a-z]+$", p)]
+        vis_task = None
+        if chart_paths and (asks_ident or rule_ident):
+            vis_task = asyncio.ensure_future(self.visual_read(chart_paths[0], "phone number, MRN / record number, member ID"))
         if prefetch:
             texts = await self.site.pages(prefetch)
             for pth, tx in zip(prefetch, texts):
@@ -264,17 +273,15 @@ class Solver:
             hits = [l for l in ref.splitlines() if pn and pn in norm(l)]
             line = info if isinstance(info, str) else (" || ".join(hits[:2]) if hits else None)
             ctx_parts.insert(0, f"[provider directory for {prov}: {line}]" if line else f"[provider directory: no entry found for {prov}]")
-        # identifiers may be drawn with cipher/ligature fonts or as pictures: read them visually
-        asks_ident = bool(re.search(r"(?i)phone|MRN|record number|member id|insurance id|account number", text) or route.get("answer_kind") == "phone")
-        rule_ident = bool(wf_text and re.search(r"(?i)record number|\bMRN\b", wf_text))
-        chart_paths = [p for p in prefetch if re.match(r"^/patients/[0-9a-z]+$", p)]
-        vis_task = None
-        if chart_paths and (asks_ident or rule_ident):
-            vis_task = asyncio.ensure_future(self.visual_read(chart_paths[0], "phone number, MRN / record number, member ID"))
-            if asks_ident:
-                vis = await vis_task; vis_task = None
-                ctx_parts.append(f"=== VISUAL READING of {chart_paths[0]} (screenshot transcription; trust this over the decoded text for phone numbers, MRN and IDs) ===\n{vis}")
+        # identifiers may be drawn with cipher/ligature fonts or as pictures: visual reading (started above) as cross-check
+        if vis_task is not None and asks_ident:
+            try:
+                vis = await asyncio.wait_for(vis_task, timeout=max(1.0, min(8, deadline - time.time() - 3)))
+                ctx_parts.append(f"=== VISUAL READING of {chart_paths[0]} (screenshot transcription; if it disagrees with the decoded text on phone numbers, MRN or IDs, trust the visual reading) ===\n{vis}")
                 log("VISUAL", vis[:300].replace(chr(10), " | "))
+            except Exception as e:
+                log("VISUAL failed", repr(e)[:100])
+            vis_task = None
         log(f"PREFETCH {len(prefetch)} pages {time.time()-t0:.1f}s kind={kind} wf={wf_idx}")
 
         sys_prompt = prompts.solver_system(self.site, self.mem, wf_text)
@@ -318,7 +325,7 @@ class Solver:
                     return "\n\n".join(f"=== PAGE {p} ===\n{clip(o, 9000)}" for p, o in zip(ps, outs))
                 if fn == "query":
                     opened.append(args.get("path", ""))
-                    return await self.tool_query(args.get("path", ""), args.get("fields") or {}, bool(args.get("all_pages")))
+                    return await self.site.query((args.get("path") or "/").strip() if (args.get("path") or "").startswith("/") else "/" + (args.get("path") or ""), args.get("fields") or {}, bool(args.get("all_pages")), args.get("submit"))
                 if fn == "search_patients":
                     if args.get("last_name") and not args.get("dob"):
                         rows = await self.site.find_patient(args.get("last_name"))
@@ -356,8 +363,14 @@ class Solver:
         if result and not result.get("skip") and pats and not charts:
             log("GATE no chart opened for patient request -> skip")
             result = {"skip": True, "reason": "patient chart never opened"}
-        # verification by a stronger model on workflow tasks
-        if result and not result.get("skip") and wf_idx is not None and self.cfg.get("verify", True) and deadline - time.time() > 4:
+        # verification by a stronger model on workflow tasks (skipped once the loop has earned trust on this workflow)
+        trust = self.trust.setdefault(plan_key, {"agree": 0, "disagree": 0, "skipped": 0})
+        trusted = trust["agree"] >= 3 and trust["disagree"] == 0 and trust["skipped"] < 3
+        if result and not result.get("skip") and wf_idx is not None and trusted:
+            trust["skipped"] += 1
+            log(f"VERIFY skipped (trusted {plan_key}: {trust})")
+        if result and not result.get("skip") and wf_idx is not None and self.cfg.get("verify", True) and deadline - time.time() > 4 and not trusted:
+            trust["skipped"] = 0
             evidence = "\n\n".join(m["content"] for m in msgs[1:] if m.get("role") in ("user", "tool") and m.get("content"))
             if vis_task is not None:
                 try:
@@ -402,11 +415,14 @@ class Solver:
             wa = nrm((weak_r or {}).get("answer")) if weak_r else None
             if strong_r is not None:
                 if sa and sa == a1:
+                    trust["agree"] += 1
                     result["confidence"] = max(float(result.get("confidence") or 0), float(strong_r.get("confidence") or 0))
                 elif sa and wa and sa == wa and float(strong_r.get("confidence") or 0) >= 0.8:
+                    trust["disagree"] += 1
                     log("VERIFY override (strong+weak agree)", a1, "->", sa)
                     result = {"answer": strong_r["answer"], "confidence": float(strong_r.get("confidence") or 0) - 0.05, "why": "verifier: " + str(strong_r.get("why"))}
                 else:
+                    trust["disagree"] += 1
                     result["confidence"] = min(float(result.get("confidence") or 0), 0.5)
             elif weak_r is not None:
                 if wa and wa == a1:
