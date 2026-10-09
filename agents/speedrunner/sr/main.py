@@ -12,7 +12,14 @@ CFG = {"max_steps": int(os.environ.get("MAX_STEPS", "7")), "effort": os.environ.
 
 
 async def load_reference(site):
-    from .reference import provider_directory
+    from .reference import provider_directory, site_map
+    t = time.time()
+    try:
+        site.sitemap = await site_map(site)
+        log(f"SITEMAP ready {time.time()-t:.1f}s chars={len(site.sitemap)}")
+        print("SITEMAP " + json.dumps(site.sitemap), flush=True)
+    except Exception as e:
+        log("SITEMAP err", repr(e)[:200])
     t = time.time()
     try:
         site.reference = await provider_directory(site)

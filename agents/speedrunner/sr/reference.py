@@ -46,8 +46,50 @@ async def provider_directory(site):
                         parts = [p.strip() for p in l.split("·")]
                         spec = parts[1] if len(parts) > 2 else spec
                     break
-            rows.append(f"{t} | specialty: {spec or '?'} | {g or ''}")
-        lines.append("=== Provider directory (from Schedule > Provider view; 'Inactive' = left the group, keeps specialty) ===\n" + "\n".join(rows))
+            rows.append(f"{t} | id {v} | specialty: {spec or '?'} | {g or ''}")
+        lines.append(f"=== Provider directory (from Schedule > Provider view; day view of one provider: {base.replace('{id}', '<id>')}?date=YYYY-MM-DD; 'Inactive' = left the group, keeps specialty) ===\n" + "\n".join(rows))
     except Exception as e:
         log("REF providers err", repr(e)[:200])
+    return "\n".join(lines)
+
+
+FORM_JS = """() => { const out=[]; const seen=new Set(); (function s(doc){
+  for (const el of doc.querySelectorAll('input,select,textarea')) {
+    if (el.type === 'hidden' || !el.name || el.name === 'theme') continue; const k = el.name; if (seen.has(k)) continue; seen.add(k);
+    let lab = ''; if (el.labels && el.labels[0]) lab = el.labels[0].innerText.replace(/\\s+/g,' ').trim().slice(0,40); else if (el.getAttribute('aria-label')) lab = el.getAttribute('aria-label');
+    let opts = ''; if (el.tagName === 'SELECT') { const o=[...el.options].map(x=>x.textContent.trim()); opts = ' options(' + o.length + '): ' + o.slice(0,14).join('; ') + (o.length>14?'; ...':''); }
+    out.push((lab ? lab + ' ' : '') + '[' + el.tagName.toLowerCase() + ' name=' + k + (el.type && el.tagName==='INPUT' ? ' type=' + el.type : '') + ']' + opts); }
+  for (const b of doc.querySelectorAll('button')) { const t=(b.innerText||'').replace(/\\s+/g,' ').trim(); if (t && t.length < 30 && !seen.has('btn:'+t)) { seen.add('btn:'+t); out.push('button: ' + t); } }
+  for (const f of doc.querySelectorAll('iframe')) { try { s(f.contentDocument) } catch(e){} } })(document); return out; }"""
+
+
+async def site_map(site):
+    """Compact map of every nav section: sub-links (with ids abstracted) and form fields/buttons."""
+    lines = []
+    navset = set(h for _, h in (site.nav or []))
+    for label, href in (site.nav or []):
+        if not href or href in ("#main",) or "logout" in href or href.endswith("/all"):
+            continue
+        try:
+            async with site.bg_sem:
+                async with site.c.tab() as tab:
+                    await asyncio.wait_for(tab.goto(href), timeout=site.page_timeout)
+                    links = await tab.links()
+                    fields = await tab.page.evaluate(FORM_JS)
+        except Exception as e:
+            lines.append(f"## {label} <{href}>: (failed {type(e).__name__})"); continue
+        pats = []
+        for l in links:
+            h = (l.get("href") or "") if isinstance(l, dict) else (l[1] if isinstance(l, (list, tuple)) and len(l) > 1 else "")
+            t = (l.get("text") or "") if isinstance(l, dict) else (l[0] if isinstance(l, (list, tuple)) else "")
+            h = re.sub(r"^https?://[^/]+", "", h)
+            if not h.startswith("/") or h.startswith("/v/") or h.startswith("/static") or h in navset or h.startswith("/about"):
+                continue
+            ab = re.sub(r"/[0-9a-z]{10}(?=/|$|\?)", "/<id>", h)
+            ab = re.sub(r"=\d{4}-\d{2}-\d{2}", "=YYYY-MM-DD", ab)
+            key = ab
+            if key not in [p[0] for p in pats]:
+                pats.append((key, t.strip()[:40]))
+        sub = "; ".join(f"{t + ' ' if t and '<id>' not in k else ''}<{k}>" for k, t in pats[:30])
+        lines.append(f"## {label} <{href}>\nlinks: {sub}\nform: {' | '.join(fields[:25])}")
     return "\n".join(lines)

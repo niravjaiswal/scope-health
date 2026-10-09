@@ -17,6 +17,11 @@ TOOLS = [
         "parameters": {"type": "object", "properties": {
             "last_name": {"type": "string"}, "dob": {"type": "string"}}}}},
     {"type": "function", "function": {
+        "name": "query", "description": "Open a page, set form fields (filters/search boxes/selects, by field name or label as listed in the SITE MAP) and submit; returns the resulting page text (all pages if all_pages=true). Use for filtered lists (appointment list by provider/status/location/date range, invoice search, document type filters, note search, etc.).",
+        "parameters": {"type": "object", "properties": {
+            "path": {"type": "string"}, "fields": {"type": "object", "description": "field name or label -> value (for selects use the option text)"},
+            "all_pages": {"type": "boolean"}}, "required": ["path", "fields"]}}},
+    {"type": "function", "function": {
         "name": "read_document", "description": "Read a document (lab report, referral letter, outside record...) given its viewer page path from the documents list (e.g. /patients/<id>/documents/<docid>), returning a faithful transcription. Opening a document viewer page with open() also includes the content.",
         "parameters": {"type": "object", "properties": {"path": {"type": "string"}}, "required": ["path"]}}},
     {"type": "function", "function": {
@@ -141,6 +146,53 @@ class Solver:
             txt += "\n\n=== DOCUMENT CONTENT (decoded from the document file) ===\n" + doc
         return txt
 
+    async def tool_query(self, path, fields, all_pages=False):
+        path = (path or "/").strip()
+        if not path.startswith("/"): path = "/" + path
+        async with self.site.sem:
+            async with self.site.c.tab() as tab:
+                try:
+                    await asyncio.wait_for(tab.goto(path), timeout=self.site.page_timeout)
+                    done = []
+                    for k, v in (fields or {}).items():
+                        v = str(v)
+                        try:
+                            loc = await tab._field(k)
+                            tag = await loc.evaluate("e => e.tagName")
+                            if tag == "SELECT":
+                                try:
+                                    await loc.select_option(label=v, timeout=3000)
+                                except Exception:
+                                    opts = await loc.evaluate("e => [...e.options].map(o => [o.value, o.textContent.trim()])")
+                                    m = next((o for o in opts if o[1].lower().startswith(v.lower()) or v.lower() in o[1].lower() or o[0] == v), None)
+                                    if not m: raise
+                                    await loc.select_option(value=m[0], timeout=3000)
+                            else:
+                                await loc.fill(v)
+                            done.append(k)
+                        except Exception as e:
+                            return f"ERROR setting field {k!r}: {type(e).__name__}. Check the field names on this page."
+                    clicked = False
+                    for bt in ("Apply filters", "Apply", "Show appointments", "Show", "Search", "Find", "Filter", "Go", "Submit"):
+                        try:
+                            if await tab._has_enabled_button(bt):
+                                await tab.click_by_text(bt, contains=False, navigate_links=False); clicked = True; break
+                        except Exception:
+                            continue
+                    if not clicked and done:
+                        try:
+                            loc = await tab._field(done[-1]); await loc.press("Enter"); await asyncio.sleep(0.05); await tab.wait_settled()
+                        except Exception:
+                            pass
+                    if all_pages:
+                        pages = await tab.paginate_all(max_pages=20)
+                        txt = "\n\n--- next page ---\n\n".join(pages)
+                    else:
+                        txt = await tab.text()
+                except Exception as e:
+                    return f"ERROR {e!r}"[:300]
+        return re.sub(r"\s*<\/v\/[^>]*>", "", txt)
+
     async def tool_read_document(self, path, hint=""):
         path = (path or "").strip()
         if path.startswith("/v/") and getattr(self, "last_doc_path", None):
@@ -225,6 +277,15 @@ class Solver:
             texts = await self.site.pages(prefetch)
             for pth, tx in zip(prefetch, texts):
                 ctx_parts.append(f"=== PAGE {pth} ===\n{clip(tx, 9000)}")
+        # provider facts from the directory, made salient
+        ref = getattr(self.site, "reference", "") or ""
+        for prov in (route.get("providers") or [])[:4]:
+            pn = norm(re.sub(r",.*$", "", prov))
+            hits = [l for l in ref.splitlines() if pn and pn in norm(l)]
+            if hits:
+                ctx_parts.insert(0, f"[provider directory for {prov}: " + " || ".join(hits[:3]) + "]")
+            elif ref:
+                ctx_parts.insert(0, f"[provider directory: no exact entry for {prov}]")
         # identifiers may be drawn with cipher/ligature fonts or as pictures: read them visually when they look off
         want_ident = re.search(r"(?i)phone|MRN|record number|member id|insurance id|account number", text) or route.get("answer_kind") == "phone"
         chart_paths = [p for p in prefetch if re.match(r"^/patients/[0-9a-z]+$", p)]
@@ -273,6 +334,9 @@ class Solver:
                 if fn == "open":
                     opened.append(args.get("path", ""))
                     return await self.tool_open(args.get("path", ""), bool(args.get("all_pages")))
+                if fn == "query":
+                    opened.append(args.get("path", ""))
+                    return await self.tool_query(args.get("path", ""), args.get("fields") or {}, bool(args.get("all_pages")))
                 if fn == "search_patients":
                     rows = await self.site.search(last_name=args.get("last_name"), dob=args.get("dob"))
                     return jdump(rows[:40], 6000) if rows else "No patients match."

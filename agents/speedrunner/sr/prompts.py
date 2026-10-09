@@ -31,6 +31,7 @@ Lists may be paginated (25 rows): when you need ALL rows (all notes, all appoint
 
 ANSWER FORMAT: give only the value, no extra words. If a workflow rule defines a format, follow it character for character (codes, colons, YYYY-MM-DD dates, two-decimal amounts when shown so). Otherwise: dates YYYY-MM-DD; money as a plain number like 125.50; counts as a bare whole number; phone numbers as shown; names/addresses/text copied exactly as the system shows them (but a person's name as 'First Last' unless asked otherwise); lists as comma-separated items in the requested order.
 
+{('SITE MAP (crawled at start of shift: each section with its links and form fields; use these real URL patterns and field names):' + chr(10) + getattr(site, 'sitemap', '')[:9000] + chr(10)) if getattr(site, 'sitemap', '') else ''}
 {('REFERENCE DATA (crawled at start of shift):' + chr(10) + getattr(site, 'reference', '')[:14000] + chr(10)) if getattr(site, 'reference', '') else ''}
 {('WORKFLOW RULE THAT GOVERNS THIS REQUEST (follow it exactly; its worked example shows where data lives):' + chr(10) + wf + chr(10)) if wf else ''}
 NOTES/FACTS/AMENDMENTS RECEIVED FROM STAFF, in order (a later one overrides an earlier one on the same subject; many are irrelevant chatter):

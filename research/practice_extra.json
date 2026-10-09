@@ -1,0 +1,3 @@
+[{"n": 101, "kind": "task", "text": "As of now, how many scheduled appointments does Angel Ali, NP have on 2026-10-21 across all locations? Leave out appointments of patients whose record is a test record or has been deleted."},
+ {"n": 102, "kind": "task", "text": "How many open slots are there for Diana Anderson, PA at Northgate on 2026-10-14? By open slot I mean a bookable time in the provider's working hours at that location that doesn't overlap any time off or any scheduled or completed appointment."},
+ {"n": 103, "kind": "task", "text": "What's still owed on invoice 42986171 (patient Jesus Hudson, service date 2025-07-21), in dollars? Still owed means the amount billed minus the payments received, and a voided invoice owes nothing."}]
