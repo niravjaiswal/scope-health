@@ -718,6 +718,10 @@ class Solver:
                     return True                      # rule doesn't define a code-style answer set: no constraint
                 if any(p.match(a) for p in fpats):
                     return True
+                # a rule code followed by free text (e.g. CALL_PROVIDER_NOW:Platelet count) is a code answer, not prose
+                head = a.split(":", 1)[0]
+                if ":" in a and any(c.strip().split(":", 1)[0] == head for c in codes):
+                    return True
                 # only reject clear prose / wrong-style answers to a code-style rule
                 return not (re.search(r"[a-z]{2,}", a) and " " in a)
             if not fmt_ok(result.get("answer", "")):
