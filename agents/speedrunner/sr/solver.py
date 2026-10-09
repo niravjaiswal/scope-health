@@ -81,8 +81,13 @@ def all_dates(text):
         out.add((int(y), int(a), int(b))); out.add((int(y), int(b), int(a)))
     for mon, d, y in re.findall(r"\b([A-Za-z]{3,9})\.? (\d{1,2}),? (\d{4})\b", t):
         if mon[:3].lower() in _MON: out.add((int(y), _MON[mon[:3].lower()], int(d)))
-    for d, mon, y in re.findall(r"\b(\d{1,2}) ([A-Za-z]{3,9})\.? (\d{4})\b", t):
+    for d, mon, y in re.findall(r"\b(\d{1,2})[ \-]([A-Za-z]{3,9})\.?[ \-](\d{4})\b", t):
         if mon[:3].lower() in _MON: out.add((int(y), _MON[mon[:3].lower()], int(d)))
+    for y, mon, d in re.findall(r"\b(\d{4}) ([A-Za-z]{3,9})\.? (\d{1,2})\b", t):
+        if mon[:3].lower() in _MON: out.add((int(y), _MON[mon[:3].lower()], int(d)))
+    for a, b, yy in re.findall(r"\b(\d{1,2})[/.\-](\d{1,2})[/.\-](\d{2})\b(?![/.\-]\d)", t):
+        y = 2000 + int(yy) if int(yy) <= 26 else 1900 + int(yy)
+        out.add((y, int(a), int(b))); out.add((y, int(b), int(a)))
     return out
 
 
@@ -134,20 +139,34 @@ class Solver:
             ok_first = not first or norm(rf).split(" ")[0] == norm(first).split(" ")[0] or norm(rf).startswith(norm(first)) or norm(first) in norm(name)
             ok_last = not last or norm(rl) == norm(last) or norm(rl).startswith(norm(last)) or norm(last) in norm(rl) or norm(last) in norm(name)
             return ok_first and ok_last
-        def match(rows):
-            out = []
+        def last_ok(name):
+            nn = norm(name)
+            return bool(last) and (norm(last) in nn or any(len(w) >= 3 and w in nn for w in norm(last).replace("-", " ").split()))
+        def match(rows, from_dob=False):
+            out, undated, surname_only, loose = [], [], [], []
             for r in rows:
                 name = r.get("name") or ""
                 if not name or r.get("capped"): continue
                 row_text = " ".join(str(x) for x in (r.get("cells") or [])) + " " + str(r.get("dob") or "")
-                if name_ok(name) and dob_matches(row_text, dob):
-                    out.append(r)
+                dated_ok = (not dob) or dob_matches(row_text, dob)
+                if name_ok(name):
+                    if dated_ok: out.append(r)
+                    elif not all_dates(row_text): undated.append(r)      # list shows no birth date
+                elif from_dob and dob and dated_ok:
+                    if last_ok(name): surname_only.append(r)               # nickname / different first name
+                    elif first and (norm(first)[:3] in norm(name)): loose.append(r)   # name change, same first name
+            if not out and undated and (from_dob or len(undated) == 1):
+                out = undated[:3]
+            if not out and surname_only:
+                out = surname_only[:2]
+            if not out and len(loose) == 1:
+                out = loose
             return out
         rows = []
         if dob:
             pre = getattr(self, "_pre", {}).get(dob)
             rows = await pre if pre is not None else await self.site.search(dob=dob)
-            c = match(rows)
+            c = match(rows, from_dob=True)
             if c: return c, rows
         if last:
             kw = {"max_pages": 14, "timeout": 25.0} if self.safe() else {}
@@ -169,7 +188,7 @@ class Solver:
                     if not m: continue
                     ctxl = " ".join(lines[max(0, i - 1):i + 3])
                     nm = m.group(1).strip(" -|•")
-                    if name_ok(nm) and dob_matches(ctxl, dob):
+                    if name_ok(nm) and (dob_matches(ctxl, dob) or ("dob=" in pth and not all_dates(ctxl))):
                         c.append({"name": nm, "href": f"/patients/{m.group(2)}", "cells": [ctxl[:200]], "via": "text"})
                 if c:
                     log(f"RESOLVE text-fallback found {len(c)} for {last} {dob}")
