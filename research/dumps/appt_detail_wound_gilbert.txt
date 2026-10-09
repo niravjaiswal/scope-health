@@ -1,0 +1,153 @@
+URL: https://practice.speedrun.scopehealth.com/patients/3t707177xf/appointments/5t59s2rwv0
+TITLE: Gilbert, Gary · Wrenfield
+
+Gilbert, Gary
+MRN
+HG5083295
+Date of birth
+05/27/2019 (7 years)
+Sex
+Male
+Billing
+Invoices
+Demographics
+Insurance
+Problems
+Notes
+Documents
+Appointments
+Activity
+Appointment on Sep 1, 2026
+Close
+Visit
+Date
+Sep 1, 2026
+Time
+8:15 AM to 8:45 AM CDT
+Length
+30 minutes
+Type
+Wound care
+Status
+Completed
+People and place
+Provider
+Valentina Perez, MD
+Location
+Prairie View
+Record
+Reference
+56579262
+Booked
+Aug 27, 2026, 12:45 PM CDT
+Last changed
+Sep 1, 2026, 8:46 AM CDT
+History
+History of this appointment
+When	User	Change
+Aug 27, 2026, 12:45 PM CDT	krussell	Booked
+Sep 1, 2026, 8:46 AM CDT	jbrown	Status changed from 
+Scheduled to 
+Completed
+
+2 entries
+
+Appointments, newest first
+Date and time	Type	Provider	Location	Status
+Nov 24, 2026, 3:30 PM CST	Office visit	Valentina Perez, MD	Prairie View	
+Scheduled
+Nov 11, 2026, 3:30 PM CST	Sick visit	Valentina Perez, MD	Prairie View	
+Scheduled
+Oct 20, 2026, 3:20 PM CDT	Joint injection	Lucas Lopez, NP	Prairie View	
+Scheduled
+Sep 29, 2026, 2:30 PM CDT	Annual physical	Valentina Perez, MD	Prairie View	
+Completed
+Sep 23, 2026, 4:45 PM CDT	Allergy injection	Valentina Perez, MD	Prairie View	
+Completed
+Sep 1, 2026, 8:15 AM CDT	Wound care	Valentina Perez, MD	Prairie View	
+Completed
+Aug 25, 2026, 2:30 PM CDT	Follow-up visit	Valentina Perez, MD	Prairie View	
+Completed
+Jun 29, 2026, 8:20 AM CDT	Follow-up visit	Matthew Lindgren, MD	Prairie View	
+Completed
+Jun 24, 2026, 10:15 AM CDT	Office visit	Valentina Perez, MD	Prairie View	
+Completed
+May 11, 2026, 4:15 PM CDT	Office visit	Valentina Perez, MD	Prairie View	
+Completed
+May 6, 2026, 1:15 PM CDT	Office visit	Katherine Nichols, NP	Prairie View	
+Completed
+Apr 27, 2026, 1:20 PM MDT	Office visit	Liam Farrell, NP	Highline	
+Completed
+Apr 14, 2026, 3:15 PM CDT	Sick visit	Valentina Perez, MD	Prairie View	
+Completed
+Feb 6, 2026, 2:00 PM CST	Telehealth visit	Matthew Lindgren, MD	Prairie View	
+Completed
+Oct 23, 2025, 10:00 AM CDT	New patient visit	Valentina Perez, MD	Prairie View	
+Completed
+Oct 3, 2025, 8:45 AM CDT	Office visit	Valentina Perez, MD	Northgate	
+Completed
+Sep 26, 2025, 4:00 PM CDT	Sick visit	Valentina Perez, MD	Northgate	
+Cancelled
+Sep 10, 2025, 8:00 AM CDT	Specialist consultation	Valentina Perez, MD	Prairie View	
+Completed
+Aug 26, 2025, 3:45 PM CDT	Office visit	Valentina Perez, MD	Prairie View	
+Completed
+Aug 26, 2025, 3:15 PM CDT	Prenatal visit	Valentina Perez, MD	Prairie View	
+Completed
+Aug 15, 2025, 3:00 PM CDT	Annual physical	Valentina Perez, MD	Northgate	
+Completed
+Aug 11, 2025, 9:30 AM CDT	Vision screening	Valentina Perez, MD	Prairie View	
+Completed
+Apr 14, 2025, 1:00 PM CDT	Follow-up visit	Valentina Perez, MD	Prairie View	
+Cancelled
+Mar 31, 2025, 10:15 AM CDT	Follow-up visit	Valentina Perez, MD	Prairie View	
+Late cancel
+Mar 19, 2025, 2:00 PM CDT	Blood pressure check	Valentina Perez, MD	Prairie View	
+Completed
+
+Showing 1 to 25 of 31 appointments
+
+Rows per page
+25 per page
+50 per page
+Previous
+Next
+
+---- INTERACTIVE ----
+[A] 'Invoices' /billing/accounts/3t707177xf  
+[A] 'Demographics' /patients/3t707177xf  
+[A] 'Insurance' /patients/3t707177xf/insurance  
+[A] 'Problems' /patients/3t707177xf/problems  
+[A] 'Notes' /patients/3t707177xf/notes  
+[A] 'Documents' /patients/3t707177xf/documents  
+[A] 'Appointments' /patients/3t707177xf/appointments  page
+[A] 'Activity' /patients/3t707177xf/activity  
+[BUTTON] 'Close'   
+[A] 'Nov 24, 2026, 3:30 PM' /patients/3t707177xf/appointments/3lfp8bb056  
+[A] 'Nov 11, 2026, 3:30 PM' /patients/3t707177xf/appointments/2n1l9qwfsd  
+[A] 'Oct 20, 2026, 3:20 PM' /patients/3t707177xf/appointments/3pkrxq4clw  
+[A] 'Sep 29, 2026, 2:30 PM' /patients/3t707177xf/appointments/2qp7q9160h  
+[A] 'Sep 23, 2026, 4:45 PM' /patients/3t707177xf/appointments/3z8tlrq50t  
+[A] 'Sep 1, 2026, 8:15 AM' /patients/3t707177xf/appointments/5t59s2rwv0  
+[A] 'Aug 25, 2026, 2:30 PM' /patients/3t707177xf/appointments/4f7fv829w9  
+[A] 'Jun 29, 2026, 8:20 AM' /patients/3t707177xf/appointments/4r41wd922d  
+[A] 'Jun 24, 2026, 10:15 AM' /patients/3t707177xf/appointments/44nmmbhf3n  
+[A] 'May 11, 2026, 4:15 PM' /patients/3t707177xf/appointments/44w70z6907  
+[A] 'May 6, 2026, 1:15 PM' /patients/3t707177xf/appointments/747skxn5cr  
+[A] 'Apr 27, 2026, 1:20 PM' /patients/3t707177xf/appointments/3znvqzssb6  
+[A] 'Apr 14, 2026, 3:15 PM' /patients/3t707177xf/appointments/0j94237qqw  
+[A] 'Feb 6, 2026, 2:00 PM' /patients/3t707177xf/appointments/3mjlkpkj1c  
+[A] 'Oct 23, 2025, 10:00 AM' /patients/3t707177xf/appointments/0sz16p6br8  
+[A] 'Oct 3, 2025, 8:45 AM' /patients/3t707177xf/appointments/1nx899nzp6  
+[A] 'Sep 26, 2025, 4:00 PM' /patients/3t707177xf/appointments/37wwks9lgn  
+[A] 'Sep 10, 2025, 8:00 AM' /patients/3t707177xf/appointments/3x2mdww2bb  
+[A] 'Aug 26, 2025, 3:45 PM' /patients/3t707177xf/appointments/537x0wbvzk  
+[A] 'Aug 26, 2025, 3:15 PM' /patients/3t707177xf/appointments/3hdwnc87j4  
+[A] 'Aug 15, 2025, 3:00 PM' /patients/3t707177xf/appointments/4jcwg3g0xn  
+[A] 'Aug 11, 2025, 9:30 AM' /patients/3t707177xf/appointments/3z5qv2sst3  
+[A] 'Apr 14, 2025, 1:00 PM' /patients/3t707177xf/appointments/6tq3szdwjj  
+[A] 'Mar 31, 2025, 10:15 AM' /patients/3t707177xf/appointments/0znx9d3mh2  
+[A] 'Mar 19, 2025, 2:00 PM' /patients/3t707177xf/appointments/50mqmjqlnh  
+[SELECT] '25 per page\n50 per page'  size 
+[BUTTON] 'Previous'   
+[BUTTON] 'Next'   

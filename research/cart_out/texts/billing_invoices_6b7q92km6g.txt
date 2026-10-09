@@ -1,0 +1,21 @@
+URL: /billing/invoices/6b7q92km6g
+LOCATION: Northgate
+
+- Invoices </billing> | - Invoice 82593504
+# Invoice 82593504
+Paid
+Soto, James · Lakeside · Service on Oct 14, 2026
+Patient account </billing/accounts/5htg68sn64>
+Open chart </patients/5htg68sn64>
+## Details
+Patient: Soto, James </patients/5htg68sn64> MRN HG4393156
+Location: Lakeside
+Service date: Oct 14, 2026
+Issued: Oct 14, 2026
+Total: $186.00
+Status: Paid
+## Ledger
+Date | Description | Charges | Payments and adjustments
+Oct 14, 2026 | Charge for services on Oct 14, 2026 | $186.00 |
+Oct 14, 2026 | Payment received | | $186.00
+Amount owed | $0.00

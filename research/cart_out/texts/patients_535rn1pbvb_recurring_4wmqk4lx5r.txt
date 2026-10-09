@@ -1,0 +1,87 @@
+URL: /patients/535rn1pbvb/recurring/4wmqk4lx5r
+LOCATION: Northgate
+
+# Gray, Anna
+MRN: HG8916636
+Date of birth: 11/21/1963 (62 years)
+Sex: Female
+Billing: Invoices </billing/accounts/535rn1pbvb>
+Demographics </patients/535rn1pbvb> | Insurance </patients/535rn1pbvb/insurance> | Problems </patients/535rn1pbvb/problems> | Notes </patients/535rn1pbvb/notes> | Documents </patients/535rn1pbvb/documents> | Appointments </patients/535rn1pbvb/appointments> (current) | Activity </patients/535rn1pbvb/activity>
+## Recurring appointment: Every week on Wednesday at 11:15 [Close]
+## Rule
+Repeats: Every week on Wednesday at 11:15
+Length: 15 minutes
+From: Jun 24, 2026
+Until: Nov 18, 2026
+Type: Anticoagulation check
+Times are local to the location.
+## People and place
+Provider: Mark Sorensen, MD
+Location: Northgate
+Created: Jun 21, 2026, 1:42 PM CDT
+Last changed: Sep 30, 2026, 12:26 PM CDT
+## Changed dates
+Date | Change | Recorded
+Aug 5, 2026 | Cancelled | Jul 24, 2026, 6:34 AM CDT
+Sep 30, 2026 | No-show | Sep 30, 2026, 12:26 PM CDT
+2 changed dates
+## All dates
+Date and time | Status
+Nov 18, 2026, 11:15 AM CST | Scheduled
+Nov 11, 2026, 11:15 AM CST | Scheduled
+Nov 4, 2026, 11:15 AM CST | Scheduled
+Oct 28, 2026, 11:15 AM CDT | Scheduled
+Oct 21, 2026, 11:15 AM CDT | Scheduled
+Oct 14, 2026, 11:15 AM CDT | Scheduled
+Oct 7, 2026, 11:15 AM CDT | Completed
+Sep 30, 2026, 11:15 AM CDT | No-show
+Sep 23, 2026, 11:15 AM CDT | Completed
+Sep 16, 2026, 11:15 AM CDT | Completed
+Sep 9, 2026, 11:15 AM CDT | Completed
+Sep 2, 2026, 11:15 AM CDT | Completed
+Aug 26, 2026, 11:15 AM CDT | Completed
+Aug 19, 2026, 11:15 AM CDT | Completed
+Aug 12, 2026, 11:15 AM CDT | Completed
+Aug 5, 2026, 11:15 AM CDT | Cancelled
+Jul 29, 2026, 11:15 AM CDT | Completed
+Jul 22, 2026, 11:15 AM CDT | Completed
+Jul 15, 2026, 11:15 AM CDT | Completed
+Jul 8, 2026, 11:15 AM CDT | Completed
+Jul 1, 2026, 11:15 AM CDT | Completed
+Jun 24, 2026, 11:15 AM CDT | Completed
+22 dates
+## Recurring appointments
+- Every week on Wednesday at 11:15 </patients/535rn1pbvb/recurring/4wmqk4lx5r>
+Anticoagulation check with Mark Sorensen, MD at Northgate
+Jun 24, 2026 to Nov 18, 2026, 2 changed dates
+1 recurring appointment
+Date and time | Type | Provider | Location | Status
+Nov 30, 2026, 2:30 PM </patients/535rn1pbvb/appointments/6swpqq08f8> CST | Nutrition counseling | Mark Sorensen, MD | Northgate | Scheduled
+Nov 20, 2026, 2:00 PM </patients/535rn1pbvb/appointments/2nqgktfb51> CST | Minor procedure | Mark Sorensen, MD | Northgate | Scheduled
+Oct 23, 2026, 4:15 PM </patients/535rn1pbvb/appointments/126hskmmmm> CDT | X-ray | Mark Sorensen, MD | Northgate | Scheduled
+Oct 7, 2026, 1:00 PM </patients/535rn1pbvb/appointments/6tm3sn6sfz> CDT | Office visit | Mark Sorensen, MD | Northgate | Completed
+Oct 5, 2026, 8:15 AM </patients/535rn1pbvb/appointments/0zrmc0ljn0> CDT | Follow-up visit | Mark Sorensen, MD | Northgate | Cancelled
+Sep 28, 2026, 2:30 PM </patients/535rn1pbvb/appointments/33m6xvh5r9> CDT | Echocardiogram | Mark Sorensen, MD | Northgate | Completed
+Sep 25, 2026, 1:15 PM </patients/535rn1pbvb/appointments/2q4dn6njhg> CDT | Office visit | Mark Sorensen, MD | Northgate | Completed
+Aug 31, 2026, 9:15 AM </patients/535rn1pbvb/appointments/3vh3wvgzdq> CDT | Follow-up visit | Mark Sorensen, MD | Northgate | Cancelled
+Jul 27, 2026, 8:00 AM </patients/535rn1pbvb/appointments/0nl7v5lsqq> CDT | Physical therapy session | Mark Sorensen, MD | Northgate | Completed
+Jul 13, 2026, 11:00 AM </patients/535rn1pbvb/appointments/60hlpkk0bv> CDT | Well-child check | Mark Sorensen, MD | Northgate | Cancelled
+Jul 13, 2026, 10:45 AM </patients/535rn1pbvb/appointments/370vrtt9f8> CDT | Office visit | Mark Sorensen, MD | Northgate | Completed
+Jun 12, 2026, 3:00 PM </patients/535rn1pbvb/appointments/45sr71jp7t> CDT | Office visit | Mark Sorensen, MD | Northgate | Completed
+Jun 8, 2026, 3:45 PM </patients/535rn1pbvb/appointments/40qf03lkws> CDT | Behavioral health session | Mark Sorensen, MD | Northgate | Completed
+Jun 5, 2026, 10:15 AM </patients/535rn1pbvb/appointments/4nlhvh25x8> CDT | Immunization | Mark Sorensen, MD | Northgate | Completed
+May 11, 2026, 10:00 AM </patients/535rn1pbvb/appointments/6rv6mch998> CDT | Diabetes management | Mark Sorensen, MD | Northgate | Completed
+Mar 20, 2026, 3:45 PM </patients/535rn1pbvb/appointments/100hs69t55> CDT | Follow-up visit | Mark Sorensen, MD | Northgate | Completed
+Mar 13, 2026, 11:30 AM </patients/535rn1pbvb/appointments/6p498s02lt> CDT | Ultrasound | Mark Sorensen, MD | Northgate | Completed
+Dec 31, 2025, 3:15 PM </patients/535rn1pbvb/appointments/37zpvbjlnr> CST | Office visit | Mark Sorensen, MD | Northgate | Completed
+Dec 19, 2025, 1:15 PM </patients/535rn1pbvb/appointments/4t8q94zt09> CST | Lab draw | Mark Sorensen, MD | Northgate | Late cancel
+Nov 24, 2025, 2:15 PM </patients/535rn1pbvb/appointments/6bqzl97ln3> CST | Office visit | Mark Sorensen, MD | Northgate | Completed
+Oct 1, 2025, 10:15 AM </patients/535rn1pbvb/appointments/0f7b908wqw> CDT | Prenatal visit | Mark Sorensen, MD | Northgate | Late cancel
+Sep 26, 2025, 11:15 AM </patients/535rn1pbvb/appointments/122d5k2h5q> CDT | Annual physical | Mark Sorensen, MD | Northgate | Completed
+Sep 17, 2025, 11:30 AM </patients/535rn1pbvb/appointments/0nf7pqcqqv> CDT | Office visit | Mark Sorensen, MD | Northgate | Completed
+Sep 17, 2025, 10:15 AM </patients/535rn1pbvb/appointments/5jnb5zw2mt> CDT | Prenatal visit | Mark Sorensen, MD | Northgate | Completed
+Jun 6, 2025, 9:45 AM </patients/535rn1pbvb/appointments/6hs67277mb> CDT | Sick visit | Mark Sorensen, MD | Northgate | Completed
+Showing 1 to 25 of 33 appointments
+[select size = "25 per page" options(2): 25 per page; 50 per page]
+[Previous (disabled)]
+[Next]

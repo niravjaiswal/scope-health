@@ -1,0 +1,182 @@
+URL: /schedule?date=2026-10-14
+LOCATION: Northgate
+
+# Schedule
+Day </schedule?date=2026-10-14> (current) | Provider </schedule/providers/4vqb93p4g9?date=2026-10-14> | Appointment list </schedule/appointments?from=2026-10-14&to=2026-10-20>
+[Previous day]
+[Today (current)]
+[Next day]
+[input date (date) = "2026-10-14"]
+## Wednesday, October 14, 2026
+Northgate · times in CDT
+8:00 AM
+9:00 AM
+10:00 AM
+11:00 AM
+12:00 PM
+1:00 PM
+2:00 PM
+3:00 PM
+4:00 PM
+5:00 PM
+6:00 PM
+7:00 PM
+8:00 PM
+### Diana Anderson, PA </schedule/providers/1x0jb5xxv1?date=2026-10-14>
+8:00 AM to 12:00 PM, 1:00 PM to 5:00 PM
+- 8:00 AM to 8:20 AM Turner, Shirley Completed · Office visit </patients/1z51c6nt6k/appointments/000gz3ss24>
+- 8:00 AM to 9:00 AM Wilson, George Cancelled · Infusion therapy </patients/2z02hsrvb9/appointments/6vhg2s7cz3>
+- Open
+8:20 AM to 8:40 AM
+- Open
+8:40 AM to 9:00 AM
+- 9:00 AM to 9:20 AM Lee, Jonathan Completed · Follow-up visit </patients/1lzxvj88zd/appointments/00fl88nb8t>
+- 9:20 AM to 9:40 AM Vasquez, Jean Completed · Sports physical </patients/5vzzjptxlw/appointments/1l46g5fq5s>
+- 9:40 AM to 10:00 AM Ortega, Robert Completed · Follow-up visit </patients/1xb41ths62/appointments/615thbfj3x>
+- 10:00 AM to 10:15 AM · Late cancel Matthews, Omar </patients/5d7xfdthjt/appointments/3npvpr2qbt>
+- 10:00 AM to 10:40 AM Hudson, Aisha Scheduled · Annual physical </patients/3hdhbsfbq2/appointments/39bjx66468>
+- 10:40 AM to 11:00 AM Murphy, Valentina Scheduled · Sick visit </patients/03q14ndmmd/appointments/6x505m94xc>
+- 11:00 AM to 11:30 AM Russell, Natalie Scheduled · Skin biopsy </patients/728375g94r/appointments/1w6v4vf2w5>
+- 11:20 AM to 11:40 AM Wright, Debra Cancelled · Office visit </patients/07ngwp7x0s/appointments/1gdlz8xnz7>
+- Open
+11:40 AM to 12:00 PM
+- 1:00 PM to 1:20 PM Khan, Garrett Scheduled · Telehealth visit </patients/6s5wtkp362/appointments/42rhfbvx87>
+- Open
+1:20 PM to 1:40 PM
+- Open
+1:40 PM to 2:00 PM
+- Open
+2:00 PM to 2:20 PM
+- Open
+2:20 PM to 2:40 PM
+- Open
+2:40 PM to 3:00 PM
+- Open
+3:00 PM to 3:20 PM
+- 3:20 PM to 4:05 PM Nelson, Thomas Scheduled · Nutrition counseling </patients/51pplkkcs1/recurring/313bv2hbx1>
+- 4:20 PM to 4:40 PM Dixon, Ashley Scheduled · Sick visit </patients/2wwmkfhxhp/appointments/0nm8pctdll>
+- 4:40 PM to 5:00 PM Hernández, Diana Scheduled · Follow-up visit </patients/07bq5915p6/appointments/3gl206z4f6>
+### Desmond Fields, PA </schedule/providers/042xngpx1b?date=2026-10-14>
+8:00 AM to 12:00 PM, 1:00 PM to 5:00 PM
+- 8:00 AM to 8:30 AM Tran, Robert Completed · Smoking cessation counseling </patients/6szfd4wn3d/recurring/31zc3fzlbf>
+- 8:30 AM to 8:50 AM Davis, Virginia Completed · Follow-up visit </patients/2pdn6rb53m/appointments/2g9f15xwwb>
+- Open
+9:00 AM to 9:30 AM
+- 9:30 AM to 10:15 AM Green, Kathleen Scheduled · Physical therapy session </patients/4n066v5brb/recurring/0ffvkkq7nr>
+- Open
+10:30 AM to 11:00 AM
+- 11:00 AM to 11:40 AM Evans, David Scheduled · Specialist consultation </patients/25nh4hczgf/appointments/2cflmj9pqh>
+- 1:00 PM to 1:20 PM Kennedy, Samuel Scheduled · Office visit </patients/231j9bqh96/appointments/3tm38lbp48>
+- 1:00 PM to 1:45 PM Dixon, Susan Late cancel · Echocardiogram </patients/6l07jlmzvr/appointments/5psxmtprzp>
+- 1:30 PM to 2:30 PM Riley, Katherine Scheduled · Stress test </patients/183mf68mh1/appointments/1rtz7hscks>
+- 2:30 PM to 2:50 PM Willis, Joshua Scheduled · Office visit </patients/1vk89wlvpt/appointments/5wf7wx2crv>
+- 3:00 PM to 3:20 PM Allen, Daniel Scheduled · Sick visit </patients/6zbzghmvlp/appointments/5j9mlkndwr>
+- 3:30 PM to 3:50 PM Hayes, Lawrence Scheduled · Office visit </patients/3mnqc0n88z/appointments/4p27lzpp7l>
+- 4:00 PM to 4:20 PM Cook, John Scheduled · Sick visit </patients/16hhh9dmz9/appointments/521hklxbpz>
+- 4:30 PM to 4:50 PM Reyes, Lauren Scheduled · Follow-up visit </patients/1w2xx2mxq8/appointments/2qng8w34f0>
+### Donald Silva, MD </schedule/providers/57dkc53brc?date=2026-10-14>
+11:00 AM to 3:00 PM, 4:00 PM to 8:00 PM
+- Time off · Vacation
+- 1:20 PM to 1:50 PM Owens, Linda Cancelled · Smoking cessation counseling </patients/2w1zn1chdn/recurring/5mpkmh353n>
+- 4:00 PM to 4:15 PM · Cancelled Flores, Lisa </patients/0g979fz42p/recurring/6mk3lg1t28>
+- 6:40 PM to 7:40 PM Johnson, John Cancelled · Infusion therapy </patients/1jhgv608lb/recurring/423wx2pwkl>
+### Mark Sorensen, MD </schedule/providers/4zxht0glk9?date=2026-10-14>
+8:00 AM to 12:00 PM, 1:00 PM to 5:00 PM
+- 8:00 AM to 8:30 AM Wilson, Wayne Completed · Wound care </patients/21p6zv34d3/recurring/49kzhht3ct>
+- 8:30 AM to 8:50 AM Garcia, David No-show · Office visit </patients/3b6b750nt0/appointments/50j3qxxr61>
+- Open
+8:30 AM to 8:45 AM
+- Open
+8:45 AM to 9:00 AM
+- 9:00 AM to 9:20 AM Miller, Elizabeth Completed · Prenatal visit </patients/3fd2gk8r5n/recurring/0wm1b0mw23>
+- 9:15 AM to 9:55 AM Perry, Christine Cancelled · Annual physical </patients/1dvgjvhz7d/appointments/50w68q70xf>
+- Open
+9:30 AM to 9:45 AM
+- 9:45 AM to 10:00 AM · Late cancel Harris, Michael </patients/4xqp60q94x/appointments/4sml828ltr>
+- 9:45 AM to 10:25 AM Perez, Abigail Scheduled · New patient visit </patients/4qzq3f7zl5/appointments/0t3q0qxp3z>
+- 10:00 AM to 10:20 AM Mitchell, Ashley Cancelled · Follow-up visit </patients/6hpq2qsfkb/appointments/71cj1n19xk>
+- 10:30 AM to 10:50 AM Schaefer, Jessica Scheduled · Telehealth visit </patients/5fljr2js6t/appointments/5rn5gw5n9g>
+- Open
+11:00 AM to 11:15 AM
+- 11:15 AM to 11:30 AM · Scheduled Gray, Anna </patients/535rn1pbvb/recurring/4wmqk4lx5r>
+- Open
+11:30 AM to 11:45 AM
+- Open
+11:45 AM to 12:00 PM
+- Open
+1:00 PM to 1:15 PM
+- Open
+1:15 PM to 1:30 PM
+- 1:30 PM to 2:30 PM Anderson, Patricia Scheduled · Infusion therapy </patients/5lws4nxrsr/recurring/4cl1j5sq5v>
+- Open
+2:30 PM to 2:45 PM
+- 2:45 PM to 3:00 PM · Scheduled Turner, Mary </patients/1zlqksddm2/appointments/4l04d2lrtw>
+- 3:00 PM to 3:15 PM · Scheduled Rice, Megan </patients/00t29dq131/appointments/092v8mblvg>
+- Open
+3:15 PM to 3:30 PM
+- 3:30 PM to 3:50 PM Jacobsen, Betty Scheduled · Office visit </patients/0qjcn0vsr2/appointments/191j5t47mr>
+- 3:45 PM to 4:15 PM Moore, Hannah Deleted Cancelled · Smoking cessation counseling </patients/476338vz9r/recurring/4359nxlv3z>
+- Open
+4:00 PM to 4:15 PM
+- 4:15 PM to 5:00 PM Hernández, Judith Cancelled · Physical therapy session </patients/06jj56sm1l/appointments/0bnmwzktvl>
+- Open
+4:15 PM to 4:30 PM
+- Open
+4:30 PM to 4:45 PM
+- Open
+4:45 PM to 5:00 PM
+### Aaron Wagner, MD </schedule/providers/45h1bjsgfw?date=2026-10-14>
+11:00 AM to 3:00 PM, 4:00 PM to 8:00 PM
+- 11:00 AM to 11:20 AM Williams, Mary Scheduled · Follow-up visit </patients/1j01x82b8s/appointments/41g8x6rppt>
+- 11:20 AM to 11:40 AM Nguyen, Donna Scheduled · Follow-up visit </patients/6xr9jl170v/appointments/3wdpd807cg>
+- 11:40 AM to 11:55 AM · Scheduled Moore, Jesse </patients/539cl6rp94/recurring/46s33fz2jc>
+- Open
+12:00 PM to 12:20 PM
+- 12:20 PM to 12:40 PM Vargas, Richard Scheduled · Follow-up visit </patients/3tq61r51x2/appointments/3s727rbq9b>
+- Open
+12:40 PM to 1:00 PM
+- 1:00 PM to 1:20 PM Sandoval, Garrett Scheduled · Prenatal visit </patients/06h771clr3/recurring/2zdrfjqkvk>
+- 1:20 PM to 2:00 PM Wagner, Judith Scheduled · New patient visit </patients/6jl312547c/appointments/0kpb6rs2d7>
+- 2:00 PM to 2:20 PM Hall, Mei Scheduled · Prenatal visit </patients/054pt5h3lc/appointments/3rr9zzgh6n>
+- 2:20 PM to 2:50 PM Young, Robert Scheduled · Diabetes management </patients/160t4d8hd3/appointments/1wgssrqf95>
+- 4:00 PM to 4:15 PM · Scheduled Morris, Patricia </patients/2f5nz6s7xh/recurring/2kkspx1xk4>
+- 4:20 PM to 4:50 PM Anderson, Michael Scheduled · Smoking cessation counseling </patients/3b66t633xt/recurring/465htpjjzd>
+- 5:00 PM to 5:15 PM · Scheduled Mitchell, Jose </patients/0lkjvxb7w7/appointments/4rcnst2gtf>
+- 5:00 PM to 5:20 PM Rice, Megan Cancelled · Office visit </patients/00t29dq131/appointments/0tvn0lvb8v>
+- Open
+5:20 PM to 5:40 PM
+- 5:40 PM to 6:00 PM Jones, Donald Scheduled · Follow-up visit </patients/3qg21db89v/appointments/2mm5nckb2d>
+- Open
+6:00 PM to 6:20 PM
+- 6:20 PM to 6:40 PM Anderson, Michael Scheduled · Office visit </patients/3b66t633xt/appointments/1wdldmpl3b>
+- Open
+6:40 PM to 7:00 PM
+- 7:00 PM to 7:20 PM Graham, Astrid Scheduled · Office visit </patients/3nv20sg2kl/appointments/62qwnjmhhk>
+- 7:20 PM to 7:40 PM Taylor, Michael Scheduled · Follow-up visit </patients/5cpncfr02k/recurring/3t053hztn5>
+- Open
+7:40 PM to 8:00 PM
+### Brenda West, MD </schedule/providers/3xn04x0076?date=2026-10-14>
+8:00 AM to 12:00 PM, 1:00 PM to 5:00 PM
+- Open
+8:00 AM to 8:20 AM
+- 8:20 AM to 9:20 AM Smith, Joyce Completed · Minor procedure </patients/3f800709v2/appointments/0l8b6vqmhs>
+- Open
+9:20 AM to 9:40 AM
+- 9:40 AM to 10:10 AM Ford, John Scheduled · Wound care </patients/5xjqv6d7mf/appointments/1zn5vqpvns>
+- 10:20 AM to 10:50 AM Luna, Ronald Scheduled · Wound care </patients/3n3cj2whx1/appointments/2bfld4h9ks>
+- 11:00 AM to 11:15 AM · Scheduled Rodríguez, Hannah </patients/6sqtnhdpq1/appointments/5qmf7g4kj1>
+- 11:20 AM to 11:40 AM Montgomery, Jeffrey Scheduled · Sick visit </patients/5lv61qbn3p/appointments/61wh27r5jw>
+- 11:40 AM to 11:55 AM · Scheduled Williams, Ashley </patients/6jxgqvx1fk/appointments/4z6vh5rfl4>
+- 1:00 PM to 1:20 PM Martinez, Chloé Scheduled · Follow-up visit </patients/0njj3wftzj/appointments/5hrxm70vlg>
+- 1:20 PM to 1:40 PM Lopez, Betty Scheduled · Telehealth visit </patients/6fm9mh5fnd/appointments/2vz6kqvv6q>
+- 1:40 PM to 1:55 PM · Scheduled Watson, Alexander </patients/612m3gf23m/appointments/3slb0jq2xz>
+- 2:00 PM to 2:15 PM · Scheduled Guzman, Bruce </patients/394h02g1h3/appointments/1hg6qcr4nn>
+- Open
+2:20 PM to 2:40 PM
+- 2:40 PM to 3:00 PM Baker, Mark Scheduled · Telehealth visit </patients/21ffzk38k5/appointments/12xwc6dv40>
+- Open
+3:00 PM to 3:20 PM
+- 3:20 PM to 3:50 PM Ward, Brenda Scheduled · Smoking cessation counseling </patients/293hmb4pwf/recurring/024hlc96rt>
+- 4:00 PM to 4:20 PM Campbell, Hannah Scheduled · Post-operative check </patients/42v2j23f6x/appointments/4x9swt0c72>
+- 4:20 PM to 4:40 PM Salazar, Sharon Scheduled · Follow-up visit </patients/34vjdk1w3l/appointments/0zzqzwlv7l>
+- 4:40 PM to 4:55 PM · Scheduled Wilson, Kathryn </patients/609sr4nznb/recurring/3r1z6j0fft>

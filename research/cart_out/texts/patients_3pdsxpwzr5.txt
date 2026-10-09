@@ -1,0 +1,11 @@
+URL: /patients/3pdsxpwzr5
+LOCATION: Northgate
+
+# This chart is restricted
+MRN HG6232592
+Give a reason to open it. Your request and the reason are recorded, and access ends after a short time.
+Reason for access
+[select reason = "Choose a reason" options(6): Choose a reason; Providing care to this patient; Scheduling an appointment; Billing or insurance question; Request from the patient; Other reason]
+Details (needed for "Other reason")
+[textarea details = ""]
+[Request access]

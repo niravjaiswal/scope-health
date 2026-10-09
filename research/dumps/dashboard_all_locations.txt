@@ -1,0 +1,142 @@
+URL: https://practice.speedrun.scopehealth.com/
+TITLE: Dashboard · Wrenfield
+
+Dashboard
+Oct 14, 2026
+
+Updated 10:00 AM CDT
+
+Appointments today
+
+920
+
+Scheduled
+673
+Completed
+133
+Cancelled
+89
+Late cancel
+20
+No-show
+5
+Open the list
+Patients seen today
+
+132
+
+Patients with a completed appointment
+Completed appointments
+Open slots today
+
+293
+
+Slots in working hours with nothing booked
+Open the day view
+New patients this month
+
+78
+
+Records created since Oct 1, 2026
+Activity
+Documents received this week
+
+175
+
+Oct 12, 2026 to Oct 18, 2026
+Documents
+Invoices issued this week
+
+1,833
+
+Oct 12, 2026 to Oct 18, 2026
+Billing
+Today's schedule
+Day view
+The rest of today's appointments, in time order
+Time	Patient	Provider	Location	Visit type	Status
+10:40 AM to 11:40 AM	Williams, Catherine	Kenneth Sullivan, NP	Highline	Behavioral health session	
+Scheduled
+11:40 AM to 12:40 PM	Hunt, Alexis	Priya Roberts, NP	Lakeside	Stress test	
+Scheduled
+10:40 AM to 11:40 AM	Anderson, Brian 
+Restricted	Liam Farrell, NP	Highline	Infusion therapy	
+Scheduled
+11:00 AM to 11:45 AM	Campbell, Patrick	Garrett Meyer, MD	Cedar Hollow	Nutrition counseling	
+Scheduled
+11:00 AM to 12:00 PM	Hansen, Ronald	Valentina Carroll, MD	Stonebrook	Infusion therapy	
+Scheduled
+11:00 AM to 12:00 PM	Allen, Heather	Walter Guzman, PA	Front Range	Infusion therapy	
+Scheduled
+11:00 AM to 12:00 PM	Vega, Charles 
+Restricted	Lawrence Bennett, MD	Stonebrook	Behavioral health session	
+Scheduled
+11:00 AM to 12:00 PM	Jones, Sara	Susan Herrera, DO	Cedar Hollow	Infusion therapy	
+Scheduled
+
+Showing 8 of 538 appointments
+
+Show more
+Recent activity
+All activity
+Latest activity, newest first
+When	User	What	Record
+Oct 14, 2026, 11:47 AM CDT	frontdesk	Opened the restricted chart. Reason: Billing or insurance question	Chart Porter, Catherine
+Oct 14, 2026, 11:45 AM CDT	frontdesk	Opened the restricted chart. Reason: Billing or insurance question	Chart Campbell, Amanda
+Oct 14, 2026, 11:43 AM CDT	frontdesk	Opened the restricted chart. Reason: Billing or insurance question	Chart Zztest, Dummy
+Oct 14, 2026, 11:43 AM CDT	frontdesk	Opened the restricted chart. Reason: Other reason	Chart Okafor, Bryan
+Oct 14, 2026, 11:34 AM CDT	frontdesk	Opened the restricted chart. Reason: Billing or insurance question	Chart Campbell, Amanda
+Oct 14, 2026, 11:28 AM CDT	frontdesk	Opened the restricted chart. Reason: Billing or insurance question	Chart Lucas, Betty
+Oct 14, 2026, 11:26 AM CDT	frontdesk	Opened the restricted chart. Reason: Scheduling an appointment	Chart Okafor, Bryan
+Oct 14, 2026, 11:10 AM CDT	frontdesk	Opened the restricted chart. Reason: Billing or insurance question	Chart Martínez, Andre
+Oct 14, 2026, 10:52 AM CDT	frontdesk	Opened the restricted chart. Reason: Providing care to this patient	Chart Ramirez, David
+Oct 14, 2026, 10:49 AM CDT	frontdesk	Opened the restricted chart. Reason: Providing care to this patient	Chart Ramirez, David
+
+Showing 1 to 10 of 100+ entries
+
+Previous
+Next
+
+---- INTERACTIVE ----
+[A] 'Scheduled\n673' /schedule/appointments?from=2026-10-14&to=2026-10-14&status=1  
+[A] 'Completed\n133' /schedule/appointments?from=2026-10-14&to=2026-10-14&status=2  
+[A] 'Cancelled\n89' /schedule/appointments?from=2026-10-14&to=2026-10-14&status=3  
+[A] 'Late cancel\n20' /schedule/appointments?from=2026-10-14&to=2026-10-14&status=4  
+[A] 'No-show\n5' /schedule/appointments?from=2026-10-14&to=2026-10-14&status=5  
+[A] 'Open the list' /schedule/appointments?from=2026-10-14&to=2026-10-14  
+[A] 'Completed appointments' /schedule/appointments?from=2026-10-14&to=2026-10-14&status=2  
+[A] 'Open the day view' /schedule?date=2026-10-14  
+[A] 'Activity' /activity  
+[A] 'Documents' /documents  
+[A] 'Billing' /billing  
+[A] 'Day view' /schedule  
+[A] '10:40 AM to 11:40 AM' /patients/3ghc1vgvjp/appointments/166sns3mt7  
+[A] 'Williams, Catherine' /patients/3ghc1vgvjp  
+[A] '11:40 AM to 12:40 PM' /patients/3spdqr0p33/appointments/0vwml4q0d7  
+[A] 'Hunt, Alexis' /patients/3spdqr0p33  
+[A] '10:40 AM to 11:40 AM' /patients/26ld84zx7j/recurring/0qps030jp1  
+[A] 'Anderson, Brian' /patients/26ld84zx7j  
+[A] '11:00 AM to 11:45 AM' /patients/10kv9540kq/recurring/5bvrc532w0  
+[A] 'Campbell, Patrick' /patients/10kv9540kq  
+[A] '11:00 AM to 12:00 PM' /patients/4zn3sg0gdt/appointments/08hrkc8l3j  
+[A] 'Hansen, Ronald' /patients/4zn3sg0gdt  
+[A] '11:00 AM to 12:00 PM' /patients/3bwhfnzwj8/recurring/1hr9tz2vqv  
+[A] 'Allen, Heather' /patients/3bwhfnzwj8  
+[A] '11:00 AM to 12:00 PM' /patients/0vxmfbz3h8/recurring/0jdb21mc5k  
+[A] 'Vega, Charles' /patients/0vxmfbz3h8  
+[A] '11:00 AM to 12:00 PM' /patients/6k1ttv4drx/recurring/626fjptwdt  
+[A] 'Jones, Sara' /patients/6k1ttv4drx  
+[BUTTON] 'Show more'   
+[A] 'All activity' /activity  
+[A] 'Porter, Catherine' /patients/2q123zlg2m/activity  
+[A] 'Campbell, Amanda' /patients/6slgt6ln50/activity  
+[A] 'Zztest, Dummy' /patients/092xbw8h7v/activity  
+[A] 'Okafor, Bryan' /patients/01jcjkmnnk/activity  
+[A] 'Campbell, Amanda' /patients/6slgt6ln50/activity  
+[A] 'Lucas, Betty' /patients/1d0r5gpj4n/activity  
+[A] 'Okafor, Bryan' /patients/01jcjkmnnk/activity  
+[A] 'Martínez, Andre' /patients/3mb3fmvpqf/activity  
+[A] 'Ramirez, David' /patients/3pdsxpwzr5/activity  
+[A] 'Ramirez, David' /patients/28xpx631v1/activity  
+[BUTTON] 'Previous'   
+[BUTTON] 'Next'   

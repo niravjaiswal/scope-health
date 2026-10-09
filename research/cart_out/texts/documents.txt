@@ -1,0 +1,49 @@
+URL: /documents
+LOCATION: Northgate
+
+# Documents
+Referral letters, lab reports, and statements received for patients.
+Type
+[select kind = "All types" options(4): All types; Referral letter; Lab report; Statement]
+Received from
+[input from (date) = ""]
+Received to
+[input to (date) = ""]
+[Apply]
+[Clear filters]
+Patient
+[input patient = "" placeholder="Last name or date of birth"]
+[Find]
+[Received] | Type | Title | Patient |
+Oct 14, 2026 | Lab report | Lab report: Thyroid panel | Smith, Jessica </patients/5kkrr64r0l> | View </documents/34vz41brm2>
+Oct 14, 2026 | Lab report | Lab report: Vitamin D | Patterson, Evelyn </patients/0qd3n67j0p> | View </documents/6m7c9qtdq0>
+Oct 14, 2026 | Referral letter | Referral letter from Juniper Flats Eye and Ear | Moreno, Rosa </patients/091n46gqmk> | View </documents/08824xj7zj>
+Oct 14, 2026 | Statement | Restricted chart | Fernandez, William </patients/3pt7sxrzwn> Restricted | View </documents/5zl98snqmq>
+Oct 13, 2026 | Lab report | Lab report: Lipid panel | Barnes, Betty </patients/7374ss0kgs> | View </documents/3bhxtfkcbs>
+Oct 13, 2026 | Referral letter | Referral letter from Granite Fork Internal Medicine | Griffin, Christine </patients/6nm1jsxqr7> | View </documents/2v8gfcj1j7>
+Oct 13, 2026 | Lab report | Lab report: Iron studies | Mitchell, Miguel </patients/2r239dnrcb> | View </documents/4fx16s9lfj>
+Oct 12, 2026 | Lab report | Lab report: Iron studies | Williams, Matthew </patients/3xpp0phpqh> | View </documents/08hjq4m8dc>
+Oct 12, 2026 | Lab report | Lab report: Thyroid panel | Sanders, Kimberly </patients/47f6bfng97> | View </documents/0jxv72v48c>
+Oct 12, 2026 | Statement | Statement of account 2026-10 | Perez, Alexis </patients/3qg4krxj49> | View </documents/0k6lzw3wql>
+Oct 12, 2026 | Lab report | Lab report: Thyroid panel | Martinez, Henry </patients/079jk4z11r> | View </documents/737z2h84x8>
+Oct 11, 2026 | Lab report | Lab report: Thyroid panel | Smith, Stephanie </patients/634xlphvxq> | View </documents/6nrfp5jqmq>
+Oct 11, 2026 | Statement | Statement of account 2025-11 | Phillips, Amanda </patients/41jnsfdhvn> | View </documents/0psh41qld9>
+Oct 11, 2026 | Statement | Statement of account 2026-10 | Anderson, Bjorn </patients/114jtj0j80> | View </documents/3bfl691mss>
+Oct 10, 2026 | Referral letter | Referral letter from Summit Hollow Cardiology Partners | Garcia, Thomas </patients/30qnqh7jwz> | View </documents/64451k48w4>
+Oct 10, 2026 | Statement | Statement of account 2026-10 | Lee, Charles </patients/3fl4ch2909> | View </documents/73zh74bp2d>
+Oct 10, 2026 | Referral letter | Referral letter from Plains Dermatology Associates | Maldonado, Logan </patients/19t68rln8z> | View </documents/0cn0fp9r1q>
+Oct 10, 2026 | Statement | Statement of account 2026-10 | Roberts, Amanda </patients/341zbrxkh3> | View </documents/1j2gjc6zc3>
+Oct 10, 2026 | Lab report | Lab report: Vitamin D | Duncan, Rachel </patients/1hc15sjcrn> | View </documents/1bp5kwtzzd>
+Oct 10, 2026 | Statement | Statement of account 2026-10 | Hanson, Elliott </patients/1cfqgttthq> | View </documents/6xcbfz95bs>
+Oct 10, 2026 | Lab report | Lab report: Lipid panel | Ali, Carolyn </patients/39gzfzms4t> | View </documents/3wx3hx3gtr>
+Oct 10, 2026 | Lab report | Lab report: Thyroid panel | Johnson, Sarah </patients/1grhp4v2wt> | View </documents/4z61d89tnb>
+Oct 10, 2026 | Lab report | Lab report: Iron studies | Wilson, Melissa </patients/0qvk7gk961> | View </documents/2lqzjjkxhh>
+Oct 10, 2026 | Lab report | Lab report: Liver function panel | Kelly, Nancy </patients/4wnxjfspmk> | View </documents/5b58d12sx6>
+Oct 9, 2026 | Statement | Statement of account 2026-10 | Moreno, Eric </patients/71fzwkbklk> | View </documents/4j35jfk3rd>
+Showing 1 to 25 of 200+ documents
+[select size = "25 per page" options(3): 25 per page; 50 per page; 100 per page]
+[Previous (disabled)]
+[1 (current)]
+[2]
+[3]
+[Next]

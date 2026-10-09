@@ -1,0 +1,62 @@
+URL: /patients/03q14ndmmd/appointments/6x505m94xc
+LOCATION: Northgate
+
+# Murphy, Valentina
+MRN: HG8741437
+Date of birth: 06/05/1971 (55 years)
+Sex: Female
+Billing: Invoices </billing/accounts/03q14ndmmd>
+Demographics </patients/03q14ndmmd> | Insurance </patients/03q14ndmmd/insurance> | Problems </patients/03q14ndmmd/problems> | Notes </patients/03q14ndmmd/notes> | Documents </patients/03q14ndmmd/documents> | Appointments </patients/03q14ndmmd/appointments> (current) | Activity </patients/03q14ndmmd/activity>
+## Appointment on Oct 14, 2026 [Close]
+## Visit
+Date: Oct 14, 2026
+Time: 10:40 AM to 11:00 AM CDT
+Length: 20 minutes
+Type: Sick visit
+Status: Scheduled
+## People and place
+Provider: Diana Anderson, PA
+Location: Northgate
+## Record
+Reference: 52152350
+Booked: Oct 13, 2026, 1:21 PM CDT
+Last changed: Oct 13, 2026, 1:21 PM CDT
+## History
+When | User | Change
+Oct 13, 2026, 1:21 PM CDT | jsimpson | Booked
+1 entry
+## Recurring appointments
+- Every week on Tuesday at 11:40 </patients/03q14ndmmd/recurring/36b1t0bf71>
+Nutrition counseling with Diana Anderson, PA at Northgate
+Apr 14, 2026 to Aug 21, 2026, 2 changed dates
+1 recurring appointment
+Date and time | Type | Provider | Location | Status
+Nov 6, 2026, 2:40 PM </patients/03q14ndmmd/appointments/13g9mf78pg> CST | Skin check | Diana Anderson, PA | Northgate | Scheduled
+Oct 21, 2026, 2:40 PM </patients/03q14ndmmd/appointments/1xzh0q58ck> CDT | Allergy injection | Diana Anderson, PA | Northgate | Scheduled
+Oct 20, 2026, 11:00 AM </patients/03q14ndmmd/appointments/14pcgjvn0v> CDT | Telehealth visit | Diana Anderson, PA | Northgate | Cancelled
+Oct 14, 2026, 10:40 AM </patients/03q14ndmmd/appointments/6x505m94xc> CDT | Sick visit | Diana Anderson, PA | Northgate | Scheduled
+Oct 5, 2026, 5:00 PM </patients/03q14ndmmd/appointments/6csgmpk98b> CDT | Blood pressure check | Aaron Wagner, MD | Northgate | Completed
+Sep 1, 2026, 2:00 PM </patients/03q14ndmmd/appointments/0w7q5g78ns> CDT | Office visit | Diana Anderson, PA | Northgate | Completed
+Aug 30, 2026, 9:40 AM </patients/03q14ndmmd/appointments/5sc6lbk545> CDT | Follow-up visit | Diana Anderson, PA | Northgate | Late cancel
+Jul 14, 2026, 1:00 PM </patients/03q14ndmmd/appointments/502chv4zcb> CDT | Travel consultation | Diana Anderson, PA | Northgate | Completed
+Jul 8, 2026, 8:40 AM </patients/03q14ndmmd/appointments/41p04h58jn> CDT | Follow-up visit | Diana Anderson, PA | Northgate | Completed
+May 28, 2026, 3:00 PM </patients/03q14ndmmd/appointments/3l7kvbpx1p> CDT | Follow-up visit | Diana Anderson, PA | Northgate | Completed
+May 8, 2026, 12:40 PM </patients/03q14ndmmd/appointments/0z65mmg72k> CDT | Blood pressure check | Aaron Wagner, MD | Northgate | Completed
+Apr 29, 2026, 4:20 PM </patients/03q14ndmmd/appointments/1w06xcwk3w> CDT | Follow-up visit | Diana Anderson, PA | Northgate | Cancelled
+Apr 1, 2026, 2:00 PM </patients/03q14ndmmd/appointments/0jp8v19vq2> CDT | Lab draw | Diana Anderson, PA | Northgate | Completed
+Mar 3, 2026, 7:00 PM </patients/03q14ndmmd/appointments/0j2c9893tx> CST | Lab draw | Diana Anderson, PA | Northgate | Completed
+Jan 13, 2026, 12:20 PM </patients/03q14ndmmd/appointments/71qx3d049q> CST | Nutrition counseling | Diana Anderson, PA | Northgate | Completed
+Nov 29, 2025, 10:20 AM </patients/03q14ndmmd/appointments/5rt93n2m7q> CST | Immunization | Diana Anderson, PA | Northgate | Completed
+Nov 24, 2025, 4:40 PM </patients/03q14ndmmd/appointments/2c2w48glpt> CST | Lab draw | Diana Anderson, PA | Northgate | Completed
+Nov 3, 2025, 11:00 AM </patients/03q14ndmmd/appointments/4dhjqr2dwr> CST | Echocardiogram | Aaron Wagner, MD | Northgate | Completed
+Oct 28, 2025, 5:20 PM </patients/03q14ndmmd/appointments/49c35dnwx7> CDT | Blood pressure check | Diana Anderson, PA | Northgate | Completed
+Oct 3, 2025, 3:20 PM </patients/03q14ndmmd/appointments/5sf75jwth8> CDT | Office visit | Diana Anderson, PA | Northgate | Cancelled
+Oct 2, 2025, 8:20 AM </patients/03q14ndmmd/appointments/1jq55009dl> CDT | Office visit | Diana Anderson, PA | Northgate | Completed
+Sep 14, 2025, 10:00 AM </patients/03q14ndmmd/appointments/0fx5pvc93q> CDT | New patient visit | Diana Anderson, PA | Northgate | Completed
+Sep 11, 2025, 3:20 PM </patients/03q14ndmmd/appointments/565s7fps14> CDT | Wound care | Diana Anderson, PA | Northgate | Completed
+Sep 4, 2025, 11:20 AM </patients/03q14ndmmd/appointments/1q2vb4qf61> CDT | Immunization | Diana Anderson, PA | Northgate | Completed
+Jul 10, 2025, 9:20 AM </patients/03q14ndmmd/appointments/4wtpkb3pgl> CDT | Cast check | Diana Anderson, PA | Northgate | Completed
+Showing 1 to 25 of 41 appointments
+[select size = "25 per page" options(2): 25 per page; 50 per page]
+[Previous (disabled)]
+[Next]

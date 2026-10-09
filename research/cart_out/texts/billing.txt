@@ -1,0 +1,65 @@
+URL: /billing
+LOCATION: Northgate
+
+# Billing
+Invoices of the practice. Filter by patient, location, dates, status, or amount owed.
+Find invoice
+[input number = "" placeholder="Invoice number"]
+[Open]
+Patient
+[input patient = "" placeholder="Last name"]
+[Find patient]
+Location
+[select location = "All locations" options(11): All locations; Northgate; Front Range; Eastside; Stonebrook; Lakeside; Riverbend; Highline; Prairie View; Cedar Hollow; Willow Creek]
+Status
+[select status = "All statuses" options(5): All statuses; Open; Partly paid; Paid; Void]
+Service date
+[input serviceFrom (date) = ""]
+to
+[input serviceTo (date) = ""]
+Issued date
+[input issuedFrom (date) = ""]
+to
+[input issuedTo (date) = ""]
+Amount owed
+[input owedAtLeast = "" placeholder="At least"]
+to
+[input owedAtMost = "" placeholder="At most"]
+[Apply filters]
+[Clear filters]
+## Invoices
+Sort by
+[select sort = "Issued date, newest first" options(16): Issued date, newest first; Issued date, oldest first; Service date, newest first; Service date, oldest first; Amount owed, largest first; Amount owed, smallest first; Total, largest first; Total, smallest first; Patient, A to Z; Patient, Z to A; Location, A to Z; Location, Z to A; Status, A to Z; Status, Z to A; Invoice number, ascending; Invoice number, descending]
+[Invoice] | [Patient] | [Location] | [Service date] | [Issued] | [Total] | [Status]
+20724781 </billing/invoices/0h9svwws1g> | Ortega, Robert | Northgate | Oct 14, 2026 | Oct 14, 2026 | $186.00 | Paid
+64569788 </billing/invoices/2343qgct07> | Miller, Amanda | Northgate | Oct 12, 2026 | Oct 14, 2026 | $71.00 | Partly paid
+25452487 </billing/invoices/2hdcz7nbzh> | Phillips, Ryan | Northgate | Oct 12, 2026 | Oct 14, 2026 | $307.00 | Open
+27894852 </billing/invoices/66v5xrf1jz> | Whitaker, Susan | Northgate | Oct 9, 2026 | Oct 14, 2026 | $153.58 | Paid
+04762827 </billing/invoices/70btlc90n9> | Johnson, Barbara | Northgate | Oct 12, 2026 | Oct 14, 2026 | $59.00 | Partly paid
+92136248 </billing/invoices/1dzjlmwwq3> | Jackson, Camila | Northgate | Oct 9, 2026 | Oct 14, 2026 | $160.12 | Open
+89272701 </billing/invoices/44g83dhwsf> | Long, Dylan | Northgate | Oct 12, 2026 | Oct 14, 2026 | $116.00 | Void
+08682849 </billing/invoices/46p5z5n3x7> | Williams, Frances | Northgate | Oct 12, 2026 | Oct 14, 2026 | $335.00 | Open
+20139044 </billing/invoices/3wp0z2dsh4> | Berry, Renee | Northgate | Oct 12, 2026 | Oct 14, 2026 | $98.00 | Open
+81154086 </billing/invoices/5lfqfmphs5> | Maldonado, Logan | Northgate | Oct 13, 2026 | Oct 14, 2026 | $93.21 | Paid
+56492558 </billing/invoices/2prxxg21xf> | Allen, Rosa | Northgate | Oct 13, 2026 | Oct 14, 2026 | $438.80 | Partly paid
+97323943 </billing/invoices/228p9xltfs> | Dixon, John | Northgate | Oct 9, 2026 | Oct 14, 2026 | $75.00 | Paid
+69255068 </billing/invoices/0wf1tjrc84> | Weaver, Alexander | Northgate | Oct 13, 2026 | Oct 14, 2026 | $90.00 | Open
+08146123 </billing/invoices/5sl2kld5l3> | Taylor, James | Northgate | Oct 13, 2026 | Oct 14, 2026 | $125.51 | Paid
+79715283 </billing/invoices/2zmq5thb1g> | Diaz, Robert | Northgate | Oct 9, 2026 | Oct 14, 2026 | $85.00 | Paid
+90470226 </billing/invoices/4h1685d43d> | Jackson, Janice | Northgate | Oct 12, 2026 | Oct 14, 2026 | $106.44 | Open
+94654407 </billing/invoices/73sm1zk6g8> | Kim, Diane | Northgate | Oct 8, 2026 | Oct 14, 2026 | $129.00 | Open
+53497519 </billing/invoices/3zcrz6z4h7> | Engström, Patricia | Northgate | Oct 12, 2026 | Oct 14, 2026 | $94.52 | Open
+26853083 </billing/invoices/0x0v4c8t8t> | Crawford, Thomas | Northgate | Oct 12, 2026 | Oct 14, 2026 | $44.08 | Open
+80610954 </billing/invoices/1v03qznd78> | Johnson, Sandra | Northgate | Oct 5, 2026 | Oct 14, 2026 | $157.00 | Open
+69988378 </billing/invoices/1bzwjq37b1> | White, John | Northgate | Oct 7, 2026 | Oct 14, 2026 | $218.00 | Open
+29570522 </billing/invoices/5d8j63bfc9> | Grant, Jeffrey | Northgate | Oct 7, 2026 | Oct 14, 2026 | $231.94 | Paid
+64536140 </billing/invoices/3mhg1cb0t1> | Ferguson, David | Northgate | Oct 9, 2026 | Oct 14, 2026 | $135.00 | Paid
+27824250 </billing/invoices/1z1rcbwhx8> | Powell, Siobhan | Northgate | Oct 9, 2026 | Oct 14, 2026 | $90.97 | Open
+88880035 </billing/invoices/12vbvsr489> | Rodriguez, Dylan | Northgate | Oct 8, 2026 | Oct 14, 2026 | $105.00 | Open
+Showing 1 to 25 of 500+ invoices
+[select size = "25 per page" options(3): 25 per page; 50 per page; 100 per page]
+[Previous (disabled)]
+[1 (current)]
+[2]
+[3]
+[Next]

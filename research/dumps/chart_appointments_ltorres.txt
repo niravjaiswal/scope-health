@@ -1,0 +1,50 @@
+URL: https://practice.speedrun.scopehealth.com/patients/2d4sj44ts0/appointments
+TITLE: Torres, Laura · Wrenfield
+
+Torres, Laura
+MRN
+HG4927176
+Date of birth
+02/20/2001 (25 years)
+Sex
+Female
+Billing
+Invoices
+Demographics
+Insurance
+Problems
+Notes
+Documents
+Appointments
+Activity
+Recurring appointments
+Every week on Thursday at 08:00
+Follow-up visit with Liam Farrell, NP at Highline
+Mar 20, 2025 to Aug 15, 2025
+
+1 recurring appointment
+
+Appointments, newest first
+Date and time	Type	Provider	Location	Status
+Dec 30, 2025, 4:00 PM MST	Follow-up visit	Liam Farrell, NP	Highline	
+Completed
+Dec 4, 2025, 9:20 AM MST	Follow-up visit	Liam Farrell, NP	Highline	
+Late cancel
+Dec 5, 2024, 3:40 PM MST	Prenatal visit	Liam Farrell, NP	Highline	
+Completed
+
+3 appointments
+
+---- INTERACTIVE ----
+[A] 'Invoices' /billing/accounts/2d4sj44ts0  
+[A] 'Demographics' /patients/2d4sj44ts0  
+[A] 'Insurance' /patients/2d4sj44ts0/insurance  
+[A] 'Problems' /patients/2d4sj44ts0/problems  
+[A] 'Notes' /patients/2d4sj44ts0/notes  
+[A] 'Documents' /patients/2d4sj44ts0/documents  
+[A] 'Appointments' /patients/2d4sj44ts0/appointments  page
+[A] 'Activity' /patients/2d4sj44ts0/activity  
+[A] 'Every week on Thursday at 08:00' /patients/2d4sj44ts0/recurring/5gmqxpxdhq  
+[A] 'Dec 30, 2025, 4:00 PM' /patients/2d4sj44ts0/appointments/3dbzlcgc6s  
+[A] 'Dec 4, 2025, 9:20 AM' /patients/2d4sj44ts0/appointments/4jgn91kb99  
+[A] 'Dec 5, 2024, 3:40 PM' /patients/2d4sj44ts0/appointments/68bgdwpn4d  

@@ -1,0 +1,70 @@
+URL: https://practice.speedrun.scopehealth.com/billing/accounts/0dfkpm8z1g
+TITLE: Billing · Wrenfield
+
+Invoices
+Account of Jones, Carol
+Jones, Carol
+MRN
+HG9736761
+Date of birth
+09/07/1982
+Open chart
+Invoices
+Invoices of this patient, newest service first
+Invoice	Service date	Location	Issued	Total	Status	
+Filed under
+
+72970178	Jun 9, 2026	Eastside	Jun 14, 2026	$62.95	
+Paid	
+28701758	May 19, 2026	Eastside	May 24, 2026	$117.00	
+Paid	
+08946229	Apr 21, 2026	Eastside	Apr 25, 2026	$93.00	
+Paid	
+33788944	Apr 15, 2026	Eastside	Apr 24, 2026	$46.00	
+Paid	
+67502672	Apr 14, 2026	Eastside	Apr 17, 2026	$224.00	
+Paid	
+86534873	Mar 31, 2026	Eastside	Apr 8, 2026	$117.00	
+Paid	
+44833096	Mar 24, 2026	Eastside	Mar 28, 2026	$418.00	
+Paid	
+96638898	Mar 17, 2026	Eastside	Mar 26, 2026	$221.85	
+Paid	
+30658414	Mar 3, 2026	Eastside	Mar 6, 2026	$184.00	
+Paid	
+50036452	Feb 24, 2026	Eastside	Feb 26, 2026	$215.59	
+Paid	
+43631651	Feb 10, 2026	Eastside	Feb 11, 2026	$106.10	
+Open	
+32111951	Jan 19, 2026	Eastside	Jan 28, 2026	$119.00	
+Partly paid	
+50085866	Oct 20, 2025	Eastside	Oct 22, 2025	$75.00	
+Paid	
+30275330	Aug 21, 2025	Eastside	Aug 30, 2025	$78.00	
+Paid	
+81681498	Jun 5, 2025	Eastside	Jun 7, 2025	$171.00	
+Paid	
+87839654	Oct 30, 2024	Eastside	Nov 2, 2024	$82.00	
+Paid	
+
+16 invoices
+
+---- INTERACTIVE ----
+[A] 'Invoices' /billing  
+[A] 'Open chart' /patients/0dfkpm8z1g  
+[A] '72970178' /billing/invoices/5xn7xnn5t0  
+[A] '28701758' /billing/invoices/476vxzgtj6  
+[A] '08946229' /billing/invoices/3mpxcmnzx5  
+[A] '33788944' /billing/invoices/42gh5ncqcf  
+[A] '67502672' /billing/invoices/38gjrjcl8p  
+[A] '86534873' /billing/invoices/3vrc7hbrwr  
+[A] '44833096' /billing/invoices/3zp9x9grkq  
+[A] '96638898' /billing/invoices/4hpvh8cxg4  
+[A] '30658414' /billing/invoices/475jbwc1m2  
+[A] '50036452' /billing/invoices/43rc2w9jmh  
+[A] '43631651' /billing/invoices/730qct76xx  
+[A] '32111951' /billing/invoices/31qw7cbl2p  
+[A] '50085866' /billing/invoices/591lhb9vmw  
+[A] '30275330' /billing/invoices/64pmgx2rvk  
+[A] '81681498' /billing/invoices/22890vdp55  
+[A] '87839654' /billing/invoices/1sfk6kmtjm  

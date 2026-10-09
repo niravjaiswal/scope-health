@@ -1,0 +1,41 @@
+URL: https://practice.speedrun.scopehealth.com/patients/0dfkpm8z1g/documents
+TITLE: Jones, Carol · Wrenfield
+
+Jones, Carol
+MRN
+HG9736761
+Date of birth
+09/07/1982 (44 years)
+Sex
+Female
+Billing
+Invoices
+Demographics
+Insurance
+Problems
+Notes
+Documents
+Appointments
+Activity
+Documents in this chart, newest first
+Title	Type	Received	
+Actions
+
+Lab report: Basic metabolic panel	Lab report	Nov 10, 2025	View
+Statement of account 2025-05	Statement	May 17, 2025	View
+Lab report: Basic metabolic panel	Lab report	Oct 21, 2024	View
+
+3 documents
+
+---- INTERACTIVE ----
+[A] 'Invoices' /billing/accounts/0dfkpm8z1g  
+[A] 'Demographics' /patients/0dfkpm8z1g  
+[A] 'Insurance' /patients/0dfkpm8z1g/insurance  
+[A] 'Problems' /patients/0dfkpm8z1g/problems  
+[A] 'Notes' /patients/0dfkpm8z1g/notes  
+[A] 'Documents' /patients/0dfkpm8z1g/documents  page
+[A] 'Appointments' /patients/0dfkpm8z1g/appointments  
+[A] 'Activity' /patients/0dfkpm8z1g/activity  
+[A] 'View' /patients/0dfkpm8z1g/documents/6rjl30ckcw  
+[A] 'View' /patients/0dfkpm8z1g/documents/57t7g47btl  
+[A] 'View' /patients/0dfkpm8z1g/documents/520r7lcsrc  

@@ -1,0 +1,102 @@
+URL: https://practice.speedrun.scopehealth.com/patients/341wprb7fq/appointments
+TITLE: Henry, Peter · Wrenfield
+
+Henry, Peter
+MRN
+HG9651916
+Date of birth
+06/23/1975 (51 years)
+Sex
+Male
+Billing
+Invoices
+Demographics
+Insurance
+Problems
+Notes
+Documents
+Appointments
+Activity
+Appointments, newest first
+Date and time	Type	Provider	Location	Status
+Nov 6, 2026, 4:00 PM CST	Lab draw	Diana Anderson, PA	Northgate	
+Scheduled
+Oct 6, 2026, 7:15 AM CDT	Diabetes management	Charles Davis, MD	Northgate	
+Completed
+Aug 10, 2026, 11:00 AM CDT	Follow-up visit	Diana Anderson, PA	Northgate	
+No-show
+Aug 6, 2026, 4:20 PM CDT	New patient visit	Diana Anderson, PA	Northgate	
+Cancelled
+Jun 7, 2026, 12:20 PM CDT	Annual physical	Diana Anderson, PA	Northgate	
+Completed
+Mar 18, 2026, 8:20 AM CDT	Follow-up visit	Diana Anderson, PA	Northgate	
+Completed
+Feb 23, 2026, 11:00 AM MST	Pre-operative evaluation	David Fowler, MD	Front Range	
+No-show
+Feb 23, 2026, 10:20 AM CST	Follow-up visit	Diana Anderson, PA	Northgate	
+Completed
+Jan 15, 2026, 2:20 PM CST	Follow-up visit	Diana Anderson, PA	Northgate	
+Completed
+Jan 9, 2026, 2:30 PM CST	Skin check	Judith Garcia, MD	Northgate	
+Completed
+Dec 30, 2025, 11:40 AM CST	Physical therapy session	Diana Anderson, PA	Northgate	
+Completed
+Dec 14, 2025, 10:40 AM CST	Immunization	Diana Anderson, PA	Northgate	
+Completed
+Nov 3, 2025, 8:00 AM CST	Lab draw	Diana Anderson, PA	Northgate	
+Completed
+Sep 5, 2025, 4:40 PM CDT	Sports physical	Diana Anderson, PA	Northgate	
+Completed
+Aug 22, 2025, 3:40 PM CDT	Follow-up visit	Diana Anderson, PA	Northgate	
+Completed
+Jul 21, 2025, 2:20 PM CDT	Nutrition counseling	Diana Anderson, PA	Northgate	
+Cancelled
+Jul 5, 2025, 9:20 AM CDT	Lab draw	Diana Anderson, PA	Northgate	
+Completed
+Jun 6, 2025, 8:00 AM CDT	Post-operative check	Diana Anderson, PA	Northgate	
+Completed
+May 22, 2025, 2:00 PM CDT	Immunization	Aaron Wagner, MD	Northgate	
+Completed
+May 7, 2025, 2:20 PM CDT	New patient visit	Diana Anderson, PA	Northgate	
+Cancelled
+Feb 4, 2025, 2:00 PM CST	Lab draw	Diana Anderson, PA	Northgate	
+Completed
+Feb 1, 2025, 10:00 AM CST	New patient visit	Diana Anderson, PA	Northgate	
+Completed
+Oct 29, 2024, 7:00 PM CDT	Prenatal visit	Diana Anderson, PA	Northgate	
+Completed
+
+23 appointments
+
+---- INTERACTIVE ----
+[A] 'Invoices' /billing/accounts/341wprb7fq  
+[A] 'Demographics' /patients/341wprb7fq  
+[A] 'Insurance' /patients/341wprb7fq/insurance  
+[A] 'Problems' /patients/341wprb7fq/problems  
+[A] 'Notes' /patients/341wprb7fq/notes  
+[A] 'Documents' /patients/341wprb7fq/documents  
+[A] 'Appointments' /patients/341wprb7fq/appointments  page
+[A] 'Activity' /patients/341wprb7fq/activity  
+[A] 'Nov 6, 2026, 4:00 PM' /patients/341wprb7fq/appointments/40ft2ddt99  
+[A] 'Oct 6, 2026, 7:15 AM' /patients/341wprb7fq/appointments/6wn7h8vvhq  
+[A] 'Aug 10, 2026, 11:00 AM' /patients/341wprb7fq/appointments/5840j6k3kc  
+[A] 'Aug 6, 2026, 4:20 PM' /patients/341wprb7fq/appointments/0mfj64xdvp  
+[A] 'Jun 7, 2026, 12:20 PM' /patients/341wprb7fq/appointments/3w75ggdkb3  
+[A] 'Mar 18, 2026, 8:20 AM' /patients/341wprb7fq/appointments/36xwzddx0k  
+[A] 'Feb 23, 2026, 11:00 AM' /patients/341wprb7fq/appointments/5nqdgmxkgz  
+[A] 'Feb 23, 2026, 10:20 AM' /patients/341wprb7fq/appointments/51trjw6kpw  
+[A] 'Jan 15, 2026, 2:20 PM' /patients/341wprb7fq/appointments/1xb3v34vm5  
+[A] 'Jan 9, 2026, 2:30 PM' /patients/341wprb7fq/appointments/6z4r7dwjl3  
+[A] 'Dec 30, 2025, 11:40 AM' /patients/341wprb7fq/appointments/289ztk6wd6  
+[A] 'Dec 14, 2025, 10:40 AM' /patients/341wprb7fq/appointments/1kn3h31x76  
+[A] 'Nov 3, 2025, 8:00 AM' /patients/341wprb7fq/appointments/3fv6qkgr6x  
+[A] 'Sep 5, 2025, 4:40 PM' /patients/341wprb7fq/appointments/70bpqjf5jw  
+[A] 'Aug 22, 2025, 3:40 PM' /patients/341wprb7fq/appointments/2w21k3vkc9  
+[A] 'Jul 21, 2025, 2:20 PM' /patients/341wprb7fq/appointments/2hb8mjnpsc  
+[A] 'Jul 5, 2025, 9:20 AM' /patients/341wprb7fq/appointments/3dfgf2sr1x  
+[A] 'Jun 6, 2025, 8:00 AM' /patients/341wprb7fq/appointments/2bth1hb79f  
+[A] 'May 22, 2025, 2:00 PM' /patients/341wprb7fq/appointments/5nfxmkbhrz  
+[A] 'May 7, 2025, 2:20 PM' /patients/341wprb7fq/appointments/04rgb2r7tj  
+[A] 'Feb 4, 2025, 2:00 PM' /patients/341wprb7fq/appointments/6lmtz2d0zz  
+[A] 'Feb 1, 2025, 10:00 AM' /patients/341wprb7fq/appointments/2j5qn65pkc  
+[A] 'Oct 29, 2024, 7:00 PM' /patients/341wprb7fq/appointments/65szcc4vzg  

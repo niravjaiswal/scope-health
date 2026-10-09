@@ -1,0 +1,49 @@
+URL: https://practice.speedrun.scopehealth.com/patients/2g52fpbwf6/activity
+TITLE: Jackson, Judith · Wrenfield
+
+Jackson, Judith
+MRN
+HG4904582
+Date of birth
+11/12/2004 (21 years)
+Sex
+Female
+Billing
+Invoices
+Demographics
+Insurance
+Problems
+Notes
+Documents
+Appointments
+Activity
+Activity
+Show
+All activity
+Changes
+Chart views
+Activity on this record, newest first
+When	User	What
+May 5, 2026, 5:15 PM MDT	cbarnes	Merged the record into another record (on a record merged into this one)
+Feb 18, 2026, 12:39 PM MST	lfarrell	Opened the chart (on a record merged into this one)
+Jan 20, 2026, 9:47 AM MST	mlindgren	Opened the chart (on a record merged into this one)
+Dec 27, 2025, 1:33 PM MST	rchen	Opened the chart
+Dec 6, 2025, 9:35 AM MST	jsoto	Opened the chart (on a record merged into this one)
+Sep 22, 2025, 2:23 PM MDT	sanderson	Opened the chart
+Jun 23, 2025, 4:43 PM MDT	agibson	Opened the chart (on a record merged into this one)
+Jun 4, 2025, 4:21 PM MDT	lbennett	Opened the chart (on a record merged into this one)
+Apr 22, 2025, 7:36 PM MDT	sclark	Created the record
+Mar 22, 2025, 4:56 PM MDT	mmiller	Created the record (on a record merged into this one)
+
+10 entries
+
+---- INTERACTIVE ----
+[A] 'Invoices' /billing/accounts/2g52fpbwf6  
+[A] 'Demographics' /patients/2g52fpbwf6  
+[A] 'Insurance' /patients/2g52fpbwf6/insurance  
+[A] 'Problems' /patients/2g52fpbwf6/problems  
+[A] 'Notes' /patients/2g52fpbwf6/notes  
+[A] 'Documents' /patients/2g52fpbwf6/documents  
+[A] 'Appointments' /patients/2g52fpbwf6/appointments  
+[A] 'Activity' /patients/2g52fpbwf6/activity  page
+[SELECT] 'All activity\nChanges\nChart views'  kind 

@@ -1,0 +1,46 @@
+URL: https://practice.speedrun.scopehealth.com/patients/2jx2vmvf82
+TITLE: Martínez, Anna · Wrenfield
+
+The record with MRN HG1889359 was merged into this record
+
+What was filed under it is shown here.
+
+Martínez, Anna
+MRN
+HG8823240
+Date of birth
+08/11/1999 (27 years)
+Sex
+Female
+Billing
+Invoices
+Demographics
+Insurance
+Problems
+Notes
+Documents
+Appointments
+Activity
+Contact
+Phone
+(360) 831-0367
+Email
+a•••••@wrenmail.example
+Address
+1739 Orchard Pl
+Pell Junction, KS 66763
+Care team
+Primary provider
+None on file
+Home location
+Northgate
+
+---- INTERACTIVE ----
+[A] 'Invoices' /billing/accounts/2jx2vmvf82  
+[A] 'Demographics' /patients/2jx2vmvf82  page
+[A] 'Insurance' /patients/2jx2vmvf82/insurance  
+[A] 'Problems' /patients/2jx2vmvf82/problems  
+[A] 'Notes' /patients/2jx2vmvf82/notes  
+[A] 'Documents' /patients/2jx2vmvf82/documents  
+[A] 'Appointments' /patients/2jx2vmvf82/appointments  
+[A] 'Activity' /patients/2jx2vmvf82/activity  

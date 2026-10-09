@@ -1,0 +1,21 @@
+URL: /patients/03q14ndmmd/documents/0l1jqh8zfg
+LOCATION: Northgate
+
+# Murphy, Valentina
+MRN: HG8741437
+Date of birth: 06/05/1971 (55 years)
+Sex: Female
+Billing: Invoices </billing/accounts/03q14ndmmd>
+Demographics </patients/03q14ndmmd> | Insurance </patients/03q14ndmmd/insurance> | Problems </patients/03q14ndmmd/problems> | Notes </patients/03q14ndmmd/notes> | Documents </patients/03q14ndmmd/documents> (current) | Appointments </patients/03q14ndmmd/appointments> | Activity </patients/03q14ndmmd/activity>
+Title | Type | Received |
+Referral letter from Harbor Glen Medical Group | Referral letter | Aug 6, 2026 | View </patients/03q14ndmmd/documents/0l1jqh8zfg> (current)
+1 document
+## Referral letter from Harbor Glen Medical Group [Close document]
+Referral letter, received Aug 6, 2026 · 1 page · 26 KB
+Open in new tab </v/cdvxmv52wr020s2sc01lgq2xmv/xz87jzv9jlfz1q8cnn>
+Download </v/cdvxmv52wr020s2sc01lgq2xmv/xz87jzv9jlfz1q8cnn>
+[Zoom out]
+100%
+[Zoom in]
+[Fit width (current)]
+[image: Page 1 of 1, Referral letter received Aug 6, 2026]

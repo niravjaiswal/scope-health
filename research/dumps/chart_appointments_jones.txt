@@ -1,0 +1,95 @@
+URL: https://practice.speedrun.scopehealth.com/patients/0dfkpm8z1g/appointments
+TITLE: Jones, Carol · Wrenfield
+
+Jones, Carol
+MRN
+HG9736761
+Date of birth
+09/07/1982 (44 years)
+Sex
+Female
+Billing
+Invoices
+Demographics
+Insurance
+Problems
+Notes
+Documents
+Appointments
+Activity
+Recurring appointments
+Every week on Tuesday at 08:40
+Diabetes management with Jennifer Parker, MD at Eastside
+Feb 10, 2026 to Jun 21, 2026
+
+1 recurring appointment
+
+Appointments, newest first
+Date and time	Type	Provider	Location	Status
+Oct 8, 2026, 4:00 PM CDT	Pre-operative evaluation	Catherine Jackson, MD	Willow Creek	
+Completed
+Jul 10, 2026, 1:00 PM CDT	Office visit	Jennifer Parker, MD	Eastside	
+Cancelled
+Jun 29, 2026, 3:20 PM CDT	Telehealth visit	Jennifer Parker, MD	Eastside	
+Completed
+Apr 24, 2026, 11:00 AM CDT	Diabetes management	Jennifer Parker, MD	Eastside	
+Completed
+Apr 15, 2026, 10:20 AM CDT	Office visit	Jennifer Parker, MD	Eastside	
+Completed
+Jan 19, 2026, 10:40 AM CST	Telehealth visit	Jennifer Parker, MD	Eastside	
+Completed
+Jan 6, 2026, 10:40 AM CST	Office visit	Jennifer Parker, MD	Eastside	
+Completed
+Dec 30, 2025, 8:00 AM CST	Follow-up visit	Jennifer Parker, MD	Eastside	
+Completed
+Oct 20, 2025, 3:20 PM CDT	New patient visit	Jennifer Parker, MD	Eastside	
+Completed
+Aug 21, 2025, 2:30 PM CDT	Follow-up visit	Dorothy Mason, PA	Eastside	
+Completed
+Aug 7, 2025, 11:20 AM CDT	Sick visit	Jennifer Parker, MD	Eastside	
+Completed
+Jul 22, 2025, 9:40 AM CDT	Follow-up visit	Jennifer Parker, MD	Eastside	
+Late cancel
+Jun 5, 2025, 11:00 AM CDT	Immunization	Jose Nielsen, MD	Eastside	
+Completed
+Jun 2, 2025, 3:40 PM CDT	Telehealth visit	Jose Nielsen, MD	Eastside	
+Completed
+May 14, 2025, 4:40 PM CDT	Skin check	Jennifer Parker, MD	Eastside	
+Completed
+Jan 21, 2025, 2:00 PM CST	New patient visit	Jennifer Parker, MD	Eastside	
+Completed
+Oct 30, 2024, 9:00 AM CDT	Well-child check	Jennifer Parker, MD	Eastside	
+Completed
+Oct 28, 2024, 2:20 PM CDT	Cast check	Jennifer Parker, MD	Eastside	
+Completed
+
+18 appointments
+
+---- INTERACTIVE ----
+[A] 'Invoices' /billing/accounts/0dfkpm8z1g  
+[A] 'Demographics' /patients/0dfkpm8z1g  
+[A] 'Insurance' /patients/0dfkpm8z1g/insurance  
+[A] 'Problems' /patients/0dfkpm8z1g/problems  
+[A] 'Notes' /patients/0dfkpm8z1g/notes  
+[A] 'Documents' /patients/0dfkpm8z1g/documents  
+[A] 'Appointments' /patients/0dfkpm8z1g/appointments  page
+[A] 'Activity' /patients/0dfkpm8z1g/activity  
+[A] 'Every week on Tuesday at 08:40' /patients/0dfkpm8z1g/recurring/1l09616g0c  
+[A] 'Oct 8, 2026, 4:00 PM' /patients/0dfkpm8z1g/appointments/44jq560vgd  
+[A] 'Jul 10, 2026, 1:00 PM' /patients/0dfkpm8z1g/appointments/41ztp6x1bf  
+[A] 'Jun 29, 2026, 3:20 PM' /patients/0dfkpm8z1g/appointments/31br2cmc02  
+[A] 'Apr 24, 2026, 11:00 AM' /patients/0dfkpm8z1g/appointments/0mdcln5dm2  
+[A] 'Apr 15, 2026, 10:20 AM' /patients/0dfkpm8z1g/appointments/345nb9bgvz  
+[A] 'Jan 19, 2026, 10:40 AM' /patients/0dfkpm8z1g/appointments/1ggnklf77s  
+[A] 'Jan 6, 2026, 10:40 AM' /patients/0dfkpm8z1g/appointments/3hkkgc86l4  
+[A] 'Dec 30, 2025, 8:00 AM' /patients/0dfkpm8z1g/appointments/5fc1vzpxr6  
+[A] 'Oct 20, 2025, 3:20 PM' /patients/0dfkpm8z1g/appointments/05gz65001d  
+[A] 'Aug 21, 2025, 2:30 PM' /patients/0dfkpm8z1g/appointments/0kmp8xkp6j  
+[A] 'Aug 7, 2025, 11:20 AM' /patients/0dfkpm8z1g/appointments/3p874cv8q2  
+[A] 'Jul 22, 2025, 9:40 AM' /patients/0dfkpm8z1g/appointments/4mwl5hslsx  
+[A] 'Jun 5, 2025, 11:00 AM' /patients/0dfkpm8z1g/appointments/306rlrh143  
+[A] 'Jun 2, 2025, 3:40 PM' /patients/0dfkpm8z1g/appointments/6nr2qs1s7t  
+[A] 'May 14, 2025, 4:40 PM' /patients/0dfkpm8z1g/appointments/49t5xvqqc2  
+[A] 'Jan 21, 2025, 2:00 PM' /patients/0dfkpm8z1g/appointments/0s67s3b8cm  
+[A] 'Oct 30, 2024, 9:00 AM' /patients/0dfkpm8z1g/appointments/0cbn9ncm8r  
+[A] 'Oct 28, 2024, 2:20 PM' /patients/0dfkpm8z1g/appointments/5xn27w51vp  

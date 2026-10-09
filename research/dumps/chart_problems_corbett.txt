@@ -1,0 +1,31 @@
+URL: https://practice.speedrun.scopehealth.com/patients/0xz2pw8x8t/problems
+TITLE: Corbett, Ana · Wrenfield
+
+Corbett, Ana
+MRN
+HG5860146
+Date of birth
+11/13/2000 (25 years)
+Sex
+Female
+Billing
+Invoices
+Demographics
+Insurance
+Problems
+Notes
+Documents
+Appointments
+Activity
+
+No conditions recorded
+
+---- INTERACTIVE ----
+[A] 'Invoices' /billing/accounts/0xz2pw8x8t  
+[A] 'Demographics' /patients/0xz2pw8x8t  
+[A] 'Insurance' /patients/0xz2pw8x8t/insurance  
+[A] 'Problems' /patients/0xz2pw8x8t/problems  page
+[A] 'Notes' /patients/0xz2pw8x8t/notes  
+[A] 'Documents' /patients/0xz2pw8x8t/documents  
+[A] 'Appointments' /patients/0xz2pw8x8t/appointments  
+[A] 'Activity' /patients/0xz2pw8x8t/activity  

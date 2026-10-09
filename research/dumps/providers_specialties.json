@@ -1,0 +1,562 @@
+[
+ {
+  "name": "Angel Ali, NP",
+  "credential": "NP",
+  "specialty": "Family Medicine",
+  "status": "Active",
+  "provider_id": "47vhl7tdlt"
+ },
+ {
+  "name": "Gloria Allen, NP",
+  "credential": "NP",
+  "specialty": "Family Medicine",
+  "status": "Active",
+  "provider_id": "4vqb93p4g9"
+ },
+ {
+  "name": "Diana Anderson, PA",
+  "credential": "PA",
+  "specialty": "Family Medicine",
+  "status": "Active",
+  "provider_id": "1x0jb5xxv1"
+ },
+ {
+  "name": "Lawrence Bennett, MD",
+  "credential": "MD",
+  "specialty": "Behavioral Health",
+  "status": "Active",
+  "provider_id": "38z1hc7vnk"
+ },
+ {
+  "name": "Joshua Bowman, PA",
+  "credential": "PA",
+  "specialty": "Family Medicine",
+  "status": "Active",
+  "provider_id": "3kskb9hlkw"
+ },
+ {
+  "name": "Mateo Butler, MD",
+  "credential": "MD",
+  "specialty": "Obstetrics and Gynecology",
+  "status": "Active",
+  "provider_id": "3pfsvt504f"
+ },
+ {
+  "name": "Mei Carpenter, PA",
+  "credential": "PA",
+  "specialty": "Family Medicine",
+  "status": "Active",
+  "provider_id": "3jkjq413j4"
+ },
+ {
+  "name": "Valentina Carroll, MD",
+  "credential": "MD",
+  "specialty": "Dermatology",
+  "status": "Active",
+  "provider_id": "4xhrgv47zb"
+ },
+ {
+  "name": "Renee Chen, MD",
+  "credential": "MD",
+  "specialty": "Orthopedics",
+  "status": "Active",
+  "provider_id": "259pggt74t"
+ },
+ {
+  "name": "Jason Collins, NP",
+  "credential": "NP",
+  "specialty": "Pediatrics",
+  "status": "Active",
+  "provider_id": "2w3h2mm0lf"
+ },
+ {
+  "name": "James Cook, PA",
+  "credential": "PA",
+  "specialty": "Family Medicine",
+  "status": "Active",
+  "provider_id": "3c3xr5whjs"
+ },
+ {
+  "name": "Jose Crawford, MD",
+  "credential": "MD",
+  "specialty": "Internal Medicine",
+  "status": "Active",
+  "provider_id": "33zmd3p17w"
+ },
+ {
+  "name": "Donna Cunningham, MD",
+  "credential": "MD",
+  "specialty": "Internal Medicine",
+  "status": "Active",
+  "provider_id": "5h251lcmxt"
+ },
+ {
+  "name": "Charles Davis, MD",
+  "credential": "MD",
+  "specialty": "Pediatrics",
+  "status": "Active",
+  "provider_id": "59kwqstqzv"
+ },
+ {
+  "name": "Matthew Evans, PA",
+  "credential": "PA",
+  "specialty": "Pediatrics",
+  "status": "Active",
+  "provider_id": "3901xlgkl5"
+ },
+ {
+  "name": "Liam Farrell, NP",
+  "credential": "NP",
+  "specialty": "Family Medicine",
+  "status": "Active",
+  "provider_id": "4r4kktzx1z"
+ },
+ {
+  "name": "Desmond Fields, PA",
+  "credential": "PA",
+  "specialty": "Physical Therapy",
+  "status": "Active",
+  "provider_id": "042xngpx1b"
+ },
+ {
+  "name": "Ann Foster, MD",
+  "credential": "MD",
+  "specialty": "Internal Medicine",
+  "status": "Active",
+  "provider_id": "03vflr6zdl"
+ },
+ {
+  "name": "David Fowler, MD",
+  "credential": "MD",
+  "specialty": "Family Medicine",
+  "status": "Active",
+  "provider_id": "3d805j5rts"
+ },
+ {
+  "name": "Judith Garcia, MD",
+  "credential": "MD",
+  "specialty": "Physical Therapy",
+  "status": "Active",
+  "provider_id": "3dcv32x8b0"
+ },
+ {
+  "name": "Kathleen Garrison, DO",
+  "credential": "DO",
+  "specialty": "Family Medicine",
+  "status": "Active",
+  "provider_id": "148lfp5frq"
+ },
+ {
+  "name": "Austin Gibson, NP",
+  "credential": "NP",
+  "specialty": "Behavioral Health",
+  "status": "Active",
+  "provider_id": "0r41qzmlsp"
+ },
+ {
+  "name": "Diane Gonzalez, MD",
+  "credential": "MD",
+  "specialty": "Internal Medicine",
+  "status": "Active",
+  "provider_id": "1lph7rgv0t"
+ },
+ {
+  "name": "Colleen Grant, PA",
+  "credential": "PA",
+  "specialty": "Family Medicine",
+  "status": "Active",
+  "provider_id": "71z5bx8rcj"
+ },
+ {
+  "name": "Elena Gutierrez, NP",
+  "credential": "NP",
+  "specialty": "Family Medicine",
+  "status": "Active",
+  "provider_id": "2hcrpnxkr6"
+ },
+ {
+  "name": "Walter Guzman, PA",
+  "credential": "PA",
+  "specialty": "Behavioral Health",
+  "status": "Active",
+  "provider_id": "30zjmwkmcm"
+ },
+ {
+  "name": "Richard Harrison, NP",
+  "credential": "NP",
+  "specialty": "Internal Medicine",
+  "status": "Active",
+  "provider_id": "26j918rjxr"
+ },
+ {
+  "name": "Susan Herrera, DO",
+  "credential": "DO",
+  "specialty": "Obstetrics and Gynecology",
+  "status": "Active",
+  "provider_id": "0mrc40jv5h"
+ },
+ {
+  "name": "Brandon Howell, NP",
+  "credential": "NP",
+  "specialty": "Family Medicine",
+  "status": "Active",
+  "provider_id": "0hmlhd4r46"
+ },
+ {
+  "name": "Catherine Jackson, MD",
+  "credential": "MD",
+  "specialty": "Endocrinology",
+  "status": "Active",
+  "provider_id": "2kmhl2rpsk"
+ },
+ {
+  "name": "Lucas Johnson, NP",
+  "credential": "NP",
+  "specialty": "Pediatrics",
+  "status": "Active",
+  "provider_id": "62frj7nbh0"
+ },
+ {
+  "name": "William Kelly, NP",
+  "credential": "NP",
+  "specialty": "Internal Medicine",
+  "status": "Active",
+  "provider_id": "0frgn6q90c"
+ },
+ {
+  "name": "Harold Larsen, PA",
+  "credential": "PA",
+  "specialty": "Physical Therapy",
+  "status": "Active",
+  "provider_id": "66lrqj1xcl"
+ },
+ {
+  "name": "Denise Lee, DO",
+  "credential": "DO",
+  "specialty": "Orthopedics",
+  "status": "Active",
+  "provider_id": "3x4sghrm4h"
+ },
+ {
+  "name": "Matthew Lindgren, MD",
+  "credential": "MD",
+  "specialty": "Orthopedics",
+  "status": "Active",
+  "provider_id": "4rb3dfppwg"
+ },
+ {
+  "name": "Edward Lindqvist, NP",
+  "credential": "NP",
+  "specialty": "Endocrinology",
+  "status": "Active",
+  "provider_id": "494hhtckfw"
+ },
+ {
+  "name": "Lucas Lopez, NP",
+  "credential": "NP",
+  "specialty": "Cardiology",
+  "status": "Active",
+  "provider_id": "737cgs7bp0"
+ },
+ {
+  "name": "Frances Maldonado, DO",
+  "credential": "DO",
+  "specialty": "Internal Medicine",
+  "status": "Active",
+  "provider_id": "2wj83x4hmd"
+ },
+ {
+  "name": "Janet Marshall, MD",
+  "credential": "MD",
+  "specialty": "Cardiology",
+  "status": "Active",
+  "provider_id": "558nkldqnj"
+ },
+ {
+  "name": "Lawrence Martin, MD",
+  "credential": "MD",
+  "specialty": "Internal Medicine",
+  "status": "Active",
+  "provider_id": "5x1460x557"
+ },
+ {
+  "name": "Dorothy Mason, PA",
+  "credential": "PA",
+  "specialty": "Physical Therapy",
+  "status": "Active",
+  "provider_id": "5hd66mwwgf"
+ },
+ {
+  "name": "Garrett Meyer, MD",
+  "credential": "MD",
+  "specialty": "Internal Medicine",
+  "status": "Active",
+  "provider_id": "5gg39381mb"
+ },
+ {
+  "name": "Kevin Miller, MD",
+  "credential": "MD",
+  "specialty": "Endocrinology",
+  "status": "Active",
+  "provider_id": "5grj6r5qz3"
+ },
+ {
+  "name": "Victoria Moore, MD",
+  "credential": "MD",
+  "specialty": "Pediatrics",
+  "status": "Active",
+  "provider_id": "5lhp41mzsj"
+ },
+ {
+  "name": "Samuel Morris, MD",
+  "credential": "MD",
+  "specialty": "Family Medicine",
+  "status": "Active",
+  "provider_id": "345gknc1wb"
+ },
+ {
+  "name": "Joyce Nelson, NP",
+  "credential": "NP",
+  "specialty": "Family Medicine",
+  "status": "Active",
+  "provider_id": "0p598v99v8"
+ },
+ {
+  "name": "Katherine Nichols, NP",
+  "credential": "NP",
+  "specialty": "Pediatrics",
+  "status": "Active",
+  "provider_id": "0hsg0qq1bj"
+ },
+ {
+  "name": "Jose Nielsen, MD",
+  "credential": "MD",
+  "specialty": "Family Medicine",
+  "status": "Active",
+  "provider_id": "57x0lvnp78"
+ },
+ {
+  "name": "Bryan Palmer, NP",
+  "credential": "NP",
+  "specialty": "Internal Medicine",
+  "status": "Active",
+  "provider_id": "129c6fgf27"
+ },
+ {
+  "name": "Jennifer Parker, MD",
+  "credential": "MD",
+  "specialty": "Obstetrics and Gynecology",
+  "status": "Active",
+  "provider_id": "5xs7sfr1xw"
+ },
+ {
+  "name": "Valentina Perez, MD",
+  "credential": "MD",
+  "specialty": "Allergy and Immunology",
+  "status": "Active",
+  "provider_id": "705hcz2jw1"
+ },
+ {
+  "name": "Joan Ramirez, MD",
+  "credential": "MD",
+  "specialty": "Dermatology",
+  "status": "Active",
+  "provider_id": "5q44ftjrdz"
+ },
+ {
+  "name": "Hannah Ramos, MD",
+  "credential": "MD",
+  "specialty": "Orthopedics",
+  "status": "Active",
+  "provider_id": "43nb448x5n"
+ },
+ {
+  "name": "Brian Reed, NP",
+  "credential": "NP",
+  "specialty": "Physical Therapy",
+  "status": "Active",
+  "provider_id": "4f1p6jnm3f"
+ },
+ {
+  "name": "Martha Reynolds, MD",
+  "credential": "MD",
+  "specialty": "Family Medicine",
+  "status": "Active",
+  "provider_id": "0g41pm5s23"
+ },
+ {
+  "name": "Jacqueline Rios, MD",
+  "credential": "MD",
+  "specialty": "Allergy and Immunology",
+  "status": "Active",
+  "provider_id": "0c66k0lj25"
+ },
+ {
+  "name": "Olivia Rivera, NP",
+  "credential": "NP",
+  "specialty": "Family Medicine",
+  "status": "Active",
+  "provider_id": "27g92zv7qn"
+ },
+ {
+  "name": "Priya Roberts, NP",
+  "credential": "NP",
+  "specialty": "Internal Medicine",
+  "status": "Active",
+  "provider_id": "1zbm578l5z"
+ },
+ {
+  "name": "Lawrence Rodriguez, NP",
+  "credential": "NP",
+  "specialty": "Physical Therapy",
+  "status": "Active",
+  "provider_id": "1v6wb7df9p"
+ },
+ {
+  "name": "Zachary Ruiz, MD",
+  "credential": "MD",
+  "specialty": "Obstetrics and Gynecology",
+  "status": "Active",
+  "provider_id": "614zmkwbl2"
+ },
+ {
+  "name": "Dorothy Scott, NP",
+  "credential": "NP",
+  "specialty": "Endocrinology",
+  "status": "Active",
+  "provider_id": "6w7k8xmpgr"
+ },
+ {
+  "name": "Donald Silva, MD",
+  "credential": "MD",
+  "specialty": "Obstetrics and Gynecology",
+  "status": "Active",
+  "provider_id": "57dkc53brc"
+ },
+ {
+  "name": "Mark Sorensen, MD",
+  "credential": "MD",
+  "specialty": "Family Medicine",
+  "status": "Active",
+  "provider_id": "4zxht0glk9"
+ },
+ {
+  "name": "Julie Soto, MD",
+  "credential": "MD",
+  "specialty": "Family Medicine",
+  "status": "Active",
+  "provider_id": "29rx30ph13"
+ },
+ {
+  "name": "Kenneth Sullivan, NP",
+  "credential": "NP",
+  "specialty": "Internal Medicine",
+  "status": "Active",
+  "provider_id": "43296264mj"
+ },
+ {
+  "name": "James Tillman, DO",
+  "credential": "DO",
+  "specialty": "Physical Therapy",
+  "status": "Active",
+  "provider_id": "08n8wd6l5g"
+ },
+ {
+  "name": "Susan Vasquez, NP",
+  "credential": "NP",
+  "specialty": "Family Medicine",
+  "status": "Active",
+  "provider_id": "6h8x165x45"
+ },
+ {
+  "name": "Aaron Wagner, MD",
+  "credential": "MD",
+  "specialty": "Cardiology",
+  "status": "Active",
+  "provider_id": "45h1bjsgfw"
+ },
+ {
+  "name": "Lori Watkins, MD",
+  "credential": "MD",
+  "specialty": "Family Medicine",
+  "status": "Active",
+  "provider_id": "5kshd3llmj"
+ },
+ {
+  "name": "Soren Welch, NP",
+  "credential": "NP",
+  "specialty": "Family Medicine",
+  "status": "Active",
+  "provider_id": "67kxz8rw0g"
+ },
+ {
+  "name": "Brenda West, MD",
+  "credential": "MD",
+  "specialty": "Orthopedics",
+  "status": "Active",
+  "provider_id": "3xn04x0076"
+ },
+ {
+  "name": "Megan Williamson, MD",
+  "credential": "MD",
+  "specialty": "Cardiology",
+  "status": "Active",
+  "provider_id": "547lkhvbrg"
+ },
+ {
+  "name": "Ruth Green, DO",
+  "credential": "DO",
+  "specialty": "Family Medicine",
+  "status": "Inactive",
+  "provider_id": "4s1fznq89k"
+ },
+ {
+  "name": "Douglas Hughes, MD",
+  "credential": "MD",
+  "specialty": "Cardiology",
+  "status": "Inactive",
+  "provider_id": "0hmpjj624z"
+ },
+ {
+  "name": "Rachel Martinez, MD",
+  "credential": "MD",
+  "specialty": "Family Medicine",
+  "status": "Inactive",
+  "provider_id": "2czw8r4nh0"
+ },
+ {
+  "name": "Laura Murphy, MD",
+  "credential": "MD",
+  "specialty": "Obstetrics and Gynecology",
+  "status": "Inactive",
+  "provider_id": "5xsn8ws4x5"
+ },
+ {
+  "name": "Martha Olson, MD",
+  "credential": "MD",
+  "specialty": "Obstetrics and Gynecology",
+  "status": "Inactive",
+  "provider_id": "381vsl8ptd"
+ },
+ {
+  "name": "Edward Pierce, NP",
+  "credential": "NP",
+  "specialty": "Cardiology",
+  "status": "Inactive",
+  "provider_id": "4q2wx6mhns"
+ },
+ {
+  "name": "Ann Shaw, MD",
+  "credential": "MD",
+  "specialty": "Allergy and Immunology",
+  "status": "Inactive",
+  "provider_id": "1ng9xl9wkn"
+ },
+ {
+  "name": "Joe Wilson, PA",
+  "credential": "PA",
+  "specialty": "Internal Medicine",
+  "status": "Inactive",
+  "provider_id": "610h39xcxz"
+ }
+]

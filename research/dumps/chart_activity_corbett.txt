@@ -1,0 +1,44 @@
+URL: https://practice.speedrun.scopehealth.com/patients/0xz2pw8x8t/activity
+TITLE: Corbett, Ana · Wrenfield
+
+Corbett, Ana
+MRN
+HG5860146
+Date of birth
+11/13/2000 (25 years)
+Sex
+Female
+Billing
+Invoices
+Demographics
+Insurance
+Problems
+Notes
+Documents
+Appointments
+Activity
+Activity
+Show
+All activity
+Changes
+Chart views
+Activity on this record, newest first
+When	User	What
+Apr 13, 2026, 12:40 AM CDT	amendez	Opened the chart
+Dec 8, 2024, 9:08 AM CST	danderson	Opened the chart
+Sep 23, 2024, 5:22 PM CDT	dgonzalez	Opened the chart
+May 18, 2024, 8:02 AM CDT	dstevens	Changed the phone number
+Jan 19, 2020, 11:26 AM CST	irivera	Created the record
+
+5 entries
+
+---- INTERACTIVE ----
+[A] 'Invoices' /billing/accounts/0xz2pw8x8t  
+[A] 'Demographics' /patients/0xz2pw8x8t  
+[A] 'Insurance' /patients/0xz2pw8x8t/insurance  
+[A] 'Problems' /patients/0xz2pw8x8t/problems  
+[A] 'Notes' /patients/0xz2pw8x8t/notes  
+[A] 'Documents' /patients/0xz2pw8x8t/documents  
+[A] 'Appointments' /patients/0xz2pw8x8t/appointments  
+[A] 'Activity' /patients/0xz2pw8x8t/activity  page
+[SELECT] 'All activity\nChanges\nChart views'  kind 

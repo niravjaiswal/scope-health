@@ -1,0 +1,52 @@
+URL: /schedule/appointments?from=2026-10-14&to=2026-10-14
+LOCATION: Northgate
+
+# Schedule
+Day </schedule?date=2026-10-14> | Provider </schedule/providers/4vqb93p4g9?date=2026-10-14> | Appointment list </schedule/appointments?from=2026-10-14&to=2026-10-14> (current)
+From
+[input from (date) = "2026-10-14"]
+To
+[input to (date) = "2026-10-14"]
+Location
+[select location = "All locations" options(11): All locations; Northgate; Front Range; Eastside; Stonebrook; Lakeside; Riverbend; Highline; Prairie View; Cedar Hollow; Willow Creek]
+Provider
+[select provider = "All providers" options(81): All providers; Angel Ali, NP; Gloria Allen, NP; Diana Anderson, PA; Lawrence Bennett, MD; Joshua Bowman, PA; Mateo Butler, MD; Mei Carpenter, PA; Valentina Carroll, MD; Renee Chen, MD; Jason Collins, NP; James Cook, PA; Jose Crawford, MD; Donna Cunningham, MD; Charles Davis, MD; Matthew Evans, PA; Liam Farrell, NP; Desmond Fields, PA; Ann Foster, MD; David Fowler, MD; Judith Garcia, MD; Kathleen Garrison, DO; Austin Gibson, NP; Diane Gonzalez, MD; Colleen Grant, PA; Elena Gutierrez, NP; Walter Guzman, PA; Richard Harrison, NP; Susan Herrera, DO; Brandon Howell, NP; Catherine Jackson, MD; Lucas Johnson, NP; William Kelly, NP; Harold Larsen, PA; Denise Lee, DO; Matthew Lindgren, MD; Edward Lindqvist, NP; Lucas Lopez, NP; Frances Maldonado, DO; Janet Marshall, MD; ...]
+Status
+[select status = "All statuses" options(6): All statuses; Scheduled; Completed; Cancelled; Late cancel; No-show]
+Visit type
+[select type = "All visit types" options(41): All visit types; Allergy injection; Annual physical; Anticoagulation check; Behavioral health session; Blood pressure check; Cardiac rehabilitation; Cast check; Diabetes management; Echocardiogram; Electrocardiogram; Follow-up visit; Hearing test; Immunization; Infusion therapy; Joint injection; Lab draw; Medication check; Minor procedure; New patient visit; Nutrition counseling; Office visit; Physical therapy session; Post-operative check; Pre-operative evaluation; Prenatal visit; Sick visit; Skin biopsy; Skin check; Sleep consultation; Smoking cessation counseling; Specialist consultation; Sports physical; Stress test; Telehealth visit; Travel consultation; Ultrasound; Vision screening; Well-child check; Wound care; ...]
+[Show appointments]
+## Appointments from Oct 14, 2026 to Oct 14, 2026
+[Date] | Time | Patient | Provider | Visit type | Status
+Oct 14, 2026 </patients/1z51c6nt6k/appointments/000gz3ss24> | 8:00 AM to 8:20 AM CDT | Turner, Shirley </patients/1z51c6nt6k> | Diana Anderson, PA | Office visit | Completed
+Oct 14, 2026 </patients/21p6zv34d3/recurring/49kzhht3ct> | 8:00 AM to 8:30 AM CDT | Wilson, Wayne </patients/21p6zv34d3> | Mark Sorensen, MD | Wound care | Completed
+Oct 14, 2026 </patients/6szfd4wn3d/recurring/31zc3fzlbf> | 8:00 AM to 8:30 AM CDT | Tran, Robert </patients/6szfd4wn3d> | Desmond Fields, PA | Smoking cessation counseling | Completed
+Oct 14, 2026 </patients/2z02hsrvb9/appointments/6vhg2s7cz3> | 8:00 AM to 9:00 AM CDT | Wilson, George </patients/2z02hsrvb9> | Diana Anderson, PA | Infusion therapy | Cancelled
+Oct 14, 2026 </patients/3f800709v2/appointments/0l8b6vqmhs> | 8:20 AM to 9:20 AM CDT | Smith, Joyce </patients/3f800709v2> | Brenda West, MD | Minor procedure | Completed
+Oct 14, 2026 </patients/2pdn6rb53m/appointments/2g9f15xwwb> | 8:30 AM to 8:50 AM CDT | Davis, Virginia </patients/2pdn6rb53m> | Desmond Fields, PA | Follow-up visit | Completed
+Oct 14, 2026 </patients/3b6b750nt0/appointments/50j3qxxr61> | 8:30 AM to 8:50 AM CDT | Garcia, David </patients/3b6b750nt0> | Mark Sorensen, MD | Office visit | No-show
+Oct 14, 2026 </patients/1lzxvj88zd/appointments/00fl88nb8t> | 9:00 AM to 9:20 AM CDT | Lee, Jonathan </patients/1lzxvj88zd> | Diana Anderson, PA | Follow-up visit | Completed
+Oct 14, 2026 </patients/3fd2gk8r5n/recurring/0wm1b0mw23> | 9:00 AM to 9:20 AM CDT | Miller, Elizabeth </patients/3fd2gk8r5n> | Mark Sorensen, MD | Prenatal visit | Completed
+Oct 14, 2026 </patients/1dvgjvhz7d/appointments/50w68q70xf> | 9:15 AM to 9:55 AM CDT | Perry, Christine </patients/1dvgjvhz7d> | Mark Sorensen, MD | Annual physical | Cancelled
+Oct 14, 2026 </patients/5vzzjptxlw/appointments/1l46g5fq5s> | 9:20 AM to 9:40 AM CDT | Vasquez, Jean </patients/5vzzjptxlw> | Diana Anderson, PA | Sports physical | Completed
+Oct 14, 2026 </patients/4n066v5brb/recurring/0ffvkkq7nr> | 9:30 AM to 10:15 AM CDT | Green, Kathleen </patients/4n066v5brb> | Desmond Fields, PA | Physical therapy session | Scheduled
+Oct 14, 2026 </patients/1xb41ths62/appointments/615thbfj3x> | 9:40 AM to 10:00 AM CDT | Ortega, Robert </patients/1xb41ths62> | Diana Anderson, PA | Follow-up visit | Completed
+Oct 14, 2026 </patients/5xjqv6d7mf/appointments/1zn5vqpvns> | 9:40 AM to 10:10 AM CDT | Ford, John </patients/5xjqv6d7mf> | Brenda West, MD | Wound care | Scheduled
+Oct 14, 2026 </patients/4xqp60q94x/appointments/4sml828ltr> | 9:45 AM to 10:00 AM CDT | Harris, Michael </patients/4xqp60q94x> | Mark Sorensen, MD | Lab draw | Late cancel
+Oct 14, 2026 </patients/4qzq3f7zl5/appointments/0t3q0qxp3z> | 9:45 AM to 10:25 AM CDT | Perez, Abigail </patients/4qzq3f7zl5> | Mark Sorensen, MD | New patient visit | Scheduled
+Oct 14, 2026 </patients/5d7xfdthjt/appointments/3npvpr2qbt> | 10:00 AM to 10:15 AM CDT | Matthews, Omar </patients/5d7xfdthjt> | Diana Anderson, PA | Medication check | Late cancel
+Oct 14, 2026 </patients/6hpq2qsfkb/appointments/71cj1n19xk> | 10:00 AM to 10:20 AM CDT | Mitchell, Ashley </patients/6hpq2qsfkb> | Mark Sorensen, MD | Follow-up visit | Cancelled
+Oct 14, 2026 </patients/3hdhbsfbq2/appointments/39bjx66468> | 10:00 AM to 10:40 AM CDT | Hudson, Aisha </patients/3hdhbsfbq2> | Diana Anderson, PA | Annual physical | Scheduled
+Oct 14, 2026 </patients/3n3cj2whx1/appointments/2bfld4h9ks> | 10:20 AM to 10:50 AM CDT | Luna, Ronald </patients/3n3cj2whx1> | Brenda West, MD | Wound care | Scheduled
+Oct 14, 2026 </patients/5fljr2js6t/appointments/5rn5gw5n9g> | 10:30 AM to 10:50 AM CDT | Schaefer, Jessica </patients/5fljr2js6t> | Mark Sorensen, MD | Telehealth visit | Scheduled
+Oct 14, 2026 </patients/03q14ndmmd/appointments/6x505m94xc> | 10:40 AM to 11:00 AM CDT | Murphy, Valentina </patients/03q14ndmmd> | Diana Anderson, PA | Sick visit | Scheduled
+Oct 14, 2026 </patients/6sqtnhdpq1/appointments/5qmf7g4kj1> | 11:00 AM to 11:15 AM CDT | Rodríguez, Hannah </patients/6sqtnhdpq1> | Brenda West, MD | Anticoagulation check | Scheduled
+Oct 14, 2026 </patients/1j01x82b8s/appointments/41g8x6rppt> | 11:00 AM to 11:20 AM CDT | Williams, Mary </patients/1j01x82b8s> | Aaron Wagner, MD | Follow-up visit | Scheduled
+Oct 14, 2026 </patients/728375g94r/appointments/1w6v4vf2w5> | 11:00 AM to 11:30 AM CDT | Russell, Natalie </patients/728375g94r> | Diana Anderson, PA | Skin biopsy | Scheduled
+Showing 1 to 25 of 75 appointments
+[select size = "25 per page" options(3): 25 per page; 50 per page; 100 per page]
+[Previous (disabled)]
+[1 (current)]
+[2]
+[3]
+[Next]

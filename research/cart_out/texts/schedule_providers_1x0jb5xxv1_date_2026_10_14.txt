@@ -1,0 +1,39 @@
+URL: /schedule/providers/1x0jb5xxv1?date=2026-10-14
+LOCATION: Northgate
+
+# Schedule
+Day </schedule?date=2026-10-14> | Provider </schedule/providers/1x0jb5xxv1?date=2026-10-14> (current) | Appointment list </schedule/appointments?from=2026-10-14&to=2026-10-20>
+[Previous day]
+[Today (current)]
+[Next day]
+[input date (date) = "2026-10-14"]
+## Diana Anderson, PA
+Family Medicine · Wednesday, October 14, 2026
+Provider
+[select provider = "Diana Anderson, PA" options(80): Angel Ali, NP; Gloria Allen, NP; Diana Anderson, PA; Lawrence Bennett, MD; Joshua Bowman, PA; Mateo Butler, MD; Mei Carpenter, PA; Valentina Carroll, MD; Renee Chen, MD; Jason Collins, NP; James Cook, PA; Jose Crawford, MD; Donna Cunningham, MD; Charles Davis, MD; Matthew Evans, PA; Liam Farrell, NP; Desmond Fields, PA; Ann Foster, MD; David Fowler, MD; Judith Garcia, MD; Kathleen Garrison, DO; Austin Gibson, NP; Diane Gonzalez, MD; Colleen Grant, PA; Elena Gutierrez, NP; Walter Guzman, PA; Richard Harrison, NP; Susan Herrera, DO; Brandon Howell, NP; Catherine Jackson, MD; Lucas Johnson, NP; William Kelly, NP; Harold Larsen, PA; Denise Lee, DO; Matthew Lindgren, MD; Edward Lindqvist, NP; Lucas Lopez, NP; Frances Maldonado, DO; Janet Marshall, MD; Lawrence Martin, MD; ...]
+### Northgate Times in CDT
+- Working 8:00 AM to 12:00 PM, 1:00 PM to 5:00 PM
+Time | Patient | Visit type | Status
+8:00 AM to 8:20 AM </patients/1z51c6nt6k/appointments/000gz3ss24> | Turner, Shirley </patients/1z51c6nt6k> | Office visit | Completed
+8:00 AM to 9:00 AM </patients/2z02hsrvb9/appointments/6vhg2s7cz3> | Wilson, George </patients/2z02hsrvb9> | Infusion therapy | Cancelled
+8:20 AM to 8:40 AM | Open slot
+8:40 AM to 9:00 AM | Open slot
+9:00 AM to 9:20 AM </patients/1lzxvj88zd/appointments/00fl88nb8t> | Lee, Jonathan </patients/1lzxvj88zd> | Follow-up visit | Completed
+9:20 AM to 9:40 AM </patients/5vzzjptxlw/appointments/1l46g5fq5s> | Vasquez, Jean </patients/5vzzjptxlw> | Sports physical | Completed
+9:40 AM to 10:00 AM </patients/1xb41ths62/appointments/615thbfj3x> | Ortega, Robert </patients/1xb41ths62> | Follow-up visit | Completed
+10:00 AM to 10:15 AM </patients/5d7xfdthjt/appointments/3npvpr2qbt> | Matthews, Omar </patients/5d7xfdthjt> | Medication check | Late cancel
+10:00 AM to 10:40 AM </patients/3hdhbsfbq2/appointments/39bjx66468> | Hudson, Aisha </patients/3hdhbsfbq2> | Annual physical | Scheduled
+10:40 AM to 11:00 AM </patients/03q14ndmmd/appointments/6x505m94xc> | Murphy, Valentina </patients/03q14ndmmd> | Sick visit | Scheduled
+11:00 AM to 11:30 AM </patients/728375g94r/appointments/1w6v4vf2w5> | Russell, Natalie </patients/728375g94r> | Skin biopsy | Scheduled
+11:20 AM to 11:40 AM </patients/07ngwp7x0s/appointments/1gdlz8xnz7> | Wright, Debra </patients/07ngwp7x0s> | Office visit | Cancelled
+11:40 AM to 12:00 PM | Open slot
+1:00 PM to 1:20 PM </patients/6s5wtkp362/appointments/42rhfbvx87> | Khan, Garrett </patients/6s5wtkp362> | Telehealth visit | Scheduled
+1:20 PM to 1:40 PM | Open slot
+1:40 PM to 2:00 PM | Open slot
+2:00 PM to 2:20 PM | Open slot
+2:20 PM to 2:40 PM | Open slot
+2:40 PM to 3:00 PM | Open slot
+3:00 PM to 3:20 PM | Open slot
+3:20 PM to 4:05 PM </patients/51pplkkcs1/recurring/313bv2hbx1> | Nelson, Thomas </patients/51pplkkcs1> | Nutrition counseling | Scheduled
+4:20 PM to 4:40 PM </patients/2wwmkfhxhp/appointments/0nm8pctdll> | Dixon, Ashley </patients/2wwmkfhxhp> | Sick visit | Scheduled
+4:40 PM to 5:00 PM </patients/07bq5915p6/appointments/3gl206z4f6> | Hernández, Diana </patients/07bq5915p6> | Follow-up visit | Scheduled

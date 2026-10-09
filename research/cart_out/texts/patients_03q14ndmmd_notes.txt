@@ -1,0 +1,31 @@
+URL: /patients/03q14ndmmd/notes
+LOCATION: Northgate
+
+# Murphy, Valentina
+MRN: HG8741437
+Date of birth: 06/05/1971 (55 years)
+Sex: Female
+Billing: Invoices </billing/accounts/03q14ndmmd>
+Demographics </patients/03q14ndmmd> | Insurance </patients/03q14ndmmd/insurance> | Problems </patients/03q14ndmmd/problems> | Notes </patients/03q14ndmmd/notes> (current) | Documents </patients/03q14ndmmd/documents> | Appointments </patients/03q14ndmmd/appointments> | Activity </patients/03q14ndmmd/activity>
+Written from
+[input from (date) = ""]
+Written to
+[input to (date) = ""]
+[Apply]
+[Clear]
+- Message
+Grace Garcia
+Jun 14, 2026, 12:10 PM
+CDT
+Message to patient: results reviewed by Diana Anderson, PA, no action needed. Continue lisinopril 10 mg daily.
+- Chart note
+Dr. Ramirez
+Jun 5, 2026, 10:41 AM
+CDT
+Follow-up visit. Patient reports occasional heartburn after meals. Vitals stable. Plan: continue ibuprofen 600 mg as needed and recheck in 4 weeks.
+- Chart note
+Dr. Green
+Dec 25, 2024, 12:25 PM
+CST
+Annual review completed with Diana Anderson, PA. Screening up to date. Patient mentions no new complaints. Follow up in 12 weeks.
+3 notes

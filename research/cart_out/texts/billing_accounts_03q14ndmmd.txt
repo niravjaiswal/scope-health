@@ -1,0 +1,35 @@
+URL: /billing/accounts/03q14ndmmd
+LOCATION: Northgate
+
+- Invoices </billing> | - Account of Murphy, Valentina
+# Murphy, Valentina
+MRN: HG8741437
+Date of birth: 06/05/1971
+Open chart </patients/03q14ndmmd>
+## Invoices
+Invoice | Service date | Location | Issued | Total | Status |
+28899944 </billing/invoices/6dlw8w1d1j> | Oct 5, 2026 | Northgate | Oct 7, 2026 | $89.00 | Open |
+26281105 </billing/invoices/45775vsmpt> | Jul 14, 2026 | Northgate | Jul 19, 2026 | $142.00 | Paid |
+30107454 </billing/invoices/0p8h5s5fm3> | Jul 14, 2026 | Northgate | Jul 15, 2026 | $83.43 | Paid |
+76038511 </billing/invoices/3dfgwqpcbq> | Jul 7, 2026 | Northgate | Jul 7, 2026 | $215.63 | Paid |
+16287619 </billing/invoices/08jcfnkl0v> | Jun 30, 2026 | Northgate | Jul 9, 2026 | $72.27 | Paid |
+50101003 </billing/invoices/4glgv44l9q> | May 28, 2026 | Northgate | Jun 3, 2026 | $120.38 | Paid |
+45497432 </billing/invoices/2l8lt730j7> | May 26, 2026 | Northgate | May 30, 2026 | $149.68 | Paid |
+83933652 </billing/invoices/3mcxdqv99z> | May 8, 2026 | Northgate | May 16, 2026 | $86.86 | Paid |
+53315013 </billing/invoices/2gfgpc08vj> | Apr 28, 2026 | Northgate | May 5, 2026 | $138.50 | Paid |
+99213674 </billing/invoices/1mrxm06cwq> | Apr 14, 2026 | Northgate | Apr 17, 2026 | $158.20 | Void |
+70979396 </billing/invoices/12n2bj7p0z> | Apr 1, 2026 | Northgate | Apr 5, 2026 | $64.00 | Open |
+87865169 </billing/invoices/6wn72r976p> | Jan 13, 2026 | Northgate | Jan 16, 2026 | $301.00 | Paid |
+13523772 </billing/invoices/13ms37v9tt> | Nov 3, 2025 | Northgate | Nov 11, 2025 | $63.00 | Paid |
+60770022 </billing/invoices/4039vdf24h> | Sep 14, 2025 | Northgate | Sep 17, 2025 | $169.90 | Paid |
+19537767 </billing/invoices/22f2dkqszg> | Jul 10, 2025 | Northgate | Jul 14, 2025 | $150.01 | Paid |
+98845858 </billing/invoices/0lbn8b4h14> | May 20, 2025 | Northgate | May 20, 2025 | $296.28 | Paid |
+09707314 </billing/invoices/54ttw3xm61> | Apr 7, 2025 | Northgate | Apr 15, 2025 | $87.00 | Paid |
+58604165 </billing/invoices/1fkp0s0fv6> | Apr 5, 2025 | Northgate | Apr 7, 2025 | $99.15 | Partly paid |
+79232957 </billing/invoices/54vm5l8135> | Feb 13, 2025 | Northgate | Feb 17, 2025 | $41.00 | Paid |
+20146946 </billing/invoices/5g6mb1shhh> | Feb 6, 2025 | Northgate | Feb 13, 2025 | $46.00 | Paid |
+Showing 1 to 20 of 22 invoices
+[Previous (disabled)]
+[1 (current)]
+[2]
+[Next]

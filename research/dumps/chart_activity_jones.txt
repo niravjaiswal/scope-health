@@ -1,0 +1,44 @@
+URL: https://practice.speedrun.scopehealth.com/patients/0dfkpm8z1g/activity
+TITLE: Jones, Carol · Wrenfield
+
+Jones, Carol
+MRN
+HG9736761
+Date of birth
+09/07/1982 (44 years)
+Sex
+Female
+Billing
+Invoices
+Demographics
+Insurance
+Problems
+Notes
+Documents
+Appointments
+Activity
+Activity
+Show
+All activity
+Changes
+Chart views
+Activity on this record, newest first
+When	User	What
+Jun 5, 2026, 7:25 PM CDT	bhowell	Opened the chart
+Oct 29, 2024, 10:51 PM CDT	sanderson	Opened the chart
+Oct 9, 2023, 4:33 PM CDT	rchen	Opened the chart
+Oct 2, 2023, 1:58 PM CDT	lbennett	Opened the chart
+Mar 6, 2021, 1:04 PM CST	mmiller	Created the record
+
+5 entries
+
+---- INTERACTIVE ----
+[A] 'Invoices' /billing/accounts/0dfkpm8z1g  
+[A] 'Demographics' /patients/0dfkpm8z1g  
+[A] 'Insurance' /patients/0dfkpm8z1g/insurance  
+[A] 'Problems' /patients/0dfkpm8z1g/problems  
+[A] 'Notes' /patients/0dfkpm8z1g/notes  
+[A] 'Documents' /patients/0dfkpm8z1g/documents  
+[A] 'Appointments' /patients/0dfkpm8z1g/appointments  
+[A] 'Activity' /patients/0dfkpm8z1g/activity  page
+[SELECT] 'All activity\nChanges\nChart views'  kind 

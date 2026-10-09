@@ -1,0 +1,61 @@
+URL: /
+LOCATION: Northgate
+
+# Dashboard
+## Oct 14, 2026
+Updated 10:00 AM CDT
+## Appointments today
+74
+- Scheduled 52 </schedule/appointments?from=2026-10-14&to=2026-10-14&location=2mgdl287kq&status=1>
+- Completed 9 </schedule/appointments?from=2026-10-14&to=2026-10-14&location=2mgdl287kq&status=2>
+- Cancelled 9 </schedule/appointments?from=2026-10-14&to=2026-10-14&location=2mgdl287kq&status=3>
+- Late cancel 3 </schedule/appointments?from=2026-10-14&to=2026-10-14&location=2mgdl287kq&status=4>
+- No-show 1 </schedule/appointments?from=2026-10-14&to=2026-10-14&location=2mgdl287kq&status=5>
+Open the list </schedule/appointments?from=2026-10-14&to=2026-10-14&location=2mgdl287kq>
+## Patients seen today
+9
+Patients with a completed appointment
+Completed appointments </schedule/appointments?from=2026-10-14&to=2026-10-14&location=2mgdl287kq&status=2>
+## Open slots today
+35
+Slots in working hours with nothing booked
+Open the day view </schedule?date=2026-10-14&location=2mgdl287kq>
+## New patients this month
+5
+Records created since Oct 1, 2026
+Activity </activity>
+## Documents received this week
+11
+Oct 12, 2026 to Oct 18, 2026
+Documents </documents>
+## Invoices issued this week
+188
+Oct 12, 2026 to Oct 18, 2026
+Billing </billing>
+## Today's schedule Day view </schedule?location=2mgdl287kq>
+Time | Patient | Provider | Visit type | Status
+12:20 PM to 12:40 PM </patients/3tq61r51x2/appointments/3s727rbq9b> | Vargas, Richard </patients/3tq61r51x2> | Aaron Wagner, MD | Follow-up visit | Scheduled
+1:00 PM to 1:20 PM </patients/6s5wtkp362/appointments/42rhfbvx87> | Khan, Garrett </patients/6s5wtkp362> | Diana Anderson, PA | Telehealth visit | Scheduled
+1:00 PM to 1:20 PM </patients/231j9bqh96/appointments/3tm38lbp48> | Kennedy, Samuel </patients/231j9bqh96> | Desmond Fields, PA | Office visit | Scheduled
+1:00 PM to 1:20 PM </patients/0njj3wftzj/appointments/5hrxm70vlg> | Martinez, Chloé </patients/0njj3wftzj> Restricted | Brenda West, MD | Follow-up visit | Scheduled
+1:00 PM to 1:20 PM </patients/06h771clr3/recurring/2zdrfjqkvk> | Sandoval, Garrett </patients/06h771clr3> | Aaron Wagner, MD | Prenatal visit | Scheduled
+1:00 PM to 1:45 PM </patients/6l07jlmzvr/appointments/5psxmtprzp> | Dixon, Susan </patients/6l07jlmzvr> | Desmond Fields, PA | Echocardiogram | Late cancel
+1:20 PM to 1:40 PM </patients/6fm9mh5fnd/appointments/2vz6kqvv6q> | Lopez, Betty </patients/6fm9mh5fnd> | Brenda West, MD | Telehealth visit | Scheduled
+1:20 PM to 1:50 PM </patients/2w1zn1chdn/recurring/5mpkmh353n> | Owens, Linda </patients/2w1zn1chdn> | Donald Silva, MD | Smoking cessation counseling | Cancelled
+Showing 8 of 43 appointments
+[Show more]
+## Recent activity All activity </activity>
+When | User | What | Record
+Oct 14, 2026, 11:47 AM CDT | frontdesk | Opened the restricted chart. Reason: Billing or insurance question | Chart Porter, Catherine </patients/2q123zlg2m/activity>
+Oct 14, 2026, 11:45 AM CDT | frontdesk | Opened the restricted chart. Reason: Billing or insurance question | Chart Campbell, Amanda </patients/6slgt6ln50/activity>
+Oct 14, 2026, 11:43 AM CDT | frontdesk | Opened the restricted chart. Reason: Billing or insurance question | Chart Zztest, Dummy </patients/092xbw8h7v/activity>
+Oct 14, 2026, 11:43 AM CDT | frontdesk | Opened the restricted chart. Reason: Other reason | Chart Okafor, Bryan </patients/01jcjkmnnk/activity>
+Oct 14, 2026, 11:34 AM CDT | frontdesk | Opened the restricted chart. Reason: Billing or insurance question | Chart Campbell, Amanda </patients/6slgt6ln50/activity>
+Oct 14, 2026, 11:28 AM CDT | frontdesk | Opened the restricted chart. Reason: Billing or insurance question | Chart Lucas, Betty </patients/1d0r5gpj4n/activity>
+Oct 14, 2026, 11:26 AM CDT | frontdesk | Opened the restricted chart. Reason: Scheduling an appointment | Chart Okafor, Bryan </patients/01jcjkmnnk/activity>
+Oct 14, 2026, 11:10 AM CDT | frontdesk | Opened the restricted chart. Reason: Billing or insurance question | Chart Martínez, Andre </patients/3mb3fmvpqf/activity>
+Oct 14, 2026, 10:52 AM CDT | frontdesk | Opened the restricted chart. Reason: Providing care to this patient | Chart Ramirez, David </patients/3pdsxpwzr5/activity>
+Oct 14, 2026, 10:49 AM CDT | frontdesk | Opened the restricted chart. Reason: Providing care to this patient | Chart Ramirez, David </patients/28xpx631v1/activity>
+Showing 1 to 10 of 100+ entries
+[Previous (disabled)]
+[Next]

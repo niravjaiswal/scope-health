@@ -1,0 +1,42 @@
+URL: https://practice.speedrun.scopehealth.com/patients/0dfkpm8z1g
+TITLE: Jones, Carol · Wrenfield
+
+Jones, Carol
+MRN
+HG9736761
+Date of birth
+09/07/1982 (44 years)
+Sex
+Female
+Billing
+Invoices
+Demographics
+Insurance
+Problems
+Notes
+Documents
+Appointments
+Activity
+Contact
+Phone
+(847) 510-3091
+Email
+Not on file
+Address
+8005 Glen Blvd Apt 25
+Tilden Grove, KS 66785
+Care team
+Primary provider
+Jennifer Parker, MD
+Home location
+Eastside
+
+---- INTERACTIVE ----
+[A] 'Invoices' /billing/accounts/0dfkpm8z1g  
+[A] 'Demographics' /patients/0dfkpm8z1g  page
+[A] 'Insurance' /patients/0dfkpm8z1g/insurance  
+[A] 'Problems' /patients/0dfkpm8z1g/problems  
+[A] 'Notes' /patients/0dfkpm8z1g/notes  
+[A] 'Documents' /patients/0dfkpm8z1g/documents  
+[A] 'Appointments' /patients/0dfkpm8z1g/appointments  
+[A] 'Activity' /patients/0dfkpm8z1g/activity  

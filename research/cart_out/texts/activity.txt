@@ -1,0 +1,50 @@
+URL: /activity
+LOCATION: Northgate
+
+# Activity
+What staff did in Wrenfield, newest first.
+User
+[select user = "All users" options(129): All users; Aisha Wilson (awilson); Alexander Nunez (anunez); Andrea Hill (ahill); Andres Mendez (amendez); Angel Ali, NP (aali); Anna Mejia (amejia); Austin Gibson, NP (agibson); Barbara Wilson (bwilson); Betty Baker (bbaker); Brandon Howell, NP (bhowell); Brian Reed, NP (breed); Bryan Palmer, NP (bpalmer); Caleb Price (cprice); Carlos Barnes (cbarnes); Christian Walker (cwalker); Colleen Grant, PA (cgrant); David Hamilton (dhamilton); Debra Stevens (dstevens); Desmond Fields, PA (dfields); Diana Anderson, PA (danderson); Diane Fisher (dfisher); Dorothy Mason, PA (dmason); Dorothy Scott, NP (dscott); Dr. Bennett (lbennett); Dr. Butler (mbutler); Dr. Carroll (vcarroll); Dr. Chen (rchen); Dr. Crawford (jcrawford); Dr. Cunningham (dcunningham); Dr. Davis (cdavis); Dr. Foster (afoster); Dr. Fowler (dfowler); Dr. Garcia (jgarcia); Dr. Garrison (kgarrison); Dr. Gonzalez (dgonzalez); Dr. Green (rgreen); Dr. Herrera (sherrera); Dr. Hughes (dhughes); Dr. Jackson (cjackson); ...]
+Action
+[select action = "All actions" options(7): All actions; Created; Changed; Deleted; Merged; Opened; Logged in]
+Record
+[select record = "All records" options(7): All records; Patient; Appointment; Recurring appointment; Invoice; Document; User account]
+From
+[input from (date) = ""]
+To
+[input to (date) = ""]
+[Apply]
+[Clear filters]
+Patient
+[input patient = "" placeholder="Last name or date of birth"]
+[Find]
+Time | User | Action | Record | What changed
+Oct 14, 2026, 11:47 AM | frontdesk frontdesk | Opened | Porter, Catherine </patients/2q123zlg2m> Restricted | Restricted chart opened. Reason: Billing or insurance question
+Oct 14, 2026, 11:45 AM | frontdesk frontdesk | Opened | Campbell, Amanda </patients/6slgt6ln50> Restricted | Restricted chart opened. Reason: Billing or insurance question
+Oct 14, 2026, 11:43 AM | frontdesk frontdesk | Opened | Zztest, Dummy </patients/092xbw8h7v> Restricted Test record | Restricted chart opened. Reason: Billing or insurance question
+Oct 14, 2026, 11:43 AM | frontdesk frontdesk | Opened | Okafor, Bryan </patients/01jcjkmnnk> Restricted | Restricted chart opened. Reason: Other reason
+Oct 14, 2026, 11:34 AM | frontdesk frontdesk | Opened | Campbell, Amanda </patients/6slgt6ln50> Restricted | Restricted chart opened. Reason: Billing or insurance question
+Oct 14, 2026, 11:28 AM | frontdesk frontdesk | Opened | Lucas, Betty </patients/1d0r5gpj4n> Restricted | Restricted chart opened. Reason: Billing or insurance question
+Oct 14, 2026, 11:26 AM | frontdesk frontdesk | Opened | Okafor, Bryan </patients/01jcjkmnnk> Restricted | Restricted chart opened. Reason: Scheduling an appointment
+Oct 14, 2026, 11:10 AM | frontdesk frontdesk | Opened | Martínez, Andre </patients/3mb3fmvpqf> Restricted | Restricted chart opened. Reason: Billing or insurance question
+Oct 14, 2026, 10:52 AM | frontdesk frontdesk | Opened | Ramirez, David </patients/3pdsxpwzr5> Restricted | Restricted chart opened. Reason: Providing care to this patient
+Oct 14, 2026, 10:49 AM | frontdesk frontdesk | Opened | Ramirez, David </patients/28xpx631v1> Restricted | Restricted chart opened. Reason: Providing care to this patient
+Oct 14, 2026, 10:46 AM | frontdesk frontdesk | Opened | Porter, Catherine </patients/2q123zlg2m> Restricted | Restricted chart opened. Reason: Billing or insurance question
+Oct 14, 2026, 10:41 AM | frontdesk frontdesk | Opened | Porter, Catherine </patients/2q123zlg2m> Restricted | Restricted chart opened. Reason: Billing or insurance question
+Oct 14, 2026, 10:29 AM | frontdesk frontdesk | Opened | Porter, Catherine </patients/2q123zlg2m> Restricted | Restricted chart opened. Reason: Billing or insurance question
+Oct 14, 2026, 10:00 AM | Timothy Moore tmoore | Changed | Invoice 82593504 </billing/invoices/6b7q92km6g> Soto, James | Status changed from Open to Paid
+Oct 14, 2026, 10:00 AM | Timothy Moore tmoore | Created | Invoice 82593504 </billing/invoices/6b7q92km6g> Soto, James | Issued
+Oct 14, 2026, 10:00 AM | Theresa Medina tmedina | Created | Invoice 21617829 </billing/invoices/2cw2d6krzf> Matthews, Astrid | Issued
+Oct 14, 2026, 10:00 AM | Jonathan Jacobsen jjacobsen | Changed | Invoice 03483827 </billing/invoices/5h618fxx1w> Carter, Ryan | Status changed from Partly paid to Partly paid
+Oct 14, 2026, 10:00 AM | Logan Martinez lmartinez | Changed | Invoice 03483827 </billing/invoices/5h618fxx1w> Carter, Ryan | Status changed from Open to Partly paid
+Oct 14, 2026, 10:00 AM | Timothy Moore tmoore | Created | Invoice 03483827 </billing/invoices/5h618fxx1w> Carter, Ryan | Issued
+Oct 14, 2026, 10:00 AM | Logan Martinez lmartinez | Changed | Invoice 20724781 </billing/invoices/0h9svwws1g> Ortega, Robert | Status changed from Open to Paid
+Oct 14, 2026, 10:00 AM | Jonathan Jacobsen jjacobsen | Created | Invoice 20724781 </billing/invoices/0h9svwws1g> Ortega, Robert | Issued
+Oct 14, 2026, 10:00 AM | Barbara Wilson bwilson | Created | Invoice 33536159 </billing/invoices/2dm5dwxwwn> Gómez, Lisa | Issued
+Oct 14, 2026, 10:00 AM | Barbara Wilson bwilson | Created | Invoice 71924090 </billing/invoices/72vkfclnck> Griffin, Richard | Issued
+Oct 14, 2026, 10:00 AM | Timothy Moore tmoore | Created | Invoice 39960657 </billing/invoices/1njk73zn9k> Allen, Brandon | Issued
+Oct 14, 2026, 10:00 AM | Theresa Medina tmedina | Changed | Invoice 65227689 </billing/invoices/4l6c4vkcx5> Barrett, Jessica | Status changed from Partly paid to Partly paid
+Showing 1 to 25 of 200+ entries
+[select size = "25 per page" options(2): 25 per page; 50 per page]
+[Previous (disabled)]
+[Next]

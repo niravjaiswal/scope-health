@@ -1,0 +1,31 @@
+URL: https://practice.speedrun.scopehealth.com/billing/accounts/2g52fpbwf6
+TITLE: Billing · Wrenfield
+
+Invoices
+Account of Jackson, Judith
+Jackson, Judith
+MRN
+HG4904582
+Date of birth
+11/12/2004
+Open chart
+Invoices
+Invoices of this patient, newest service first
+Invoice	Service date	Location	Issued	Total	Status	
+Filed under
+
+56910036	Dec 24, 2025	Cedar Hollow	Jan 1, 2026	$2,024.15	
+Paid	Filed under MRN HG1531598
+07073603	Nov 3, 2025	Northgate	Nov 10, 2025	$157.00	
+Paid	
+46855243	May 1, 2025	Highline	May 6, 2025	$1,133.00	
+Paid	
+
+3 invoices
+
+---- INTERACTIVE ----
+[A] 'Invoices' /billing  
+[A] 'Open chart' /patients/2g52fpbwf6  
+[A] '56910036' /billing/invoices/11wgn9f8rr  
+[A] '07073603' /billing/invoices/1bh2wtkx9n  
+[A] '46855243' /billing/invoices/5jn9bqlr0l  
