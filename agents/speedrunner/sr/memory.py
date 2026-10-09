@@ -15,14 +15,26 @@ class Memory:
         is_wf = len(t) >= 450 or (len(t) >= 250 and re.search(r"(?i)answer|##|\|---", t))
         if is_wf:
             title = t.split("\n", 1)[0].strip()[:160]
-            self.workflows.append({"n": n, "title": title, "text": t})
+            self.workflows.append({"n": n, "title": title, "text": t, "applies": ""})
             log(f"MEMORY workflow #{len(self.workflows)-1} item{n}: {title}")
         else:
             self.notes.append((n, t))
             log(f"MEMORY note item{n}: {t[:120]}")
 
     def workflow_titles(self):
-        return [(i, w["n"], w["title"]) for i, w in enumerate(self.workflows)]
+        return [(i, w["n"], w["title"] + (f" — applies to: {w['applies']}" if w.get("applies") else "")) for i, w in enumerate(self.workflows)]
+
+    async def summarize(self, llm, idx):
+        """One-line 'applies when' description of a workflow message (what requests it governs)."""
+        w = self.workflows[idx]
+        prompt = ("Here is a message to back-office staff. In ONE line (max 30 words), say which incoming requests it governs "
+                  "(what is asked, e.g. 'questions asking what to do with a lab report of a patient'), or say 'amends rule about <topic>' if it only changes an earlier rule, "
+                  "or 'no requests' if it is not a work rule.\n\nMESSAGE:\n" + w["text"][:3000])
+        r = await llm.chat("openai/gpt-oss-120b", [{"role": "user", "content": prompt}], max_tokens=600, reasoning={"effort": "low"},
+                           extra={"provider": {"sort": "throughput"}}, timeout=10, tag="wfsum")
+        if r and r.get("content"):
+            w["applies"] = r["content"].strip().split("\n")[0][:220]
+            log(f"MEMORY wf{idx} applies: {w['applies']}")
 
     def workflow_text(self, idx):
         try:

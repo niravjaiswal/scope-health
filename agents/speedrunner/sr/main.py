@@ -118,6 +118,8 @@ async def run_queue():
         if it["kind"] == "message":
             print("ITEM " + jdump({"n": n, "id": it["id"], "kind": "message", "secs_left": round(secs_left, 1), "text": it["text"]}), flush=True)
             mem.add(n, it["text"])
+            if mem.workflows and mem.workflows[-1]["n"] == n:
+                asyncio.ensure_future(mem.summarize(llm, len(mem.workflows) - 1))
             if re.search(r"(?i)specialt", it["text"]):
                 asyncio.ensure_future(load_full_directory(site))
             state = await q.close(it["id"], acknowledge=True)
@@ -157,7 +159,10 @@ async def run_local(path):
     results = []
     for i, it in enumerate(items):
         if it["kind"] == "message":
-            mem.add(it.get("n", i + 1), it["text"]); continue
+            mem.add(it.get("n", i + 1), it["text"])
+            if mem.workflows and mem.workflows[-1]["n"] == it.get("n", i + 1):
+                await mem.summarize(llm, len(mem.workflows) - 1)
+            continue
         if only and str(it.get("n")) not in only.split(","):
             continue
         t = time.time()

@@ -14,6 +14,11 @@ TOOLS = [
         "parameters": {"type": "object", "properties": {
             "path": {"type": "string"}, "paths": {"type": "array", "items": {"type": "string"}}, "all_pages": {"type": "boolean"}}}}},
     {"type": "function", "function": {
+        "name": "open_documents", "description": "Open a documents list page (e.g. the chart's Documents tab /patients/<id>/files) and read, in parallel, every document whose row mentions title_contains (case-insensitive, e.g. 'Immunization record', 'Complete blood count', 'Referral letter', 'remittance'). Returns the list plus each document's decoded content. ALWAYS use this instead of opening or reading documents one at a time when more than one document could be relevant (e.g. all reports of a panel to find the previous one, all outside immunization records).",
+        "parameters": {"type": "object", "properties": {
+            "path": {"type": "string"}, "title_contains": {"type": "string"}, "max_docs": {"type": "integer"}},
+            "required": ["path", "title_contains"]}}},
+    {"type": "function", "function": {
         "name": "search_patients", "description": "Search patients by last name (prefix ok) OR by date of birth YYYY-MM-DD. Returns matching rows with chart links and flags.",
         "parameters": {"type": "object", "properties": {
             "last_name": {"type": "string"}, "dob": {"type": "string"}}}}},
@@ -23,6 +28,9 @@ TOOLS = [
             "path": {"type": "string"}, "fields": {"type": "object", "description": "field name or label -> value (for selects use the option text)"},
             "submit": {"type": "string", "description": "text of the button to press after filling (e.g. 'Open' next to 'Find invoice', 'Apply filters', 'Search', 'Show appointments'); default: the page's main filter/search button"},
             "all_pages": {"type": "boolean"}}, "required": ["path", "fields"]}}},
+    {"type": "function", "function": {
+        "name": "click", "description": "Open a page and press a button or link by its visible text (e.g. 'View scanned document', 'Show more', 'History'); returns the resulting page text and, if a document viewer opens, the decoded document. Use when an action is a [button] rather than a <link>.",
+        "parameters": {"type": "object", "properties": {"path": {"type": "string"}, "label": {"type": "string"}}, "required": ["path", "label"]}}},
     {"type": "function", "function": {
         "name": "table_compute", "description": "For counting/aggregating over a list: loads ALL rows of the list at path (optionally after setting filter fields and pressing submit), across all pages, as `rows` = list of dicts keyed by the table's column headers (plus '_links'), then evaluates your Python expression `code` over `rows` and returns the result. Use it instead of counting by eye. Available: rows, re, Counter, defaultdict, datetime. Example code: len({r['Patient'] for r in rows if r['Status']=='Completed' and 'Test record' not in r['Patient'] and 'Deleted' not in r['Patient']})",
         "parameters": {"type": "object", "properties": {
@@ -69,6 +77,8 @@ class Solver:
         self.plans = {}       # kind -> {abstract_path: count}
         self.trust = {}       # plan_key -> verifier agreement record
         self.replays = {}     # plan_key -> [(tool, templated args)]
+        self.doc_futs = {}
+        self.cur_text = ""; self.cur_wf = None
         self.taught = {}
         self.doc_cache = {}
 
@@ -104,7 +114,8 @@ class Solver:
             return out
         rows = []
         if dob:
-            rows = await self.site.search(dob=dob)
+            pre = getattr(self, "_pre", {}).get(dob)
+            rows = await pre if pre is not None else await self.site.search(dob=dob)
             c = match(rows)
             if c: return c, rows
         if last:
@@ -136,16 +147,20 @@ class Solver:
         if not path.startswith("/"): path = "/" + path
         if re.search(r"/patients/all\b|logout|log-out", path):
             return "Refused: not allowed."
-        if all_pages:
-            return await self.site.page_all(path)
         if path.startswith("/v/") and getattr(self, "last_doc_path", None):
             return await self.tool_read_document(self.last_doc_path)
-        txt = await self.site.page(path, fresh=fresh)
-        txt = re.sub(r"\s*<\/v\/[^>]*>", "", txt or "")
         if re.search(r"/(documents|files)/[0-9a-z]{6,}/?$", path.split("?")[0]):
             self.last_doc_path = path
-            doc = await self.tool_read_document(path)
-            txt += "\n\n=== DOCUMENT CONTENT (decoded from the document file) ===\n" + doc
+            return await self.tool_read_document(path)
+        if all_pages:
+            txt = await self.site.page_all(path)
+        else:
+            txt = await self.site.page(path, fresh=fresh)
+        txt = re.sub(r"\s*<\/v\/[^>]*>", "", txt or "")
+        try:
+            self.spec_docs(txt, self.cur_text, self.cur_wf)
+        except Exception as e:
+            log("spec err", repr(e)[:100])
         return txt
 
     async def exec_tool(self, fn, args, opened):
@@ -169,6 +184,42 @@ class Solver:
         if fn == "read_document":
             opened.append(args.get("path", ""))
             return await self.tool_read_document(args.get("path", ""))
+        if fn == "click":
+            path = (args.get("path") or "/").strip()
+            if not path.startswith("/"): path = "/" + path
+            opened.append(path)
+            try:
+                d = await self.site.click_read(path, args.get("label") or "")
+            except Exception as e:
+                return f"ERROR {e!r}"[:200]
+            txt = re.sub(r"\s*<\/v\/[^>]*>", "", d.get("text") or "")
+            files = d.get("files") or []
+            pdfs = [f["data"] for f in files if f.get("kind") == "pdf" and f.get("data") and f["data"][:4] == b"%PDF"]
+            imgs = [f["data"] for f in files if f.get("kind") == "image" and f.get("data")]
+            if pdfs or imgs:
+                from . import wf_docs
+                if not hasattr(self, "_llm_call"):
+                    self._llm_call = wf_docs.make_llm_call()
+                res = await wf_docs.read_document(pdf_bytes=pdfs[0] if pdfs else None, pngs=None if pdfs else imgs[:6], llm_call=self._llm_call, hint="clinic document")
+                log(f"DOC(click) {path} method={res.get('method')}")
+                txt += f"\n\n=== DOCUMENT CONTENT (decoded via {res.get('method')}) ===\n" + (res.get("text") or "")
+            return txt
+        if fn == "open_documents":
+            path = (args.get("path") or "/").strip()
+            if not path.startswith("/"): path = "/" + path
+            opened.append(path)
+            lst = await self.site.page_all(path) if True else ""
+            key = (args.get("title_contains") or "").lower().strip()
+            docs = []
+            for line in (lst or "").splitlines():
+                if key and key not in line.lower(): continue
+                for m in re.finditer(r"<(/(?:patients/[0-9a-z]+/(?:files|documents)|documents)/[0-9a-z]{6,})>", line):
+                    if m.group(1) not in docs: docs.append(m.group(1))
+            docs = docs[:max(1, min(int(args.get("max_docs") or 8), 10))]
+            opened.extend(docs)
+            outs = await asyncio.gather(*[self.tool_open(d) for d in docs])
+            body = "\n\n".join(f"=== DOCUMENT {d} ===\n{clip(o, 7000)}" for d, o in zip(docs, outs))
+            return f"=== LIST {path} ===\n{clip(lst, 6000)}\n\n{len(docs)} matching documents opened.\n\n{body}"
         if fn == "table_compute":
             path = (args.get("path") or "/").strip()
             if not path.startswith("/"): path = "/" + path
@@ -243,29 +294,70 @@ class Solver:
         return await self.site.query(path, fields, all_pages)
 
     async def tool_read_document(self, path, hint=""):
+        """Viewer text + decoded content of a document (cached; shares in-flight speculative reads)."""
         path = (path or "").strip()
         if path.startswith("/v/") and getattr(self, "last_doc_path", None):
             path = self.last_doc_path
         if path in self.doc_cache: return self.doc_cache[path]
+        fut = self.doc_futs.get(path)
+        if fut is None:
+            fut = asyncio.ensure_future(self._read_doc(path, hint))
+            self.doc_futs[path] = fut
         try:
-            files = await self.site.documents(path)
+            return await asyncio.shield(fut)
         except Exception as e:
-            return f"ERROR {e!r}"
+            self.doc_futs.pop(path, None)
+            return f"ERROR {e!r}"[:200]
+
+    async def _read_doc(self, path, hint=""):
+        t = time.time()
+        try:
+            d = await self.site.documents(path)
+        except Exception as e:
+            self.doc_futs.pop(path, None)
+            return f"ERROR {e!r}"[:200]
+        files = d.get("files") or []
         from . import wf_docs
         if not hasattr(self, "_llm_call"):
             self._llm_call = wf_docs.make_llm_call()
         pdfs = [f["data"] for f in files if f.get("kind") == "pdf" and f.get("data") and f["data"][:4] == b"%PDF"]
         imgs = [f["data"] for f in files if f.get("kind") == "image" and f.get("data")]
         if not pdfs and not imgs:
-            return "ERROR: no document file found on this page (open the document viewer page linked from the documents list)"
-        t = time.time()
+            self.doc_futs.pop(path, None)
+            return re.sub(r"\s*<\/v\/[^>]*>", "", d.get("text") or "") + "\n(no document file found on this page)"
         res = await wf_docs.read_document(pdf_bytes=pdfs[0] if pdfs else None, pngs=None if pdfs else imgs[:6],
                                           llm_call=self._llm_call, hint=hint or "clinic document")
-        txt = res.get("text") or "ERROR: unreadable"
-        log(f"DOC {path} method={res.get('method')} conf={res.get('confidence')} {time.time()-t:.1f}s chars={len(txt)}")
-        txt = f"[document {path} read via {res.get('method')}]\n" + txt
-        self.doc_cache[path] = txt
-        return txt
+        content = res.get("text") or "ERROR: unreadable"
+        log(f"DOC {path} method={res.get('method')} {time.time()-t:.1f}s chars={len(content)}")
+        viewer = re.sub(r"\s*<\/v\/[^>]*>", "", d.get("text") or "")
+        out = f"{clip(viewer, 2500)}\n\n=== DOCUMENT CONTENT (decoded from the document file via {res.get('method')}) ===\n{content}"
+        self.doc_cache[path] = out
+        return out
+
+    def spec_docs(self, list_text, task_text, wf_text=None, limit=3):
+        """Speculatively start reading documents in a list whose rows match the task's distinctive words."""
+        if not list_text or not re.search(r"/(files|documents)/[0-9a-z]{6,}", list_text):
+            return
+        from .memory import _words
+        kw = _words(task_text) - {"report", "received", "letter", "document", "documents"}
+        phrases = [p.lower() for p in re.findall(r'"([A-Za-z][A-Za-z ]{3,40})"', wf_text or "") if len(p.split()) <= 4]
+        cands = []
+        for line in list_text.splitlines():
+            links = re.findall(r"<(/(?:patients/[0-9a-z]+/(?:files|documents)|documents)/[0-9a-z]{6,})>", line)
+            if not links: continue
+            low = line.lower()
+            score = sum(1 for w in kw if w in low) + sum(3 for p in phrases if p in low)
+            if score >= 2:
+                cands.append((score, links[0]))
+        cands.sort(key=lambda x: -x[0])
+        started = 0
+        for sc, path in cands:
+            if started >= limit: break
+            if path in self.doc_cache or path in self.doc_futs: continue
+            self.doc_futs[path] = asyncio.ensure_future(self._read_doc(path))
+            started += 1
+        if started:
+            log(f"SPEC docs started {started}: {[c[1] for c in cands[:limit]]}")
 
     async def visual_read(self, path, focus=""):
         """Screenshot the page and transcribe it with a vision model (defeats cipher fonts / pictures of text)."""
@@ -289,6 +381,9 @@ class Solver:
     async def solve(self, item, deadline):
         text = item["text"]
         t0 = time.time()
+        self._pre = {}
+        for dm in re.findall(r"(?i)(?:born|DOB|date of birth)[^0-9]{0,12}(\d{4}-\d{2}-\d{2})", text)[:2]:
+            self._pre[dm] = asyncio.ensure_future(self.site.search(dob=dm))
         route = await self.route(text)
         log("ROUTE", jdump(route, 500))
         kind = (route.get("kind") or "other").strip().lower()[:60]
@@ -304,15 +399,12 @@ class Solver:
                 ok.add(x)
             elif x in byn:
                 ok.add(byn[x])
-        from .memory import lexical_match, answer_formats
-        lex = lexical_match(self.mem, text)
-        if set(lex) - ok:
-            log(f"LEXICAL adds workflows {sorted(set(lex) - ok)} (router gave {sorted(ok)})")
-        ok |= set(lex)
+        from .memory import answer_formats
         wfs = sorted(ok)
         wf_idx = wfs[0] if wfs else None
         route["workflow"] = wf_idx
         wf_text = self.mem.workflows_text(wfs) if wfs else None
+        self.cur_text, self.cur_wf = text, wf_text
         try:
             from .stats import KSTATS
             if KSTATS.should_skip(KSTATS.key(route)):
@@ -360,10 +452,39 @@ class Solver:
         vis_task = None
         if chart_paths and (asks_ident or rule_ident):
             vis_task = asyncio.ensure_future(self.visual_read(chart_paths[0], "phone number, MRN / record number, member ID"))
+        # replay the tool calls that solved earlier tasks of this kind, with this task's entities (runs with the prefetch)
+        ents = self.entities(route, ids, text)
+        calls_log = []
+        replay_opened = []
+        tmpl = self.replays.get(plan_key) or []
+        todo = []
+        for fn, targs in tmpl:
+            a = self.fill(targs, ents)
+            if a is None: continue
+            blob = json.dumps(a)
+            if re.search(r"/[0-9a-z]{10}(?=[/?\"]|$)", blob.replace(ents.get("pid", "@@"), "")):
+                continue   # depends on an id discovered at run time
+            todo.append((fn, a))
+        todo = todo[:6]
+        replay_task = None
+        t_rep = time.time()
+        if todo and deadline - time.time() > 4:
+            replay_task = asyncio.ensure_future(asyncio.gather(*[self.exec_tool(fn, a, replay_opened) for fn, a in todo], return_exceptions=True))
         if prefetch:
             texts = await self.site.pages(prefetch)
             for pth, tx in zip(prefetch, texts):
                 ctx_parts.append(f"=== PAGE {pth} ===\n{clip(tx, 9000)}")
+        try:
+            self.spec_docs("\n".join(ctx_parts), text, wf_text)
+        except Exception as e:
+            log("spec err", repr(e)[:100])
+        if replay_task is not None:
+            outs = await replay_task
+            for (fn, a), o in zip(todo, outs):
+                if isinstance(o, Exception): continue
+                ctx_parts.append(f"=== {fn} {json.dumps(a, ensure_ascii=False)} (pre-fetched) ===\n{clip(o or '', 9000)}")
+                calls_log.append((fn, a))
+            log(f"REPLAY {plan_key} {len(todo)} calls {time.time()-t_rep:.1f}s")
         # provider facts (specialty, id, status), made salient
         from .reference import provider_info
         ref = getattr(self.site, "reference", "") or ""
@@ -385,28 +506,6 @@ class Solver:
             vis_task = None
         log(f"PREFETCH {len(prefetch)} pages {time.time()-t0:.1f}s kind={kind} wf={wf_idx}")
 
-        # replay the tool calls that solved earlier tasks of this kind, with this task's entities
-        ents = self.entities(route, ids, text)
-        calls_log = []
-        replay_opened = []
-        tmpl = self.replays.get(plan_key) or []
-        todo = []
-        for fn, targs in tmpl:
-            a = self.fill(targs, ents)
-            if a is None: continue
-            blob = json.dumps(a)
-            if re.search(r"/[0-9a-z]{10}(?=[/?\"]|$)", blob.replace(ents.get("pid", "@@"), "")):
-                continue   # depends on an id discovered at run time
-            todo.append((fn, a))
-        todo = todo[:6]
-        if todo and deadline - time.time() > 4:
-            t1 = time.time()
-            outs = await asyncio.gather(*[self.exec_tool(fn, a, replay_opened) for fn, a in todo], return_exceptions=True)
-            for (fn, a), o in zip(todo, outs):
-                if isinstance(o, Exception): continue
-                ctx_parts.append(f"=== {fn} {json.dumps(a, ensure_ascii=False)} (pre-fetched) ===\n{clip(o or '', 9000)}")
-                calls_log.append((fn, a))
-            log(f"REPLAY {plan_key} {len(todo)} calls {time.time()-t1:.1f}s")
 
         sys_prompt = prompts.solver_system(self.site, self.mem, wf_text)
         user = prompts.solver_user(text, route, "\n\n".join(ctx_parts))
@@ -421,6 +520,7 @@ class Solver:
             log(f"TEACHER mode for {plan_key}")
         result = None
         nudged = False
+        seen_calls = {}
         for step in range(self.cfg.get("max_steps", 7)):
             left = deadline - time.time()
             if left < 2.5:
@@ -447,8 +547,13 @@ class Solver:
                 fn = call["function"]["name"]
                 try: args = json.loads(call["function"].get("arguments") or "{}")
                 except Exception: args = {}
+                key = fn + json.dumps(args, sort_keys=True)
+                if key in seen_calls:
+                    return "(You already made exactly this call; result unchanged. Try a different approach, or answer/skip.)\n" + clip(seen_calls[key], 3000)
                 calls_log.append((fn, args))
-                return await self.exec_tool(fn, args, opened)
+                out = await self.exec_tool(fn, args, opened)
+                seen_calls[key] = out or ""
+                return out
             finals = [c for c in calls if c["function"]["name"] in ("answer", "skip")]
             others = [c for c in calls if c["function"]["name"] not in ("answer", "skip")]
             if finals and not others:
@@ -504,6 +609,14 @@ class Solver:
         if result and not result.get("skip") and wf_idx is not None and trusted:
             trust["skipped"] += 1
             log(f"VERIFY skipped (trusted {plan_key}: {trust})")
+        if result and not result.get("skip") and wf_idx is not None and self.cfg.get("verify", True) and not trusted and deadline - time.time() <= 4:
+            from .stats import KSTATS
+            if (KSTATS.pace or 4) >= 2.5:
+                deadline = time.time() + 4.5
+                log("VERIFY extension +4.5s")
+            else:
+                log("VERIFY no time -> unverified rule answer, skipping")
+                result["confidence"] = min(float(result.get("confidence") or 0), 0.7)
         if result and not result.get("skip") and wf_idx is not None and self.cfg.get("verify", True) and deadline - time.time() > 4 and not trusted:
             trust["skipped"] = 0
             evidence = "\n\n".join(m["content"] for m in msgs[1:] if m.get("role") in ("user", "tool") and m.get("content"))

@@ -266,13 +266,35 @@ class Site:
             return []
 
     async def documents(self, path, want=("pdf",)):
+        """One viewer load: page text + PDF (and/or page image) bytes."""
         async def fn(tab):
             await tab.goto(path)
+            text = await tab.text()
             files = await tab.document_files(want=want)
             if not any(f.get("data") for f in files) and "image" not in want:
                 files = await tab.document_files(want=("pdf", "image"))
-            return files
-        return await self.use(fn, 12, label="doc " + path)
+            return {"text": text, "files": files}
+        return await self.use(fn, 14, label="doc " + path)
+
+    async def click_read(self, path, label):
+        """Open path, press the button/link whose text matches label, return resulting text + any document files."""
+        async def fn(tab):
+            await tab.goto(path)
+            try:
+                await tab.click_by_text(label, contains=True, navigate_links=True)
+            except Exception as e:
+                return {"text": f"ERROR: no clickable element {label!r} on {path} ({type(e).__name__})", "files": []}
+            await asyncio.sleep(0.05)
+            await tab.wait_settled(timeout=8)
+            text = await tab.text()
+            files = []
+            if re.search(r"(?i)page \d+ of \d+|download|open in new tab|scanned", text):
+                try:
+                    files = await tab.document_files(want=("pdf", "image"))
+                except Exception:
+                    files = []
+            return {"text": text, "files": files}
+        return await self.use(fn, 15, label="click " + path)
 
     async def screenshot(self, path):
         async def fn(tab):
@@ -283,7 +305,7 @@ class Site:
     async def query(self, path, fields, all_pages=False, submit=None):
         async def fn(tab):
             await tab.goto(path)
-            done = []
+            done, ignored = [], []
             for k, v in (fields or {}).items():
                 v = str(v)
                 try:
@@ -297,13 +319,14 @@ class Site:
                             m = next((o for o in opts if o[1].lower() == v.lower()), None) or \
                                 next((o for o in opts if o[1].lower().startswith(v.lower()) or v.lower() in o[1].lower() or o[0] == v), None)
                             if not m:
-                                return f"ERROR: option {v!r} not in field {k!r}. Options: " + "; ".join(o[1] for o in opts[:40])
+                                ignored.append(f"{k} (no option {v!r}; options: " + "; ".join(o[1] for o in opts[:25]) + ")"); continue
                             await loc.select_option(value=m[0], timeout=2500)
                     else:
                         await loc.fill(v, timeout=2500)
                     done.append(k)
-                except Exception as e:
-                    return f"ERROR setting field {k!r}: {type(e).__name__}. Check the field names (SITE MAP lists them)."
+                except Exception:
+                    ignored.append(k)
+            note = ("NOTE: these fields do not exist on this page and were ignored: " + ", ".join(ignored) + "\n") if ignored else ""
             clicked = False
             if submit:
                 try:
@@ -324,8 +347,8 @@ class Site:
                     pass
             if all_pages:
                 pages = await tab.paginate_all(max_pages=15)
-                return "\n\n--- next page ---\n\n".join(pages)
-            return await tab.text()
+                return note + "\n\n--- next page ---\n\n".join(pages)
+            return note + await tab.text()
         try:
             return VLINK_RE.sub("", await self.use(fn, 20 if all_pages else 12, label="query " + path))
         except asyncio.CancelledError:
