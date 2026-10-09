@@ -1,0 +1,4814 @@
+{
+ "built": "buildSiteModel.ts",
+ "templates": [
+  {
+   "template": "/",
+   "examples": [
+    "/"
+   ],
+   "h1s": [
+    "Dashboard"
+   ],
+   "tables": [
+    {
+     "title": "The rest of today's appointments, in time order",
+     "region": "",
+     "headers": [
+      "Time",
+      "Patient",
+      "Provider",
+      "Location",
+      "Visit type",
+      "Status"
+     ],
+     "shapes": {
+      "Time": [
+       "time-range"
+      ],
+      "Patient": [
+       "person"
+      ],
+      "Provider": [
+       "person"
+      ],
+      "Location": [
+       "text"
+      ],
+      "Visit type": [
+       "text"
+      ],
+      "Status": [
+       "text"
+      ]
+     },
+     "rowsSeen": 30,
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump"
+     ],
+     "foots": [
+      "Showing N to N of N appointments"
+     ],
+     "paged": [
+      "next"
+     ],
+     "maxRows": 10,
+     "fullObs": 1
+    },
+    {
+     "title": "The rest of today's appointments, in time order",
+     "region": "",
+     "headers": [
+      "Time",
+      "Patient",
+      "Provider",
+      "Visit type",
+      "Status"
+     ],
+     "shapes": {
+      "Time": [
+       "time-range"
+      ],
+      "Patient": [
+       "person"
+      ],
+      "Provider": [
+       "person"
+      ],
+      "Visit type": [
+       "text"
+      ],
+      "Status": [
+       "text"
+      ]
+     },
+     "rowsSeen": 5,
+     "seen": [
+      "practice"
+     ],
+     "foots": [
+      "N appointments"
+     ],
+     "paged": [],
+     "maxRows": 5,
+     "fullObs": 1
+    },
+    {
+     "title": "Latest activity, newest first",
+     "region": "",
+     "headers": [
+      "When",
+      "User",
+      "What",
+      "Record"
+     ],
+     "shapes": {
+      "When": [
+       "datetime"
+      ],
+      "User": [
+       "text"
+      ],
+      "What": [
+       "text"
+      ],
+      "Record": [
+       "person"
+      ]
+     },
+     "rowsSeen": 10,
+     "seen": [
+      "practice"
+     ],
+     "foots": [
+      "Showing N to N of N+ entries"
+     ],
+     "paged": [
+      "next"
+     ],
+     "maxRows": 10,
+     "fullObs": 1
+    }
+   ],
+   "dls": [],
+   "controls": [],
+   "footers": [
+    "Showing N to N of N appointments",
+    "Showing N to N of N+ entries",
+    "N appointments"
+   ],
+   "pager": {
+    "next": true,
+    "showMore": []
+   },
+   "tabs": [],
+   "gates": [],
+   "images": [],
+   "seen": [
+    "set1:recon-158",
+    "set1:claim-dump-baseline",
+    "set1:anotherDOMdump",
+    "practice"
+   ]
+  },
+  {
+   "template": "/activity",
+   "examples": [
+    "/activity"
+   ],
+   "h1s": [
+    "Activity"
+   ],
+   "tables": [
+    {
+     "title": "Activity, newest first",
+     "region": "",
+     "headers": [
+      "Time",
+      "User",
+      "Action",
+      "Record",
+      "What changed"
+     ],
+     "shapes": {
+      "Time": [
+       "datetime"
+      ],
+      "User": [
+       "text"
+      ],
+      "Action": [
+       "text"
+      ],
+      "Record": [
+       "person"
+      ],
+      "What changed": [
+       "text"
+      ]
+     },
+     "rowsSeen": 25,
+     "seen": [
+      "practice"
+     ],
+     "foots": [
+      "Showing N to N of N+ entries"
+     ],
+     "paged": [
+      "next"
+     ],
+     "maxRows": 25,
+     "fullObs": 1
+    }
+   ],
+   "dls": [],
+   "controls": [
+    {
+     "label": "User",
+     "kind": "select",
+     "form": "Filter activity",
+     "method": "get",
+     "options": [
+      "All users",
+      "Aisha Wilson (awilson)",
+      "Alexander Nunez (anunez)",
+      "Andrea Hill (ahill)",
+      "Andres Mendez (amendez)",
+      "Angel Ali, NP (aali)",
+      "Anna Mejia (amejia)",
+      "Austin Gibson, NP (agibson)",
+      "Barbara Wilson (bwilson)",
+      "Betty Baker (bbaker)",
+      "Brandon Howell, NP (bhowell)",
+      "Brian Reed, NP (breed)",
+      "Bryan Palmer, NP (bpalmer)",
+      "Caleb Price (cprice)",
+      "Carlos Barnes (cbarnes)",
+      "Christian Walker (cwalker)",
+      "Colleen Grant, PA (cgrant)",
+      "David Hamilton (dhamilton)",
+      "Debra Stevens (dstevens)",
+      "Desmond Fields, PA (dfields)",
+      "Diana Anderson, PA (danderson)",
+      "Diane Fisher (dfisher)",
+      "Dorothy Mason, PA (dmason)",
+      "Dorothy Scott, NP (dscott)",
+      "Dr. Bennett (lbennett)"
+     ],
+     "seen": [
+      "practice"
+     ]
+    },
+    {
+     "label": "Action",
+     "kind": "select",
+     "form": "Filter activity",
+     "method": "get",
+     "options": [
+      "All actions",
+      "Created",
+      "Changed",
+      "Deleted",
+      "Merged",
+      "Opened",
+      "Logged in"
+     ],
+     "seen": [
+      "practice"
+     ]
+    },
+    {
+     "label": "Record",
+     "kind": "select",
+     "form": "Filter activity",
+     "method": "get",
+     "options": [
+      "All records",
+      "Patient",
+      "Appointment",
+      "Recurring appointment",
+      "Invoice",
+      "Document",
+      "User account"
+     ],
+     "seen": [
+      "practice"
+     ]
+    },
+    {
+     "label": "From",
+     "kind": "date",
+     "form": "Filter activity",
+     "method": "get",
+     "seen": [
+      "practice"
+     ]
+    },
+    {
+     "label": "To",
+     "kind": "date",
+     "form": "Filter activity",
+     "method": "get",
+     "seen": [
+      "practice"
+     ]
+    },
+    {
+     "label": "Patient",
+     "kind": "text",
+     "form": "Find a patient",
+     "method": "get",
+     "seen": [
+      "practice"
+     ]
+    },
+    {
+     "label": "Rows per page",
+     "kind": "select",
+     "form": "(page)",
+     "options": [
+      "25 per page",
+      "50 per page"
+     ],
+     "seen": [
+      "practice"
+     ]
+    }
+   ],
+   "footers": [
+    "Showing N to N of N+ entries"
+   ],
+   "pager": {
+    "next": true,
+    "showMore": [],
+    "rowsPerPage": [
+     "25 per page",
+     "50 per page"
+    ]
+   },
+   "tabs": [],
+   "gates": [],
+   "images": [],
+   "seen": [
+    "practice"
+   ]
+  },
+  {
+   "template": "/audit-log",
+   "examples": [
+    "/audit-log"
+   ],
+   "h1s": [
+    "Activity"
+   ],
+   "tables": [
+    {
+     "title": "Activity, newest first",
+     "region": "",
+     "headers": [
+      "Time",
+      "User",
+      "Action",
+      "Record",
+      "What changed"
+     ],
+     "shapes": {
+      "Time": [
+       "datetime"
+      ],
+      "User": [
+       "text"
+      ],
+      "Action": [
+       "text"
+      ],
+      "Record": [
+       "text",
+       "empty"
+      ],
+      "What changed": [
+       "text"
+      ]
+     },
+     "rowsSeen": 24,
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump"
+     ],
+     "foots": [],
+     "paged": [],
+     "maxRows": 8,
+     "fullObs": 0
+    }
+   ],
+   "dls": [],
+   "controls": [
+    {
+     "label": "User",
+     "kind": "select",
+     "form": "Filter activity",
+     "method": "get",
+     "options": [
+      "All users",
+      "Adam Robinson (arobinson)",
+      "Aisha Brown, NP (abrown)",
+      "Alexis Green, PA (agreen)",
+      "Amy Fuller, NP (afuller)",
+      "Ana Cruz, NP (acruz)",
+      "Angel Aguilar, PA (aaguilar)",
+      "Ashley Tillman, PA (atillman)",
+      "Austin Allen (aallen)",
+      "Billy Medina, NP (bmedina)",
+      "Bruce Reed, NP (breed)",
+      "Carlos Chen, NP (cchen)",
+      "Charles James, NP (cjames)",
+      "Charles Rivera (crivera)",
+      "Charlotte Miller (cmiller)",
+      "Chloe Ward, NP (cward)",
+      "Cynthia Ray (cray)",
+      "Daniel Brown (dbrown)",
+      "Danielle Castro, NP (dcastro)",
+      "Debra Smith (dsmith)",
+      "Doris Reyes, NP (dreyes)",
+      "Dr. Alvarez (calvarez)",
+      "Dr. Arnold (jarnold)",
+      "Dr. Bassett (mbassett)",
+      "Dr. Brooks (bbrooks)"
+     ],
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump"
+     ]
+    },
+    {
+     "label": "Action",
+     "kind": "select",
+     "form": "Filter activity",
+     "method": "get",
+     "options": [
+      "All actions",
+      "Created",
+      "Changed",
+      "Deleted",
+      "Merged",
+      "Opened",
+      "Logged in"
+     ],
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump"
+     ]
+    },
+    {
+     "label": "Record",
+     "kind": "select",
+     "form": "Filter activity",
+     "method": "get",
+     "options": [
+      "All records",
+      "Patient",
+      "Appointment",
+      "Recurring appointment",
+      "Invoice",
+      "Document",
+      "User account"
+     ],
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump"
+     ]
+    },
+    {
+     "label": "From",
+     "kind": "date",
+     "form": "Filter activity",
+     "method": "get",
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump"
+     ]
+    },
+    {
+     "label": "To",
+     "kind": "date",
+     "form": "Filter activity",
+     "method": "get",
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump"
+     ]
+    },
+    {
+     "label": "Patient",
+     "kind": "text",
+     "form": "Find a patient",
+     "method": "get",
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump"
+     ]
+    }
+   ],
+   "footers": [],
+   "pager": {
+    "next": false,
+    "showMore": []
+   },
+   "tabs": [],
+   "gates": [],
+   "images": [],
+   "seen": [
+    "set1:recon-158",
+    "set1:claim-dump-baseline",
+    "set1:anotherDOMdump"
+   ]
+  },
+  {
+   "template": "/billing",
+   "examples": [
+    "/billing"
+   ],
+   "h1s": [
+    "Billing"
+   ],
+   "tables": [
+    {
+     "title": "Invoices matching the filters",
+     "region": "Invoices",
+     "headers": [
+      "Invoice",
+      "Patient",
+      "Location",
+      "Service date",
+      "Issued",
+      "Total",
+      "Status"
+     ],
+     "shapes": {
+      "Invoice": [
+       "int",
+       "empty"
+      ],
+      "Patient": [
+       "person"
+      ],
+      "Location": [
+       "text"
+      ],
+      "Service date": [
+       "date"
+      ],
+      "Issued": [
+       "date"
+      ],
+      "Total": [
+       "money"
+      ],
+      "Status": [
+       "text"
+      ]
+     },
+     "rowsSeen": 69,
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump",
+      "practice"
+     ],
+     "foots": [
+      "Showing N to N of N+ invoices"
+     ],
+     "paged": [
+      "next"
+     ],
+     "maxRows": 25,
+     "fullObs": 1
+    }
+   ],
+   "dls": [],
+   "controls": [
+    {
+     "label": "Find invoice",
+     "kind": "text",
+     "form": "(form)",
+     "method": "get",
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump",
+      "practice"
+     ]
+    },
+    {
+     "label": "Patient",
+     "kind": "text",
+     "form": "Find a patient to filter by",
+     "method": "get",
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump",
+      "practice"
+     ]
+    },
+    {
+     "label": "Location",
+     "kind": "select",
+     "form": "Service date",
+     "method": "get",
+     "options": [
+      "All locations",
+      "Northgate",
+      "Front Range",
+      "Eastside",
+      "Stonebrook",
+      "Lakeside",
+      "Riverbend",
+      "Highline",
+      "Prairie View",
+      "Cedar Hollow",
+      "Willow Creek"
+     ],
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump",
+      "practice"
+     ]
+    },
+    {
+     "label": "Status",
+     "kind": "select",
+     "form": "Service date",
+     "method": "get",
+     "options": [
+      "All statuses",
+      "Open",
+      "Partly paid",
+      "Paid",
+      "Void"
+     ],
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump",
+      "practice"
+     ]
+    },
+    {
+     "label": "Service date from",
+     "kind": "date",
+     "form": "Service date",
+     "method": "get",
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump",
+      "practice"
+     ]
+    },
+    {
+     "label": "Service date to",
+     "kind": "date",
+     "form": "Service date",
+     "method": "get",
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump",
+      "practice"
+     ]
+    },
+    {
+     "label": "Issued date from",
+     "kind": "date",
+     "form": "Service date",
+     "method": "get",
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump",
+      "practice"
+     ]
+    },
+    {
+     "label": "Issued date to",
+     "kind": "date",
+     "form": "Service date",
+     "method": "get",
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump",
+      "practice"
+     ]
+    },
+    {
+     "label": "Amount owed, at least",
+     "kind": "text",
+     "form": "Service date",
+     "method": "get",
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump",
+      "practice"
+     ]
+    },
+    {
+     "label": "Amount owed, at most",
+     "kind": "text",
+     "form": "Service date",
+     "method": "get",
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump",
+      "practice"
+     ]
+    },
+    {
+     "label": "Sort by",
+     "kind": "select",
+     "form": "(page)",
+     "options": [
+      "Issued date, newest first",
+      "Issued date, oldest first",
+      "Service date, newest first",
+      "Service date, oldest first",
+      "Amount owed, largest first",
+      "Amount owed, smallest first",
+      "Total, largest first",
+      "Total, smallest first",
+      "Patient, A to Z",
+      "Patient, Z to A",
+      "Location, A to Z",
+      "Location, Z to A",
+      "Status, A to Z",
+      "Status, Z to A",
+      "Invoice number, ascending",
+      "Invoice number, descending"
+     ],
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump",
+      "practice"
+     ]
+    },
+    {
+     "label": "Rows per page",
+     "kind": "select",
+     "form": "(page)",
+     "options": [
+      "25 per page",
+      "50 per page",
+      "100 per page"
+     ],
+     "seen": [
+      "practice"
+     ]
+    }
+   ],
+   "footers": [
+    "Showing N to N of N+ invoices"
+   ],
+   "pager": {
+    "next": true,
+    "showMore": [],
+    "rowsPerPage": [
+     "25 per page",
+     "50 per page",
+     "100 per page"
+    ]
+   },
+   "tabs": [],
+   "gates": [],
+   "images": [],
+   "seen": [
+    "set1:recon-158",
+    "set1:claim-dump-baseline",
+    "set1:anotherDOMdump",
+    "practice"
+   ]
+  },
+  {
+   "template": "/billing/accounts/{id}",
+   "examples": [
+    "/billing/accounts/{id}"
+   ],
+   "h1s": [
+    "{patient name}"
+   ],
+   "tables": [
+    {
+     "title": "Invoices of this patient, newest service first",
+     "region": "Invoices",
+     "headers": [
+      "Invoice",
+      "Service date",
+      "Location",
+      "Issued",
+      "Total",
+      "Status",
+      "Filed under"
+     ],
+     "shapes": {
+      "Invoice": [
+       "int"
+      ],
+      "Service date": [
+       "date"
+      ],
+      "Location": [
+       "text"
+      ],
+      "Issued": [
+       "date"
+      ],
+      "Total": [
+       "money"
+      ],
+      "Status": [
+       "text"
+      ],
+      "Filed under": [
+       "empty"
+      ]
+     },
+     "rowsSeen": 60,
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump",
+      "practice"
+     ],
+     "foots": [
+      "Showing N of N invoices",
+      "N invoices"
+     ],
+     "paged": [
+      "show-more"
+     ],
+     "maxRows": 15,
+     "fullObs": 4
+    }
+   ],
+   "dls": [
+    {
+     "heading": "{patient name}",
+     "labels": [
+      "MRN",
+      "Date of birth"
+     ],
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump",
+      "practice"
+     ]
+    }
+   ],
+   "controls": [],
+   "footers": [
+    "Showing N of N invoices",
+    "N invoices"
+   ],
+   "pager": {
+    "next": false,
+    "showMore": [
+     "Show more"
+    ]
+   },
+   "tabs": [],
+   "gates": [],
+   "images": [],
+   "seen": [
+    "set1:recon-158",
+    "set1:claim-dump-baseline",
+    "set1:anotherDOMdump",
+    "practice"
+   ]
+  },
+  {
+   "template": "/billing/invoices/{id}",
+   "examples": [
+    "/billing/invoices/{id}"
+   ],
+   "h1s": [
+    "Invoice {n}"
+   ],
+   "tables": [
+    {
+     "title": "Ledger of this invoice, oldest first",
+     "region": "Ledger",
+     "headers": [
+      "Date",
+      "Description",
+      "Charges",
+      "Payments and adjustments"
+     ],
+     "shapes": {
+      "Date": [
+       "date",
+       "text"
+      ],
+      "Description": [
+       "text",
+       "money"
+      ],
+      "Charges": [
+       "money",
+       "empty"
+      ],
+      "Payments and adjustments": [
+       "empty",
+       "money"
+      ]
+     },
+     "rowsSeen": 18,
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump",
+      "practice"
+     ],
+     "foots": [],
+     "paged": [],
+     "maxRows": 4,
+     "fullObs": 5
+    }
+   ],
+   "dls": [
+    {
+     "heading": "Details",
+     "labels": [
+      "Patient",
+      "Location",
+      "Service date",
+      "Issued",
+      "Total",
+      "Status"
+     ],
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump",
+      "practice"
+     ]
+    }
+   ],
+   "controls": [],
+   "footers": [],
+   "pager": {
+    "next": false,
+    "showMore": []
+   },
+   "tabs": [],
+   "gates": [],
+   "images": [],
+   "seen": [
+    "set1:recon-158",
+    "set1:claim-dump-baseline",
+    "set1:anotherDOMdump",
+    "practice"
+   ]
+  },
+  {
+   "template": "/claims/{id}",
+   "examples": [
+    "/claims/{id}"
+   ],
+   "h1s": [
+    "Claim {n}"
+   ],
+   "tables": [
+    {
+     "title": "Service lines of this claim",
+     "region": "Service lines",
+     "headers": [
+      "Line",
+      "Procedure",
+      "Description",
+      "Modifier",
+      "Units",
+      "Charge"
+     ],
+     "shapes": {
+      "Line": [
+       "int"
+      ],
+      "Procedure": [
+       "int"
+      ],
+      "Description": [
+       "text"
+      ],
+      "Modifier": [
+       "empty"
+      ],
+      "Units": [
+       "int"
+      ],
+      "Charge": [
+       "money"
+      ]
+     },
+     "rowsSeen": 3,
+     "seen": [
+      "set1:claim-dump-baseline"
+     ],
+     "foots": [],
+     "paged": [],
+     "maxRows": 3,
+     "fullObs": 1
+    },
+    {
+     "title": "Submissions of this claim, oldest first",
+     "region": "Submissions",
+     "headers": [
+      "Sent",
+      "Type",
+      "Method",
+      "Result",
+      "Result date",
+      "Reference"
+     ],
+     "shapes": {
+      "Sent": [
+       "date"
+      ],
+      "Type": [
+       "text"
+      ],
+      "Method": [
+       "text"
+      ],
+      "Result": [
+       "text"
+      ],
+      "Result date": [
+       "date"
+      ],
+      "Reference": [
+       "text"
+      ]
+     },
+     "rowsSeen": 1,
+     "seen": [
+      "set1:claim-dump-baseline"
+     ],
+     "foots": [],
+     "paged": [],
+     "maxRows": 1,
+     "fullObs": 1
+    },
+    {
+     "title": "Lines of remittance {trace} for this claim",
+     "region": "Remittance EFT541736844",
+     "headers": [
+      "Line",
+      "Service date",
+      "Procedure",
+      "Modifier",
+      "Units",
+      "Billed",
+      "Allowed",
+      "Adjustments",
+      "Remark codes",
+      "Paid"
+     ],
+     "shapes": {
+      "Line": [
+       "int"
+      ],
+      "Service date": [
+       "date"
+      ],
+      "Procedure": [
+       "int"
+      ],
+      "Modifier": [
+       "empty"
+      ],
+      "Units": [
+       "int"
+      ],
+      "Billed": [
+       "money"
+      ],
+      "Allowed": [
+       "money"
+      ],
+      "Adjustments": [
+       "text"
+      ],
+      "Remark codes": [
+       "empty"
+      ],
+      "Paid": [
+       "money"
+      ]
+     },
+     "rowsSeen": 3,
+     "seen": [
+      "set1:claim-dump-baseline"
+     ],
+     "foots": [],
+     "paged": [],
+     "maxRows": 3,
+     "fullObs": 1
+    }
+   ],
+   "dls": [
+    {
+     "heading": "Details",
+     "labels": [
+      "Patient",
+      "Date of birth",
+      "Rendering provider",
+      "Location",
+      "Payer",
+      "Plan",
+      "Member ID",
+      "Service date",
+      "Total charge",
+      "Status"
+     ],
+     "seen": [
+      "set1:claim-dump-baseline"
+     ]
+    }
+   ],
+   "controls": [],
+   "footers": [
+    "No authorizations on file for this patient"
+   ],
+   "pager": {
+    "next": false,
+    "showMore": []
+   },
+   "tabs": [],
+   "gates": [],
+   "images": [],
+   "seen": [
+    "set1:claim-dump-baseline"
+   ]
+  },
+  {
+   "template": "/claims/remittances/{id}",
+   "examples": [
+    "/claims/{id}/{id}"
+   ],
+   "h1s": [
+    "Remittance EFT{n}"
+   ],
+   "tables": [
+    {
+     "title": "Claims this remittance covers",
+     "region": "Claims",
+     "headers": [
+      "Claim",
+      "Service date",
+      "Rendering provider",
+      "Total charge",
+      "Status"
+     ],
+     "shapes": {
+      "Claim": [
+       "int"
+      ],
+      "Service date": [
+       "date"
+      ],
+      "Rendering provider": [
+       "person"
+      ],
+      "Total charge": [
+       "money"
+      ],
+      "Status": [
+       "text"
+      ]
+     },
+     "rowsSeen": 1,
+     "seen": [
+      "set1:claim-dump-baseline"
+     ],
+     "foots": [],
+     "paged": [],
+     "maxRows": 1,
+     "fullObs": 1
+    },
+    {
+     "title": "Lines of remittance {trace}",
+     "region": "Lines",
+     "headers": [
+      "Claim",
+      "Line",
+      "Service date",
+      "Procedure",
+      "Modifier",
+      "Units",
+      "Billed",
+      "Allowed",
+      "Adjustments",
+      "Remark codes",
+      "Paid"
+     ],
+     "shapes": {
+      "Claim": [
+       "int"
+      ],
+      "Line": [
+       "int"
+      ],
+      "Service date": [
+       "date"
+      ],
+      "Procedure": [
+       "int"
+      ],
+      "Modifier": [
+       "empty"
+      ],
+      "Units": [
+       "int"
+      ],
+      "Billed": [
+       "money"
+      ],
+      "Allowed": [
+       "money"
+      ],
+      "Adjustments": [
+       "text"
+      ],
+      "Remark codes": [
+       "empty"
+      ],
+      "Paid": [
+       "money"
+      ]
+     },
+     "rowsSeen": 3,
+     "seen": [
+      "set1:claim-dump-baseline"
+     ],
+     "foots": [],
+     "paged": [],
+     "maxRows": 3,
+     "fullObs": 1
+    }
+   ],
+   "dls": [
+    {
+     "heading": "Details",
+     "labels": [
+      "Payer",
+      "Patient",
+      "Trace number",
+      "Payment method",
+      "Payment date",
+      "Type",
+      "Total paid",
+      "Entry"
+     ],
+     "seen": [
+      "set1:claim-dump-baseline"
+     ]
+    }
+   ],
+   "controls": [],
+   "footers": [],
+   "pager": {
+    "next": false,
+    "showMore": []
+   },
+   "tabs": [],
+   "gates": [],
+   "images": [],
+   "seen": [
+    "set1:claim-dump-baseline"
+   ]
+  },
+  {
+   "template": "/documents",
+   "examples": [
+    "/documents"
+   ],
+   "h1s": [
+    "Documents"
+   ],
+   "tables": [
+    {
+     "title": "Documents received, newest first",
+     "region": "",
+     "headers": [
+      "Received",
+      "Type",
+      "Title",
+      "Patient",
+      "Actions"
+     ],
+     "shapes": {
+      "Received": [
+       "date"
+      ],
+      "Type": [
+       "text"
+      ],
+      "Title": [
+       "text"
+      ],
+      "Patient": [
+       "person"
+      ],
+      "Actions": [
+       "text"
+      ]
+     },
+     "rowsSeen": 85,
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump",
+      "practice"
+     ],
+     "foots": [
+      "Showing N of about N documents",
+      "Showing N to N of N+ documents"
+     ],
+     "paged": [
+      "show-more",
+      "next"
+     ],
+     "maxRows": 25,
+     "fullObs": 1
+    }
+   ],
+   "dls": [],
+   "controls": [
+    {
+     "label": "Type",
+     "kind": "select",
+     "form": "Filter documents",
+     "method": "get",
+     "options": [
+      "All types",
+      "Referral letter",
+      "Lab report",
+      "Statement",
+      "Eligibility response",
+      "Court order",
+      "Medicare questionnaire",
+      "Immunization record",
+      "Explanation of benefits"
+     ],
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump",
+      "practice"
+     ]
+    },
+    {
+     "label": "Received from",
+     "kind": "date",
+     "form": "Filter documents",
+     "method": "get",
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump",
+      "practice"
+     ]
+    },
+    {
+     "label": "Received to",
+     "kind": "date",
+     "form": "Filter documents",
+     "method": "get",
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump",
+      "practice"
+     ]
+    },
+    {
+     "label": "Patient",
+     "kind": "text",
+     "form": "Find a patient",
+     "method": "get",
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump",
+      "practice"
+     ]
+    },
+    {
+     "label": "Rows per page",
+     "kind": "select",
+     "form": "(page)",
+     "options": [
+      "25 per page",
+      "50 per page",
+      "100 per page"
+     ],
+     "seen": [
+      "practice"
+     ]
+    }
+   ],
+   "footers": [
+    "Showing N of about N documents",
+    "Showing N to N of N+ documents"
+   ],
+   "pager": {
+    "next": true,
+    "showMore": [
+     "Show more"
+    ],
+    "rowsPerPage": [
+     "25 per page",
+     "50 per page",
+     "100 per page"
+    ]
+   },
+   "tabs": [],
+   "gates": [],
+   "images": [],
+   "seen": [
+    "set1:recon-158",
+    "set1:claim-dump-baseline",
+    "set1:anotherDOMdump",
+    "practice"
+   ]
+  },
+  {
+   "template": "/documents/{id}",
+   "examples": [
+    "/documents/{id}"
+   ],
+   "h1s": [
+    "Documents"
+   ],
+   "tables": [
+    {
+     "title": "Documents received, newest first",
+     "region": "",
+     "headers": [
+      "Received",
+      "Type",
+      "Title",
+      "Patient",
+      "Actions"
+     ],
+     "shapes": {
+      "Received": [
+       "date"
+      ],
+      "Type": [
+       "text"
+      ],
+      "Title": [
+       "text"
+      ],
+      "Patient": [
+       "person",
+       "empty"
+      ],
+      "Actions": [
+       "text"
+      ]
+     },
+     "rowsSeen": 73,
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump",
+      "practice"
+     ],
+     "foots": [
+      "Showing N to N of N+ documents"
+     ],
+     "paged": [
+      "next"
+     ],
+     "maxRows": 25,
+     "fullObs": 1
+    }
+   ],
+   "dls": [],
+   "controls": [
+    {
+     "label": "Type",
+     "kind": "select",
+     "form": "Filter documents",
+     "method": "get",
+     "options": [
+      "All types",
+      "Referral letter",
+      "Lab report",
+      "Statement",
+      "Eligibility response",
+      "Court order",
+      "Medicare questionnaire",
+      "Immunization record",
+      "Explanation of benefits"
+     ],
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump",
+      "practice"
+     ]
+    },
+    {
+     "label": "Received from",
+     "kind": "date",
+     "form": "Filter documents",
+     "method": "get",
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump",
+      "practice"
+     ]
+    },
+    {
+     "label": "Received to",
+     "kind": "date",
+     "form": "Filter documents",
+     "method": "get",
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump",
+      "practice"
+     ]
+    },
+    {
+     "label": "Patient",
+     "kind": "text",
+     "form": "Find a patient",
+     "method": "get",
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump",
+      "practice"
+     ]
+    },
+    {
+     "label": "Reason for access",
+     "kind": "select",
+     "form": "(form)",
+     "method": "get",
+     "options": [
+      "Choose a reason",
+      "Providing care to this patient",
+      "Scheduling an appointment",
+      "Billing or insurance question",
+      "Request from the patient",
+      "Other reason"
+     ],
+     "seen": [
+      "practice"
+     ]
+    },
+    {
+     "label": "Details (needed for \"Other reason\")",
+     "kind": "textarea",
+     "form": "(form)",
+     "method": "get",
+     "seen": [
+      "practice"
+     ]
+    },
+    {
+     "label": "Rows per page",
+     "kind": "select",
+     "form": "(page)",
+     "options": [
+      "25 per page",
+      "50 per page",
+      "100 per page"
+     ],
+     "seen": [
+      "practice"
+     ]
+    }
+   ],
+   "footers": [
+    "Showing N to N of N+ documents"
+   ],
+   "pager": {
+    "next": true,
+    "showMore": [],
+    "rowsPerPage": [
+     "25 per page",
+     "50 per page",
+     "100 per page"
+    ]
+   },
+   "tabs": [],
+   "gates": [
+    "This chart is restricted"
+   ],
+   "images": [
+    "img:Page 1 of 1, Immunization reco",
+    "viewer-link:Open in new tab",
+    "viewer-link:Download"
+   ],
+   "seen": [
+    "set1:recon-158",
+    "set1:claim-dump-baseline",
+    "set1:anotherDOMdump",
+    "practice"
+   ]
+  },
+  {
+   "template": "/patients",
+   "examples": [
+    "/patients",
+    "/patients?lastName=Garcia"
+   ],
+   "h1s": [
+    "Patients"
+   ],
+   "tables": [
+    {
+     "title": "Your requests to open restricted charts",
+     "region": "",
+     "headers": [
+      "Patient",
+      "Reason",
+      "Status"
+     ],
+     "shapes": {
+      "Patient": [
+       "person"
+      ],
+      "Reason": [
+       "text"
+      ],
+      "Status": [
+       "text"
+      ]
+     },
+     "rowsSeen": 2,
+     "seen": [
+      "practice"
+     ],
+     "foots": [],
+     "paged": [],
+     "maxRows": 1,
+     "fullObs": 2
+    },
+    {
+     "title": "Patients found",
+     "region": "Results",
+     "headers": [
+      "Patient",
+      "MRN",
+      "Date of birth",
+      "Sex",
+      "Flags"
+     ],
+     "shapes": {
+      "Patient": [
+       "person"
+      ],
+      "MRN": [
+       "code"
+      ],
+      "Date of birth": [
+       "text"
+      ],
+      "Sex": [
+       "text"
+      ],
+      "Flags": [
+       "empty",
+       "text"
+      ]
+     },
+     "rowsSeen": 25,
+     "seen": [
+      "practice"
+     ],
+     "foots": [
+      "Showing N to N of N patients"
+     ],
+     "paged": [
+      "next"
+     ],
+     "maxRows": 25,
+     "fullObs": 1
+    }
+   ],
+   "dls": [],
+   "controls": [
+    {
+     "label": "Last name",
+     "kind": "text",
+     "form": "(form)",
+     "method": "get",
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "practice"
+     ]
+    },
+    {
+     "label": "Date of birth",
+     "kind": "date",
+     "form": "(form)",
+     "method": "get",
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "practice"
+     ]
+    },
+    {
+     "label": "Rows per page",
+     "kind": "select",
+     "form": "(page)",
+     "options": [
+      "25 per page",
+      "50 per page",
+      "100 per page"
+     ],
+     "seen": [
+      "practice"
+     ]
+    }
+   ],
+   "footers": [
+    "Showing N to N of N patients"
+   ],
+   "pager": {
+    "next": true,
+    "showMore": [],
+    "rowsPerPage": [
+     "25 per page",
+     "50 per page",
+     "100 per page"
+    ]
+   },
+   "tabs": [],
+   "gates": [],
+   "images": [],
+   "seen": [
+    "set1:recon-158",
+    "set1:claim-dump-baseline",
+    "practice"
+   ]
+  },
+  {
+   "template": "/patients/{id}",
+   "examples": [
+    "/patients/{id}"
+   ],
+   "h1s": [
+    "{patient name}"
+   ],
+   "tables": [],
+   "dls": [
+    {
+     "heading": "{patient name}",
+     "labels": [
+      "MRN",
+      "Date of birth",
+      "Sex",
+      "Billing"
+     ],
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump",
+      "practice"
+     ]
+    },
+    {
+     "heading": "Contact",
+     "labels": [
+      "Phone",
+      "Email",
+      "Address"
+     ],
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump",
+      "practice"
+     ]
+    },
+    {
+     "heading": "Care team",
+     "labels": [
+      "Primary provider",
+      "Home location"
+     ],
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump",
+      "practice"
+     ]
+    }
+   ],
+   "controls": [],
+   "footers": [],
+   "pager": {
+    "next": false,
+    "showMore": []
+   },
+   "tabs": [],
+   "gates": [],
+   "images": [],
+   "seen": [
+    "set1:recon-158",
+    "set1:claim-dump-baseline",
+    "set1:anotherDOMdump",
+    "practice"
+   ]
+  },
+  {
+   "template": "/patients/{id}/activity",
+   "examples": [
+    "/patients/{id}/activity"
+   ],
+   "h1s": [
+    "ActivityShowAll activityChangesChart views",
+    "This chart is restricted"
+   ],
+   "tables": [
+    {
+     "title": "Activity on this record, newest first",
+     "region": "",
+     "headers": [
+      "When",
+      "User",
+      "What"
+     ],
+     "shapes": {
+      "When": [
+       "datetime"
+      ],
+      "User": [
+       "text"
+      ],
+      "What": [
+       "text"
+      ]
+     },
+     "rowsSeen": 42,
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump"
+     ],
+     "foots": [
+      "N entries"
+     ],
+     "paged": [],
+     "maxRows": 14,
+     "fullObs": 3
+    }
+   ],
+   "dls": [],
+   "controls": [
+    {
+     "label": "Show",
+     "kind": "select",
+     "form": "(page)",
+     "options": [
+      "All activity",
+      "Changes",
+      "Chart views"
+     ],
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump"
+     ]
+    },
+    {
+     "label": "Reason for access",
+     "kind": "select",
+     "form": "(form)",
+     "method": "get",
+     "options": [
+      "Choose a reason",
+      "Providing care to this patient",
+      "Scheduling an appointment",
+      "Billing or insurance question",
+      "Request from the patient",
+      "Other reason"
+     ],
+     "seen": [
+      "practice"
+     ]
+    },
+    {
+     "label": "Details (needed for \"Other reason\")",
+     "kind": "textarea",
+     "form": "(form)",
+     "method": "get",
+     "seen": [
+      "practice"
+     ]
+    }
+   ],
+   "footers": [
+    "N entries"
+   ],
+   "pager": {
+    "next": false,
+    "showMore": []
+   },
+   "tabs": [],
+   "gates": [
+    "This chart is restricted"
+   ],
+   "images": [],
+   "seen": [
+    "set1:recon-158",
+    "set1:claim-dump-baseline",
+    "set1:anotherDOMdump",
+    "practice"
+   ]
+  },
+  {
+   "template": "/patients/{id}/allergies",
+   "examples": [
+    "/patients/{id}/allergies"
+   ],
+   "h1s": [
+    "{patient name}"
+   ],
+   "tables": [
+    {
+     "title": "Allergies and intolerances, newest first",
+     "region": "",
+     "headers": [
+      "Substance",
+      "Type",
+      "Reaction",
+      "Severity",
+      "Status",
+      "Recorded"
+     ],
+     "shapes": {
+      "Substance": [
+       "text"
+      ],
+      "Type": [
+       "text"
+      ],
+      "Reaction": [
+       "text"
+      ],
+      "Severity": [
+       "text"
+      ],
+      "Status": [
+       "text"
+      ],
+      "Recorded": [
+       "text"
+      ]
+     },
+     "rowsSeen": 3,
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump"
+     ],
+     "foots": [
+      "N entry"
+     ],
+     "paged": [],
+     "maxRows": 1,
+     "fullObs": 3
+    }
+   ],
+   "dls": [
+    {
+     "heading": "{patient name}",
+     "labels": [
+      "MRN",
+      "Date of birth",
+      "Sex",
+      "Billing"
+     ],
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump"
+     ]
+    }
+   ],
+   "controls": [],
+   "footers": [
+    "N entry"
+   ],
+   "pager": {
+    "next": false,
+    "showMore": []
+   },
+   "tabs": [],
+   "gates": [],
+   "images": [],
+   "seen": [
+    "set1:recon-158",
+    "set1:claim-dump-baseline",
+    "set1:anotherDOMdump"
+   ]
+  },
+  {
+   "template": "/patients/{id}/appointments",
+   "examples": [
+    "/patients/{id}/{id}"
+   ],
+   "h1s": [
+    "{patient name}"
+   ],
+   "tables": [
+    {
+     "title": "Appointments, newest first",
+     "region": "",
+     "headers": [
+      "Date and time",
+      "Type",
+      "Provider",
+      "Location",
+      "Status"
+     ],
+     "shapes": {
+      "Date and time": [
+       "datetime"
+      ],
+      "Type": [
+       "text"
+      ],
+      "Provider": [
+       "person"
+      ],
+      "Location": [
+       "text"
+      ],
+      "Status": [
+       "text"
+      ]
+     },
+     "rowsSeen": 72,
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump",
+      "practice"
+     ],
+     "foots": [
+      "Showing N of N appointments",
+      "Showing N to N of N appointments",
+      "N appointments"
+     ],
+     "paged": [
+      "show-more",
+      "next"
+     ],
+     "maxRows": 25,
+     "fullObs": 5
+    }
+   ],
+   "dls": [
+    {
+     "heading": "{patient name}",
+     "labels": [
+      "MRN",
+      "Date of birth",
+      "Sex",
+      "Billing"
+     ],
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump",
+      "practice"
+     ]
+    }
+   ],
+   "controls": [
+    {
+     "label": "Rows per page",
+     "kind": "select",
+     "form": "(page)",
+     "options": [
+      "25 per page",
+      "50 per page"
+     ],
+     "seen": [
+      "practice"
+     ]
+    }
+   ],
+   "footers": [
+    "Showing N of N appointments",
+    "Showing N to N of N appointments",
+    "N appointments"
+   ],
+   "pager": {
+    "next": true,
+    "showMore": [
+     "Show more"
+    ],
+    "rowsPerPage": [
+     "25 per page",
+     "50 per page"
+    ]
+   },
+   "tabs": [],
+   "gates": [],
+   "images": [],
+   "seen": [
+    "set1:recon-158",
+    "set1:claim-dump-baseline",
+    "set1:anotherDOMdump",
+    "practice"
+   ]
+  },
+  {
+   "template": "/patients/{id}/appointments/{id}",
+   "examples": [
+    "/patients/{id}/{id}/{id}"
+   ],
+   "h1s": [
+    "Visit",
+    "{patient name}"
+   ],
+   "tables": [
+    {
+     "title": "History of this appointment",
+     "region": "",
+     "headers": [
+      "When",
+      "User",
+      "Change"
+     ],
+     "shapes": {
+      "When": [
+       "datetime"
+      ],
+      "User": [
+       "text"
+      ],
+      "Change": [
+       "text"
+      ]
+     },
+     "rowsSeen": 9,
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump",
+      "practice"
+     ],
+     "foots": [
+      "N entries",
+      "N entry"
+     ],
+     "paged": [],
+     "maxRows": 2,
+     "fullObs": 5
+    },
+    {
+     "title": "Appointments, newest first",
+     "region": "",
+     "headers": [
+      "Date and time",
+      "Type",
+      "Provider",
+      "Location",
+      "Status"
+     ],
+     "shapes": {
+      "Date and time": [
+       "datetime"
+      ],
+      "Type": [
+       "text"
+      ],
+      "Provider": [
+       "person"
+      ],
+      "Location": [
+       "text"
+      ],
+      "Status": [
+       "text"
+      ]
+     },
+     "rowsSeen": 27,
+     "seen": [
+      "practice"
+     ],
+     "foots": [
+      "Showing N to N of N appointments",
+      "N appointments"
+     ],
+     "paged": [
+      "next"
+     ],
+     "maxRows": 25,
+     "fullObs": 2
+    }
+   ],
+   "dls": [
+    {
+     "heading": "Visit",
+     "labels": [
+      "Date",
+      "Time",
+      "Length",
+      "Type",
+      "Status"
+     ],
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump",
+      "practice"
+     ]
+    },
+    {
+     "heading": "People and place",
+     "labels": [
+      "Provider",
+      "Location"
+     ],
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump",
+      "practice"
+     ]
+    },
+    {
+     "heading": "Record",
+     "labels": [
+      "Reference",
+      "Booked",
+      "Last changed"
+     ],
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump",
+      "practice"
+     ]
+    },
+    {
+     "heading": "Booking",
+     "labels": [
+      "Booked on",
+      "Booked by",
+      "Booked through"
+     ],
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump"
+     ]
+    },
+    {
+     "heading": "{patient name}",
+     "labels": [
+      "MRN",
+      "Date of birth",
+      "Sex",
+      "Billing"
+     ],
+     "seen": [
+      "practice"
+     ]
+    }
+   ],
+   "controls": [
+    {
+     "label": "Rows per page",
+     "kind": "select",
+     "form": "(page)",
+     "options": [
+      "25 per page",
+      "50 per page"
+     ],
+     "seen": [
+      "practice"
+     ]
+    }
+   ],
+   "footers": [
+    "N entries",
+    "Showing N to N of N appointments",
+    "N entry",
+    "N appointments"
+   ],
+   "pager": {
+    "next": true,
+    "showMore": [],
+    "rowsPerPage": [
+     "25 per page",
+     "50 per page"
+    ]
+   },
+   "tabs": [],
+   "gates": [],
+   "images": [],
+   "seen": [
+    "set1:recon-158",
+    "set1:claim-dump-baseline",
+    "set1:anotherDOMdump",
+    "practice"
+   ]
+  },
+  {
+   "template": "/patients/{id}/claims",
+   "examples": [
+    "/patients/{id}/claims"
+   ],
+   "h1s": [
+    "{patient name}"
+   ],
+   "tables": [
+    {
+     "title": "Claims of this patient, newest service first",
+     "region": "Claims",
+     "headers": [
+      "Claim",
+      "Service date",
+      "Rendering provider",
+      "Payer",
+      "Total charge",
+      "Status"
+     ],
+     "shapes": {
+      "Claim": [
+       "int"
+      ],
+      "Service date": [
+       "date"
+      ],
+      "Rendering provider": [
+       "person"
+      ],
+      "Payer": [
+       "text"
+      ],
+      "Total charge": [
+       "money"
+      ],
+      "Status": [
+       "text"
+      ]
+     },
+     "rowsSeen": 40,
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline"
+     ],
+     "foots": [
+      "N claims"
+     ],
+     "paged": [],
+     "maxRows": 20,
+     "fullObs": 0
+    },
+    {
+     "title": "Remittances for this patient, newest first",
+     "region": "Remittances",
+     "headers": [
+      "Trace number",
+      "Payment date",
+      "Payer",
+      "Type",
+      "Entry",
+      "Total paid"
+     ],
+     "shapes": {
+      "Trace number": [
+       "code",
+       "empty"
+      ],
+      "Payment date": [
+       "date"
+      ],
+      "Payer": [
+       "text"
+      ],
+      "Type": [
+       "text"
+      ],
+      "Entry": [
+       "text"
+      ],
+      "Total paid": [
+       "money"
+      ]
+     },
+     "rowsSeen": 26,
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline"
+     ],
+     "foots": [],
+     "paged": [],
+     "maxRows": 13,
+     "fullObs": 0
+    }
+   ],
+   "dls": [
+    {
+     "heading": "{patient name}",
+     "labels": [
+      "MRN",
+      "Date of birth",
+      "Sex",
+      "Billing"
+     ],
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump"
+     ]
+    }
+   ],
+   "controls": [],
+   "footers": [
+    "N claims"
+   ],
+   "pager": {
+    "next": false,
+    "showMore": []
+   },
+   "tabs": [],
+   "gates": [],
+   "images": [],
+   "seen": [
+    "set1:recon-158",
+    "set1:claim-dump-baseline",
+    "set1:anotherDOMdump"
+   ]
+  },
+  {
+   "template": "/patients/{id}/documents",
+   "examples": [
+    "/patients/{id}/documents"
+   ],
+   "h1s": [
+    "{patient name}"
+   ],
+   "tables": [
+    {
+     "title": "Documents in this chart, newest first",
+     "region": "",
+     "headers": [
+      "Title",
+      "Type",
+      "Received",
+      "Actions"
+     ],
+     "shapes": {
+      "Title": [
+       "text"
+      ],
+      "Type": [
+       "text"
+      ],
+      "Received": [
+       "date"
+      ],
+      "Actions": [
+       "text"
+      ]
+     },
+     "rowsSeen": 4,
+     "seen": [
+      "practice"
+     ],
+     "foots": [
+      "N document",
+      "N documents"
+     ],
+     "paged": [],
+     "maxRows": 3,
+     "fullObs": 2
+    }
+   ],
+   "dls": [
+    {
+     "heading": "{patient name}",
+     "labels": [
+      "MRN",
+      "Date of birth",
+      "Sex",
+      "Billing"
+     ],
+     "seen": [
+      "practice"
+     ]
+    }
+   ],
+   "controls": [],
+   "footers": [
+    "N document",
+    "N documents"
+   ],
+   "pager": {
+    "next": false,
+    "showMore": []
+   },
+   "tabs": [],
+   "gates": [],
+   "images": [],
+   "seen": [
+    "practice"
+   ]
+  },
+  {
+   "template": "/patients/{id}/encounters",
+   "examples": [
+    "/patients/{id}/{id}"
+   ],
+   "h1s": [
+    "{patient name}"
+   ],
+   "tables": [],
+   "dls": [
+    {
+     "heading": "{patient name}",
+     "labels": [
+      "MRN",
+      "Date of birth",
+      "Sex",
+      "Billing"
+     ],
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump"
+     ]
+    }
+   ],
+   "controls": [],
+   "footers": [],
+   "pager": {
+    "next": false,
+    "showMore": []
+   },
+   "tabs": [],
+   "gates": [],
+   "images": [],
+   "seen": [
+    "set1:recon-158",
+    "set1:claim-dump-baseline",
+    "set1:anotherDOMdump"
+   ]
+  },
+  {
+   "template": "/patients/{id}/files",
+   "examples": [
+    "/patients/{id}/files"
+   ],
+   "h1s": [],
+   "tables": [
+    {
+     "title": "Documents in this chart, newest first",
+     "region": "",
+     "headers": [
+      "Title",
+      "Type",
+      "Received",
+      "Actions"
+     ],
+     "shapes": {
+      "Title": [
+       "text"
+      ],
+      "Type": [
+       "text"
+      ],
+      "Received": [
+       "date"
+      ],
+      "Actions": [
+       "text"
+      ]
+     },
+     "rowsSeen": 36,
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump"
+     ],
+     "foots": [
+      "N documents"
+     ],
+     "paged": [],
+     "maxRows": 12,
+     "fullObs": 3
+    }
+   ],
+   "dls": [],
+   "controls": [],
+   "footers": [
+    "N documents"
+   ],
+   "pager": {
+    "next": false,
+    "showMore": []
+   },
+   "tabs": [],
+   "gates": [],
+   "images": [],
+   "seen": [
+    "set1:recon-158",
+    "set1:claim-dump-baseline",
+    "set1:anotherDOMdump"
+   ]
+  },
+  {
+   "template": "/patients/{id}/files/{id}",
+   "examples": [
+    "/patients/{id}/files/{id}"
+   ],
+   "h1s": [
+    "Statement of account 2026-08Close document"
+   ],
+   "tables": [
+    {
+     "title": "Documents in this chart, newest first",
+     "region": "",
+     "headers": [
+      "Title",
+      "Type",
+      "Received",
+      "Actions"
+     ],
+     "shapes": {
+      "Title": [
+       "text"
+      ],
+      "Type": [
+       "text"
+      ],
+      "Received": [
+       "date"
+      ],
+      "Actions": [
+       "text"
+      ]
+     },
+     "rowsSeen": 36,
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump"
+     ],
+     "foots": [
+      "N documents"
+     ],
+     "paged": [],
+     "maxRows": 12,
+     "fullObs": 3
+    }
+   ],
+   "dls": [],
+   "controls": [],
+   "footers": [
+    "N documents"
+   ],
+   "pager": {
+    "next": false,
+    "showMore": []
+   },
+   "tabs": [],
+   "gates": [],
+   "images": [
+    "img:Page 1 of 1, Statement receive",
+    "viewer-link:Open in new tab",
+    "viewer-link:Download"
+   ],
+   "seen": [
+    "set1:recon-158",
+    "set1:claim-dump-baseline",
+    "set1:anotherDOMdump"
+   ]
+  },
+  {
+   "template": "/patients/{id}/flowsheet",
+   "examples": [
+    "/patients/{id}/flowsheet"
+   ],
+   "h1s": [
+    "{patient name}"
+   ],
+   "tables": [],
+   "dls": [
+    {
+     "heading": "{patient name}",
+     "labels": [
+      "MRN",
+      "Date of birth",
+      "Sex",
+      "Billing"
+     ],
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump"
+     ]
+    }
+   ],
+   "controls": [
+    {
+     "label": "Item",
+     "kind": "select",
+     "form": "Flowsheet graph",
+     "method": "get",
+     "options": [
+      "Home glucose",
+      "Peak flow",
+      "Home weight",
+      "Oxygen saturation",
+      "Pain score"
+     ],
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump"
+     ]
+    },
+    {
+     "label": "Readings from",
+     "kind": "date",
+     "form": "Flowsheet graph",
+     "method": "get",
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump"
+     ]
+    },
+    {
+     "label": "Readings to",
+     "kind": "date",
+     "form": "Flowsheet graph",
+     "method": "get",
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump"
+     ]
+    }
+   ],
+   "footers": [],
+   "pager": {
+    "next": false,
+    "showMore": []
+   },
+   "tabs": [],
+   "gates": [],
+   "images": [],
+   "seen": [
+    "set1:recon-158",
+    "set1:claim-dump-baseline",
+    "set1:anotherDOMdump"
+   ]
+  },
+  {
+   "template": "/patients/{id}/immunizations",
+   "examples": [
+    "/patients/{id}/{id}"
+   ],
+   "h1s": [
+    "{patient name}"
+   ],
+   "tables": [
+    {
+     "title": "Immunizations, newest first",
+     "region": "",
+     "headers": [
+      "Vaccine",
+      "Date given",
+      "Lot",
+      "Site",
+      "Given by",
+      "Recorded as"
+     ],
+     "shapes": {
+      "Vaccine": [
+       "text"
+      ],
+      "Date given": [
+       "date"
+      ],
+      "Lot": [
+       "empty",
+       "code"
+      ],
+      "Site": [
+       "empty",
+       "text"
+      ],
+      "Given by": [
+       "text"
+      ],
+      "Recorded as": [
+       "text"
+      ]
+     },
+     "rowsSeen": 12,
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump"
+     ],
+     "foots": [
+      "N entries"
+     ],
+     "paged": [],
+     "maxRows": 3,
+     "fullObs": 5
+    }
+   ],
+   "dls": [
+    {
+     "heading": "{patient name}",
+     "labels": [
+      "MRN",
+      "Date of birth",
+      "Sex",
+      "Billing"
+     ],
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump"
+     ]
+    }
+   ],
+   "controls": [],
+   "footers": [
+    "N entries"
+   ],
+   "pager": {
+    "next": false,
+    "showMore": []
+   },
+   "tabs": [],
+   "gates": [],
+   "images": [],
+   "seen": [
+    "set1:recon-158",
+    "set1:claim-dump-baseline",
+    "set1:anotherDOMdump"
+   ]
+  },
+  {
+   "template": "/patients/{id}/insurance",
+   "examples": [
+    "/patients/{id}/insurance"
+   ],
+   "h1s": [
+    "{patient name}",
+    "This chart is restricted"
+   ],
+   "tables": [
+    {
+     "title": "Coverage on file",
+     "region": "",
+     "headers": [
+      "Order",
+      "Payer and plan",
+      "Member ID",
+      "Group",
+      "Subscriber",
+      "Relationship",
+      "Effective",
+      "End",
+      "Status"
+     ],
+     "shapes": {
+      "Order": [
+       "text"
+      ],
+      "Payer and plan": [
+       "text"
+      ],
+      "Member ID": [
+       "code"
+      ],
+      "Group": [
+       "empty"
+      ],
+      "Subscriber": [
+       "text"
+      ],
+      "Relationship": [
+       "text"
+      ],
+      "Effective": [
+       "date"
+      ],
+      "End": [
+       "empty"
+      ],
+      "Status": [
+       "text"
+      ]
+     },
+     "rowsSeen": 3,
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump"
+     ],
+     "foots": [],
+     "paged": [],
+     "maxRows": 1,
+     "fullObs": 3
+    },
+    {
+     "title": "Authorizations, newest first",
+     "region": "",
+     "headers": [
+      "Number",
+      "Payer",
+      "Service",
+      "Valid from",
+      "Valid through",
+      "Visits approved",
+      "Status"
+     ],
+     "shapes": {
+      "Number": [
+       "int"
+      ],
+      "Payer": [
+       "text"
+      ],
+      "Service": [
+       "text"
+      ],
+      "Valid from": [
+       "date"
+      ],
+      "Valid through": [
+       "date"
+      ],
+      "Visits approved": [
+       "int"
+      ],
+      "Status": [
+       "text"
+      ]
+     },
+     "rowsSeen": 3,
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump"
+     ],
+     "foots": [],
+     "paged": [],
+     "maxRows": 1,
+     "fullObs": 3
+    }
+   ],
+   "dls": [
+    {
+     "heading": "{patient name}",
+     "labels": [
+      "MRN",
+      "Date of birth",
+      "Sex",
+      "Billing"
+     ],
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump",
+      "practice"
+     ]
+    },
+    {
+     "heading": "Primary insurance",
+     "labels": [
+      "Payer",
+      "Plan",
+      "Member ID"
+     ],
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump",
+      "practice"
+     ]
+    }
+   ],
+   "controls": [
+    {
+     "label": "Reason for access",
+     "kind": "select",
+     "form": "(form)",
+     "method": "get",
+     "options": [
+      "Choose a reason",
+      "Providing care to this patient",
+      "Scheduling an appointment",
+      "Billing or insurance question",
+      "Request from the patient",
+      "Other reason"
+     ],
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline"
+     ]
+    },
+    {
+     "label": "Details (needed for \"Other reason\")",
+     "kind": "textarea",
+     "form": "(form)",
+     "method": "get",
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline"
+     ]
+    }
+   ],
+   "footers": [
+    "no insurance on file",
+    "no insurance is on file",
+    "No insurance on file",
+    "N patients",
+    "N patient",
+    "about N claims",
+    "N date",
+    "N appointment"
+   ],
+   "pager": {
+    "next": false,
+    "showMore": []
+   },
+   "tabs": [],
+   "gates": [
+    "This chart is restricted"
+   ],
+   "images": [],
+   "seen": [
+    "set1:recon-158",
+    "set1:claim-dump-baseline",
+    "set1:anotherDOMdump",
+    "practice"
+   ]
+  },
+  {
+   "template": "/patients/{id}/notes",
+   "examples": [
+    "/patients/{id}/notes"
+   ],
+   "h1s": [
+    "{patient name}"
+   ],
+   "tables": [],
+   "dls": [
+    {
+     "heading": "{patient name}",
+     "labels": [
+      "MRN",
+      "Date of birth",
+      "Sex",
+      "Billing"
+     ],
+     "seen": [
+      "practice"
+     ]
+    }
+   ],
+   "controls": [
+    {
+     "label": "Written from",
+     "kind": "date",
+     "form": "Filter notes",
+     "method": "get",
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump",
+      "practice"
+     ]
+    },
+    {
+     "label": "Written to",
+     "kind": "date",
+     "form": "Filter notes",
+     "method": "get",
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump",
+      "practice"
+     ]
+    },
+    {
+     "label": "Rows per page",
+     "kind": "select",
+     "form": "(page)",
+     "options": [
+      "10 per page",
+      "25 per page"
+     ],
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump"
+     ]
+    }
+   ],
+   "footers": [
+    "Showing N to N of N notes",
+    "N notes"
+   ],
+   "pager": {
+    "next": true,
+    "showMore": [],
+    "rowsPerPage": [
+     "10 per page",
+     "25 per page"
+    ]
+   },
+   "tabs": [],
+   "gates": [],
+   "images": [],
+   "seen": [
+    "set1:recon-158",
+    "set1:claim-dump-baseline",
+    "set1:anotherDOMdump",
+    "practice"
+   ]
+  },
+  {
+   "template": "/patients/{id}/orders",
+   "examples": [
+    "/patients/{id}/orders"
+   ],
+   "h1s": [
+    "{patient name}"
+   ],
+   "tables": [
+    {
+     "title": "Orders, newest first",
+     "region": "",
+     "headers": [
+      "Order number",
+      "Ordered",
+      "Service",
+      "Visits",
+      "Diagnosis",
+      "Ordering provider",
+      "Bill to"
+     ],
+     "shapes": {
+      "Order number": [
+       "int"
+      ],
+      "Ordered": [
+       "date"
+      ],
+      "Service": [
+       "text"
+      ],
+      "Visits": [
+       "int"
+      ],
+      "Diagnosis": [
+       "text"
+      ],
+      "Ordering provider": [
+       "person"
+      ],
+      "Bill to": [
+       "text"
+      ]
+     },
+     "rowsSeen": 9,
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump"
+     ],
+     "foots": [],
+     "paged": [],
+     "maxRows": 3,
+     "fullObs": 3
+    }
+   ],
+   "dls": [
+    {
+     "heading": "{patient name}",
+     "labels": [
+      "MRN",
+      "Date of birth",
+      "Sex",
+      "Billing"
+     ],
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump"
+     ]
+    }
+   ],
+   "controls": [],
+   "footers": [],
+   "pager": {
+    "next": false,
+    "showMore": []
+   },
+   "tabs": [],
+   "gates": [],
+   "images": [],
+   "seen": [
+    "set1:recon-158",
+    "set1:claim-dump-baseline",
+    "set1:anotherDOMdump"
+   ]
+  },
+  {
+   "template": "/patients/{id}/problems",
+   "examples": [
+    "/patients/{id}/problems"
+   ],
+   "h1s": [
+    "{patient name}"
+   ],
+   "tables": [
+    {
+     "title": "Conditions on the problem list",
+     "region": "",
+     "headers": [
+      "Code",
+      "Condition",
+      "Onset"
+     ],
+     "shapes": {
+      "Code": [
+       "text",
+       "code"
+      ],
+      "Condition": [
+       "text"
+      ],
+      "Onset": [
+       "date"
+      ]
+     },
+     "rowsSeen": 11,
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump",
+      "practice"
+     ],
+     "foots": [],
+     "paged": [],
+     "maxRows": 3,
+     "fullObs": 5
+    }
+   ],
+   "dls": [
+    {
+     "heading": "{patient name}",
+     "labels": [
+      "MRN",
+      "Date of birth",
+      "Sex",
+      "Billing"
+     ],
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump",
+      "practice"
+     ]
+    }
+   ],
+   "controls": [],
+   "footers": [],
+   "pager": {
+    "next": false,
+    "showMore": []
+   },
+   "tabs": [],
+   "gates": [],
+   "images": [],
+   "seen": [
+    "set1:recon-158",
+    "set1:claim-dump-baseline",
+    "set1:anotherDOMdump",
+    "practice"
+   ]
+  },
+  {
+   "template": "/patients/{id}/recurring/{id}",
+   "examples": [
+    "/patients/{id}/recurring/{id}"
+   ],
+   "h1s": [
+    "Rule",
+    "{patient name}"
+   ],
+   "tables": [
+    {
+     "title": "Dates on which this series was changed",
+     "region": "",
+     "headers": [
+      "Date",
+      "Change",
+      "Recorded"
+     ],
+     "shapes": {
+      "Date": [
+       "date"
+      ],
+      "Change": [
+       "text"
+      ],
+      "Recorded": [
+       "datetime"
+      ]
+     },
+     "rowsSeen": 9,
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump",
+      "practice"
+     ],
+     "foots": [],
+     "paged": [],
+     "maxRows": 3,
+     "fullObs": 4
+    },
+    {
+     "title": "Every date of this recurring appointment, newest first",
+     "region": "",
+     "headers": [
+      "Date and time",
+      "Status"
+     ],
+     "shapes": {
+      "Date and time": [
+       "datetime"
+      ],
+      "Status": [
+       "text"
+      ]
+     },
+     "rowsSeen": 36,
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump",
+      "practice"
+     ],
+     "foots": [
+      "N dates"
+     ],
+     "paged": [],
+     "maxRows": 19,
+     "fullObs": 5
+    },
+    {
+     "title": "Appointments, newest first",
+     "region": "",
+     "headers": [
+      "Date and time",
+      "Type",
+      "Provider",
+      "Location",
+      "Status"
+     ],
+     "shapes": {
+      "Date and time": [
+       "datetime"
+      ],
+      "Type": [
+       "text"
+      ],
+      "Provider": [
+       "person"
+      ],
+      "Location": [
+       "text"
+      ],
+      "Status": [
+       "text"
+      ]
+     },
+     "rowsSeen": 46,
+     "seen": [
+      "practice"
+     ],
+     "foots": [
+      "N appointments",
+      "Showing N to N of N appointments"
+     ],
+     "paged": [
+      "next"
+     ],
+     "maxRows": 25,
+     "fullObs": 2
+    }
+   ],
+   "dls": [
+    {
+     "heading": "Rule",
+     "labels": [
+      "Repeats",
+      "Length",
+      "From",
+      "Until",
+      "Type"
+     ],
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump",
+      "practice"
+     ]
+    },
+    {
+     "heading": "People and place",
+     "labels": [
+      "Provider",
+      "Location",
+      "Created",
+      "Last changed"
+     ],
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump",
+      "practice"
+     ]
+    },
+    {
+     "heading": "{patient name}",
+     "labels": [
+      "MRN",
+      "Date of birth",
+      "Sex",
+      "Billing"
+     ],
+     "seen": [
+      "practice"
+     ]
+    }
+   ],
+   "controls": [
+    {
+     "label": "Rows per page",
+     "kind": "select",
+     "form": "(page)",
+     "options": [
+      "25 per page",
+      "50 per page"
+     ],
+     "seen": [
+      "practice"
+     ]
+    }
+   ],
+   "footers": [
+    "N dates",
+    "N appointments",
+    "Showing N to N of N appointments"
+   ],
+   "pager": {
+    "next": true,
+    "showMore": [],
+    "rowsPerPage": [
+     "25 per page",
+     "50 per page"
+    ]
+   },
+   "tabs": [],
+   "gates": [],
+   "images": [],
+   "seen": [
+    "set1:recon-158",
+    "set1:claim-dump-baseline",
+    "set1:anotherDOMdump",
+    "practice"
+   ]
+  },
+  {
+   "template": "/patients/{id}/scheduling",
+   "examples": [
+    "/patients/{id}/{id}"
+   ],
+   "h1s": [
+    "{patient name}"
+   ],
+   "tables": [
+    {
+     "title": "Language and interpreter entries, newest first",
+     "region": "",
+     "headers": [
+      "Recorded",
+      "By",
+      "Preferred language",
+      "Interpreter"
+     ],
+     "shapes": {
+      "Recorded": [
+       "datetime"
+      ],
+      "By": [
+       "text"
+      ],
+      "Preferred language": [
+       "text"
+      ],
+      "Interpreter": [
+       "text"
+      ]
+     },
+     "rowsSeen": 6,
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump"
+     ],
+     "foots": [
+      "N entries"
+     ],
+     "paged": [],
+     "maxRows": 2,
+     "fullObs": 3
+    }
+   ],
+   "dls": [
+    {
+     "heading": "{patient name}",
+     "labels": [
+      "MRN",
+      "Date of birth",
+      "Sex",
+      "Billing"
+     ],
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump"
+     ]
+    },
+    {
+     "heading": "Language and interpreter",
+     "labels": [
+      "Preferred language",
+      "Interpreter",
+      "Recorded"
+     ],
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump"
+     ]
+    }
+   ],
+   "controls": [],
+   "footers": [
+    "N entries"
+   ],
+   "pager": {
+    "next": false,
+    "showMore": []
+   },
+   "tabs": [],
+   "gates": [],
+   "images": [],
+   "seen": [
+    "set1:recon-158",
+    "set1:claim-dump-baseline",
+    "set1:anotherDOMdump"
+   ]
+  },
+  {
+   "template": "/payers",
+   "examples": [
+    "/payers"
+   ],
+   "h1s": [
+    "Payers"
+   ],
+   "tables": [
+    {
+     "title": "Payers",
+     "region": "",
+     "headers": [
+      "Payer",
+      "Type",
+      "Payer ID",
+      "Plans"
+     ],
+     "shapes": {
+      "Payer": [
+       "text"
+      ],
+      "Type": [
+       "text"
+      ],
+      "Payer ID": [
+       "int"
+      ],
+      "Plans": [
+       "int"
+      ]
+     },
+     "rowsSeen": 27,
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump"
+     ],
+     "foots": [],
+     "paged": [],
+     "maxRows": 9,
+     "fullObs": 3
+    }
+   ],
+   "dls": [],
+   "controls": [],
+   "footers": [],
+   "pager": {
+    "next": false,
+    "showMore": []
+   },
+   "tabs": [],
+   "gates": [],
+   "images": [],
+   "seen": [
+    "set1:recon-158",
+    "set1:claim-dump-baseline",
+    "set1:anotherDOMdump"
+   ]
+  },
+  {
+   "template": "/payers/{id}",
+   "examples": [
+    "/payers/{id}"
+   ],
+   "h1s": [
+    "Tallgrass Health Plan"
+   ],
+   "tables": [
+    {
+     "title": "Plans of {name}",
+     "region": "",
+     "headers": [
+      "Plan",
+      "Benefits effective"
+     ],
+     "shapes": {
+      "Plan": [
+       "text"
+      ],
+      "Benefits effective": [
+       "date"
+      ]
+     },
+     "rowsSeen": 9,
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump"
+     ],
+     "foots": [],
+     "paged": [],
+     "maxRows": 3,
+     "fullObs": 3
+    },
+    {
+     "title": "Claim filing terms of {name}",
+     "region": "",
+     "headers": [
+      "Effective",
+      "Original claim",
+      "Secondary claim",
+      "Corrected claim"
+     ],
+     "shapes": {
+      "Effective": [
+       "date"
+      ],
+      "Original claim": [
+       "text"
+      ],
+      "Secondary claim": [
+       "text"
+      ],
+      "Corrected claim": [
+       "text"
+      ]
+     },
+     "rowsSeen": 3,
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump"
+     ],
+     "foots": [],
+     "paged": [],
+     "maxRows": 1,
+     "fullObs": 3
+    },
+    {
+     "title": "Prior authorization rules of {name}",
+     "region": "",
+     "headers": [
+      "Service",
+      "Effective",
+      "Authorization",
+      "Exceptions"
+     ],
+     "shapes": {
+      "Service": [
+       "text"
+      ],
+      "Effective": [
+       "date"
+      ],
+      "Authorization": [
+       "text"
+      ],
+      "Exceptions": [
+       "empty",
+       "text"
+      ]
+     },
+     "rowsSeen": 57,
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump"
+     ],
+     "foots": [],
+     "paged": [],
+     "maxRows": 19,
+     "fullObs": 3
+    }
+   ],
+   "dls": [
+    {
+     "heading": "Profile",
+     "labels": [
+      "Type",
+      "Payer ID",
+      "Claims phone",
+      "Claims address"
+     ],
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump"
+     ]
+    }
+   ],
+   "controls": [],
+   "footers": [
+    "N visits",
+    "no insurance on file",
+    "no insurance is on file",
+    "No insurance on file",
+    "N patients",
+    "N patient",
+    "about N claims",
+    "N date"
+   ],
+   "pager": {
+    "next": false,
+    "showMore": []
+   },
+   "tabs": [],
+   "gates": [],
+   "images": [],
+   "seen": [
+    "set1:recon-158",
+    "set1:claim-dump-baseline",
+    "set1:anotherDOMdump"
+   ]
+  },
+  {
+   "template": "/payers/{id}/plans/{id}",
+   "examples": [
+    "/payers/{id}/plans/{id}"
+   ],
+   "h1s": [
+    "Tallgrass Health Plan · Bronze 6000"
+   ],
+   "tables": [
+    {
+     "title": "Benefits of {name}",
+     "region": "",
+     "headers": [
+      "Effective",
+      "Primary care visit",
+      "Specialist visit",
+      "Therapy visit",
+      "Preventive visit",
+      "Individual deductible",
+      "Coinsurance"
+     ],
+     "shapes": {
+      "Effective": [
+       "date"
+      ],
+      "Primary care visit": [
+       "text"
+      ],
+      "Specialist visit": [
+       "text"
+      ],
+      "Therapy visit": [
+       "text"
+      ],
+      "Preventive visit": [
+       "text"
+      ],
+      "Individual deductible": [
+       "money"
+      ],
+      "Coinsurance": [
+       "percent"
+      ]
+     },
+     "rowsSeen": 9,
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump"
+     ],
+     "foots": [],
+     "paged": [],
+     "maxRows": 3,
+     "fullObs": 3
+    }
+   ],
+   "dls": [],
+   "controls": [],
+   "footers": [],
+   "pager": {
+    "next": false,
+    "showMore": []
+   },
+   "tabs": [],
+   "gates": [],
+   "images": [],
+   "seen": [
+    "set1:recon-158",
+    "set1:claim-dump-baseline",
+    "set1:anotherDOMdump"
+   ]
+  },
+  {
+   "template": "/schedule",
+   "examples": [
+    "/schedule",
+    "/schedule?date=2026-10-14",
+    "/schedule?date=2026-10-17"
+   ],
+   "h1s": [
+    "{patient name}",
+    "Schedule"
+   ],
+   "tables": [],
+   "dls": [],
+   "controls": [
+    {
+     "label": "Date",
+     "kind": "date",
+     "form": "(page)",
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump",
+      "practice"
+     ]
+    }
+   ],
+   "footers": [],
+   "pager": {
+    "next": false,
+    "showMore": []
+   },
+   "tabs": [],
+   "gates": [],
+   "images": [],
+   "seen": [
+    "set1:recon-158",
+    "set1:claim-dump-baseline",
+    "set1:anotherDOMdump",
+    "practice"
+   ]
+  },
+  {
+   "template": "/schedule/appointments",
+   "examples": [
+    "/schedule/{id}?start=2026-10-14&end=2026-10-14&status=1",
+    "/schedule/{id}?from=2026-10-17&to=2026-10-23",
+    "/schedule/{id}?from=2026-10-14&to=2026-10-14&location=2mgdl287kq&status=1"
+   ],
+   "h1s": [
+    "Schedule",
+    "Appointments from Oct 17, 2026 to Oct 23, 2026",
+    "Appointments from Oct 14, 2026 to Oct 14, 2026"
+   ],
+   "tables": [
+    {
+     "title": "Appointments, earliest first",
+     "region": "Appointments from Oct 14, 2026 to Oct 14, 2026",
+     "headers": [
+      "Date",
+      "Time",
+      "Patient",
+      "Provider",
+      "Location",
+      "Visit type",
+      "Status"
+     ],
+     "shapes": {
+      "Date": [
+       "date"
+      ],
+      "Time": [
+       "time-range"
+      ],
+      "Patient": [
+       "person",
+       "empty"
+      ],
+      "Provider": [
+       "person"
+      ],
+      "Location": [
+       "text"
+      ],
+      "Visit type": [
+       "text"
+      ],
+      "Status": [
+       "text"
+      ]
+     },
+     "rowsSeen": 21,
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump"
+     ],
+     "foots": [],
+     "paged": [],
+     "maxRows": 7,
+     "fullObs": 0
+    },
+    {
+     "title": "Appointments, earliest first",
+     "region": "Appointments from Oct 17, 2026 to Oct 23, 2026",
+     "headers": [
+      "Date",
+      "Time",
+      "Patient",
+      "Provider",
+      "Visit type",
+      "Status"
+     ],
+     "shapes": {
+      "Date": [
+       "date"
+      ],
+      "Time": [
+       "time-range"
+      ],
+      "Patient": [
+       "person"
+      ],
+      "Provider": [
+       "person"
+      ],
+      "Visit type": [
+       "text"
+      ],
+      "Status": [
+       "text"
+      ]
+     },
+     "rowsSeen": 50,
+     "seen": [
+      "practice"
+     ],
+     "foots": [
+      "Showing N to N of N+ appointments",
+      "Showing N to N of N appointments"
+     ],
+     "paged": [
+      "next"
+     ],
+     "maxRows": 25,
+     "fullObs": 2
+    }
+   ],
+   "dls": [],
+   "controls": [
+    {
+     "label": "From",
+     "kind": "date",
+     "form": "Filter appointments",
+     "method": "get",
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump",
+      "practice"
+     ]
+    },
+    {
+     "label": "To",
+     "kind": "date",
+     "form": "Filter appointments",
+     "method": "get",
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump",
+      "practice"
+     ]
+    },
+    {
+     "label": "Location",
+     "kind": "select",
+     "form": "Filter appointments",
+     "method": "get",
+     "options": [
+      "All locations",
+      "Northgate",
+      "Front Range",
+      "Eastside",
+      "Stonebrook",
+      "Lakeside",
+      "Riverbend",
+      "Highline",
+      "Prairie View",
+      "Cedar Hollow",
+      "Willow Creek"
+     ],
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump",
+      "practice"
+     ]
+    },
+    {
+     "label": "Provider",
+     "kind": "select",
+     "form": "Filter appointments",
+     "method": "get",
+     "options": [
+      "All providers",
+      "Angel Aguilar, PA",
+      "Stephanie Anderson, NP",
+      "Justin Arnold, MD",
+      "Margaret Bassett, MD",
+      "Barrett Brooks, MD",
+      "Christian Butler, MD",
+      "Bridget Campbell, MD",
+      "Danielle Castro, NP",
+      "Carlos Chen, NP",
+      "Brenda Collins, MD",
+      "Ana Cruz, NP",
+      "Kathleen Dahl, MD",
+      "Gabriel Davis, PA",
+      "Omar Dean, MD",
+      "Diana Diaz, DO",
+      "Nicholas Dominguez, MD",
+      "Kenneth Engstrom, MD",
+      "Garrett Espinoza, MD",
+      "Victoria Foster, NP",
+      "Amy Fuller, NP",
+      "Sara Garcia, MD",
+      "Sara Gonzalez, MD",
+      "Rachel Gordon, MD",
+      "Alexis Green, PA",
+      "Angel Ali, NP",
+      "Gloria Allen, NP",
+      "Diana Anderson, PA",
+      "Lawrence Bennett, MD",
+      "Joshua Bowman, PA",
+      "Mateo Butler, MD",
+      "Mei Carpenter, PA",
+      "Valentina Carroll, MD",
+      "Renee Chen, MD",
+      "Jason Collins, NP",
+      "James Cook, PA",
+      "Jose Crawford, MD",
+      "Donna Cunningham, MD",
+      "Charles Davis, MD",
+      "Matthew Evans, PA"
+     ],
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump",
+      "practice"
+     ]
+    },
+    {
+     "label": "Status",
+     "kind": "select",
+     "form": "Filter appointments",
+     "method": "get",
+     "options": [
+      "All statuses",
+      "Scheduled",
+      "Completed",
+      "Cancelled",
+      "Late cancel",
+      "No-show"
+     ],
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump",
+      "practice"
+     ]
+    },
+    {
+     "label": "Visit type",
+     "kind": "select",
+     "form": "Filter appointments",
+     "method": "get",
+     "options": [
+      "All visit types",
+      "Allergy injection",
+      "Annual physical",
+      "Anticoagulation check",
+      "Behavioral health session",
+      "Blood pressure check",
+      "Cardiac rehabilitation",
+      "Cast check",
+      "Diabetes management",
+      "Echocardiogram",
+      "Electrocardiogram",
+      "Follow-up visit",
+      "Hearing test",
+      "Immunization",
+      "Infusion therapy",
+      "Joint injection",
+      "Lab draw",
+      "Medication check",
+      "Minor procedure",
+      "New patient visit",
+      "Nutrition counseling",
+      "Office visit",
+      "Physical therapy session",
+      "Post-operative check",
+      "Pre-operative evaluation"
+     ],
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump",
+      "practice"
+     ]
+    },
+    {
+     "label": "Rows per page",
+     "kind": "select",
+     "form": "(page)",
+     "options": [
+      "25 per page",
+      "50 per page",
+      "100 per page"
+     ],
+     "seen": [
+      "practice"
+     ]
+    }
+   ],
+   "footers": [
+    "Showing N to N of N+ appointments",
+    "Showing N to N of N appointments"
+   ],
+   "pager": {
+    "next": true,
+    "showMore": [],
+    "rowsPerPage": [
+     "25 per page",
+     "50 per page",
+     "100 per page"
+    ]
+   },
+   "tabs": [],
+   "gates": [],
+   "images": [],
+   "seen": [
+    "set1:recon-158",
+    "set1:claim-dump-baseline",
+    "set1:anotherDOMdump",
+    "practice"
+   ]
+  },
+  {
+   "template": "/schedule/providers/{id}",
+   "examples": [
+    "/schedule/providers/{id}?date=2026-10-14",
+    "/schedule/providers/{id}?date=2026-10-17"
+   ],
+   "h1s": [
+    "{patient name}",
+    "Schedule"
+   ],
+   "tables": [
+    {
+     "title": "Appointments and open slots at Northgate on Saturday, October 17, {year}",
+     "region": "Northgate Times in CDT",
+     "headers": [
+      "Time",
+      "Patient",
+      "Visit type",
+      "Status"
+     ],
+     "shapes": {
+      "Time": [
+       "time-range"
+      ],
+      "Patient": [
+       "person",
+       "text"
+      ],
+      "Visit type": [
+       "text"
+      ],
+      "Status": [
+       "text"
+      ]
+     },
+     "rowsSeen": 12,
+     "seen": [
+      "practice"
+     ],
+     "foots": [],
+     "paged": [],
+     "maxRows": 12,
+     "fullObs": 1
+    }
+   ],
+   "dls": [],
+   "controls": [
+    {
+     "label": "Date",
+     "kind": "date",
+     "form": "(page)",
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump",
+      "practice"
+     ]
+    },
+    {
+     "label": "Provider",
+     "kind": "select",
+     "form": "(page)",
+     "options": [
+      "Angel Aguilar, PA",
+      "Stephanie Anderson, NP",
+      "Justin Arnold, MD",
+      "Margaret Bassett, MD",
+      "Barrett Brooks, MD",
+      "Christian Butler, MD",
+      "Bridget Campbell, MD",
+      "Danielle Castro, NP",
+      "Carlos Chen, NP",
+      "Brenda Collins, MD",
+      "Ana Cruz, NP",
+      "Kathleen Dahl, MD",
+      "Gabriel Davis, PA",
+      "Omar Dean, MD",
+      "Diana Diaz, DO",
+      "Nicholas Dominguez, MD",
+      "Kenneth Engstrom, MD",
+      "Garrett Espinoza, MD",
+      "Victoria Foster, NP",
+      "Amy Fuller, NP",
+      "Sara Garcia, MD",
+      "Sara Gonzalez, MD",
+      "Rachel Gordon, MD",
+      "Alexis Green, PA",
+      "Jason Hall, MD",
+      "Angel Ali, NP",
+      "Gloria Allen, NP",
+      "Diana Anderson, PA",
+      "Lawrence Bennett, MD",
+      "Joshua Bowman, PA",
+      "Mateo Butler, MD",
+      "Mei Carpenter, PA",
+      "Valentina Carroll, MD",
+      "Renee Chen, MD",
+      "Jason Collins, NP",
+      "James Cook, PA",
+      "Jose Crawford, MD",
+      "Donna Cunningham, MD",
+      "Charles Davis, MD",
+      "Matthew Evans, PA"
+     ],
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump",
+      "practice"
+     ]
+    }
+   ],
+   "footers": [],
+   "pager": {
+    "next": false,
+    "showMore": []
+   },
+   "tabs": [],
+   "gates": [],
+   "images": [],
+   "seen": [
+    "set1:recon-158",
+    "set1:claim-dump-baseline",
+    "set1:anotherDOMdump",
+    "practice"
+   ]
+  },
+  {
+   "template": "/schedule/slot-finder",
+   "examples": [
+    "/schedule/slot-finder"
+   ],
+   "h1s": [
+    "Schedule"
+   ],
+   "tables": [],
+   "dls": [],
+   "controls": [
+    {
+     "label": "Provider or team",
+     "kind": "select",
+     "form": "Find open slots",
+     "method": "get",
+     "options": [
+      "Choose",
+      "Allergy and Immunology team",
+      "Behavioral Health team",
+      "Cardiology team",
+      "Dermatology team",
+      "Endocrinology team",
+      "Family Medicine team",
+      "Internal Medicine team",
+      "Neurology team",
+      "Obstetrics and Gynecology team",
+      "Orthopedics team",
+      "Pediatrics team",
+      "Physical Therapy team",
+      "Angel Aguilar, PA",
+      "Stephanie Anderson, NP",
+      "Justin Arnold, MD",
+      "Margaret Bassett, MD",
+      "Barrett Brooks, MD",
+      "Christian Butler, MD",
+      "Bridget Campbell, MD",
+      "Danielle Castro, NP",
+      "Carlos Chen, NP",
+      "Brenda Collins, MD",
+      "Ana Cruz, NP",
+      "Kathleen Dahl, MD"
+     ],
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump"
+     ]
+    },
+    {
+     "label": "Location",
+     "kind": "select",
+     "form": "Find open slots",
+     "method": "get",
+     "options": [
+      "Choose",
+      "Northgate",
+      "Front Range",
+      "Eastside",
+      "Stonebrook",
+      "Lakeside",
+      "Riverbend",
+      "Highline",
+      "Prairie View",
+      "Cedar Hollow",
+      "Willow Creek"
+     ],
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump"
+     ]
+    },
+    {
+     "label": "From",
+     "kind": "date",
+     "form": "Find open slots",
+     "method": "get",
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump"
+     ]
+    },
+    {
+     "label": "To",
+     "kind": "date",
+     "form": "Find open slots",
+     "method": "get",
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline",
+      "set1:anotherDOMdump"
+     ]
+    }
+   ],
+   "footers": [],
+   "pager": {
+    "next": false,
+    "showMore": []
+   },
+   "tabs": [],
+   "gates": [],
+   "images": [],
+   "seen": [
+    "set1:recon-158",
+    "set1:claim-dump-baseline",
+    "set1:anotherDOMdump"
+   ]
+  },
+  {
+   "template": "/settings",
+   "examples": [
+    "/settings"
+   ],
+   "h1s": [
+    "Settings"
+   ],
+   "tables": [
+    {
+     "title": "Closure dates of {year}, in date order",
+     "region": "",
+     "headers": [
+      "Date",
+      "Closure",
+      "Applies to",
+      "Status"
+     ],
+     "shapes": {
+      "Date": [
+       "date"
+      ],
+      "Closure": [
+       "text"
+      ],
+      "Applies to": [
+       "text"
+      ],
+      "Status": [
+       "text"
+      ]
+     },
+     "rowsSeen": 50,
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline"
+     ],
+     "foots": [
+      "Showing N to N of N entries"
+     ],
+     "paged": [
+      "next"
+     ],
+     "maxRows": 25,
+     "fullObs": 2
+    }
+   ],
+   "dls": [],
+   "controls": [
+    {
+     "label": "Year",
+     "kind": "select",
+     "form": "Filter the clinic calendar",
+     "method": "get",
+     "options": [
+      "2024",
+      "2025",
+      "2026",
+      "2027"
+     ],
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline"
+     ]
+    },
+    {
+     "label": "Applies to",
+     "kind": "select",
+     "form": "Filter the clinic calendar",
+     "method": "get",
+     "options": [
+      "Every entry",
+      "Northgate",
+      "Front Range",
+      "Eastside",
+      "Stonebrook",
+      "Lakeside",
+      "Riverbend",
+      "Highline",
+      "Prairie View",
+      "Cedar Hollow",
+      "Willow Creek"
+     ],
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline"
+     ]
+    },
+    {
+     "label": "Rows per page",
+     "kind": "select",
+     "form": "(page)",
+     "options": [
+      "25 per page",
+      "50 per page",
+      "100 per page"
+     ],
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline"
+     ]
+    }
+   ],
+   "footers": [
+    "Showing N to N of N entries"
+   ],
+   "pager": {
+    "next": true,
+    "showMore": [],
+    "rowsPerPage": [
+     "25 per page",
+     "50 per page",
+     "100 per page"
+    ]
+   },
+   "tabs": [],
+   "gates": [],
+   "images": [],
+   "seen": [
+    "set1:recon-158",
+    "set1:claim-dump-baseline"
+   ]
+  },
+  {
+   "template": "/settings/care-teams",
+   "examples": [
+    "/settings/care-teams"
+   ],
+   "h1s": [
+    "Settings"
+   ],
+   "tables": [
+    {
+     "title": "Providers of the {name}",
+     "region": "",
+     "headers": [
+      "Provider",
+      "Locations",
+      "Status"
+     ],
+     "shapes": {
+      "Provider": [
+       "person"
+      ],
+      "Locations": [
+       "person",
+       "text"
+      ],
+      "Status": [
+       "text"
+      ]
+     },
+     "rowsSeen": 160,
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline"
+     ],
+     "foots": [],
+     "paged": [],
+     "maxRows": 19,
+     "fullObs": 0
+    }
+   ],
+   "dls": [],
+   "controls": [],
+   "footers": [],
+   "pager": {
+    "next": false,
+    "showMore": []
+   },
+   "tabs": [],
+   "gates": [],
+   "images": [],
+   "seen": [
+    "set1:recon-158",
+    "set1:claim-dump-baseline"
+   ]
+  },
+  {
+   "template": "/settings/clinic-calendar",
+   "examples": [
+    "/settings/clinic-calendar"
+   ],
+   "h1s": [
+    "Settings"
+   ],
+   "tables": [
+    {
+     "title": "Closure dates of {year}, in date order",
+     "region": "",
+     "headers": [
+      "Date",
+      "Closure",
+      "Applies to",
+      "Status"
+     ],
+     "shapes": {
+      "Date": [
+       "date"
+      ],
+      "Closure": [
+       "text"
+      ],
+      "Applies to": [
+       "text"
+      ],
+      "Status": [
+       "text"
+      ]
+     },
+     "rowsSeen": 50,
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline"
+     ],
+     "foots": [
+      "Showing N to N of N entries"
+     ],
+     "paged": [
+      "next"
+     ],
+     "maxRows": 25,
+     "fullObs": 2
+    }
+   ],
+   "dls": [],
+   "controls": [
+    {
+     "label": "Year",
+     "kind": "select",
+     "form": "Filter the clinic calendar",
+     "method": "get",
+     "options": [
+      "2024",
+      "2025",
+      "2026",
+      "2027"
+     ],
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline"
+     ]
+    },
+    {
+     "label": "Applies to",
+     "kind": "select",
+     "form": "Filter the clinic calendar",
+     "method": "get",
+     "options": [
+      "Every entry",
+      "Northgate",
+      "Front Range",
+      "Eastside",
+      "Stonebrook",
+      "Lakeside",
+      "Riverbend",
+      "Highline",
+      "Prairie View",
+      "Cedar Hollow",
+      "Willow Creek"
+     ],
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline"
+     ]
+    },
+    {
+     "label": "Rows per page",
+     "kind": "select",
+     "form": "(page)",
+     "options": [
+      "25 per page",
+      "50 per page",
+      "100 per page"
+     ],
+     "seen": [
+      "set1:recon-158",
+      "set1:claim-dump-baseline"
+     ]
+    }
+   ],
+   "footers": [
+    "Showing N to N of N entries"
+   ],
+   "pager": {
+    "next": true,
+    "showMore": [],
+    "rowsPerPage": [
+     "25 per page",
+     "50 per page",
+     "100 per page"
+    ]
+   },
+   "tabs": [],
+   "gates": [],
+   "images": [],
+   "seen": [
+    "set1:recon-158",
+    "set1:claim-dump-baseline"
+   ]
+  },
+  {
+   "template": "/settings/no-charge-visit-types",
+   "examples": [
+    "/settings/no-charge-visit-types"
+   ],
+   "h1s": [
+    "Settings"
+   ],
+   "tables": [],
+   "dls": [],
+   "controls": [],
+   "footers": [],
+   "pager": {
+    "next": false,
+    "showMore": []
+   },
+   "tabs": [],
+   "gates": [],
+   "images": [],
+   "seen": [
+    "set1:recon-158",
+    "set1:claim-dump-baseline"
+   ]
+  },
+  {
+   "template": "/settings/procedures",
+   "examples": [
+    "/settings/{id}"
+   ],
+   "h1s": [
+    "Settings"
+   ],
+   "tables": [],
+   "dls": [],
+   "controls": [],
+   "footers": [],
+   "pager": {
+    "next": false,
+    "showMore": []
+   },
+   "tabs": [],
+   "gates": [],
+   "images": [],
+   "seen": [
+    "set1:recon-158",
+    "set1:claim-dump-baseline"
+   ]
+  }
+ ]
+}

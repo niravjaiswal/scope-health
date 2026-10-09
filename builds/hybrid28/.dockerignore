@@ -1,0 +1,8 @@
+.env
+.env.*
+node_modules
+dist
+.git
+.DS_Store
+scripts/mock-queue.mjs
+**/*.log
