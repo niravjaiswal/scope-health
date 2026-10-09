@@ -33,6 +33,8 @@ def validate(ans):
     if a.startswith('"') and a.endswith('"'): a = a[1:-1].strip()
     if not a or a.lower() in ("true", "false", "null", "none", "n/a", "unknown"):
         return None
+    if a.endswith(".") and len(a) > 3 and " " in a and not re.search(r"\b(Inc|Jr|Sr|St|Ltd|Co|Dr|Mt|Ave|Rd|Blvd|Ct|Ln|Pkwy|etc|Corp|LLC|P\.C|M\.D)\.$", a):
+        a = a[:-1].rstrip()
     return a
 
 
@@ -57,6 +59,13 @@ async def handle_task(item, solver, deadline):
     if not res or res.get("skip"):
         return None, res or {}
     ans = validate(res.get("answer"))
+    kind = ((info or {}).get("route") or {}).get("answer_kind")
+    if ans is not None and isinstance(ans, str):
+        digits = re.sub(r"\D", "", ans)
+        if (kind == "phone" or re.search(r"(?i)phone number", item["text"])) and not (len(digits) == 10 or (len(digits) == 11 and digits[0] == "1")):
+            log("GATE phone shape invalid", ans); return None, res
+        if re.search(r"(\b\d\d\s+){4,}", ans):
+            log("GATE suspicious digit groups", ans); return None, res
     conf = res.get("confidence")
     try: conf = float(conf)
     except Exception: conf = 0.5
@@ -88,7 +97,7 @@ async def run_queue():
         tasks_seen += 1
         remaining = max(1, total - tasks_seen + 1)
         per = secs_left / remaining
-        budget = max(8.0, min(60.0, per * 2.5)) if secs_left > 30 else max(0.0, secs_left - 4)
+        budget = max(float(os.environ.get("MIN_BUDGET", "9")), min(float(os.environ.get("MAX_BUDGET", "25")), per * 3.0)) if secs_left > 30 else max(0.0, secs_left - 4)
         print("ITEM " + jdump({"n": n, "id": it["id"], "kind": "task", "secs_left": round(secs_left, 1), "budget": round(budget, 1), "text": it["text"]}), flush=True)
         if budget < 3:
             state = await q.close(it["id"], skip=True); skipped += 1; continue

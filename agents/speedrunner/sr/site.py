@@ -3,6 +3,7 @@ import asyncio, re, time
 from .util import log, now
 from .wf.wf_client import WrenfieldClient, WrenfieldError, _looks_restricted
 
+TRUNC_RE = re.compile(r"is busy, so this list shows fewer|fewer rows than usual|Open it again in a moment", re.I)
 BUSY_RE = re.compile(r"503 Service|Service Temporarily Unavailable|is not responding|Too Many Requests|Bad Gateway", re.I)
 
 
@@ -18,6 +19,8 @@ class Site:
         self.nav = []
         self.version = ""
         self.page_timeout = 9.0
+        self.probed_kinds = set()
+        self.probe_budget = int(__import__("os").environ.get("PROBES", "12"))
         self.bg_sem = asyncio.Semaphore(1)
 
     async def start(self):
@@ -97,13 +100,54 @@ class Site:
             dt = time.time() - t
             self.stats["fetch"] += 1; self.stats["time"] += dt
             if txt and not txt.startswith("ERROR") and not (BUSY_RE.search(txt[:400]) and len(txt) < 600):
+                if TRUNC_RE.search(txt) and attempt < retries + 2:
+                    self.stats["trunc"] = self.stats.get("trunc", 0) + 1
+                    log(f"PAGE truncated-busy {path} attempt={attempt}; retrying")
+                    last = txt
+                    await asyncio.sleep(0.6 * (attempt + 1))
+                    continue
                 if dt > 3: log(f"SLOW page {path} {dt:.1f}s")
+                pk = re.sub(r"[0-9a-z]{10}", "<id>", path.split("?")[0])
+                if self.probe_budget > 0 and pk not in self.probed_kinds and re.match(r"^/(patients|payers|claims|billing|vaccines|settings|staff|schedule)", pk):
+                    self.probed_kinds.add(pk); self.probe_budget -= 1
+                    asyncio.create_task(self.probe_html(path))
                 return txt
             self.stats["fail"] += 1
             last = txt
             log(f"PAGE retry {path} attempt={attempt} dt={dt:.1f} {txt[:120]!r}")
             await asyncio.sleep(0.3 * (attempt + 1))
+        if last and TRUNC_RE.search(last):
+            return "WARNING: the server was busy and this list is TRUNCATED (rows missing). Do not count from it; reopen later or skip.\n" + last
         return last or "ERROR"
+
+    async def probe_html(self, path):
+        """Recon: print raw HTML of the content frames + fonts used, gzip+b64 (to learn how this version renders data)."""
+        import gzip, base64, json
+        try:
+            async with self.bg_sem:
+                async with self.c.tab() as tab:
+                    await asyncio.wait_for(tab.goto(path), timeout=self.page_timeout)
+                    data = await tab.page.evaluate("""async () => { const out = {frames: [], fonts: {}};
+                      async function grab(doc) {
+                        out.frames.push((doc.body ? doc.body.innerHTML : '').slice(0, 60000));
+                        try { for (const ss of doc.styleSheets) { for (const r of ss.cssRules) { if (r.constructor.name === 'CSSFontFaceRule') {
+                          const fam = r.style.getPropertyValue('font-family'); const m = (r.style.getPropertyValue('src') || '').match(/url\\("?([^")]+)"?\\)/);
+                          if (m && !out.fonts[m[1]] && Object.keys(out.fonts).length < 12) { try { const resp = await fetch(m[1]); const b = new Uint8Array(await resp.arrayBuffer()); let s = '';
+                            for (let i = 0; i < b.length; i += 0x8000) s += String.fromCharCode.apply(null, b.subarray(i, i + 0x8000)); out.fonts[m[1]] = [fam, btoa(s)]; } catch (e) {} } } } } } catch (e) {}
+                        for (const f of doc.querySelectorAll('iframe')) { try { await grab(f.contentDocument) } catch (e) {} } }
+                      await grab(document); return out; }""")
+            blob = base64.b64encode(gzip.compress(json.dumps({"path": path, **data}).encode())).decode()
+            print("PROBE " + path + " " + blob, flush=True)
+            log("probe done", path, len(blob))
+        except Exception as e:
+            log("probe err", repr(e)[:150])
+
+    async def screenshot(self, path):
+        """JPEG screenshot of the page as rendered (what a human sees)."""
+        async with self.sem:
+            async with self.c.tab() as tab:
+                await asyncio.wait_for(tab.goto(path), timeout=self.page_timeout)
+                return await tab.page.screenshot(type="jpeg", quality=85, full_page=False)
 
     async def pages(self, paths, **kw):
         return await asyncio.gather(*[self.page(p, **kw) for p in paths])
@@ -117,12 +161,15 @@ class Site:
                     log("SEARCH err", last_name, dob, repr(e)[:200])
                     return []
 
-    async def documents(self, path):
-        """Images/PDF bytes of a document viewer page."""
+    async def documents(self, path, want=("pdf",)):
+        """PDF (and/or page image) bytes of a document viewer page."""
         async with self.sem:
             async with self.c.tab() as tab:
-                await tab.goto(path)
-                return await tab.document_files()
+                await asyncio.wait_for(tab.goto(path), timeout=self.page_timeout)
+                files = await tab.document_files(want=want)
+                if not any(f.get("data") for f in files) and "image" not in want:
+                    files = await tab.document_files(want=("pdf", "image"))
+                return files
 
     async def close(self):
         await self.c.close()

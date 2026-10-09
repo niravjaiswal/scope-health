@@ -1,0 +1,40 @@
+[   2.00] SITE started 1.9s
+[   2.01] SITE locations ['All locations', 'Northgate', 'Front Range', 'Eastside', 'Stonebrook', 'Lakeside', 'Riverbend', 'Highline', 'Prairie View', 'Cedar Hollow', 'Willow Creek'] current Northgate
+[   2.27] SITE location -> All locations
+[   2.83] SITE tab locations ['All locations', 'All locations', 'All locations']
+[   3.20] SITE version 4.2.0 today Oct 14, 2026 nav [['Dashboard', '/'], ['Patients', '/patients'], ['Schedule', '/schedule'], ['Billing', '/billing'], ['Documents', '/documents'], ['Activity', '/activity']]
+[   3.63] REF providers 80 via /schedule/providers/47vhl7tdlt?date=2026-10-14
+[  23.38] REFERENCE ready 20.2s chars=4646
+[  23.38] MEMORY workflow #0 item1: From billing: telling new patients from established ones
+[  23.73] LLM route openai/gpt-oss-120b 0.4s in=378 out=177 $0.0003 tot=$0.000
+[  23.73] ROUTE {"workflow": null, "kind": "referral_practice", "patients": [{"first": "Ana", "last": "Corbett", "dob": "2000-11-13"}], "providers": [], "locations": [], "dates": ["2024-12-01"], "times": [], "ids": [], "answer_kind": "text"}
+[  24.23] PREFETCH 1 pages 0.9s kind=referral_practice wf=None
+[  24.42] probe err Error('Page.evaluate: SyntaxError: Invalid or unexpected token\n    at eval (<anonymous>)\n    at Ut
+[  24.43] LLM step0 openai/gpt-oss-120b 0.2s in=2561 out=111 $0.0010 tot=$0.001
+[  24.43] TOOLS [["open", "{\"path\": \"/patients/0xz2pw8x8t/documents\"}"]]
+[  24.88] LLM step1 openai/gpt-oss-120b 0.3s in=3175 out=123 $0.0012 tot=$0.002
+[  24.88] TASK result 1.5s {"skip": false, "answer": "Granite Fork Internal Medicine", "confidence": 0.99, "why": "Document list shows referral letter dated Dec 1, 2024 from Granite Fork Internal Medicine"}
+CTX H4sIANFEyGoC/91X627bNhR+lQP1xxIgriVZvmlrNi92k3ZpkyXp+qMKCkqiLSYUqVL0JU0D7Fn2aHuSHUqW7aRW1wAdhg0IEOucj4ffuZK8tVhs+SCmnO+BpeRUU/y8teZSXY+5nK9110wYpKXomCpF+PtMkUiziFqozIhmVOgcAe9urTFTuTbYgSBGy0n5eSBVSLU2oliGRuLatt1wnIbTsu4ujR0lZyymqjBkBFxGaFqKlSAmmhYfuNb1Go7bsB3LKDRL6QrF4tVPIvI5Ve8r+poutHWH8kgvSrZKcuOzNc2pMtQiKTT6YkRno1/fjM4v/ECcLb0Gjg5QBYpGlM1oDFLAmgiMpYJlLACdh6XHsBNKZYCVt7s+zBMWJVAFEVISU9AJhSq+PwYiEKdno8bz0cXB0WgIw8HFAHZiGskY983IBPHozPfAmbjOIU/kXADJ4QckkOzvIul3FZWcEoWbGXa3QZmeAP0LTIIC9DkoUlSKlpRLMaaplK6pB9YdNPYhIiJmRTJMEAMropznBvtuZWIPVuaPDtu9ju14nfLTcZpOq2lswo7bhpvdUvycpoTT8ndgkhpYCYajZNCsaqxpLz662by36C1JCpLSe9w3Nk6VKFUPGKwcq6GS00Wp3+Q05mSSl2KMwuWlydCzZ8/gdHA4gm38ALWBeHN27G9VB+L45GBw8eLktQ8DjrVVFbsx/ATueSNenSFq7YUYYuxBjiFkSic+PPQDM57vBuKcLnxY+iB+ZhxrZeLDCzGTWHRYK82wlDVJFMnpfXr7uAlN5USRDGvVgLf4sA870VQplO7CJzScTxURWM9bwU1W6fcRfKpkyGlaY7iZLdUG+lpqWocTRmdAQxlNU6OtAcaV3oAHWSaZ0F/Ckw1IsQQ7dcb0TR18qcawPTHJExol2MKJFNSHnY5r70Lf7jb6TrcXiFFKGPeB/Pn7H5t/PzERysVTuiBpZlI2iGNFc+yxfqfdgreEi6mGYyyPI6JwpsAhp2IPfjmHTqfrOeXORJnJQFLcW7GUqBuoxqoPQypYTuGY0j0YnqAZmdJV3fkwwjGQI9LMQS0lfx8RbOvlIYBTcz0tSZ6zXBOhH4zMz1bihNU3WbFmPBWR2cdgcBxTM4DtYlobbezQfui2em2jXkHNYWQa3CBkRou1RE3KRBohzh4z8OqHxDrv2LTW3d3lPT8M1wcu1PbrhqX/Ref+d/p1c8b8o517wTSnuOICSxb/nVXH/KfPrwBjJVM4xWMPXi6LFfOeplNhNjrA1LCosHB/1Sc4pxm47T1zbejg52+Mzv8uAE233eqqWbII1X4NkVdEKTmHY3JN4Y2amFO/GATbGLyccngkAa+rZ/3+LPw4QQLHJMRrSiaV9nG1JikTMERLa3lRAjNwvGKX9le72eNXXnsxT+06NzfGHryiMcMpA4d4bc22OnoSaWg5j+PgtN3EWyw8HdVxeMuia7xKxfAWh6f4LocjSrhOakP9yCC0PoROnMQde/Yg1FhdeCbg7Ai5lDEUXf8w6lgG0Hvcfl03zXN75oyv6hw+xBHAcN/n+CjAkYFygYgi/ExsL7EhjaAMvPfVyR97Uaf7UTnpt0m+KcDu4yg4see1O9GVmH2LNjPV5/Yex6A99lT2wfnQbSODPqwU/8aB3LOp27Njp1d7IJdvq21HcqkpD+Uvl095tUbCY7x34Elj1thP+30jnSc3pYnqqMC3Tq6Lp06+eihVATePkfhe4X1F8VZXgsu7vwCBpannCg8AAA==
+LOCAL {"n": 3, "text": "Referral letter received on 2024-12-01 for patient Ana Corbett (born 2000-11-13): which practice made the referral?", "answer": "Granite Fork Internal Medicine", "expected": "Granite Fork Internal Medicine", "ok": true, "conf": 0.99, "dt": 1.5}
+[  24.89] MEMORY note item5: The vending machine by the back entrance takes cards again, but the coin slot is still jammed.
+[  25.11] LLM route openai/gpt-oss-120b 0.2s in=380 out=197 $0.0003 tot=$0.003
+[  25.11] ROUTE {"workflow": null, "kind": "referral_practice", "patients": [{"first": "Gregory", "last": "Porter", "dob": "1976-04-08"}], "providers": [], "locations": [], "dates": ["2025-09-16"], "times": [], "ids": [], "answer_kind": "text"}
+[  25.60] PREFETCH 2 pages 0.7s kind=referral_practice wf=None
+[  26.60] LLM step0 openai/gpt-oss-120b 1.0s in=2854 out=227 $0.0012 tot=$0.004
+[  26.60] TOOLS [["open", "{\"path\": \"/patients/0916zmqf4t/documents/40gf29nm6c\",\"all_pages\": false}"]]
+[  27.10] LLM step1 openai/gpt-oss-120b 0.2s in=3334 out=70 $0.0012 tot=$0.005
+[  27.10] TOOLS [["read_document", "{\"path\": \"/v/0n2xzfkmxfczdn0gpq7c71xvql/hd1spvkcvb5q5dlk0b\"}"]]
+[  27.71] LLM step2 openai/gpt-oss-120b 0.3s in=3427 out=210 $0.0014 tot=$0.006
+[  27.71] TOOLS [["open", "{\"path\": \"/v/0n2xzfkmxfczdn0gpq7c71xvql/hd1spvkcvb5q5dlk0b\",\"all_pages\": false}"]]
+[  28.24] LLM step3 openai/gpt-oss-120b 0.3s in=3569 out=150 $0.0014 tot=$0.008
+[  28.25] TOOLS [["open", "{\"path\": \"/patients/0916zmqf4t/documents/40gf29nm6c\",\"all_pages\": true}"]]
+[  28.87] LLM step4 openai/gpt-oss-120b 0.2s in=4041 out=115 $0.0015 tot=$0.009
+[  28.87] TOOLS [["read_document", "{\"path\": \"/v/rlt6mdhs81ng7hmv6v6q18njlr/80pk8htshl77rpv8rw\"}"]]
+[  29.12] LLM step5 openai/gpt-oss-120b 0.2s in=4174 out=101 $0.0015 tot=$0.011
+[  29.12] TOOLS [["open", "{\"path\": \"/v/rlt6mdhs81ng7hmv6v6q18njlr/80pk8htshl77rpv8rw\",\"all_pages\": false}"]]
+[  29.69] LLM step6 openai/gpt-oss-120b 0.4s in=4308 out=286 $0.0017 tot=$0.013
+[  29.69] TOOLS [["open", "{\"path\": \"/v/rlt6mdhs81ng7hmv6v6q18njlr/80pk8htshl77rpv8rw\",\"all_pages\": true}"]]
+[  29.83] TASK result 4.9s null
+CTX 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
+LOCAL {"n": 7, "text": "Referral letter received on 2025-09-16 for patient Gregory Porter (born 1976-04-08): what reason does it give for the re", "answer": null, "expected": "Chronic cough lasting more than eight weeks", "ok": null, "conf": null, "dt": 4.9}
+[  29.83] LOCAL done correct=1 wrong=0 n=2 llm=$0.013

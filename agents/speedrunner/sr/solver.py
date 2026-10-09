@@ -17,7 +17,7 @@ TOOLS = [
         "parameters": {"type": "object", "properties": {
             "last_name": {"type": "string"}, "dob": {"type": "string"}}}}},
     {"type": "function", "function": {
-        "name": "read_document", "description": "Read a document (scanned/printed page images, e.g. lab report, referral letter, outside record) from its viewer path and return a faithful transcription.",
+        "name": "read_document", "description": "Read a document (lab report, referral letter, outside record...) given its viewer page path from the documents list (e.g. /patients/<id>/documents/<docid>), returning a faithful transcription. Opening a document viewer page with open() also includes the content.",
         "parameters": {"type": "object", "properties": {"path": {"type": "string"}}, "required": ["path"]}}},
     {"type": "function", "function": {
         "name": "answer", "description": "Submit the final answer (exact required format). confidence = probability (0-1) that it is exactly right.",
@@ -131,21 +131,58 @@ class Solver:
                     except Exception as e:
                         txt = f"ERROR {e!r}"
             return txt
-        return await self.site.page(path, fresh=fresh)
+        if path.startswith("/v/") and getattr(self, "last_doc_path", None):
+            return await self.tool_read_document(self.last_doc_path)
+        txt = await self.site.page(path, fresh=fresh)
+        txt = re.sub(r"\s*<\/v\/[^>]*>", "", txt or "")
+        if re.search(r"/(documents|files)/[0-9a-z]{6,}/?$", path.split("?")[0]):
+            self.last_doc_path = path
+            doc = await self.tool_read_document(path)
+            txt += "\n\n=== DOCUMENT CONTENT (decoded from the document file) ===\n" + doc
+        return txt
 
-    async def tool_read_document(self, path):
+    async def tool_read_document(self, path, hint=""):
+        path = (path or "").strip()
+        if path.startswith("/v/") and getattr(self, "last_doc_path", None):
+            path = self.last_doc_path
         if path in self.doc_cache: return self.doc_cache[path]
         try:
             files = await self.site.documents(path)
         except Exception as e:
             return f"ERROR {e!r}"
-        imgs = [f for f in files if f.get("kind") == "image" and f.get("data")]
-        if not imgs:
-            return "ERROR: no page images found on this document page"
-        from .docs import transcribe
-        txt = await transcribe(self.llm, [f["data"] for f in imgs[:4]])
+        from . import wf_docs
+        if not hasattr(self, "_llm_call"):
+            self._llm_call = wf_docs.make_llm_call()
+        pdfs = [f["data"] for f in files if f.get("kind") == "pdf" and f.get("data") and f["data"][:4] == b"%PDF"]
+        imgs = [f["data"] for f in files if f.get("kind") == "image" and f.get("data")]
+        if not pdfs and not imgs:
+            return "ERROR: no document file found on this page (open the document viewer page linked from the documents list)"
+        t = time.time()
+        res = await wf_docs.read_document(pdf_bytes=pdfs[0] if pdfs else None, pngs=None if pdfs else imgs[:6],
+                                          llm_call=self._llm_call, hint=hint or "clinic document")
+        txt = res.get("text") or "ERROR: unreadable"
+        log(f"DOC {path} method={res.get('method')} conf={res.get('confidence')} {time.time()-t:.1f}s chars={len(txt)}")
+        txt = f"[document {path} read via {res.get('method')}]\n" + txt
         self.doc_cache[path] = txt
         return txt
+
+    async def visual_read(self, path, focus=""):
+        """Screenshot the page and transcribe it with a vision model (defeats cipher fonts / pictures of text)."""
+        import base64
+        try:
+            img = await self.site.screenshot(path)
+        except Exception as e:
+            return f"ERROR screenshot {e!r}"
+        prompt = ("Transcribe the main content of this screenshot of a clinic records page exactly as displayed: every label and value, "
+                  "one 'Label: value' per line, tables as 'a | b | c' rows. Copy digits, letters and punctuation exactly as they appear on screen. "
+                  + (f"Be especially careful with: {focus}." if focus else ""))
+        content = [{"type": "text", "text": prompt}, {"type": "image_url", "image_url": {"url": "data:image/jpeg;base64," + base64.b64encode(img).decode()}}]
+        for model, extra in (("anthropic/claude-haiku-5.5", {"reasoning": {"enabled": False}, "provider": {"sort": "latency"}}),
+                             ("google/gemini-3.8-flash", {"reasoning": {"effort": "minimal"}})):
+            r = await self.llm.chat(model, [{"role": "user", "content": content}], max_tokens=1500, timeout=12, extra=extra, tag="visual")
+            if r and (r.get("content") or "").strip():
+                return r["content"].strip()
+        return "ERROR visual read failed"
 
     # ------------------------------------------------------------------ main
     async def solve(self, item, deadline):
@@ -188,6 +225,16 @@ class Solver:
             texts = await self.site.pages(prefetch)
             for pth, tx in zip(prefetch, texts):
                 ctx_parts.append(f"=== PAGE {pth} ===\n{clip(tx, 9000)}")
+        # identifiers may be drawn with cipher/ligature fonts or as pictures: read them visually when they look off
+        want_ident = re.search(r"(?i)phone|MRN|record number|member id|insurance id|account number", text) or route.get("answer_kind") == "phone"
+        chart_paths = [p for p in prefetch if re.match(r"^/patients/[0-9a-z]+$", p)]
+        if chart_paths:
+            ctext = "\n".join(ctx_parts)
+            suspicious = re.search(r"Phone:\s*\(?\s*\d\d\s+\d\d", ctext) or re.search(r"MRN:\s*\n", ctext)
+            if want_ident or (suspicious and self.cfg.get("visual_always")):
+                vis = await self.visual_read(chart_paths[0], "phone number, MRN / record number, member ID")
+                ctx_parts.append(f"=== VISUAL READING of {chart_paths[0]} (screenshot transcription; trust this over the decoded text for phone numbers, MRN and IDs) ===\n{vis}")
+                log("VISUAL", vis[:300].replace(chr(10), " | "))
         log(f"PREFETCH {len(prefetch)} pages {time.time()-t0:.1f}s kind={kind} wf={wf_idx}")
 
         sys_prompt = prompts.solver_system(self.site, self.mem, wf_idx)
@@ -196,6 +243,7 @@ class Solver:
         opened = []
         model = self.cfg.get("loop_model", FAST)
         result = None
+        nudged = False
         for step in range(self.cfg.get("max_steps", 7)):
             left = deadline - time.time()
             if left < 2.5:
@@ -210,7 +258,10 @@ class Solver:
                         {"role": "assistant", "content": m.get("content") or ""})
             if not calls:
                 log("NOCALL content", (m.get("content") or "")[:300])
-                # model answered in text: try to parse a final answer
+                if not nudged:
+                    nudged = True
+                    msgs.append({"role": "user", "content": "Finish by calling the answer tool with the exact final answer value (or the skip tool). Do not reply in plain text."})
+                    continue
                 result = parse_text_answer(m.get("content") or "")
                 break
             outs = []
