@@ -35,7 +35,19 @@ class Site:
     # ------------------------------------------------------------------ lifecycle
     async def start(self):
         t = time.time()
-        await self.c.start(n_tabs=1)
+        for attempt in range(4):
+            try:
+                await self.c.start(n_tabs=1)
+                break
+            except Exception as e:
+                log(f"SITE start failed attempt={attempt} dt={time.time()-t:.1f}s", repr(e)[:200])
+                if attempt == 3:
+                    raise
+                try:
+                    await asyncio.wait_for(self.c.close(), timeout=10)
+                except Exception:
+                    pass
+                await asyncio.sleep(2.0 + 3.0 * attempt)
         log(f"SITE started {time.time()-t:.1f}s")
         try:
             locs = await self.c.locations()
@@ -212,16 +224,16 @@ class Site:
             log("page_all failed", path, repr(e)[:120])
             return await self.page(path)
 
-    async def search(self, last_name=None, dob=None, max_pages=6):
+    async def search(self, last_name=None, dob=None, max_pages=6, timeout=14):
         try:
-            return await self.use(lambda tab: tab.search_patients(last_name=last_name, dob=dob, max_pages=max_pages, base=self.patients_path), 14, label=f"search {last_name or dob}")
+            return await self.use(lambda tab: tab.search_patients(last_name=last_name, dob=dob, max_pages=max_pages, base=self.patients_path), timeout, label=f"search {last_name or dob}")
         except asyncio.CancelledError:
             raise
         except Exception as e:
             log("SEARCH err", last_name, dob, repr(e)[:200])
             return []
 
-    async def find_patient(self, last, first=None, dob=None, max_pages=6, timeout=5.0):
+    async def find_patient(self, last, first=None, dob=None, max_pages=6, timeout=5.0, soft=False):
         """Name search that copes with phonetic matching, pagination, sort order and 'busy' truncated pages.
         Returns all rows read (caller filters). Stops once the alphabetical position passes the target."""
         import unicodedata
@@ -230,6 +242,7 @@ class Site:
             return "".join(c for c in x if not unicodedata.combining(c)).casefold().strip()
         tl, tf = nrm(last), nrm(first or "")
         rows_all = []
+        t_fp = time.time()
         async def fn(tab):
             from urllib.parse import quote
             await tab.goto(self.patients_path + "?lastName=" + quote(last))
@@ -243,9 +256,14 @@ class Site:
                 probe_rows = await tab._patient_rows()
             except Exception:
                 probe_rows = None
+            def surname_of(nm):
+                nm = nrm(nm)
+                nm = nm.split(",", 1)[0].strip() if "," in nm else (nm.split() or [""])[-1]
+                return re.sub(r"^[^a-z]+", "", nm)
             def relevant(rs):
-                # phonetic search (4.3.1) returns e.g. Wallace for Wells: same initial; an ignored parameter lists everyone from A
-                return any(tl[:4] in nrm(r.get("name") or "") or nrm(r.get("name") or "")[:1] == tl[:1] for r in (rs or []))
+                # phonetic search (4.3.1, Soundex-like) returns e.g. Wallace for Wells: same SURNAME initial, whether the list
+                # shows 'Last, First' or 'First Last'; an ignored parameter lists everyone from A
+                return any(tl[:4] in nrm(r.get("name") or "") or surname_of(r.get("name") or "")[:1] == tl[:1] for r in (rs or []))
             if probe_rows is None or (probe_rows and not relevant(probe_rows)):
                 self.stats["form_fallback"] = self.stats.get("form_fallback", 0) + 1
                 if probe_rows:
@@ -269,11 +287,12 @@ class Site:
                         best = max(opts, key=lambda v: int(re.sub(r"\D", "", v) or 0))
                         cur = await loc.first.evaluate("s => s.value")
                         if best != cur:
-                            await loc.first.select_option(value=best)
+                            await loc.first.select_option(value=best, timeout=2500)
                             await asyncio.sleep(0.03); await tab.wait_settled(timeout=8)
                         break
             except Exception:
                 pass
+            seen, nxt = set(), "Next"
             for page_no in range(max_pages):
                 rows = None
                 for attempt in range(3):
@@ -288,7 +307,9 @@ class Site:
                     except Exception:
                         pass
                 rows = rows or []
-                rows_all.extend(rows)
+                new = [r for r in rows if (r.get("href") or repr(r.get("cells"))) not in seen]
+                seen.update((r.get("href") or repr(r.get("cells"))) for r in new)
+                rows_all.extend(new)   # a 'Show more' list re-shows earlier rows (and a busy reload goes back to page 1): keep each row once
                 found = any(nrm((r.get("name") or "").split(",")[0]) == tl and (not tf or nrm((r.get("name") or "").split(",", 1)[-1]).startswith(tf.split(" ")[0])) for r in rows)
                 passed = False
                 if rows and not dob:
@@ -296,9 +317,19 @@ class Site:
                     passed = (ln > tl) or (ln == tl and tf and fn_ > tf + "\uffff")
                 if (found and not dob and passed) or passed or not rows:
                     break
-                if not await tab._has_enabled_button("Next"):
+                if nxt != "Next" and not new:
+                    break   # the other control loaded no new rows (it belongs to something else)
+                nxt = None
+                for lab in ("Next", "Next page", "Show more", "Load more", "More results", "Next ›", "Next →", "›", "»"):
+                    if await tab._has_enabled_button(lab):
+                        nxt = lab; break
+                if not nxt:
                     break
-                await tab.click_by_text("Next", contains=False, navigate_links=False)
+                if soft and time.time() - t_fp > timeout - 1.2:
+                    # more pages exist but the time is up: stop before loading the next page (a hard timeout would recycle the tab)
+                    rows_all.append({"name": "(search stopped: time limit)", "capped": True})
+                    break
+                await tab.click_by_text(nxt, contains=False, navigate_links=False)
             return rows_all
         try:
             return await self.use(fn, timeout, label=f"find {last}")
@@ -438,7 +469,7 @@ class Site:
                         opts = await loc.first.evaluate("s => [...s.options].map(o=>o.value)")
                         best = max(opts, key=lambda v: int(re.sub(r"\D", "", v) or 0))
                         if best != await loc.first.evaluate("s => s.value"):
-                            await loc.first.select_option(value=best); await asyncio.sleep(0.03); await tab.wait_settled(timeout=8)
+                            await loc.first.select_option(value=best, timeout=2500); await asyncio.sleep(0.03); await tab.wait_settled(timeout=8)
                         break
             except Exception:
                 pass

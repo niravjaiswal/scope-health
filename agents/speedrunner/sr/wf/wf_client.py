@@ -595,9 +595,9 @@ class WrenfieldTab:
                     continue
         raise WrenfieldError(f"no field {field!r}")
 
-    async def fill(self, field: str, value: str):
+    async def fill(self, field: str, value: str, timeout: float = 2500):
         loc = await self._field(field)
-        await loc.fill(value)
+        await loc.fill(value, timeout=timeout)   # not Playwright's 30 s default: a hidden/inert match must fail fast
 
     async def select(self, field: str, option: str):
         loc = await self._field(field)
@@ -616,9 +616,9 @@ class WrenfieldTab:
         loc = await self._field(field) if field else None
         if loc is None:
             raise WrenfieldError("submit needs field or button_text")
-        await loc.press("Enter")
+        await loc.press("Enter", timeout=2500)
         await asyncio.sleep(0.02)
-        await self.wait_settled()
+        await self.wait_settled(timeout=8)
 
     # ---- shell: location ---------------------------------------------------------------------------
     async def location(self) -> str:
@@ -666,7 +666,11 @@ class WrenfieldTab:
                 return False
             if last_name:
                 tl = _fold(last_name.strip())
-                return any(tl[:4] in _fold(r.get("name") or "") or _fold(r.get("name") or "")[:1] == tl[:1] for r in rs)
+                def _sur(nm):
+                    nm = _fold(nm)
+                    nm = nm.split(",", 1)[0].strip() if "," in nm else (nm.split() or [""])[-1]
+                    return re.sub(r"^[^a-z]+", "", nm)
+                return any(tl[:4] in _fold(r.get("name") or "") or _sur(r.get("name") or "")[:1] == tl[:1] for r in rs)
             y = _iso_date(dob)[:4]
             return any(y in " ".join(str(c) for c in (r.get("cells") or [])) + str(r.get("dob") or "") or
                        y[2:] in " ".join(str(c) for c in (r.get("cells") or [])) for r in rs)
@@ -779,7 +783,7 @@ class WrenfieldTab:
                     if await loc.count():
                         opts = await loc.first.evaluate("s => [...s.options].map(o=>o.value)")
                         best = rows_per_page if rows_per_page in opts else max(opts, key=lambda v: int(v) if v.isdigit() else 0)
-                        await loc.first.select_option(value=best)
+                        await loc.first.select_option(value=best, timeout=2500)
                         await asyncio.sleep(0.02)
                         await self.wait_settled()
                         break

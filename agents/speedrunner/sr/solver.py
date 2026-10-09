@@ -52,6 +52,8 @@ TOOLS = [
 
 
 TOOLS_V18 = [t for t in TOOLS if t["function"]["name"] in ("open", "search_patients", "query", "read_document", "answer", "skip")]
+# kinds where a "patient" in the route is often a mis-parsed provider: never fast-skipped for an unresolved patient
+NOPAT_EXEMPT_KINDS = {"provider_day_count", "open_slots", "top_providers", "location_period_count", "unique_patients_count", "schedule_other"}
 
 
 def norm(s):
@@ -114,6 +116,7 @@ class Solver:
         self.cur_text = ""; self.cur_wf = None
         self.taught = {}
         self.doc_cache = {}
+        self.nopat_stats = {"seen": 0, "n": 0, "ans": 0}   # unresolved-patient tasks: loop runs / loop answers this shift
 
     # ------------------------------------------------------------------ router
     async def route(self, text, safe=False):
@@ -163,19 +166,24 @@ class Solver:
                 out = loose
             return out
         rows = []
+        safe = self.safe()
+        def left():
+            return getattr(self, "_deadline", time.time() + 60.0) - time.time()
         if dob:
             pre = getattr(self, "_pre", {}).get(dob)
-            rows = await pre if pre is not None else await self.site.search(dob=dob)
+            rows = await pre if pre is not None else await self.site.search(dob=dob, timeout=(max(4.0, min(14.0, left() - 5.0)) if safe else 14))
             c = match(rows, from_dob=True)
             if c: return c, rows
         if last:
-            kw = {"max_pages": 14, "timeout": 25.0} if self.safe() else {}
-            rows2 = await self.site.find_patient(last, first, dob, **kw)
-            if not match(rows2) and " " in last:
-                rows2 = await self.site.find_patient(last.split()[-1], first, dob, **kw)
+            def kw():
+                # safe mode: the name search gets what is left of this task's budget minus ~5 s for the tool loop (was a fixed 25 s)
+                return {"max_pages": 14, "timeout": max(2.5, min(7.0, left() - 5.0)), "soft": True} if safe else {}
+            rows2 = await self.site.find_patient(last, first, dob, **kw())
+            if not match(rows2) and " " in last and (not safe or left() > 7.5):
+                rows2 = await self.site.find_patient(last.split()[-1], first, dob, **kw())
             rows = rows2 or rows
         c = match(rows)
-        if not c and dob:
+        if not c and dob and (not safe or left() > 5.0):
             # the list may mask or reformat birth dates: check the DOB on the charts of name-matching rows
             cands = [r for r in rows if r.get("href") and not r.get("capped") and name_ok(r.get("name") or "")][:4]
             if cands:
@@ -184,8 +192,10 @@ class Solver:
                 log(f"RESOLVE chart-dob check {len(cands)} candidates -> {len(hit)} match")
                 if hit:
                     return hit[:1], rows
-        if not c:
-            # fallback: parse 'Name <...> </patients/id>' lines from the search page text (non-table result layouts)
+        if not c and not any(r.get("name") and not r.get("capped") and last_ok(r.get("name") or "") for r in rows):
+            # fallback: parse 'Name <...> </patients/id>' lines from the search page text (non-table result layouts,
+            # misdetected name column, failed name search). Skipped when rows with the surname were read: it would only
+            # re-read those rows (match()/chart check already judged them) and its 4-line window can borrow a neighbour's DOB.
             from urllib.parse import quote
             pp = getattr(self.site, "patients_path", "/patients")
             paths = ([f"{pp}?dob={dob}"] if dob else []) + ([f"{pp}?lastName={quote(last)}"] if last else [])
@@ -237,6 +247,8 @@ class Solver:
         else:
             txt = await self.site.page(path, fresh=fresh)
         txt = re.sub(r"\s*<\/v\/[^>]*>", "", txt or "")
+        if not self.safe():
+            txt += incomplete_note(txt)
         try:
             if not self.safe(): self.spec_docs(txt, self.cur_text, self.cur_wf)
         except Exception as e:
@@ -245,7 +257,10 @@ class Solver:
 
     async def exec_tool(self, fn, args, opened):
         if fn == "open":
-            ps = [p for p in ([args.get("path")] if args.get("path") else []) + list(args.get("paths") or []) if p][:8]
+            p1, pl = args.get("path"), args.get("paths") or []
+            p1 = p1 if isinstance(p1, list) else ([p1] if p1 else [])
+            pl = [pl] if isinstance(pl, str) else list(pl)
+            ps = [p for p in p1 + pl if p and isinstance(p, str)][:8]
             opened.extend(ps)
             outs = await asyncio.gather(*[self.tool_open(p, bool(args.get("all_pages"))) for p in ps])
             if len(ps) == 1: return outs[0]
@@ -254,7 +269,8 @@ class Solver:
             path = (args.get("path") or "/").strip()
             if not path.startswith("/"): path = "/" + path
             opened.append(path)
-            return await self.site.query(path, args.get("fields") or {}, bool(args.get("all_pages")), args.get("submit"), strict=self.safe())
+            out = await self.site.query(path, args.get("fields") or {}, bool(args.get("all_pages")), args.get("submit"), strict=self.safe())
+            return out if self.safe() else (out or "") + incomplete_note(out)
         if fn == "search_patients":
             if args.get("last_name") and not args.get("dob"):
                 rows = await self.site.find_patient(args.get("last_name"))
@@ -313,6 +329,14 @@ class Solver:
                 return (f"0 rows loaded from {path} with fields {args.get('fields')} — the filters may not have been applied or the page has no table. "
                         f"Do NOT conclude the answer is 0 from this; open the page to check, or use a different view. page notes: {notes[-2:]}")
             capped = len(rows) >= 490 or any(re.search(r"of \d+\+", n or "") and str(len(rows)) in (n or "") for n in notes[-1:])
+            # 4.3.1 lists say "Showing 20 of about 575 appointments" + [Show more] (no Next button): only the first rows were read
+            short = [int(m_.group(1).replace(",", "")) for m_ in (re.search(r"\bof (?:about )?(\d[\d,]*)", n or "") for n in notes[-1:])
+                     if m_ and int(m_.group(1).replace(",", "")) > len(rows)]
+            if short and not capped:
+                return (f"WARNING: only {len(rows)} of about {short[0]} rows could be loaded (the list shows its first rows and a 'Show more' button), "
+                        f"so any count or set computed from it is WRONG. Narrow the list with filters (provider, location, status, one day) until "
+                        f"the page shows every row, or use the provider's day view /schedule/providers/<id>?date=YYYY-MM-DD; if nothing narrower exists, skip. "
+                        f"page notes: {notes[-2:]}")
             if capped:
                 return (f"WARNING: the list hit its row cap ({len(rows)} rows) so it is INCOMPLETE and any count from it is wrong. "
                         f"Narrow it with filters (location, provider, status, shorter date range) and run table_compute again. page notes: {notes[-2:]}")
@@ -507,6 +531,8 @@ class Solver:
         wfs = sorted(ok)
         wf_idx = wfs[0] if wfs else None
         route["workflow"] = wf_idx
+        if safe:
+            item["_route"] = route   # a task cut at its (hard) budget still counts for its kind (fail-fast / pressure skip)
         use_plan = False
         if wfs and not safe:
             from .stats import KSTATS
@@ -527,6 +553,7 @@ class Solver:
                 deadline = new_deadline
         except Exception as e:
             log("failfast err", repr(e)[:100])
+        self._deadline = deadline
         plan_key = f"wf{wf_idx}" if wf_idx is not None else kind
 
         # entity resolution + prefetch (provider lookups run concurrently)
@@ -556,6 +583,27 @@ class Solver:
                     for ap, cnt in sorted(self.plans.get(plan_key, {}).items(), key=lambda x: -x[1])[:8]:
                         if "{pid}" in ap and cnt >= 1 and not re.search(r"/[0-9a-z]{10}(?=/|$|\?)", ap.replace("{pid}", "")):
                             prefetch.append(ap.replace("{pid}", pid))
+        # patient named but found by no search path, and nothing else identifies the record (no ids / providers / long number).
+        # 4.3.1 (Set 1 logs, ~115 such tasks in 11 runs): the tool loop answered 4 (1 plausible, 3 wrong) for ~6-8 s each -> skip
+        # now and keep these tasks out of KindStats (they set off lab/claim pressure-skip cascades). Other versions: only once
+        # this shift's own loop runs show it does not rescue them (>=5 runs, <10% answered; every 10th one still runs).
+        _rids = route.get("ids") if isinstance(route.get("ids"), list) else ([route.get("ids")] if route.get("ids") else [])
+        nopat_case = (bool(pats) and bool(resolved) and not any(c for c, _r in resolved) and bool(str(pats[0].get("last") or "").strip())
+                      and not provs and not any(str(x).strip() for x in _rids if x is not None)
+                      and not re.search(r"\d{5,}", text) and kind not in NOPAT_EXEMPT_KINDS)
+        if nopat_case and os.environ.get("NOPAT_SKIP", "1") == "1":
+            ns = self.nopat_stats
+            ns["seen"] += 1
+            if (not safe) or (ns["n"] >= 5 and ns["ans"] * 10 < ns["n"] and ns["seen"] % 10 != 0):
+                log(f"NOPAT early skip {jdump(pats[:2], 200)} loop-stats={ns}")
+                res_ = {"skip": True, "reason": "patient not resolved", "_nopat": True, "_nostat": True,
+                        "_norows": all(not rws for (_c, rws) in resolved)}
+                try:
+                    lasts = [norm(p.get("last") or "") for p in pats[:2]]
+                    res_["_nosurname"] = not any(l and l in norm(r.get("name") or "") for (_c, rws) in resolved for r in (rws or []) for l in lasts)
+                except Exception:
+                    pass
+                return res_, {"route": route, "kind": kind, "wf": wf_idx, "opened": [], "msgs": []}
         prefetch = list(dict.fromkeys(prefetch))[:10]
         asks_ident = bool(re.search(r"(?i)phone|MRN|record number|member id|insurance id|account number", text) or route.get("answer_kind") == "phone")
         rule_ident = bool(wf_text and re.search(r"(?i)record number|\bMRN\b", wf_text))
@@ -605,7 +653,22 @@ class Solver:
             line = info if isinstance(info, str) else (" || ".join(hits[:2]) if hits else None)
             ctx_parts.insert(0, f"[provider directory for {prov}: {line}]" if line else f"[provider directory: no entry found for {prov}]")
         # identifiers may be drawn with cipher/ligature fonts or as pictures: visual reading (started above) as cross-check
-        if vis_task is not None and asks_ident:
+        # 4.3.1: when the decoded chart already shows exactly one well-formed phone (and no other phone is in context),
+        # a phone question doesn't need to block on the visual read (decoded == visual in 211/211 Set 1 cases)
+        decoded_phone_ok = False
+        try:
+            if (vis_task is not None and asks_ident and not safe and chart_paths and re.search(r"(?i)phone", text)
+                    and not re.search(r"(?i)MRN|record number|member id|insurance id|account number", text)):
+                _chart = "\n".join(p for p in ctx_parts if p.startswith(f"=== PAGE {chart_paths[0]} ==="))
+                _cp = {re.sub(r"\D", "", x) for x in re.findall(r"(?m)^Phone: (\(\d{3}\) ?\d{3}-\d{4})[ \t]*$", _chart)}
+                _all = {re.sub(r"\D", "", x) for x in re.findall(r"(?<!\d)\(\d{3}\) ?\d{3}-\d{4}(?!\d)", "\n".join(ctx_parts))}
+                decoded_phone_ok = len(_cp) == 1 and _all == _cp
+                if decoded_phone_ok:
+                    log("VISUAL not awaited: decoded chart shows one well-formed phone")
+        except Exception as e:
+            decoded_phone_ok = False
+            log("phone-ok err", repr(e)[:100])
+        if vis_task is not None and asks_ident and not decoded_phone_ok:
             try:
                 vis = await asyncio.wait_for(vis_task, timeout=max(1.0, min(8, deadline - time.time() - 3)))
                 ctx_parts.append(f"=== VISUAL READING of {chart_paths[0]} (screenshot transcription; if it disagrees with the decoded text on phone numbers, MRN or IDs, trust the visual reading) ===\n{vis}")
@@ -658,6 +721,13 @@ class Solver:
             if not calls:
                 log("NOCALL content", (m.get("content") or "")[:300])
                 cand = parse_text_answer(m.get("content") or "", loose=True)
+                if not cand and wf_idx is None:
+                    # no rule governs this request: a short one-line plain value (e.g. a practice name) is the answer,
+                    # unless it reads like a thought ("Let me open...", "I need to check...")
+                    v = (m.get("content") or "").strip().strip("`\"").strip()
+                    if v and "\n" not in v and 2 <= len(v) <= 80 and not v.endswith((":", "?")) and not re.search(
+                            r"(?i)\b(let me|i will|i'll|i need|we need|need to|should|check|open|search|look|find|unable|cannot|can't|not found|unknown|no data)\b", v):
+                        cand = {"answer": v.rstrip("."), "confidence": 0.8, "why": "plain-text answer"}
                 if cand:
                     text_fallback = cand
                 if not nudged and deadline - time.time() > 3.5:
@@ -755,11 +825,29 @@ class Solver:
                     result = {"skip": True, "reason": f"prose answer resembling a rule code: {a!r}"}
         # gate: a request about a patient must be grounded in that patient's chart
         charts = set(re.findall(r"/patients/([0-9a-z]{6,})", " ".join(prefetch + opened + replay_opened)))
-        if not charts and not safe:
+        rec_ids = route.get("ids") if isinstance(route.get("ids"), list) else []
+        # safe mode: only requests naming a record number (invoice/claim, >=5 digits) may be grounded in that record's page
+        if not charts and (not safe or any(len(re.sub(r"\D", "", str(x))) >= 5 for x in rec_ids)):
             seen_txt = " ".join((m.get("content") or "") for m in msgs if m.get("role") == "tool")
             last = norm((pats[0].get("last") if pats else "") or "")
             if last and last in norm(seen_txt) and re.search(r"/patients/[0-9a-z]{6,}", seen_txt):
                 charts = {"via-linked-record"}
+            # a record opened by the request's own identifier (e.g. invoice number) in a pre-fetched replay call,
+            # whose page names this patient and links the chart, grounds the answer (Set 1: 9 correct invoice answers were gated)
+            try:
+                idv = [str(x).strip() for x in rec_ids if len(str(x).strip()) >= 5 and re.search(r"\d", str(x))]
+                if not charts and last and idv:
+                    for p_ in ctx_parts:
+                        head_ = p_.split("\n", 1)[0]
+                        if not (head_.startswith("=== ") and head_.endswith("(pre-fetched) ===")):
+                            continue
+                        if any(re.search(r"(?<![0-9A-Za-z])" + re.escape(i_) + r"(?![0-9A-Za-z])", head_) for i_ in idv) \
+                                and last in norm(p_) and re.search(r"/patients/[0-9a-z]{6,}", p_):
+                            charts = {"via-record-id"}
+                            log("GATE grounded via record id", head_[:120])
+                            break
+            except Exception as e:
+                log("gate-id err", repr(e)[:100])
         if result and not result.get("skip") and pats and not charts:
             log("GATE no chart opened for patient request -> skip")
             result = {"skip": True, "reason": "patient chart never opened"}
@@ -817,13 +905,25 @@ class Solver:
             sa = nrm((strong_r or {}).get("answer")) if strong_r else None
             wa = nrm((weak_r or {}).get("answer")) if weak_r else None
             if strong_r is not None:
+                try: s_conf = float(strong_r.get("confidence") or 0)
+                except Exception: s_conf = 0.0
+                # full mode: a confident strong verifier may override alone when haiku gave no answer and its answer is a
+                # code / date / number (Set 1: 10 of 10 such disagreements were the right answer; never prose/names/phones)
+                s_alone = (not safe and s_conf >= 0.9 and not wa and
+                           bool(re.fullmatch(r"[A-Z][A-Z_]{2,}(:[^\n]{0,80})?|\$?[0-9][0-9.,:/\- ]{0,20}", str(strong_r.get("answer") or "").strip())))
                 if sa and sa == a1:
                     trust["agree"] += 1
-                    result["confidence"] = max(float(result.get("confidence") or 0), float(strong_r.get("confidence") or 0))
-                elif sa and wa and sa == wa and float(strong_r.get("confidence") or 0) >= 0.8:
+                    result["confidence"] = max(float(result.get("confidence") or 0), s_conf)
+                elif sa and ((wa and sa == wa and s_conf >= 0.8) or s_alone):
                     trust["disagree"] += 1
-                    log("VERIFY override (strong+weak agree)", a1, "->", sa)
-                    result = {"answer": strong_r["answer"], "confidence": float(strong_r.get("confidence") or 0) - 0.05, "why": "verifier: " + str(strong_r.get("why"))}
+                    log("VERIFY override (strong+weak agree)" if wa else "VERIFY override (strong alone)", a1, "->", sa)
+                    result = {"answer": strong_r["answer"], "confidence": s_conf - 0.05, "why": "verifier: " + str(strong_r.get("why"))}
+                elif (not sa and not safe and not (wa and wa != a1) and not re.fullmatch(r"0+|.*(unknown|none|not_?found).*", a1)
+                        and not re.search(r"(?i)suspen", str(strong_r.get("why") or ""))):
+                    # the strong verifier abstained (answer "": "X was not opened/gathered"): missing evidence, not a contradiction.
+                    # Set 1 logs (13 builds, 68 abstentions): loop answer right ~78% (lab ~88%). Keep it at its own confidence and
+                    # leave the workflow's trust counts alone. Zero/unknown answers and suspension pages keep the old veto.
+                    log("VERIFY abstained -> keeping loop answer", a1)
                 else:
                     trust["disagree"] += 1
                     result["confidence"] = min(float(result.get("confidence") or 0), 0.5)
@@ -855,6 +955,14 @@ class Solver:
             for p in set(opened):
                 ap = abstract_path(p, ids)
                 pl[ap] = pl.get(ap, 0) + 1
+        if nopat_case:   # this shift's track record of the tool loop on unresolved-patient tasks (as budgeted now)
+            try:
+                got = bool(result and not result.get("skip") and str(result.get("answer", "")).strip()
+                           and float(result.get("confidence") or 0) >= self.cfg.get("min_conf", 0.75))
+            except Exception:
+                got = False
+            self.nopat_stats["n"] += 1; self.nopat_stats["ans"] += int(got)
+            log(f"NOPAT loop {'answered' if got else 'no answer'} stats={self.nopat_stats}")
         if pats and not ids.get("pid") and (result is None or result.get("skip")):
             result = dict(result or {"skip": True, "reason": "patient not resolved"}); result["_nopat"] = True
             result["_norows"] = all(not rows for (_c, rows) in resolved)
@@ -888,6 +996,15 @@ def fn_key(x):
     return x[0] + json.dumps(x[1], sort_keys=True)
 
 
+def incomplete_note(txt):
+    """4.3.1 lists show 'Showing 20 of about 575 appointments' + [Show more]: warn that the rows on the page are not all of them."""
+    m = re.search(r"Showing (\d+) of about (\d[\d,]*)", txt or "")
+    if m and int(m.group(2).replace(",", "")) > int(m.group(1)):
+        return (f"\nNOTE: this list shows only its first {m.group(1)} of about {m.group(2)} rows ('Show more' not expanded): "
+                f"do not count from it; narrow it with filters (provider, location, status, date) until every row is shown.")
+    return ""
+
+
 def clip(s, n):
     s = s or ""
     return s if len(s) <= n else s[:n] + f"\n…[truncated {len(s)-n} chars]"
@@ -905,6 +1022,6 @@ def parse_text_answer(s, loose=False):
         # a bare value written as plain text instead of an answer call (e.g. "NURSE_REVIEW:2", "2027-02-28", "169.00")
         v = s.strip().strip("`").strip()
         if v and "\n" not in v and len(v) <= 60 and not v.startswith("{") and v.lower() not in ("0", "none", "unknown", "n/a") \
-                and (re.fullmatch(r"[A-Z][A-Z_]{2,}(:[^\s].*)?", v) or re.fullmatch(r"[\d$.,:/() -]+", v)):
+                and (re.fullmatch(r"[A-Z][A-Z_]{2,}(:[^\s].*)?", v) or (re.fullmatch(r"[\d$.,:/() -]+", v) and re.search(r"\d", v))):
             return {"answer": v, "confidence": 0.8, "why": "plain-text answer"}
     return None

@@ -505,16 +505,18 @@ async def read_document(png_bytes: Optional[bytes] = None, pdf_bytes: Optional[b
             return dict(await asyncio.shield(_INFLIGHT[key]), cached=True)
         fut = asyncio.get_running_loop().create_future()
         _INFLIGHT[key] = fut
+    res = {"text": "", "method": "error", "error": "cancelled", "confidence": 0.0, "ms": 0}
     try:
         res = await _read_document(png_bytes, pdf_bytes, llm_call, hint, pngs, hedge_after, t0)
     except Exception as e:  # never raise into the agent
         res = {"text": "", "method": "error", "error": str(e)[:300], "confidence": 0.0, "ms": int((time.time() - t0) * 1000)}
-    if use_cache:
-        if res.get("method") not in ("error", "none"):
-            _CACHE[key] = res
-        _INFLIGHT.pop(key, None)
-        if not fut.done():
-            fut.set_result(res)
+    finally:   # also on cancellation: never leave a waiter on _INFLIGHT[key] hanging
+        if use_cache:
+            if res.get("method") not in ("error", "none"):
+                _CACHE[key] = res
+            _INFLIGHT.pop(key, None)
+            if not fut.done():
+                fut.set_result(res)
     return res
 
 

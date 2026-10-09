@@ -32,6 +32,7 @@ See `50-architecture.md`. Two modes chosen at startup from the Wrenfield version
 | v1.20 | 115 | 81 | −43 | 153 | diag: unresolved patient (98 wrong) |
 | v1.21 | 101 | 91 | 62 | 254 | diag: no search rows (≈0) |
 | v1.22 | 65 | 72 | −57 | 80 | diag: unresolved patient after relaxed matching (≈90) — slow LLM day |
+| v1.24 | 71 (81✓/10✗) | 48 | −15 (33✓/48✗, 28 not reached) | 104 | diag: Set 3 version code 28 = **4.4.0** + form fallback used; ≈43 unresolved tasks have no row with the surname. Last-step prompt caused wrong guesses (removed) |
 
 Run-to-run variance is about ±15–30 points per set, so single runs are noisy. LLM latency (gpt-oss steps,
 routing) roughly doubled in the Oct 9 morning runs (shared provider load), which costs Set 1 throughput.
@@ -41,8 +42,18 @@ routing) roughly doubled in the Oct 9 morning runs (shared provider load), which
   pressure. Accuracy of answered tasks is ~94%.
 - gpt-oss sometimes writes the final answer as plain text instead of calling `answer`; after the nudge the answer
   was sometimes lost (15 tasks in v1.18). v1.24+: keep the plain-text answer as a fallback.
-- Tasks that end at max steps / out of budget: v1.24+ asks for a final answer on the last step.
+- Tasks that end at max steps / out of budget: v1.24 asked for a final answer on the last step; that produced
+  wrong guesses, so v1.25 removed it.
 - Set 3: ~90–116 tasks have the patient unresolved although the search returns rows. v1.24 tests the hypothesis
   that the unseen version ignores the search URL parameters (form fallback) and encodes the Set 3 version in the
   not-reached count (`VER_CODES` in `sr/main.py`; +20 if the form fallback was used).
 - 4.3.1 name search is phonetic (Wells → Wallace first), so "no row has the surname" must allow same-initial rows.
+
+## v1.25b (image `i3b77fc874265`, clean, ready to submit)
+- NOCALL plain-text answer fallback (kept; never hurt).
+- Last-step "answer now" prompt **removed** (all 6 answers that differed from v1.18 in v1.24 came from it).
+- Patient search form fallback when rows ignore the searched name; relevance = surname prefix or same initial
+  (4.3.1/4.4.0 search is phonetic: Wells → Wallace, Bell → Bailey, Smith → Schmidt).
+- DOB form fallback also tries MM/DD/YYYY.
+- Chart DOB check: when name-matching rows exist but no DOB matches in the list, open up to 4 charts and match the DOB there.
+- Format gate accepts `<RULE_CODE>:<free text>` (e.g. `CALL_PROVIDER_NOW:Platelet count`).

@@ -66,7 +66,8 @@ from .stats import KSTATS
 async def handle_task(item, solver, deadline, hard_end=None):
     t = time.time()
     try:
-        slack = 10.0 if hard_end is None else max(0.5, min(10.0, hard_end - deadline))
+        cap = 3.0 if solver.safe() else 10.0   # safe mode: near-hard stop like v1.6/v1.8 (no safe-mode path answers after its deadline)
+        slack = cap if hard_end is None else max(0.5, min(cap, hard_end - deadline))
         res, info = await asyncio.wait_for(solver.solve(item, deadline), timeout=max(1, deadline - time.time()) + slack)
     except asyncio.TimeoutError:
         log("TASK timeout"); return None, {"why": "timeout"}
@@ -168,7 +169,9 @@ async def run_queue():
         if ans is None and os.environ.get("DIAG_SUSP") == "1" and abs(shift - 1800) < 60 and site.stats.get("suspended", 0) > susp0:
             ans = "DIAG-SUSPENDED"; res = {"confidence": 1, "why": "diagnostic: suspension seen"}
             log("DIAG answering garbage for suspension-affected task")
-        KSTATS.add(KSTATS.key(it.get("_route")), ans is not None, time.time() - t)
+        # unresolved-patient fast skips and tasks hit by an account suspension say nothing about their kind
+        if not (isinstance(res, dict) and res.get("_nostat")) and site.stats.get("suspended", 0) == susp0:
+            KSTATS.add(KSTATS.key(it.get("_route")), ans is not None, time.time() - t)
         if ans is None:
             state = await q.close(it["id"], skip=True); skipped += 1
             print("CLOSE " + jdump({"n": n, "skip": True, "dt": round(time.time()-t, 1), "why": (res or {}).get("reason") or (res or {}).get("why") or (res or {}).get("answer")}), flush=True)
