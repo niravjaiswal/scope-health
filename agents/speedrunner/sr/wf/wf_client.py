@@ -666,7 +666,7 @@ class WrenfieldTab:
                 return False
             if last_name:
                 tl = _fold(last_name.strip())
-                return any(tl[:4] in _fold(r.get("name") or "") for r in rs)
+                return any(tl[:4] in _fold(r.get("name") or "") or _fold(r.get("name") or "")[:1] == tl[:1] for r in rs)
             y = _iso_date(dob)[:4]
             return any(y in " ".join(str(c) for c in (r.get("cells") or [])) + str(r.get("dob") or "") or
                        y[2:] in " ".join(str(c) for c in (r.get("cells") or [])) for r in rs)
@@ -674,17 +674,23 @@ class WrenfieldTab:
             # fallback: fill the visible search form (another version may use different URL params)
             labels = ("Last name", "Surname", "Family name", "Name", "Patient", "Search") if last_name else \
                      ("Date of birth", "DOB", "Birth date", "Born", "Birthdate")
-            val = last_name.strip() if last_name else _iso_date(dob)
-            for label in labels:
-                try:
-                    await self.fill(label, val)
-                    await self.submit(field=label)
-                    r2 = await self._patient_rows()
-                    if r2 is not None and (not r2 or _relevant(r2)):
-                        rows = r2
-                        break
-                except Exception:
-                    continue
+            iso = _iso_date(dob) if dob else ""
+            vals = [last_name.strip()] if last_name else [iso, f"{iso[5:7]}/{iso[8:10]}/{iso[:4]}"]
+            done = False
+            for val in vals:
+                for label in labels:
+                    try:
+                        await self.fill(label, val)
+                        await self.submit(field=label)
+                        r2 = await self._patient_rows()
+                        if r2 is not None and (r2 or val == vals[-1]) and (not r2 or _relevant(r2)):
+                            rows = r2
+                            done = True
+                            break
+                    except Exception:
+                        continue
+                if done:
+                    break
         out = list(rows or [])
         pages = 1
         while all_pages and rows and pages < max_pages and await self._has_enabled_button("Next"):

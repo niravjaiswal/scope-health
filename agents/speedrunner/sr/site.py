@@ -244,7 +244,8 @@ class Site:
             except Exception:
                 probe_rows = None
             def relevant(rs):
-                return any(tl[:4] in nrm(r.get("name") or "") for r in (rs or []))
+                # phonetic search (4.3.1) returns e.g. Wallace for Wells: same initial; an ignored parameter lists everyone from A
+                return any(tl[:4] in nrm(r.get("name") or "") or nrm(r.get("name") or "")[:1] == tl[:1] for r in (rs or []))
             if probe_rows is None or (probe_rows and not relevant(probe_rows)):
                 self.stats["form_fallback"] = self.stats.get("form_fallback", 0) + 1
                 if probe_rows:
