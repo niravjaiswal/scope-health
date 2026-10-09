@@ -17,6 +17,8 @@ class Site:
         self.today = None
         self.nav = []
         self.version = ""
+        self.page_timeout = 9.0
+        self.bg_sem = asyncio.Semaphore(1)
 
     async def start(self):
         t = time.time()
@@ -52,7 +54,7 @@ class Site:
         except Exception as e:
             log("SITE dashboard err", repr(e)[:200])
 
-    async def page(self, path, fresh=False, max_age=None, retries=3):
+    async def page(self, path, fresh=False, max_age=None, retries=2, background=False):
         """Decoded text of a page (cached)."""
         c = self.cache.get(path)
         if c and not fresh and (max_age is None or now() - c[0] <= max_age):
@@ -62,7 +64,7 @@ class Site:
         fut = asyncio.get_event_loop().create_future()
         self.inflight[path] = fut
         try:
-            txt = await self._load(path, retries)
+            txt = await self._load(path, retries, sem=self.bg_sem if background else None)
             if txt is not None and not txt.startswith("ERROR"):
                 self.cache[path] = (now(), txt)
             fut.set_result(txt)
@@ -73,16 +75,25 @@ class Site:
         finally:
             self.inflight.pop(path, None)
 
-    async def _load(self, path, retries):
+    async def _reset_tab(self, tab):
+        try:
+            await tab.page.goto(self.c.base_url + "/", wait_until="domcontentloaded", timeout=15000)
+            await tab.wait_settled(timeout=8)
+            log("TAB reset ok")
+        except Exception as e:
+            log("TAB reset failed", repr(e)[:120])
+
+    async def _load(self, path, retries, sem=None):
         last = ""
         for attempt in range(retries + 1):
             t = time.time()
-            async with self.sem:
+            async with (sem or self.sem):
                 async with self.c.tab() as tab:
                     try:
-                        txt = await tab.get_text(path)
+                        txt = await asyncio.wait_for(tab.get_text(path), timeout=self.page_timeout)
                     except Exception as e:
                         txt = f"ERROR {e!r}"[:300]
+                        await self._reset_tab(tab)
             dt = time.time() - t
             self.stats["fetch"] += 1; self.stats["time"] += dt
             if txt and not txt.startswith("ERROR") and not (BUSY_RE.search(txt[:400]) and len(txt) < 600):

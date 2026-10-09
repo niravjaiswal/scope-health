@@ -69,7 +69,7 @@ async def run_queue():
     shift = float(ENV["SHIFT_SECONDS"] or 900)
     total = est_total(shift)
     llm = LLM()
-    site = Site(ENV["SITE_URL"], ENV["SITE_USERNAME"], ENV["SITE_PASSWORD"], n_tabs=int(os.environ.get("TABS", "4")))
+    site = Site(ENV["SITE_URL"], ENV["SITE_USERNAME"], ENV["SITE_PASSWORD"], n_tabs=int(os.environ.get("TABS", "2")))
     q = Queue(ENV["QUEUE_URL"])
     mem = Memory()
     await site.start()
@@ -109,7 +109,7 @@ async def run_local(path):
     """Local eval: items JSON (list of {kind,text,expected?}) against SITE_URL without a queue."""
     items = json.load(open(path))
     llm = LLM()
-    site = Site(ENV["SITE_URL"], ENV["SITE_USERNAME"] or "x", ENV["SITE_PASSWORD"] or "x", n_tabs=int(os.environ.get("TABS", "4")))
+    site = Site(ENV["SITE_URL"], ENV["SITE_USERNAME"] or "x", ENV["SITE_PASSWORD"] or "x", n_tabs=int(os.environ.get("TABS", "2")))
     mem = Memory()
     await site.start()
     solver = Solver(site, llm, mem, CFG)

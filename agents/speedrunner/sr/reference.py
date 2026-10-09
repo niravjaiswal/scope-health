@@ -34,7 +34,7 @@ async def provider_directory(site):
             return "\n".join(lines)
         base = re.sub(r"/schedule/providers/[0-9a-z]+", "/schedule/providers/{id}", ppath.split("?")[0])
         paths = [base.replace("{id}", v) for v, t, g in provs]
-        texts = await site.pages(paths)
+        texts = [await site.page(pp, background=True) for pp in paths]
         rows = []
         for (v, t, g), tx in zip(provs, texts):
             spec = ""

@@ -1,0 +1,3338 @@
+{
+ "0gjvghxffh": {
+  "type": "lab",
+  "keys": [
+   "Elizabeth Marshall",
+   "1992-06-29",
+   "HG9467714",
+   "Jennifer Parker, MD",
+   "2026-10-11",
+   "2026-10-14",
+   "LR-039969",
+   "Iron studies",
+   "Clinical Laboratory, Eastside",
+   "Tests reported: 3"
+  ],
+  "fields": {
+   "patient": "Elizabeth Marshall",
+   "date_of_birth": "1992-06-29",
+   "sex": "F",
+   "record_number": "HG9467714",
+   "collected": "2026-10-11",
+   "received": "2026-10-14",
+   "report_number": "LR-039969",
+   "panel": "Iron studies"
+  },
+  "rows": [
+   [
+    "Ferritin",
+    "143",
+    "ng/mL",
+    "20 - 250",
+    "normal"
+   ],
+   [
+    "Serum iron",
+    "112",
+    "ug/dL",
+    "60 - 170",
+    "normal"
+   ],
+   [
+    "Transferrin saturation",
+    "33",
+    "%",
+    "20 - 50",
+    "normal"
+   ]
+  ],
+  "set": "scan",
+  "png": "/Users/nirav/development/scope health/research/docs_samples/0gjvghxffh_p1.png"
+ },
+ "1k0cd5bcj1": {
+  "type": "lab",
+  "keys": [
+   "Robert Hernandez",
+   "2026-10-10",
+   "HG9791922",
+   "Edward Pierce, NP",
+   "2026-10-14",
+   "LR-039983",
+   "Liver function panel",
+   "Clinical Laboratory, Lakeside",
+   "Tests reported: 5"
+  ],
+  "fields": {
+   "patient": "Robert Hernandez",
+   "date_of_birth": "2026-10-10",
+   "sex": "M",
+   "record_number": "HG9791922",
+   "collected": "2026-10-14",
+   "received": "2026-10-14",
+   "report_number": "LR-039983",
+   "panel": "Liver function panel"
+  },
+  "rows": [
+   [
+    "Alanine aminotransferase",
+    "28",
+    "U/L",
+    "7 - 56",
+    "normal"
+   ],
+   [
+    "Aspartate aminotransferase",
+    "20",
+    "U/L",
+    "10 - 40",
+    "normal"
+   ],
+   [
+    "Alkaline phosphatase",
+    "188",
+    "U/L",
+    "44 - 147",
+    "high"
+   ],
+   [
+    "Total bilirubin",
+    "1.0",
+    "mg/dL",
+    "0.1 - 1.2",
+    "normal"
+   ],
+   [
+    "Albumin",
+    "4.4",
+    "g/dL",
+    "3.4 - 5.4",
+    "normal"
+   ]
+  ],
+  "set": "scan",
+  "png": "/Users/nirav/development/scope health/research/docs_samples/1k0cd5bcj1_p1.png"
+ },
+ "5m5lkzpd40": {
+  "type": "lab",
+  "keys": [
+   "Ahmed Davis",
+   "2023-04-30",
+   "HG8110840",
+   "Samuel Morris, MD",
+   "2026-10-11",
+   "2026-10-14",
+   "LR-039944",
+   "Hemoglobin A1c",
+   "Clinical Laboratory, Highline",
+   "Tests reported: 1"
+  ],
+  "fields": {
+   "patient": "Ahmed Davis",
+   "date_of_birth": "2023-04-30",
+   "sex": "M",
+   "record_number": "HG8110840",
+   "collected": "2026-10-11",
+   "received": "2026-10-14",
+   "report_number": "LR-039944",
+   "panel": "Hemoglobin A1c"
+  },
+  "rows": [
+   [
+    "Hemoglobin A1c",
+    "5.5",
+    "%",
+    "4.0 - 5.6",
+    "normal"
+   ]
+  ],
+  "set": "scan",
+  "png": "/Users/nirav/development/scope health/research/docs_samples/5m5lkzpd40_p1.png"
+ },
+ "72ftdnmrb9": {
+  "type": "lab",
+  "keys": [
+   "Sean Silva",
+   "1958-04-06",
+   "HG6270351",
+   "Liam Farrell, NP",
+   "2026-10-11",
+   "2026-10-14",
+   "LR-039971",
+   "Vitamin D",
+   "Clinical Laboratory, Highline",
+   "Tests reported: 1"
+  ],
+  "fields": {
+   "patient": "Sean Silva",
+   "date_of_birth": "1958-04-06",
+   "sex": "M",
+   "record_number": "HG6270351",
+   "collected": "2026-10-11",
+   "received": "2026-10-14",
+   "report_number": "LR-039971",
+   "panel": "Vitamin D"
+  },
+  "rows": [
+   [
+    "25-hydroxyvitamin D",
+    "20",
+    "ng/mL",
+    "30 - 100",
+    "low"
+   ]
+  ],
+  "set": "scan",
+  "png": "/Users/nirav/development/scope health/research/docs_samples/72ftdnmrb9_p1.png"
+ },
+ "1r35tm3t38": {
+  "type": "statement",
+  "keys": [
+   "Betty Davis",
+   "9042 Birch Ave",
+   "Tilden Grove, KS 66785",
+   "2026-10-14",
+   "HG5436503",
+   "2026-11-05",
+   "$141.84",
+   "$55.12",
+   "$266.10",
+   "-$179.38",
+   "-$0.00",
+   "620-555-0112"
+  ],
+  "rows": [],
+  "set": "scan",
+  "png": "/Users/nirav/development/scope health/research/docs_samples/1r35tm3t38_p1.png"
+ },
+ "2gx3bv8x97": {
+  "type": "referral",
+  "keys": [
+   "Dunmore Regional Hospital",
+   "7525 Lakeview Street, Suite 364",
+   "785-555-0116",
+   "785-555-0169",
+   "2026-10-14",
+   "Referral Coordinator, Front Range",
+   "John Adeyemi",
+   "1976-12-21",
+   "Anxiety and depressed mood",
+   "routine",
+   "Gabriel Ashby, NP"
+  ],
+  "rows": [],
+  "set": "scan",
+  "png": "/Users/nirav/development/scope health/research/docs_samples/2gx3bv8x97_p1.png"
+ },
+ "2tqhx8zf5j": {
+  "type": "referral",
+  "keys": [
+   "Granite Fork Internal Medicine",
+   "5472 Larch Avenue, Suite 255",
+   "620-555-0184",
+   "620-555-0111",
+   "2026-10-13",
+   "Referral Coordinator, Eastside",
+   "Michelle Sanders",
+   "1949-10-31",
+   "Abnormal mammogram follow-up",
+   "routine",
+   "Terry George, MD"
+  ],
+  "rows": [],
+  "set": "scan",
+  "png": "/Users/nirav/development/scope health/research/docs_samples/2tqhx8zf5j_p1.png"
+ },
+ "55cnnt653f": {
+  "type": "referral",
+  "keys": [
+   "Plains Dermatology Associates",
+   "5977 Depot Parkway, Suite 375",
+   "785-555-0117",
+   "785-555-0126",
+   "2025-10-07",
+   "Referral Coordinator, Highline",
+   "Patricia Anderson",
+   "1974-02-06",
+   "Suspicious skin lesion on the left forearm",
+   "urgent",
+   "Steven Dominguez, DO"
+  ],
+  "rows": [],
+  "set": "scan",
+  "png": "/Users/nirav/development/scope health/research/docs_samples/55cnnt653f_p1.png"
+ },
+ "02f97tds68": {
+  "type": "lab",
+  "keys": [
+   "Nicole Tran",
+   "1935-12-22",
+   "HG9746871",
+   "2026-10-11",
+   "2026-10-14",
+   "LR-039956",
+   "Hemoglobin A1c",
+   "Tests reported: 1",
+   "Clinical Laboratory, Cedar Hollow"
+  ],
+  "fields": {
+   "patient": "Nicole Tran",
+   "date_of_birth": "1935-12-22",
+   "sex": "F",
+   "record_number": "HG9746871",
+   "collected": "2026-10-11",
+   "received": "2026-10-14",
+   "report_number": "LR-039956",
+   "panel": "Hemoglobin A1c"
+  },
+  "rows": [
+   [
+    "Hemoglobin A1c",
+    "3.8",
+    "%",
+    "4.0 - 5.6",
+    "low"
+   ]
+  ],
+  "set": "clean",
+  "png": "/Users/nirav/development/scope health/research/docs_samples/02f97tds68_p1.png"
+ },
+ "02f97tds68_synth": {
+  "type": "lab",
+  "keys": [
+   "Nicole Tran",
+   "1935-12-22",
+   "HG9746871",
+   "2026-10-11",
+   "2026-10-14",
+   "LR-039956",
+   "Hemoglobin A1c",
+   "Tests reported: 1",
+   "Clinical Laboratory, Cedar Hollow"
+  ],
+  "fields": {
+   "patient": "Nicole Tran",
+   "date_of_birth": "1935-12-22",
+   "sex": "F",
+   "record_number": "HG9746871",
+   "collected": "2026-10-11",
+   "received": "2026-10-14",
+   "report_number": "LR-039956",
+   "panel": "Hemoglobin A1c"
+  },
+  "rows": [
+   [
+    "Hemoglobin A1c",
+    "3.8",
+    "%",
+    "4.0 - 5.6",
+    "low"
+   ]
+  ],
+  "set": "synth",
+  "png": "/Users/nirav/development/scope health/research/docs_samples/synth/02f97tds68_synth.png"
+ },
+ "06kpzpdbpw": {
+  "type": "lab",
+  "keys": [
+   "Hiroshi Rios",
+   "2002-07-20",
+   "HG3107074",
+   "2026-10-11",
+   "2026-10-14",
+   "LR-039951",
+   "Lipid panel",
+   "Tests reported: 4",
+   "Clinical Laboratory, Lakeside"
+  ],
+  "fields": {
+   "patient": "Hiroshi Rios",
+   "date_of_birth": "2002-07-20",
+   "sex": "M",
+   "record_number": "HG3107074",
+   "collected": "2026-10-11",
+   "received": "2026-10-14",
+   "report_number": "LR-039951",
+   "panel": "Lipid panel"
+  },
+  "rows": [
+   [
+    "Total cholesterol",
+    "146",
+    "mg/dL",
+    "125 - 200",
+    "normal"
+   ],
+   [
+    "LDL cholesterol",
+    "79",
+    "mg/dL",
+    "50 - 100",
+    "normal"
+   ],
+   [
+    "HDL cholesterol",
+    "77",
+    "mg/dL",
+    "40 - 90",
+    "normal"
+   ],
+   [
+    "Triglycerides",
+    "14",
+    "mg/dL",
+    "40 - 150",
+    "low"
+   ]
+  ],
+  "set": "clean",
+  "png": "/Users/nirav/development/scope health/research/docs_samples/06kpzpdbpw_p1.png"
+ },
+ "06kpzpdbpw_synth": {
+  "type": "lab",
+  "keys": [
+   "Hiroshi Rios",
+   "2002-07-20",
+   "HG3107074",
+   "2026-10-11",
+   "2026-10-14",
+   "LR-039951",
+   "Lipid panel",
+   "Tests reported: 4",
+   "Clinical Laboratory, Lakeside"
+  ],
+  "fields": {
+   "patient": "Hiroshi Rios",
+   "date_of_birth": "2002-07-20",
+   "sex": "M",
+   "record_number": "HG3107074",
+   "collected": "2026-10-11",
+   "received": "2026-10-14",
+   "report_number": "LR-039951",
+   "panel": "Lipid panel"
+  },
+  "rows": [
+   [
+    "Total cholesterol",
+    "146",
+    "mg/dL",
+    "125 - 200",
+    "normal"
+   ],
+   [
+    "LDL cholesterol",
+    "79",
+    "mg/dL",
+    "50 - 100",
+    "normal"
+   ],
+   [
+    "HDL cholesterol",
+    "77",
+    "mg/dL",
+    "40 - 90",
+    "normal"
+   ],
+   [
+    "Triglycerides",
+    "14",
+    "mg/dL",
+    "40 - 150",
+    "low"
+   ]
+  ],
+  "set": "synth",
+  "png": "/Users/nirav/development/scope health/research/docs_samples/synth/06kpzpdbpw_synth.png"
+ },
+ "0b6qxqsx16": {
+  "type": "referral",
+  "keys": [
+   "Elk Bend Health Center",
+   "2026-10-11",
+   "Shirley Pena",
+   "1967-12-31",
+   "Referral Coordinator, Cedar Hollow",
+   "316-555-0121",
+   "316-555-0101",
+   "2621 Orchard Street, Suite 440",
+   "New heart murmur",
+   "routine",
+   "Brittany Estrada, NP"
+  ],
+  "rows": [],
+  "set": "clean",
+  "png": "/Users/nirav/development/scope health/research/docs_samples/0b6qxqsx16_p1.png"
+ },
+ "0b6qxqsx16_synth": {
+  "type": "referral",
+  "keys": [
+   "Elk Bend Health Center",
+   "2026-10-11",
+   "Shirley Pena",
+   "1967-12-31",
+   "Referral Coordinator, Cedar Hollow",
+   "316-555-0121",
+   "316-555-0101",
+   "2621 Orchard Street, Suite 440",
+   "New heart murmur",
+   "routine",
+   "Brittany Estrada, NP"
+  ],
+  "rows": [],
+  "set": "synth",
+  "png": "/Users/nirav/development/scope health/research/docs_samples/synth/0b6qxqsx16_synth.png"
+ },
+ "0psh41qld9": {
+  "type": "statement",
+  "keys": [
+   "$0.00",
+   "$1778.84",
+   "$1911.46",
+   "-$0.00",
+   "-$132.62",
+   "2025-11-28",
+   "2025-12-28",
+   "620-555-0110",
+   "HG3310062",
+   "Amanda Phillips"
+  ],
+  "rows": [],
+  "set": "clean",
+  "png": "/Users/nirav/development/scope health/research/docs_samples/0psh41qld9_p1.png"
+ },
+ "0psh41qld9_synth": {
+  "type": "statement",
+  "keys": [
+   "$0.00",
+   "$1778.84",
+   "$1911.46",
+   "-$0.00",
+   "-$132.62",
+   "2025-11-28",
+   "2025-12-28",
+   "620-555-0110",
+   "HG3310062",
+   "Amanda Phillips"
+  ],
+  "rows": [],
+  "set": "synth",
+  "png": "/Users/nirav/development/scope health/research/docs_samples/synth/0psh41qld9_synth.png"
+ },
+ "14wrdvd1pj": {
+  "type": "referral",
+  "keys": [
+   "Pell Junction Community Clinic",
+   "2026-10-14",
+   "Mary Davis",
+   "1979-04-17",
+   "Referral Coordinator, Cedar Hollow",
+   "970-555-0105",
+   "970-555-0125",
+   "5222 Foundry Parkway, Suite 184",
+   "Anxiety and depressed mood",
+   "routine",
+   "Victoria Bennett, NP"
+  ],
+  "rows": [],
+  "set": "clean",
+  "png": "/Users/nirav/development/scope health/research/docs_samples/14wrdvd1pj_p1.png"
+ },
+ "14wrdvd1pj_synth": {
+  "type": "referral",
+  "keys": [
+   "Pell Junction Community Clinic",
+   "2026-10-14",
+   "Mary Davis",
+   "1979-04-17",
+   "Referral Coordinator, Cedar Hollow",
+   "970-555-0105",
+   "970-555-0125",
+   "5222 Foundry Parkway, Suite 184",
+   "Anxiety and depressed mood",
+   "routine",
+   "Victoria Bennett, NP"
+  ],
+  "rows": [],
+  "set": "synth",
+  "png": "/Users/nirav/development/scope health/research/docs_samples/synth/14wrdvd1pj_synth.png"
+ },
+ "21k22z2jf7": {
+  "type": "lab",
+  "keys": [
+   "Bradley Ellis",
+   "1989-09-08",
+   "HG9655002",
+   "2026-10-14",
+   "2026-10-14",
+   "LR-039995",
+   "Complete blood count",
+   "Tests reported: 4",
+   "Clinical Laboratory, Eastside"
+  ],
+  "fields": {
+   "patient": "Bradley Ellis",
+   "date_of_birth": "1989-09-08",
+   "sex": "M",
+   "record_number": "HG9655002",
+   "collected": "2026-10-14",
+   "received": "2026-10-14",
+   "report_number": "LR-039995",
+   "panel": "Complete blood count"
+  },
+  "rows": [
+   [
+    "White blood cell count",
+    "6.2",
+    "10^3/uL",
+    "4.0 - 11.0",
+    "normal"
+   ],
+   [
+    "Hemoglobin",
+    "15.6",
+    "g/dL",
+    "12.0 - 17.0",
+    "normal"
+   ],
+   [
+    "Hematocrit",
+    "40.2",
+    "%",
+    "36.0 - 50.0",
+    "normal"
+   ],
+   [
+    "Platelet count",
+    "199",
+    "10^3/uL",
+    "150 - 400",
+    "normal"
+   ]
+  ],
+  "set": "clean",
+  "png": "/Users/nirav/development/scope health/research/docs_samples/21k22z2jf7_p1.png"
+ },
+ "21k22z2jf7_synth": {
+  "type": "lab",
+  "keys": [
+   "Bradley Ellis",
+   "1989-09-08",
+   "HG9655002",
+   "2026-10-14",
+   "2026-10-14",
+   "LR-039995",
+   "Complete blood count",
+   "Tests reported: 4",
+   "Clinical Laboratory, Eastside"
+  ],
+  "fields": {
+   "patient": "Bradley Ellis",
+   "date_of_birth": "1989-09-08",
+   "sex": "M",
+   "record_number": "HG9655002",
+   "collected": "2026-10-14",
+   "received": "2026-10-14",
+   "report_number": "LR-039995",
+   "panel": "Complete blood count"
+  },
+  "rows": [
+   [
+    "White blood cell count",
+    "6.2",
+    "10^3/uL",
+    "4.0 - 11.0",
+    "normal"
+   ],
+   [
+    "Hemoglobin",
+    "15.6",
+    "g/dL",
+    "12.0 - 17.0",
+    "normal"
+   ],
+   [
+    "Hematocrit",
+    "40.2",
+    "%",
+    "36.0 - 50.0",
+    "normal"
+   ],
+   [
+    "Platelet count",
+    "199",
+    "10^3/uL",
+    "150 - 400",
+    "normal"
+   ]
+  ],
+  "set": "synth",
+  "png": "/Users/nirav/development/scope health/research/docs_samples/synth/21k22z2jf7_synth.png"
+ },
+ "2cxqcvpb6l": {
+  "type": "lab",
+  "keys": [
+   "Russell Mitchell",
+   "2006-08-10",
+   "HG2422299",
+   "2026-10-10",
+   "2026-10-14",
+   "LR-039979",
+   "Liver function panel",
+   "Tests reported: 5",
+   "Clinical Laboratory, Highline"
+  ],
+  "fields": {
+   "patient": "Russell Mitchell",
+   "date_of_birth": "2006-08-10",
+   "sex": "M",
+   "record_number": "HG2422299",
+   "collected": "2026-10-10",
+   "received": "2026-10-14",
+   "report_number": "LR-039979",
+   "panel": "Liver function panel"
+  },
+  "rows": [
+   [
+    "Alanine aminotransferase",
+    "42",
+    "U/L",
+    "7 - 56",
+    "normal"
+   ],
+   [
+    "Aspartate aminotransferase",
+    "25",
+    "U/L",
+    "10 - 40",
+    "normal"
+   ],
+   [
+    "Alkaline phosphatase",
+    "52",
+    "U/L",
+    "44 - 147",
+    "normal"
+   ],
+   [
+    "Total bilirubin",
+    "0.8",
+    "mg/dL",
+    "0.1 - 1.2",
+    "normal"
+   ],
+   [
+    "Albumin",
+    "4.1",
+    "g/dL",
+    "3.4 - 5.4",
+    "normal"
+   ]
+  ],
+  "set": "clean",
+  "png": "/Users/nirav/development/scope health/research/docs_samples/2cxqcvpb6l_p1.png"
+ },
+ "2cxqcvpb6l_synth": {
+  "type": "lab",
+  "keys": [
+   "Russell Mitchell",
+   "2006-08-10",
+   "HG2422299",
+   "2026-10-10",
+   "2026-10-14",
+   "LR-039979",
+   "Liver function panel",
+   "Tests reported: 5",
+   "Clinical Laboratory, Highline"
+  ],
+  "fields": {
+   "patient": "Russell Mitchell",
+   "date_of_birth": "2006-08-10",
+   "sex": "M",
+   "record_number": "HG2422299",
+   "collected": "2026-10-10",
+   "received": "2026-10-14",
+   "report_number": "LR-039979",
+   "panel": "Liver function panel"
+  },
+  "rows": [
+   [
+    "Alanine aminotransferase",
+    "42",
+    "U/L",
+    "7 - 56",
+    "normal"
+   ],
+   [
+    "Aspartate aminotransferase",
+    "25",
+    "U/L",
+    "10 - 40",
+    "normal"
+   ],
+   [
+    "Alkaline phosphatase",
+    "52",
+    "U/L",
+    "44 - 147",
+    "normal"
+   ],
+   [
+    "Total bilirubin",
+    "0.8",
+    "mg/dL",
+    "0.1 - 1.2",
+    "normal"
+   ],
+   [
+    "Albumin",
+    "4.1",
+    "g/dL",
+    "3.4 - 5.4",
+    "normal"
+   ]
+  ],
+  "set": "synth",
+  "png": "/Users/nirav/development/scope health/research/docs_samples/synth/2cxqcvpb6l_synth.png"
+ },
+ "2ph57bq71z": {
+  "type": "statement",
+  "keys": [
+   "$1771.95",
+   "$246.30",
+   "$5783.78",
+   "-$20.00",
+   "-$4238.13",
+   "2025-12-14",
+   "2026-01-12",
+   "785-555-0117",
+   "HG4552820",
+   "Kathleen Cook"
+  ],
+  "rows": [],
+  "set": "clean",
+  "png": "/Users/nirav/development/scope health/research/docs_samples/2ph57bq71z_p1.png"
+ },
+ "2ph57bq71z_synth": {
+  "type": "statement",
+  "keys": [
+   "$1771.95",
+   "$246.30",
+   "$5783.78",
+   "-$20.00",
+   "-$4238.13",
+   "2025-12-14",
+   "2026-01-12",
+   "785-555-0117",
+   "HG4552820",
+   "Kathleen Cook"
+  ],
+  "rows": [],
+  "set": "synth",
+  "png": "/Users/nirav/development/scope health/research/docs_samples/synth/2ph57bq71z_synth.png"
+ },
+ "3141523qmg": {
+  "type": "statement",
+  "keys": [
+   "$0.00",
+   "$184.00",
+   "$598.65",
+   "-$0.00",
+   "-$414.65",
+   "2026-10-14",
+   "2026-11-09",
+   "785-555-0114",
+   "HG7249716",
+   "Ronald Jones"
+  ],
+  "rows": [],
+  "set": "clean",
+  "png": "/Users/nirav/development/scope health/research/docs_samples/3141523qmg_p1.png"
+ },
+ "3141523qmg_synth": {
+  "type": "statement",
+  "keys": [
+   "$0.00",
+   "$184.00",
+   "$598.65",
+   "-$0.00",
+   "-$414.65",
+   "2026-10-14",
+   "2026-11-09",
+   "785-555-0114",
+   "HG7249716",
+   "Ronald Jones"
+  ],
+  "rows": [],
+  "set": "synth",
+  "png": "/Users/nirav/development/scope health/research/docs_samples/synth/3141523qmg_synth.png"
+ },
+ "33bw7vbdz5": {
+  "type": "lab",
+  "keys": [
+   "Eric Wright",
+   "1992-04-20",
+   "HG7803396",
+   "2026-10-10",
+   "2026-10-13",
+   "LR-039903",
+   "Hemoglobin A1c",
+   "Tests reported: 1",
+   "Clinical Laboratory, Eastside"
+  ],
+  "fields": {
+   "patient": "Eric Wright",
+   "date_of_birth": "1992-04-20",
+   "sex": "M",
+   "record_number": "HG7803396",
+   "collected": "2026-10-10",
+   "received": "2026-10-13",
+   "report_number": "LR-039903",
+   "panel": "Hemoglobin A1c"
+  },
+  "rows": [
+   [
+    "Hemoglobin A1c",
+    "4.4",
+    "%",
+    "4.0 - 5.6",
+    "normal"
+   ]
+  ],
+  "set": "clean",
+  "png": "/Users/nirav/development/scope health/research/docs_samples/33bw7vbdz5_p1.png"
+ },
+ "33bw7vbdz5_synth": {
+  "type": "lab",
+  "keys": [
+   "Eric Wright",
+   "1992-04-20",
+   "HG7803396",
+   "2026-10-10",
+   "2026-10-13",
+   "LR-039903",
+   "Hemoglobin A1c",
+   "Tests reported: 1",
+   "Clinical Laboratory, Eastside"
+  ],
+  "fields": {
+   "patient": "Eric Wright",
+   "date_of_birth": "1992-04-20",
+   "sex": "M",
+   "record_number": "HG7803396",
+   "collected": "2026-10-10",
+   "received": "2026-10-13",
+   "report_number": "LR-039903",
+   "panel": "Hemoglobin A1c"
+  },
+  "rows": [
+   [
+    "Hemoglobin A1c",
+    "4.4",
+    "%",
+    "4.0 - 5.6",
+    "normal"
+   ]
+  ],
+  "set": "synth",
+  "png": "/Users/nirav/development/scope health/research/docs_samples/synth/33bw7vbdz5_synth.png"
+ },
+ "34vz41brm2": {
+  "type": "lab",
+  "keys": [
+   "Jessica Smith",
+   "1952-07-05",
+   "HG1770625",
+   "2026-10-13",
+   "2026-10-14",
+   "LR-039996",
+   "Thyroid panel",
+   "Tests reported: 2",
+   "Clinical Laboratory, Northgate"
+  ],
+  "fields": {
+   "patient": "Jessica Smith",
+   "date_of_birth": "1952-07-05",
+   "sex": "F",
+   "record_number": "HG1770625",
+   "collected": "2026-10-13",
+   "received": "2026-10-14",
+   "report_number": "LR-039996",
+   "panel": "Thyroid panel"
+  },
+  "rows": [
+   [
+    "Thyroid stimulating hormone",
+    "2.46",
+    "mIU/L",
+    "0.40 - 4.00",
+    "normal"
+   ],
+   [
+    "Free T4",
+    "1.48",
+    "ng/dL",
+    "0.80 - 1.80",
+    "normal"
+   ]
+  ],
+  "set": "clean",
+  "png": "/Users/nirav/development/scope health/research/docs_samples/34vz41brm2_p1.png"
+ },
+ "34vz41brm2_synth": {
+  "type": "lab",
+  "keys": [
+   "Jessica Smith",
+   "1952-07-05",
+   "HG1770625",
+   "2026-10-13",
+   "2026-10-14",
+   "LR-039996",
+   "Thyroid panel",
+   "Tests reported: 2",
+   "Clinical Laboratory, Northgate"
+  ],
+  "fields": {
+   "patient": "Jessica Smith",
+   "date_of_birth": "1952-07-05",
+   "sex": "F",
+   "record_number": "HG1770625",
+   "collected": "2026-10-13",
+   "received": "2026-10-14",
+   "report_number": "LR-039996",
+   "panel": "Thyroid panel"
+  },
+  "rows": [
+   [
+    "Thyroid stimulating hormone",
+    "2.46",
+    "mIU/L",
+    "0.40 - 4.00",
+    "normal"
+   ],
+   [
+    "Free T4",
+    "1.48",
+    "ng/dL",
+    "0.80 - 1.80",
+    "normal"
+   ]
+  ],
+  "set": "synth",
+  "png": "/Users/nirav/development/scope health/research/docs_samples/synth/34vz41brm2_synth.png"
+ },
+ "37rg7zd4tj": {
+  "type": "referral",
+  "keys": [
+   "Marrow Lake Urgent Care",
+   "2026-10-14",
+   "Willie Flores",
+   "1989-09-13",
+   "Referral Coordinator, Eastside",
+   "970-555-0188",
+   "970-555-0136",
+   "4224 Cedar Ridge Street, Suite 316",
+   "Palpitations and lightheadedness",
+   "routine",
+   "Kevin Robertson, MD"
+  ],
+  "rows": [],
+  "set": "clean",
+  "png": "/Users/nirav/development/scope health/research/docs_samples/37rg7zd4tj_p1.png"
+ },
+ "37rg7zd4tj_synth": {
+  "type": "referral",
+  "keys": [
+   "Marrow Lake Urgent Care",
+   "2026-10-14",
+   "Willie Flores",
+   "1989-09-13",
+   "Referral Coordinator, Eastside",
+   "970-555-0188",
+   "970-555-0136",
+   "4224 Cedar Ridge Street, Suite 316",
+   "Palpitations and lightheadedness",
+   "routine",
+   "Kevin Robertson, MD"
+  ],
+  "rows": [],
+  "set": "synth",
+  "png": "/Users/nirav/development/scope health/research/docs_samples/synth/37rg7zd4tj_synth.png"
+ },
+ "3c14sdsb4k": {
+  "type": "referral",
+  "keys": [
+   "Juniper Flats Eye and Ear",
+   "2026-10-14",
+   "Diane Brown",
+   "1950-08-29",
+   "Referral Coordinator, Lakeside",
+   "719-555-0148",
+   "719-555-0146",
+   "4626 Cedar Ridge Avenue, Suite 470",
+   "Post-fracture rehabilitation",
+   "routine",
+   "Joyce Voss, MD"
+  ],
+  "rows": [],
+  "set": "clean",
+  "png": "/Users/nirav/development/scope health/research/docs_samples/3c14sdsb4k_p1.png"
+ },
+ "3c14sdsb4k_synth": {
+  "type": "referral",
+  "keys": [
+   "Juniper Flats Eye and Ear",
+   "2026-10-14",
+   "Diane Brown",
+   "1950-08-29",
+   "Referral Coordinator, Lakeside",
+   "719-555-0148",
+   "719-555-0146",
+   "4626 Cedar Ridge Avenue, Suite 470",
+   "Post-fracture rehabilitation",
+   "routine",
+   "Joyce Voss, MD"
+  ],
+  "rows": [],
+  "set": "synth",
+  "png": "/Users/nirav/development/scope health/research/docs_samples/synth/3c14sdsb4k_synth.png"
+ },
+ "3cwnq3mk1j": {
+  "type": "lab",
+  "keys": [
+   "Cheryl Lee",
+   "2003-09-17",
+   "HG3301590",
+   "2026-10-12",
+   "2026-10-14",
+   "LR-039999",
+   "Basic metabolic panel",
+   "Tests reported: 8",
+   "Clinical Laboratory, Eastside"
+  ],
+  "fields": {
+   "patient": "Cheryl Lee",
+   "date_of_birth": "2003-09-17",
+   "sex": "F",
+   "record_number": "HG3301590",
+   "collected": "2026-10-12",
+   "received": "2026-10-14",
+   "report_number": "LR-039999",
+   "panel": "Basic metabolic panel"
+  },
+  "rows": [
+   [
+    "Sodium",
+    "144",
+    "mmol/L",
+    "135 - 145",
+    "normal"
+   ],
+   [
+    "Potassium",
+    "5.5",
+    "mmol/L",
+    "3.5 - 5.1",
+    "high"
+   ],
+   [
+    "Chloride",
+    "105",
+    "mmol/L",
+    "98 - 107",
+    "normal"
+   ],
+   [
+    "Carbon dioxide",
+    "20",
+    "mmol/L",
+    "22 - 29",
+    "low"
+   ],
+   [
+    "Blood urea nitrogen",
+    "16",
+    "mg/dL",
+    "7 - 20",
+    "normal"
+   ],
+   [
+    "Creatinine",
+    "1.46",
+    "mg/dL",
+    "0.60 - 1.30",
+    "high"
+   ],
+   [
+    "Glucose",
+    "87",
+    "mg/dL",
+    "70 - 99",
+    "normal"
+   ],
+   [
+    "Calcium",
+    "9.6",
+    "mg/dL",
+    "8.6 - 10.2",
+    "normal"
+   ]
+  ],
+  "set": "clean",
+  "png": "/Users/nirav/development/scope health/research/docs_samples/3cwnq3mk1j_p1.png"
+ },
+ "3cwnq3mk1j_synth": {
+  "type": "lab",
+  "keys": [
+   "Cheryl Lee",
+   "2003-09-17",
+   "HG3301590",
+   "2026-10-12",
+   "2026-10-14",
+   "LR-039999",
+   "Basic metabolic panel",
+   "Tests reported: 8",
+   "Clinical Laboratory, Eastside"
+  ],
+  "fields": {
+   "patient": "Cheryl Lee",
+   "date_of_birth": "2003-09-17",
+   "sex": "F",
+   "record_number": "HG3301590",
+   "collected": "2026-10-12",
+   "received": "2026-10-14",
+   "report_number": "LR-039999",
+   "panel": "Basic metabolic panel"
+  },
+  "rows": [
+   [
+    "Sodium",
+    "144",
+    "mmol/L",
+    "135 - 145",
+    "normal"
+   ],
+   [
+    "Potassium",
+    "5.5",
+    "mmol/L",
+    "3.5 - 5.1",
+    "high"
+   ],
+   [
+    "Chloride",
+    "105",
+    "mmol/L",
+    "98 - 107",
+    "normal"
+   ],
+   [
+    "Carbon dioxide",
+    "20",
+    "mmol/L",
+    "22 - 29",
+    "low"
+   ],
+   [
+    "Blood urea nitrogen",
+    "16",
+    "mg/dL",
+    "7 - 20",
+    "normal"
+   ],
+   [
+    "Creatinine",
+    "1.46",
+    "mg/dL",
+    "0.60 - 1.30",
+    "high"
+   ],
+   [
+    "Glucose",
+    "87",
+    "mg/dL",
+    "70 - 99",
+    "normal"
+   ],
+   [
+    "Calcium",
+    "9.6",
+    "mg/dL",
+    "8.6 - 10.2",
+    "normal"
+   ]
+  ],
+  "set": "synth",
+  "png": "/Users/nirav/development/scope health/research/docs_samples/synth/3cwnq3mk1j_synth.png"
+ },
+ "3t3hd3flhw": {
+  "type": "referral",
+  "keys": [
+   "Harbor Glen Medical Group",
+   "2026-10-14",
+   "Kimberly Wheeler",
+   "1989-09-01",
+   "Referral Coordinator, Stonebrook",
+   "970-555-0113",
+   "Chronic cough lasting more than eight weeks",
+   "routine",
+   "Lawrence Martin, MD"
+  ],
+  "rows": [],
+  "set": "clean",
+  "png": "/Users/nirav/development/scope health/research/docs_samples/3t3hd3flhw_p1.png"
+ },
+ "3t3hd3flhw_synth": {
+  "type": "referral",
+  "keys": [
+   "Harbor Glen Medical Group",
+   "2026-10-14",
+   "Kimberly Wheeler",
+   "1989-09-01",
+   "Referral Coordinator, Stonebrook",
+   "970-555-0113",
+   "Chronic cough lasting more than eight weeks",
+   "routine",
+   "Lawrence Martin, MD"
+  ],
+  "rows": [],
+  "set": "synth",
+  "png": "/Users/nirav/development/scope health/research/docs_samples/synth/3t3hd3flhw_synth.png"
+ },
+ "3tlvtwglps": {
+  "type": "lab",
+  "keys": [
+   "Robert Mills",
+   "1976-03-15",
+   "HG2214598",
+   "2026-10-13",
+   "2026-10-14",
+   "LR-039961",
+   "Complete blood count",
+   "Tests reported: 4",
+   "Clinical Laboratory, Lakeside"
+  ],
+  "fields": {
+   "patient": "Robert Mills",
+   "date_of_birth": "1976-03-15",
+   "sex": "M",
+   "record_number": "HG2214598",
+   "collected": "2026-10-13",
+   "received": "2026-10-14",
+   "report_number": "LR-039961",
+   "panel": "Complete blood count"
+  },
+  "rows": [
+   [
+    "White blood cell count",
+    "8.1",
+    "10^3/uL",
+    "4.0 - 11.0",
+    "normal"
+   ],
+   [
+    "Hemoglobin",
+    "14.4",
+    "g/dL",
+    "12.0 - 17.0",
+    "normal"
+   ],
+   [
+    "Hematocrit",
+    "38.8",
+    "%",
+    "36.0 - 50.0",
+    "normal"
+   ],
+   [
+    "Platelet count",
+    "245",
+    "10^3/uL",
+    "150 - 400",
+    "normal"
+   ]
+  ],
+  "set": "clean",
+  "png": "/Users/nirav/development/scope health/research/docs_samples/3tlvtwglps_p1.png"
+ },
+ "3tlvtwglps_synth": {
+  "type": "lab",
+  "keys": [
+   "Robert Mills",
+   "1976-03-15",
+   "HG2214598",
+   "2026-10-13",
+   "2026-10-14",
+   "LR-039961",
+   "Complete blood count",
+   "Tests reported: 4",
+   "Clinical Laboratory, Lakeside"
+  ],
+  "fields": {
+   "patient": "Robert Mills",
+   "date_of_birth": "1976-03-15",
+   "sex": "M",
+   "record_number": "HG2214598",
+   "collected": "2026-10-13",
+   "received": "2026-10-14",
+   "report_number": "LR-039961",
+   "panel": "Complete blood count"
+  },
+  "rows": [
+   [
+    "White blood cell count",
+    "8.1",
+    "10^3/uL",
+    "4.0 - 11.0",
+    "normal"
+   ],
+   [
+    "Hemoglobin",
+    "14.4",
+    "g/dL",
+    "12.0 - 17.0",
+    "normal"
+   ],
+   [
+    "Hematocrit",
+    "38.8",
+    "%",
+    "36.0 - 50.0",
+    "normal"
+   ],
+   [
+    "Platelet count",
+    "245",
+    "10^3/uL",
+    "150 - 400",
+    "normal"
+   ]
+  ],
+  "set": "synth",
+  "png": "/Users/nirav/development/scope health/research/docs_samples/synth/3tlvtwglps_synth.png"
+ },
+ "4220mpqnr4": {
+  "type": "referral",
+  "keys": [
+   "Tilden Grove Pediatrics",
+   "2026-10-14",
+   "Andrew Ruiz",
+   "1992-12-20",
+   "Referral Coordinator, Eastside",
+   "970-555-0177",
+   "970-555-0154",
+   "3403 Larch Parkway, Suite 135",
+   "Suspicious skin lesion on the left forearm",
+   "routine",
+   "Gloria Richards, DO"
+  ],
+  "rows": [],
+  "set": "clean",
+  "png": "/Users/nirav/development/scope health/research/docs_samples/4220mpqnr4_p1.png"
+ },
+ "4220mpqnr4_synth": {
+  "type": "referral",
+  "keys": [
+   "Tilden Grove Pediatrics",
+   "2026-10-14",
+   "Andrew Ruiz",
+   "1992-12-20",
+   "Referral Coordinator, Eastside",
+   "970-555-0177",
+   "970-555-0154",
+   "3403 Larch Parkway, Suite 135",
+   "Suspicious skin lesion on the left forearm",
+   "routine",
+   "Gloria Richards, DO"
+  ],
+  "rows": [],
+  "set": "synth",
+  "png": "/Users/nirav/development/scope health/research/docs_samples/synth/4220mpqnr4_synth.png"
+ },
+ "4fqkhlj9nv": {
+  "type": "lab",
+  "keys": [
+   "Eric Adeyemi",
+   "1978-11-26",
+   "HG2018111",
+   "2026-10-11",
+   "2026-10-14",
+   "LR-039952",
+   "Thyroid panel",
+   "Tests reported: 2",
+   "Clinical Laboratory, Eastside"
+  ],
+  "fields": {
+   "patient": "Eric Adeyemi",
+   "date_of_birth": "1978-11-26",
+   "sex": "M",
+   "record_number": "HG2018111",
+   "collected": "2026-10-11",
+   "received": "2026-10-14",
+   "report_number": "LR-039952",
+   "panel": "Thyroid panel"
+  },
+  "rows": [
+   [
+    "Thyroid stimulating hormone",
+    "4.35",
+    "mIU/L",
+    "0.40 - 4.00",
+    "high"
+   ],
+   [
+    "Free T4",
+    "1.11",
+    "ng/dL",
+    "0.80 - 1.80",
+    "normal"
+   ]
+  ],
+  "set": "clean",
+  "png": "/Users/nirav/development/scope health/research/docs_samples/4fqkhlj9nv_p1.png"
+ },
+ "4fqkhlj9nv_synth": {
+  "type": "lab",
+  "keys": [
+   "Eric Adeyemi",
+   "1978-11-26",
+   "HG2018111",
+   "2026-10-11",
+   "2026-10-14",
+   "LR-039952",
+   "Thyroid panel",
+   "Tests reported: 2",
+   "Clinical Laboratory, Eastside"
+  ],
+  "fields": {
+   "patient": "Eric Adeyemi",
+   "date_of_birth": "1978-11-26",
+   "sex": "M",
+   "record_number": "HG2018111",
+   "collected": "2026-10-11",
+   "received": "2026-10-14",
+   "report_number": "LR-039952",
+   "panel": "Thyroid panel"
+  },
+  "rows": [
+   [
+    "Thyroid stimulating hormone",
+    "4.35",
+    "mIU/L",
+    "0.40 - 4.00",
+    "high"
+   ],
+   [
+    "Free T4",
+    "1.11",
+    "ng/dL",
+    "0.80 - 1.80",
+    "normal"
+   ]
+  ],
+  "set": "synth",
+  "png": "/Users/nirav/development/scope health/research/docs_samples/synth/4fqkhlj9nv_synth.png"
+ },
+ "4kc1j7zm3w": {
+  "type": "lab",
+  "keys": [
+   "Charles Freeman",
+   "2011-05-05",
+   "HG9100058",
+   "2026-10-11",
+   "2026-10-14",
+   "LR-039967",
+   "Iron studies",
+   "Tests reported: 3",
+   "Clinical Laboratory, Eastside"
+  ],
+  "fields": {
+   "patient": "Charles Freeman",
+   "date_of_birth": "2011-05-05",
+   "sex": "M",
+   "record_number": "HG9100058",
+   "collected": "2026-10-11",
+   "received": "2026-10-14",
+   "report_number": "LR-039967",
+   "panel": "Iron studies"
+  },
+  "rows": [
+   [
+    "Ferritin",
+    "213",
+    "ng/mL",
+    "20 - 250",
+    "normal"
+   ],
+   [
+    "Serum iron",
+    "78",
+    "ug/dL",
+    "60 - 170",
+    "normal"
+   ],
+   [
+    "Transferrin saturation",
+    "33",
+    "%",
+    "20 - 50",
+    "normal"
+   ]
+  ],
+  "set": "clean",
+  "png": "/Users/nirav/development/scope health/research/docs_samples/4kc1j7zm3w_p1.png"
+ },
+ "4kc1j7zm3w_synth": {
+  "type": "lab",
+  "keys": [
+   "Charles Freeman",
+   "2011-05-05",
+   "HG9100058",
+   "2026-10-11",
+   "2026-10-14",
+   "LR-039967",
+   "Iron studies",
+   "Tests reported: 3",
+   "Clinical Laboratory, Eastside"
+  ],
+  "fields": {
+   "patient": "Charles Freeman",
+   "date_of_birth": "2011-05-05",
+   "sex": "M",
+   "record_number": "HG9100058",
+   "collected": "2026-10-11",
+   "received": "2026-10-14",
+   "report_number": "LR-039967",
+   "panel": "Iron studies"
+  },
+  "rows": [
+   [
+    "Ferritin",
+    "213",
+    "ng/mL",
+    "20 - 250",
+    "normal"
+   ],
+   [
+    "Serum iron",
+    "78",
+    "ug/dL",
+    "60 - 170",
+    "normal"
+   ],
+   [
+    "Transferrin saturation",
+    "33",
+    "%",
+    "20 - 50",
+    "normal"
+   ]
+  ],
+  "set": "synth",
+  "png": "/Users/nirav/development/scope health/research/docs_samples/synth/4kc1j7zm3w_synth.png"
+ },
+ "4kwjpmljz5": {
+  "type": "lab",
+  "keys": [
+   "Olivia Wallace",
+   "1994-08-06",
+   "HG5745711",
+   "2026-10-10",
+   "2026-10-14",
+   "LR-039991",
+   "Vitamin D",
+   "Tests reported: 1",
+   "Clinical Laboratory, Riverbend"
+  ],
+  "fields": {
+   "patient": "Olivia Wallace",
+   "date_of_birth": "1994-08-06",
+   "sex": "F",
+   "record_number": "HG5745711",
+   "collected": "2026-10-10",
+   "received": "2026-10-14",
+   "report_number": "LR-039991",
+   "panel": "Vitamin D"
+  },
+  "rows": [
+   [
+    "25-hydroxyvitamin D",
+    "74",
+    "ng/mL",
+    "30 - 100",
+    "normal"
+   ]
+  ],
+  "set": "clean",
+  "png": "/Users/nirav/development/scope health/research/docs_samples/4kwjpmljz5_p1.png"
+ },
+ "4kwjpmljz5_synth": {
+  "type": "lab",
+  "keys": [
+   "Olivia Wallace",
+   "1994-08-06",
+   "HG5745711",
+   "2026-10-10",
+   "2026-10-14",
+   "LR-039991",
+   "Vitamin D",
+   "Tests reported: 1",
+   "Clinical Laboratory, Riverbend"
+  ],
+  "fields": {
+   "patient": "Olivia Wallace",
+   "date_of_birth": "1994-08-06",
+   "sex": "F",
+   "record_number": "HG5745711",
+   "collected": "2026-10-10",
+   "received": "2026-10-14",
+   "report_number": "LR-039991",
+   "panel": "Vitamin D"
+  },
+  "rows": [
+   [
+    "25-hydroxyvitamin D",
+    "74",
+    "ng/mL",
+    "30 - 100",
+    "normal"
+   ]
+  ],
+  "set": "synth",
+  "png": "/Users/nirav/development/scope health/research/docs_samples/synth/4kwjpmljz5_synth.png"
+ },
+ "4m0tnj58gj": {
+  "type": "referral",
+  "keys": [
+   "Wickford Women's Health",
+   "2026-05-26",
+   "Christine Li",
+   "1954-10-25",
+   "Referral Coordinator, Eastside",
+   "719-555-0167",
+   "719-555-0129",
+   "8360 Orchard Avenue, Suite 381",
+   "Evaluation of chest pain on exertion",
+   "urgent",
+   "Joyce Khan, DO"
+  ],
+  "rows": [],
+  "set": "clean",
+  "png": "/Users/nirav/development/scope health/research/docs_samples/4m0tnj58gj_p1.png"
+ },
+ "4m0tnj58gj_synth": {
+  "type": "referral",
+  "keys": [
+   "Wickford Women's Health",
+   "2026-05-26",
+   "Christine Li",
+   "1954-10-25",
+   "Referral Coordinator, Eastside",
+   "719-555-0167",
+   "719-555-0129",
+   "8360 Orchard Avenue, Suite 381",
+   "Evaluation of chest pain on exertion",
+   "urgent",
+   "Joyce Khan, DO"
+  ],
+  "rows": [],
+  "set": "synth",
+  "png": "/Users/nirav/development/scope health/research/docs_samples/synth/4m0tnj58gj_synth.png"
+ },
+ "4nswk8vqpn": {
+  "type": "lab",
+  "keys": [
+   "David Ram\u00edrez",
+   "2006-01-03",
+   "HG5460668",
+   "2026-10-13",
+   "2026-10-14",
+   "LR-040000",
+   "Basic metabolic panel",
+   "Tests reported: 8",
+   "Clinical Laboratory, Riverbend"
+  ],
+  "fields": {
+   "patient": "David Ram\u00edrez",
+   "date_of_birth": "2006-01-03",
+   "sex": "M",
+   "record_number": "HG5460668",
+   "collected": "2026-10-13",
+   "received": "2026-10-14",
+   "report_number": "LR-040000",
+   "panel": "Basic metabolic panel"
+  },
+  "rows": [
+   [
+    "Sodium",
+    "145",
+    "mmol/L",
+    "135 - 145",
+    "normal"
+   ],
+   [
+    "Potassium",
+    "3.4",
+    "mmol/L",
+    "3.5 - 5.1",
+    "low"
+   ],
+   [
+    "Chloride",
+    "106",
+    "mmol/L",
+    "98 - 107",
+    "normal"
+   ],
+   [
+    "Carbon dioxide",
+    "27",
+    "mmol/L",
+    "22 - 29",
+    "normal"
+   ],
+   [
+    "Blood urea nitrogen",
+    "10",
+    "mg/dL",
+    "7 - 20",
+    "normal"
+   ],
+   [
+    "Creatinine",
+    "1.20",
+    "mg/dL",
+    "0.60 - 1.30",
+    "normal"
+   ],
+   [
+    "Glucose",
+    "81",
+    "mg/dL",
+    "70 - 99",
+    "normal"
+   ],
+   [
+    "Calcium",
+    "9.0",
+    "mg/dL",
+    "8.6 - 10.2",
+    "normal"
+   ]
+  ],
+  "set": "clean",
+  "png": "/Users/nirav/development/scope health/research/docs_samples/4nswk8vqpn_p1.png"
+ },
+ "4nswk8vqpn_synth": {
+  "type": "lab",
+  "keys": [
+   "David Ram\u00edrez",
+   "2006-01-03",
+   "HG5460668",
+   "2026-10-13",
+   "2026-10-14",
+   "LR-040000",
+   "Basic metabolic panel",
+   "Tests reported: 8",
+   "Clinical Laboratory, Riverbend"
+  ],
+  "fields": {
+   "patient": "David Ram\u00edrez",
+   "date_of_birth": "2006-01-03",
+   "sex": "M",
+   "record_number": "HG5460668",
+   "collected": "2026-10-13",
+   "received": "2026-10-14",
+   "report_number": "LR-040000",
+   "panel": "Basic metabolic panel"
+  },
+  "rows": [
+   [
+    "Sodium",
+    "145",
+    "mmol/L",
+    "135 - 145",
+    "normal"
+   ],
+   [
+    "Potassium",
+    "3.4",
+    "mmol/L",
+    "3.5 - 5.1",
+    "low"
+   ],
+   [
+    "Chloride",
+    "106",
+    "mmol/L",
+    "98 - 107",
+    "normal"
+   ],
+   [
+    "Carbon dioxide",
+    "27",
+    "mmol/L",
+    "22 - 29",
+    "normal"
+   ],
+   [
+    "Blood urea nitrogen",
+    "10",
+    "mg/dL",
+    "7 - 20",
+    "normal"
+   ],
+   [
+    "Creatinine",
+    "1.20",
+    "mg/dL",
+    "0.60 - 1.30",
+    "normal"
+   ],
+   [
+    "Glucose",
+    "81",
+    "mg/dL",
+    "70 - 99",
+    "normal"
+   ],
+   [
+    "Calcium",
+    "9.0",
+    "mg/dL",
+    "8.6 - 10.2",
+    "normal"
+   ]
+  ],
+  "set": "synth",
+  "png": "/Users/nirav/development/scope health/research/docs_samples/synth/4nswk8vqpn_synth.png"
+ },
+ "56r4srxx46": {
+  "type": "lab",
+  "keys": [
+   "Marilyn Ortiz",
+   "2026-04-02",
+   "HG6175186",
+   "2026-10-11",
+   "2026-10-14",
+   "LR-039980",
+   "Lipid panel",
+   "Tests reported: 4",
+   "Clinical Laboratory, Front Range"
+  ],
+  "fields": {
+   "patient": "Marilyn Ortiz",
+   "date_of_birth": "2026-04-02",
+   "sex": "F",
+   "record_number": "HG6175186",
+   "collected": "2026-10-11",
+   "received": "2026-10-14",
+   "report_number": "LR-039980",
+   "panel": "Lipid panel"
+  },
+  "rows": [
+   [
+    "Total cholesterol",
+    "178",
+    "mg/dL",
+    "125 - 200",
+    "normal"
+   ],
+   [
+    "LDL cholesterol",
+    "78",
+    "mg/dL",
+    "50 - 100",
+    "normal"
+   ],
+   [
+    "HDL cholesterol",
+    "91",
+    "mg/dL",
+    "40 - 90",
+    "high"
+   ],
+   [
+    "Triglycerides",
+    "73",
+    "mg/dL",
+    "40 - 150",
+    "normal"
+   ]
+  ],
+  "set": "clean",
+  "png": "/Users/nirav/development/scope health/research/docs_samples/56r4srxx46_p1.png"
+ },
+ "56r4srxx46_synth": {
+  "type": "lab",
+  "keys": [
+   "Marilyn Ortiz",
+   "2026-04-02",
+   "HG6175186",
+   "2026-10-11",
+   "2026-10-14",
+   "LR-039980",
+   "Lipid panel",
+   "Tests reported: 4",
+   "Clinical Laboratory, Front Range"
+  ],
+  "fields": {
+   "patient": "Marilyn Ortiz",
+   "date_of_birth": "2026-04-02",
+   "sex": "F",
+   "record_number": "HG6175186",
+   "collected": "2026-10-11",
+   "received": "2026-10-14",
+   "report_number": "LR-039980",
+   "panel": "Lipid panel"
+  },
+  "rows": [
+   [
+    "Total cholesterol",
+    "178",
+    "mg/dL",
+    "125 - 200",
+    "normal"
+   ],
+   [
+    "LDL cholesterol",
+    "78",
+    "mg/dL",
+    "50 - 100",
+    "normal"
+   ],
+   [
+    "HDL cholesterol",
+    "91",
+    "mg/dL",
+    "40 - 90",
+    "high"
+   ],
+   [
+    "Triglycerides",
+    "73",
+    "mg/dL",
+    "40 - 150",
+    "normal"
+   ]
+  ],
+  "set": "synth",
+  "png": "/Users/nirav/development/scope health/research/docs_samples/synth/56r4srxx46_synth.png"
+ },
+ "575k1s4wfc": {
+  "type": "lab",
+  "keys": [
+   "Debra \u00c1lvarez",
+   "1943-01-04",
+   "HG4778819",
+   "2026-10-10",
+   "2026-10-14",
+   "LR-039978",
+   "Iron studies",
+   "Tests reported: 3",
+   "Clinical Laboratory, Front Range"
+  ],
+  "fields": {
+   "patient": "Debra \u00c1lvarez",
+   "date_of_birth": "1943-01-04",
+   "sex": "F",
+   "record_number": "HG4778819",
+   "collected": "2026-10-10",
+   "received": "2026-10-14",
+   "report_number": "LR-039978",
+   "panel": "Iron studies"
+  },
+  "rows": [
+   [
+    "Ferritin",
+    "214",
+    "ng/mL",
+    "20 - 250",
+    "normal"
+   ],
+   [
+    "Serum iron",
+    "142",
+    "ug/dL",
+    "60 - 170",
+    "normal"
+   ],
+   [
+    "Transferrin saturation",
+    "30",
+    "%",
+    "20 - 50",
+    "normal"
+   ]
+  ],
+  "set": "clean",
+  "png": "/Users/nirav/development/scope health/research/docs_samples/575k1s4wfc_p1.png"
+ },
+ "575k1s4wfc_synth": {
+  "type": "lab",
+  "keys": [
+   "Debra \u00c1lvarez",
+   "1943-01-04",
+   "HG4778819",
+   "2026-10-10",
+   "2026-10-14",
+   "LR-039978",
+   "Iron studies",
+   "Tests reported: 3",
+   "Clinical Laboratory, Front Range"
+  ],
+  "fields": {
+   "patient": "Debra \u00c1lvarez",
+   "date_of_birth": "1943-01-04",
+   "sex": "F",
+   "record_number": "HG4778819",
+   "collected": "2026-10-10",
+   "received": "2026-10-14",
+   "report_number": "LR-039978",
+   "panel": "Iron studies"
+  },
+  "rows": [
+   [
+    "Ferritin",
+    "214",
+    "ng/mL",
+    "20 - 250",
+    "normal"
+   ],
+   [
+    "Serum iron",
+    "142",
+    "ug/dL",
+    "60 - 170",
+    "normal"
+   ],
+   [
+    "Transferrin saturation",
+    "30",
+    "%",
+    "20 - 50",
+    "normal"
+   ]
+  ],
+  "set": "synth",
+  "png": "/Users/nirav/development/scope health/research/docs_samples/synth/575k1s4wfc_synth.png"
+ },
+ "58z2c7k8jd": {
+  "type": "statement",
+  "keys": [
+   "$0.00",
+   "$1771.98",
+   "$6031.07",
+   "-$35.00",
+   "-$4224.09",
+   "2026-10-14",
+   "2026-11-09",
+   "785-555-0114",
+   "HG2594869",
+   "Juan Rogers"
+  ],
+  "rows": [],
+  "set": "clean",
+  "png": "/Users/nirav/development/scope health/research/docs_samples/58z2c7k8jd_p1.png"
+ },
+ "58z2c7k8jd_synth": {
+  "type": "statement",
+  "keys": [
+   "$0.00",
+   "$1771.98",
+   "$6031.07",
+   "-$35.00",
+   "-$4224.09",
+   "2026-10-14",
+   "2026-11-09",
+   "785-555-0114",
+   "HG2594869",
+   "Juan Rogers"
+  ],
+  "rows": [],
+  "set": "synth",
+  "png": "/Users/nirav/development/scope health/research/docs_samples/synth/58z2c7k8jd_synth.png"
+ },
+ "5h30v40jq3": {
+  "type": "lab",
+  "keys": [
+   "Richard Kim",
+   "2024-11-03",
+   "HG6916663",
+   "2026-10-11",
+   "2026-10-14",
+   "LR-039955",
+   "Lipid panel",
+   "Tests reported: 4",
+   "Clinical Laboratory, Highline"
+  ],
+  "fields": {
+   "patient": "Richard Kim",
+   "date_of_birth": "2024-11-03",
+   "sex": "M",
+   "record_number": "HG6916663",
+   "collected": "2026-10-11",
+   "received": "2026-10-14",
+   "report_number": "LR-039955",
+   "panel": "Lipid panel"
+  },
+  "rows": [
+   [
+    "Total cholesterol",
+    "193",
+    "mg/dL",
+    "125 - 200",
+    "normal"
+   ],
+   [
+    "LDL cholesterol",
+    "85",
+    "mg/dL",
+    "50 - 100",
+    "normal"
+   ],
+   [
+    "HDL cholesterol",
+    "61",
+    "mg/dL",
+    "40 - 90",
+    "normal"
+   ],
+   [
+    "Triglycerides",
+    "77",
+    "mg/dL",
+    "40 - 150",
+    "normal"
+   ]
+  ],
+  "set": "clean",
+  "png": "/Users/nirav/development/scope health/research/docs_samples/5h30v40jq3_p1.png"
+ },
+ "5h30v40jq3_synth": {
+  "type": "lab",
+  "keys": [
+   "Richard Kim",
+   "2024-11-03",
+   "HG6916663",
+   "2026-10-11",
+   "2026-10-14",
+   "LR-039955",
+   "Lipid panel",
+   "Tests reported: 4",
+   "Clinical Laboratory, Highline"
+  ],
+  "fields": {
+   "patient": "Richard Kim",
+   "date_of_birth": "2024-11-03",
+   "sex": "M",
+   "record_number": "HG6916663",
+   "collected": "2026-10-11",
+   "received": "2026-10-14",
+   "report_number": "LR-039955",
+   "panel": "Lipid panel"
+  },
+  "rows": [
+   [
+    "Total cholesterol",
+    "193",
+    "mg/dL",
+    "125 - 200",
+    "normal"
+   ],
+   [
+    "LDL cholesterol",
+    "85",
+    "mg/dL",
+    "50 - 100",
+    "normal"
+   ],
+   [
+    "HDL cholesterol",
+    "61",
+    "mg/dL",
+    "40 - 90",
+    "normal"
+   ],
+   [
+    "Triglycerides",
+    "77",
+    "mg/dL",
+    "40 - 150",
+    "normal"
+   ]
+  ],
+  "set": "synth",
+  "png": "/Users/nirav/development/scope health/research/docs_samples/synth/5h30v40jq3_synth.png"
+ },
+ "5hkwgqxr1n": {
+  "type": "lab",
+  "keys": [
+   "Jesus Voss",
+   "1967-09-20",
+   "HG8682450",
+   "2026-10-11",
+   "2026-10-14",
+   "LR-039987",
+   "Thyroid panel",
+   "Tests reported: 2",
+   "Clinical Laboratory, Willow Creek"
+  ],
+  "fields": {
+   "patient": "Jesus Voss",
+   "date_of_birth": "1967-09-20",
+   "sex": "M",
+   "record_number": "HG8682450",
+   "collected": "2026-10-11",
+   "received": "2026-10-14",
+   "report_number": "LR-039987",
+   "panel": "Thyroid panel"
+  },
+  "rows": [
+   [
+    "Thyroid stimulating hormone",
+    "1.32",
+    "mIU/L",
+    "0.40 - 4.00",
+    "normal"
+   ],
+   [
+    "Free T4",
+    "1.85",
+    "ng/dL",
+    "0.80 - 1.80",
+    "high"
+   ]
+  ],
+  "set": "clean",
+  "png": "/Users/nirav/development/scope health/research/docs_samples/5hkwgqxr1n_p1.png"
+ },
+ "5hkwgqxr1n_synth": {
+  "type": "lab",
+  "keys": [
+   "Jesus Voss",
+   "1967-09-20",
+   "HG8682450",
+   "2026-10-11",
+   "2026-10-14",
+   "LR-039987",
+   "Thyroid panel",
+   "Tests reported: 2",
+   "Clinical Laboratory, Willow Creek"
+  ],
+  "fields": {
+   "patient": "Jesus Voss",
+   "date_of_birth": "1967-09-20",
+   "sex": "M",
+   "record_number": "HG8682450",
+   "collected": "2026-10-11",
+   "received": "2026-10-14",
+   "report_number": "LR-039987",
+   "panel": "Thyroid panel"
+  },
+  "rows": [
+   [
+    "Thyroid stimulating hormone",
+    "1.32",
+    "mIU/L",
+    "0.40 - 4.00",
+    "normal"
+   ],
+   [
+    "Free T4",
+    "1.85",
+    "ng/dL",
+    "0.80 - 1.80",
+    "high"
+   ]
+  ],
+  "set": "synth",
+  "png": "/Users/nirav/development/scope health/research/docs_samples/synth/5hkwgqxr1n_synth.png"
+ },
+ "62xz9n2lgg": {
+  "type": "lab",
+  "keys": [
+   "Wayne Robertson",
+   "2019-08-14",
+   "HG9765957",
+   "2026-10-10",
+   "2026-10-14",
+   "LR-039998",
+   "Complete blood count",
+   "Tests reported: 4",
+   "Clinical Laboratory, Lakeside"
+  ],
+  "fields": {
+   "patient": "Wayne Robertson",
+   "date_of_birth": "2019-08-14",
+   "sex": "M",
+   "record_number": "HG9765957",
+   "collected": "2026-10-10",
+   "received": "2026-10-14",
+   "report_number": "LR-039998",
+   "panel": "Complete blood count"
+  },
+  "rows": [
+   [
+    "White blood cell count",
+    "5.3",
+    "10^3/uL",
+    "4.0 - 11.0",
+    "normal"
+   ],
+   [
+    "Hemoglobin",
+    "12.6",
+    "g/dL",
+    "12.0 - 17.0",
+    "normal"
+   ],
+   [
+    "Hematocrit",
+    "31.6",
+    "%",
+    "36.0 - 50.0",
+    "low"
+   ],
+   [
+    "Platelet count",
+    "362",
+    "10^3/uL",
+    "150 - 400",
+    "normal"
+   ]
+  ],
+  "set": "clean",
+  "png": "/Users/nirav/development/scope health/research/docs_samples/62xz9n2lgg_p1.png"
+ },
+ "62xz9n2lgg_synth": {
+  "type": "lab",
+  "keys": [
+   "Wayne Robertson",
+   "2019-08-14",
+   "HG9765957",
+   "2026-10-10",
+   "2026-10-14",
+   "LR-039998",
+   "Complete blood count",
+   "Tests reported: 4",
+   "Clinical Laboratory, Lakeside"
+  ],
+  "fields": {
+   "patient": "Wayne Robertson",
+   "date_of_birth": "2019-08-14",
+   "sex": "M",
+   "record_number": "HG9765957",
+   "collected": "2026-10-10",
+   "received": "2026-10-14",
+   "report_number": "LR-039998",
+   "panel": "Complete blood count"
+  },
+  "rows": [
+   [
+    "White blood cell count",
+    "5.3",
+    "10^3/uL",
+    "4.0 - 11.0",
+    "normal"
+   ],
+   [
+    "Hemoglobin",
+    "12.6",
+    "g/dL",
+    "12.0 - 17.0",
+    "normal"
+   ],
+   [
+    "Hematocrit",
+    "31.6",
+    "%",
+    "36.0 - 50.0",
+    "low"
+   ],
+   [
+    "Platelet count",
+    "362",
+    "10^3/uL",
+    "150 - 400",
+    "normal"
+   ]
+  ],
+  "set": "synth",
+  "png": "/Users/nirav/development/scope health/research/docs_samples/synth/62xz9n2lgg_synth.png"
+ },
+ "684lvprdx4": {
+  "type": "referral",
+  "keys": [
+   "Alder Creek Family Practice",
+   "2026-10-13",
+   "Carolyn Scott",
+   "2019-07-10",
+   "Referral Coordinator, Stonebrook",
+   "620-555-0173",
+   "620-555-0192",
+   "478 Depot Parkway, Suite 472",
+   "Recurrent urinary tract infections",
+   "Justin McCoy, MD"
+  ],
+  "rows": [],
+  "set": "clean",
+  "png": "/Users/nirav/development/scope health/research/docs_samples/684lvprdx4_p1.png"
+ },
+ "684lvprdx4_synth": {
+  "type": "referral",
+  "keys": [
+   "Alder Creek Family Practice",
+   "2026-10-13",
+   "Carolyn Scott",
+   "2019-07-10",
+   "Referral Coordinator, Stonebrook",
+   "620-555-0173",
+   "620-555-0192",
+   "478 Depot Parkway, Suite 472",
+   "Recurrent urinary tract infections",
+   "Justin McCoy, MD"
+  ],
+  "rows": [],
+  "set": "synth",
+  "png": "/Users/nirav/development/scope health/research/docs_samples/synth/684lvprdx4_synth.png"
+ },
+ "6b9n35hzl1": {
+  "type": "referral",
+  "keys": [
+   "Summit Hollow Cardiology Partners",
+   "2026-10-14",
+   "Frances Williamson",
+   "2014-05-02",
+   "Referral Coordinator, Eastside",
+   "785-555-0122",
+   "785-555-0126",
+   "1780 Orchard Road, Suite 463",
+   "Uncontrolled type 2 diabetes",
+   "urgent",
+   "Joyce Wheeler, PA"
+  ],
+  "rows": [],
+  "set": "clean",
+  "png": "/Users/nirav/development/scope health/research/docs_samples/6b9n35hzl1_p1.png"
+ },
+ "6b9n35hzl1_synth": {
+  "type": "referral",
+  "keys": [
+   "Summit Hollow Cardiology Partners",
+   "2026-10-14",
+   "Frances Williamson",
+   "2014-05-02",
+   "Referral Coordinator, Eastside",
+   "785-555-0122",
+   "785-555-0126",
+   "1780 Orchard Road, Suite 463",
+   "Uncontrolled type 2 diabetes",
+   "urgent",
+   "Joyce Wheeler, PA"
+  ],
+  "rows": [],
+  "set": "synth",
+  "png": "/Users/nirav/development/scope health/research/docs_samples/synth/6b9n35hzl1_synth.png"
+ },
+ "6chq9nswng": {
+  "type": "lab",
+  "keys": [
+   "William Vazquez",
+   "1992-04-16",
+   "HG8192415",
+   "2025-11-23",
+   "2025-11-24",
+   "LR-022355",
+   "Liver function panel",
+   "Tests reported: 5",
+   "Clinical Laboratory, Lakeside"
+  ],
+  "fields": {
+   "patient": "William Vazquez",
+   "date_of_birth": "1992-04-16",
+   "sex": "M",
+   "record_number": "HG8192415",
+   "collected": "2025-11-23",
+   "received": "2025-11-24",
+   "report_number": "LR-022355",
+   "panel": "Liver function panel"
+  },
+  "rows": [
+   [
+    "Alanine aminotransferase",
+    "43",
+    "U/L",
+    "7 - 56",
+    "normal"
+   ],
+   [
+    "Aspartate aminotransferase",
+    "17",
+    "U/L",
+    "10 - 40",
+    "normal"
+   ],
+   [
+    "Alkaline phosphatase",
+    "176",
+    "U/L",
+    "44 - 147",
+    "high"
+   ],
+   [
+    "Total bilirubin",
+    "0.5",
+    "mg/dL",
+    "0.1 - 1.2",
+    "normal"
+   ],
+   [
+    "Albumin",
+    "5.1",
+    "g/dL",
+    "3.4 - 5.4",
+    "normal"
+   ]
+  ],
+  "set": "clean",
+  "png": "/Users/nirav/development/scope health/research/docs_samples/6chq9nswng_p1.png"
+ },
+ "6chq9nswng_synth": {
+  "type": "lab",
+  "keys": [
+   "William Vazquez",
+   "1992-04-16",
+   "HG8192415",
+   "2025-11-23",
+   "2025-11-24",
+   "LR-022355",
+   "Liver function panel",
+   "Tests reported: 5",
+   "Clinical Laboratory, Lakeside"
+  ],
+  "fields": {
+   "patient": "William Vazquez",
+   "date_of_birth": "1992-04-16",
+   "sex": "M",
+   "record_number": "HG8192415",
+   "collected": "2025-11-23",
+   "received": "2025-11-24",
+   "report_number": "LR-022355",
+   "panel": "Liver function panel"
+  },
+  "rows": [
+   [
+    "Alanine aminotransferase",
+    "43",
+    "U/L",
+    "7 - 56",
+    "normal"
+   ],
+   [
+    "Aspartate aminotransferase",
+    "17",
+    "U/L",
+    "10 - 40",
+    "normal"
+   ],
+   [
+    "Alkaline phosphatase",
+    "176",
+    "U/L",
+    "44 - 147",
+    "high"
+   ],
+   [
+    "Total bilirubin",
+    "0.5",
+    "mg/dL",
+    "0.1 - 1.2",
+    "normal"
+   ],
+   [
+    "Albumin",
+    "5.1",
+    "g/dL",
+    "3.4 - 5.4",
+    "normal"
+   ]
+  ],
+  "set": "synth",
+  "png": "/Users/nirav/development/scope health/research/docs_samples/synth/6chq9nswng_synth.png"
+ },
+ "6s4dfbmmx8": {
+  "type": "referral",
+  "keys": [
+   "Cinder Pass Orthopedic Associates",
+   "2026-10-14",
+   "Linda Davis",
+   "1948-06-22",
+   "Referral Coordinator, Lakeside",
+   "620-555-0181",
+   "620-555-0117",
+   "3006 Orchard Avenue, Suite 196",
+   "Recurrent urinary tract infections",
+   "routine",
+   "Colleen Jensen, NP"
+  ],
+  "rows": [],
+  "set": "clean",
+  "png": "/Users/nirav/development/scope health/research/docs_samples/6s4dfbmmx8_p1.png"
+ },
+ "6s4dfbmmx8_synth": {
+  "type": "referral",
+  "keys": [
+   "Cinder Pass Orthopedic Associates",
+   "2026-10-14",
+   "Linda Davis",
+   "1948-06-22",
+   "Referral Coordinator, Lakeside",
+   "620-555-0181",
+   "620-555-0117",
+   "3006 Orchard Avenue, Suite 196",
+   "Recurrent urinary tract infections",
+   "routine",
+   "Colleen Jensen, NP"
+  ],
+  "rows": [],
+  "set": "synth",
+  "png": "/Users/nirav/development/scope health/research/docs_samples/synth/6s4dfbmmx8_synth.png"
+ },
+ "6z7xnqw3jm": {
+  "type": "lab",
+  "keys": [
+   "Billy Gonz\u00e1lez",
+   "1955-12-20",
+   "HG6980937",
+   "2026-10-10",
+   "2026-10-14",
+   "LR-039988",
+   "Vitamin D",
+   "Tests reported: 1",
+   "Clinical Laboratory, Eastside"
+  ],
+  "fields": {
+   "patient": "Billy Gonz\u00e1lez",
+   "date_of_birth": "1955-12-20",
+   "sex": "M",
+   "record_number": "HG6980937",
+   "collected": "2026-10-10",
+   "received": "2026-10-14",
+   "report_number": "LR-039988",
+   "panel": "Vitamin D"
+  },
+  "rows": [
+   [
+    "25-hydroxyvitamin D",
+    "50",
+    "ng/mL",
+    "30 - 100",
+    "normal"
+   ]
+  ],
+  "set": "clean",
+  "png": "/Users/nirav/development/scope health/research/docs_samples/6z7xnqw3jm_p1.png"
+ },
+ "6z7xnqw3jm_synth": {
+  "type": "lab",
+  "keys": [
+   "Billy Gonz\u00e1lez",
+   "1955-12-20",
+   "HG6980937",
+   "2026-10-10",
+   "2026-10-14",
+   "LR-039988",
+   "Vitamin D",
+   "Tests reported: 1",
+   "Clinical Laboratory, Eastside"
+  ],
+  "fields": {
+   "patient": "Billy Gonz\u00e1lez",
+   "date_of_birth": "1955-12-20",
+   "sex": "M",
+   "record_number": "HG6980937",
+   "collected": "2026-10-10",
+   "received": "2026-10-14",
+   "report_number": "LR-039988",
+   "panel": "Vitamin D"
+  },
+  "rows": [
+   [
+    "25-hydroxyvitamin D",
+    "50",
+    "ng/mL",
+    "30 - 100",
+    "normal"
+   ]
+  ],
+  "set": "synth",
+  "png": "/Users/nirav/development/scope health/research/docs_samples/synth/6z7xnqw3jm_synth.png"
+ },
+ "72k6w983bc": {
+  "type": "lab",
+  "keys": [
+   "Judy Moore",
+   "1999-09-06",
+   "HG3943006",
+   "2026-04-18",
+   "2026-04-19",
+   "LR-030201",
+   "Basic metabolic panel",
+   "Tests reported: 8",
+   "Clinical Laboratory, Highline"
+  ],
+  "fields": {
+   "patient": "Judy Moore",
+   "date_of_birth": "1999-09-06",
+   "sex": "F",
+   "record_number": "HG3943006",
+   "collected": "2026-04-18",
+   "received": "2026-04-19",
+   "report_number": "LR-030201",
+   "panel": "Basic metabolic panel"
+  },
+  "rows": [
+   [
+    "Sodium",
+    "146",
+    "mmol/L",
+    "135 - 145",
+    "high"
+   ],
+   [
+    "Potassium",
+    "5.3",
+    "mmol/L",
+    "3.5 - 5.1",
+    "high"
+   ],
+   [
+    "Chloride",
+    "101",
+    "mmol/L",
+    "98 - 107",
+    "normal"
+   ],
+   [
+    "Carbon dioxide",
+    "23",
+    "mmol/L",
+    "22 - 29",
+    "normal"
+   ],
+   [
+    "Blood urea nitrogen",
+    "11",
+    "mg/dL",
+    "7 - 20",
+    "normal"
+   ],
+   [
+    "Creatinine",
+    "1.01",
+    "mg/dL",
+    "0.60 - 1.30",
+    "normal"
+   ],
+   [
+    "Glucose",
+    "90",
+    "mg/dL",
+    "70 - 99",
+    "normal"
+   ],
+   [
+    "Calcium",
+    "9.0",
+    "mg/dL",
+    "8.6 - 10.2",
+    "normal"
+   ]
+  ],
+  "set": "clean",
+  "png": "/Users/nirav/development/scope health/research/docs_samples/72k6w983bc_p1.png"
+ },
+ "72k6w983bc_synth": {
+  "type": "lab",
+  "keys": [
+   "Judy Moore",
+   "1999-09-06",
+   "HG3943006",
+   "2026-04-18",
+   "2026-04-19",
+   "LR-030201",
+   "Basic metabolic panel",
+   "Tests reported: 8",
+   "Clinical Laboratory, Highline"
+  ],
+  "fields": {
+   "patient": "Judy Moore",
+   "date_of_birth": "1999-09-06",
+   "sex": "F",
+   "record_number": "HG3943006",
+   "collected": "2026-04-18",
+   "received": "2026-04-19",
+   "report_number": "LR-030201",
+   "panel": "Basic metabolic panel"
+  },
+  "rows": [
+   [
+    "Sodium",
+    "146",
+    "mmol/L",
+    "135 - 145",
+    "high"
+   ],
+   [
+    "Potassium",
+    "5.3",
+    "mmol/L",
+    "3.5 - 5.1",
+    "high"
+   ],
+   [
+    "Chloride",
+    "101",
+    "mmol/L",
+    "98 - 107",
+    "normal"
+   ],
+   [
+    "Carbon dioxide",
+    "23",
+    "mmol/L",
+    "22 - 29",
+    "normal"
+   ],
+   [
+    "Blood urea nitrogen",
+    "11",
+    "mg/dL",
+    "7 - 20",
+    "normal"
+   ],
+   [
+    "Creatinine",
+    "1.01",
+    "mg/dL",
+    "0.60 - 1.30",
+    "normal"
+   ],
+   [
+    "Glucose",
+    "90",
+    "mg/dL",
+    "70 - 99",
+    "normal"
+   ],
+   [
+    "Calcium",
+    "9.0",
+    "mg/dL",
+    "8.6 - 10.2",
+    "normal"
+   ]
+  ],
+  "set": "synth",
+  "png": "/Users/nirav/development/scope health/research/docs_samples/synth/72k6w983bc_synth.png"
+ },
+ "imm_grid_dmy": {
+  "type": "immunization",
+  "keys": [
+   "Kathryn Lewis",
+   "1998-12-03",
+   "DD.MM.YYYY",
+   "24.02.1999",
+   "24.04.",
+   "13.06.",
+   "02.03.2000",
+   "11.10.2003",
+   "24.02.1999",
+   "24.04.",
+   "13.06.",
+   "15.12.1999",
+   "11.10.2003",
+   "14.01.2013",
+   "Infanrix",
+   "IPOL",
+   "M-M-R II",
+   "Boostrix"
+  ],
+  "rows": [
+   [
+    "Infanrix",
+    "24.02.1999",
+    "24.04.",
+    "13.06.",
+    "02.03.2000",
+    "11.10.2003"
+   ],
+   [
+    "IPOL",
+    "24.02.1999",
+    "24.04.",
+    "13.06."
+   ],
+   [
+    "M-M-R II",
+    "15.12.1999",
+    "11.10.2003"
+   ],
+   [
+    "Boostrix",
+    "14.01.2013"
+   ]
+  ],
+  "png": "/Users/nirav/development/scope health/research/docs_samples/synth2/imm_grid_dmy.png",
+  "set": "synth2"
+ },
+ "imm_grid_mdy": {
+  "type": "immunization",
+  "keys": [
+   "Douglas Walker",
+   "03/14/2019",
+   "MM/DD/YYYY",
+   "03/14/2019",
+   "05/16",
+   "11/02",
+   "01/15",
+   "03/14/2019",
+   "04/18",
+   "09/30",
+   "05/16/2019",
+   "07/19",
+   "01/15/2020",
+   "03/02/2023",
+   "Pentacel",
+   "Engerix-B",
+   "Prevnar 20",
+   "Kinrix"
+  ],
+  "rows": [
+   [
+    "Pentacel",
+    "03/14/2019",
+    "05/16",
+    "11/02",
+    "01/15"
+   ],
+   [
+    "Engerix-B",
+    "03/14/2019",
+    "04/18",
+    "09/30"
+   ],
+   [
+    "Prevnar 20",
+    "05/16/2019",
+    "07/19",
+    "01/15/2020"
+   ],
+   [
+    "Kinrix",
+    "03/02/2023"
+   ]
+  ],
+  "png": "/Users/nirav/development/scope health/research/docs_samples/synth2/imm_grid_mdy.png",
+  "set": "synth2"
+ },
+ "imm_grid_dmon": {
+  "type": "immunization",
+  "keys": [
+   "Mary Turner",
+   "2008-09-03",
+   "day month year",
+   "3 Nov 2008",
+   "5 Jan",
+   "8 Mar",
+   "12 Dec",
+   "1 Sep 2012",
+   "3 Nov 2008",
+   "5 Jan",
+   "8 Mar",
+   "17 Aug 2019",
+   "17 Aug 2019",
+   "20 Feb",
+   "Daptacel",
+   "ActHIB",
+   "Adacel",
+   "Gardasil 9"
+  ],
+  "rows": [
+   [
+    "Daptacel",
+    "3 Nov 2008",
+    "5 Jan",
+    "8 Mar",
+    "12 Dec",
+    "1 Sep 2012"
+   ],
+   [
+    "ActHIB",
+    "3 Nov 2008",
+    "5 Jan",
+    "8 Mar"
+   ],
+   [
+    "Adacel",
+    "17 Aug 2019"
+   ],
+   [
+    "Gardasil 9",
+    "17 Aug 2019",
+    "20 Feb"
+   ]
+  ],
+  "png": "/Users/nirav/development/scope health/research/docs_samples/synth2/imm_grid_dmon.png",
+  "set": "synth2"
+ },
+ "imm_list_iso": {
+  "type": "immunization",
+  "keys": [
+   "Amy Marshall",
+   "1987-05-22",
+   "YYYY-MM-DD",
+   "Tdap",
+   "2015-06-30",
+   "AC52B019AA",
+   "Influenza",
+   "2023-10-12",
+   "UJ7741",
+   "Td",
+   "2024-02-08",
+   "TK4471D",
+   "Shingrix",
+   "2024-03-01",
+   "3K92X"
+  ],
+  "rows": [
+   [
+    "Tdap",
+    "2015-06-30",
+    "AC52B019AA"
+   ],
+   [
+    "Influenza",
+    "2023-10-12",
+    "UJ7741"
+   ],
+   [
+    "Td",
+    "2024-02-08",
+    "TK4471D"
+   ],
+   [
+    "Shingrix",
+    "2024-03-01",
+    "3K92X"
+   ]
+  ],
+  "png": "/Users/nirav/development/scope health/research/docs_samples/synth2/imm_list_iso.png",
+  "set": "synth2"
+ },
+ "imm_list_dmon": {
+  "type": "immunization",
+  "keys": [
+   "Caleb Johnson",
+   "1967-02-19",
+   "day month year",
+   "Tenivac",
+   "14 Mar 2021",
+   "U6893AA",
+   "Fluzone",
+   "2 Oct 2022",
+   "UT8812CA",
+   "Boostrix",
+   "30 Jul 2011",
+   "AC52B044CA"
+  ],
+  "rows": [
+   [
+    "Tenivac",
+    "14 Mar 2021",
+    "U6893AA"
+   ],
+   [
+    "Fluzone",
+    "2 Oct 2022",
+    "UT8812CA"
+   ],
+   [
+    "Boostrix",
+    "30 Jul 2011",
+    "AC52B044CA"
+   ]
+  ],
+  "png": "/Users/nirav/development/scope health/research/docs_samples/synth2/imm_list_dmon.png",
+  "set": "synth2"
+ },
+ "remit1": {
+  "type": "remittance",
+  "keys": [
+   "Tallgrass Health Plan",
+   "CHK4578491",
+   "2026-08-17",
+   "Coleman, Linda",
+   "07/06/2026",
+   "99213",
+   "190.00",
+   "0.00",
+   "0.00",
+   "CO-197 190.00",
+   "N290",
+   "Coleman, Linda",
+   "07/06/2026",
+   "11102",
+   "59",
+   "145.00",
+   "98.20",
+   "78.56",
+   "CO-45 46.80 PR-2 19.64",
+   "Payne, Roger",
+   "07/16/2026",
+   "17110",
+   "210.00",
+   "162.40",
+   "142.40",
+   "CO-45 47.60 PR-3 20.00",
+   "MA130",
+   "Rec'd 8/21 - posted JS"
+  ],
+  "rows": [
+   [
+    "Coleman, Linda",
+    "07/06/2026",
+    "99213",
+    "",
+    "190.00"
+   ],
+   [
+    "Coleman, Linda",
+    "07/06/2026",
+    "11102",
+    "59",
+    "145.00"
+   ],
+   [
+    "Payne, Roger",
+    "07/16/2026",
+    "17110",
+    "",
+    "210.00"
+   ]
+  ],
+  "png": "/Users/nirav/development/scope health/research/docs_samples/synth2/remit1.png",
+  "set": "synth2"
+ },
+ "remit2": {
+  "type": "remittance",
+  "keys": [
+   "Northfield Life and Health",
+   "EFT0093317",
+   "2026-09-02",
+   "Murphy, Samantha",
+   "03/16/2026",
+   "20610",
+   "320.00",
+   "0.00",
+   "0.00",
+   "CO-97 320.00",
+   "M51",
+   "Murphy, Samantha",
+   "03/16/2026",
+   "20605",
+   "59",
+   "260.00",
+   "0.00",
+   "0.00",
+   "CO-16 260.00",
+   "N382 MA130",
+   "Lee, Elena",
+   "08/28/2026",
+   "99214",
+   "25",
+   "245.00",
+   "171.33",
+   "121.33",
+   "CO-45 73.67 PR-1 50.00",
+   "Lee, Elena",
+   "08/28/2026",
+   "90715",
+   "68.00",
+   "0.00",
+   "0.00",
+   "CO-22 68.00"
+  ],
+  "rows": [
+   [
+    "Murphy, Samantha",
+    "03/16/2026",
+    "20610",
+    "",
+    "320.00"
+   ],
+   [
+    "Murphy, Samantha",
+    "03/16/2026",
+    "20605",
+    "59",
+    "260.00"
+   ],
+   [
+    "Lee, Elena",
+    "08/28/2026",
+    "99214",
+    "25",
+    "245.00"
+   ],
+   [
+    "Lee, Elena",
+    "08/28/2026",
+    "90715",
+    "",
+    "68.00"
+   ]
+  ],
+  "png": "/Users/nirav/development/scope health/research/docs_samples/synth2/remit2.png",
+  "set": "synth2"
+ },
+ "remit3": {
+  "type": "remittance",
+  "keys": [
+   "Meridian Mutual Health",
+   "CHK0071264",
+   "2026-07-10",
+   "Anderson, Evelyn",
+   "05/02/2026",
+   "12001",
+   "180.00",
+   "0.00",
+   "0.00",
+   "CO-29 180.00",
+   "Khan, Kevin",
+   "06/11/2026",
+   "99203",
+   "200.00",
+   "140.00",
+   "112.00",
+   "CO-45 60.00 PR-2 28.00"
+  ],
+  "rows": [
+   [
+    "Anderson, Evelyn",
+    "05/02/2026",
+    "12001",
+    "",
+    "180.00"
+   ],
+   [
+    "Khan, Kevin",
+    "06/11/2026",
+    "99203",
+    "",
+    "200.00"
+   ]
+  ],
+  "png": "/Users/nirav/development/scope health/research/docs_samples/synth2/remit3.png",
+  "set": "synth2"
+ }
+}
