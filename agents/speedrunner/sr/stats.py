@@ -3,6 +3,7 @@ class KindStats:
     def __init__(self):
         self.d = {}
         self.pace = None   # seconds per remaining task available right now
+        self.v18 = False   # safe mode: v1.8 thresholds
 
     def key(self, route):
         if not route: return None
@@ -17,16 +18,22 @@ class KindStats:
 
     def budget_factor(self, k):
         a = self.d.get(k)
-        if not a or a["n"] < 3: return 1.0
+        if self.v18:
+            if not a or a["n"] < 3: return 1.0
+            rate = a["ans"] / a["n"]
+            if rate == 0 and a["n"] >= 4: return 0.35
+            if rate < 0.2: return 0.6
+            return 1.0
+        if not a or a["n"] < 6: return 1.0
         rate = a["ans"] / a["n"]
-        if rate == 0 and a["n"] >= 4: return 0.35
-        if rate < 0.2: return 0.6
+        if rate == 0: return 0.5
+        if rate < 0.2: return 0.7
         return 1.0
 
     def should_skip(self, k):
         """Under time pressure, skip kinds whose expected points per second are far below what the remaining pace needs."""
         a = self.d.get(k)
-        if not a or a["n"] < 2 or self.pace is None: return False
+        if not a or a["n"] < (2 if self.v18 else 4) or self.pace is None: return False
         avg_t = a["t"] / a["n"]
         rate = (a["ans"] + 0.5) / (a["n"] + 1)
         pts_per_s = rate / max(avg_t, 0.5)

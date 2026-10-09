@@ -111,6 +111,7 @@ async def run_queue():
     await site.start()
     solver = Solver(site, llm, mem, CFG)
     log("MODE", "safe" if solver.safe() else "full", "version", site.version)
+    KSTATS.v18 = solver.safe()
     asyncio.create_task(load_reference(site))
     state = await q.get()
     n = 0; tasks_seen = 0; answered = 0; skipped = 0

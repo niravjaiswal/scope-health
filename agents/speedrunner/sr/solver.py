@@ -68,6 +68,30 @@ def dob_iso(s):
     return None
 
 
+_MON = {m: i for i, m in enumerate(["jan","feb","mar","apr","may","jun","jul","aug","sep","oct","nov","dec"], 1)}
+
+
+def all_dates(text):
+    """Every plausible (y, m, d) a string could denote, across common formats (incl. ambiguous D/M orders)."""
+    out = set()
+    t = text or ""
+    for y, m, d in re.findall(r"\b(\d{4})[-/.](\d{1,2})[-/.](\d{1,2})\b", t):
+        out.add((int(y), int(m), int(d)))
+    for a, b, y in re.findall(r"\b(\d{1,2})[/.\-](\d{1,2})[/.\-](\d{4})\b", t):
+        out.add((int(y), int(a), int(b))); out.add((int(y), int(b), int(a)))
+    for mon, d, y in re.findall(r"\b([A-Za-z]{3,9})\.? (\d{1,2}),? (\d{4})\b", t):
+        if mon[:3].lower() in _MON: out.add((int(y), _MON[mon[:3].lower()], int(d)))
+    for d, mon, y in re.findall(r"\b(\d{1,2}) ([A-Za-z]{3,9})\.? (\d{4})\b", t):
+        if mon[:3].lower() in _MON: out.add((int(y), _MON[mon[:3].lower()], int(d)))
+    return out
+
+
+def dob_matches(row_text, dob_iso_s):
+    if not dob_iso_s: return True
+    y, m, d = (int(x) for x in dob_iso_s.split("-"))
+    return (y, m, d) in all_dates(row_text)
+
+
 def abstract_path(p, ids):
     for k, v in ids.items():
         if v and v in p:
@@ -102,18 +126,21 @@ class Solver:
         last = (p.get("last") or "").strip()
         first = (p.get("first") or "").strip()
         dob = dob_iso(p.get("dob") or "")
+        def name_ok(name):
+            if "," in name:
+                rl, rf = [x.strip() for x in name.split(",", 1)]
+            else:
+                parts = name.split(); rf, rl = (" ".join(parts[:-1]), parts[-1]) if parts else ("", "")
+            ok_first = not first or norm(rf).split(" ")[0] == norm(first).split(" ")[0] or norm(rf).startswith(norm(first)) or norm(first) in norm(name)
+            ok_last = not last or norm(rl) == norm(last) or norm(rl).startswith(norm(last)) or norm(last) in norm(rl) or norm(last) in norm(name)
+            return ok_first and ok_last
         def match(rows):
             out = []
             for r in rows:
                 name = r.get("name") or ""
-                if "," in name:
-                    rl, rf = [x.strip() for x in name.split(",", 1)]
-                else:
-                    parts = name.split(); rf, rl = (" ".join(parts[:-1]), parts[-1]) if parts else ("", "")
-                ok_first = not first or norm(rf).split(" ")[0] == norm(first).split(" ")[0] or norm(rf).startswith(norm(first))
-                ok_last = not last or norm(rl) == norm(last) or norm(rl).startswith(norm(last)) or norm(last) in norm(rl)
-                ok_dob = not dob or dob_iso(r.get("dob") or "") == dob
-                if ok_first and ok_last and ok_dob:
+                if not name or r.get("capped"): continue
+                row_text = " ".join(str(x) for x in (r.get("cells") or [])) + " " + str(r.get("dob") or "")
+                if name_ok(name) and dob_matches(row_text, dob):
                     out.append(r)
             return out
         rows = []
@@ -124,10 +151,29 @@ class Solver:
             if c: return c, rows
         if last:
             kw = {"max_pages": 14, "timeout": 25.0} if self.safe() else {}
-            rows = await self.site.find_patient(last, first, dob, **kw)
-            if not match(rows) and " " in last:
-                rows = await self.site.find_patient(last.split()[-1], first, dob, **kw)
-        return match(rows), rows
+            rows2 = await self.site.find_patient(last, first, dob, **kw)
+            if not match(rows2) and " " in last:
+                rows2 = await self.site.find_patient(last.split()[-1], first, dob, **kw)
+            rows = rows2 or rows
+        c = match(rows)
+        if not c:
+            # fallback: parse 'Name <...> </patients/id>' lines from the search page text (non-table result layouts)
+            from urllib.parse import quote
+            paths = ([f"/patients?dob={dob}"] if dob else []) + ([f"/patients?lastName={quote(last)}"] if last else [])
+            for pth in paths:
+                txt = await self.site.page(pth)
+                lines = (txt or "").splitlines()
+                for i, line in enumerate(lines):
+                    m = re.search(r"([^<|\n]{3,60}?)\s*</patients/([0-9a-z]{6,})>", line)
+                    if not m: continue
+                    ctxl = " ".join(lines[max(0, i - 1):i + 3])
+                    nm = m.group(1).strip(" -|•")
+                    if name_ok(nm) and dob_matches(ctxl, dob):
+                        c.append({"name": nm, "href": f"/patients/{m.group(2)}", "cells": [ctxl[:200]], "via": "text"})
+                if c:
+                    log(f"RESOLVE text-fallback found {len(c)} for {last} {dob}")
+                    break
+        return c, rows
 
     async def _unused(self, rows, first, last, dob):
         cands = []
@@ -551,8 +597,16 @@ class Solver:
         opened = []
         model = self.cfg.get("loop_model", FAST)
         teacher = wf_idx is not None and not tmpl and self.cfg.get("teacher", False) and self.taught.get(plan_key, 0) < 1
+        if not teacher and not safe and wf_idx is not None and self.taught.get("esc:" + plan_key, 0) < 2:
+            from .stats import KSTATS
+            a_ = KSTATS.d.get(plan_key)
+            if a_ and a_["n"] >= 3 and a_["ans"] == 0 and (KSTATS.pace or 0) >= 3.0:
+                self.taught["esc:" + plan_key] = self.taught.get("esc:" + plan_key, 0) + 1
+                teacher = True
+                log(f"ESCALATE {plan_key} to strong loop model (after {a_['n']} failures)")
         if teacher:
             self.taught[plan_key] = self.taught.get(plan_key, 0) + 1
+            from .stats import KSTATS
             model = {"model": STRONG["model"], "extra": {}}
             deadline = min(deadline + self.cfg.get("teacher_bonus", 8), t0 + 40)
             log(f"TEACHER mode for {plan_key}")
