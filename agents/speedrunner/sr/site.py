@@ -108,11 +108,11 @@ class Site:
     async def pages(self, paths, **kw):
         return await asyncio.gather(*[self.page(p, **kw) for p in paths])
 
-    async def search(self, last_name=None, dob=None):
+    async def search(self, last_name=None, dob=None, max_pages=8):
         async with self.sem:
             async with self.c.tab() as tab:
                 try:
-                    return await tab.search_patients(last_name=last_name, dob=dob)
+                    return await asyncio.wait_for(tab.search_patients(last_name=last_name, dob=dob, max_pages=max_pages), timeout=20)
                 except Exception as e:
                     log("SEARCH err", last_name, dob, repr(e)[:200])
                     return []

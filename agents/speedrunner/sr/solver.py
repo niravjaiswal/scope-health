@@ -73,13 +73,32 @@ class Solver:
         last = (p.get("last") or "").strip()
         first = (p.get("first") or "").strip()
         dob = dob_iso(p.get("dob") or "")
+        def match(rows):
+            out = []
+            for r in rows:
+                name = r.get("name") or ""
+                if "," in name:
+                    rl, rf = [x.strip() for x in name.split(",", 1)]
+                else:
+                    parts = name.split(); rf, rl = (" ".join(parts[:-1]), parts[-1]) if parts else ("", "")
+                ok_first = not first or norm(rf).split(" ")[0] == norm(first).split(" ")[0] or norm(rf).startswith(norm(first))
+                ok_last = not last or norm(rl) == norm(last) or norm(rl).startswith(norm(last)) or norm(last) in norm(rl)
+                ok_dob = not dob or dob_iso(r.get("dob") or "") == dob
+                if ok_first and ok_last and ok_dob:
+                    out.append(r)
+            return out
         rows = []
+        if dob:
+            rows = await self.site.search(dob=dob)
+            c = match(rows)
+            if c: return c, rows
         if last:
             rows = await self.site.search(last_name=last)
             if not rows and " " in last:
                 rows = await self.site.search(last_name=last.split()[-1])
-        if not rows and dob:
-            rows = await self.site.search(dob=dob)
+        return match(rows), rows
+
+    async def _unused(self, rows, first, last, dob):
         cands = []
         for r in rows:
             name = r.get("name") or ""

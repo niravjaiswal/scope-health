@@ -634,7 +634,7 @@ class WrenfieldTab:
             if (!s) return []; return [...s.parentElement.querySelectorAll('button')].map(b=>{ const sp=b.querySelector('span span'); return (sp?sp.textContent:b.textContent).replace(/\\s+/g,' ').trim(); }); }""")
 
     # ---- high level --------------------------------------------------------------------------------
-    async def search_patients(self, last_name: Optional[str] = None, dob: Optional[str] = None, all_pages: bool = True) -> List[Dict[str, Any]]:
+    async def search_patients(self, last_name: Optional[str] = None, dob: Optional[str] = None, all_pages: bool = True, max_pages: int = 50) -> List[Dict[str, Any]]:
         """Patient search (4.2.0: last-name PREFIX >= 2 chars, case/accent-insensitive; or exact DOB). Not both at once.
         Returns rows [{name, mrn, dob, sex, flags, href, cells}] from all result pages.
         Fast path = deep link /patients?lastName=..|dob=YYYY-MM-DD; falls back to filling the visible search form."""
@@ -660,7 +660,7 @@ class WrenfieldTab:
             rows = await self._patient_rows()
         out = list(rows or [])
         pages = 1
-        while all_pages and rows and pages < 50 and await self._has_enabled_button("Next"):
+        while all_pages and rows and pages < max_pages and await self._has_enabled_button("Next"):
             await self.click_by_text("Next", contains=False, navigate_links=False)
             rows = await self._patient_rows() or []
             out.extend(rows)
