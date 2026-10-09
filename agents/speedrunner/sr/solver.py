@@ -647,9 +647,6 @@ class Solver:
             left = deadline - time.time()
             if left < 2.5:
                 log("STEP budget exhausted"); break
-            if step >= 1 and (step == self.cfg.get("max_steps", 7) - 1 or left < 4.5) and msgs[-1].get("role") == "tool":
-                log("LAST step: asking for a final answer")
-                msgs.append({"role": "user", "content": "Time is up. In this turn call answer with the value you found (honest confidence), or skip if you did not find it. No more lookups."})
             r = await self.llm.chat(model["model"], msgs, max_tokens=3000, tools=(TOOLS_V18 if safe else TOOLS), extra=model["extra"],
                                     reasoning={"effort": "low" if teacher else self.cfg.get("effort", "medium")}, timeout=min(40, left), tag=f"step{step}")
             if not r:
