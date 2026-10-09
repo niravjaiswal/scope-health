@@ -32,9 +32,10 @@ Lists may be paginated (25 rows): when you need ALL rows (all notes, all appoint
 ANSWER FORMAT: give only the value, no extra words. If a workflow rule defines a format, follow it character for character (codes, colons, YYYY-MM-DD dates, two-decimal amounts when shown so). Otherwise: dates YYYY-MM-DD; money as a plain number like 125.50; counts as a bare whole number; phone numbers as shown; names/addresses/text copied exactly as the system shows them (but a person's name as 'First Last' unless asked otherwise); lists as comma-separated items in the requested order.
 
 {('REFERENCE DATA (crawled at start of shift):' + chr(10) + getattr(site, 'reference', '')[:14000] + chr(10)) if getattr(site, 'reference', '') else ''}
-NOTES/FACTS RECEIVED FROM STAFF (in order; a later one overrides an earlier one on the same subject; some are irrelevant chatter):
+{('WORKFLOW RULE THAT GOVERNS THIS REQUEST (follow it exactly; its worked example shows where data lives):' + chr(10) + wf + chr(10)) if wf else ''}
+NOTES/FACTS/AMENDMENTS RECEIVED FROM STAFF, in order (a later one overrides an earlier one on the same subject; many are irrelevant chatter):
 {mem.notes_text()}
-{('WORKFLOW RULE THAT GOVERNS THIS REQUEST (follow it exactly; its worked example shows where data lives):' + chr(10) + wf) if wf else ''}
+IMPORTANT: an amendment may apply only under conditions (e.g. "for reports received on or after <date>", "until it is in Wrenfield", a specific payer/location). Check the request's facts against those conditions: if they are not met, the original rule applies unchanged.
 {('Other workflow rules on file (titles only): ' + chr(10) + other_wf) if other_wf else ''}
 
 Absence of evidence is not evidence: if you cannot find the patient/record the request is about, skip — never answer NEW/0/none because something was not found unless you actually opened the right complete list.
@@ -50,4 +51,6 @@ VERIFY_SYS = """You are a meticulous auditor at a medical group's back office. A
 
 
 def verify_user(text, rule, notes, evidence):
-    return f"RULE (follow exactly):\n{rule or '(no special rule; answer the question from the records; plain value only)'}\n\nSTAFF NOTES (later overrides earlier):\n{notes}\n\nREQUEST:\n{text}\n\nRECORDS GATHERED:\n{evidence}"
+    return (f"RULE (follow exactly):\n{rule or '(no special rule; answer the question from the records; plain value only)'}\n\n"
+            f"STAFF NOTES / AMENDMENTS received later, in order (a later one overrides an earlier one on the same subject; an amendment that applies only under a condition, e.g. 'received on or after <date>', changes nothing when the condition is not met):\n{notes}\n\n"
+            f"REQUEST:\n{text}\n\nRECORDS GATHERED:\n{evidence}")
