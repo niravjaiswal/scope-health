@@ -648,7 +648,7 @@ class WrenfieldTab:
             if (!s) return []; return [...s.parentElement.querySelectorAll('button')].map(b=>{ const sp=b.querySelector('span span'); return (sp?sp.textContent:b.textContent).replace(/\\s+/g,' ').trim(); }); }""")
 
     # ---- high level --------------------------------------------------------------------------------
-    async def search_patients(self, last_name: Optional[str] = None, dob: Optional[str] = None, all_pages: bool = True, max_pages: int = 50) -> List[Dict[str, Any]]:
+    async def search_patients(self, last_name: Optional[str] = None, dob: Optional[str] = None, all_pages: bool = True, max_pages: int = 50, base: str = "/patients") -> List[Dict[str, Any]]:
         """Patient search (4.2.0: last-name PREFIX >= 2 chars, case/accent-insensitive; or exact DOB). Not both at once.
         Returns rows [{name, mrn, dob, sex, flags, href, cells}] from all result pages.
         Fast path = deep link /patients?lastName=..|dob=YYYY-MM-DD; falls back to filling the visible search form."""
@@ -658,7 +658,7 @@ class WrenfieldTab:
         elif dob:
             q["dob"] = _iso_date(dob)
         qs = "&".join(f"{k}={quote(v)}" for k, v in q.items())
-        await self.goto("/patients" + ("?" + qs if qs else ""))
+        await self.goto(base + ("?" + qs if qs else ""))
         rows = await self._patient_rows()
         if rows is None and q:
             # fallback: fill the form (another version may use different URL params)

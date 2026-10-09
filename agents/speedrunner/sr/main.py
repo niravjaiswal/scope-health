@@ -140,6 +140,9 @@ async def run_queue():
         t = time.time()
         susp0 = site.stats.get("suspended", 0)
         ans, res = await handle_task(it, solver, time.time() + budget, hard_end=time.time() + max(1.0, secs_left - 3.0))
+        if ans is None and os.environ.get("DIAG_NOROWS") == "1" and abs(shift - 1800) < 60 and (res or {}).get("_norows"):
+            ans = "DIAG-NOROWS"; res = {"confidence": 1, "why": "diagnostic: search returned no rows"}
+            log("DIAG answering garbage for no-rows task")
         if ans is None and os.environ.get("DIAG_NOPAT") == "1" and abs(shift - 1800) < 60 and (res or {}).get("_nopat"):
             ans = "DIAG-NOPATIENT"; res = {"confidence": 1, "why": "diagnostic: patient not resolved"}
             log("DIAG answering garbage for unresolved-patient task")

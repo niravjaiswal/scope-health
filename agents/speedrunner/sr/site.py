@@ -30,6 +30,7 @@ class Site:
         self.reference = ""
         self.sitemap = ""
         self.suspended_since = None
+        self.patients_path = "/patients"
 
     # ------------------------------------------------------------------ lifecycle
     async def start(self):
@@ -60,7 +61,10 @@ class Site:
             self.version = mv.group(1) if mv else ""
             self.nav = await self.c.main.page.evaluate(
                 "() => [...document.querySelectorAll('nav a[href]')].filter(a => a.getBoundingClientRect().width > 0 && a.getAttribute('aria-hidden') !== 'true').map(a => [a.innerText.trim(), a.getAttribute('href')])")
-            log("SITE version", self.version, "today", self.today, "nav", self.nav)
+            for lab, href in self.nav:
+                if href and re.search(r"(?i)^(patients?|charts?|people|patient search|find patient)$", (lab or "").strip()):
+                    self.patients_path = href.split("?")[0]; break
+            log("SITE version", self.version, "today", self.today, "nav", self.nav, "patients_path", self.patients_path)
         except Exception as e:
             log("SITE dashboard err", repr(e)[:200])
 
@@ -210,7 +214,7 @@ class Site:
 
     async def search(self, last_name=None, dob=None, max_pages=6):
         try:
-            return await self.use(lambda tab: tab.search_patients(last_name=last_name, dob=dob, max_pages=max_pages), 14, label=f"search {last_name or dob}")
+            return await self.use(lambda tab: tab.search_patients(last_name=last_name, dob=dob, max_pages=max_pages, base=self.patients_path), 14, label=f"search {last_name or dob}")
         except asyncio.CancelledError:
             raise
         except Exception as e:
@@ -228,12 +232,12 @@ class Site:
         rows_all = []
         async def fn(tab):
             from urllib.parse import quote
-            await tab.goto("/patients?lastName=" + quote(last))
+            await tab.goto(self.patients_path + "?lastName=" + quote(last))
             for attempt in range(3):
                 txt = await tab.text(max_options=0)
                 if not TRUNC_RE.search(txt): break
                 await asyncio.sleep(0.5 + 0.5 * attempt)
-                await tab.goto("/patients?lastName=" + quote(last), fresh=True)
+                await tab.goto(self.patients_path + "?lastName=" + quote(last), fresh=True)
             # this version may ignore the lastName URL parameter: fall back to the visible search form
             try:
                 probe_rows = await tab._patient_rows()

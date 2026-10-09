@@ -159,7 +159,8 @@ class Solver:
         if not c:
             # fallback: parse 'Name <...> </patients/id>' lines from the search page text (non-table result layouts)
             from urllib.parse import quote
-            paths = ([f"/patients?dob={dob}"] if dob else []) + ([f"/patients?lastName={quote(last)}"] if last else [])
+            pp = getattr(self.site, "patients_path", "/patients")
+            paths = ([f"{pp}?dob={dob}"] if dob else []) + ([f"{pp}?lastName={quote(last)}"] if last else [])
             for pth in paths:
                 txt = await self.site.page(pth)
                 lines = (txt or "").splitlines()
@@ -816,6 +817,7 @@ class Solver:
                 pl[ap] = pl.get(ap, 0) + 1
         if pats and not ids.get("pid") and (result is None or result.get("skip")):
             result = dict(result or {"skip": True, "reason": "patient not resolved"}); result["_nopat"] = True
+            result["_norows"] = all(not rows for (_c, rows) in resolved)
         return result, {"route": route, "kind": kind, "wf": wf_idx, "opened": opened, "msgs": msgs}
 
 
