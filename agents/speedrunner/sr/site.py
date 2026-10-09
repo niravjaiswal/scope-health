@@ -213,7 +213,7 @@ class Site:
             log("SEARCH err", last_name, dob, repr(e)[:200])
             return []
 
-    async def find_patient(self, last, first=None, dob=None, max_pages=14):
+    async def find_patient(self, last, first=None, dob=None, max_pages=6, timeout=5.0):
         """Name search that copes with phonetic matching, pagination, sort order and 'busy' truncated pages.
         Returns all rows read (caller filters). Stops once the alphabetical position passes the target."""
         import unicodedata
@@ -221,9 +221,9 @@ class Site:
             x = unicodedata.normalize("NFKD", x or "")
             return "".join(c for c in x if not unicodedata.combining(c)).casefold().strip()
         tl, tf = nrm(last), nrm(first or "")
+        rows_all = []
         async def fn(tab):
             from urllib.parse import quote
-            rows_all = []
             await tab.goto("/patients?lastName=" + quote(last))
             for attempt in range(3):
                 txt = await tab.text(max_options=0)
@@ -271,12 +271,12 @@ class Site:
                 await tab.click_by_text("Next", contains=False, navigate_links=False)
             return rows_all
         try:
-            return await self.use(fn, 25, label=f"find {last}")
+            return await self.use(fn, timeout, label=f"find {last}")
         except asyncio.CancelledError:
             raise
         except Exception as e:
-            log("FIND err", last, repr(e)[:200])
-            return []
+            log("FIND partial/err", last, len(rows_all), repr(e)[:120])
+            return list(rows_all) + ([{"name": "(search stopped: too many results)", "capped": True}] if rows_all else [])
 
     async def documents(self, path, want=("pdf",), background=False):
         """One viewer load: page text + PDF (and/or page image) bytes."""

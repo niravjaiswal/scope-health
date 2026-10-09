@@ -435,7 +435,7 @@ class Solver:
         for i, (cands, rows) in enumerate(resolved):
             p = pats[i]
             if not cands:
-                capped = len(rows) >= 90
+                capped = len(rows) >= 90 or any(r.get("capped") for r in rows)
                 ctx_parts.append(f"[patient search for {jdump(p)}: no exact match" + ("; the name search is CAPPED (too many patients with this last name), so locate the record through its own section with filters instead: e.g. Documents filtered by type and received date, Claims by date of service, Billing 'Find invoice' + Open, appointment list by date, then follow the patient link" if capped else "") + f". Search rows: {jdump(rows[:8], 1500)}]")
                 continue
             ctx_parts.append(f"[patient search for {jdump(p)} -> candidates: {jdump(cands[:6], 2000)}]")
@@ -605,7 +605,12 @@ class Solver:
                 if not fmt_ok(result.get("answer", "")):
                     result = {"skip": True, "reason": f"answer not in required format: {result.get('answer')!r}"}
         # gate: a request about a patient must be grounded in that patient's chart
-        charts = set(re.findall(r"/patients/([0-9a-z]{6,})", " ".join(prefetch + opened)))
+        charts = set(re.findall(r"/patients/([0-9a-z]{6,})", " ".join(prefetch + opened + replay_opened)))
+        if not charts:
+            seen_txt = " ".join((m.get("content") or "") for m in msgs if m.get("role") == "tool")
+            last = norm((pats[0].get("last") if pats else "") or "")
+            if last and last in norm(seen_txt) and re.search(r"/patients/[0-9a-z]{6,}", seen_txt):
+                charts = {"via-linked-record"}
         if result and not result.get("skip") and pats and not charts:
             log("GATE no chart opened for patient request -> skip")
             result = {"skip": True, "reason": "patient chart never opened"}
