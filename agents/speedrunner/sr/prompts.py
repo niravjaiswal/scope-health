@@ -2,12 +2,13 @@
 import json
 
 ROUTER_SYS = """You route requests that arrive at a medical clinic's back office. Return ONLY a JSON object:
-{"workflows": [<indices of EVERY workflow message relevant to this request: the base rule AND any later message that changes/amends it; [] if none>],
+{"workflows": [<indices of the workflow rules whose TOPIC is exactly this request's topic (the base rule AND any later message that amends that same rule); [] when no rule is about this kind of request>],
  "kind": "<one of: phone_lookup, demographics_lookup, insurance_lookup, invoice_amount, billing_other, referral_letter, document_lookup, provider_day_count, open_slots, location_period_count, unique_patients_count, top_providers, appointment_lookup, notes_lookup, immunization_lookup, claim_lookup, vaccine_lot, schedule_other, other>",
  "patients": [{"first": "...", "last": "...", "dob": "YYYY-MM-DD or null"}],
  "providers": ["Full Name, CRED"], "locations": ["..."], "dates": ["YYYY-MM-DD"], "times": ["HH:MM"],
  "ids": ["invoice/claim/lot numbers etc."], "answer_kind": "text|number|money|date|datetime|phone|list|format"}
-Rules: names may be written "Last, First" or "First Last"; keep accents and apostrophes exactly. Only list patients (people whose chart is needed), not providers. If the request is governed by workflow rules (same topic), list all of them (base rule plus amendments/changes)."""
+Rules: names may be written "Last, First" or "First Last"; keep accents and apostrophes exactly. Only list patients (people whose chart is needed), not providers.
+A workflow rule applies only when the request asks for exactly what that rule decides (e.g. a rule about new-vs-established visits applies to new/established questions, NOT to phone numbers, referral letters, invoices or appointment counts). Many requests match no rule: then "workflows": []."""
 
 
 def router_user(text, wf_titles):
@@ -48,7 +49,7 @@ def solver_user(text, route, ctx):
     return f"REQUEST:\n{text}\n\nPRE-FETCHED DATA (decoded page text; links shown as <path>):\n{ctx or '(none)'}"
 
 
-VERIFY_SYS = """You are a meticulous auditor at a medical group's back office. A colleague gathered the records below to answer a request. Using ONLY these records and the rules, work out the correct answer yourself, step by step, then output JSON {"answer": "<exact final answer string in the required format>", "confidence": <0-1>, "why": "<one or two sentences>"}. If the records are insufficient to be sure, set answer to "" and confidence to 0."""
+VERIFY_SYS = """You are a meticulous auditor at a medical group's back office. A colleague gathered the records below to answer a request. Using ONLY these records and the rules, work out the correct answer yourself, step by step, then output JSON {"answer": "<exact final answer string in the required format>", "confidence": <0-1>, "why": "<one or two sentences>"}. If the records needed by the rule are missing from what was gathered (e.g. a list that was not fully opened), set answer to "" and confidence to 0. Do not refuse over incidental oddities that the rule does not mention (e.g. a document whose body names someone else): answer the question as asked from the records."""
 
 
 def verify_user(text, rule, notes, evidence):

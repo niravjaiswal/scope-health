@@ -385,7 +385,7 @@ class Solver:
             vt = max(3.0, min(40, deadline - time.time() - 0.5))
             tasks = [asyncio.ensure_future(self.llm.json(STRONG["model"], vmsgs, max_tokens=6000, reasoning={"effort": self.cfg.get("verify_effort", "low")}, timeout=vt, retries=1, tag="verify")),
                      asyncio.ensure_future(self.llm.json("anthropic/claude-haiku-5.5", vmsgs, max_tokens=6000, timeout=vt, retries=1, extra={"provider": {"sort": "latency"}}, tag="verify2"))]
-            nrm = lambda x: str(x or "").strip().lower().replace(" ", "")
+            nrm = lambda x: re.sub(r"[.\s`'\"]+$", "", str(x or "").strip().lower().replace(" ", ""))
             a1 = nrm(result.get("answer"))
             strong_r, weak_r = "pending", "pending"
             try:

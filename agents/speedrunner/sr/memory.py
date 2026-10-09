@@ -35,7 +35,7 @@ class Memory:
         parts = []
         for k, i in enumerate(idxs):
             w = self.workflows[i]
-            head = f"[rule from item {w['n']}]" if k == 0 else f"[LATER message, item {w['n']}: amends/overrides the rule above where it says so, only under its stated conditions]"
+            head = f"[rule from item {w['n']}]" if k == 0 else f"[another message, item {w['n']}: if it changes the rule above, it overrides it only where and when it says so (check its conditions); if it is about something else, ignore it]"
             parts.append(head + "\n" + w["text"])
         return "\n\n".join(parts)
 
