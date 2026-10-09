@@ -122,6 +122,8 @@ async def run_queue():
             mem.add(n, it["text"])
             if mem.workflows and mem.workflows[-1]["n"] == n:
                 asyncio.ensure_future(mem.summarize(llm, len(mem.workflows) - 1))
+                if not solver.safe():
+                    asyncio.ensure_future(mem.make_plan(llm, len(mem.workflows) - 1, getattr(site, "sitemap", "")))
             if re.search(r"(?i)specialt", it["text"]):
                 asyncio.ensure_future(load_full_directory(site))
             state = await q.close(it["id"], acknowledge=True)
@@ -168,6 +170,8 @@ async def run_local(path):
             mem.add(it.get("n", i + 1), it["text"])
             if mem.workflows and mem.workflows[-1]["n"] == it.get("n", i + 1):
                 await mem.summarize(llm, len(mem.workflows) - 1)
+                if not solver.safe():
+                    await mem.make_plan(llm, len(mem.workflows) - 1, getattr(site, "sitemap", ""))
             continue
         if only and str(it.get("n")) not in only.split(","):
             continue

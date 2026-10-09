@@ -15,7 +15,7 @@ class Memory:
         is_wf = len(t) >= 450 or (len(t) >= 250 and re.search(r"(?i)answer|##|\|---", t))
         if is_wf:
             title = t.split("\n", 1)[0].strip()[:160]
-            self.workflows.append({"n": n, "title": title, "text": t, "applies": ""})
+            self.workflows.append({"n": n, "title": title, "text": t, "applies": "", "plan": ""})
             log(f"MEMORY workflow #{len(self.workflows)-1} item{n}: {title}")
         else:
             self.notes.append((n, t))
@@ -43,12 +43,31 @@ class Memory:
         except Exception:
             return None
 
-    def workflows_text(self, idxs):
+    async def make_plan(self, llm, idx, sitemap):
+        """Strong-model data-gathering plan for a workflow, from the rule text + site map (runs in background)."""
+        w = self.workflows[idx]
+        if not sitemap:
+            return
+        prompt = ("A back-office colleague will answer many requests governed by the RULE below, using the clinic records system described by the SITE MAP "
+                  "(sections, their links and form fields). Write a SHORT data-gathering plan (max 6 bullets, max 200 words) for ONE request, using the fewest page loads: which pages to open "
+                  "(use real URL patterns from the map, e.g. /patients/<id>/notes), which forms to fill (field names) and which documents to read, "
+                  "where each fact the rule needs is found, and what to compute. Tools available: open(path or paths), query(path, fields, submit), "
+                  "open_documents(list path, title keyword), table_compute(path, fields, code), click(path, button label), search_patients. "
+                  "Do not restate the rule's logic; only say where the data is. Only name pages/fields that appear in the map or that the rule's example names; never guess field values.\n\n"
+                  "RULE:\n" + w["text"][:9000] + "\n\nSITE MAP:\n" + sitemap[:9000])
+        r = await llm.chat("openai/gpt-6.1-sol", [{"role": "user", "content": prompt}], max_tokens=2500, reasoning={"effort": "low"}, timeout=40, tag="wfplan")
+        if r and r.get("content"):
+            w["plan"] = r["content"].strip()[:1600]
+            log(f"MEMORY wf{idx} plan ready ({len(w['plan'])} chars)")
+
+    def workflows_text(self, idxs, with_plan=False):
         parts = []
         for k, i in enumerate(idxs):
             w = self.workflows[i]
             head = f"[rule from item {w['n']}]" if k == 0 else f"[another message, item {w['n']}: if it changes the rule above, it overrides it only where and when it says so (check its conditions); if it is about something else, ignore it]"
             parts.append(head + "\n" + w["text"])
+            if with_plan and w.get("plan"):
+                parts.append("[suggested data-gathering plan for this rule (from the site map; verify against what you see)]\n" + w["plan"])
         return "\n\n".join(parts)
 
     def notes_text(self):

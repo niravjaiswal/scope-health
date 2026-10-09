@@ -432,7 +432,13 @@ class Solver:
         wfs = sorted(ok)
         wf_idx = wfs[0] if wfs else None
         route["workflow"] = wf_idx
-        wf_text = self.mem.workflows_text(wfs) if wfs else None
+        use_plan = False
+        if wfs and not safe:
+            from .stats import KSTATS
+            a_ = KSTATS.d.get(f"wf{wfs[0]}")
+            use_plan = bool(a_ and a_["n"] >= 2 and a_["ans"] / a_["n"] < 0.3)
+        wf_text = self.mem.workflows_text(wfs, with_plan=use_plan) if wfs else None
+        if use_plan: log(f"PLAN injected for wf{wfs[0]}")
         self.cur_text, self.cur_wf = text, wf_text
         try:
             from .stats import KSTATS
