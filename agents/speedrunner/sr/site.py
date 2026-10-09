@@ -199,6 +199,71 @@ class Site:
             log("SEARCH err", last_name, dob, repr(e)[:200])
             return []
 
+    async def find_patient(self, last, first=None, dob=None, max_pages=14):
+        """Name search that copes with phonetic matching, pagination, sort order and 'busy' truncated pages.
+        Returns all rows read (caller filters). Stops once the alphabetical position passes the target."""
+        import unicodedata
+        def nrm(x):
+            x = unicodedata.normalize("NFKD", x or "")
+            return "".join(c for c in x if not unicodedata.combining(c)).casefold().strip()
+        tl, tf = nrm(last), nrm(first or "")
+        async def fn(tab):
+            from urllib.parse import quote
+            rows_all = []
+            await tab.goto("/patients?lastName=" + quote(last))
+            for attempt in range(3):
+                txt = await tab.text(max_options=0)
+                if not TRUNC_RE.search(txt): break
+                await asyncio.sleep(0.5 + 0.5 * attempt)
+                await tab.goto("/patients?lastName=" + quote(last), fresh=True)
+            # biggest page size available
+            try:
+                for fr in tab.page.frames:
+                    loc = fr.locator('select[name="size"]')
+                    if await loc.count():
+                        opts = await loc.first.evaluate("s => [...s.options].map(o=>o.value)")
+                        best = max(opts, key=lambda v: int(re.sub(r"\D", "", v) or 0))
+                        cur = await loc.first.evaluate("s => s.value")
+                        if best != cur:
+                            await loc.first.select_option(value=best)
+                            await asyncio.sleep(0.03); await tab.wait_settled(timeout=8)
+                        break
+            except Exception:
+                pass
+            for page_no in range(max_pages):
+                rows = None
+                for attempt in range(3):
+                    txt = await tab.text(max_options=0)
+                    rows = await tab._patient_rows()
+                    if not TRUNC_RE.search(txt): break
+                    self.stats["trunc"] = self.stats.get("trunc", 0) + 1
+                    await asyncio.sleep(0.6 + 0.4 * attempt)
+                    try:
+                        await tab.page.evaluate("() => 0")
+                        await tab.reload()
+                    except Exception:
+                        pass
+                rows = rows or []
+                rows_all.extend(rows)
+                found = any(nrm((r.get("name") or "").split(",")[0]) == tl and (not tf or nrm((r.get("name") or "").split(",", 1)[-1]).startswith(tf.split(" ")[0])) for r in rows)
+                passed = False
+                if rows and not dob:
+                    ln = nrm((rows[-1].get("name") or "").split(",")[0]); fn_ = nrm((rows[-1].get("name") or "").split(",", 1)[-1])
+                    passed = (ln > tl) or (ln == tl and tf and fn_ > tf + "\uffff")
+                if (found and not dob and passed) or passed or not rows:
+                    break
+                if not await tab._has_enabled_button("Next"):
+                    break
+                await tab.click_by_text("Next", contains=False, navigate_links=False)
+            return rows_all
+        try:
+            return await self.use(fn, 25, label=f"find {last}")
+        except asyncio.CancelledError:
+            raise
+        except Exception as e:
+            log("FIND err", last, repr(e)[:200])
+            return []
+
     async def documents(self, path, want=("pdf",)):
         async def fn(tab):
             await tab.goto(path)

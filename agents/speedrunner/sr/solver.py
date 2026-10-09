@@ -8,10 +8,11 @@ STRONG = {"model": "openai/gpt-6.1-sol", "extra": {}}
 
 TOOLS = [
     {"type": "function", "function": {
-        "name": "open", "description": "Open a Wrenfield page by path (e.g. /patients/abc123/notes) and return its decoded text. "
-        "Set all_pages=true to also read every further page of a paginated list (slower).",
+        "name": "open", "description": "Open one or several Wrenfield pages (e.g. /patients/abc123/notes, or several document viewer pages at once via paths=[...]) and return their decoded text. "
+        "Document viewer pages include the document's decoded content. Set all_pages=true to also read every further page of a paginated list (slower). "
+        "Always batch: if you will need several pages or documents, pass them all in paths in ONE call.",
         "parameters": {"type": "object", "properties": {
-            "path": {"type": "string"}, "all_pages": {"type": "boolean"}}, "required": ["path"]}}},
+            "path": {"type": "string"}, "paths": {"type": "array", "items": {"type": "string"}}, "all_pages": {"type": "boolean"}}}}},
     {"type": "function", "function": {
         "name": "search_patients", "description": "Search patients by last name (prefix ok) OR by date of birth YYYY-MM-DD. Returns matching rows with chart links and flags.",
         "parameters": {"type": "object", "properties": {
@@ -98,9 +99,9 @@ class Solver:
             c = match(rows)
             if c: return c, rows
         if last:
-            rows = await self.site.search(last_name=last)
-            if not rows and " " in last:
-                rows = await self.site.search(last_name=last.split()[-1])
+            rows = await self.site.find_patient(last, first, dob)
+            if not match(rows) and " " in last:
+                rows = await self.site.find_patient(last.split()[-1], first, dob)
         return match(rows), rows
 
     async def _unused(self, rows, first, last, dob):
@@ -192,15 +193,6 @@ class Solver:
         t0 = time.time()
         route = await self.route(text)
         log("ROUTE", jdump(route, 500))
-        try:
-            from .stats import KSTATS
-            f = KSTATS.budget_factor(KSTATS.key(route))
-            if f < 1.0:
-                new_deadline = t0 + max(2.5, (deadline - t0) * f)
-                log(f"FAILFAST kind={KSTATS.key(route)} factor={f} budget {deadline-t0:.1f}->{new_deadline-t0:.1f}")
-                deadline = new_deadline
-        except Exception as e:
-            log("failfast err", repr(e)[:100])
         kind = (route.get("kind") or "other").strip().lower()[:60]
         wfs = route.get("workflows")
         if not isinstance(wfs, list):
@@ -218,6 +210,18 @@ class Solver:
         wf_idx = wfs[0] if wfs else None
         route["workflow"] = wf_idx
         wf_text = self.mem.workflows_text(wfs) if wfs else None
+        try:
+            from .stats import KSTATS
+            if KSTATS.should_skip(KSTATS.key(route)):
+                log(f"PRESSURE skip kind={KSTATS.key(route)} pace={KSTATS.pace:.1f}")
+                return {"skip": True, "reason": "time pressure"}, {"route": route, "kind": route.get("kind"), "wf": route.get("workflow"), "opened": [], "msgs": []}
+            f = KSTATS.budget_factor(KSTATS.key(route))
+            if f < 1.0:
+                new_deadline = t0 + max(2.5, (deadline - t0) * f)
+                log(f"FAILFAST kind={KSTATS.key(route)} factor={f} budget {deadline-t0:.1f}->{new_deadline-t0:.1f}")
+                deadline = new_deadline
+        except Exception as e:
+            log("failfast err", repr(e)[:100])
         plan_key = f"wf{wf_idx}" if wf_idx is not None else kind
 
         # entity resolution + prefetch
@@ -250,24 +254,25 @@ class Solver:
             texts = await self.site.pages(prefetch)
             for pth, tx in zip(prefetch, texts):
                 ctx_parts.append(f"=== PAGE {pth} ===\n{clip(tx, 9000)}")
-        # provider facts from the directory, made salient
+        # provider facts (specialty, id, status), made salient
+        from .reference import provider_info
         ref = getattr(self.site, "reference", "") or ""
-        for prov in (route.get("providers") or [])[:4]:
+        provs = (route.get("providers") or [])[:4]
+        infos = await asyncio.gather(*[provider_info(self.site, pv) for pv in provs], return_exceptions=True)
+        for prov, info in zip(provs, infos):
             pn = norm(re.sub(r",.*$", "", prov))
             hits = [l for l in ref.splitlines() if pn and pn in norm(l)]
-            if hits:
-                ctx_parts.insert(0, f"[provider directory for {prov}: " + " || ".join(hits[:3]) + "]")
-            elif ref:
-                ctx_parts.insert(0, f"[provider directory: no exact entry for {prov}]")
-        # identifiers may be drawn with cipher/ligature fonts or as pictures: read them visually when they look off
-        want_ident = (re.search(r"(?i)phone|MRN|record number|member id|insurance id|account number", text) or route.get("answer_kind") == "phone"
-                      or (wf_text and re.search(r"(?i)record number|\bMRN\b", wf_text)))
+            line = info if isinstance(info, str) else (" || ".join(hits[:2]) if hits else None)
+            ctx_parts.insert(0, f"[provider directory for {prov}: {line}]" if line else f"[provider directory: no entry found for {prov}]")
+        # identifiers may be drawn with cipher/ligature fonts or as pictures: read them visually
+        asks_ident = bool(re.search(r"(?i)phone|MRN|record number|member id|insurance id|account number", text) or route.get("answer_kind") == "phone")
+        rule_ident = bool(wf_text and re.search(r"(?i)record number|\bMRN\b", wf_text))
         chart_paths = [p for p in prefetch if re.match(r"^/patients/[0-9a-z]+$", p)]
-        if chart_paths:
-            ctext = "\n".join(ctx_parts)
-            suspicious = re.search(r"Phone:\s*\(?\s*\d\d\s+\d\d", ctext) or re.search(r"MRN:\s*\n", ctext) or "drawn as a picture" in ctext
-            if want_ident or (suspicious and self.cfg.get("visual_always")):
-                vis = await self.visual_read(chart_paths[0], "phone number, MRN / record number, member ID")
+        vis_task = None
+        if chart_paths and (asks_ident or rule_ident):
+            vis_task = asyncio.ensure_future(self.visual_read(chart_paths[0], "phone number, MRN / record number, member ID"))
+            if asks_ident:
+                vis = await vis_task; vis_task = None
                 ctx_parts.append(f"=== VISUAL READING of {chart_paths[0]} (screenshot transcription; trust this over the decoded text for phone numbers, MRN and IDs) ===\n{vis}")
                 log("VISUAL", vis[:300].replace(chr(10), " | "))
         log(f"PREFETCH {len(prefetch)} pages {time.time()-t0:.1f}s kind={kind} wf={wf_idx}")
@@ -306,13 +311,19 @@ class Solver:
                 try: args = json.loads(call["function"].get("arguments") or "{}")
                 except Exception: args = {}
                 if fn == "open":
-                    opened.append(args.get("path", ""))
-                    return await self.tool_open(args.get("path", ""), bool(args.get("all_pages")))
+                    ps = [p for p in ([args.get("path")] if args.get("path") else []) + list(args.get("paths") or []) if p][:8]
+                    opened.extend(ps)
+                    outs = await asyncio.gather(*[self.tool_open(p, bool(args.get("all_pages"))) for p in ps])
+                    if len(ps) == 1: return outs[0]
+                    return "\n\n".join(f"=== PAGE {p} ===\n{clip(o, 9000)}" for p, o in zip(ps, outs))
                 if fn == "query":
                     opened.append(args.get("path", ""))
                     return await self.tool_query(args.get("path", ""), args.get("fields") or {}, bool(args.get("all_pages")))
                 if fn == "search_patients":
-                    rows = await self.site.search(last_name=args.get("last_name"), dob=args.get("dob"))
+                    if args.get("last_name") and not args.get("dob"):
+                        rows = await self.site.find_patient(args.get("last_name"))
+                    else:
+                        rows = await self.site.search(last_name=args.get("last_name"), dob=args.get("dob"))
                     return jdump(rows[:40], 6000) if rows else "No patients match."
                 if fn == "read_document":
                     opened.append(args.get("path", ""))
@@ -328,6 +339,14 @@ class Solver:
                 break
             log("TOOLS", jdump([(c["function"]["name"], c["function"].get("arguments")) for c in others], 600))
             res = await asyncio.gather(*[run(c) for c in others])
+            if vis_task is not None and vis_task.done():
+                try:
+                    vis = vis_task.result()
+                    res = list(res); res[-1] = (res[-1] or "") + f"\n\n=== VISUAL READING of the chart header (screenshot; trust it for MRN / record number) ===\n{vis}"
+                    log("VISUAL(async)", vis[:200].replace(chr(10), " | "))
+                except Exception:
+                    pass
+                vis_task = None
             for c, out in zip(others, res):
                 msgs.append({"role": "tool", "tool_call_id": c["id"], "content": clip(out or "", 12000)})
             for c in finals:
@@ -340,27 +359,62 @@ class Solver:
         # verification by a stronger model on workflow tasks
         if result and not result.get("skip") and wf_idx is not None and self.cfg.get("verify", True) and deadline - time.time() > 4:
             evidence = "\n\n".join(m["content"] for m in msgs[1:] if m.get("role") in ("user", "tool") and m.get("content"))
+            if vis_task is not None:
+                try:
+                    vis = await asyncio.wait_for(asyncio.shield(vis_task), timeout=max(0.5, min(3, deadline - time.time() - 4)))
+                    evidence += "\n\n=== VISUAL READING of the chart header (screenshot; trust it for MRN / record number) ===\n" + vis
+                except Exception:
+                    pass
             ref = getattr(self.site, "reference", "")
             if ref: evidence = "REFERENCE DATA:\n" + ref[:14000] + "\n\n" + evidence
-            vr = await self.llm.json(STRONG["model"], [{"role": "system", "content": prompts.VERIFY_SYS},
-                                     {"role": "user", "content": prompts.verify_user(text, wf_text, self.mem.notes_text(), clip(evidence, 120000))}],
-                                     max_tokens=6000, reasoning={"effort": self.cfg.get("verify_effort", "low")}, timeout=min(45, deadline - time.time() - 1), tag="verify")
-            if vr is None and deadline - time.time() > 4:
-                vr = await self.llm.json("anthropic/claude-sonnet-5.5", [{"role": "system", "content": prompts.VERIFY_SYS},
-                                         {"role": "user", "content": prompts.verify_user(text, wf_text, self.mem.notes_text(), clip(evidence, 120000))}],
-                                         max_tokens=6000, timeout=min(45, deadline - time.time() - 1), tag="verify2")
-            log("VERIFY", jdump(vr, 400))
-            a1 = str(result.get("answer", "")).strip().lower().replace(" ", "")
-            a2 = str((vr or {}).get("answer", "")).strip().lower().replace(" ", "")
-            if vr and a2 and a1 == a2:
-                result["confidence"] = max(float(result.get("confidence") or 0), float(vr.get("confidence") or 0))
-            elif vr and a2 and float(vr.get("confidence") or 0) >= 0.85:
-                log("VERIFY override", a1, "->", a2)
-                result = {"answer": vr["answer"], "confidence": float(vr.get("confidence")) - 0.05, "why": "verifier: " + str(vr.get("why"))}
-            elif vr is None:
-                result["confidence"] = float(result.get("confidence") or 0) * 0.9
+            vmsgs = [{"role": "system", "content": prompts.VERIFY_SYS},
+                     {"role": "user", "content": prompts.verify_user(text, wf_text, self.mem.notes_text(), clip(evidence, 120000))}]
+            vt = max(3.0, min(40, deadline - time.time() - 0.5))
+            tasks = [asyncio.ensure_future(self.llm.json(STRONG["model"], vmsgs, max_tokens=6000, reasoning={"effort": self.cfg.get("verify_effort", "low")}, timeout=vt, retries=1, tag="verify")),
+                     asyncio.ensure_future(self.llm.json("anthropic/claude-haiku-5.5", vmsgs, max_tokens=6000, timeout=vt, retries=1, extra={"provider": {"sort": "latency"}}, tag="verify2"))]
+            nrm = lambda x: str(x or "").strip().lower().replace(" ", "")
+            a1 = nrm(result.get("answer"))
+            strong_r, weak_r = "pending", "pending"
+            try:
+                for fut in asyncio.as_completed(tasks, timeout=vt + 0.5):
+                    try:
+                        r_ = await fut
+                    except Exception:
+                        r_ = None
+                    if tasks[0].done() and strong_r == "pending":
+                        try: strong_r = tasks[0].result()
+                        except Exception: strong_r = None
+                    if tasks[1].done() and weak_r == "pending":
+                        try: weak_r = tasks[1].result()
+                        except Exception: weak_r = None
+                    if strong_r != "pending" and strong_r is not None:
+                        break   # the strong verifier decides
+                    if strong_r is None and weak_r != "pending":
+                        break
+            except asyncio.TimeoutError:
+                pass
+            for t_ in tasks:
+                if not t_.done(): t_.cancel()
+            if strong_r == "pending": strong_r = None
+            if weak_r == "pending": weak_r = None
+            log("VERIFY strong:", jdump(strong_r, 400), "weak:", jdump(weak_r, 200))
+            sa = nrm((strong_r or {}).get("answer")) if strong_r else None
+            wa = nrm((weak_r or {}).get("answer")) if weak_r else None
+            if strong_r is not None:
+                if sa and sa == a1:
+                    result["confidence"] = max(float(result.get("confidence") or 0), float(strong_r.get("confidence") or 0))
+                elif sa and wa and sa == wa and float(strong_r.get("confidence") or 0) >= 0.8:
+                    log("VERIFY override (strong+weak agree)", a1, "->", sa)
+                    result = {"answer": strong_r["answer"], "confidence": float(strong_r.get("confidence") or 0) - 0.05, "why": "verifier: " + str(strong_r.get("why"))}
+                else:
+                    result["confidence"] = min(float(result.get("confidence") or 0), 0.5)
+            elif weak_r is not None:
+                if wa and wa == a1:
+                    result["confidence"] = min(float(result.get("confidence") or 0), 0.9)
+                else:
+                    result["confidence"] = min(float(result.get("confidence") or 0), 0.5)
             else:
-                result["confidence"] = min(float(result.get("confidence") or 0), 0.5)
+                result["confidence"] = float(result.get("confidence") or 0) * 0.9
         # learn plan
         if result and not result.get("skip") and opened:
             pl = self.plans.setdefault(plan_key, {})

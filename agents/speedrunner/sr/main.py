@@ -11,8 +11,20 @@ CFG = {"max_steps": int(os.environ.get("MAX_STEPS", "7")), "effort": os.environ.
        "min_conf": float(os.environ.get("MIN_CONF", "0.75"))}
 
 
-async def load_reference(site):
-    from .reference import provider_directory, site_map
+async def load_full_directory(site):
+    from .reference import provider_directory
+    if getattr(site, "_dir_started", False): return
+    site._dir_started = True
+    t = time.time()
+    try:
+        site.reference = await provider_directory(site)
+        log(f"REFERENCE ready {time.time()-t:.1f}s chars={len(site.reference)}")
+    except Exception as e:
+        log("REFERENCE err", repr(e)[:200])
+
+
+async def load_reference(site, full=False):
+    from .reference import provider_directory, site_map, provider_index
     t = time.time()
     try:
         site.sitemap = await site_map(site)
@@ -20,12 +32,12 @@ async def load_reference(site):
         print("SITEMAP " + json.dumps(site.sitemap), flush=True)
     except Exception as e:
         log("SITEMAP err", repr(e)[:200])
-    t = time.time()
     try:
-        site.reference = await provider_directory(site)
-        log(f"REFERENCE ready {time.time()-t:.1f}s chars={len(site.reference)}")
+        await provider_index(site)
     except Exception as e:
-        log("REFERENCE err", repr(e)[:200])
+        log("provider index err", repr(e)[:200])
+    if full:
+        await load_full_directory(site)
 
 
 def est_total(shift):
@@ -103,11 +115,14 @@ async def run_queue():
         if it["kind"] == "message":
             print("ITEM " + jdump({"n": n, "id": it["id"], "kind": "message", "secs_left": round(secs_left, 1), "text": it["text"]}), flush=True)
             mem.add(n, it["text"])
+            if re.search(r"(?i)specialt", it["text"]):
+                asyncio.ensure_future(load_full_directory(site))
             state = await q.close(it["id"], acknowledge=True)
             continue
         tasks_seen += 1
         remaining = max(1, total - tasks_seen + 1)
         per = secs_left / remaining
+        KSTATS.pace = per
         budget = max(float(os.environ.get("MIN_BUDGET", "9")), min(float(os.environ.get("MAX_BUDGET", "25")), per * 3.0)) if secs_left > 30 else max(0.0, secs_left - 4)
         print("ITEM " + jdump({"n": n, "id": it["id"], "kind": "task", "secs_left": round(secs_left, 1), "budget": round(budget, 1), "text": it["text"]}), flush=True)
         if budget < 3:
@@ -121,7 +136,7 @@ async def run_queue():
         else:
             state = await q.close(it["id"], answer=ans); answered += 1
             print("CLOSE " + jdump({"n": n, "answer": ans, "conf": res.get("confidence"), "dt": round(time.time()-t, 1), "why": (res.get("why") or "")[:300]}), flush=True)
-        log(f"PROGRESS tasks={tasks_seen} answered={answered} skipped={skipped} llm=${llm.spent:.3f} fetch={site.stats}")
+        log(f"PROGRESS tasks={tasks_seen} answered={answered} skipped={skipped} llm=${llm.spent:.3f} fetch={site.stats} pace={per:.1f}s kinds={KSTATS.summary()}")
     log("END", jdump(state), f"answered={answered} skipped={skipped} llm=${llm.spent:.3f}")
     await site.close()
 
@@ -134,7 +149,7 @@ async def run_local(path):
     mem = Memory()
     await site.start()
     solver = Solver(site, llm, mem, CFG)
-    await load_reference(site)
+    await load_reference(site, full=True)
     only = os.environ.get("ONLY")
     results = []
     for i, it in enumerate(items):

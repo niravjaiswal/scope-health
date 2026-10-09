@@ -10,6 +10,47 @@ OPTS_JS = """() => { const out=[]; (function s(doc){ for (const sel of doc.query
 CRED = re.compile(r",\s*(MD|DO|NP|PA|PA-C|DNP|RN|LCSW|PhD|DPT|PT|CNM|FNP|DPM)\b")
 
 
+async def provider_index(site):
+    """Provider names -> ids from the schedule's provider selector (one page). Sets site.providers, site.provider_tmpl."""
+    site.providers = {}
+    sched = await site.page("/schedule", background=True)
+    m = re.search(r"Provider\s*<(/schedule/providers[^>]*)>", sched or "")
+    if not m:
+        return
+    ppath = m.group(1)
+    async def _fn(tab):
+        await tab.goto(ppath)
+        return await tab.page.evaluate(OPTS_JS)
+    opts = await site.use(_fn, 12, background=True, label="providers")
+    site.provider_tmpl = re.sub(r"/schedule/providers/[0-9a-z]+", "/schedule/providers/{id}", ppath.split("?")[0])
+    for name, v, t, g in opts:
+        if CRED.search(t) and v:
+            site.providers[t] = (v, g)
+    log("REF provider index", len(site.providers), site.provider_tmpl)
+
+
+async def provider_info(site, name):
+    """One line about a provider: name | id | specialty | status (fetches that provider's page, cached)."""
+    import unicodedata
+    def nrm(x):
+        x = unicodedata.normalize("NFKD", x or ""); return "".join(c for c in x if not unicodedata.combining(c)).casefold().strip()
+    provs = getattr(site, "providers", {}) or {}
+    key = nrm(re.sub(r",.*$", "", name))
+    hit = next((k for k in provs if nrm(re.sub(r",.*$", "", k)) == key), None)
+    if not hit:
+        return None
+    v, g = provs[hit]
+    tx = await site.page(site.provider_tmpl.replace("{id}", v))
+    spec = ""
+    for l in (tx or "").splitlines():
+        if "·" in l and re.search(r"(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)", l):
+            parts = [p.strip() for p in l.split("·")]
+            spec = next((p for p in parts if p and p.lower() != "inactive" and not re.search(r"day,", p)), "")
+            if "Inactive" in l and "Inactive" not in (g or ""): g = ((g or "") + " Inactive").strip()
+            break
+    return f"{hit} | id {v} | specialty: {spec or '?'} | {g or ''} | day view: {site.provider_tmpl.replace('{id}', v)}?date=YYYY-MM-DD"
+
+
 async def provider_directory(site):
     lines = []
     nav = {a.lower(): b for a, b in (site.nav or [])}
