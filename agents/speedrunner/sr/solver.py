@@ -631,12 +631,16 @@ class Solver:
             deadline = min(deadline + self.cfg.get("teacher_bonus", 8), t0 + 40)
             log(f"TEACHER mode for {plan_key}")
         result = None
+        text_fallback = None
         nudged = False
         seen_calls = {}
         for step in range(self.cfg.get("max_steps", 7)):
             left = deadline - time.time()
             if left < 2.5:
                 log("STEP budget exhausted"); break
+            if step >= 1 and (step == self.cfg.get("max_steps", 7) - 1 or left < 4.5) and msgs[-1].get("role") == "tool":
+                log("LAST step: asking for a final answer")
+                msgs.append({"role": "user", "content": "Time is up. In this turn call answer with the value you found (honest confidence), or skip if you did not find it. No more lookups."})
             r = await self.llm.chat(model["model"], msgs, max_tokens=3000, tools=(TOOLS_V18 if safe else TOOLS), extra=model["extra"],
                                     reasoning={"effort": "low" if teacher else self.cfg.get("effort", "medium")}, timeout=min(40, left), tag=f"step{step}")
             if not r:
@@ -647,11 +651,14 @@ class Solver:
                         {"role": "assistant", "content": m.get("content") or ""})
             if not calls:
                 log("NOCALL content", (m.get("content") or "")[:300])
-                if not nudged:
+                cand = parse_text_answer(m.get("content") or "", loose=True)
+                if cand:
+                    text_fallback = cand
+                if not nudged and deadline - time.time() > 3.5:
                     nudged = True
                     msgs.append({"role": "user", "content": "Finish by calling the answer tool with the exact final answer value (or the skip tool). Do not reply in plain text."})
                     continue
-                result = parse_text_answer(m.get("content") or "")
+                result = cand
                 break
             outs = []
             final = None
@@ -688,6 +695,10 @@ class Solver:
                 msgs.append({"role": "tool", "tool_call_id": c["id"], "content": clip(out or "", 12000)})
             for c in finals:
                 msgs.append({"role": "tool", "tool_call_id": c["id"], "content": "Ignored: call answer alone after reading the results."})
+        # the model wrote its answer as plain text, then the nudged retry produced nothing usable (or time ran out)
+        if text_fallback and (result is None or (not result.get("skip") and not str(result.get("answer", "")).strip())):
+            log("NOCALL fallback ->", str(text_fallback.get("answer"))[:80])
+            result = dict(text_fallback)
         # format gate: rule-governed answers must match one of the rule's answer forms
         if result and not result.get("skip") and wfs and not safe:
             fpats, fexs = answer_formats(self.mem, wfs)
@@ -837,6 +848,11 @@ class Solver:
         if pats and not ids.get("pid") and (result is None or result.get("skip")):
             result = dict(result or {"skip": True, "reason": "patient not resolved"}); result["_nopat"] = True
             result["_norows"] = all(not rows for (_c, rows) in resolved)
+            try:
+                lasts = [norm(p.get("last") or "") for p in pats[:2]]
+                result["_nosurname"] = not any(l and l in norm(r.get("name") or "") for (_c, rows) in resolved for r in (rows or []) for l in lasts)
+            except Exception:
+                pass
         return result, {"route": route, "kind": kind, "wf": wf_idx, "opened": opened, "msgs": msgs}
 
 
@@ -867,7 +883,7 @@ def clip(s, n):
     return s if len(s) <= n else s[:n] + f"\n…[truncated {len(s)-n} chars]"
 
 
-def parse_text_answer(s):
+def parse_text_answer(s, loose=False):
     from .llm import parse_json
     d = parse_json(s)
     if d and "answer" in d:
@@ -875,4 +891,10 @@ def parse_text_answer(s):
     m = re.search(r"(?im)^\s*answer\s*[:=]\s*(.+)$", s)
     if m:
         return {"answer": m.group(1).strip().strip("`"), "confidence": 0.5}
+    if loose:
+        # a bare value written as plain text instead of an answer call (e.g. "NURSE_REVIEW:2", "2027-02-28", "169.00")
+        v = s.strip().strip("`").strip()
+        if v and "\n" not in v and len(v) <= 60 and not v.startswith("{") and v.lower() not in ("0", "none", "unknown", "n/a") \
+                and (re.fullmatch(r"[A-Z][A-Z_]{2,}(:[^\s].*)?", v) or re.fullmatch(r"[\d$.,:/() -]+", v)):
+            return {"answer": v, "confidence": 0.8, "why": "plain-text answer"}
     return None

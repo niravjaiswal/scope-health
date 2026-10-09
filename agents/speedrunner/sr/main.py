@@ -101,6 +101,18 @@ async def handle_task(item, solver, deadline, hard_end=None):
     return ans, res
 
 
+VER_CODES = {"4.2.0": 2, "4.2.1": 4, "4.3.0": 6, "4.4.0": 8, "4.4.1": 10, "4.5.0": 12, "5.0.0": 14, "4.3.2": 16, "4.1.0": 18}
+
+
+def diag_ver_code(site):
+    """Encode the clinic's Wrenfield version (+ whether the patient search needed the form fallback) as a small even number."""
+    v = (getattr(site, "version", "") or "").strip()
+    code = VER_CODES.get(v, 40)
+    if site.stats.get("form_fallback", 0) > 0:
+        code += 20
+    return code
+
+
 async def run_queue():
     shift = float(ENV["SHIFT_SECONDS"] or 900)
     total = est_total(shift)
@@ -129,6 +141,10 @@ async def run_queue():
                 asyncio.ensure_future(load_full_directory(site))
             state = await q.close(it["id"], acknowledge=True)
             continue
+        if os.environ.get("DIAG_VER") == "1" and abs(shift - 1800) < 60 and tasks_seen == 458 - diag_ver_code(site):
+            log("DIAG stopping to encode version", site.version, diag_ver_code(site), "form_fallback", site.stats.get("form_fallback", 0))
+            await asyncio.sleep(max(0.0, secs_left - 2.0))
+            break
         tasks_seen += 1
         remaining = max(1, total - tasks_seen + 1)
         per = secs_left / remaining
@@ -146,6 +162,9 @@ async def run_queue():
         if ans is None and os.environ.get("DIAG_NOPAT") == "1" and abs(shift - 1800) < 60 and (res or {}).get("_nopat"):
             ans = "DIAG-NOPATIENT"; res = {"confidence": 1, "why": "diagnostic: patient not resolved"}
             log("DIAG answering garbage for unresolved-patient task")
+        if ans is None and os.environ.get("DIAG_NOSURNAME") == "1" and abs(shift - 1800) < 60 and (res or {}).get("_nopat") and (res or {}).get("_nosurname"):
+            ans = "DIAG-NOSURNAME"; res = {"confidence": 1, "why": "diagnostic: no search row has the surname"}
+            log("DIAG answering garbage for no-surname task")
         if ans is None and os.environ.get("DIAG_SUSP") == "1" and abs(shift - 1800) < 60 and site.stats.get("suspended", 0) > susp0:
             ans = "DIAG-SUSPENDED"; res = {"confidence": 1, "why": "diagnostic: suspension seen"}
             log("DIAG answering garbage for suspension-affected task")

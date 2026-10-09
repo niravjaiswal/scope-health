@@ -243,13 +243,18 @@ class Site:
                 probe_rows = await tab._patient_rows()
             except Exception:
                 probe_rows = None
-            if probe_rows is None:
+            def relevant(rs):
+                return any(tl[:4] in nrm(r.get("name") or "") for r in (rs or []))
+            if probe_rows is None or (probe_rows and not relevant(probe_rows)):
                 self.stats["form_fallback"] = self.stats.get("form_fallback", 0) + 1
+                if probe_rows:
+                    log(f"FIND rows ignore lastName={last!r} (e.g. {probe_rows[0].get('name')!r}): trying the search form")
                 for label in ("Last name", "Surname", "Family name", "Name", "Patient", "Search"):
                     try:
                         await tab.fill(label, last)
                         await tab.submit(field=label)
-                        if await tab._patient_rows() is not None:
+                        r2 = await tab._patient_rows()
+                        if r2 is not None and (not r2 or relevant(r2)):
                             log(f"FIND form fallback via {label!r}")
                             break
                     except Exception:

@@ -660,18 +660,31 @@ class WrenfieldTab:
         qs = "&".join(f"{k}={quote(v)}" for k, v in q.items())
         await self.goto(base + ("?" + qs if qs else ""))
         rows = await self._patient_rows()
-        if rows is None and q:
-            # fallback: fill the form (another version may use different URL params)
-            try:
-                if last_name:
-                    await self.fill("Last name", last_name.strip())
-                    await self.submit(field="Last name")
-                else:
-                    await self.fill("Date of birth", _iso_date(dob))
-                    await self.submit(field="Date of birth")
-            except WrenfieldError:
-                pass
-            rows = await self._patient_rows()
+        def _relevant(rs):
+            # rows that answer this search; none means the URL parameter was probably ignored (default listing)
+            if not rs:
+                return False
+            if last_name:
+                tl = _fold(last_name.strip())
+                return any(tl[:4] in _fold(r.get("name") or "") for r in rs)
+            y = _iso_date(dob)[:4]
+            return any(y in " ".join(str(c) for c in (r.get("cells") or [])) + str(r.get("dob") or "") or
+                       y[2:] in " ".join(str(c) for c in (r.get("cells") or [])) for r in rs)
+        if q and (rows is None or (rows and not _relevant(rows))):
+            # fallback: fill the visible search form (another version may use different URL params)
+            labels = ("Last name", "Surname", "Family name", "Name", "Patient", "Search") if last_name else \
+                     ("Date of birth", "DOB", "Birth date", "Born", "Birthdate")
+            val = last_name.strip() if last_name else _iso_date(dob)
+            for label in labels:
+                try:
+                    await self.fill(label, val)
+                    await self.submit(field=label)
+                    r2 = await self._patient_rows()
+                    if r2 is not None and (not r2 or _relevant(r2)):
+                        rows = r2
+                        break
+                except Exception:
+                    continue
         out = list(rows or [])
         pages = 1
         while all_pages and rows and pages < max_pages and await self._has_enabled_button("Next"):
@@ -1036,6 +1049,12 @@ def _patient_id(ref: str) -> str:
     if m:
         return m.group(1)
     return ref.strip().strip("/")
+
+
+def _fold(x) -> str:
+    import unicodedata
+    x = unicodedata.normalize("NFKD", str(x or ""))
+    return "".join(c for c in x if not unicodedata.combining(c)).casefold().strip()
 
 
 def _iso_date(s: str) -> str:
