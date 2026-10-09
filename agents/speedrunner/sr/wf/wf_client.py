@@ -418,18 +418,29 @@ class WrenfieldTab:
             return False
 
     async def wait_settled(self, timeout: float = 15.0, quiet: float = 0.04, poll: float = 0.015) -> bool:
-        """Wait until no tracked request is in flight and all frames are ready, stable for `quiet` seconds."""
+        """Wait until no tracked request is in flight and all frames are ready, stable for `quiet` seconds.
+        Robust to lost request events: if the DOM has been ready continuously for 0.35 s, treat as settled."""
         t0 = time.time()
         stable_since, mark = None, None
+        ready_since = None
         while time.time() - t0 < timeout:
-            if self._inflight == 0 and await self._ready_once():
-                if stable_since is None or mark != self._req_started:
-                    stable_since, mark = time.time(), self._req_started
-                elif time.time() - stable_since >= quiet:
+            ready = await self._ready_once()
+            if ready:
+                if ready_since is None:
+                    ready_since = time.time()
+                if self._inflight == 0:
+                    if stable_since is None or mark != self._req_started:
+                        stable_since, mark = time.time(), self._req_started
+                    elif time.time() - stable_since >= quiet:
+                        return True
+                elif time.time() - ready_since >= 0.35:
+                    self._inflight = 0   # lost requestfinished/failed events; don't stay poisoned
                     return True
             else:
                 stable_since = None
+                ready_since = None
             await asyncio.sleep(poll)
+        self._inflight = 0
         return False
 
     async def _frame_sig(self) -> str:

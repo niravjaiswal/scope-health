@@ -70,6 +70,7 @@ class Site:
 
     async def _recycle(self, tab):
         self.stats["recycled"] += 1
+        tab._inflight = 0
         try:
             await asyncio.wait_for(tab.page.goto(self.base + "/", wait_until="domcontentloaded"), timeout=15)
             await asyncio.wait_for(tab.wait_settled(timeout=8), timeout=10)
@@ -163,7 +164,7 @@ class Site:
                     last = txt
                     await asyncio.sleep(0.6 * (attempt + 1))
                     continue
-                if dt > 3: log(f"SLOW page {path} {dt:.1f}s")
+                if dt > 2.5 or self.stats["fetch"] <= 40: log(f"PAGE {path} {dt:.2f}s")
                 self._maybe_probe(path)
                 return VLINK_RE.sub("", txt)
             self.stats["fail"] += 1
