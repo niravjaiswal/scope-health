@@ -15,19 +15,19 @@ async def provider_directory(site):
     nav = {a.lower(): b for a, b in (site.nav or [])}
     for key in ("staff", "providers"):
         if key in nav:
-            txt = await site.page(nav[key])
+            txt = await site.page(nav[key], background=True)
             if txt and not txt.startswith("ERROR"):
                 lines.append(f"=== {nav[key]} (first page) ===\n" + txt[:15000])
     try:
-        sched = await site.page("/schedule")
+        sched = await site.page("/schedule", background=True)
         m = re.search(r"Provider\s*<(/schedule/providers[^>]*)>", sched or "")
         if not m:
             return "\n".join(lines)
         ppath = m.group(1)
-        async with site.sem:
-            async with site.c.tab() as tab:
-                await tab.goto(ppath)
-                opts = await tab.page.evaluate(OPTS_JS)
+        async def _fn(tab):
+            await tab.goto(ppath)
+            return await tab.page.evaluate(OPTS_JS)
+        opts = await site.use(_fn, 12, background=True, label="providers")
         provs = [(v, t, g) for name, v, t, g in opts if CRED.search(t) and v]
         log("REF providers", len(provs), "via", ppath)
         if not provs:
@@ -70,12 +70,11 @@ async def site_map(site):
     for label, href in (site.nav or []):
         if not href or href in ("#main",) or "logout" in href or href.endswith("/all"):
             continue
+        async def _fn(tab, href=href):
+            await tab.goto(href)
+            return await tab.links(), await tab.page.evaluate(FORM_JS)
         try:
-            async with site.bg_sem:
-                async with site.c.tab() as tab:
-                    await asyncio.wait_for(tab.goto(href), timeout=site.page_timeout)
-                    links = await tab.links()
-                    fields = await tab.page.evaluate(FORM_JS)
+            links, fields = await site.use(_fn, 10, background=True, label="sitemap")
         except Exception as e:
             lines.append(f"## {label} <{href}>: (failed {type(e).__name__})"); continue
         pats = []

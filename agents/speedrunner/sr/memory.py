@@ -31,5 +31,13 @@ class Memory:
         except Exception:
             return None
 
+    def workflows_text(self, idxs):
+        parts = []
+        for k, i in enumerate(idxs):
+            w = self.workflows[i]
+            head = f"[rule from item {w['n']}]" if k == 0 else f"[LATER message, item {w['n']}: amends/overrides the rule above where it says so, only under its stated conditions]"
+            parts.append(head + "\n" + w["text"])
+        return "\n\n".join(parts)
+
     def notes_text(self):
         return "\n".join(f"- (item {n}) {t}" for n, t in self.notes) or "(none)"

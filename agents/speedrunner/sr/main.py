@@ -45,6 +45,9 @@ def validate(ans):
     return a
 
 
+from .stats import KSTATS
+
+
 async def handle_task(item, solver, deadline):
     t = time.time()
     try:
@@ -55,6 +58,7 @@ async def handle_task(item, solver, deadline):
         import traceback; traceback.print_exc()
         log("TASK error", repr(e)[:300]); return None, {"why": repr(e)[:200]}
     log(f"TASK result {time.time()-t:.1f}s {jdump(res, 600)}")
+    item["_route"] = (info or {}).get("route")
     if os.environ.get("DUMP_CTX", "1") == "1":
         try:
             import gzip, base64
@@ -110,6 +114,7 @@ async def run_queue():
             state = await q.close(it["id"], skip=True); skipped += 1; continue
         t = time.time()
         ans, res = await handle_task(it, solver, time.time() + budget)
+        KSTATS.add(KSTATS.key(it.get("_route")), ans is not None, time.time() - t)
         if ans is None:
             state = await q.close(it["id"], skip=True); skipped += 1
             print("CLOSE " + jdump({"n": n, "skip": True, "dt": round(time.time()-t, 1), "why": (res or {}).get("reason") or (res or {}).get("why") or (res or {}).get("answer")}), flush=True)

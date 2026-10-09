@@ -220,6 +220,7 @@ function __wfMakeWalker(maps, opt){
       const r = el.getBoundingClientRect(); if (r.width < 0.5 || r.height < 0.5) return '';
     }
     if (opt.skipNav && el.closest && el.ownerDocument===document && tag==='NAV' && /main/i.test(el.getAttribute('aria-label')||'')) return '';
+    if (el.getAttribute('role')==='img' && tag!=='SVG' && tag!=='IMG' && !(el.textContent||'').trim()) { return ' [value drawn as a picture: '+(el.getAttribute('aria-label')||'image')+' - use the VISUAL READING] '; }
     switch (tag) {
       case 'IFRAME': {
         if (!opt.frames) return '';

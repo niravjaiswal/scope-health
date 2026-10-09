@@ -127,15 +127,7 @@ class Solver:
         if re.search(r"/patients/all\b|logout|log-out", path):
             return "Refused: not allowed."
         if all_pages:
-            async with self.site.sem:
-                async with self.site.c.tab() as tab:
-                    try:
-                        await tab.goto(path)
-                        pages = await tab.paginate_all(max_pages=20)
-                        txt = "\n\n--- next page ---\n\n".join(pages)
-                    except Exception as e:
-                        txt = f"ERROR {e!r}"
-            return txt
+            return await self.site.page_all(path)
         if path.startswith("/v/") and getattr(self, "last_doc_path", None):
             return await self.tool_read_document(self.last_doc_path)
         txt = await self.site.page(path, fresh=fresh)
@@ -149,49 +141,7 @@ class Solver:
     async def tool_query(self, path, fields, all_pages=False):
         path = (path or "/").strip()
         if not path.startswith("/"): path = "/" + path
-        async with self.site.sem:
-            async with self.site.c.tab() as tab:
-                try:
-                    await asyncio.wait_for(tab.goto(path), timeout=self.site.page_timeout)
-                    done = []
-                    for k, v in (fields or {}).items():
-                        v = str(v)
-                        try:
-                            loc = await tab._field(k)
-                            tag = await loc.evaluate("e => e.tagName")
-                            if tag == "SELECT":
-                                try:
-                                    await loc.select_option(label=v, timeout=3000)
-                                except Exception:
-                                    opts = await loc.evaluate("e => [...e.options].map(o => [o.value, o.textContent.trim()])")
-                                    m = next((o for o in opts if o[1].lower().startswith(v.lower()) or v.lower() in o[1].lower() or o[0] == v), None)
-                                    if not m: raise
-                                    await loc.select_option(value=m[0], timeout=3000)
-                            else:
-                                await loc.fill(v)
-                            done.append(k)
-                        except Exception as e:
-                            return f"ERROR setting field {k!r}: {type(e).__name__}. Check the field names on this page."
-                    clicked = False
-                    for bt in ("Apply filters", "Apply", "Show appointments", "Show", "Search", "Find", "Filter", "Go", "Submit"):
-                        try:
-                            if await tab._has_enabled_button(bt):
-                                await tab.click_by_text(bt, contains=False, navigate_links=False); clicked = True; break
-                        except Exception:
-                            continue
-                    if not clicked and done:
-                        try:
-                            loc = await tab._field(done[-1]); await loc.press("Enter"); await asyncio.sleep(0.05); await tab.wait_settled()
-                        except Exception:
-                            pass
-                    if all_pages:
-                        pages = await tab.paginate_all(max_pages=20)
-                        txt = "\n\n--- next page ---\n\n".join(pages)
-                    else:
-                        txt = await tab.text()
-                except Exception as e:
-                    return f"ERROR {e!r}"[:300]
-        return re.sub(r"\s*<\/v\/[^>]*>", "", txt)
+        return await self.site.query(path, fields, all_pages)
 
     async def tool_read_document(self, path, hint=""):
         path = (path or "").strip()
@@ -242,9 +192,32 @@ class Solver:
         t0 = time.time()
         route = await self.route(text)
         log("ROUTE", jdump(route, 500))
+        try:
+            from .stats import KSTATS
+            f = KSTATS.budget_factor(KSTATS.key(route))
+            if f < 1.0:
+                new_deadline = t0 + max(2.5, (deadline - t0) * f)
+                log(f"FAILFAST kind={KSTATS.key(route)} factor={f} budget {deadline-t0:.1f}->{new_deadline-t0:.1f}")
+                deadline = new_deadline
+        except Exception as e:
+            log("failfast err", repr(e)[:100])
         kind = (route.get("kind") or "other").strip().lower()[:60]
-        wf_idx = route.get("workflow")
-        wf_text = self.mem.workflow_text(wf_idx) if wf_idx is not None else None
+        wfs = route.get("workflows")
+        if not isinstance(wfs, list):
+            wfs = [route.get("workflow")] if route.get("workflow") is not None else []
+        byn = {w["n"]: i for i, w in enumerate(self.mem.workflows)}
+        ok = set()
+        for x in wfs:
+            try: x = int(x)
+            except Exception: continue
+            if 0 <= x < len(self.mem.workflows):
+                ok.add(x)
+            elif x in byn:
+                ok.add(byn[x])
+        wfs = sorted(ok)
+        wf_idx = wfs[0] if wfs else None
+        route["workflow"] = wf_idx
+        wf_text = self.mem.workflows_text(wfs) if wfs else None
         plan_key = f"wf{wf_idx}" if wf_idx is not None else kind
 
         # entity resolution + prefetch
@@ -287,18 +260,19 @@ class Solver:
             elif ref:
                 ctx_parts.insert(0, f"[provider directory: no exact entry for {prov}]")
         # identifiers may be drawn with cipher/ligature fonts or as pictures: read them visually when they look off
-        want_ident = re.search(r"(?i)phone|MRN|record number|member id|insurance id|account number", text) or route.get("answer_kind") == "phone"
+        want_ident = (re.search(r"(?i)phone|MRN|record number|member id|insurance id|account number", text) or route.get("answer_kind") == "phone"
+                      or (wf_text and re.search(r"(?i)record number|\bMRN\b", wf_text)))
         chart_paths = [p for p in prefetch if re.match(r"^/patients/[0-9a-z]+$", p)]
         if chart_paths:
             ctext = "\n".join(ctx_parts)
-            suspicious = re.search(r"Phone:\s*\(?\s*\d\d\s+\d\d", ctext) or re.search(r"MRN:\s*\n", ctext)
+            suspicious = re.search(r"Phone:\s*\(?\s*\d\d\s+\d\d", ctext) or re.search(r"MRN:\s*\n", ctext) or "drawn as a picture" in ctext
             if want_ident or (suspicious and self.cfg.get("visual_always")):
                 vis = await self.visual_read(chart_paths[0], "phone number, MRN / record number, member ID")
                 ctx_parts.append(f"=== VISUAL READING of {chart_paths[0]} (screenshot transcription; trust this over the decoded text for phone numbers, MRN and IDs) ===\n{vis}")
                 log("VISUAL", vis[:300].replace(chr(10), " | "))
         log(f"PREFETCH {len(prefetch)} pages {time.time()-t0:.1f}s kind={kind} wf={wf_idx}")
 
-        sys_prompt = prompts.solver_system(self.site, self.mem, wf_idx)
+        sys_prompt = prompts.solver_system(self.site, self.mem, wf_text)
         user = prompts.solver_user(text, route, "\n\n".join(ctx_parts))
         msgs = [{"role": "system", "content": sys_prompt}, {"role": "user", "content": user}]
         opened = []

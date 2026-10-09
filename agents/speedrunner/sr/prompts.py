@@ -2,22 +2,21 @@
 import json
 
 ROUTER_SYS = """You route requests that arrive at a medical clinic's back office. Return ONLY a JSON object:
-{"workflow": <index of the workflow rule this request is governed by, or null>,
- "kind": "<short snake_case label of the request type, e.g. phone_lookup, invoice_owed, referral_practice, appointment_count, open_slots, lab_triage>",
+{"workflows": [<indices of EVERY workflow message relevant to this request: the base rule AND any later message that changes/amends it; [] if none>],
+ "kind": "<one of: phone_lookup, demographics_lookup, insurance_lookup, invoice_amount, billing_other, referral_letter, document_lookup, provider_day_count, open_slots, location_period_count, unique_patients_count, top_providers, appointment_lookup, notes_lookup, immunization_lookup, claim_lookup, vaccine_lot, schedule_other, other>",
  "patients": [{"first": "...", "last": "...", "dob": "YYYY-MM-DD or null"}],
  "providers": ["Full Name, CRED"], "locations": ["..."], "dates": ["YYYY-MM-DD"], "times": ["HH:MM"],
  "ids": ["invoice/claim/lot numbers etc."], "answer_kind": "text|number|money|date|datetime|phone|list|format"}
-Rules: names may be written "Last, First" or "First Last"; keep accents and apostrophes exactly. Only list patients (people whose chart is needed), not providers. If the request is governed by a workflow rule (same topic), give its index; when several match, use the most recent one."""
+Rules: names may be written "Last, First" or "First Last"; keep accents and apostrophes exactly. Only list patients (people whose chart is needed), not providers. If the request is governed by workflow rules (same topic), list all of them (base rule plus amendments/changes)."""
 
 
 def router_user(text, wf_titles):
-    wl = "\n".join(f"{i}: (item {n}) {t}" for i, n, t in wf_titles) or "(none)"
+    wl = "\n".join(f"index {i}: {t}" for i, n, t in wf_titles) or "(none)"
     return f"Workflow rules received so far:\n{wl}\n\nRequest:\n{text}"
 
 
-def solver_system(site, mem, wf_idx):
+def solver_system(site, mem, wf):
     nav = ", ".join(f"{a} <{b}>" for a, b in (site.nav or []) if a) or "(unknown)"
-    wf = mem.workflow_text(wf_idx) if wf_idx is not None else None
     other_wf = ""
     if wf is None and mem.workflows:
         other_wf = "\n".join(f"- (item {w['n']}) {w['title']}" for w in mem.workflows)
