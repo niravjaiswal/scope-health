@@ -175,6 +175,15 @@ class Solver:
                 rows2 = await self.site.find_patient(last.split()[-1], first, dob, **kw)
             rows = rows2 or rows
         c = match(rows)
+        if not c and dob:
+            # the list may mask or reformat birth dates: check the DOB on the charts of name-matching rows
+            cands = [r for r in rows if r.get("href") and not r.get("capped") and name_ok(r.get("name") or "")][:4]
+            if cands:
+                txts = await asyncio.gather(*[self.site.page(r["href"]) for r in cands], return_exceptions=True)
+                hit = [r for r, tx in zip(cands, txts) if isinstance(tx, str) and dob_matches(tx[:3000], dob)]
+                log(f"RESOLVE chart-dob check {len(cands)} candidates -> {len(hit)} match")
+                if hit:
+                    return hit[:1], rows
         if not c:
             # fallback: parse 'Name <...> </patients/id>' lines from the search page text (non-table result layouts)
             from urllib.parse import quote
