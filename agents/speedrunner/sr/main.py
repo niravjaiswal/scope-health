@@ -110,6 +110,7 @@ async def run_queue():
     mem = Memory()
     await site.start()
     solver = Solver(site, llm, mem, CFG)
+    log("MODE", "safe" if solver.safe() else "full", "version", site.version)
     asyncio.create_task(load_reference(site))
     state = await q.get()
     n = 0; tasks_seen = 0; answered = 0; skipped = 0
@@ -134,7 +135,11 @@ async def run_queue():
         if budget < 3:
             state = await q.close(it["id"], skip=True); skipped += 1; continue
         t = time.time()
+        susp0 = site.stats.get("suspended", 0)
         ans, res = await handle_task(it, solver, time.time() + budget, hard_end=time.time() + max(1.0, secs_left - 3.0))
+        if ans is None and os.environ.get("DIAG_SUSP") == "1" and abs(shift - 1800) < 60 and site.stats.get("suspended", 0) > susp0:
+            ans = "DIAG-SUSPENDED"; res = {"confidence": 1, "why": "diagnostic: suspension seen"}
+            log("DIAG answering garbage for suspension-affected task")
         KSTATS.add(KSTATS.key(it.get("_route")), ans is not None, time.time() - t)
         if ans is None:
             state = await q.close(it["id"], skip=True); skipped += 1

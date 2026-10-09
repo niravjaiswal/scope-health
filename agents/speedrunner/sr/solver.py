@@ -1,8 +1,9 @@
 """Task solver: router -> entity resolution -> prefetch -> LLM tool loop -> validation."""
-import asyncio, json, re, time, unicodedata
+import asyncio, json, os, re, time, unicodedata
 from .util import log, jdump, now
 from . import prompts
 
+KNOWN_VERSIONS = {"4.3.1"}
 FAST = {"model": "openai/gpt-oss-120b", "extra": {"provider": {"sort": "throughput"}}}
 STRONG = {"model": "openai/gpt-6.1-sol", "extra": {}}
 
@@ -158,7 +159,7 @@ class Solver:
             txt = await self.site.page(path, fresh=fresh)
         txt = re.sub(r"\s*<\/v\/[^>]*>", "", txt or "")
         try:
-            self.spec_docs(txt, self.cur_text, self.cur_wf)
+            if not self.safe(): self.spec_docs(txt, self.cur_text, self.cur_wf)
         except Exception as e:
             log("spec err", repr(e)[:100])
         return txt
@@ -382,11 +383,18 @@ class Solver:
         return "ERROR visual read failed"
 
     # ------------------------------------------------------------------ main
+    def safe(self):
+        """Conservative v1.8-like behaviour on Wrenfield versions we have not validated."""
+        if os.environ.get("FORCE_MODE") == "full": return False
+        if os.environ.get("FORCE_MODE") == "safe": return True
+        return (getattr(self.site, "version", "") or "") not in KNOWN_VERSIONS
+
     async def solve(self, item, deadline):
         text = item["text"]
         t0 = time.time()
+        safe = self.safe()
         self._pre = {}
-        for dm in re.findall(r"(?i)(?:born|DOB|date of birth)[^0-9]{0,12}(\d{4}-\d{2}-\d{2})", text)[:2]:
+        for dm in ([] if safe else re.findall(r"(?i)(?:born|DOB|date of birth)[^0-9]{0,12}(\d{4}-\d{2}-\d{2})", text)[:2]):
             self._pre[dm] = asyncio.ensure_future(self.site.search(dob=dm))
         route = await self.route(text)
         log("ROUTE", jdump(route, 500))
@@ -457,7 +465,7 @@ class Solver:
         ents = self.entities(route, ids, text)
         calls_log = []
         replay_opened = []
-        tmpl = self.replays.get(plan_key) or []
+        tmpl = [] if safe else (self.replays.get(plan_key) or [])
         todo = []
         for fn, targs in tmpl:
             a = self.fill(targs, ents)
@@ -476,7 +484,7 @@ class Solver:
             for pth, tx in zip(prefetch, texts):
                 ctx_parts.append(f"=== PAGE {pth} ===\n{clip(tx, 9000)}")
         try:
-            self.spec_docs("\n".join(ctx_parts), text, wf_text)
+            if not safe: self.spec_docs("\n".join(ctx_parts), text, wf_text)
         except Exception as e:
             log("spec err", repr(e)[:100])
         if replay_task is not None:
@@ -576,7 +584,7 @@ class Solver:
             for c in finals:
                 msgs.append({"role": "tool", "tool_call_id": c["id"], "content": "Ignored: call answer alone after reading the results."})
         # format gate: rule-governed answers must match one of the rule's answer forms
-        if result and not result.get("skip") and wfs:
+        if result and not result.get("skip") and wfs and not safe:
             fpats, fexs = answer_formats(self.mem, wfs)
             codes = [e for e in fexs if re.fullmatch(r"[A-Z][A-Z_]{2,}(:.*)?", e.strip())]
             def fmt_ok(a):
@@ -605,7 +613,7 @@ class Solver:
                 if not fmt_ok(result.get("answer", "")):
                     result = {"skip": True, "reason": f"answer not in required format: {result.get('answer')!r}"}
         # prose answer containing a rule's code word (e.g. "Release to patient" for RELEASE) = wrong format for a missed rule
-        if result and not result.get("skip") and self.mem.workflows:
+        if result and not result.get("skip") and self.mem.workflows and not safe:
             a = str(result.get("answer", "")).strip()
             if re.search(r"[a-z]{2,}", a) and " " in a and len(a) < 80:
                 code_words = set()

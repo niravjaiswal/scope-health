@@ -165,7 +165,11 @@ class Site:
                     self.suspended_since = time.time()
                 log(f"SUSPENDED page {path} attempt={attempt} (since {time.time()-self.suspended_since:.1f}s)")
                 last = "ERROR: the account is temporarily suspended (try again later)"
-                await asyncio.sleep(2.0 + 2.0 * attempt)
+                if os.environ.get("SUSP_WAIT", "0") == "1":
+                    await asyncio.sleep(2.0 + 2.0 * attempt)
+                else:
+                    await asyncio.sleep(0.4)
+                    if attempt >= 1: break
                 continue
             if self.suspended_since and txt and not txt.startswith("ERROR"):
                 log(f"SUSPENSION over after {time.time()-self.suspended_since:.1f}s")
