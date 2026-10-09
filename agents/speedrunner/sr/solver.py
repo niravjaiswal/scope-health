@@ -604,6 +604,21 @@ class Solver:
                             pass
                 if not fmt_ok(result.get("answer", "")):
                     result = {"skip": True, "reason": f"answer not in required format: {result.get('answer')!r}"}
+        # prose answer containing a rule's code word (e.g. "Release to patient" for RELEASE) = wrong format for a missed rule
+        if result and not result.get("skip") and self.mem.workflows:
+            a = str(result.get("answer", "")).strip()
+            if re.search(r"[a-z]{2,}", a) and " " in a and len(a) < 80:
+                code_words = set()
+                for w in self.mem.workflows:
+                    for ex in re.findall(r"`([A-Z][A-Z_]{2,})(?::[^`]*)?`", w["text"]):
+                        code_words.update(x for x in ex.split("_") if len(x) >= 4)
+                generic = {"PATIENT", "PROVIDER", "SERVICE", "VISIT", "OTHER", "NONE", "CODE", "PRIMARY", "PLACE", "MEMBER", "TERMS",
+                           "REQUIRED", "CONTACT", "ACTION", "CALL", "BILL", "WRITE", "FILING", "DIAGNOSIS", "PROCEDURE", "REFERRING",
+                           "RENDERING", "UNKNOWN", "PAYER", "REVIEW", "WOUND", "DATE", "TYPE", "NAME", "LETTER", "REPORT", "CLAIM"}
+                hit = [w for w in re.findall(r"[A-Za-z]{4,}", a) if w.upper() in code_words - generic]
+                if hit and len(a.split()) <= 6:
+                    log(f"GATE prose answer uses rule code words {hit}: {a!r}")
+                    result = {"skip": True, "reason": f"prose answer resembling a rule code: {a!r}"}
         # gate: a request about a patient must be grounded in that patient's chart
         charts = set(re.findall(r"/patients/([0-9a-z]{6,})", " ".join(prefetch + opened + replay_opened)))
         if not charts:
