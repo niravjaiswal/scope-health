@@ -578,8 +578,15 @@ class Solver:
         # format gate: rule-governed answers must match one of the rule's answer forms
         if result and not result.get("skip") and wfs:
             fpats, fexs = answer_formats(self.mem, wfs)
+            codes = [e for e in fexs if re.fullmatch(r"[A-Z][A-Z_]{2,}(:.*)?", e.strip())]
             def fmt_ok(a):
-                return not fpats or any(p.match(str(a).strip()) for p in fpats)
+                a = str(a).strip()
+                if not fpats or len(codes) < 2:
+                    return True                      # rule doesn't define a code-style answer set: no constraint
+                if any(p.match(a) for p in fpats):
+                    return True
+                # only reject clear prose / wrong-style answers to a code-style rule
+                return not (re.search(r"[a-z]{2,}", a) and " " in a)
             if not fmt_ok(result.get("answer", "")):
                 log("FORMAT bad answer", repr(result.get("answer"))[:80])
                 if deadline - time.time() > 3:
