@@ -304,6 +304,11 @@ class Solver:
                 ok.add(x)
             elif x in byn:
                 ok.add(byn[x])
+        from .memory import lexical_match, answer_formats
+        lex = lexical_match(self.mem, text)
+        if set(lex) - ok:
+            log(f"LEXICAL adds workflows {sorted(set(lex) - ok)} (router gave {sorted(ok)})")
+        ok |= set(lex)
         wfs = sorted(ok)
         wf_idx = wfs[0] if wfs else None
         route["workflow"] = wf_idx
@@ -466,6 +471,28 @@ class Solver:
                 msgs.append({"role": "tool", "tool_call_id": c["id"], "content": clip(out or "", 12000)})
             for c in finals:
                 msgs.append({"role": "tool", "tool_call_id": c["id"], "content": "Ignored: call answer alone after reading the results."})
+        # format gate: rule-governed answers must match one of the rule's answer forms
+        if result and not result.get("skip") and wfs:
+            fpats, fexs = answer_formats(self.mem, wfs)
+            def fmt_ok(a):
+                return not fpats or any(p.match(str(a).strip()) for p in fpats)
+            if not fmt_ok(result.get("answer", "")):
+                log("FORMAT bad answer", repr(result.get("answer"))[:80])
+                if deadline - time.time() > 3:
+                    msgs.append({"role": "user", "content": f"Your answer {result.get('answer')!r} is not in a required form. Allowed forms (from the rule): {', '.join(dict.fromkeys(fexs))[:600]}. Call answer again with the value in exactly one of these forms (or skip)."})
+                    r = await self.llm.chat(model["model"], msgs, max_tokens=2000, tools=TOOLS, extra=model["extra"], reasoning={"effort": "low"}, timeout=max(2, deadline - time.time() - 1), tag="reformat")
+                    calls = ((r or {}).get("message") or {}).get("tool_calls") or []
+                    fin = [c for c in calls if c["function"]["name"] == "answer"]
+                    if fin:
+                        try:
+                            a2 = json.loads(fin[0]["function"].get("arguments") or "{}")
+                            if fmt_ok(a2.get("answer", "")):
+                                result = {**result, **a2}
+                                log("FORMAT fixed ->", a2.get("answer"))
+                        except Exception:
+                            pass
+                if not fmt_ok(result.get("answer", "")):
+                    result = {"skip": True, "reason": f"answer not in required format: {result.get('answer')!r}"}
         # gate: a request about a patient must be grounded in that patient's chart
         charts = set(re.findall(r"/patients/([0-9a-z]{6,})", " ".join(prefetch + opened)))
         if result and not result.get("skip") and pats and not charts:

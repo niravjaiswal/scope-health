@@ -1,43 +1,29 @@
-# Speedrunner agent — architecture (v1 draft, Oct 8 21:00 EDT)
+# Speedrunner agent — architecture & status (updated Oct 9 ~01:00 EDT)
 
-Goal: maximize (correct − wrong) over Set1/2/3 + final (924 tasks/60 min/$25, unseen clinic, possibly unseen Wrenfield version).
-Leaders answer ~35% of tasks with ~0 wrong; Sets 2/3 are wide open. Robust generalization > Set-1 overfitting.
+Code: `agents/speedrunner/` (`sr/main.py` entry). Build: `docker build --platform linux/amd64 -t sr-agent:vX agents/speedrunner`.
 
-## Facts that shape the design
-- Strictly sequential queue, ~4 s/task average budget, ~$0.035/task. Wrong = −1 ⇒ skip when unsure.
-- Items are fixed per set (practice queue identical across runs). Set 1 & Set 2 = Wrenfield 4.3.1; practice = 4.2.0; Set 3 = other.
-- Judge site: ≤4 concurrent page loads per session or it throttles (503 / 2.5 s JS retry). Practice-in-judge: 0.07 s/page.
-  Set 1 dumper saw ~2 s/page (to be analysed).
-- Anti-scraping: randomized class/attr names per load; content in an iframe; per-load cipher fonts on identifiers
-  (decode by glyph-outline matching vs the honest "Wrenfield Mono" face); some text drawn as vector pictures;
-  documents are generated PDFs (some handwriting fonts).
-- Site state can change during the shift ("cancellations in the next few minutes", "posting payments") ⇒
-  "as of now" questions must read fresh pages.
-- Workflow messages define precise rules + answer formats; later messages amend (effective dates!).
+## Scores so far (latest finished submission counts)
+| image | Set 1 | Set 2 | Set 3 | total | notes |
+|---|---|---|---|---|---|
+| v1.1 | −3 (23✓/26✗) | 10 | 15 | 22 | 4.3.1 phone cipher → garbage phones |
+| v1.3 | 13 | 6 | 1 | 20 | tab starvation hang |
+| v1.4 | 27 (0✗) | 13 | 3 | 43 | still hanging (lost request events) |
+| v1.6 | 71 (73✓/2✗) | 93 (95✓/2✗) | 75 (77✓/2✗) | **239** | wait_settled fix — 5th place |
 
-## Components
-1. **Data layer (`wf`)**: Playwright pool (4 pages, one session) → `fetch(path)` → decoded text (cipher fonts,
-   SVG text, tables as rows, links as `<path>`), cache with timestamps. PDF documents → text.
-   Version-agnostic: discover nav sections + chart tab links at startup; never rely on class names.
-2. **Runtime**: queue loop, time budget per task (seconds_left / est. remaining tasks), logging of every item,
-   answer, evidence, timing (Set 1 logs are our only scored-set window).
-3. **Memory**: all messages in order; workflow registry (title, text, amendments with effective dates);
-   facts; noise filtered.
-4. **Solver** (per task):
-   a. Router (fast LLM, JSON): workflow id | lookup kind; entities (patient name/DOB, provider, date, location,
-      invoice no., lot, DOS, time); data plan.
-   b. Gather (code, parallel ≤4): patient resolution (search by last name, match first name/DOB; handle accents,
-      duplicates/merged, restricted charts) → all chart tabs + linked detail pages needed by the plan;
-      global pages (staff/specialties, payers, calendar, vaccines/lots, schedule views) cached once.
-   c. Answer (LLM): rule text + gathered text → {answer, confidence, evidence}. Model tier by difficulty.
-   d. Gates in code: unique entity, format regex from the workflow examples / answer-kind validation,
-      optional second opinion for risky workflows; else skip.
-   e. Agentic fallback: tool loop (open(path), search, find) with a hard time box.
-5. **Learning during the shift**: per workflow, cache the page plan that worked (which tabs/details/global pages)
-   so later tasks prefetch exactly that; optionally LLM-written Python per workflow, verified against the
-   LLM answer on the first instances.
+## Pipeline per task
+1. Router (gpt-oss-120b @ Cerebras, JSON): relevant workflow rules (base + amendments), kind, entities.
+2. Patient resolution: DOB search first (exact), else paginated name search (copes with phonetic/capped search, busy truncation).
+3. Prefetch: chart + learned pages; **plan replay**: tool calls that solved earlier tasks of the same kind, re-run with this task's entities.
+4. Tool loop (gpt-oss; gpt-6.1-sol "teacher" for the first tasks of each new workflow): open (batch), query (form fill + submit), table_compute (rows → Python), search_patients, read_document (PDF glyph decode / haiku vision).
+5. Verification for workflow tasks: gpt-6.1-sol (vetoes) ∥ haiku-5.5; skipped after 3 agreements (spot-check every 4th).
+6. Gates: patient chart must be opened; phone shape; conf ≥ 0.75; fail-fast & time-pressure skipping per kind.
 
-## Dev loop
-- Offline replay harness over dumped pages (Set 1 dump with font decoding) + practice expected answers.
-- Oracle answers for Set 1 tasks via a strong model with high reasoning over complete dumped data + manual spot checks.
-- Submissions: each gives Set 1/2/3 correct/wrong/skip counts + Set 1 logs.
+## Anti-scraping handled
+- Randomized classes/attrs, iframe content, layout fingerprint (real Chromium).
+- 4.2.0 cipher fonts (glyph-outline decode), 4.3.1 per-digit `::before` + clip-path decoys, MRN drawn as CSS background PNG (visual read via haiku), shuffled spans.
+- Lying PDF text layers (glyph decode of embedded fonts), scans (vision).
+- "Wrenfield is busy" truncated lists (retry), 503 throttling (≤2 tabs + 1 background lane), honeypot `/patients/all`.
+
+## Known gaps / next
+- Set 1 throughput: lab triage (45) mostly pressure-skipped; recall-lot (14) unsolved; invoices with capped name search.
+- Disk space on the dev Mac (OrbStack dies under ~1 GB free).

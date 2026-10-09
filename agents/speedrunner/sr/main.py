@@ -52,6 +52,9 @@ def validate(ans):
     if a.startswith('"') and a.endswith('"'): a = a[1:-1].strip()
     if not a or a.lower() in ("true", "false", "null", "none", "n/a", "unknown"):
         return None
+    q = re.findall(r"[“\"]([^”\"]{3,})[”\"]", a)
+    if q and len(a.split()) - len(q[0].split()) >= 3:
+        a = q[0].strip()
     if a.endswith(".") and len(a) > 3 and " " in a and not re.search(r"\b(Inc|Jr|Sr|St|Ltd|Co|Dr|Mt|Ave|Rd|Blvd|Ct|Ln|Pkwy|etc|Corp|LLC|P\.C|M\.D)\.$", a):
         a = a[:-1].rstrip()
     return a

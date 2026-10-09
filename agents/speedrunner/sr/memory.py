@@ -41,3 +41,71 @@ class Memory:
 
     def notes_text(self):
         return "\n".join(f"- (item {n}) {t}" for n, t in self.notes) or "(none)"
+
+
+STOP = set("""about above after again against because been before being below between both could does doing during each
+from further have having here into itself just more most other ought ourselves over same should some such than that their
+theirs them themselves then there these they this those through under until very what when where which while with would
+your yours patient patients answer request requests asked asks question visit visits date dates chart record records
+clinic today rule rules work works them will need needs please that's what's there's give given name names""".split())
+
+
+def _words(t):
+    return {w for w in re.findall(r"[a-z]{4,}", (t or "").lower()) if w not in STOP}
+
+
+def lexical_match(mem, text):
+    """Indices of workflows whose topic words strongly overlap the request (backup for the LLM router)."""
+    if not mem.workflows:
+        return []
+    docs = [_words(w["title"] + " " + w["text"][:700]) for w in mem.workflows]
+    df = {}
+    for d in docs:
+        for w in d: df[w] = df.get(w, 0) + 1
+    tw = _words(text)
+    scores = []
+    for i, d in enumerate(docs):
+        sc = sum(1.0 / df[w] for w in tw & d)
+        scores.append(sc)
+    best = max(scores)
+    if best < 1.5:
+        return []
+    return [i for i, sc in enumerate(scores) if sc >= max(1.5, 0.6 * best)]
+
+
+def _example_regex(ex):
+    ex = ex.strip()
+    if not ex or len(ex) > 60:
+        return None
+    parts = re.split(r"(<[^>]+>|\d{4}-\d{2}-\d{2}|YYYY-MM-DD|\d+\.\d+|\d+|[A-Z][A-Z_]{1,}|[:,])", ex)
+    out = ""
+    for p in parts:
+        if not p: continue
+        if p.startswith("<") or (re.fullmatch(r"[A-Za-z' ]+", p) and not re.fullmatch(r"[A-Z][A-Z_]+", p)):
+            out += r".+"
+        elif re.fullmatch(r"\d{4}-\d{2}-\d{2}|YYYY-MM-DD", p):
+            out += r"\d{4}-\d{2}-\d{2}"
+        elif re.fullmatch(r"\d+\.\d+", p):
+            out += r"\d+\." + r"\d" * len(p.split(".")[1])
+        elif re.fullmatch(r"\d+", p):
+            out += r"\d+"
+        elif p in ":,":
+            out += r"\s*" + re.escape(p) + r"\s*"
+        elif re.fullmatch(r"\s+", p):
+            out += r"\s*"
+        else:
+            out += re.escape(p)
+    try:
+        return re.compile("^" + out + "$", re.I)
+    except re.error:
+        return None
+
+
+def answer_formats(mem, idxs):
+    """Regexes built from the backticked answer examples of the given workflows ([] = no constraint)."""
+    pats, exs = [], []
+    for i in idxs:
+        for ex in re.findall(r"`([^`\n]{1,60})`", mem.workflows[i]["text"]):
+            r = _example_regex(ex)
+            if r: pats.append(r); exs.append(ex)
+    return pats, exs
